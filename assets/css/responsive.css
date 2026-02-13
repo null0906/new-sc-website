@@ -1,0 +1,71 @@
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+@media (max-width:1024px) {
+  .services-grid { grid-template-columns:repeat(3,1fr); }
+  .features-grid { grid-template-columns:repeat(2,1fr); }
+  .why-grid { grid-template-columns:repeat(3,1fr); }
+  .frameworks-grid { grid-template-columns:repeat(3,1fr); }
+  .steps-grid { grid-template-columns:repeat(2,1fr); }
+  .footer-grid { grid-template-columns:1fr 1fr; gap:30px; }
+  .dash-kpis { grid-template-columns:repeat(2,1fr); }
+  .dash-charts { grid-template-columns:1fr; }
+  .tab-panel-grid { grid-template-columns:1fr; gap:30px; }
+  .about-story-grid { grid-template-columns:1fr; gap:30px; }
+}
+
+@media (max-width:768px) {
+  .nav-links { display:none; flex-direction:column; position:fixed; top:60px; left:0; right:0; background:rgba(2,6,23,0.97); backdrop-filter:blur(20px); padding:20px; gap:0; border-bottom:1px solid var(--border); }
+  .nav-links.open { display:flex; }
+  .nav-links li { padding:12px 0; border-bottom:1px solid var(--border); }
+  .nav-dropdown-menu { position:static; transform:none; opacity:1; visibility:visible; background:transparent; border:none; box-shadow:none; padding:8px 0 0 20px; min-width:auto; display:none; }
+  .nav-dropdown.open .nav-dropdown-menu { display:block; }
+  .nav-actions .btn { display:none; }
+  .mobile-toggle { display:block; }
+
+  .hero { padding:120px 0 60px; min-height:auto; }
+  .hero-ctas { flex-direction:column; align-items:center; }
+  .hero-mini-badges { flex-direction:column; align-items:center; gap:8px; }
+
+  .services-grid { grid-template-columns:repeat(2,1fr); }
+  .features-grid { grid-template-columns:1fr; }
+  .testimonials-grid { grid-template-columns:1fr; }
+  .resources-grid { grid-template-columns:1fr; }
+  .benefits-grid { grid-template-columns:repeat(2,1fr); }
+  .team-grid { grid-template-columns:repeat(2,1fr); }
+  .approach-grid { grid-template-columns:1fr; }
+  .why-grid { grid-template-columns:repeat(2,1fr); }
+  .frameworks-grid { grid-template-columns:repeat(3,1fr); }
+
+  .product-tabs { flex-wrap:wrap; border-radius:var(--radius-lg); }
+  .product-tab { font-size:0.78rem; padding:8px 14px; }
+
+  .dash-body { flex-direction:column; }
+  .dash-sidebar { width:100%; border-right:none; border-bottom:1px solid var(--border); padding:10px; display:flex; overflow-x:auto; gap:4px; flex-wrap:nowrap; }
+  .dash-sidebar-section { display:none; }
+  .dash-sidebar-item { white-space:nowrap; padding:6px 12px; font-size:0.72rem; border:1px solid var(--border); border-radius:var(--radius-full); }
+  .dash-sidebar-item.active { border-color:rgba(232,99,43,0.3); border-right:none; }
+  .dash-kpis { grid-template-columns:repeat(2,1fr); }
+  .dash-table { overflow-x:auto; }
+  .dash-table-header, .dash-table-row { min-width:500px; }
+
+  .footer-grid { grid-template-columns:1fr; gap:24px; }
+  .footer-bottom { flex-direction:column; gap:12px; text-align:center; }
+  .contact-grid { grid-template-columns:1fr; }
+
+  .steps-grid { grid-template-columns:1fr; }
+}
+
+@media (max-width:480px) {
+  .container { padding:0 16px; }
+  .services-grid { grid-template-columns:1fr; }
+  .benefits-grid { grid-template-columns:1fr; }
+  .team-grid { grid-template-columns:1fr; }
+  .why-grid { grid-template-columns:1fr; }
+  .frameworks-grid { grid-template-columns:repeat(2,1fr); }
+  .hero h1 { font-size:1.8rem; }
+  .section-title { font-size:1.6rem; }
+  .dash-kpis { grid-template-columns:1fr; }
+  .ticker-section { margin-top:56px; }
+}
