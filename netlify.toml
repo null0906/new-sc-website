@@ -1,3 +1,3 @@
 [build]
-  publish = "."
-  command = ""
+  command = "npm install && npx next build"
+  publish = "out"
