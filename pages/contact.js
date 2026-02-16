@@ -29,7 +29,7 @@ export default function ContactPage() {
       <li><a href="/resources">Resources</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
-    <div class="nav-actions"><a href="https://outlook.office.com/book/SecComplyMeeting@seccomply.net/" class="btn btn-primary" target="_blank" rel="noopener">Book Consultation <span class="btn-icon">&rarr;</span></a></div>
+    <div class="nav-actions"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary" target="_blank" rel="noopener">Book Consultation <span class="btn-icon">&rarr;</span></a></div>
     <button class="mobile-toggle">&#9776;</button>
   </div>
 </nav>
@@ -99,7 +99,7 @@ export default function ContactPage() {
 </section>
 
 <!-- CTA -->
-<section class="cta-section"><div class="cta-glow-1"></div><div class="cta-glow-2"></div><div class="container"><div class="cta-content reveal"><h2>Ready to Get <span class="accent">Started?</span></h2><p>Connect with Shivani to discuss how SecComply can help your organization achieve compliance without complexity. Book a free 15-minute consultation.</p><div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book a Consultation <span class="btn-icon">&rarr;</span></a><a href="/" class="btn btn-outline btn-lg">Back to Home <span class="btn-icon">&rarr;</span></a></div></div></div></section>
+<section class="cta-section"><div class="cta-glow-1"></div><div class="cta-glow-2"></div><div class="container"><div class="cta-content reveal"><h2>Ready to Get <span class="accent">Started?</span></h2><p>Connect with Shivani to discuss how SecComply can help your organization achieve compliance without complexity. Book a free 15-minute consultation.</p><div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book a Consultation <span class="btn-icon">&rarr;</span></a><a href="/" class="btn btn-outline btn-lg">Back to Home <span class="btn-icon">&rarr;</span></a></div></div></div></section>
 
 <!-- FOOTER -->
 <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="/" class="logo"><img src="/assets/images/logo.png" alt="SecComply" style="height:40px"></a><p>We help businesses stay audit-ready, breach-proof, and compliant — without the complexity.</p></div><div class="footer-col"><h4>Services</h4><ul><li><a href="/services/iso-27001">ISO 27001</a></li><li><a href="/services/iso-27701">ISO 27701</a></li><li><a href="/services/soc-2">SOC 2 Audits</a></li><li><a href="/services/dpdp">DPDP Act</a></li><li><a href="/services/gdpr">GDPR Compliance</a></li><li><a href="/services/ciso">CISO as a Service</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="/about">About Us</a></li><li><a href="/resources">Resources</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div></div><div class="footer-line"></div><div class="footer-bottom"><span class="footer-copy">&copy; 2026 SecComply. All rights reserved.</span><div class="footer-socials"><a href="https://www.linkedin.com/in/shivani-tikadia-nadkarni/" class="footer-social" target="_blank" aria-label="LinkedIn">in</a></div></div></div></footer>`}} />

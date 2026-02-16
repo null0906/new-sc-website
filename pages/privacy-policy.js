@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
       <li><a href="/resources">Resources</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
-    <div class="nav-actions"><a href="https://outlook.office.com/book/SecComplyMeeting@seccomply.net/" class="btn btn-primary" target="_blank" rel="noopener">Book Consultation <span class="btn-icon">&rarr;</span></a></div>
+    <div class="nav-actions"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary" target="_blank" rel="noopener">Book Consultation <span class="btn-icon">&rarr;</span></a></div>
     <button class="mobile-toggle">&#9776;</button>
   </div>
 </nav>
@@ -170,8 +170,9 @@ export default function PrivacyPolicyPage() {
       <h2><span class="policy-section-num">13</span> Contact Us</h2>
       <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please reach out to us:</p>
       <ul>
-        <li><strong>Email:</strong> vandana@seccomply.net</li>
+        <li><strong>Email:</strong> shivani@seccomply.net</li>
         <li><strong>Website:</strong> seccomply.net</li>
+        <li><strong>Phone:</strong> +91 9860013381</li>
       </ul>
       <div class="policy-note">For grievance redressal under the DPDP Act, you may also contact the Data Protection Board of India.</div>
 
