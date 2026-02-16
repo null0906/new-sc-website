@@ -10,31 +10,9 @@ export default function PrivacyPolicyPage() {
         <title>Privacy Policy — SecComply</title>
         <meta name="description" content="SecComply Privacy Policy. How we collect, use, and protect your information." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="/assets/css/variables.css" />
-        <link rel="stylesheet" href="/assets/css/base.css" />
-        <link rel="stylesheet" href="/assets/css/animations.css" />
-        <link rel="stylesheet" href="/assets/css/components.css" />
-        <link rel="stylesheet" href="/assets/css/responsive.css" />
-        <style dangerouslySetInnerHTML={{__html: `.policy-section{padding:80px 0 100px;background:var(--bg-primary,#020617)}.policy-content{max-width:820px;margin:0 auto}.policy-date{display:inline-block;font-size:13px;font-weight:600;color:#E8632B;background:rgba(232,99,43,.08);border:1px solid rgba(232,99,43,.15);padding:8px 20px;border-radius:999px;margin-bottom:40px}.policy-content h2{font-size:24px;font-weight:800;color:#F8FAFC;margin:48px 0 8px;letter-spacing:-.5px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.06)}.policy-content h2:first-of-type{margin-top:0}.policy-content h3{font-size:17px;font-weight:700;color:#E2E8F0;margin:24px 0 12px}.policy-content p{font-size:15px;color:#94A3B8;line-height:1.85;margin-bottom:16px}.policy-content ul{list-style:none;padding:0;margin:0 0 24px}.policy-content ul li{font-size:15px;color:#94A3B8;line-height:1.85;padding:10px 0 10px 28px;position:relative;border-bottom:1px solid rgba(255,255,255,.03)}.policy-content ul li:last-child{border-bottom:none}.policy-content ul li::before{content:"";position:absolute;left:0;top:18px;width:8px;height:8px;border-radius:2px;background:linear-gradient(135deg,#E8632B,#FF8A50)}.policy-content strong{color:#E2E8F0}.policy-intro{font-size:16px;color:#CBD5E1;line-height:1.9;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:28px 32px;margin-bottom:40px;border-left:3px solid #E8632B}.policy-note{font-size:14px;color:#94A3B8;font-style:italic;background:rgba(232,99,43,.04);border:1px solid rgba(232,99,43,.1);border-radius:12px;padding:20px 24px;margin-top:8px}.policy-section-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:rgba(232,99,43,.1);color:#E8632B;font-size:13px;font-weight:800;margin-right:10px;flex-shrink:0}`}} />
+<style dangerouslySetInnerHTML={{__html: `.policy-section{padding:80px 0 100px;background:var(--bg-primary,#020617)}.policy-content{max-width:820px;margin:0 auto}.policy-date{display:inline-block;font-size:13px;font-weight:600;color:#E8632B;background:rgba(232,99,43,.08);border:1px solid rgba(232,99,43,.15);padding:8px 20px;border-radius:999px;margin-bottom:40px}.policy-content h2{font-size:24px;font-weight:800;color:#F8FAFC;margin:48px 0 8px;letter-spacing:-.5px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.06)}.policy-content h2:first-of-type{margin-top:0}.policy-content h3{font-size:17px;font-weight:700;color:#E2E8F0;margin:24px 0 12px}.policy-content p{font-size:15px;color:#94A3B8;line-height:1.85;margin-bottom:16px}.policy-content ul{list-style:none;padding:0;margin:0 0 24px}.policy-content ul li{font-size:15px;color:#94A3B8;line-height:1.85;padding:10px 0 10px 28px;position:relative;border-bottom:1px solid rgba(255,255,255,.03)}.policy-content ul li:last-child{border-bottom:none}.policy-content ul li::before{content:"";position:absolute;left:0;top:18px;width:8px;height:8px;border-radius:2px;background:linear-gradient(135deg,#E8632B,#FF8A50)}.policy-content strong{color:#E2E8F0}.policy-intro{font-size:16px;color:#CBD5E1;line-height:1.9;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:28px 32px;margin-bottom:40px;border-left:3px solid #E8632B}.policy-note{font-size:14px;color:#94A3B8;font-style:italic;background:rgba(232,99,43,.04);border:1px solid rgba(232,99,43,.1);border-radius:12px;padding:20px 24px;margin-top:8px}.policy-section-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:rgba(232,99,43,.1);color:#E8632B;font-size:13px;font-weight:800;margin-right:10px;flex-shrink:0}`}} />
       </Head>
-      <div dangerouslySetInnerHTML={{__html: `<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="navbar-inner">
-    <a href="/" class="logo"><img src="/assets/images/logo.png" alt="SecComply" style="height:40px"></a>
-    <ul class="nav-links">
-      <li><a href="/about">About</a></li>
-      <li class="nav-dropdown"><span class="nav-dropdown-trigger"><a href="/#services">Services</a><span class="dropdown-arrow">&#9662;</span></span><div class="nav-dropdown-menu"><a href="/services/iso-27001"><span class="dropdown-icon">&#x1F30D;</span> ISO 27001</a><a href="/services/iso-27701"><span class="dropdown-icon">&#x1F512;</span> ISO 27701</a><a href="/services/soc-2"><span class="dropdown-icon">&#x1F6E1;&#xFE0F;</span> SOC 2</a><a href="/services/dpdp"><span class="dropdown-icon">&#x1F1EE;&#x1F1F3;</span> DPDP Act</a><a href="/services/gdpr"><span class="dropdown-icon">&#x1F1EA;&#x1F1FA;</span> GDPR</a><a href="/services/hipaa"><span class="dropdown-icon">&#x1F3E5;</span> HIPAA</a><a href="/services/vapt"><span class="dropdown-icon">&#x1F50D;</span> VAPT</a><a href="/services/cloud-security"><span class="dropdown-icon">&#x2601;&#xFE0F;</span> Cloud Security</a><a href="/services/ciso"><span class="dropdown-icon">&#x1F4BC;</span> CISO as a Service</a></div></li>
-      <li><a href="/resources">Resources</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-    <div class="nav-actions"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary" target="_blank" rel="noopener">Book Consultation <span class="btn-icon">&rarr;</span></a></div>
-    <button class="mobile-toggle">&#9776;</button>
-  </div>
-</nav>
-
-<!-- HERO -->
+      <div dangerouslySetInnerHTML={{__html: `<!-- HERO -->
 <section class="service-hero">
   <div class="hero-grid"></div>
   <div class="hero-glow hero-glow-1"></div>
@@ -183,10 +161,8 @@ export default function PrivacyPolicyPage() {
 <!-- CTA -->
 <section class="cta-section"><div class="cta-glow-1"></div><div class="cta-glow-2"></div><div class="container"><div class="cta-content reveal"><h2>Have Questions About <span class="accent">Your Data?</span></h2><p>We take your privacy seriously. Reach out to our team if you have any questions about how we handle your information.</p><div class="cta-buttons"><a href="/contact" class="btn btn-primary btn-lg">Contact Us <span class="btn-icon">&rarr;</span></a><a href="/" class="btn btn-outline btn-lg">Back to Home <span class="btn-icon">&rarr;</span></a></div></div></div></section>
 
-<!-- FOOTER -->
-<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="/" class="logo"><img src="/assets/images/logo.png" alt="SecComply" style="height:40px"></a><p>We help businesses stay audit-ready, breach-proof, and compliant — without the complexity.</p></div><div class="footer-col"><h4>Services</h4><ul><li><a href="/services/iso-27001">ISO 27001</a></li><li><a href="/services/iso-27701">ISO 27701</a></li><li><a href="/services/soc-2">SOC 2 Audits</a></li><li><a href="/services/dpdp">DPDP Act</a></li><li><a href="/services/gdpr">GDPR Compliance</a></li><li><a href="/services/ciso">CISO as a Service</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="/about">About Us</a></li><li><a href="/resources">Resources</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div></div><div class="footer-line"></div><div class="footer-bottom"><span class="footer-copy">&copy; 2026 SecComply. All rights reserved.</span><div class="footer-socials"><a href="https://www.linkedin.com/in/shivani-tikadia-nadkarni/" class="footer-social" target="_blank" aria-label="LinkedIn">in</a></div></div></div></footer>`}} />
-      <Script src="/assets/js/navbar.js" strategy="afterInteractive" />
-      <Script src="/assets/js/animations.js" strategy="afterInteractive" />
+`}} />
+<Script src="/assets/js/animations.js" strategy="afterInteractive" />
       <Script src="/assets/js/effects.js" strategy="afterInteractive" />
     </>
   )

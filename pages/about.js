@@ -10,30 +10,8 @@ export default function AboutPage() {
         <title>About SecComply — Cybersecurity Compliance Experts</title>
         <meta name="description" content="Meet the SecComply team. Ex-CISOs, senior auditors, and security experts who have been in your shoes." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="/assets/css/variables.css" />
-        <link rel="stylesheet" href="/assets/css/base.css" />
-        <link rel="stylesheet" href="/assets/css/animations.css" />
-        <link rel="stylesheet" href="/assets/css/components.css" />
-        <link rel="stylesheet" href="/assets/css/responsive.css" />
-      </Head>
-      <div dangerouslySetInnerHTML={{__html: `<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="navbar-inner">
-    <a href="/" class="logo"><img src="/assets/images/logo.png" alt="SecComply" style="height:40px"></a>
-    <ul class="nav-links">
-      <li><a href="/about">About</a></li>
-      <li class="nav-dropdown"><span class="nav-dropdown-trigger"><a href="/#services">Services</a><span class="dropdown-arrow">&#9662;</span></span><div class="nav-dropdown-menu"><a href="/services/iso-27001"><span class="dropdown-icon">&#x1F30D;</span> ISO 27001</a><a href="/services/iso-27701"><span class="dropdown-icon">&#x1F512;</span> ISO 27701</a><a href="/services/soc-2"><span class="dropdown-icon">&#x1F6E1;&#xFE0F;</span> SOC 2</a><a href="/services/dpdp"><span class="dropdown-icon">&#x1F1EE;&#x1F1F3;</span> DPDP Act</a><a href="/services/gdpr"><span class="dropdown-icon">&#x1F1EA;&#x1F1FA;</span> GDPR</a><a href="/services/hipaa"><span class="dropdown-icon">&#x1F3E5;</span> HIPAA</a><a href="/services/vapt"><span class="dropdown-icon">&#x1F50D;</span> VAPT</a><a href="/services/cloud-security"><span class="dropdown-icon">&#x2601;&#xFE0F;</span> Cloud Security</a><a href="/services/ciso"><span class="dropdown-icon">&#x1F4BC;</span> CISO as a Service</a></div></li>
-      <li><a href="/resources">Resources</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-    <div class="nav-actions"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary" target="_blank" rel="noopener">Book Consultation <span class="btn-icon">&rarr;</span></a></div>
-    <button class="mobile-toggle">&#9776;</button>
-  </div>
-</nav>
-
-<!-- HERO -->
+</Head>
+      <div dangerouslySetInnerHTML={{__html: `<!-- HERO -->
 <section class="service-hero">
   <div class="hero-grid"></div>
   <div class="hero-glow hero-glow-1"></div>
@@ -149,10 +127,8 @@ export default function AboutPage() {
 <!-- CTA -->
 <section class="cta-section"><div class="cta-glow-1"></div><div class="cta-glow-2"></div><div class="container"><div class="cta-content reveal"><h2>Ready to Work <span class="accent">Together?</span></h2><p>Let's discuss how we can help you achieve compliance without the complexity. Book a free 15-minute consultation to get started.</p><div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary btn-lg" target="_blank">Book Your Free Consultation <span class="btn-icon">&rarr;</span></a></div></div></div></section>
 
-<!-- FOOTER -->
-<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="/" class="logo"><img src="/assets/images/logo.png" alt="SecComply" style="height:40px"></a><p>We help businesses stay audit-ready, breach-proof, and compliant — without the complexity.</p></div><div class="footer-col"><h4>Services</h4><ul><li><a href="/services/iso-27001">ISO 27001</a></li><li><a href="/services/iso-27701">ISO 27701</a></li><li><a href="/services/soc-2">SOC 2 Audits</a></li><li><a href="/services/dpdp">DPDP Act</a></li><li><a href="/services/gdpr">GDPR Compliance</a></li><li><a href="/services/ciso">CISO as a Service</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="/about">About Us</a></li><li><a href="/resources">Resources</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div></div><div class="footer-line"></div><div class="footer-bottom"><span class="footer-copy">&copy; 2026 SecComply. All rights reserved.</span><div class="footer-socials"><a href="https://www.linkedin.com/in/shivani-tikadia-nadkarni/" class="footer-social" target="_blank" aria-label="LinkedIn">in</a></div></div></div></footer>`}} />
-      <Script src="/assets/js/navbar.js" strategy="afterInteractive" />
-      <Script src="/assets/js/animations.js" strategy="afterInteractive" />
+`}} />
+<Script src="/assets/js/animations.js" strategy="afterInteractive" />
       <Script src="/assets/js/counters.js" strategy="afterInteractive" />
       <Script src="/assets/js/effects.js" strategy="afterInteractive" />
     </>
