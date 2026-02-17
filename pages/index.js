@@ -27,7 +27,7 @@ document.querySelectorAll('.nav-dropdown').forEach(dd=>{const trigger=dd.querySe
   return (
     <>
       <Head>
-        <title>SecComply — AI-Powered Compliance Automation Platform</title>
+        <title>SecComply</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style dangerouslySetInnerHTML={{__html: `:root{--blue-950:#020617;--blue-900:#0B1120;--blue-850:#0F172A;--blue-800:#1E293B;--blue-700:#334155;--blue-600:#475569;--blue-400:#94A3B8;--blue-300:#CBD5E1;--blue-200:#E2E8F0;--white:#FFF;--accent:#E8632B;--accent-light:#FF8A50;--green:#10B981;--green-light:#34D399;--teal:#14B8A6;--purple:#8B5CF6;--red:#EF4444;--yellow:#F59E0B;--bg-hero:linear-gradient(165deg,#020617 0%,#0a1628 30%,#0c1a30 50%,#091422 100%);--bg-dark:#020617;--bg-section:#0B1120;--bg-card:#111B2E;--bg-card-hover:#162036;--gradient-accent:linear-gradient(135deg,#E8632B,#FF8A50);--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--radius-full:9999px;--transition:0.3s cubic-bezier(0.4,0,0.2,1);--ease-spring:cubic-bezier(0.34,1.56,0.64,1)}

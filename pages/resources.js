@@ -7,7 +7,7 @@ export default function ResourcesPage() {
   return (
     <>
       <Head>
-        <title>Resources — SecComply</title>
+        <title>Resources | SecComply</title>
         <meta name="description" content="Free compliance guides, checklists, and industry insights from SecComply." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </Head>

@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <>
       <Head>
-        <title>About SecComply — Cybersecurity Compliance Experts</title>
+        <title>About | SecComply — Cybersecurity Compliance Experts</title>
         <meta name="description" content="Meet the SecComply team. Ex-CISOs, senior auditors, and security experts who have been in your shoes." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </Head>
