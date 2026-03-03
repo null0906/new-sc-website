@@ -160,21 +160,21 @@
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
-  filter: blur(80px);
+  filter: blur(60px);
 }
 
 .ambient-orb-1 {
   width: 600px; height: 600px;
-  background: rgba(232, 99, 43, 0.12);
+  background: rgba(232, 99, 43, 0.1);
   top: 5%; right: -180px;
-  animation: orbFloat1 14s ease-in-out infinite;
+  animation: orbFloat1 25s ease-in-out infinite;
 }
 
 .ambient-orb-2 {
   width: 500px; height: 500px;
-  background: rgba(16, 185, 129, 0.08);
+  background: rgba(16, 185, 129, 0.06);
   bottom: 5%; left: -150px;
-  animation: orbFloat2 18s ease-in-out infinite;
+  animation: orbFloat2 30s ease-in-out infinite;
 }
 
 .ambient-orb-3 {
@@ -215,19 +215,13 @@
   border-radius: inherit;
   background: var(--gradient-accent);
   z-index: -1;
-  opacity: 0.3;
-  filter: blur(18px);
-  transition: opacity 0.4s ease, filter 0.4s ease;
+  opacity: 0;
+  filter: blur(16px);
+  transition: opacity 0.4s ease;
 }
 
 .btn-primary:hover::before {
-  opacity: 0.85;
-  animation: btnGlowPulse 1.8s ease-in-out infinite;
-}
-
-@keyframes btnGlowPulse {
-  0%, 100% { filter: blur(18px); opacity: 0.6; }
-  50% { filter: blur(28px); opacity: 1; }
+  opacity: 0.6;
 }
 
 
@@ -290,17 +284,12 @@
   content: '';
   position: absolute;
   top: 50%; left: 50%;
-  width: 800px; height: 800px;
+  width: 700px; height: 700px;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(232, 99, 43, 0.18) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(232, 99, 43, 0.12) 0%, transparent 65%);
   border-radius: 50%;
   pointer-events: none;
-  animation: ctaGlow 5s ease-in-out infinite;
-}
-
-@keyframes ctaGlow {
-  0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
-  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+  opacity: 0.7;
 }
 
 
@@ -310,34 +299,15 @@
 .dashboard-frame::before {
   content: '';
   position: absolute;
-  top: -40px; left: -40px; right: -40px; bottom: -40px;
+  top: -30px; left: -30px; right: -30px; bottom: -30px;
   border-radius: 28px;
-  background: radial-gradient(ellipse at center, rgba(232, 99, 43, 0.1) 0%, transparent 65%);
+  background: radial-gradient(ellipse at center, rgba(232, 99, 43, 0.06) 0%, transparent 65%);
   pointer-events: none;
   z-index: -1;
-  animation: dashAmbient 5s ease-in-out infinite;
-}
-
-@keyframes dashAmbient {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 1; }
 }
 
 
-/* === HERO TITLE SHIMMER === */
-.hero h1 {
-  background: linear-gradient(90deg, var(--white) 0%, var(--white) 30%, var(--accent-light) 50%, var(--white) 70%, var(--white) 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: titleShimmer 4s linear infinite;
-}
-
-@keyframes titleShimmer {
-  0% { background-position: 200% center; }
-  100% { background-position: -200% center; }
-}
+/* === HERO TITLE — styled in index.js === */
 
 
 /* === STEP NUMBER GLOW === */
@@ -399,16 +369,7 @@
 .reveal.delay-6 { transition-delay: 0.44s; }
 
 
-/* === NOISE TEXTURE OVERLAY ON HERO === */
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.4;
-}
+/* === HERO NOISE TEXTURE — disabled for performance === */
 
 
 /* === PLATFORM TAB GLOW === */
@@ -422,7 +383,7 @@
 
 /* === PLATFORM CAROUSEL GLOW === */
 .platform-carousel {
-  box-shadow: 0 25px 80px rgba(0,0,0,.5), 0 0 60px rgba(232, 99, 43, 0.08);
+  box-shadow: 0 25px 80px rgba(0,0,0,.5), 0 0 40px rgba(232, 99, 43, 0.06);
 }
 
 .platform-panel-icon {
@@ -447,7 +408,7 @@
 
 @keyframes badgeShimmer {
   0% { left: -100%; }
-  50%, 100% { left: 100%; }
+  30%, 100% { left: 100%; }
 }
 
 
