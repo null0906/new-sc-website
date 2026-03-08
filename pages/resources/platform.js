@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
 
 const features = [
   { icon: '🛡️', title: 'ISMS Automation', desc: 'Automate your entire Information Security Management System — policies, controls, risk registers, and evidence collection.' },

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
 
 const webinars = [
   { icon: '🎥', title: 'ISO 27001 in 90 Days: A Live Walkthrough', desc: 'Watch our step-by-step walkthrough of achieving ISO 27001 certification in 90 days for startups.', cta: 'Watch Recording', href: '#', status: 'RECORDING' },
