@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/Layout'
 
 const tools = [
   { icon: '🔍', title: 'Free DPDP Assessment', desc: 'Take our free online assessment to understand your DPDP Act compliance readiness and get a personalized report.', cta: 'Start Assessment', href: '#' },
