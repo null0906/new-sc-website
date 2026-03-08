@@ -23,6 +23,13 @@ const cases = [
     title: 'SaaS Platform Scales Compliance Across 3 Frameworks',
     desc: "How a growing SaaS company managed SOC 2, ISO 27001, and GDPR simultaneously using SecComply's cross-framework mapping.",
     date: 'January 2025'
+  },
+  {
+    slug: 'pci-dss-fintech',
+    icon: '💳',
+    title: 'PCI DSS Compliance Enablement for a Fintech Organization',
+    desc: 'How SecComply helped a payment fintech achieve PCI DSS-aligned logging, monitoring, and audit readiness in under 30 days.',
+    date: 'March 2025'
   }
 ]
 

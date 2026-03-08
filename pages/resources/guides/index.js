@@ -9,7 +9,7 @@ const guides = [
     title: 'ISO 27001 Implementation Guide',
     desc: 'Comprehensive step-by-step guide to implementing an effective information security management system from scratch.',
     date: 'March 2025',
-    readTime: '15 min read'
+    readTime: '20 min read'
   },
   {
     slug: 'grc-framework-startups',
@@ -26,6 +26,22 @@ const guides = [
     desc: 'A comprehensive comparison guide to help you choose the right compliance framework for your business needs.',
     date: 'January 2025',
     readTime: '10 min read'
+  },
+  {
+    slug: 'vapt-audit-checklist',
+    icon: '🔍',
+    title: 'VAPT Audit Readiness Checklist',
+    desc: 'Essential preparation checklist for Vulnerability Assessment and Penetration Testing — avoid common mistakes and maximize audit value.',
+    date: 'March 2025',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'internal-audit-procedure',
+    icon: '📋',
+    title: 'Internal Audit Procedure: A Complete Guide',
+    desc: 'A structured, risk-based approach for conducting internal audits aligned with ISO 27001 Clause 9.2 and SOC 2 Trust Services Criteria.',
+    date: 'March 2025',
+    readTime: '18 min read'
   }
 ]
 
@@ -42,7 +58,7 @@ export default function Guides() {
       <section className="sub-hero">
         <Link href="/resources" className="sub-back">← Back to Resources</Link>
         <h1>📘 Compliance Guides</h1>
-        <p>Step-by-step implementation guides for ISO 27001, SOC 2, GRC frameworks, and compliance best practices.</p>
+        <p>Step-by-step implementation guides for ISO 27001, SOC 2, GRC frameworks, VAPT, and compliance best practices.</p>
       </section>
 
       <div className="sub-grid">
