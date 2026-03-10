@@ -24,7 +24,7 @@ export default function ResourceLayout({ children, title, description }) {
         .rl-logo-text{font-size:22px;font-weight:800;color:var(--white);letter-spacing:-.5px}
         .rl-logo-text span{color:var(--accent)}
         .rl-nav{display:flex;align-items:center;gap:32px;list-style:none}
-        .rl-nav a{font-size:14px;font-weight:500;color:var(--blue-400);transition:var(--transition)}
+        .rl-nav a{font-size:14px;font-weight:500;color:#FFFFFF;transition:var(--transition)}
         .rl-nav a:hover{color:var(--white)}
         .rl-nav a.active{color:var(--white)}
         .rl-btn-cta{padding:10px 22px;background:var(--accent);color:var(--white);font-size:13px;font-weight:700;border-radius:999px;transition:var(--transition);white-space:nowrap}

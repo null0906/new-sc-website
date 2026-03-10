@@ -12,7 +12,7 @@
 .logo-text { font-size:1.3rem; font-weight:700; color:var(--white); }
 .logo-text span { background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
 .nav-links { display:flex; align-items:center; list-style:none; gap:32px; }
-.nav-links a { font-size:0.9rem; font-weight:500; color:var(--text-secondary); transition:color 0.2s; }
+.nav-links a { font-size:0.9rem; font-weight:500; color:#FFFFFF; transition:color 0.2s; }
 .nav-links a:hover, .nav-links a.active { color:var(--white); }
 .nav-dropdown { position:relative; }
 .nav-dropdown-trigger { display:flex; align-items:center; gap:4px; cursor:pointer; }
