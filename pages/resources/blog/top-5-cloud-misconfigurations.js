@@ -32,6 +32,7 @@ export default function CloudMisconfigurations() {
     <Layout>
       <Head>
         <title>Top 5 Cloud Misconfigurations and How to Fix Them | SecComply</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="The five cloud misconfigurations that appear most often in breach investigations, with exact fixes for AWS S3, IAM, encryption, security groups, and logging." />
         <meta property="og:title" content="Top 5 Cloud Misconfigurations and How to Fix Them" />
         <meta property="og:description" content="99% of cloud breaches are the customer's fault. Here are the five misconfigurations that appear most often, and exactly how to fix each one." />
@@ -44,15 +45,16 @@ export default function CloudMisconfigurations() {
         <link rel="canonical" href={shareUrl} />
         <style>{`
           .b-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#E8632B,#FF8A50);z-index:9999;transition:width .1s linear}
-          .b-wrap{max-width:1100px;margin:0 auto;padding:0 24px 80px}
+          :global(html),:global(body){overflow-x:hidden}
+          .b-wrap{max-width:1100px;margin:0 auto;padding:0 24px 80px;width:100%}
           :root{--cy:#E8632B}
-          .b-hero{background:linear-gradient(135deg,#0B1120 0%,#0F172A 100%);border-bottom:1px solid rgba(255,255,255,.07);padding:56px 24px 48px;display:flex;flex-direction:column;align-items:center}
+          .b-hero{background:linear-gradient(135deg,#0B1120 0%,#0F172A 100%);border-bottom:1px solid rgba(255,255,255,.07);padding:56px 24px 48px;display:flex;flex-direction:column;align-items:center;width:100%}
           .b-back{display:inline-flex;align-items:center;gap:6px;color:#94A3B8;font-size:13px;text-decoration:none;margin-bottom:24px;transition:color .2s}
           .b-back:hover{color:#E8632B}
-          .b-tag-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px}
+          .b-tag-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px;flex-wrap:wrap}
           .b-cat{background:rgba(232,99,43,.15);color:#E8632B;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px;border:1px solid rgba(232,99,43,.3)}
           .b-hero h1{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:800;color:#F8FAFC;line-height:1.2;max-width:820px;margin:0 auto 20px}
-          .b-hero .b-author-strip{max-width:820px;margin-left:auto;margin-right:auto}
+          .b-hero .b-author-strip{max-width:820px;width:min(100%,820px);margin-left:auto;margin-right:auto}
           /* Author card */
           .b-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-top:24px;flex-wrap:wrap;text-align:left}
           .b-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.95rem;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(232,99,43,.3)}
@@ -61,11 +63,12 @@ export default function CloudMisconfigurations() {
           .b-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
           .b-author-strip .date-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.78rem;color:#94A3B8}
           .b-author-strip .dot{opacity:.3}
-          .b-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.06);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+          .b-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.06);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);width:100%}
           .b-stat{background:#0B1120;padding:20px 16px;text-align:center}
           .b-stat-val{font-size:1.6rem;font-weight:800;color:#E8632B;display:block;line-height:1}
           .b-stat-lbl{font-size:11px;color:#64748B;margin-top:6px;display:block;line-height:1.4}
           .b-layout{display:grid;grid-template-columns:1fr 300px;gap:48px;margin-top:48px;align-items:start}
+          .b-article{min-width:0}
           .b-article h2{font-size:1.35rem;font-weight:700;color:#E2E8F0;margin:40px 0 14px;padding-top:8px;border-top:1px solid rgba(255,255,255,.06)}
           .b-article p{color:#94A3B8;line-height:1.8;margin-bottom:16px;font-size:15px}
           .b-fix{background:rgba(16,185,129,.06);border:1px solid rgba(16,185,129,.2);border-left:3px solid #10B981;border-radius:10px;padding:16px 20px;margin:20px 0}
@@ -78,8 +81,8 @@ export default function CloudMisconfigurations() {
           .b-figure{margin:32px 0;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.07)}
           .b-figure img{width:100%;height:260px;object-fit:cover;display:block}
           .b-figure figcaption{background:#0B1120;color:#64748B;font-size:12px;padding:10px 16px;text-align:center}
-          .b-mapping{background:#0F172A;border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden;margin:20px 0}
-          .b-mapping table{width:100%;border-collapse:collapse}
+          .b-mapping{background:#0F172A;border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0}
+          .b-mapping table{width:100%;min-width:640px;border-collapse:collapse}
           .b-mapping th{background:rgba(232,99,43,.1);color:#E8632B;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:10px 16px;text-align:left}
           .b-mapping td{padding:10px 16px;color:#94A3B8;font-size:13px;border-top:1px solid rgba(255,255,255,.05)}
           .b-sidebar{display:flex;flex-direction:column;gap:20px;position:sticky;top:88px}
@@ -105,10 +108,10 @@ export default function CloudMisconfigurations() {
           .b-faq-a p{color:#94A3B8;font-size:14px;line-height:1.7;margin:0}
           .b-back-top{position:fixed;bottom:32px;right:32px;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);color:#fff;font-size:18px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;z-index:999}
           .b-back-top.show{opacity:1}
-          code{background:#1E293B;color:#38BDF8;padding:2px 7px;border-radius:5px;font-size:13px;font-family:'JetBrains Mono',monospace}
-          @media(max-width:768px){.b-layout{grid-template-columns:1fr}.b-sidebar{position:static}.b-stats{grid-template-columns:repeat(2,1fr)}}
-          @media(max-width:600px){.b-hero h1{font-size:1.65rem}.b-author-strip{flex-direction:column;align-items:flex-start;gap:12px}.b-stats{grid-template-columns:repeat(2,1fr)}.b-hero .b-author-strip{width:100%}}
-          @media(max-width:480px){.b-hero{padding:40px 16px 32px}.b-wrap{padding:0 16px 60px}}
+          code{background:#1E293B;color:#38BDF8;padding:2px 7px;border-radius:5px;font-size:13px;font-family:'JetBrains Mono',monospace;word-break:break-word}
+          @media(max-width:768px){.b-layout{grid-template-columns:1fr;gap:28px}.b-sidebar{display:none}.b-stats{grid-template-columns:1fr}.b-wrap{padding:0 16px 64px}.b-num-card{padding:18px}.b-num-card-head{align-items:flex-start}.b-figure img{height:220px}.b-back-top{right:16px;bottom:20px}}
+          @media(max-width:600px){.b-hero h1{font-size:1.65rem}.b-author-strip{flex-direction:column;align-items:flex-start;gap:12px}.b-hero .b-author-strip{width:100%}.b-share-btn{padding:8px 12px}}
+          @media(max-width:480px){.b-hero{padding:40px 16px 32px}.b-wrap{padding:0 14px 56px}.b-mapping th,.b-mapping td{padding:9px 10px;font-size:12px}.b-faq-q{padding:16px}.b-faq-a.open{max-height:420px}}
         `}</style>
       </Head>
 
