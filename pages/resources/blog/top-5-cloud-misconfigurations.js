@@ -107,7 +107,7 @@ export default function CloudMisconfigurations() {
           .b-back-top.show{opacity:1}
           code{background:#1E293B;color:#38BDF8;padding:2px 7px;border-radius:5px;font-size:13px;font-family:'JetBrains Mono',monospace}
           @media(max-width:768px){.b-layout{grid-template-columns:1fr}.b-sidebar{position:static}.b-stats{grid-template-columns:repeat(2,1fr)}}
-          @media(max-width:600px){.b-hero h1{font-size:1.65rem}.b-author-strip{flex-direction:column;align-items:flex-start;gap:12px}.b-stats{grid-template-columns:1fr}}
+          @media(max-width:600px){.b-hero h1{font-size:1.65rem}.b-author-strip{flex-direction:column;align-items:flex-start;gap:12px}.b-stats{grid-template-columns:repeat(2,1fr)}.b-hero .b-author-strip{width:100%}}
           @media(max-width:480px){.b-hero{padding:40px 16px 32px}.b-wrap{padding:0 16px 60px}}
         `}</style>
       </Head>

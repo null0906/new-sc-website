@@ -113,7 +113,7 @@ export default function Soc2TypeIvsTypeII() {
           .b-back-top{position:fixed;bottom:32px;right:32px;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);color:#fff;font-size:18px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;z-index:999}
           .b-back-top.show{opacity:1}
           @media(max-width:768px){.b-layout{grid-template-columns:1fr}.b-sidebar{position:static}.b-stats{grid-template-columns:repeat(2,1fr)}}
-          @media(max-width:600px){.b-hero h1{font-size:1.65rem}.b-author-strip{flex-direction:column;align-items:flex-start;gap:12px}.b-stats{grid-template-columns:1fr}}
+          @media(max-width:600px){.b-hero h1{font-size:1.65rem}.b-author-strip{flex-direction:column;align-items:flex-start;gap:12px}.b-stats{grid-template-columns:repeat(2,1fr)}.b-hero .b-author-strip{width:100%}}
           @media(max-width:480px){.b-hero{padding:40px 16px 32px}.b-wrap{padding:0 16px 60px}}
         `}</style>
       </Head>
