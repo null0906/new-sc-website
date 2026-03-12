@@ -47,7 +47,7 @@ export default function Soc2VsIso27001() {
       window.addEventListener('scroll', () => { if (btt) btt.classList.toggle('vis', window.scrollY > 600); }, { passive: true });
 
       const url = encodeURIComponent('https://seccomply.net/resources/blog/soc2-vs-iso27001');
-      const ttl = encodeURIComponent('SOC 2 vs ISO 27001: Which Certification Should Your Startup Choose? — SecComply');
+      const ttl = encodeURIComponent('SOC 2 vs ISO 27001: Which Certification Should Your Startup Choose?, SecComply');
       const sl = document.getElementById('sl');
       const st = document.getElementById('st');
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
@@ -103,7 +103,7 @@ export default function Soc2VsIso27001() {
           "url": "https://seccomply.net/assets/images/blog/soc2-vs-iso27001-certification-guide-2026.png",
           "width": 1200,
           "height": 630,
-          "caption": "SOC 2 Type II vs ISO 27001 — Complete comparison guide for Indian startups 2026"
+          "caption": "SOC 2 Type II vs ISO 27001, Complete comparison guide for Indian startups 2026"
         },
         "author": {
           "@type": "Organization",
@@ -130,11 +130,11 @@ export default function Soc2VsIso27001() {
           {
             "@type": "Question",
             "name": "Can we pursue SOC 2 Type II and ISO 27001 at the same time?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Many companies do this, especially when expanding into multiple markets simultaneously. The documentation and controls overlap significantly — around 70% — so running them in parallel is more efficient than it sounds." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Many companies do this, especially when expanding into multiple markets simultaneously. The documentation and controls overlap significantly, around 70%, so running them in parallel is more efficient than it sounds." }
           },
           {
             "@type": "Question",
-            "name": "Which certification takes longer — SOC 2 or ISO 27001?",
+            "name": "Which certification takes longer, SOC 2 or ISO 27001?",
             "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001 typically takes nine to eighteen months for a first certification. SOC 2 Type II requires a minimum observation period of six months once your controls are in place, so total time from a standing start is usually eight to fourteen months depending on your readiness." }
           },
           {
@@ -165,7 +165,7 @@ export default function Soc2VsIso27001() {
     <Layout>
       <Head>
         {/* ── Core SEO ── */}
-        <title>SOC 2 vs ISO 27001: Which Certification to Choose? [2026 Guide] — SecComply</title>
+        <title>SOC 2 vs ISO 27001: Which Certification to Choose? [2026 Guide], SecComply</title>
         <meta name="description" content="SOC 2 or ISO 27001? We break down cost, timeline, market fit, and which certification wins for Indian startups, SaaS companies, and global expansion in 2026." />
         <meta name="keywords" content="SOC 2 vs ISO 27001, SOC 2 certification India, ISO 27001 for startups, cybersecurity compliance India, SOC 2 vs ISO 27001 cost, ISMS certification, information security compliance, SOC 2 Type II India, SecComply" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -186,7 +186,7 @@ export default function Soc2VsIso27001() {
         <meta property="og:image" content="https://seccomply.net/assets/images/blog/soc2-vs-iso27001-certification-guide-2026.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="SOC 2 Type II vs ISO 27001 — 2026 comparison guide for Indian startups" />
+        <meta property="og:image:alt" content="SOC 2 Type II vs ISO 27001, 2026 comparison guide for Indian startups" />
         <meta property="og:site_name" content="SecComply" />
         <meta property="og:locale" content="en_IN" />
         <meta property="article:published_time" content="2026-03-11T08:00:00+05:30" />
@@ -374,7 +374,7 @@ export default function Soc2VsIso27001() {
             <span className="acc">SOC 2 Type II</span> vs <span className="acc">ISO 27001</span><br />Which Certification Should You Choose?
           </h1>
           <p className="soc-hero-sub">
-            The complete 2026 guide for Indian startups and SaaS companies. Cost, timeline, market fit, and the honest recommendation — based on where you're selling.
+            The complete 2026 guide for Indian startups and SaaS companies. Cost, timeline, market fit, and the honest recommendation, based on where you're selling.
           </p>
           <div className="soc-author-strip">
             <div className="avatar">SC</div>
@@ -410,19 +410,19 @@ export default function Soc2VsIso27001() {
 
             <div className="key-takeaway">
               <strong>🎯 Key Takeaway</strong>
-              <p>If your buyers are primarily US-based, go SOC 2 Type II first. If your market is Indian enterprises, European companies, or global supply chains, ISO 27001 is the stronger move. If you're targeting both, build ISO 27001 first — around 70% of the work carries over directly.</p>
+              <p>If your buyers are primarily US-based, go SOC 2 Type II first. If your market is Indian enterprises, European companies, or global supply chains, ISO 27001 is the stronger move. If you're targeting both, build ISO 27001 first, around 70% of the work carries over directly.</p>
             </div>
           </section>
 
                     <figure className="b-figure">
             <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=760&q=80&auto=format&fit=crop" alt="SOC 2 vs ISO 27001 certification comparison for startups" loading="lazy" />
-            <figcaption>Both SOC 2 and ISO 27001 demonstrate security maturity — the right choice depends on where your customers are, not which framework sounds more impressive.</figcaption>
+            <figcaption>Both SOC 2 and ISO 27001 demonstrate security maturity, the right choice depends on where your customers are, not which framework sounds more impressive.</figcaption>
           </figure>
           <section id="what-is-soc2">
             <h2>What is SOC 2 Type II?</h2>
             <p>SOC 2 (System and Organisation Controls 2) is an auditing standard developed by the American Institute of Certified Public Accountants. It's built specifically for technology and cloud service companies that store, process, or transmit customer data.</p>
             <p><strong>The first thing most people get wrong about it: SOC 2 is not a certification. It's an attestation.</strong> A licensed CPA firm audits your controls against the AICPA Trust Service Criteria and issues an opinion report. You don't walk away with a certificate. You get a report.</p>
-            <p>SOC 2 Type II specifically means the auditor observed your controls operating effectively over a defined period — typically six to twelve months. It's not a snapshot. It's evidence that your security controls actually worked in practice, consistently, over time. This is what enterprise buyers actually care about.</p>
+            <p>SOC 2 Type II specifically means the auditor observed your controls operating effectively over a defined period, typically six to twelve months. It's not a snapshot. It's evidence that your security controls actually worked in practice, consistently, over time. This is what enterprise buyers actually care about.</p>
             <h3>The Five Trust Service Criteria</h3>
             <ul>
               <li><strong>Security (CC Series):</strong> Mandatory for every engagement. Covers access controls, risk management, incident response, and change management.</li>
@@ -470,12 +470,12 @@ export default function Soc2VsIso27001() {
                 </thead>
                 <tbody>
                   {[
-                    ['Type', 'Attestation — auditor issues an opinion report', 'Certification — accredited body issues a certificate'],
+                    ['Type', 'Attestation, auditor issues an opinion report', 'Certification, accredited body issues a certificate'],
                     ['Origin', 'AICPA, United States', 'ISO/IEC, International'],
                     ['Primary market', 'US and North American enterprise buyers', 'Europe, Middle East, India, global supply chains'],
                     ['Scope', 'Specific system or service', 'Entire organisation or defined ISMS boundary'],
-                    ['Controls', 'Flexible — you define your own controls to meet the criteria', 'Prescriptive — Annex A provides the control set'],
-                    ['Risk requirement', 'Not formally required', 'Mandatory — risk assessment drives every control'],
+                    ['Controls', 'Flexible, you define your own controls to meet the criteria', 'Prescriptive, Annex A provides the control set'],
+                    ['Risk requirement', 'Not formally required', 'Mandatory, risk assessment drives every control'],
                     ['Observation period', 'Typically 6–12 months of evidence', 'Stage 1 and Stage 2 audits, then annual surveillance'],
                     ['Output', 'SOC 2 Type II report, shared under NDA', 'ISO 27001 certificate, publicly verifiable'],
                     ['Validity', 'No fixed expiry. Annual audit is market expectation.', '3-year certificate with annual surveillance audits'],
@@ -550,7 +550,7 @@ export default function Soc2VsIso27001() {
                   ['Indian startup selling to US companies', 'SOC 2 Type II'],
                   ['Indian startup selling to Indian enterprises or government', 'ISO 27001'],
                   ['Indian SaaS expanding to global markets', 'ISO 27001 first, then SOC 2 Type II'],
-                  ['Series A+ company across multiple geographies', 'Both — ISO 27001 first'],
+                  ['Series A+ company across multiple geographies', 'Both, ISO 27001 first'],
                   ['MNC subsidiary or enterprise in India', 'ISO 27001 (often already required by HQ)'],
                   ['Healthcare SaaS serving US customers', 'SOC 2 Type II + HIPAA'],
                   ['FinTech serving Indian BFSI clients', 'ISO 27001 (RBI / SEBI alignment)'],
@@ -570,8 +570,8 @@ export default function Soc2VsIso27001() {
           <section id="faq" className="faq-section">
             <h2>Frequently Asked Questions</h2>
             {[
-              ['Can we pursue SOC 2 Type II and ISO 27001 at the same time?', 'Yes. Many companies do this, especially when expanding into multiple markets simultaneously. The documentation and controls overlap significantly — around 70% — so running them in parallel is more efficient than it sounds.'],
-              ['Which takes longer — SOC 2 or ISO 27001?', 'ISO 27001 typically takes nine to eighteen months for a first certification. SOC 2 Type II requires a minimum observation period of six months once your controls are in place, so total time from a standing start is usually eight to fourteen months depending on your readiness.'],
+              ['Can we pursue SOC 2 Type II and ISO 27001 at the same time?', 'Yes. Many companies do this, especially when expanding into multiple markets simultaneously. The documentation and controls overlap significantly, around 70%, so running them in parallel is more efficient than it sounds.'],
+              ['Which takes longer, SOC 2 or ISO 27001?', 'ISO 27001 typically takes nine to eighteen months for a first certification. SOC 2 Type II requires a minimum observation period of six months once your controls are in place, so total time from a standing start is usually eight to fourteen months depending on your readiness.'],
               ['Is SOC 2 recognised in India?', 'It is growing. Indian IT services companies working with US clients increasingly need it, and MNC subsidiaries are familiar with it. But for domestic Indian enterprise procurement, BFSI, and government, ISO 27001 is still the first thing they ask for.'],
               ['Does ISO 27001 cover cloud security?', 'Yes. ISO 27001:2022 Annex A includes a specific control for cloud services (5.23), along with cryptography, network security, and secure development controls that are directly applicable to cloud-native environments.'],
               ['Which should a Series A Indian SaaS company prioritise?', 'It depends on where your next ten customers are coming from. If they are Indian enterprises, start with ISO 27001. If they are US companies, start with SOC 2 Type II. If it\'s a mix, ISO 27001 first gives you better overall coverage and a faster path to SOC 2 after.'],

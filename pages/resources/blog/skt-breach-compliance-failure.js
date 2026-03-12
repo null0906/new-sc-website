@@ -47,7 +47,7 @@ export default function SKTBreach() {
       window.addEventListener('scroll', () => { if (btt) btt.classList.toggle('vis', window.scrollY > 600); }, { passive: true });
 
       const url = encodeURIComponent('https://seccomply.net/resources/blog/skt-breach-compliance-failure');
-      const ttl = encodeURIComponent('SK Telecom Breach: When Compliance Failures Become a $97M Bill — SecComply');
+      const ttl = encodeURIComponent('SK Telecom Breach: When Compliance Failures Become a $97M Bill, SecComply');
       const sl = document.getElementById('sl');
       const st = document.getElementById('st');
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
@@ -94,10 +94,10 @@ export default function SKTBreach() {
   return (
     <Layout>
       <Head>
-        <title>SK Telecom Breach: When Compliance Failures Become a $97M Bill — SecComply</title>
+        <title>SK Telecom Breach: When Compliance Failures Become a $97M Bill, SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="SK Telecom's $97M fine wasn't caused by a sophisticated attack — it was basic compliance failures. No encryption, weak access controls, delayed breach notification. Here's the full breakdown." />
+        <meta name="description" content="SK Telecom's $97M fine wasn't caused by a sophisticated attack, it was basic compliance failures. No encryption, weak access controls, delayed breach notification. Here's the full breakdown." />
         <meta name="keywords" content="SK Telecom breach, PIPC fine, data breach compliance, ISO 27001 breach, SOC 2 breach, DPDP Act breach notification, encryption compliance, network segmentation, least privilege" />
         <meta property="og:title" content="SK Telecom Breach: When Compliance Failures Become a $97M Bill" />
         <meta property="og:description" content="South Korea's biggest telecom wasn't brought down by a zero-day. It was brought down by missing basics. Here's what every organisation should take from the $97M SKT fine." />
@@ -108,7 +108,7 @@ export default function SKTBreach() {
           "@context": "https://schema.org",
           "@graph": [
             {"@type":"Article","headline":"SK Telecom Breach: When Compliance Failures Become a $97M Bill","author":{"@type":"Person","name":"SecComply Team","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply","logo":{"@type":"ImageObject","url":"https://seccomply.net/assets/images/logo.png"}},"datePublished":"2026-03-09","dateModified":"2026-03-09","mainEntityOfPage":"https://seccomply.net/resources/blog/skt-breach-compliance-failure"},
-            {"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What caused the SK Telecom data breach?","acceptedAnswer":{"@type":"Answer","text":"Malware infiltrated SKT's USIM servers and exfiltrated 25 types of subscriber data. The PIPC found the root cause was basic compliance failures: no encryption, no network segmentation, poor access privilege management, and delayed breach notification."}},{"@type":"Question","name":"How much was SK Telecom fined?","acceptedAnswer":{"@type":"Answer","text":"South Korea's PIPC imposed a record $97.2 million fine — the largest data protection penalty in South Korean history. SKT also received a separate fine for delayed breach notification."}},{"@type":"Question","name":"What compliance controls did SK Telecom fail?","acceptedAnswer":{"@type":"Answer","text":"The PIPC cited four failures: no encryption on USIM authentication keys (ISO 27001 A.8.24), no access controls between internet-facing and internal systems (ISO 27001 A.8.22), inadequate privilege management (ISO 27001 A.8.2), and delayed breach notification."}}]},
+            {"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What caused the SK Telecom data breach?","acceptedAnswer":{"@type":"Answer","text":"Malware infiltrated SKT's USIM servers and exfiltrated 25 types of subscriber data. The PIPC found the root cause was basic compliance failures: no encryption, no network segmentation, poor access privilege management, and delayed breach notification."}},{"@type":"Question","name":"How much was SK Telecom fined?","acceptedAnswer":{"@type":"Answer","text":"South Korea's PIPC imposed a record $97.2 million fine, the largest data protection penalty in South Korean history. SKT also received a separate fine for delayed breach notification."}},{"@type":"Question","name":"What compliance controls did SK Telecom fail?","acceptedAnswer":{"@type":"Answer","text":"The PIPC cited four failures: no encryption on USIM authentication keys (ISO 27001 A.8.24), no access controls between internet-facing and internal systems (ISO 27001 A.8.22), inadequate privilege management (ISO 27001 A.8.2), and delayed breach notification."}}]},
             {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://seccomply.net/resources"},{"@type":"ListItem","position":3,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":4,"name":"SK Telecom Breach","item":"https://seccomply.net/resources/blog/skt-breach-compliance-failure"}]}
           ]
         }) }} />
@@ -267,7 +267,7 @@ export default function SKTBreach() {
 
         <h1 className="skt-hero-h1">SK Telecom Breach: When Compliance Failures Become a <em>$97M Bill</em></h1>
 
-        <p className="skt-hero-sub">South Korea's biggest telecom wasn't brought down by a sophisticated zero-day. It was brought down by missing basics — no encryption, weak access controls, and a delayed breach notification. Regulators made it cost $97 million to find out.</p>
+        <p className="skt-hero-sub">South Korea's biggest telecom wasn't brought down by a sophisticated zero-day. It was brought down by missing basics, no encryption, weak access controls, and a delayed breach notification. Regulators made it cost $97 million to find out.</p>
 
         <div className="skt-author-strip">
           <div className="au-av">SC</div>
@@ -278,7 +278,7 @@ export default function SKTBreach() {
           </div>
         </div>
 
-        {/* IMAGE 1 — SKT Breach Dashboard SVG */}
+        {/* IMAGE 1, SKT Breach Dashboard SVG */}
         <div className="img-wrap">
           <svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#0a0f1e 0%,#04060f 100%)'}}>
             <defs>
@@ -289,7 +289,7 @@ export default function SKTBreach() {
             </defs>
             <rect width="960" height="420" fill="url(#grid)"/>
             {/* Title */}
-            <text x="480" y="38" textAnchor="middle" fill="rgba(232,99,43,0.9)" fontSize="13" fontWeight="700" fontFamily="sans-serif" letterSpacing="2">SK TELECOM BREACH — COMPLIANCE FAILURE TIMELINE</text>
+            <text x="480" y="38" textAnchor="middle" fill="rgba(232,99,43,0.9)" fontSize="13" fontWeight="700" fontFamily="sans-serif" letterSpacing="2">SK TELECOM BREACH, COMPLIANCE FAILURE TIMELINE</text>
             {/* Timeline line */}
             <line x1="60" y1="110" x2="900" y2="110" stroke="rgba(232,99,43,0.2)" strokeWidth="1.5" strokeDasharray="6,4"/>
             {/* Event 1 */}
@@ -346,7 +346,7 @@ export default function SKTBreach() {
             {/* Footer */}
             <text x="480" y="360" textAnchor="middle" fill="rgba(148,163,184,0.3)" fontSize="8.5" fontFamily="sans-serif">Source: South Korea PIPC official findings · April–June 2025</text>
           </svg>
-          <p className="img-cap">Fig 1. SK Telecom breach timeline and impact — $97.2M fine, 23M subscribers affected, and a 3-year business impact estimated at $5.6B. All from preventable compliance failures.</p>
+          <p className="img-cap">Fig 1. SK Telecom breach timeline and impact, $97.2M fine, 23M subscribers affected, and a 3-year business impact estimated at $5.6B. All from preventable compliance failures.</p>
         </div>
       </div>
 
@@ -370,9 +370,9 @@ export default function SKTBreach() {
 
           <section id="what-happened">
             <h2>What <em>Happened</em></h2>
-            <p>On 22 April 2025, SK Telecom — South Korea's largest mobile carrier with 23 million subscribers — detected unusual traffic on its network. Investigation revealed malware had infiltrated its USIM servers and exfiltrated 25 types of subscriber data — including phone numbers, International Mobile Subscriber Identity (IMSI) numbers, and critically, SIM authentication keys.</p>
-            <p>The authentication keys (called 'Ki' values) are the master credentials used to verify a subscriber's identity on a mobile network. In the wrong hands, they enable SIM cloning — an attacker could replicate your SIM card and intercept your calls, texts, and two-factor authentication codes.</p>
-            <p>SKT offered free SIM replacements to all 23 million affected subscribers. Over 9 million replaced their SIMs within weeks. The CEO publicly apologised. The SK Group Chairman publicly apologised. Then the regulator published their findings — and the real story came out.</p>
+            <p>On 22 April 2025, SK Telecom, South Korea's largest mobile carrier with 23 million subscribers, detected unusual traffic on its network. Investigation revealed malware had infiltrated its USIM servers and exfiltrated 25 types of subscriber data, including phone numbers, International Mobile Subscriber Identity (IMSI) numbers, and critically, SIM authentication keys.</p>
+            <p>The authentication keys (called 'Ki' values) are the master credentials used to verify a subscriber's identity on a mobile network. In the wrong hands, they enable SIM cloning, an attacker could replicate your SIM card and intercept your calls, texts, and two-factor authentication codes.</p>
+            <p>SKT offered free SIM replacements to all 23 million affected subscribers. Over 9 million replaced their SIMs within weeks. The CEO publicly apologised. The SK Group Chairman publicly apologised. Then the regulator published their findings, and the real story came out.</p>
 
             <div className="callout co-verdict">
               <div className="co-icon">📋</div>
@@ -385,14 +385,14 @@ export default function SKTBreach() {
 
           <section id="failure1">
             <h2>Failure 1: <em>No Encryption</em> on USIM Authentication Keys</h2>
-            <p>The PIPC found that over 26 million USIM authentication keys — the most sensitive data SKT held — were stored in plain text. Completely unencrypted. When the attacker accessed the database, they didn't need to crack anything. The keys were just there.</p>
+            <p>The PIPC found that over 26 million USIM authentication keys, the most sensitive data SKT held, were stored in plain text. Completely unencrypted. When the attacker accessed the database, they didn't need to crack anything. The keys were just there.</p>
             <div className="table-wrap">
               <table className="cmp-table">
                 <thead><tr><th>Framework</th><th>Specific Control</th><th>Requirement</th></tr></thead>
                 <tbody>
                   <tr><td><strong>ISO 27001:2022</strong></td><td>Annex A.8.24</td><td>Encryption of sensitive data at rest is mandatory for all data classified as confidential or above.</td></tr>
                   <tr><td><strong>SOC 2</strong></td><td>CC6.1</td><td>Encryption controls must be applied to protect data from unauthorized access, including at-rest storage.</td></tr>
-                  <tr><td><strong>DPDP Act 2023</strong></td><td>Section 8(4)</td><td>Data fiduciaries must implement appropriate technical measures — encryption of authentication credentials is a baseline expectation.</td></tr>
+                  <tr><td><strong>DPDP Act 2023</strong></td><td>Section 8(4)</td><td>Data fiduciaries must implement appropriate technical measures, encryption of authentication credentials is a baseline expectation.</td></tr>
                   <tr><td><strong>HIPAA / PCI DSS</strong></td><td>§164.312(a)(2)(iv)</td><td>Encrypt electronic protected health information. PCI DSS Req. 3.5 mandates encryption of stored cardholder data.</td></tr>
                 </tbody>
               </table>
@@ -401,7 +401,7 @@ export default function SKTBreach() {
               <div className="co-icon">💡</div>
               <div className="co-body">
                 <strong>The Fix</strong>
-                <p>Classify your sensitive data. Anything in the top tier — authentication credentials, PII, financial data — must be encrypted at rest using AES-256 or equivalent. This is not optional under any major compliance framework. If you haven't done a data classification exercise, start there.</p>
+                <p>Classify your sensitive data. Anything in the top tier, authentication credentials, PII, financial data, must be encrypted at rest using AES-256 or equivalent. This is not optional under any major compliance framework. If you haven't done a data classification exercise, start there.</p>
               </div>
             </div>
           </section>
@@ -414,11 +414,11 @@ export default function SKTBreach() {
               <div className="co-icon">💡</div>
               <div className="co-body">
                 <strong>The Fix</strong>
-                <p>Implement network segmentation — separate internet-facing systems from internal management networks and critical data stores using firewalls, VLANs, and Zero Trust access policies. ISO 27001 Annex A.8.22 (Network Segmentation) and SOC 2 CC6.6 both require logical separation of network environments.</p>
+                <p>Implement network segmentation, separate internet-facing systems from internal management networks and critical data stores using firewalls, VLANs, and Zero Trust access policies. ISO 27001 Annex A.8.22 (Network Segmentation) and SOC 2 CC6.6 both require logical separation of network environments.</p>
               </div>
             </div>
 
-            {/* IMAGE 2 — Network segmentation diagram */}
+            {/* IMAGE 2, Network segmentation diagram */}
             <div style={{margin:'2rem 0'}}>
               <svg viewBox="0 0 780 200" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'#06101a',borderRadius:'14px',border:'1px solid rgba(232,99,43,0.15)'}}>
                 <defs>
@@ -426,7 +426,7 @@ export default function SKTBreach() {
                   <marker id="ar3" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto"><polygon points="0 0,7 3.5,0 7" fill="rgba(16,185,129,0.6)"/></marker>
                 </defs>
                 {/* SKT BAD */}
-                <text x="190" y="25" textAnchor="middle" fill="#ff4d6d" fontSize="10" fontWeight="700" fontFamily="sans-serif">❌ SKT — No Segmentation</text>
+                <text x="190" y="25" textAnchor="middle" fill="#ff4d6d" fontSize="10" fontWeight="700" fontFamily="sans-serif">❌ SKT, No Segmentation</text>
                 <rect x="20" y="38" width="100" height="50" rx="8" fill="#1a0a0a" stroke="rgba(255,77,109,0.4)" strokeWidth="1"/>
                 <text x="70" y="62" textAnchor="middle" fill="rgba(226,232,240,0.7)" fontSize="9" fontFamily="sans-serif">Internet</text>
                 <text x="70" y="76" textAnchor="middle" fill="rgba(226,232,240,0.7)" fontSize="9" fontFamily="sans-serif">/ APIs</text>
@@ -439,7 +439,7 @@ export default function SKTBreach() {
                 {/* Divider */}
                 <line x1="390" y1="20" x2="390" y2="180" stroke="rgba(255,255,255,0.06)" strokeWidth="1"/>
                 {/* CORRECT */}
-                <text x="585" y="25" textAnchor="middle" fill="#10B981" fontSize="10" fontWeight="700" fontFamily="sans-serif">✓ Correct — Zero Trust Segmentation</text>
+                <text x="585" y="25" textAnchor="middle" fill="#10B981" fontSize="10" fontWeight="700" fontFamily="sans-serif">✓ Correct, Zero Trust Segmentation</text>
                 <rect x="415" y="38" width="100" height="50" rx="8" fill="#071a12" stroke="rgba(16,185,129,0.3)" strokeWidth="1"/>
                 <text x="465" y="62" textAnchor="middle" fill="rgba(226,232,240,0.7)" fontSize="9" fontFamily="sans-serif">Internet</text>
                 <text x="465" y="76" textAnchor="middle" fill="rgba(226,232,240,0.7)" fontSize="9" fontFamily="sans-serif">/ APIs</text>
@@ -451,7 +451,7 @@ export default function SKTBreach() {
                 <rect x="572" y="38" width="115" height="50" rx="8" fill="#071a12" stroke="rgba(16,185,129,0.3)" strokeWidth="1"/>
                 <text x="629" y="60" textAnchor="middle" fill="rgba(226,232,240,0.7)" fontSize="9" fontFamily="sans-serif">USIM DB</text>
                 <text x="629" y="75" textAnchor="middle" fill="#10B981" fontSize="8" fontWeight="700" fontFamily="sans-serif">AES-256 ENCRYPTED</text>
-                <text x="585" y="120" textAnchor="middle" fill="rgba(16,185,129,0.6)" fontSize="8" fontFamily="sans-serif">Attacker stopped at perimeter — no lateral movement</text>
+                <text x="585" y="120" textAnchor="middle" fill="rgba(16,185,129,0.6)" fontSize="8" fontFamily="sans-serif">Attacker stopped at perimeter, no lateral movement</text>
               </svg>
               <p className="img-cap">Fig 2. The difference between SKT's architecture (no segmentation, plain-text keys) vs a correctly segmented Zero Trust network with encrypted storage.</p>
             </div>
@@ -459,21 +459,21 @@ export default function SKTBreach() {
 
           <section id="failure3">
             <h2>Failure 3: Inadequate <em>Access Privilege</em> Management</h2>
-            <p>The PIPC also cited SKT's failure to manage access privileges correctly. Too many accounts had access to too many systems — a textbook violation of the principle of least privilege. Once the attacker was inside, they could move laterally without encountering meaningful access barriers.</p>
+            <p>The PIPC also cited SKT's failure to manage access privileges correctly. Too many accounts had access to too many systems, a textbook violation of the principle of least privilege. Once the attacker was inside, they could move laterally without encountering meaningful access barriers.</p>
             <p>This is the same control failure that enabled the M&amp;S breach. It's also one of the most commonly cited deficiencies in any compliance audit.</p>
             <div className="callout co-info">
               <div className="co-icon">💡</div>
               <div className="co-body">
                 <strong>The Fix</strong>
-                <p>Conduct a quarterly access review. Every user, service account, and third-party integration should have only the permissions required to do their job — nothing more. Privileged Access Management (PAM) tools automate this enforcement. ISO 27001 Annex A.8.2 (Privileged Access Rights) and SOC 2 CC6.3 require documented, enforced least-privilege policies.</p>
+                <p>Conduct a quarterly access review. Every user, service account, and third-party integration should have only the permissions required to do their job, nothing more. Privileged Access Management (PAM) tools automate this enforcement. ISO 27001 Annex A.8.2 (Privileged Access Rights) and SOC 2 CC6.3 require documented, enforced least-privilege policies.</p>
               </div>
             </div>
           </section>
 
           <section id="failure4">
-            <h2>Failure 4: <em>Delayed Breach Notification</em> — A Separate Fine</h2>
+            <h2>Failure 4: <em>Delayed Breach Notification</em>, A Separate Fine</h2>
             <p>This one is particularly important for Indian organisations. SKT received a <strong>separate administrative fine</strong> specifically for failing to notify affected customers within the legally required timeframe after discovering the breach.</p>
-            <p>Breach notification isn't just an ethical obligation — it's a hard regulatory deadline. Miss it, and you get fined twice: once for the breach, once for the cover-up.</p>
+            <p>Breach notification isn't just an ethical obligation, it's a hard regulatory deadline. Miss it, and you get fined twice: once for the breach, once for the cover-up.</p>
             <div className="table-wrap">
               <table className="cmp-table">
                 <thead><tr><th>Regulation</th><th>Notification Deadline</th><th>Penalty for Non-Compliance</th></tr></thead>
@@ -489,7 +489,7 @@ export default function SKTBreach() {
               <div className="co-icon">⚠️</div>
               <div className="co-body">
                 <strong>Why This Matters for Indian Businesses</strong>
-                <p>India's DPDP Act 2023 introduces mandatory breach notification obligations for the first time. Organisations handling personal data must notify both the Data Protection Board of India and affected individuals after a breach. You cannot notify if you haven't detected the breach — which means detection capability is now a compliance requirement, not just a security best practice.</p>
+                <p>India's DPDP Act 2023 introduces mandatory breach notification obligations for the first time. Organisations handling personal data must notify both the Data Protection Board of India and affected individuals after a breach. You cannot notify if you haven't detected the breach, which means detection capability is now a compliance requirement, not just a security best practice.</p>
               </div>
             </div>
           </section>
@@ -498,18 +498,18 @@ export default function SKTBreach() {
             <h2>The Real <em>Cost</em> of Non-Compliance</h2>
             <p>The $97.2M fine is just the headline number. The full cost of SKT's compliance failures is far larger:</p>
             <ul className="cost-list">
-              <li><strong>$97.2M regulatory fine</strong> — from South Korea's PIPC</li>
-              <li><strong>$153.8M estimated cost</strong> — of replacing SIM cards for 23 million subscribers</li>
-              <li><strong>250,000 subscribers left immediately</strong> — with churn projected to reach 2.5 million</li>
-              <li><strong>800 billion won cut from 2025 revenue forecast</strong> — due to customer compensation packages</li>
-              <li><strong>$560M committed over 5 years</strong> — to rebuild data security infrastructure — after the breach</li>
-              <li><strong>Class action lawsuits filed</strong> — with damages sought for each of the 23 million affected individuals</li>
+              <li><strong>$97.2M regulatory fine</strong>, from South Korea's PIPC</li>
+              <li><strong>$153.8M estimated cost</strong>, of replacing SIM cards for 23 million subscribers</li>
+              <li><strong>250,000 subscribers left immediately</strong>, with churn projected to reach 2.5 million</li>
+              <li><strong>800 billion won cut from 2025 revenue forecast</strong>, due to customer compensation packages</li>
+              <li><strong>$560M committed over 5 years</strong>, to rebuild data security infrastructure, after the breach</li>
+              <li><strong>Class action lawsuits filed</strong>, with damages sought for each of the 23 million affected individuals</li>
             </ul>
             <div className="callout co-verdict">
               <div className="co-icon">📌</div>
               <div className="co-body">
                 <strong>The Key Lesson</strong>
-                <p>SKT will spend more fixing this in the next five years than it would have cost to build proper compliance controls from the start. This is the pattern in every major regulatory breach: the cure is always more expensive than the prevention. Compliance isn't a cost centre — it's risk capital.</p>
+                <p>SKT will spend more fixing this in the next five years than it would have cost to build proper compliance controls from the start. This is the pattern in every major regulatory breach: the cure is always more expensive than the prevention. Compliance isn't a cost centre, it's risk capital.</p>
               </div>
             </div>
           </section>
@@ -525,7 +525,7 @@ export default function SKTBreach() {
                   <tr><td>No network segmentation</td><td>Cloud Security Scanner flags exposed management interfaces and missing segmentation in AWS, Azure, GCP</td><td><strong>ISO 27001 A.8.22, SOC 2 CC6.6</strong></td></tr>
                   <tr><td>Poor access privilege management</td><td>Continuous access control monitoring + quarterly access review workflows built into platform</td><td><strong>ISO 27001 A.8.2, SOC 2 CC6.3</strong></td></tr>
                   <tr><td>Delayed breach notification</td><td>Pre-built Incident Response playbooks with automated notification workflow templates; breach timer built in</td><td><strong>DPDP Act, GDPR Art.33, HIPAA §164.412</strong></td></tr>
-                  <tr><td>Long-standing undetected vulnerabilities</td><td>Continuous vulnerability scanning with CVSS-priority remediation queue — no 'set and forget' gaps</td><td><strong>ISO 27001 A.8.8, SOC 2 CC7.1</strong></td></tr>
+                  <tr><td>Long-standing undetected vulnerabilities</td><td>Continuous vulnerability scanning with CVSS-priority remediation queue, no 'set and forget' gaps</td><td><strong>ISO 27001 A.8.8, SOC 2 CC7.1</strong></td></tr>
                 </tbody>
               </table>
             </div>
@@ -533,7 +533,7 @@ export default function SKTBreach() {
 
           <section id="checklist">
             <h2>5 Compliance Controls to <em>Audit This Week</em></h2>
-            <p>Based directly on the PIPC's findings — if SKT had checked these five things, the $97M fine wouldn't exist.</p>
+            <p>Based directly on the PIPC's findings, if SKT had checked these five things, the $97M fine wouldn't exist.</p>
             <ul className="feat-list">
               <li><div className="f-num">1</div><div className="f-body"><strong>Inventory your sensitive data</strong><span>Where is your most sensitive data stored? Is it encrypted at rest? If you can't answer both questions today, that's your gap.</span></div></li>
               <li><div className="f-num">2</div><div className="f-body"><strong>Map your network zones</strong><span>Can an attacker pivot from a public-facing service to your internal database? Draw the network boundary. Close the gaps.</span></div></li>
@@ -545,7 +545,7 @@ export default function SKTBreach() {
 
           <div className="cta-banner">
             <h3>Don't Wait for Your $97M Wake-Up Call</h3>
-            <p>Every control SKT failed is something SecComply's platform monitors continuously — encryption gaps, network exposure, access privilege drift, and breach notification readiness. Get an independent compliance gap assessment before a regulator does it for you.</p>
+            <p>Every control SKT failed is something SecComply's platform monitors continuously, encryption gaps, network exposure, access privilege drift, and breach notification readiness. Get an independent compliance gap assessment before a regulator does it for you.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Compliance Assessment →</a>
               <a href="https://seccomply.net/services/compliance-as-a-service" className="btn-o" target="_blank" rel="noopener">View Compliance Services</a>

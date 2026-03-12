@@ -53,7 +53,7 @@ export default function TopSecurityToolsStartup() {
 
       /* Share links */
       const url = encodeURIComponent('https://seccomply.net/resources/blog/top-security-tools-startup');
-      const ttl = encodeURIComponent('Top Security Tools Every Startup Should Know in 2026 — SecComply');
+      const ttl = encodeURIComponent('Top Security Tools Every Startup Should Know in 2026, SecComply');
       const sl = document.getElementById('sl');
       const st = document.getElementById('st');
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
@@ -105,13 +105,13 @@ export default function TopSecurityToolsStartup() {
       {
         "@type": "BlogPosting",
         "headline": "Top Security Tools Every Startup Should Know in 2026",
-        "description": "Ten security tools every startup needs — in the exact order to deploy them. Each one builds on the last, closes SOC 2 gaps, and protects the sales pipeline.",
+        "description": "Ten security tools every startup needs, in the exact order to deploy them. Each one builds on the last, closes SOC 2 gaps, and protects the sales pipeline.",
         "image": {
           "@type": "ImageObject",
           "url": "https://seccomply.net/assets/images/blog/top-security-tools-startup-2026.png",
           "width": 1200,
           "height": 630,
-          "caption": "Top 10 security tools for startups — deployment order and SOC 2 coverage"
+          "caption": "Top 10 security tools for startups, deployment order and SOC 2 coverage"
         },
         "author": {
           "@type": "Person",
@@ -138,12 +138,12 @@ export default function TopSecurityToolsStartup() {
           {
             "@type": "Question",
             "name": "What is the most important security tool for a startup?",
-            "acceptedAnswer": { "@type": "Answer", "text": "A compliance automation platform (Vanta or Drata) should be the first tool deployed. It maps every security gap against SOC 2, ISO 27001, and DPDP Act controls — turning the rest of the list into a prioritised roadmap with evidence collected automatically." }
+            "acceptedAnswer": { "@type": "Answer", "text": "A compliance automation platform (Vanta or Drata) should be the first tool deployed. It maps every security gap against SOC 2, ISO 27001, and DPDP Act controls, turning the rest of the list into a prioritised roadmap with evidence collected automatically." }
           },
           {
             "@type": "Question",
             "name": "How much does a startup security stack cost?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Several tools on this list are free (AWS Security Hub, AWS CloudTrail, Cloudflare free tier, Snyk free tier). The full paid stack runs approximately £25,000–£40,000 per year — a fraction of the average $4.88M cost of a data breach or the revenue lost from a failed enterprise security review." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Several tools on this list are free (AWS Security Hub, AWS CloudTrail, Cloudflare free tier, Snyk free tier). The full paid stack runs approximately £25,000–£40,000 per year, a fraction of the average $4.88M cost of a data breach or the revenue lost from a failed enterprise security review." }
           },
           {
             "@type": "Question",
@@ -168,8 +168,8 @@ export default function TopSecurityToolsStartup() {
     <Layout>
       <Head>
         {/* ── Core SEO ── */}
-        <title>Top 10 Security Tools Every Startup Needs in 2026 — SecComply</title>
-        <meta name="description" content="Ten security tools every startup needs in 2026 — in deployment order. Closes SOC 2 gaps, protects your sales pipeline, and builds enterprise trust. Free tools included." />
+        <title>Top 10 Security Tools Every Startup Needs in 2026, SecComply</title>
+        <meta name="description" content="Ten security tools every startup needs in 2026, in deployment order. Closes SOC 2 gaps, protects your sales pipeline, and builds enterprise trust. Free tools included." />
         <meta name="keywords" content="security tools startups 2026, SOC 2 tools, startup cybersecurity, Vanta Drata, Okta SSO MFA, Snyk, Wiz cloud security, Cloudflare WAF, AWS Secrets Manager, Jamf MDM, compliance automation India, SecComply" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="author" content="Bhumika Deshmukh" />
@@ -189,7 +189,7 @@ export default function TopSecurityToolsStartup() {
         <meta property="og:image" content="https://seccomply.net/assets/images/blog/top-security-tools-startup-2026.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Top 10 security tools for startups — SOC 2 deployment order" />
+        <meta property="og:image:alt" content="Top 10 security tools for startups, SOC 2 deployment order" />
         <meta property="og:site_name" content="SecComply" />
         <meta property="og:locale" content="en_IN" />
         <meta property="article:published_time" content="2026-03-11T08:00:00+05:30" />
@@ -369,7 +369,7 @@ export default function TopSecurityToolsStartup() {
             Top <span className="acc">Security Tools</span> Every<br />Startup Should Know in 2026
           </h1>
           <p className="tools-hero-sub">
-            Startups don't get breached because hackers are brilliant. They get breached because the basics were never in place. These 10 tools fix that — what to deploy, why it matters, and where to begin.
+            Startups don't get breached because hackers are brilliant. They get breached because the basics were never in place. These 10 tools fix that, what to deploy, why it matters, and where to begin.
           </p>
           <div className="tools-author-strip">
             <div className="avatar">BD</div>
@@ -407,8 +407,8 @@ export default function TopSecurityToolsStartup() {
       <div className="art-wrap">
         <article className="art">
 
-          <p>A startup with eleven months of enterprise sales work and a strong product lost a seven-figure deal in two weeks — because a security questionnaire arrived and there was nothing to put in it. No SOC 2. No pen test report. No evidence of access management. The tools simply hadn't been prioritised, and nobody had mapped out which ones to deploy first.</p>
-          <p>This guide fixes that. Ten tools, in the order a startup should deploy them — with what each one does for security posture and for the next enterprise sales conversation.</p>
+          <p>A startup with eleven months of enterprise sales work and a strong product lost a seven-figure deal in two weeks, because a security questionnaire arrived and there was nothing to put in it. No SOC 2. No pen test report. No evidence of access management. The tools simply hadn't been prioritised, and nobody had mapped out which ones to deploy first.</p>
+          <p>This guide fixes that. Ten tools, in the order a startup should deploy them, with what each one does for security posture and for the next enterprise sales conversation.</p>
 
           <div className="pull-quote">
             <p>The startup security stack has never been more accessible. Several tools below have free tiers, most integrate out of the box, and a compliance automation platform at the top means evidence is collected automatically.</p>
@@ -418,10 +418,10 @@ export default function TopSecurityToolsStartup() {
           <section id="tool-1">
             <div className="tool-card anim">
               <div className="tool-num">01</div>
-              <div className="tool-tagline">Start Here — Compliance Foundation</div>
+              <div className="tool-tagline">Start Here, Compliance Foundation</div>
               <div className="tool-name">Vanta / Drata</div>
-              <p className="tool-desc">Start here before anything else. Without a compliance platform providing a live gap dashboard, controls get fixed without knowing what's actually missing. Vanta and Drata connect to AWS, Okta, GitHub, and HR systems and continuously pull SOC 2 evidence automatically — turning three months of manual audit preparation into a background process that runs every day.</p>
-              <div className="tool-fix"><strong>💡 The Fix:</strong> Connect the AWS account, run the gap assessment. A live dashboard appears within 48 hours showing every open control — that dashboard is the entire security roadmap for the next 90 days.</div>
+              <p className="tool-desc">Start here before anything else. Without a compliance platform providing a live gap dashboard, controls get fixed without knowing what's actually missing. Vanta and Drata connect to AWS, Okta, GitHub, and HR systems and continuously pull SOC 2 evidence automatically, turning three months of manual audit preparation into a background process that runs every day.</p>
+              <div className="tool-fix"><strong>💡 The Fix:</strong> Connect the AWS account, run the gap assessment. A live dashboard appears within 48 hours showing every open control, that dashboard is the entire security roadmap for the next 90 days.</div>
               <div className="tool-meta">
                 <span className="tool-badge">SOC 2 Ready</span>
                 <span className="tool-badge">ISO 27001</span>
@@ -436,8 +436,8 @@ export default function TopSecurityToolsStartup() {
               <div className="tool-num">02</div>
               <div className="tool-tagline">Identity & Access</div>
               <div className="tool-name">Okta / JumpCloud</div>
-              <p className="tool-desc">Access control failures are the most common cause of breaches and the most cited deficiency in SOC 2 audits. Okta centralises every employee login, enforces SSO and MFA across all tools, and removes access automatically when someone leaves — in minutes, not weeks. The SOC 2 auditor asks three direct questions: Is MFA enforced? Is access removed on departure? Are access rights reviewed regularly? With Okta, all three answers are yes — with evidence.</p>
-              <div className="tool-fix"><strong>💡 The Fix:</strong> Connect every internal tool to Okta SSO and enforce MFA globally with no exceptions. Closes CC6.1 and CC6.2 — two of the highest-weight SOC 2 criteria.</div>
+              <p className="tool-desc">Access control failures are the most common cause of breaches and the most cited deficiency in SOC 2 audits. Okta centralises every employee login, enforces SSO and MFA across all tools, and removes access automatically when someone leaves, in minutes, not weeks. The SOC 2 auditor asks three direct questions: Is MFA enforced? Is access removed on departure? Are access rights reviewed regularly? With Okta, all three answers are yes, with evidence.</p>
+              <div className="tool-fix"><strong>💡 The Fix:</strong> Connect every internal tool to Okta SSO and enforce MFA globally with no exceptions. Closes CC6.1 and CC6.2, two of the highest-weight SOC 2 criteria.</div>
               <div className="tool-meta">
                 <span className="tool-badge">Closes CC6.1 + CC6.2</span>
                 <span className="tool-badge">From $2/user/month</span>
@@ -451,7 +451,7 @@ export default function TopSecurityToolsStartup() {
               <div className="tool-num">03</div>
               <div className="tool-tagline">Device Management</div>
               <div className="tool-name">Jamf / Kandji</div>
-              <p className="tool-desc">Every unmanaged laptop is an uncontrolled entry point. A developer's MacBook stolen from a coffee shop — unencrypted, not remotely wipeable, with cached AWS credentials — is a reportable incident. Jamf and Kandji enforce full-disk encryption, screen lock, and remote wipe across every company device, and maintain the real-time device inventory auditors specifically ask to see.</p>
+              <p className="tool-desc">Every unmanaged laptop is an uncontrolled entry point. A developer's MacBook stolen from a coffee shop, unencrypted, not remotely wipeable, with cached AWS credentials, is a reportable incident. Jamf and Kandji enforce full-disk encryption, screen lock, and remote wipe across every company device, and maintain the real-time device inventory auditors specifically ask to see.</p>
               <div className="tool-fix"><strong>💡 The Fix:</strong> Deploy MDM from day one for every new hire. Retroactive rollout on thirty laptops is painful. Starting from scratch is effortless.</div>
               <div className="tool-meta">
                 <span className="tool-badge">Jamf from $4/device/month</span>
@@ -465,10 +465,10 @@ export default function TopSecurityToolsStartup() {
               <div className="tool-num">04</div>
               <div className="tool-tagline">Cloud Posture Management</div>
               <div className="tool-name">Wiz / AWS Security Hub</div>
-              <p className="tool-desc">The most common cause of cloud breaches is misconfiguration — a public S3 bucket, an unencrypted database, an IAM role with wildcard permissions. These sit in production for months, invisible to the teams that created them. Cloud Security Posture Management tools scan the entire environment continuously and surface every gap with severity and a specific fix. AWS Security Hub is free. Wiz adds deeper multi-cloud analysis and integrates with Vanta to push findings as SOC 2 evidence automatically.</p>
-              <div className="tool-fix"><strong>💡 The Fix:</strong> Enable AWS Security Hub across all regions — five minutes, zero cost. Set critical findings to alert a Slack channel.</div>
+              <p className="tool-desc">The most common cause of cloud breaches is misconfiguration, a public S3 bucket, an unencrypted database, an IAM role with wildcard permissions. These sit in production for months, invisible to the teams that created them. Cloud Security Posture Management tools scan the entire environment continuously and surface every gap with severity and a specific fix. AWS Security Hub is free. Wiz adds deeper multi-cloud analysis and integrates with Vanta to push findings as SOC 2 evidence automatically.</p>
+              <div className="tool-fix"><strong>💡 The Fix:</strong> Enable AWS Security Hub across all regions, five minutes, zero cost. Set critical findings to alert a Slack channel.</div>
               <div className="tool-meta">
-                <span className="tool-badge">AWS Security Hub — Free</span>
+                <span className="tool-badge">AWS Security Hub, Free</span>
                 <span className="tool-badge">Wiz from ~£12,000/yr</span>
               </div>
             </div>
@@ -480,10 +480,10 @@ export default function TopSecurityToolsStartup() {
               <div className="tool-num">05</div>
               <div className="tool-tagline">Logging & Monitoring</div>
               <div className="tool-name">Datadog / AWS CloudWatch</div>
-              <p className="tool-desc">A SIEM platform aggregates logs from every layer of the infrastructure and provides the alerting and retention that SOC 2 requires. The three alarms auditors check most: console login without MFA, root account usage, and security group modifications. Twelve months of log retention is a hard SOC 2 requirement — and a gap that cannot be fixed retroactively.</p>
+              <p className="tool-desc">A SIEM platform aggregates logs from every layer of the infrastructure and provides the alerting and retention that SOC 2 requires. The three alarms auditors check most: console login without MFA, root account usage, and security group modifications. Twelve months of log retention is a hard SOC 2 requirement, and a gap that cannot be fixed retroactively.</p>
               <div className="tool-fix"><strong>💡 The Fix:</strong> Enable AWS CloudTrail in all regions. Set retention to 12 months. Create the three CloudWatch alarms above. Five minutes, no cost. These three alarms close the most common monitoring gaps found in SOC 2 audits.</div>
               <div className="tool-meta">
-                <span className="tool-badge">CloudWatch — Free</span>
+                <span className="tool-badge">CloudWatch, Free</span>
                 <span className="tool-badge">12-month retention required</span>
               </div>
             </div>
@@ -495,7 +495,7 @@ export default function TopSecurityToolsStartup() {
               <div className="tool-num">06</div>
               <div className="tool-tagline">Code Security</div>
               <div className="tool-name">Snyk</div>
-              <p className="tool-desc">The average Node.js application has over 600 open-source dependencies — any one could contain an actively exploited vulnerability. Snyk scans every pull request and blocks the merge automatically if a critical finding is introduced. Security becomes part of every code change rather than a quarterly review.</p>
+              <p className="tool-desc">The average Node.js application has over 600 open-source dependencies, any one could contain an actively exploited vulnerability. Snyk scans every pull request and blocks the merge automatically if a critical finding is introduced. Security becomes part of every code change rather than a quarterly review.</p>
               <div className="tool-fix"><strong>💡 The Fix:</strong> Install Snyk's GitHub integration in under ten minutes. Enable the PR gate for CVSS 9.0+ findings. Free tier covers unlimited open-source scanning for up to three contributors.</div>
               <div className="tool-meta">
                 <span className="tool-badge">Free tier available</span>
@@ -510,8 +510,8 @@ export default function TopSecurityToolsStartup() {
               <div className="tool-num">07</div>
               <div className="tool-tagline">Secrets Management</div>
               <div className="tool-name">AWS Secrets Manager</div>
-              <p className="tool-desc">Secrets in source code remains one of the most common breach causes — an AWS key committed to GitHub, a database password hardcoded in a deployment script. Secrets Manager stores every credential in an encrypted vault retrieved at runtime. No hardcoded values, no secrets in environment variables, every access logged, every rotation automated.</p>
-              <div className="tool-fix"><strong>💡 The Fix:</strong> Run Trufflehog on the GitHub organisation first — it scans the entire commit history and will almost certainly find something. Rotate immediately, then migrate to Secrets Manager.</div>
+              <p className="tool-desc">Secrets in source code remains one of the most common breach causes, an AWS key committed to GitHub, a database password hardcoded in a deployment script. Secrets Manager stores every credential in an encrypted vault retrieved at runtime. No hardcoded values, no secrets in environment variables, every access logged, every rotation automated.</p>
+              <div className="tool-fix"><strong>💡 The Fix:</strong> Run Trufflehog on the GitHub organisation first, it scans the entire commit history and will almost certainly find something. Rotate immediately, then migrate to Secrets Manager.</div>
               <div className="tool-meta">
                 <span className="tool-badge">Under £15/month</span>
                 <span className="tool-badge">Auto-rotation</span>
@@ -526,7 +526,7 @@ export default function TopSecurityToolsStartup() {
               <div className="tool-tagline">Password Management</div>
               <div className="tool-name">1Password Teams</div>
               <p className="tool-desc">Password reuse is the most common initial access vector in breach investigations. An employee reusing a password across personal and company accounts means any third-party breach becomes a company breach. 1Password enforces strong unique passwords company-wide, enables secure credential sharing, and gives administrators instant visibility into password health across the entire organisation.</p>
-              <div className="tool-fix"><strong>💡 The Fix:</strong> Deploy company-wide in an afternoon. Run Watchtower on day one — it surfaces every reused, weak, or compromised password instantly.</div>
+              <div className="tool-fix"><strong>💡 The Fix:</strong> Deploy company-wide in an afternoon. Run Watchtower on day one, it surfaces every reused, weak, or compromised password instantly.</div>
               <div className="tool-meta">
                 <span className="tool-badge">$3/user/month</span>
                 <span className="tool-badge">Highest impact per £ on this list</span>
@@ -540,7 +540,7 @@ export default function TopSecurityToolsStartup() {
               <div className="tool-num">09</div>
               <div className="tool-tagline">Penetration Testing</div>
               <div className="tool-name">Cobalt / Synack</div>
-              <p className="tool-desc">Automated scanners find known vulnerabilities. Penetration testers find unknown ones — logic flaws and chained misconfigurations a human attacker would look for. SOC 2 auditors require evidence of annual pen testing. Enterprise buyers request the reports directly. A clean report with documented remediation is one of the most powerful assets in any vendor security package.</p>
+              <p className="tool-desc">Automated scanners find known vulnerabilities. Penetration testers find unknown ones, logic flaws and chained misconfigurations a human attacker would look for. SOC 2 auditors require evidence of annual pen testing. Enterprise buyers request the reports directly. A clean report with documented remediation is one of the most powerful assets in any vendor security package.</p>
               <div className="tool-fix"><strong>💡 The Fix:</strong> Book at least 60 days before the SOC 2 audit date. Scope: external network, web application, and AWS cloud. Remediate all critical and high findings before audit day.</div>
               <div className="tool-meta">
                 <span className="tool-badge">Budget £8,000–£16,000</span>
@@ -555,7 +555,7 @@ export default function TopSecurityToolsStartup() {
               <div className="tool-num">10</div>
               <div className="tool-tagline">Perimeter Defence</div>
               <div className="tool-name">Cloudflare</div>
-              <p className="tool-desc">The public application is the most exposed surface — every API endpoint and login form is visible to the internet and probed constantly for SQL injection, XSS, and credential stuffing. Cloudflare sits in front of the application filtering malicious traffic before it reaches the servers, while simultaneously handling HTTPS enforcement and TLS certificate management.</p>
+              <p className="tool-desc">The public application is the most exposed surface, every API endpoint and login form is visible to the internet and probed constantly for SQL injection, XSS, and credential stuffing. Cloudflare sits in front of the application filtering malicious traffic before it reaches the servers, while simultaneously handling HTTPS enforcement and TLS certificate management.</p>
               <div className="tool-fix"><strong>💡 The Fix:</strong> Point DNS to Cloudflare, enable the managed WAF ruleset, enforce HTTPS. Twenty minutes. The free tier handles most of what a startup needs.</div>
               <div className="tool-meta">
                 <span className="tool-badge">Free tier</span>
@@ -570,7 +570,7 @@ export default function TopSecurityToolsStartup() {
               <h3>⚡ 5 Controls to Audit This Week</h3>
               <p style={{fontSize:".88rem",color:"var(--tm)",marginBottom:"16px"}}>These five checks take under two hours combined and surface the gaps most likely to cause first-time audit failures.</p>
               {[
-                ['🔐', 'MFA Status', 'Open the Okta or Google Workspace admin console. If MFA is not 100%, that is the most urgent task — not a sprint item, a this-week item.'],
+                ['🔐', 'MFA Status', 'Open the Okta or Google Workspace admin console. If MFA is not 100%, that is the most urgent task, not a sprint item, a this-week item.'],
                 ['🔑', 'Secrets in Code', 'Run Trufflehog on the GitHub organisation. If hardcoded credentials appear in the commit history, rotate them immediately and migrate to AWS Secrets Manager.'],
                 ['🪣', 'S3 Public Access', 'Enable Block Public Access at the AWS account level. Audit every bucket policy. One public bucket containing customer data is a reportable breach.'],
                 ['🚪', 'Offboarding Gaps', 'Name the last five people who left. Confirm their access to AWS, GitHub, Slack, and the production database has been fully revoked.'],
@@ -587,7 +587,7 @@ export default function TopSecurityToolsStartup() {
           {/* SecComply integration */}
           <section id="seccomply-integration">
             <h2>How SecComply Brings This Together</h2>
-            <p>Every tool above generates security evidence. The problem most startups encounter is that this evidence lives in ten different platforms, in ten different formats, and needs to be manually extracted, organised, and presented to an auditor. That is where most of the 200-plus hours of SOC 2 preparation time goes — not building controls, but proving they exist.</p>
+            <p>Every tool above generates security evidence. The problem most startups encounter is that this evidence lives in ten different platforms, in ten different formats, and needs to be manually extracted, organised, and presented to an auditor. That is where most of the 200-plus hours of SOC 2 preparation time goes, not building controls, but proving they exist.</p>
             <p>SecComply connects to each of these tools and handles that work automatically, mapping evidence simultaneously against SOC 2, ISO 27001, and India's DPDP Act 2023:</p>
             <table className="sc-table">
               <thead>
@@ -596,24 +596,24 @@ export default function TopSecurityToolsStartup() {
               <tbody>
                 {[
                   ['Vanta / Drata', 'Gap data overlaid against ISO 27001 and DPDP Act controls not covered natively'],
-                  ['Okta', 'Continuous access monitoring — MFA status, SSO adoption, access review completion'],
-                  ['Jamf / Kandji', 'Device inventory sync — flags unmanaged or non-compliant endpoints in real time'],
+                  ['Okta', 'Continuous access monitoring, MFA status, SSO adoption, access review completion'],
+                  ['Jamf / Kandji', 'Device inventory sync, flags unmanaged or non-compliant endpoints in real time'],
                   ['Wiz / Security Hub', 'Cloud scanner flags misconfigurations across AWS, GCP, and Azure automatically'],
-                  ['Datadog / CloudWatch', 'Log retention verification — confirms 12-month retention and alerting configuration'],
-                  ['Snyk', 'Vulnerability queue tracking — findings mapped against documented remediation SLAs'],
-                  ['AWS Secrets Manager', 'Secrets hygiene check — verifies zero plaintext credentials across all repositories'],
-                  ['Cobalt / Synack', 'Pen test evidence ingestion — report findings tracked through to full remediation'],
-                  ['Cloudflare', 'WAF evidence — managed ruleset active, HTTPS enforced, TLS 1.2+ compliance confirmed'],
+                  ['Datadog / CloudWatch', 'Log retention verification, confirms 12-month retention and alerting configuration'],
+                  ['Snyk', 'Vulnerability queue tracking, findings mapped against documented remediation SLAs'],
+                  ['AWS Secrets Manager', 'Secrets hygiene check, verifies zero plaintext credentials across all repositories'],
+                  ['Cobalt / Synack', 'Pen test evidence ingestion, report findings tracked through to full remediation'],
+                  ['Cloudflare', 'WAF evidence, managed ruleset active, HTTPS enforced, TLS 1.2+ compliance confirmed'],
                 ].map(([t, d]) => <tr key={t}><td>{t}</td><td>{d}</td></tr>)}
               </tbody>
             </table>
-            <p>The result is a compliance posture that is always current, always auditor-ready, and mapped simultaneously across three frameworks — without the engineering team spending a single hour on evidence collection.</p>
+            <p>The result is a compliance posture that is always current, always auditor-ready, and mapped simultaneously across three frameworks, without the engineering team spending a single hour on evidence collection.</p>
           </section>
 
           {/* CTA */}
           <div className="art-cta anim">
             <h3>Don't let a regulator be the one who finds the gaps</h3>
-            <p>SecComply maps startup controls against SOC 2, ISO 27001, and DPDP Act — and shows exactly what's missing. Book a free compliance gap assessment.</p>
+            <p>SecComply maps startup controls against SOC 2, ISO 27001, and DPDP Act, and shows exactly what's missing. Book a free compliance gap assessment.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Free Gap Assessment →</a>
           </div>
 
@@ -621,8 +621,8 @@ export default function TopSecurityToolsStartup() {
           <section id="faq" className="faq-section">
             <h2>Frequently Asked Questions</h2>
             {[
-              ['What is the most important security tool for a startup?', 'A compliance automation platform (Vanta or Drata) should be the first tool deployed. It maps every security gap against SOC 2, ISO 27001, and DPDP Act controls — turning the rest of the list into a prioritised roadmap with evidence collected automatically.'],
-              ['How much does a startup security stack cost?', 'Several tools on this list are free (AWS Security Hub, AWS CloudTrail, Cloudflare free tier, Snyk free tier). The full paid stack runs approximately £25,000–£40,000 per year — a fraction of the average $4.88M cost of a data breach or the revenue lost from a failed enterprise security review.'],
+              ['What is the most important security tool for a startup?', 'A compliance automation platform (Vanta or Drata) should be the first tool deployed. It maps every security gap against SOC 2, ISO 27001, and DPDP Act controls, turning the rest of the list into a prioritised roadmap with evidence collected automatically.'],
+              ['How much does a startup security stack cost?', 'Several tools on this list are free (AWS Security Hub, AWS CloudTrail, Cloudflare free tier, Snyk free tier). The full paid stack runs approximately £25,000–£40,000 per year, a fraction of the average $4.88M cost of a data breach or the revenue lost from a failed enterprise security review.'],
               ['Which tools are required for SOC 2?', 'SOC 2 doesn\'t mandate specific tools, but auditors expect evidence of: MFA enforcement (Okta), device management (Jamf/Kandji), vulnerability scanning (Snyk), cloud monitoring (Wiz/Security Hub), log retention (Datadog/CloudWatch), secrets management (AWS Secrets Manager), and annual penetration testing (Cobalt/Synack).'],
               ['How long does it take to set up this stack?', 'The free tools (Security Hub, CloudTrail, Cloudflare free tier, Snyk free tier) can be enabled in under two hours total. Okta, 1Password, and Secrets Manager take a day or two to roll out company-wide. Jamf/Kandji needs a week for full device enrolment. Penetration testing requires 60-day lead time.'],
               ['Can a startup in India use these tools?', 'Yes. All ten tools are available in India. Several (Vanta, Drata) offer specific DPDP Act 2023 compliance monitoring. AWS services operate from Mumbai and Hyderabad regions. Okta, Jamf, Snyk, 1Password, and Cloudflare all support Indian businesses and have local billing.'],
@@ -663,7 +663,7 @@ export default function TopSecurityToolsStartup() {
 
           <div className="sidebar-cta">
             <h4 style={{fontSize:".72rem",fontWeight:700,textTransform:"uppercase",letterSpacing:".1em",color:"var(--cy)",marginBottom:"10px"}}>Free Assessment</h4>
-            <p>See exactly which SOC 2 controls are open in your stack — in 48 hours.</p>
+            <p>See exactly which SOC 2 controls are open in your stack, in 48 hours.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Now →</a>
           </div>
 
@@ -681,7 +681,7 @@ export default function TopSecurityToolsStartup() {
             {[
               ['/resources/blog/what-is-cspm-scan', 'What is a CSPM Scan?'],
               ['/resources/blog/skt-breach-compliance-failure', 'SK Telecom: $97M Compliance Failure'],
-              ['/resources/blog/soc2-vs-iso27001', 'SOC 2 vs ISO 27001 — Which First?'],
+              ['/resources/blog/soc2-vs-iso27001', 'SOC 2 vs ISO 27001, Which First?'],
             ].map(([href, label]) => (
               <a key={href} href={href} className="toc-link" style={{borderLeft:"none",paddingLeft:0}}>{label} →</a>
             ))}

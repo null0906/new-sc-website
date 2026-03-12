@@ -16,7 +16,7 @@ export default function CostOfNonCompliance() {
       if (sections.length && tocLinks.length) { const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id)); }); }, { rootMargin: '-60px 0px -55% 0px', threshold: 0 }); sections.forEach(s => obs.observe(s)); }
       const btt = document.getElementById('btt'); window.addEventListener('scroll', () => { if (btt) btt.classList.toggle('vis', window.scrollY > 600); }, { passive: true });
       const url = encodeURIComponent('https://seccomply.net/resources/blog/cost-of-non-compliance');
-      const ttl = encodeURIComponent('The True Cost of Non-Compliance in 2025 — SecComply');
+      const ttl = encodeURIComponent('The True Cost of Non-Compliance in 2025, SecComply');
       const sl = document.getElementById('sl'); const st = document.getElementById('st');
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
       if (st) st.href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + ttl + '&via=seccomply';
@@ -33,7 +33,7 @@ export default function CostOfNonCompliance() {
       {
         "@type": "BlogPosting",
         "headline": "The True Cost of Non-Compliance in 2025",
-        "description": "Fines are the smallest part of non-compliance costs. Data-driven breakdown of what compliance failures actually cost — regulatory penalties, lost deals, breach costs, reputational damage, and opportunity cost — with real case examples.",
+        "description": "Fines are the smallest part of non-compliance costs. Data-driven breakdown of what compliance failures actually cost, regulatory penalties, lost deals, breach costs, reputational damage, and opportunity cost, with real case examples.",
         "image": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/blog/cost-of-non-compliance-2025.png", "width": 1200, "height": 630, "caption": "The true cost of non-compliance in 2025" },
         "author": { "@type": "Person", "name": "Soham Sawant", "worksFor": { "@type": "Organization", "name": "SecComply" } },
         "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } },
@@ -44,9 +44,9 @@ export default function CostOfNonCompliance() {
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "What is the average cost of a data breach in 2025?", "acceptedAnswer": { "@type": "Answer", "text": "The global average cost of a data breach in 2024 reached $4.88 million according to IBM's Cost of a Data Breach Report — the highest on record. For Indian organisations specifically, the average was $2.35 million, a 39% increase over three years." } },
-          { "@type": "Question", "name": "Is the cost of compliance higher than non-compliance?", "acceptedAnswer": { "@type": "Answer", "text": "No. Research consistently shows compliance costs are 2.71 times lower than non-compliance costs. The Ponemon Institute found that the average cost of non-compliance is $14.82 million, compared to $5.47 million for maintaining compliance — a difference of $9.35 million." } },
-          { "@type": "Question", "name": "What are the hidden costs of non-compliance?", "acceptedAnswer": { "@type": "Answer", "text": "The hidden costs — which far exceed fines — include lost sales from failed security questionnaires, deal delays, post-breach remediation, increased cyber insurance premiums, legal fees, staff distraction from product work, and long-term reputational damage that affects hiring, fundraising, and customer retention." } }
+          { "@type": "Question", "name": "What is the average cost of a data breach in 2025?", "acceptedAnswer": { "@type": "Answer", "text": "The global average cost of a data breach in 2024 reached $4.88 million according to IBM's Cost of a Data Breach Report, the highest on record. For Indian organisations specifically, the average was $2.35 million, a 39% increase over three years." } },
+          { "@type": "Question", "name": "Is the cost of compliance higher than non-compliance?", "acceptedAnswer": { "@type": "Answer", "text": "No. Research consistently shows compliance costs are 2.71 times lower than non-compliance costs. The Ponemon Institute found that the average cost of non-compliance is $14.82 million, compared to $5.47 million for maintaining compliance, a difference of $9.35 million." } },
+          { "@type": "Question", "name": "What are the hidden costs of non-compliance?", "acceptedAnswer": { "@type": "Answer", "text": "The hidden costs, which far exceed fines, include lost sales from failed security questionnaires, deal delays, post-breach remediation, increased cyber insurance premiums, legal fees, staff distraction from product work, and long-term reputational damage that affects hiring, fundraising, and customer retention." } }
         ]
       },
       {
@@ -64,8 +64,8 @@ export default function CostOfNonCompliance() {
   return (
     <Layout>
       <Head>
-        <title>The True Cost of Non-Compliance in 2025 — SecComply</title>
-        <meta name="description" content="Fines are the smallest part. Data-driven breakdown of what compliance failures actually cost in 2025 — regulatory penalties, lost deals, breach remediation, and reputational damage — with real case examples." />
+        <title>The True Cost of Non-Compliance in 2025, SecComply</title>
+        <meta name="description" content="Fines are the smallest part. Data-driven breakdown of what compliance failures actually cost in 2025, regulatory penalties, lost deals, breach remediation, and reputational damage, with real case examples." />
         <meta name="keywords" content="cost of non-compliance 2025, GDPR fine, data breach cost India, SOC 2 lost deals, compliance ROI, security compliance cost benefit, DPDP Act penalty, ISO 27001 business value, startup compliance cost" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="author" content="Soham Sawant" /><meta name="language" content="en-IN" />
@@ -74,7 +74,7 @@ export default function CostOfNonCompliance() {
         <meta name="theme-color" content="#020617" /><meta charSet="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="The True Cost of Non-Compliance in 2025" />
-        <meta property="og:description" content="Fines are the smallest part. Data-driven breakdown of what compliance failures actually cost — regulatory penalties, lost deals, breach costs, and reputational damage." />
+        <meta property="og:description" content="Fines are the smallest part. Data-driven breakdown of what compliance failures actually cost, regulatory penalties, lost deals, breach costs, and reputational damage." />
         <meta property="og:url" content="https://seccomply.net/resources/blog/cost-of-non-compliance" />
         <meta property="og:image" content="https://seccomply.net/assets/images/blog/cost-of-non-compliance-2025.png" />
         <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
@@ -188,7 +188,7 @@ export default function CostOfNonCompliance() {
           </nav>
           <div className="b-cat-badge">💰 Compliance</div>
           <h1 className="b-hero-h1">The <span className="acc">True Cost</span> of<br />Non-Compliance in 2025</h1>
-          <p className="b-hero-sub">Most founders think of compliance as a cost centre. The data tells the opposite story. Non-compliance costs 2.71× more than compliance — and regulatory fines are only the beginning. Here is the full breakdown.</p>
+          <p className="b-hero-sub">Most founders think of compliance as a cost centre. The data tells the opposite story. Non-compliance costs 2.71× more than compliance, and regulatory fines are only the beginning. Here is the full breakdown.</p>
           <div className="b-author-strip">
             <div className="avatar">SS</div>
             <div>
@@ -223,11 +223,11 @@ export default function CostOfNonCompliance() {
         <article className="art">
 
           <section id="intro">
-            <p>The conversation about compliance usually starts with fines. GDPR maximum is €20 million. DPDP Act reaches ₹250 crore. And yes — those numbers are attention-grabbing. But if you are making a business case for compliance investment, regulatory penalties are actually the least interesting part of the equation.</p>
+            <p>The conversation about compliance usually starts with fines. GDPR maximum is €20 million. DPDP Act reaches ₹250 crore. And yes, those numbers are attention-grabbing. But if you are making a business case for compliance investment, regulatory penalties are actually the least interesting part of the equation.</p>
             <p>The real cost of non-compliance is distributed across six categories, most of which never appear in a headline but collectively dwarf the fine amount. This article breaks all six down with data, real cases, and the math that actually moves finance teams.</p>
             <div className="key-takeaway">
               <strong>🎯 The Core Finding</strong>
-              <p>The Ponemon Institute found that the average cost of non-compliance is $14.82 million — compared to $5.47 million to maintain compliance. The gap is $9.35 million. For most startups, the calculation is even starker because a single lost enterprise deal can cost more than a year of compliance tooling.</p>
+              <p>The Ponemon Institute found that the average cost of non-compliance is $14.82 million, compared to $5.47 million to maintain compliance. The gap is $9.35 million. For most startups, the calculation is even starker because a single lost enterprise deal can cost more than a year of compliance tooling.</p>
             </div>
           </section>
 
@@ -235,7 +235,7 @@ export default function CostOfNonCompliance() {
             <h2>The Six Real Costs of Non-Compliance</h2>
             <div className="cost-grid anim">
               {[
-                { icon: '⚖️', label: 'Regulatory Fines', amount: 'Up to ₹250 Cr', desc: 'DPDP Act, GDPR, PCI-DSS, and sector-specific regulators can impose fines per incident. These are the most visible — but not the largest — cost.' },
+                { icon: '⚖️', label: 'Regulatory Fines', amount: 'Up to ₹250 Cr', desc: 'DPDP Act, GDPR, PCI-DSS, and sector-specific regulators can impose fines per incident. These are the most visible, but not the largest, cost.' },
                 { icon: '🤝', label: 'Lost Revenue', amount: '40% of deals', desc: 'Enterprise buyers now require SOC 2 or ISO 27001 before signing. Failed security questionnaires kill deals that are weeks from close.' },
                 { icon: '🔥', label: 'Breach Remediation', amount: '$4.88M avg', desc: 'Post-breach costs: forensics, legal, notification, credit monitoring, system rebuild, and increased insurance premiums for 3+ years.' },
                 { icon: '📰', label: 'Reputational Damage', amount: '22% churn', desc: 'IBM data shows 22% of customers leave a breached brand within a year. Enterprise customers rarely return. The brand recovery timeline is 3–5 years.' },
@@ -255,12 +255,12 @@ export default function CostOfNonCompliance() {
           
             <figure className="b-figure">
               <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=760&q=80&auto=format&fit=crop" alt="Financial cost analysis and business risk from non-compliance" loading="lazy" />
-              <figcaption>The Ponemon Institute found that non-compliance costs organisations 2.71× more than the cost of maintaining compliance — a gap that widens every year as enforcement intensifies.</figcaption>
+              <figcaption>The Ponemon Institute found that non-compliance costs organisations 2.71× more than the cost of maintaining compliance, a gap that widens every year as enforcement intensifies.</figcaption>
             </figure>
 
           <section id="revenue-cost">
             <h2>The Revenue Cost: What Non-Compliance Costs in Lost Deals</h2>
-            <p>This is the cost that most startups discover too late — usually when they are 3 weeks from closing a ₹2 crore annual contract and the enterprise buyer sends a 200-question security questionnaire they cannot answer.</p>
+            <p>This is the cost that most startups discover too late, usually when they are 3 weeks from closing a ₹2 crore annual contract and the enterprise buyer sends a 200-question security questionnaire they cannot answer.</p>
             <p>Research by Vanta found that <strong>40% of enterprise deals</strong> are delayed or lost because the vendor cannot demonstrate security compliance. For B2B SaaS startups targeting mid-market and enterprise in India, the US, or Europe, this is the most direct line from compliance gap to revenue impact.</p>
             <div className="info-card anim">
               <div className="info-card-title">📊 The Deal Cycle Impact</div>
@@ -268,7 +268,7 @@ export default function CostOfNonCompliance() {
                 <li><strong>SOC 2 absent:</strong> US and UK enterprise buyers will not shortlist vendors without it. Expected revenue impact: 20–35% of addressable enterprise pipeline blocked at qualification stage.</li>
                 <li><strong>ISO 27001 absent:</strong> European and government contracts require it. Deals involving BFSI, healthcare, or critical infrastructure in India also increasingly require ISO 27001.</li>
                 <li><strong>DPDP Act non-compliance:</strong> Indian enterprise customers face their own regulatory obligations. Vendors that cannot demonstrate DPDP Act compliance become a liability in their supply chain.</li>
-                <li><strong>Security questionnaire failure:</strong> Even where no specific certification is required, failing a buyer's internal security questionnaire causes deal delays of 4–12 weeks — long enough to lose deals to compliant competitors.</li>
+                <li><strong>Security questionnaire failure:</strong> Even where no specific certification is required, failing a buyer's internal security questionnaire causes deal delays of 4–12 weeks, long enough to lose deals to compliant competitors.</li>
               </ul>
             </div>
             <div className="pull-quote">
@@ -278,7 +278,7 @@ export default function CostOfNonCompliance() {
 
           <section id="breach-cost">
             <h2>The Breach Cost: What a Security Incident Actually Costs</h2>
-            <p>IBM's 2024 Cost of a Data Breach Report puts the global average at $4.88 million — a record high. For Indian organisations specifically, the average is $2.35 million, representing a 39% increase over the previous three years as India's digital economy scale has made Indian companies higher-value targets.</p>
+            <p>IBM's 2024 Cost of a Data Breach Report puts the global average at $4.88 million, a record high. For Indian organisations specifically, the average is $2.35 million, representing a 39% increase over the previous three years as India's digital economy scale has made Indian companies higher-value targets.</p>
             <p>That $2.35 million is distributed across four phases:</p>
             <table className="sc-table">
               <thead><tr><th>Phase</th><th>Cost Component</th><th>Typical Range</th></tr></thead>
@@ -307,22 +307,22 @@ export default function CostOfNonCompliance() {
 
             <div className="case-card anim">
               <div className="case-tag">GDPR · €1.2 Billion Fine</div>
-              <h3>Meta Ireland — May 2023</h3>
-              <p>The Irish Data Protection Commission fined Meta €1.2 billion for transferring EU user data to the US without adequate safeguards under GDPR. The fine was the largest GDPR penalty issued to that point and required Meta to suspend all EU-to-US data transfers within 5 months. The compliance failure was known for years — the enforcement timeline simply caught up.</p>
+              <h3>Meta Ireland, May 2023</h3>
+              <p>The Irish Data Protection Commission fined Meta €1.2 billion for transferring EU user data to the US without adequate safeguards under GDPR. The fine was the largest GDPR penalty issued to that point and required Meta to suspend all EU-to-US data transfers within 5 months. The compliance failure was known for years, the enforcement timeline simply caught up.</p>
               <div className="fine">📌 Direct fine: €1.2B · Indirect impact: structural reorganisation of EU data infrastructure, estimated €400M+ additional remediation cost</div>
             </div>
 
             <div className="case-card anim">
               <div className="case-tag">Data Breach · $97M+ Total Cost</div>
-              <h3>SK Telecom — 2024</h3>
-              <p>South Korea's largest telecom suffered a breach affecting 23 million subscriber records — nearly half the country's population. The investigation found no encryption on stored data, weak access controls, and a delayed breach notification timeline. The ₹800+ crore equivalent fine was only a fraction of the total cost, which included SIM replacement for millions of customers, regulatory remediation orders, and significant subscriber churn.</p>
+              <h3>SK Telecom, 2024</h3>
+              <p>South Korea's largest telecom suffered a breach affecting 23 million subscriber records, nearly half the country's population. The investigation found no encryption on stored data, weak access controls, and a delayed breach notification timeline. The ₹800+ crore equivalent fine was only a fraction of the total cost, which included SIM replacement for millions of customers, regulatory remediation orders, and significant subscriber churn.</p>
               <div className="fine">📌 Fine: ~$9.7M · Total estimated cost: $97M+ · Customer impact: 23M records</div>
             </div>
 
             <div className="case-card anim">
               <div className="case-tag">PCI-DSS · $18.6M Fine</div>
-              <h3>Heartland Payment Systems — Historic Case, Still Relevant</h3>
-              <p>130 million card records compromised through SQL injection — a vulnerability that basic web application testing would have caught. The company was PCI-DSS compliant on paper but had not implemented the controls meaningfully. Post-breach costs exceeded $140 million including fines, legal settlements, and rebranding. The company was acquired within years of the breach.</p>
+              <h3>Heartland Payment Systems, Historic Case, Still Relevant</h3>
+              <p>130 million card records compromised through SQL injection, a vulnerability that basic web application testing would have caught. The company was PCI-DSS compliant on paper but had not implemented the controls meaningfully. Post-breach costs exceeded $140 million including fines, legal settlements, and rebranding. The company was acquired within years of the breach.</p>
               <div className="fine">📌 Fine: $18.6M · Total cost: $140M+ · Outcome: acquisition under duress</div>
             </div>
           </section>
@@ -335,7 +335,7 @@ export default function CostOfNonCompliance() {
               <tbody>
                 {[
                   ['Enterprise deal eligibility', '~60% of deals blocked at qualification', 'Full pipeline accessible'],
-                  ['Average deal cycle (enterprise)', '+4–12 weeks security review delay', 'Standard cycle — security pre-validated'],
+                  ['Average deal cycle (enterprise)', '+4–12 weeks security review delay', 'Standard cycle, security pre-validated'],
                   ['Cyber insurance premium', '30–60% higher for non-certified orgs', 'Standard or reduced premium'],
                   ['Post-breach average cost', '$2.35M (Indian avg)', '$860K with IR plan + DevSecOps'],
                   ['Due diligence in fundraising', 'Risk flags → valuation discount', 'Clean security posture → full valuation'],
@@ -348,13 +348,13 @@ export default function CostOfNonCompliance() {
 
           <section id="where-to-start">
             <h2>Where to Start: The First 30 Days</h2>
-            <p>The goal in the first 30 days is not to achieve certification — it is to close the gaps that create the highest exposure right now.</p>
+            <p>The goal in the first 30 days is not to achieve certification, it is to close the gaps that create the highest exposure right now.</p>
             <div className="info-card anim">
               <div className="info-card-title">📅 30-Day Non-Compliance Risk Reduction Plan</div>
               <ul>
                 <li><strong>Week 1:</strong> Run a gap assessment. Map every system, data store, and vendor against the requirements of your target framework (SOC 2, ISO 27001, or DPDP Act). Prioritise by: likelihood of audit finding × potential revenue impact.</li>
                 <li><strong>Week 2:</strong> Enforce MFA across all critical systems. This single control closes the most common audit finding and reduces breach probability by the largest margin of any single action.</li>
-                <li><strong>Week 2–3:</strong> Conduct an access review. Remove all users with excess permissions. Document the review — it is evidence for every compliance framework.</li>
+                <li><strong>Week 2–3:</strong> Conduct an access review. Remove all users with excess permissions. Document the review, it is evidence for every compliance framework.</li>
                 <li><strong>Week 3:</strong> Draft an incident response procedure. Even a one-page document satisfies the core requirement and starts the DPDP Act breach notification clock correctly.</li>
                 <li><strong>Week 4:</strong> Engage a compliance partner (or automation platform) to handle continuous evidence collection. The maintenance cost drops by 60–80% when controls are automated rather than manually managed.</li>
               </ul>
@@ -363,15 +363,15 @@ export default function CostOfNonCompliance() {
 
           <div className="art-cta anim">
             <h3>Calculate your specific compliance ROI</h3>
-            <p>SecComply runs a 48-hour gap assessment that quantifies your current exposure in revenue terms — blocked deals, breach probability, and regulatory fine risk — and maps the fastest path to certification.</p>
+            <p>SecComply runs a 48-hour gap assessment that quantifies your current exposure in revenue terms, blocked deals, breach probability, and regulatory fine risk, and maps the fastest path to certification.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Free Assessment →</a>
           </div>
 
           <section id="faq" className="faq-section">
             <h2>Frequently Asked Questions</h2>
             {[
-              ['Is the cost of compliance higher than the cost of non-compliance?', 'No. Research consistently shows compliance costs are 2.71× lower than non-compliance costs. The Ponemon Institute found the average cost of non-compliance is $14.82 million, compared to $5.47 million to maintain compliance — a $9.35 million gap. For startups, the deal-loss calculation alone typically justifies the investment within the first year.'],
-              ['What is the average cost of a data breach in India?', 'According to IBM\'s 2024 Cost of a Data Breach Report, the average cost for Indian organisations is $2.35 million — a 39% increase over three years. Organisations with an incident response plan reduce this by an average of $1.49 million. Organisations with high DevSecOps maturity save an average of $1.66 million.'],
+              ['Is the cost of compliance higher than the cost of non-compliance?', 'No. Research consistently shows compliance costs are 2.71× lower than non-compliance costs. The Ponemon Institute found the average cost of non-compliance is $14.82 million, compared to $5.47 million to maintain compliance, a $9.35 million gap. For startups, the deal-loss calculation alone typically justifies the investment within the first year.'],
+              ['What is the average cost of a data breach in India?', 'According to IBM\'s 2024 Cost of a Data Breach Report, the average cost for Indian organisations is $2.35 million, a 39% increase over three years. Organisations with an incident response plan reduce this by an average of $1.49 million. Organisations with high DevSecOps maturity save an average of $1.66 million.'],
               ['How does non-compliance affect fundraising?', 'Enterprise-grade investors (Series A and above) now run security due diligence as a standard part of the process. Security gaps surface as risk flags and can result in valuation discounts, additional warranties and indemnities in term sheets, or blocked closes. SOC 2 or ISO 27001 certification removes this friction entirely.'],
               ['What are the DPDP Act penalties a startup could face?', 'Penalties range from ₹10,000 for individual rights violations up to ₹250 crore for a data breach resulting from inadequate security safeguards. Failure to notify the Data Protection Board within 72 hours of a breach carries a separate ₹200 crore penalty. Penalties are per-instance, not annual caps.'],
               ['How long does it take to become compliant?', 'SOC 2 Type I can be achieved in 8–12 weeks with a compliance automation platform. ISO 27001 typically takes 4–6 months. The DPDP Act has no certification pathway yet, but demonstrable compliance readiness (documented controls, consent architecture, breach response plan) can be established within 6–8 weeks.'],
@@ -418,8 +418,8 @@ export default function CostOfNonCompliance() {
             <h4>Related Reading</h4>
             {[
               ['/resources/blog/top-10-security-controls','Top 10 Security Controls for Startups'],
-              ['/resources/blog/soc2-vs-iso27001','SOC 2 vs ISO 27001 — Which First?'],
-              ['/resources/blog/dpdp-act-indian-startups','DPDP Act 2023 — Full Guide'],
+              ['/resources/blog/soc2-vs-iso27001','SOC 2 vs ISO 27001, Which First?'],
+              ['/resources/blog/dpdp-act-indian-startups','DPDP Act 2023, Full Guide'],
             ].map(([href, label]) => (
               <a key={href} href={href} className="toc-link" style={{borderLeft:"none",paddingLeft:0}}>{label} →</a>
             ))}

@@ -19,11 +19,11 @@ export default function CloudMisconfigurations() {
   }, [])
 
   const faqs = [
-    { q: 'What is the most common cause of cloud breaches?', a: 'Customer misconfiguration — not provider vulnerabilities. Gartner found that through 2025, 99% of cloud security failures were caused by the customer, not AWS, GCP, or Azure. Public S3 buckets, overpermissive IAM roles, and missing logging are the top culprits.' },
+    { q: 'What is the most common cause of cloud breaches?', a: 'Customer misconfiguration, not provider vulnerabilities. Gartner found that through 2025, 99% of cloud security failures were caused by the customer, not AWS, GCP, or Azure. Public S3 buckets, overpermissive IAM roles, and missing logging are the top culprits.' },
     { q: 'How quickly can attackers find a public S3 bucket?', a: 'Within hours of creation. Automated scanners and dedicated search engines continuously probe the internet for exposed cloud storage. The Capital One breach is a real-world example of what happens when an S3 bucket and an overpermissive IAM role are left unchecked.' },
     { q: 'Can I enable encryption on an existing unencrypted RDS database?', a: 'Not directly. AWS does not allow enabling encryption on an existing unencrypted RDS instance. You must create an encrypted snapshot of the database and restore a new instance from it. This is why encryption should be enabled at creation time.' },
     { q: 'How do these misconfigurations affect SOC 2 audits?', a: 'Each of the five maps directly to SOC 2 Common Criteria controls. Public storage buckets fail CC6.6, overpermissive IAM fails CC6.1 and CC6.3, missing encryption fails CC6.7, open security groups fail CC6.6, and disabled logging fails CC4.1 and CC7.1.' },
-    { q: 'Is a manual quarterly audit enough to keep cloud environments secure?', a: 'No. Cloud environments change constantly — a bucket that was private last week may be public today. Manual audits capture a point in time. Without continuous posture monitoring, misconfigurations accumulate between reviews and often go undetected until a breach or audit reveals them.' },
+    { q: 'Is a manual quarterly audit enough to keep cloud environments secure?', a: 'No. Cloud environments change constantly, a bucket that was private last week may be public today. Manual audits capture a point in time. Without continuous posture monitoring, misconfigurations accumulate between reviews and often go undetected until a breach or audit reveals them.' },
   ]
 
   const shareUrl = 'https://www.seccomply.in/resources/blog/top-5-cloud-misconfigurations'
@@ -32,9 +32,9 @@ export default function CloudMisconfigurations() {
     <Layout>
       <Head>
         <title>Top 5 Cloud Misconfigurations and How to Fix Them | SecComply</title>
-        <meta name="description" content="The five cloud misconfigurations that appear most often in breach investigations — with exact fixes for AWS S3, IAM, encryption, security groups, and logging." />
+        <meta name="description" content="The five cloud misconfigurations that appear most often in breach investigations, with exact fixes for AWS S3, IAM, encryption, security groups, and logging." />
         <meta property="og:title" content="Top 5 Cloud Misconfigurations and How to Fix Them" />
-        <meta property="og:description" content="99% of cloud breaches are the customer's fault. Here are the five misconfigurations that appear most often — and exactly how to fix each one." />
+        <meta property="og:description" content="99% of cloud breaches are the customer's fault. Here are the five misconfigurations that appear most often, and exactly how to fix each one." />
         <meta property="og:image" content="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&h=630&fit=crop" />
         <meta property="og:url" content={shareUrl} />
         <meta property="og:type" content="article" />
@@ -130,25 +130,25 @@ export default function CloudMisconfigurations() {
       <div className="b-wrap">
         <div className="b-layout">
           <article className="b-article">
-            <p>Cloud infrastructure gets breached not because attackers are sophisticated — but because a setting was left on default, a permission was never cleaned up, or a log was never turned on. Here are the five misconfigurations that appear most often in breach investigations, and exactly what to do about each one.</p>
-            <p>Gartner put a number on this: through 2025, <strong style={{color:'#E2E8F0'}}>99% of cloud security failures were the customer's fault</strong>, not the cloud provider's. AWS, GCP, and Azure are secure by design. The misconfiguration is always on the other side of the shared responsibility model — in the settings, policies, and access controls that engineering teams configure and own.</p>
+            <p>Cloud infrastructure gets breached not because attackers are sophisticated, but because a setting was left on default, a permission was never cleaned up, or a log was never turned on. Here are the five misconfigurations that appear most often in breach investigations, and exactly what to do about each one.</p>
+            <p>Gartner put a number on this: through 2025, <strong style={{color:'#E2E8F0'}}>99% of cloud security failures were the customer's fault</strong>, not the cloud provider's. AWS, GCP, and Azure are secure by design. The misconfiguration is always on the other side of the shared responsibility model, in the settings, policies, and access controls that engineering teams configure and own.</p>
 
             <figure className="b-figure">
               <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&h=520&fit=crop" alt="Cloud security infrastructure monitoring" loading="lazy" />
-              <figcaption>Cloud misconfiguration accounts for the majority of modern breaches — not sophisticated attacker techniques.</figcaption>
+              <figcaption>Cloud misconfiguration accounts for the majority of modern breaches, not sophisticated attacker techniques.</figcaption>
             </figure>
 
             <h2>The Shared Responsibility Problem</h2>
-            <p>The provider secures the hardware, network, and hypervisor. Everything above that layer — IAM policies, encryption settings, network access controls, storage permissions — belongs to the customer. That boundary is where all five misconfigurations below live. None of them are failures of the cloud platform. All of them are failures of configuration — usually introduced quickly, under pressure, and never revisited.</p>
+            <p>The provider secures the hardware, network, and hypervisor. Everything above that layer, IAM policies, encryption settings, network access controls, storage permissions, belongs to the customer. That boundary is where all five misconfigurations below live. None of them are failures of the cloud platform. All of them are failures of configuration, usually introduced quickly, under pressure, and never revisited.</p>
 
             <div className="b-num-card">
-              <div className="b-num-card-head"><div className="b-num">1</div><div className="b-num-title">Public S3 Buckets — The Breach That Keeps Happening</div></div>
-              <p>An S3 bucket set to public access means every file in it is readable by anyone on the internet. Finding that URL takes less than a minute. Capital One, GoDaddy, and dozens of less-reported breaches trace directly to publicly accessible cloud storage. The exposure is often discovered not by the company but by a security researcher — or an attacker who had been quietly exfiltrating data for months.</p>
-              <div className="b-fix"><strong>📌 The Fix</strong><p>Enable S3 Block Public Access at the AWS account level — a single toggle that prevents any bucket from being made public. Run AWS Trusted Advisor or Prowler to audit existing buckets. For genuinely public content, use CloudFront as the delivery layer and keep the origin bucket private.</p></div>
+              <div className="b-num-card-head"><div className="b-num">1</div><div className="b-num-title">Public S3 Buckets, The Breach That Keeps Happening</div></div>
+              <p>An S3 bucket set to public access means every file in it is readable by anyone on the internet. Finding that URL takes less than a minute. Capital One, GoDaddy, and dozens of less-reported breaches trace directly to publicly accessible cloud storage. The exposure is often discovered not by the company but by a security researcher, or an attacker who had been quietly exfiltrating data for months.</p>
+              <div className="b-fix"><strong>📌 The Fix</strong><p>Enable S3 Block Public Access at the AWS account level, a single toggle that prevents any bucket from being made public. Run AWS Trusted Advisor or Prowler to audit existing buckets. For genuinely public content, use CloudFront as the delivery layer and keep the origin bucket private.</p></div>
             </div>
 
             <div className="b-num-card">
-              <div className="b-num-card-head"><div className="b-num">2</div><div className="b-num-title">Overly Permissive IAM Roles — The Widest Open Door</div></div>
+              <div className="b-num-card-head"><div className="b-num">2</div><div className="b-num-title">Overly Permissive IAM Roles, The Widest Open Door</div></div>
               <p>The Capital One breach of 2019 used an overpermissioned IAM role to enumerate and download data from over 700 S3 buckets, exposing 100 million customer records at a cost of over $190 million. The root cause: a role with <code>AdministratorAccess</code> attached to an internet-facing service. The principle of least privilege exists precisely to prevent this.</p>
               <div className="b-fix"><strong>📌 The Fix</strong><p>Run AWS IAM Access Analyzer across the entire environment. It identifies roles with unused permissions, wildcard resource access, and over-scoped policies. Replace <code>AdministratorAccess</code> with specific resource-scoped policies. Enable IAM Access Analyzer at the organisation level to flag new overpermissive policies automatically.</p></div>
             </div>
@@ -160,19 +160,19 @@ export default function CloudMisconfigurations() {
 
             <div className="b-num-card">
               <div className="b-num-card-head"><div className="b-num">3</div><div className="b-num-title">Unencrypted Data at Rest and in Transit</div></div>
-              <p>SK Telecom's 2025 breach — resulting in a £97 million regulatory fine — listed unencrypted storage of USIM authentication keys as the primary compliance failure. 26 million of the most sensitive credentials were stored in plaintext. No encryption. No key management. No protection. RDS databases, S3 buckets, EBS volumes, and internal service connections are all common encryption gaps in cloud environments.</p>
+              <p>SK Telecom's 2025 breach, resulting in a £97 million regulatory fine, listed unencrypted storage of USIM authentication keys as the primary compliance failure. 26 million of the most sensitive credentials were stored in plaintext. No encryption. No key management. No protection. RDS databases, S3 buckets, EBS volumes, and internal service connections are all common encryption gaps in cloud environments.</p>
               <div className="b-fix"><strong>📌 The Fix</strong><p>For RDS, enable encryption at creation time (it cannot be added to an existing instance without migration). For S3, apply a bucket policy that denies any <code>PutObject</code> without server-side encryption. Enforce TLS 1.2 minimum at the load balancer. AWS Certificate Manager provides free TLS certificates for all public endpoints.</p></div>
             </div>
 
             <div className="b-num-card">
-              <div className="b-num-card-head"><div className="b-num">4</div><div className="b-num-title">Unrestricted Security Group Rules — The Forgotten Open Port</div></div>
+              <div className="b-num-card-head"><div className="b-num">4</div><div className="b-num-title">Unrestricted Security Group Rules, The Forgotten Open Port</div></div>
               <p>A rule allowing inbound traffic from <code>0.0.0.0/0</code> on any port is an open invitation to the entire internet. An RDS instance with port 3306 open to the world will be found by port scanners within hours. This misconfiguration appears in environments of every scale and is flagged in virtually every cloud security assessment.</p>
-              <div className="b-fix"><strong>📌 The Fix</strong><p>Enable AWS Security Hub with the Foundational Security Best Practices standard — it automatically flags security groups with unrestricted inbound access. Replace all <code>0.0.0.0/0</code> source rules with specific IP ranges or VPC CIDR blocks. For SSH access, use AWS Systems Manager Session Manager — fully audited shell access with no inbound ports required.</p></div>
+              <div className="b-fix"><strong>📌 The Fix</strong><p>Enable AWS Security Hub with the Foundational Security Best Practices standard, it automatically flags security groups with unrestricted inbound access. Replace all <code>0.0.0.0/0</code> source rules with specific IP ranges or VPC CIDR blocks. For SSH access, use AWS Systems Manager Session Manager, fully audited shell access with no inbound ports required.</p></div>
             </div>
 
             <div className="b-num-card">
-              <div className="b-num-card-head"><div className="b-num">5</div><div className="b-num-title">Disabled Logging — Flying Blind</div></div>
-              <p>The median time to identify a breach in 2024 was 194 days. In most cases, the logs that would have revealed the intrusion either were not being collected, were not retained long enough, or were not being monitored. Logging is the one control that cannot be fixed retroactively — if CloudTrail was not enabled in two AWS regions, those 12 months of API activity are gone forever.</p>
+              <div className="b-num-card-head"><div className="b-num">5</div><div className="b-num-title">Disabled Logging, Flying Blind</div></div>
+              <p>The median time to identify a breach in 2024 was 194 days. In most cases, the logs that would have revealed the intrusion either were not being collected, were not retained long enough, or were not being monitored. Logging is the one control that cannot be fixed retroactively, if CloudTrail was not enabled in two AWS regions, those 12 months of API activity are gone forever.</p>
               <div className="b-fix"><strong>📌 The Fix</strong><p>Enable AWS CloudTrail in all regions with log file validation. Store logs in a dedicated S3 bucket with object lock enabled. Enable VPC Flow Logs on every production VPC with 12-month retention. Create five CloudWatch alarms: root account usage, console login without MFA, CloudTrail configuration changes, security group modifications, and unusual data transfer volumes.</p></div>
             </div>
 
@@ -221,7 +221,7 @@ export default function CloudMisconfigurations() {
             </div>
             <div className="b-cta-box">
               <h4>Cloud Posture Review</h4>
-              <p>SecComply continuously monitors your cloud infrastructure against SOC 2, ISO 27001, and DPDP Act — and flags every gap before an auditor finds it.</p>
+              <p>SecComply continuously monitors your cloud infrastructure against SOC 2, ISO 27001, and DPDP Act, and flags every gap before an auditor finds it.</p>
               <a href="/contact" className="b-cta-btn">Book a Free Gap Assessment →</a>
             </div>
             <div className="b-sidebar-box">

@@ -19,11 +19,11 @@ export default function Soc2TypeIvsTypeII() {
   }, [])
 
   const faqs = [
-    { q: 'What is the main difference between SOC 2 Type I and Type II?', a: 'Type I is a snapshot — it evaluates whether controls are well designed as of a specific date. Type II covers a 6–12 month observation window and evaluates whether those controls actually operated as designed throughout that period. Type II is what enterprise buyers require.' },
+    { q: 'What is the main difference between SOC 2 Type I and Type II?', a: 'Type I is a snapshot, it evaluates whether controls are well designed as of a specific date. Type II covers a 6–12 month observation window and evaluates whether those controls actually operated as designed throughout that period. Type II is what enterprise buyers require.' },
     { q: 'How long does it take to get a SOC 2 Type II report?', a: 'At minimum 6 months from when the observation period begins, plus time for fieldwork and reporting. Most companies take 9–14 months end-to-end from starting control implementation to receiving the final Type II report.' },
     { q: 'Can a startup start with SOC 2 Type I?', a: 'Yes, and it is the recommended path. Type I forces the design discipline needed to build controls correctly. It creates exactly the foundation required to start an observation period for Type II. Many early-stage buyers will accept Type I as a starting point, especially paired with a clear roadmap to Type II.' },
     { q: 'What are the five SOC 2 Trust Services Criteria?', a: 'Security (mandatory for all), Availability, Processing Integrity, Confidentiality, and Privacy. Organisations choose which criteria are relevant to their business. Security is always required. Healthcare SaaS platforms often add Availability and Confidentiality; payment processors typically add Processing Integrity.' },
-    { q: 'Why do enterprise buyers specifically ask for Type II, not Type I?', a: 'Type II demonstrates a track record — documented evidence that controls ran week after week, not just on the day an auditor arrived. Enterprise procurement teams treat it as proof of sustained operational security, not just a design exercise. It reduces the need to take security posture on faith.' },
+    { q: 'Why do enterprise buyers specifically ask for Type II, not Type I?', a: 'Type II demonstrates a track record, documented evidence that controls ran week after week, not just on the day an auditor arrived. Enterprise procurement teams treat it as proof of sustained operational security, not just a design exercise. It reduces the need to take security posture on faith.' },
   ]
 
   const shareUrl = 'https://www.seccomply.in/resources/blog/soc2-type1-vs-type2'
@@ -31,15 +31,15 @@ export default function Soc2TypeIvsTypeII() {
   return (
     <Layout>
       <Head>
-        <title>SOC 2 Type I vs Type II — The Distinction That Actually Matters | SecComply</title>
-        <meta name="description" content="SOC 2 Type I vs Type II explained clearly — what auditors evaluate, how long each takes, and why enterprise buyers almost always ask for Type II specifically." />
-        <meta property="og:title" content="SOC 2 Type I vs Type II — The Distinction That Actually Matters" />
+        <title>SOC 2 Type I vs Type II, The Distinction That Actually Matters | SecComply</title>
+        <meta name="description" content="SOC 2 Type I vs Type II explained clearly, what auditors evaluate, how long each takes, and why enterprise buyers almost always ask for Type II specifically." />
+        <meta property="og:title" content="SOC 2 Type I vs Type II, The Distinction That Actually Matters" />
         <meta property="og:description" content="There is a moment in almost every enterprise sales cycle where one line stops everything cold: Please provide your SOC 2 Type II report. Here is why that matters." />
         <meta property="og:image" content="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop" />
         <meta property="og:url" content={shareUrl} />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="SOC 2 Type I vs Type II — The Distinction That Actually Matters" />
+        <meta name="twitter:title" content="SOC 2 Type I vs Type II, The Distinction That Actually Matters" />
         <meta name="twitter:image" content="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop" />
         <link rel="canonical" href={shareUrl} />
         <style>{`
@@ -118,7 +118,7 @@ export default function Soc2TypeIvsTypeII() {
           <span className="b-cat">📋 SOC 2</span>
           <span className="b-cat">🏢 Enterprise Compliance</span>
         </div>
-        <h1>SOC 2 Type I vs Type II — The Distinction That Actually Matters</h1>
+        <h1>SOC 2 Type I vs Type II, The Distinction That Actually Matters</h1>
         <div className="b-author-strip">
           <span className="b-author-name">Gauri Khatate</span>
           <span className="b-author-meta"><span>✍️ Security Researcher &amp; Technical Writer</span> · 📖 5 min read</span>
@@ -136,35 +136,35 @@ export default function Soc2TypeIvsTypeII() {
       <div className="b-wrap">
         <div className="b-layout">
           <article className="b-article">
-            <p>There is a moment in almost every enterprise sales cycle where a security questionnaire lands in someone's inbox and one line stops everything cold: "Please provide your SOC 2 Type II report." Not Type I. Type II. Suddenly the difference between those two words — which can feel like a technicality — becomes a deal.</p>
-            <p>Both reports look similar on the surface. Same auditor. Same AICPA framework. Same official letterhead. But what they are actually certifying is quite different — and understanding that gap changes how a compliance programme gets built, communicated, and ultimately trusted.</p>
+            <p>There is a moment in almost every enterprise sales cycle where a security questionnaire lands in someone's inbox and one line stops everything cold: "Please provide your SOC 2 Type II report." Not Type I. Type II. Suddenly the difference between those two words, which can feel like a technicality, becomes a deal.</p>
+            <p>Both reports look similar on the surface. Same auditor. Same AICPA framework. Same official letterhead. But what they are actually certifying is quite different, and understanding that gap changes how a compliance programme gets built, communicated, and ultimately trusted.</p>
 
             <h2>What SOC 2 Is Actually Measuring</h2>
-            <p>SOC 2 is not a product security test. It is not a penetration test. It is an audit of how a service organisation manages customer data — the processes, policies, and controls that govern who has access to what, how incidents get handled, how changes get approved, and whether the whole thing holds together under real operating conditions.</p>
+            <p>SOC 2 is not a product security test. It is not a penetration test. It is an audit of how a service organisation manages customer data, the processes, policies, and controls that govern who has access to what, how incidents get handled, how changes get approved, and whether the whole thing holds together under real operating conditions.</p>
             <p>The framework uses five Trust Services Criteria: Security (mandatory for everyone), Availability, Processing Integrity, Confidentiality, and Privacy. An organisation picks the criteria relevant to its business, a licensed CPA firm audits against them, and the resulting report becomes the document that buyers, legal teams, and procurement committees read.</p>
 
             <figure className="b-figure">
               <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=520&fit=crop" alt="Compliance audit documentation and review" loading="lazy" />
-              <figcaption>SOC 2 audits a service organisation's controls — the policies, configurations, and procedures that govern customer data handling.</figcaption>
+              <figcaption>SOC 2 audits a service organisation's controls, the policies, configurations, and procedures that govern customer data handling.</figcaption>
             </figure>
 
             <h2>Type I: The Starting Line</h2>
-            <p>A SOC 2 Type I is a snapshot. On a specific date, an auditor reviews the controls that have been put in place — the policies, the configurations, the documented procedures — and gives an opinion on one thing: are these controls designed well enough to achieve their stated purpose?</p>
-            <p>Getting controls designed correctly takes real work. Writing an incident response plan that actually maps to how the team operates, setting up access controls that reflect least privilege, configuring logging that captures what it needs to — none of this happens automatically. A Type I audit forces that design discipline.</p>
-            <div className="b-quote"><p>"A Type I shows the right systems are in place. A Type II shows they have been running — without anyone watching."</p></div>
-            <p>But the auditor is not checking whether any of it worked in practice. There is no observation window. No sampling of whether access reviews actually happened last quarter. The report is honest about this — it says "as of [date]" right in the title. For early-stage companies, this is still a real milestone. Some buyers will accept a Type I as a good-faith starting point, especially paired with a clear roadmap toward Type II.</p>
+            <p>A SOC 2 Type I is a snapshot. On a specific date, an auditor reviews the controls that have been put in place, the policies, the configurations, the documented procedures, and gives an opinion on one thing: are these controls designed well enough to achieve their stated purpose?</p>
+            <p>Getting controls designed correctly takes real work. Writing an incident response plan that actually maps to how the team operates, setting up access controls that reflect least privilege, configuring logging that captures what it needs to, none of this happens automatically. A Type I audit forces that design discipline.</p>
+            <div className="b-quote"><p>"A Type I shows the right systems are in place. A Type II shows they have been running, without anyone watching."</p></div>
+            <p>But the auditor is not checking whether any of it worked in practice. There is no observation window. No sampling of whether access reviews actually happened last quarter. The report is honest about this, it says "as of [date]" right in the title. For early-stage companies, this is still a real milestone. Some buyers will accept a Type I as a good-faith starting point, especially paired with a clear roadmap toward Type II.</p>
 
             <h2>Type II: Proof Over Time</h2>
-            <p>A SOC 2 Type II covers a period — usually six to twelve months. The auditor is not just asking whether controls are designed correctly. They are asking whether those controls actually ran, as designed, across the entire observation window.</p>
+            <p>A SOC 2 Type II covers a period, usually six to twelve months. The auditor is not just asking whether controls are designed correctly. They are asking whether those controls actually ran, as designed, across the entire observation window.</p>
             <p>This means pulling evidence. The auditor samples logs to verify that access reviews happened on schedule. They pull incident tickets to confirm the response process was followed. They check that multi-factor authentication was enforced during the periods the policy says it should have been. The report reflects what the security function <em>did</em>, not just what it was supposed to do.</p>
             <div className="b-callout">
               <strong>💡 The Real Difference: Design vs. Operating Effectiveness</strong>
-              <p>Controls fail in practice all the time — not because they were badly designed, but because they were never consistently run. A quarterly access review that gets skipped twice. An alerting rule that nobody ever triaged. Type II audits exist precisely to surface this gap. That is why enterprise buyers ask for them specifically.</p>
+              <p>Controls fail in practice all the time, not because they were badly designed, but because they were never consistently run. A quarterly access review that gets skipped twice. An alerting rule that nobody ever triaged. Type II audits exist precisely to surface this gap. That is why enterprise buyers ask for them specifically.</p>
             </div>
 
             <figure className="b-figure">
               <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=520&fit=crop" alt="Enterprise security team reviewing compliance evidence" loading="lazy" />
-              <figcaption>Type II auditors sample logs, tickets, and access records throughout the observation window — not just on audit day.</figcaption>
+              <figcaption>Type II auditors sample logs, tickets, and access records throughout the observation window, not just on audit day.</figcaption>
             </figure>
 
             <h2>At a Glance: How They Compare</h2>
@@ -184,15 +184,15 @@ export default function Soc2TypeIvsTypeII() {
 
             <h2>The Journey from One to the Other</h2>
             <div className="b-steps">
-              <div className="b-step"><div className="b-step-num">1</div><div className="b-step-body"><h4>Define the scope</h4><p>Decide which systems, processes, and Trust Services Criteria the audit will cover. Scope shapes everything — a tighter scope moves faster; a broader one carries more weight with specific buyers.</p></div></div>
-              <div className="b-step"><div className="b-step-num">2</div><div className="b-step-body"><h4>Build and document controls</h4><p>Design the policies and procedures — access management, encryption standards, incident response, vendor oversight. This is the work that produces a Type I report.</p></div></div>
+              <div className="b-step"><div className="b-step-num">1</div><div className="b-step-body"><h4>Define the scope</h4><p>Decide which systems, processes, and Trust Services Criteria the audit will cover. Scope shapes everything, a tighter scope moves faster; a broader one carries more weight with specific buyers.</p></div></div>
+              <div className="b-step"><div className="b-step-num">2</div><div className="b-step-body"><h4>Build and document controls</h4><p>Design the policies and procedures, access management, encryption standards, incident response, vendor oversight. This is the work that produces a Type I report.</p></div></div>
               <div className="b-step"><div className="b-step-num">3</div><div className="b-step-body"><h4>Run the controls, consistently</h4><p>The observation period begins. Controls need to operate as designed, and evidence needs to accumulate. This phase is where programmes either build a strong foundation or quietly drift.</p></div></div>
-              <div className="b-step"><div className="b-step-num">4</div><div className="b-step-body"><h4>Go through fieldwork</h4><p>A licensed CPA firm samples the evidence, interviews the team, and validates that controls ran throughout the observation window — not just in the weeks before the audit.</p></div></div>
-              <div className="b-step"><div className="b-step-num">5</div><div className="b-step-body"><h4>Issue the report — then maintain it</h4><p>The Type II report is shared with customers under NDA. Annual re-audits keep the certification current and show that the programme is ongoing, not a one-time effort.</p></div></div>
+              <div className="b-step"><div className="b-step-num">4</div><div className="b-step-body"><h4>Go through fieldwork</h4><p>A licensed CPA firm samples the evidence, interviews the team, and validates that controls ran throughout the observation window, not just in the weeks before the audit.</p></div></div>
+              <div className="b-step"><div className="b-step-num">5</div><div className="b-step-body"><h4>Issue the report, then maintain it</h4><p>The Type II report is shared with customers under NDA. Annual re-audits keep the certification current and show that the programme is ongoing, not a one-time effort.</p></div></div>
             </div>
 
             <h2>One Thing Worth Getting Right Early</h2>
-            <p>Scope decisions matter more than most people expect. A SOC 2 Type II report covering Security alone is a very different document from one covering Security, Availability, and Confidentiality — and buyers in certain industries will notice. Healthcare, fintech, and government-adjacent buyers often have strong opinions about which criteria they expect to see covered. Getting scope right from the beginning means fewer surprises later.</p>
+            <p>Scope decisions matter more than most people expect. A SOC 2 Type II report covering Security alone is a very different document from one covering Security, Availability, and Confidentiality, and buyers in certain industries will notice. Healthcare, fintech, and government-adjacent buyers often have strong opinions about which criteria they expect to see covered. Getting scope right from the beginning means fewer surprises later.</p>
             <div className="b-quote"><p>"Compliance built around real risk ages well. Compliance built around checkbox anxiety tends to show its cracks at exactly the wrong moment."</p></div>
 
             <div className="b-share">
@@ -225,7 +225,7 @@ export default function Soc2TypeIvsTypeII() {
             </div>
             <div className="b-cta-box">
               <h4>SOC 2 Readiness Assessment</h4>
-              <p>SecComply maps your controls against SOC 2, ISO 27001, and DPDP Act — and shows exactly what's missing before an auditor does.</p>
+              <p>SecComply maps your controls against SOC 2, ISO 27001, and DPDP Act, and shows exactly what's missing before an auditor does.</p>
               <a href="/contact" className="b-cta-btn">Book a Free Compliance Gap Assessment →</a>
             </div>
             <div className="b-sidebar-box">

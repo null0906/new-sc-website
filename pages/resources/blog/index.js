@@ -3,22 +3,22 @@ import Link from 'next/link'
 import Layout from '../../../components/Layout'
 
 const posts = [
-  { slug: 'top-5-cloud-misconfigurations', icon: '☁️', tag: 'Cloud Security', title: 'Top 5 Cloud Misconfigurations and How to Fix Them', desc: '99% of cloud breaches are the customer\'s fault. Here are the five misconfigurations that appear most often in breach investigations — with exact fixes for each.', author: 'Bhumika Deshmukh', date: 'March 11, 2026', read: '7 min read' },
-  { slug: 'soc2-type1-vs-type2', icon: '📋', tag: 'SOC 2', title: 'SOC 2 Type I vs Type II — The Distinction That Actually Matters', desc: 'One is a snapshot. The other is proof over time. Here is exactly what separates them, why enterprise buyers always ask for Type II, and the practical path from one to the other.', author: 'Bhumika Deshmukh', date: 'March 2026', read: '5 min read' },
-  { slug: 'top-security-tools-startup', icon: '🔐', tag: 'Security Tools', title: 'Top 10 Security Tools Every Startup Should Know in 2026', desc: 'Ten tools in deployment order — each one closes a SOC 2 gap and builds enterprise trust. Several are free.', author: 'Bhumika Deshmukh', date: 'March 2026', read: '8 min read' },
-  { slug: 'soc2-vs-iso27001', icon: '📋', tag: 'Compliance Guide', title: 'SOC 2 vs ISO 27001: Which Certification Should You Choose? [2026]', desc: 'Cost, timeline, market fit — and the honest recommendation for Indian startups and SaaS companies expanding globally.', author: 'SecComply', date: 'March 2026', read: '9 min read' },
+  { slug: 'top-5-cloud-misconfigurations', icon: '☁️', tag: 'Cloud Security', title: 'Top 5 Cloud Misconfigurations and How to Fix Them', desc: '99% of cloud breaches are the customer\'s fault. Here are the five misconfigurations that appear most often in breach investigations, with exact fixes for each.', author: 'Bhumika Deshmukh', date: 'March 11, 2026', read: '7 min read' },
+  { slug: 'soc2-type1-vs-type2', icon: '📋', tag: 'SOC 2', title: 'SOC 2 Type I vs Type II, The Distinction That Actually Matters', desc: 'One is a snapshot. The other is proof over time. Here is exactly what separates them, why enterprise buyers always ask for Type II, and the practical path from one to the other.', author: 'Bhumika Deshmukh', date: 'March 2026', read: '5 min read' },
+  { slug: 'top-security-tools-startup', icon: '🔐', tag: 'Security Tools', title: 'Top 10 Security Tools Every Startup Should Know in 2026', desc: 'Ten tools in deployment order, each one closes a SOC 2 gap and builds enterprise trust. Several are free.', author: 'Bhumika Deshmukh', date: 'March 2026', read: '8 min read' },
+  { slug: 'soc2-vs-iso27001', icon: '📋', tag: 'Compliance Guide', title: 'SOC 2 vs ISO 27001: Which Certification Should You Choose? [2026]', desc: 'Cost, timeline, market fit, and the honest recommendation for Indian startups and SaaS companies expanding globally.', author: 'SecComply', date: 'March 2026', read: '9 min read' },
   { slug: 'what-is-cspm-scan', icon: '☁️', tag: 'Cloud Security', title: 'What is a CSPM Scan? Cloud Security Posture Management Explained', desc: 'How CSPM scans work, what they detect, and how to stay continuously compliant across AWS, Azure, and GCP.', author: 'SecComply', date: 'March 2025', read: '7 min read' },
-  { slug: 'skt-breach-compliance-failure', icon: '📡', tag: 'Breach Analysis', title: 'SK Telecom Breach: When Compliance Failures Become a $97M Bill', desc: "South Korea's biggest telecom wasn't brought down by a zero-day — it was missing basics. Here's what every organisation should take from the $97M fine.", author: 'SecComply', date: 'March 2026', read: '10 min read' },
+  { slug: 'skt-breach-compliance-failure', icon: '📡', tag: 'Breach Analysis', title: 'SK Telecom Breach: When Compliance Failures Become a $97M Bill', desc: "South Korea's biggest telecom wasn't brought down by a zero-day, it was missing basics. Here's what every organisation should take from the $97M fine.", author: 'SecComply', date: 'March 2026', read: '10 min read' },
   { slug: 'dpdp-act-indian-startups', icon: '🇮🇳', tag: 'DPDP Act', title: 'DPDP Act 2023: What Indian Startups Need to Know', desc: "A breakdown of India's Digital Personal Data Protection Act and practical steps for compliance readiness.", author: 'SecComply', date: 'March 2025', read: '6 min read' },
   { slug: 'top-10-security-controls', icon: '🔒', tag: 'Security Controls', title: 'Top 10 Security Controls Every Startup Should Implement', desc: 'Essential security controls that form the foundation of any compliance program, explained in plain language.', author: 'SecComply', date: 'February 2025', read: '5 min read' },
-  { slug: 'cost-of-non-compliance', icon: '💰', tag: 'Compliance', title: 'The True Cost of Non-Compliance in 2025', desc: 'Data-driven analysis of what compliance failures cost companies — from fines to lost deals and reputation damage.', author: 'SecComply', date: 'January 2025', read: '6 min read' },
+  { slug: 'cost-of-non-compliance', icon: '💰', tag: 'Compliance', title: 'The True Cost of Non-Compliance in 2025', desc: 'Data-driven analysis of what compliance failures cost companies, from fines to lost deals and reputation damage.', author: 'SecComply', date: 'January 2025', read: '6 min read' },
 ]
 
 export default function Blog() {
   return (
     <Layout>
       <Head>
-        <title>Blog & Insights — SecComply</title>
+        <title>Blog & Insights, SecComply</title>
         <meta name="description" content="Latest insights on cybersecurity, compliance trends, and regulatory updates from the SecComply team." />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />

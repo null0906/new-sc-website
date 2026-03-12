@@ -89,7 +89,7 @@ export default function WhatIsCSPMScan() {
 
       /* 8. SOCIAL SHARE */
       const url = encodeURIComponent('https://seccomply.net/resources/blog/what-is-cspm-scan');
-      const ttl = encodeURIComponent('What is a CSPM Scan? Cloud Security Posture Management Explained — SecComply');
+      const ttl = encodeURIComponent('What is a CSPM Scan? Cloud Security Posture Management Explained, SecComply');
       const sl = document.getElementById('sl');
       const st = document.getElementById('st');
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
@@ -150,13 +150,13 @@ export default function WhatIsCSPMScan() {
   return (
     <Layout>
       <Head>
-        <title>What is a CSPM Scan? Cloud Security Posture Management Explained — SecComply</title>
+        <title>What is a CSPM Scan? Cloud Security Posture Management Explained, SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="What is a CSPM scan? Learn how Cloud Security Posture Management continuously scans your cloud for misconfigurations, compliance violations, and security risks — and how SecComply automates it." />
+        <meta name="description" content="What is a CSPM scan? Learn how Cloud Security Posture Management continuously scans your cloud for misconfigurations, compliance violations, and security risks, and how SecComply automates it." />
         <meta name="keywords" content="CSPM scan, what is CSPM, cloud security posture management, cloud misconfiguration, CSPM tool, cloud compliance scan, AWS security scan, cloud posture assessment" />
         <meta property="og:title" content="What is a CSPM Scan? Cloud Security Posture Management Explained" />
-        <meta property="og:description" content="A complete guide to CSPM scans — how they work, what they find, and how to use them to stay continuously audit-ready across AWS, Azure, and GCP." />
+        <meta property="og:description" content="A complete guide to CSPM scans, how they work, what they find, and how to use them to stay continuously audit-ready across AWS, Azure, and GCP." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/what-is-cspm-scan" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/what-is-cspm-scan" />
@@ -331,7 +331,7 @@ export default function WhatIsCSPMScan() {
 
   <h1 className="cspm-hero-h1">What is CSPM and Why Your <em>Cloud</em> Needs It</h1>
 
-  <p className="cspm-hero-sub">A misconfigured S3 bucket. A public-facing storage blob. A forgotten firewall rule open to the world. These are not exotic attack techniques — they are the number one cause of cloud breaches today. Cloud Security Posture Management was built to stop exactly that.</p>
+  <p className="cspm-hero-sub">A misconfigured S3 bucket. A public-facing storage blob. A forgotten firewall rule open to the world. These are not exotic attack techniques, they are the number one cause of cloud breaches today. Cloud Security Posture Management was built to stop exactly that.</p>
 
   <div className="cspm-author-strip">
     <div className="au-av">SS</div>
@@ -483,7 +483,7 @@ export default function WhatIsCSPMScan() {
       <text x="568" y="388" fill="rgba(200,214,229,0.4)" font-size="8" font-family="sans-serif">AWS · all regions · just now</text>
       <text x="522" y="405" fill="rgba(200,214,229,0.7)" font-size="9.5" font-family="sans-serif">KMS encryption enabled on all RDS instances ✓</text>
     </svg>
-    <p className="img-cap">Fig 1. A real-time CSPM dashboard scanning AWS, Azure, and GCP simultaneously — mapping findings to ISO 27001, SOC 2, and HIPAA controls and tracking overall posture score.</p>
+    <p className="img-cap">Fig 1. A real-time CSPM dashboard scanning AWS, Azure, and GCP simultaneously, mapping findings to ISO 27001, SOC 2, and HIPAA controls and tracking overall posture score.</p>
   </div>
 </div>
 
@@ -510,9 +510,9 @@ export default function WhatIsCSPMScan() {
 
     <section id="breach">
       <h2>The Breach That <em>Started</em> It All</h2>
-      <p>It was July 2019. Capital One disclosed that an attacker had accessed the personal data of over 100 million customers and applicants across the US and Canada — names, addresses, credit scores, Social Security numbers. The federal fine came to $80 million. The reputational damage, incalculable.</p>
+      <p>It was July 2019. Capital One disclosed that an attacker had accessed the personal data of over 100 million customers and applicants across the US and Canada, names, addresses, credit scores, Social Security numbers. The federal fine came to $80 million. The reputational damage, incalculable.</p>
       <p>The root cause was not a zero-day exploit or a state-sponsored attack. It was a misconfigured Web Application Firewall in their AWS environment. A single, preventable configuration error. The attacker found it using a basic SSRF technique and walked straight through the front door.</p>
-      <p>Capital One is not an outlier. The 2024 IBM Cost of a Data Breach report found that misconfigured cloud environments are consistently among the top attack vectors — year after year. And yet, most organizations still rely on manual configuration reviews, periodic audits, and human checklists to keep their cloud secure. That approach does not scale.</p>
+      <p>Capital One is not an outlier. The 2024 IBM Cost of a Data Breach report found that misconfigured cloud environments are consistently among the top attack vectors, year after year. And yet, most organizations still rely on manual configuration reviews, periodic audits, and human checklists to keep their cloud secure. That approach does not scale.</p>
 
       <div className="pull-quote">
         <p>"Every single client I've worked with who suffered a cloud breach had a misconfiguration that was technically detectable weeks or months before the incident. The problem was never visibility. It was the absence of continuous, automated enforcement."</p>
@@ -529,16 +529,16 @@ export default function WhatIsCSPMScan() {
     <section id="what">
       <h2>What is <em>CSPM</em>?</h2>
       <div className="def-box" itemScope itemType="https://schema.org/DefinedTerm">
-        <div className="def-lbl">📖 Definition — Cloud Security Posture Management</div>
-        <p itemProp="description"><strong>CSPM (Cloud Security Posture Management)</strong> is a category of automated security tools that continuously monitor cloud infrastructure across AWS, Azure, Google Cloud, and multi-cloud environments for misconfigurations, policy violations, exposed resources, and compliance gaps. CSPM tools compare your actual cloud configuration against security best practices, regulatory frameworks, and custom policies — then surface risks and guide remediation in real time.</p>
+        <div className="def-lbl">📖 Definition, Cloud Security Posture Management</div>
+        <p itemProp="description"><strong>CSPM (Cloud Security Posture Management)</strong> is a category of automated security tools that continuously monitor cloud infrastructure across AWS, Azure, Google Cloud, and multi-cloud environments for misconfigurations, policy violations, exposed resources, and compliance gaps. CSPM tools compare your actual cloud configuration against security best practices, regulatory frameworks, and custom policies, then surface risks and guide remediation in real time.</p>
       </div>
       <p>The concept emerged from a very practical problem. Cloud environments are not static. Developers spin up resources in seconds. Policies drift. Someone adds a firewall exception "just for testing" and forgets to remove it. A new team member sets an S3 bucket to public while building a demo. These are daily realities in every engineering organization running at scale.</p>
-      <p>Traditional security tools were never built for this pace. Firewall rules and endpoint agents protect known perimeters. CSPM was purpose-built for the perimeter-less, always-changing nature of cloud infrastructure. It treats your cloud configuration itself as an attack surface — and watches that surface continuously, not quarterly.</p>
+      <p>Traditional security tools were never built for this pace. Firewall rules and endpoint agents protect known perimeters. CSPM was purpose-built for the perimeter-less, always-changing nature of cloud infrastructure. It treats your cloud configuration itself as an attack surface, and watches that surface continuously, not quarterly.</p>
     </section>
 
     <section id="how">
       <h2>How CSPM <em>Works</em> Under the Hood</h2>
-      <p>A CSPM platform connects to your cloud accounts via API — no agents, no network interception. It reads your cloud configuration state, the metadata that defines what exists, how it's configured, and who can access it, and compares that against a policy baseline. Every time your cloud state changes, the engine re-evaluates your posture instantly.</p>
+      <p>A CSPM platform connects to your cloud accounts via API, no agents, no network interception. It reads your cloud configuration state, the metadata that defines what exists, how it's configured, and who can access it, and compares that against a policy baseline. Every time your cloud state changes, the engine re-evaluates your posture instantly.</p>
       <p>That baseline combines CIS Foundations Benchmarks for AWS, Azure, and GCP with controls from ISO 27001, SOC 2 Trust Service Criteria, HIPAA, and PCI DSS. The result is a living, real-time compliance scorecard that replaces the quarterly spreadsheet audit.</p>
 
       
@@ -584,16 +584,16 @@ export default function WhatIsCSPMScan() {
           <text x="713" y="140" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">compliance score</text>
           
           <path d="M 772 162 Q 397 192 42 162" fill="none" stroke="rgba(232,99,43,0.14)" stroke-width="1" stroke-dasharray="5,4"/>
-          <text x="397" y="188" text-anchor="middle" fill="rgba(232,99,43,0.32)" font-size="8" font-family="sans-serif">Continuous loop — every config change triggers instant re-evaluation</text>
+          <text x="397" y="188" text-anchor="middle" fill="rgba(232,99,43,0.32)" font-size="8" font-family="sans-serif">Continuous loop, every config change triggers instant re-evaluation</text>
         </svg>
-        <p className="img-cap">Fig 2. The CSPM lifecycle — from continuous discovery through automated remediation to audit-ready compliance reporting.</p>
+        <p className="img-cap">Fig 2. The CSPM lifecycle, from continuous discovery through automated remediation to audit-ready compliance reporting.</p>
       </div>
 
       <div className="callout co-info">
         <div className="co-icon">💡</div>
         <div className="co-body">
           <strong>How CSPM connects without agents</strong>
-          <p>CSPM platforms use read-only IAM roles in AWS, Service Principals in Azure, and Service Accounts in GCP. No agents, no traffic interception — just configuration state reads via native cloud APIs. Below is a minimal least-privilege CSPM scanning policy for AWS.</p>
+          <p>CSPM platforms use read-only IAM roles in AWS, Service Principals in Azure, and Service Accounts in GCP. No agents, no traffic interception, just configuration state reads via native cloud APIs. Below is a minimal least-privilege CSPM scanning policy for AWS.</p>
         </div>
       </div>
 
@@ -623,7 +623,7 @@ export default function WhatIsCSPMScan() {
       </div>
 
       <ul className="feat-list">
-        <li><div className="f-num">1</div><div className="f-body"><strong>Configuration State Collection</strong><span>CSPM reads your entire cloud inventory — compute, storage, networking, IAM, databases, serverless, containers — continuously via event-driven hooks like CloudTrail, Azure Activity Log, and GCP Audit Log.</span></div></li>
+        <li><div className="f-num">1</div><div className="f-body"><strong>Configuration State Collection</strong><span>CSPM reads your entire cloud inventory, compute, storage, networking, IAM, databases, serverless, containers, continuously via event-driven hooks like CloudTrail, Azure Activity Log, and GCP Audit Log.</span></div></li>
         <li><div className="f-num">2</div><div className="f-body"><strong>Policy Evaluation Engine</strong><span>Each resource is evaluated against thousands of security policies: S3 buckets must block public access, MFA must be enabled for root accounts, encryption at rest is mandatory for all storage volumes.</span></div></li>
         <li><div className="f-num">3</div><div className="f-body"><strong>Risk Scoring and Prioritisation</strong><span>CSPM assigns severity scores using CVSS-style methods, factoring in exploitability, asset sensitivity, and whether the misconfiguration is publicly exposed or internal-only.</span></div></li>
         <li><div className="f-num">4</div><div className="f-body"><strong>Remediation Guidance and Automation</strong><span>Step-by-step playbooks, console deep-links, IaC fix snippets for Terraform and CloudFormation, and in some cases automated one-click remediation.</span></div></li>
@@ -632,15 +632,15 @@ export default function WhatIsCSPMScan() {
     </section>
 
     <section id="compliance">
-      <h2>CSPM and <em>Compliance</em> — The Direct Connection</h2>
-      <p>If you have been through an ISO 27001 or SOC 2 audit, you know the drill. Your auditor asks for evidence that access controls are configured, data is encrypted, logging is enabled, and you detect configuration drift. Collecting that evidence manually — screenshotting consoles, filling spreadsheets — takes weeks. CSPM changes this entirely.</p>
+      <h2>CSPM and <em>Compliance</em>, The Direct Connection</h2>
+      <p>If you have been through an ISO 27001 or SOC 2 audit, you know the drill. Your auditor asks for evidence that access controls are configured, data is encrypted, logging is enabled, and you detect configuration drift. Collecting that evidence manually, screenshotting consoles, filling spreadsheets, takes weeks. CSPM changes this entirely.</p>
       <p>Because CSPM continuously evaluates your cloud against compliance frameworks, every passing check becomes live audit evidence. Your compliance posture score becomes a real-time dashboard rather than a point-in-time spreadsheet. When an auditor asks how you know your S3 buckets are not publicly exposed, you have automated, dated, framework-mapped evidence ready to export in one click.</p>
 
       <div className="callout co-warn">
         <div className="co-icon">⚠️</div>
         <div className="co-body">
           <strong>ISO 27001 Annex A controls directly addressed by CSPM</strong>
-          <p>A.8.9 (Configuration Management) · A.8.20 (Network Security) · A.8.24 (Use of Cryptography) · A.5.23 (Information Security for Cloud Services) · A.8.16 (Monitoring Activities) — all map directly to what CSPM monitors and enforces in your cloud environment.</p>
+          <p>A.8.9 (Configuration Management) · A.8.20 (Network Security) · A.8.24 (Use of Cryptography) · A.5.23 (Information Security for Cloud Services) · A.8.16 (Monitoring Activities), all map directly to what CSPM monitors and enforces in your cloud environment.</p>
         </div>
       </div>
 
@@ -681,14 +681,14 @@ export default function WhatIsCSPMScan() {
             <text x="510" y="21" fill="rgba(200,214,229,0.32)" font-size="8.5" font-family="sans-serif">286 requirements</text>
           </g>
 
-          <text x="360" y="228" text-anchor="middle" fill="rgba(200,214,229,0.27)" font-size="8.5" font-family="sans-serif">% of framework controls directly monitored and evidenced by CSPM — eliminating manual audit prep</text>
+          <text x="360" y="228" text-anchor="middle" fill="rgba(200,214,229,0.27)" font-size="8.5" font-family="sans-serif">% of framework controls directly monitored and evidenced by CSPM, eliminating manual audit prep</text>
         </svg>
         <p className="img-cap">Fig 3. CSPM directly addresses 70–90% of controls across major compliance frameworks, turning weeks of manual evidence collection into automated, real-time audit readiness.</p>
       </div>
     </section>
 
     <section id="vs">
-      <h2>CSPM vs <em>CWPP</em> vs <em>CASB</em> — Clearing the Confusion</h2>
+      <h2>CSPM vs <em>CWPP</em> vs <em>CASB</em>, Clearing the Confusion</h2>
       <p>The cloud security landscape is littered with acronyms that vendors blur deliberately. Here is a clean breakdown of where each category fits so you can make an informed decision about what your organization actually needs right now.</p>
 
       <div className="table-wrap">
@@ -710,7 +710,7 @@ export default function WhatIsCSPMScan() {
         <div className="co-icon">🚨</div>
         <div className="co-body">
           <strong>The most common mistake security teams make</strong>
-          <p>Assuming native tools — AWS Security Hub, Azure Defender, GCP Security Command Center — replace a dedicated CSPM. They are powerful within their own cloud, but siloed. Multi-cloud environments need a unified posture view that normalizes findings across providers into a single compliance score.</p>
+          <p>Assuming native tools, AWS Security Hub, Azure Defender, GCP Security Command Center, replace a dedicated CSPM. They are powerful within their own cloud, but siloed. Multi-cloud environments need a unified posture view that normalizes findings across providers into a single compliance score.</p>
         </div>
       </div>
     </section>
@@ -729,8 +729,8 @@ export default function WhatIsCSPMScan() {
 
     <section id="sc">
       <h2>How <em>SecComply</em> Approaches Cloud Security</h2>
-      <p>At SecComply, we work with organizations at every stage of cloud maturity — from startups running their first production workload on AWS to enterprises managing multi-cloud architectures across three providers. The constant we see is that compliance and security are always treated as separate problems, until a breach or an audit failure forces them together.</p>
-      <p>Our Cloud Security Assessment builds on CSPM principles but goes further. We work with your engineering and security teams to understand your architecture, your risk appetite, and your compliance obligations — then design a posture management program that maps directly to the frameworks you are being audited against. We have helped teams go from failing their first ISO 27001 technical review to achieving audit readiness in under eight weeks.</p>
+      <p>At SecComply, we work with organizations at every stage of cloud maturity, from startups running their first production workload on AWS to enterprises managing multi-cloud architectures across three providers. The constant we see is that compliance and security are always treated as separate problems, until a breach or an audit failure forces them together.</p>
+      <p>Our Cloud Security Assessment builds on CSPM principles but goes further. We work with your engineering and security teams to understand your architecture, your risk appetite, and your compliance obligations, then design a posture management program that maps directly to the frameworks you are being audited against. We have helped teams go from failing their first ISO 27001 technical review to achieving audit readiness in under eight weeks.</p>
     </section>
 
     <section id="faq" className="faq-section">
@@ -739,7 +739,7 @@ export default function WhatIsCSPMScan() {
 
         <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">What exactly is CSPM and how is it different from a vulnerability scanner?</strong><span className="faq-ch">▾</span></div>
-          <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">CSPM stands for Cloud Security Posture Management. Unlike vulnerability scanners that probe running systems for known CVEs, CSPM reads your cloud configuration state and evaluates it against security best practices and compliance frameworks. It identifies misconfigurations — publicly exposed storage, missing encryption, overly permissive IAM — not application-layer vulnerabilities. It is continuous, framework-aware, and purpose-built for cloud infrastructure.</p></div>
+          <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">CSPM stands for Cloud Security Posture Management. Unlike vulnerability scanners that probe running systems for known CVEs, CSPM reads your cloud configuration state and evaluates it against security best practices and compliance frameworks. It identifies misconfigurations, publicly exposed storage, missing encryption, overly permissive IAM, not application-layer vulnerabilities. It is continuous, framework-aware, and purpose-built for cloud infrastructure.</p></div>
         </div>
 
         <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
@@ -749,17 +749,17 @@ export default function WhatIsCSPMScan() {
 
         <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">How does CSPM help with ISO 27001 and SOC 2 compliance?</strong><span className="faq-ch">▾</span></div>
-          <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">CSPM continuously tests cloud configurations against ISO 27001 Annex A controls and SOC 2 Trust Service Criteria. Every passing check generates timestamped evidence mapped to a specific control clause. When an auditor asks for evidence of encryption at rest or access control enforcement, you have an exportable, dated, framework-mapped record ready — eliminating weeks of manual spreadsheet work.</p></div>
+          <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">CSPM continuously tests cloud configurations against ISO 27001 Annex A controls and SOC 2 Trust Service Criteria. Every passing check generates timestamped evidence mapped to a specific control clause. When an auditor asks for evidence of encryption at rest or access control enforcement, you have an exportable, dated, framework-mapped record ready, eliminating weeks of manual spreadsheet work.</p></div>
         </div>
 
         <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">What is the difference between CSPM and CWPP?</strong><span className="faq-ch">▾</span></div>
-          <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">CSPM focuses on cloud configuration and posture — it answers "is my infrastructure configured securely?" CWPP focuses on runtime workloads — VMs, containers, serverless — answering "is what's running on my infrastructure behaving securely?" You ideally need both. For compliance frameworks, CSPM typically has broader direct coverage.</p></div>
+          <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">CSPM focuses on cloud configuration and posture, it answers "is my infrastructure configured securely?" CWPP focuses on runtime workloads, VMs, containers, serverless, answering "is what's running on my infrastructure behaving securely?" You ideally need both. For compliance frameworks, CSPM typically has broader direct coverage.</p></div>
         </div>
 
         <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">Do I need CSPM even if I'm only on a single cloud provider?</strong><span className="faq-ch">▾</span></div>
-          <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">Absolutely. Most major cloud breaches — including Capital One's — happened in single-cloud environments. Native tools like AWS Security Hub are valuable but have limited compliance framework coverage. A dedicated CSPM gives you deeper policy libraries, better compliance mapping, and audit-ready evidence generation that native tools do not provide out of the box.</p></div>
+          <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">Absolutely. Most major cloud breaches, including Capital One's, happened in single-cloud environments. Native tools like AWS Security Hub are valuable but have limited compliance framework coverage. A dedicated CSPM gives you deeper policy libraries, better compliance mapping, and audit-ready evidence generation that native tools do not provide out of the box.</p></div>
         </div>
 
       </div>
@@ -767,7 +767,7 @@ export default function WhatIsCSPMScan() {
 
     <div className="cta-banner">
       <h3>Is Your Cloud Actually Secure?</h3>
-      <p>Most organizations do not know their cloud security posture until an auditor — or an attacker — tells them. SecComply's Cloud Security Assessment maps your entire AWS, Azure, or GCP environment against ISO 27001, SOC 2, and CIS Benchmarks, and gives you a prioritised remediation roadmap.</p>
+      <p>Most organizations do not know their cloud security posture until an auditor, or an attacker, tells them. SecComply's Cloud Security Assessment maps your entire AWS, Azure, or GCP environment against ISO 27001, SOC 2, and CIS Benchmarks, and gives you a prioritised remediation roadmap.</p>
       <div className="cta-btns">
         <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Cloud Security Assessment →</a>
         <a href="https://seccomply.net/services/cloud-security" className="btn-o" target="_blank" rel="noopener">View Cloud Security Services</a>

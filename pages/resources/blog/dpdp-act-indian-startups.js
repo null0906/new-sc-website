@@ -41,7 +41,7 @@ export default function DpdpActIndianStartups() {
       const btt = document.getElementById('btt');
       window.addEventListener('scroll', () => { if (btt) btt.classList.toggle('vis', window.scrollY > 600); }, { passive: true });
       const url = encodeURIComponent('https://seccomply.net/resources/blog/dpdp-act-indian-startups');
-      const ttl = encodeURIComponent('DPDP Act 2023: What Indian Startups Need to Know — SecComply');
+      const ttl = encodeURIComponent('DPDP Act 2023: What Indian Startups Need to Know, SecComply');
       const sl = document.getElementById('sl');
       const st = document.getElementById('st');
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
@@ -108,7 +108,7 @@ export default function DpdpActIndianStartups() {
   return (
     <Layout>
       <Head>
-        <title>DPDP Act 2023: What Indian Startups Need to Know — SecComply</title>
+        <title>DPDP Act 2023: What Indian Startups Need to Know, SecComply</title>
         <meta name="description" content="India's DPDP Act 2023 is enforceable. Plain-language breakdown of obligations, penalties up to ₹250 crore, consent rules, breach notification deadlines, and exact compliance steps for Indian startups." />
         <meta name="keywords" content="DPDP Act 2023, Digital Personal Data Protection Act India, DPDP compliance startups, data protection India, DPDP penalties, consent manager India, Data Protection Board India, DPDP breach notification" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -276,18 +276,18 @@ export default function DpdpActIndianStartups() {
         <article className="art">
 
           <section id="intro">
-            <p>Most Indian startups have spent the last two years watching the DPDP Act move through notification, consultation, and draft rules — assuming the enforcement timeline was still distant. That assumption is now a risk. The rules are finalised, the Data Protection Board is being constituted, and enforcement is moving from paper to practice.</p>
+            <p>Most Indian startups have spent the last two years watching the DPDP Act move through notification, consultation, and draft rules, assuming the enforcement timeline was still distant. That assumption is now a risk. The rules are finalised, the Data Protection Board is being constituted, and enforcement is moving from paper to practice.</p>
             <p>This guide covers what the Act actually requires, who qualifies as a Data Fiduciary, what the penalties look like in practice, and the specific steps a startup needs to take before an investigation arrives.</p>
             <div className="key-takeaway">
               <strong>🎯 Bottom Line</strong>
-              <p>If your product collects, stores, or processes any personal data of individuals in India — names, emails, phone numbers, location, health data, financial data — you are a Data Fiduciary under the DPDP Act. There is no minimum size threshold.</p>
+              <p>If your product collects, stores, or processes any personal data of individuals in India, names, emails, phone numbers, location, health data, financial data, you are a Data Fiduciary under the DPDP Act. There is no minimum size threshold.</p>
             </div>
           </section>
 
           <section id="what-is-dpdp">
             <h2>What is the DPDP Act 2023?</h2>
             <p>The Digital Personal Data Protection Act 2023 was notified in August 2023. It is India's first comprehensive personal data protection law, replacing the patchwork of provisions in the IT Act 2000 that previously governed data privacy.</p>
-            <p>The Act governs the processing of <strong>digital personal data</strong> — any data about an identifiable individual that is collected or stored in digital form. It applies to:</p>
+            <p>The Act governs the processing of <strong>digital personal data</strong>, any data about an identifiable individual that is collected or stored in digital form. It applies to:</p>
             <ul>
               <li>Any entity that processes personal data of individuals in India, within India</li>
               <li>Any entity outside India that processes personal data of individuals in India in connection with offering goods or services to them</li>
@@ -298,11 +298,11 @@ export default function DpdpActIndianStartups() {
             <div className="info-card anim">
               <div className="info-card-title">📖 Who's Who Under the DPDP Act</div>
               <ul>
-                <li><strong>Data Principal</strong> — the individual whose personal data is being processed. In India, this includes minors whose data is processed by a guardian.</li>
-                <li><strong>Data Fiduciary</strong> — the entity (startup, company, organisation) that determines the purpose and means of processing personal data. This is where most obligations sit.</li>
-                <li><strong>Data Processor</strong> — an entity that processes data on behalf of a Data Fiduciary. Cloud providers, analytics vendors, payment processors.</li>
-                <li><strong>Significant Data Fiduciary (SDF)</strong> — a Data Fiduciary designated by the government based on volume of data processed, sensitivity of data, national security risk, and other criteria. SDFs have additional obligations including a Data Protection Officer, Data Auditor, and Data Protection Impact Assessments.</li>
-                <li><strong>Consent Manager</strong> — an accredited entity through which a Data Principal can give, manage, review, or withdraw consent.</li>
+                <li><strong>Data Principal</strong>, the individual whose personal data is being processed. In India, this includes minors whose data is processed by a guardian.</li>
+                <li><strong>Data Fiduciary</strong>, the entity (startup, company, organisation) that determines the purpose and means of processing personal data. This is where most obligations sit.</li>
+                <li><strong>Data Processor</strong>, an entity that processes data on behalf of a Data Fiduciary. Cloud providers, analytics vendors, payment processors.</li>
+                <li><strong>Significant Data Fiduciary (SDF)</strong>, a Data Fiduciary designated by the government based on volume of data processed, sensitivity of data, national security risk, and other criteria. SDFs have additional obligations including a Data Protection Officer, Data Auditor, and Data Protection Impact Assessments.</li>
+                <li><strong>Consent Manager</strong>, an accredited entity through which a Data Principal can give, manage, review, or withdraw consent.</li>
               </ul>
             </div>
           </section>
@@ -310,8 +310,8 @@ export default function DpdpActIndianStartups() {
           <section id="core-obligations">
             
             <figure className="b-figure">
-              <img src="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=760&q=80&auto=format&fit=crop" alt="Digital data privacy and protection concept — India DPDP Act 2023" loading="lazy" />
-              <figcaption>The DPDP Act 2023 governs digital personal data of all 1.4 billion Indians — regardless of where the processing entity is headquartered.</figcaption>
+              <img src="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=760&q=80&auto=format&fit=crop" alt="Digital data privacy and protection concept, India DPDP Act 2023" loading="lazy" />
+              <figcaption>The DPDP Act 2023 governs digital personal data of all 1.4 billion Indians, regardless of where the processing entity is headquartered.</figcaption>
             </figure>
 
           <h2>Core Obligations for Data Fiduciaries</h2>
@@ -319,12 +319,12 @@ export default function DpdpActIndianStartups() {
             <h3>1. Lawful Basis: Consent First</h3>
             <p>The DPDP Act operates primarily on a <strong>consent-first</strong> model. Before processing personal data, a Data Fiduciary must obtain free, specific, informed, unconditional, and unambiguous consent from the Data Principal. The consent request must:</p>
             <ul>
-              <li>Be presented in clear, plain language — not legalese</li>
+              <li>Be presented in clear, plain language, not legalese</li>
               <li>State the specific purpose of processing</li>
               <li>Be presented separately from terms of service or other documents</li>
               <li>Be available in all 22 official languages of India (for consumer-facing applications)</li>
             </ul>
-            <p>The Act also recognises "legitimate uses" — processing without consent for employment purposes, state functions, medical emergencies, and certain research activities. But most startup use cases will require explicit consent.</p>
+            <p>The Act also recognises "legitimate uses", processing without consent for employment purposes, state functions, medical emergencies, and certain research activities. But most startup use cases will require explicit consent.</p>
 
             <h3>2. Purpose Limitation & Data Minimisation</h3>
             <p>Personal data may only be processed for the specific purpose for which consent was obtained. Once that purpose is fulfilled, the data must be erased. You cannot collect user email addresses for account creation and then use them for marketing without separate consent.</p>
@@ -333,16 +333,16 @@ export default function DpdpActIndianStartups() {
             <div className="info-card anim">
               <div className="info-card-title">⚖️ Rights Every User Has Against Your Startup</div>
               <ul>
-                <li><strong>Right to access</strong> — summary of personal data processed and processing activities</li>
-                <li><strong>Right to correction and erasure</strong> — correct inaccurate data or erase data no longer needed for the stated purpose</li>
-                <li><strong>Right to grievance redressal</strong> — a readily available mechanism to raise complaints, with response within a defined period</li>
-                <li><strong>Right to nominate</strong> — nominate an individual to exercise rights on their behalf in case of death or incapacity</li>
-                <li><strong>Right to withdraw consent</strong> — withdrawal must be as easy as giving consent. You cannot make withdrawal harder than opt-in.</li>
+                <li><strong>Right to access</strong>, summary of personal data processed and processing activities</li>
+                <li><strong>Right to correction and erasure</strong>, correct inaccurate data or erase data no longer needed for the stated purpose</li>
+                <li><strong>Right to grievance redressal</strong>, a readily available mechanism to raise complaints, with response within a defined period</li>
+                <li><strong>Right to nominate</strong>, nominate an individual to exercise rights on their behalf in case of death or incapacity</li>
+                <li><strong>Right to withdraw consent</strong>, withdrawal must be as easy as giving consent. You cannot make withdrawal harder than opt-in.</li>
               </ul>
             </div>
 
             <h3>4. Breach Notification</h3>
-            <p>On becoming aware of a personal data breach, a Data Fiduciary must notify <strong>both</strong> the Data Protection Board and each affected Data Principal. The draft rules indicate a <strong>72-hour notification window</strong> to the Board — matching GDPR's standard. Delayed notification is itself a separately penalised offence.</p>
+            <p>On becoming aware of a personal data breach, a Data Fiduciary must notify <strong>both</strong> the Data Protection Board and each affected Data Principal. The draft rules indicate a <strong>72-hour notification window</strong> to the Board, matching GDPR's standard. Delayed notification is itself a separately penalised offence.</p>
 
             <h3>5. Children's Data</h3>
             <p>Processing of personal data of children (under 18) requires verifiable parental consent before processing. Behavioural tracking and targeted advertising to children is <strong>prohibited outright</strong>. This is one of the most strictly enforced provisions and carries a separate penalty tier.</p>
@@ -359,7 +359,7 @@ export default function DpdpActIndianStartups() {
               <div className="penalty-card"><div className="amt">₹10,000</div><div className="label">Failure to maintain accuracy of data, honour erasure requests, or provide grievance redressal</div></div>
             </div>
             <div className="pull-quote">
-              <p>These are per-instance penalties — not annual caps. A single breach affecting 50,000 users could attract multiple simultaneous penalties across notification failure, security failure, and erasure failures.</p>
+              <p>These are per-instance penalties, not annual caps. A single breach affecting 50,000 users could attract multiple simultaneous penalties across notification failure, security failure, and erasure failures.</p>
             </div>
           </section>
 
@@ -367,7 +367,7 @@ export default function DpdpActIndianStartups() {
             
           <figure className="b-figure">
               <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=760&q=80&auto=format&fit=crop" alt="Compliance roadmap and legal documentation for startups" loading="lazy" />
-              <figcaption>A documented compliance posture is not just a regulatory requirement — it is increasingly a commercial prerequisite for enterprise sales in India.</figcaption>
+              <figcaption>A documented compliance posture is not just a regulatory requirement, it is increasingly a commercial prerequisite for enterprise sales in India.</figcaption>
             </figure>
 
           <h2>6-Step DPDP Compliance Roadmap for Startups</h2>
@@ -388,7 +388,7 @@ export default function DpdpActIndianStartups() {
 
           <section id="dpdp-vs-gdpr">
             <h2>DPDP Act vs GDPR: Key Differences</h2>
-            <p>Many startups already have GDPR compliance in place. Here is what transfers — and what does not.</p>
+            <p>Many startups already have GDPR compliance in place. Here is what transfers, and what does not.</p>
             <table className="sc-table">
               <thead><tr><th>Dimension</th><th>DPDP Act 2023</th><th>GDPR</th></tr></thead>
               <tbody>
@@ -407,17 +407,17 @@ export default function DpdpActIndianStartups() {
 
           <div className="art-cta anim">
             <h3>Map your DPDP Act gaps before the Board does</h3>
-            <p>SecComply runs a dedicated DPDP Act readiness assessment — data mapping, consent architecture review, breach notification readiness, and vendor contract audit. Output: a prioritised remediation roadmap with timelines.</p>
+            <p>SecComply runs a dedicated DPDP Act readiness assessment, data mapping, consent architecture review, breach notification readiness, and vendor contract audit. Output: a prioritised remediation roadmap with timelines.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Free DPDP Assessment →</a>
           </div>
 
           <section id="faq" className="faq-section">
             <h2>Frequently Asked Questions</h2>
             {[
-              ['Does the DPDP Act apply to B2B startups?', 'Yes. If your B2B product processes personal data of employees or end-users of your clients — even indirectly — you are processing personal data of individuals in India and the Act applies. You will likely be a Data Processor for your clients, who are Data Fiduciaries. Your contracts must reflect this.'],
+              ['Does the DPDP Act apply to B2B startups?', 'Yes. If your B2B product processes personal data of employees or end-users of your clients, even indirectly, you are processing personal data of individuals in India and the Act applies. You will likely be a Data Processor for your clients, who are Data Fiduciaries. Your contracts must reflect this.'],
               ['What is a Significant Data Fiduciary?', 'The government will designate certain Data Fiduciaries as Significant based on volume and sensitivity of data processed, risk to rights of Data Principals, national security implications, and other criteria. SDFs must appoint a Data Protection Officer in India, conduct annual data audits, and perform Data Protection Impact Assessments for high-risk processing.'],
               ['Can we store Indian users\' data outside India?', 'The DPDP Act permits cross-border data transfers to countries notified by the government as permissible. The government has not yet published the restricted countries list, but the Act gives it power to restrict transfers to specific countries. Monitor MeitY notifications closely.'],
-              ['What counts as a personal data breach under DPDP?', 'Any unauthorised processing, accidental disclosure, loss, destruction, or alteration of personal data that may cause harm to Data Principals. This is broader than just external cyberattacks — it includes internal misuse, accidental email to wrong recipients, and system misconfiguration exposing data.'],
+              ['What counts as a personal data breach under DPDP?', 'Any unauthorised processing, accidental disclosure, loss, destruction, or alteration of personal data that may cause harm to Data Principals. This is broader than just external cyberattacks, it includes internal misuse, accidental email to wrong recipients, and system misconfiguration exposing data.'],
               ['We are a small startup with 10 employees. Do we still need to comply?', 'Yes. The DPDP Act has no SME exemption based on employee count. If you process personal data of individuals in India, you are a Data Fiduciary. The Act may provide some relaxation in obligations for certain categories of Data Fiduciaries through notifications, but no blanket exemption exists for startups.'],
             ].map(([q, a]) => (
               <div key={q} className="faq-item">
@@ -451,7 +451,7 @@ export default function DpdpActIndianStartups() {
           </div>
           <div className="sidebar-card">
             <h4>Related Reading</h4>
-            {[['/resources/blog/soc2-vs-iso27001','SOC 2 vs ISO 27001 — Which First?'],['/resources/blog/top-security-tools-startup','Top 10 Security Tools for Startups'],['/resources/blog/skt-breach-compliance-failure','SK Telecom: $97M Compliance Failure']].map(([href, label]) => (
+            {[['/resources/blog/soc2-vs-iso27001','SOC 2 vs ISO 27001, Which First?'],['/resources/blog/top-security-tools-startup','Top 10 Security Tools for Startups'],['/resources/blog/skt-breach-compliance-failure','SK Telecom: $97M Compliance Failure']].map(([href, label]) => (
               <a key={href} href={href} className="toc-link" style={{borderLeft:"none",paddingLeft:0}}>{label} →</a>
             ))}
           </div>
