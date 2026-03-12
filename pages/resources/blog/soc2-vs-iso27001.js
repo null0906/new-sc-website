@@ -347,7 +347,11 @@ export default function Soc2VsIso27001() {
         #btt{position:fixed;bottom:28px;right:28px;width:42px;height:42px;background:#E8632B;color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(232,99,43,.4);opacity:0;transform:translateY(12px);transition:all .3s;pointer-events:none;z-index:999}
         #btt.vis{opacity:1;transform:translateY(0);pointer-events:auto}
 
-        @media(max-width:900px){.art-wrap{grid-template-columns:1fr}.sidebar{display:none}.decision-grid{grid-template-columns:1fr}}
+        
+        .b-figure{margin:2em 0;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.06)}
+        .b-figure img{width:100%;display:block;height:260px;object-fit:cover;filter:brightness(.92)}
+        .b-figure figcaption{background:#0B1120;padding:12px 18px;font-size:.8rem;color:#94A3B8;line-height:1.55;border-top:1px solid rgba(255,255,255,.06)}
+@media(max-width:900px){.art-wrap{grid-template-columns:1fr}.sidebar{display:none}.decision-grid{grid-template-columns:1fr}}
         @media(max-width:600px){.soc-hero-h1{font-size:1.7rem}.soc-author-strip{flex-direction:column;align-items:flex-start;gap:10px}}
 
         @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
@@ -375,19 +379,22 @@ export default function Soc2VsIso27001() {
           <div className="soc-author-strip">
             <div className="avatar">SC</div>
             <div>
-              <div className="name">SecComply</div>
-              <div style={{fontSize:'.79rem',marginTop:2}}>
-                <span>📅 March 11, 2026</span>
-                <span className="sep"> · </span>
+              <div className="name">SecComply Editorial</div>
+              <div style={{fontSize:"0.8rem",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",marginTop:"3px"}}>
+                <span style={{color:"var(--cy)",fontWeight:600}}>✍️ Compliance Research Team</span>
+                <span style={{opacity:0.3}}>·</span>
                 <span id="read-time">📖 9 min read</span>
-                <span className="sep"> · </span>
-                <span>Security & Compliance</span>
+              </div>
+              <div style={{fontSize:"0.78rem",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",marginTop:"3px",color:"var(--tm)"}}>
+                <span>📅 March 11, 2026</span>
+                <span style={{opacity:0.3}}>·</span>
+                <span>🏢 SecComply</span>
               </div>
             </div>
-            <div className="soc-share-row" style={{marginLeft:'auto'}}>
+            <div className="soc-share-row" style={{marginLeft:"auto"}}>
               <a id="sl" href="#" target="_blank" rel="noopener" className="soc-share-btn">in LinkedIn</a>
               <a id="st" href="#" target="_blank" rel="noopener" className="soc-share-btn">𝕏 Twitter</a>
-              <button onClick={() => typeof window !== 'undefined' && window.copyLink()} className="soc-share-btn">🔗 Copy link</button>
+              <button onClick={() => typeof window !== "undefined" && window.copyLink()} className="soc-share-btn">🔗 Copy link</button>
             </div>
           </div>
         </div>
@@ -407,6 +414,10 @@ export default function Soc2VsIso27001() {
             </div>
           </section>
 
+                    <figure className="b-figure">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=760&q=80&auto=format&fit=crop" alt="SOC 2 vs ISO 27001 certification comparison for startups" loading="lazy" />
+            <figcaption>Both SOC 2 and ISO 27001 demonstrate security maturity — the right choice depends on where your customers are, not which framework sounds more impressive.</figcaption>
+          </figure>
           <section id="what-is-soc2">
             <h2>What is SOC 2 Type II?</h2>
             <p>SOC 2 (System and Organisation Controls 2) is an auditing standard developed by the American Institute of Certified Public Accountants. It's built specifically for technology and cloud service companies that store, process, or transmit customer data.</p>
@@ -436,12 +447,16 @@ export default function Soc2VsIso27001() {
               <li><strong>Risk-based approach:</strong> Every control must be driven by a risk assessment. You cannot just tick a checklist.</li>
             </ul>
 
-            <div className="key-takeaway" style={{background:'rgba(232,99,43,.05)',border:'1px solid rgba(232,99,43,.18)'}}>
-              <strong style={{color:'var(--cy)'}}>🇮🇳 India Context</strong>
-              <p style={{color:'var(--tb)'}}>ISO 27001 is widely recognised and often required by Indian government agencies, BFSI institutions, and large enterprise procurement teams. For domestic Indian buyers, this is typically what they ask for first. SOC 2 is still relatively unfamiliar in that space.</p>
+            <div className="key-takeaway" style={{background:"rgba(232,99,43,.05)",border:"1px solid rgba(232,99,43,.18)"}}>
+              <strong style={{color:"var(--cy)"}}>🇮🇳 India Context</strong>
+              <p style={{color:"var(--tb)"}}>ISO 27001 is widely recognised and often required by Indian government agencies, BFSI institutions, and large enterprise procurement teams. For domestic Indian buyers, this is typically what they ask for first. SOC 2 is still relatively unfamiliar in that space.</p>
             </div>
           </section>
 
+                    <figure className="b-figure">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=760&q=80&auto=format&fit=crop" alt="Compliance audit documentation and certification evidence" loading="lazy" />
+            <figcaption>Building documentation correctly from the start reduces audit prep time by 60–70%. Automation platforms handle evidence collection continuously, so the audit is not a sprint.</figcaption>
+          </figure>
           <section id="comparison">
             <h2>SOC 2 Type II vs ISO 27001: Side by Side</h2>
             <div className="comp-table-wrap">
@@ -591,7 +606,7 @@ export default function Soc2VsIso27001() {
           </div>
 
           <div className="sidebar-cta">
-            <h4 style={{fontSize:'.72rem',fontWeight:700,textTransform:'uppercase',letterSpacing:'.1em',color:'var(--cy)',marginBottom:'10px'}}>Free Advice</h4>
+            <h4 style={{fontSize:".72rem",fontWeight:700,textTransform:"uppercase",letterSpacing:".1em",color:"var(--cy)",marginBottom:"10px"}}>Free Advice</h4>
             <p>Get a straight recommendation on which certification is right for your business.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Now →</a>
           </div>
@@ -612,7 +627,7 @@ export default function Soc2VsIso27001() {
               ['/resources/blog/skt-breach-compliance-failure', 'SK Telecom: $97M Compliance Failure'],
               ['/resources/blog/what-is-cspm-scan', 'What is a CSPM Scan?'],
             ].map(([href, label]) => (
-              <a key={href} href={href} className="toc-link" style={{borderLeft:'none',paddingLeft:0}}>{label} →</a>
+              <a key={href} href={href} className="toc-link" style={{borderLeft:"none",paddingLeft:0}}>{label} →</a>
             ))}
           </div>
         </aside>

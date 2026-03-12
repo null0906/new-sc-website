@@ -343,6 +343,10 @@ export default function TopSecurityToolsStartup() {
         #btt.vis{opacity:1;transform:translateY(0);pointer-events:auto}
 
         @media(max-width:900px){.art-wrap{grid-template-columns:1fr}.sidebar{display:none}.tools-stats-bar{flex-wrap:wrap}.tools-stat{min-width:50%}}
+
+        .b-figure{margin:2em 0;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.06)}
+        .b-figure img{width:100%;display:block;height:260px;object-fit:cover;filter:brightness(.92)}
+        .b-figure figcaption{background:#0B1120;padding:12px 18px;font-size:.8rem;color:#94A3B8;line-height:1.55;border-top:1px solid rgba(255,255,255,.06)}
         @media(max-width:600px){.tools-hero-h1{font-size:1.7rem}.tools-author-strip{flex-direction:column;align-items:flex-start;gap:10px}.art h2{font-size:1.25rem}}
 
         @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
@@ -371,18 +375,21 @@ export default function TopSecurityToolsStartup() {
             <div className="avatar">BD</div>
             <div>
               <div className="name">Bhumika Deshmukh</div>
-              <div style={{fontSize:'.79rem',marginTop:2}}>
-                <span>📅 March 11, 2026</span>
-                <span className="sep"> · </span>
+              <div style={{fontSize:"0.8rem",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",marginTop:"3px"}}>
+                <span style={{color:"var(--cy)",fontWeight:600}}>✍️ Security Researcher & Technical Writer</span>
+                <span style={{opacity:0.3}}>·</span>
                 <span id="read-time">📖 8 min read</span>
-                <span className="sep"> · </span>
-                <span>Security Tools</span>
+              </div>
+              <div style={{fontSize:"0.78rem",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",marginTop:"3px",color:"var(--tm)"}}>
+                <span>📅 March 11, 2026</span>
+                <span style={{opacity:0.3}}>·</span>
+                <span>🏢 SecComply</span>
               </div>
             </div>
-            <div className="tools-share-row" style={{marginLeft:'auto'}}>
+            <div className="tools-share-row" style={{marginLeft:"auto"}}>
               <a id="sl" href="#" target="_blank" rel="noopener" className="tools-share-btn">in LinkedIn</a>
               <a id="st" href="#" target="_blank" rel="noopener" className="tools-share-btn">𝕏 Twitter</a>
-              <button onClick={() => typeof window !== 'undefined' && window.copyLink()} className="tools-share-btn">🔗 Copy link</button>
+              <button onClick={() => typeof window !== "undefined" && window.copyLink()} className="tools-share-btn">🔗 Copy link</button>
             </div>
           </div>
 
@@ -561,7 +568,7 @@ export default function TopSecurityToolsStartup() {
           <section id="audit-checklist">
             <div className="audit-checklist anim">
               <h3>⚡ 5 Controls to Audit This Week</h3>
-              <p style={{fontSize:'.88rem',color:'var(--tm)',marginBottom:'16px'}}>These five checks take under two hours combined and surface the gaps most likely to cause first-time audit failures.</p>
+              <p style={{fontSize:".88rem",color:"var(--tm)",marginBottom:"16px"}}>These five checks take under two hours combined and surface the gaps most likely to cause first-time audit failures.</p>
               {[
                 ['🔐', 'MFA Status', 'Open the Okta or Google Workspace admin console. If MFA is not 100%, that is the most urgent task — not a sprint item, a this-week item.'],
                 ['🔑', 'Secrets in Code', 'Run Trufflehog on the GitHub organisation. If hardcoded credentials appear in the commit history, rotate them immediately and migrate to AWS Secrets Manager.'],
@@ -655,7 +662,7 @@ export default function TopSecurityToolsStartup() {
           </div>
 
           <div className="sidebar-cta">
-            <h4 style={{fontSize:'.72rem',fontWeight:700,textTransform:'uppercase',letterSpacing:'.1em',color:'var(--cy)',marginBottom:'10px'}}>Free Assessment</h4>
+            <h4 style={{fontSize:".72rem",fontWeight:700,textTransform:"uppercase",letterSpacing:".1em",color:"var(--cy)",marginBottom:"10px"}}>Free Assessment</h4>
             <p>See exactly which SOC 2 controls are open in your stack — in 48 hours.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Now →</a>
           </div>
@@ -676,7 +683,7 @@ export default function TopSecurityToolsStartup() {
               ['/resources/blog/skt-breach-compliance-failure', 'SK Telecom: $97M Compliance Failure'],
               ['/resources/blog/soc2-vs-iso27001', 'SOC 2 vs ISO 27001 — Which First?'],
             ].map(([href, label]) => (
-              <a key={href} href={href} className="toc-link" style={{borderLeft:'none',paddingLeft:0}}>{label} →</a>
+              <a key={href} href={href} className="toc-link" style={{borderLeft:"none",paddingLeft:0}}>{label} →</a>
             ))}
           </div>
         </aside>
