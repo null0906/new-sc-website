@@ -133,10 +133,14 @@ export default function SKTBreach() {
         .skt-hero-h1{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,3rem);font-weight:800;color:var(--tx);line-height:1.2;max-width:780px;margin-bottom:1.1rem;letter-spacing:-1px;display:block;clear:both}
         .skt-hero-h1 em{font-style:italic;color:var(--cy)}
         .skt-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72;display:block;clear:both}
-        .skt-author-strip{display:flex;align-items:center;gap:1rem;padding:.9rem 1.25rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;max-width:500px;margin-bottom:2.5rem;clear:both}
-        .au-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:700;color:#fff;flex-shrink:0}
-        .au-name{font-weight:600;font-size:.87rem;color:var(--tx)}
-        .au-meta{font-size:.75rem;color:var(--tm);display:flex;gap:.8rem;margin-top:3px;flex-wrap:wrap}
+        /* Author card */
+        .skt-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;clear:both;flex-wrap:wrap}
+        .skt-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(232,99,43,.3)}
+        .skt-author-strip .author-info{flex:1;min-width:0}
+        .skt-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
+        .skt-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
+        .skt-author-strip .date-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.78rem;color:var(--tm)}
+        .skt-author-strip .dot{opacity:.3}
         .img-wrap{border-radius:16px;overflow:hidden;border:1px solid var(--bo);margin-bottom:3rem;line-height:0;display:block;clear:both;width:100%}
         .img-cap{text-align:center;font-size:.76rem;color:var(--tm);margin-top:.55rem;font-style:italic;line-height:1.5}
         .blog-layout{max-width:1280px;margin:0 auto;padding:0 2rem 5rem;display:grid;grid-template-columns:1fr 285px;gap:3rem;align-items:start}
@@ -242,6 +246,8 @@ export default function SKTBreach() {
         .anim{animation:fadeUp .55s ease both}
         @media(max-width:1024px){.blog-layout{grid-template-columns:1fr}.sb{position:static}}
         @media(max-width:768px){.stats-row{grid-template-columns:1fr}.toc-grid{grid-template-columns:1fr}.blog-layout{padding:0 1.25rem 3rem}.skt-hero{padding:2rem 1.25rem}}
+        @media(max-width:600px){.skt-hero-h1{font-size:1.65rem}.skt-author-strip{flex-direction:column;align-items:flex-start;gap:12px}}
+        @media(max-width:480px){.skt-hero{padding:1.5rem 1rem}.blog-layout{padding:0 1rem 3rem}}
       `}</style>
 
       <div id="reading-progress"></div>
@@ -270,11 +276,19 @@ export default function SKTBreach() {
         <p className="skt-hero-sub">South Korea's biggest telecom wasn't brought down by a sophisticated zero-day. It was brought down by missing basics, no encryption, weak access controls, and a delayed breach notification. Regulators made it cost $97 million to find out.</p>
 
         <div className="skt-author-strip">
-          <div className="au-av">SC</div>
-          <div>
-            <div className="au-name">SecComply Team</div>
-            <div className="au-meta"><span>✍️ Cybersecurity &amp; Compliance</span><span id="read-time">📖 7 min read</span></div>
-            <div className="au-meta"><span>📅 March 9, 2026</span><span>🏢 SecComply</span></div>
+          <div className="avatar">SC</div>
+          <div className="author-info">
+            <div className="name">SecComply Team</div>
+            <div className="meta-row">
+              <span style={{color:"var(--cy)",fontWeight:600}}>✍️ Cybersecurity &amp; Compliance</span>
+              <span className="dot">·</span>
+              <span id="read-time">📖 7 min read</span>
+            </div>
+            <div className="date-row">
+              <span>📅 March 9, 2026</span>
+              <span className="dot">·</span>
+              <span>🏢 SecComply</span>
+            </div>
           </div>
         </div>
 

@@ -159,10 +159,15 @@ export default function DpdpActIndianStartups() {
         .b-hero-h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:900;line-height:1.1;letter-spacing:-.03em;color:var(--tx);margin-bottom:18px}
         .b-hero-h1 .acc{background:linear-gradient(90deg,#E8632B,#FF8A50);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
         .b-hero-sub{font-size:1.08rem;line-height:1.75;color:var(--tm);max-width:740px;margin-bottom:28px}
-        .b-author-strip{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--bs);font-size:.82rem;color:var(--tm)}
-        .b-author-strip .avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;color:#fff;flex-shrink:0}
-        .b-author-strip .name{font-weight:700;color:var(--tx);font-size:.9rem}.b-author-strip .sep{opacity:.3}
-        .b-share-row{display:flex;align-items:center;gap:10px;margin-top:4px}
+        /* Author card */
+        .b-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-top:24px;flex-wrap:wrap}
+        .b-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.95rem;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(232,99,43,.3)}
+        .b-author-strip .author-info{flex:1;min-width:0}
+        .b-author-strip .name{font-weight:700;color:var(--tx);font-size:.95rem;margin-bottom:3px}
+        .b-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
+        .b-author-strip .date-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.78rem;color:var(--tm)}
+        .b-author-strip .dot{opacity:.3}
+        .b-share-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;width:100%}
         .b-share-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:100px;font-size:.75rem;font-weight:600;border:1px solid var(--bs);background:rgba(255,255,255,.04);color:var(--tm);transition:all .2s;cursor:pointer}
         .b-share-btn:hover{border-color:var(--cy);color:var(--cy)}
         .b-stats-bar{display:flex;gap:0;border:1px solid var(--bs);border-radius:16px;overflow:hidden;margin:40px 0 0;background:var(--bgc)}
@@ -221,8 +226,11 @@ export default function DpdpActIndianStartups() {
         .sidebar-cta a:hover{transform:translateY(-1px);text-decoration:none}
         #btt{position:fixed;bottom:28px;right:28px;width:42px;height:42px;background:#E8632B;color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(232,99,43,.4);opacity:0;transform:translateY(12px);transition:all .3s;pointer-events:none;z-index:999}
         #btt.vis{opacity:1;transform:translateY(0);pointer-events:auto}
-        @media(max-width:900px){.art-wrap{grid-template-columns:1fr}.sidebar{display:none}.b-stats-bar{flex-wrap:wrap}.b-stat{min-width:50%}.penalty-grid{grid-template-columns:1fr 1fr}}
-        @media(max-width:600px){.b-hero-h1{font-size:1.7rem}.b-author-strip{flex-direction:column;align-items:flex-start;gap:10px}.penalty-grid{grid-template-columns:1fr}}
+        .sc-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0;border-radius:8px}
+        .sc-table-wrap .sc-table{margin:0}
+        @media(max-width:900px){.art-wrap{grid-template-columns:1fr}.sidebar{display:none}.b-stats-bar{flex-wrap:wrap}.b-stat{min-width:50%;flex:1 1 50%}.cost-grid,.penalty-grid{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:600px){.b-hero-h1{font-size:1.65rem}.b-hero-sub{font-size:.97rem}.b-author-strip{flex-direction:column;align-items:flex-start;gap:12px}.b-stat{min-width:100%;flex:1 1 100%}.cost-grid,.penalty-grid{grid-template-columns:1fr}.sc-table{font-size:.8rem}.sc-table th,.sc-table td{padding:8px 10px}}
+        @media(max-width:480px){.b-hero-h1{font-size:1.45rem}.b-hero-inner{padding:0 16px}.art-wrap{padding:40px 16px 60px}.b-share-row{gap:6px}.b-share-btn{padding:5px 10px;font-size:.72rem}}
         @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
         .anim{animation:fadeUp .6s ease both}
       `}</style>
@@ -244,20 +252,20 @@ export default function DpdpActIndianStartups() {
           <p className="b-hero-sub">India's Digital Personal Data Protection Act is now enforceable. Penalties reach ₹250 crore per instance. Here is a plain-language breakdown of what it requires, who it applies to, and exactly what your startup needs to do.</p>
           <div className="b-author-strip">
             <div className="avatar">SS</div>
-            <div>
+            <div className="author-info">
               <div className="name">Soham Sawant</div>
-              <div style={{fontSize:"0.8rem",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",marginTop:"3px"}}>
-                <span style={{color:"var(--cy)",fontWeight:600}}>✍️ Cybersecurity Expert & Technical Writer</span>
-                <span style={{opacity:0.3}}>·</span>
+              <div className="meta-row">
+                <span style={{color:"var(--cy)",fontWeight:600}}>✍️ Cybersecurity Expert &amp; Technical Writer</span>
+                <span className="dot">·</span>
                 <span id="read-time">📖 8 min read</span>
               </div>
-              <div style={{fontSize:"0.78rem",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",marginTop:"3px",color:"var(--tm)"}}>
+              <div className="date-row">
                 <span>📅 March 11, 2026</span>
-                <span style={{opacity:0.3}}>·</span>
+                <span className="dot">·</span>
                 <span>🏢 SecComply</span>
               </div>
             </div>
-            <div className="b-share-row" style={{marginLeft:"auto"}}>
+            <div className="b-share-row">
               <a id="sl" href="#" target="_blank" rel="noopener" className="b-share-btn">in LinkedIn</a>
               <a id="st" href="#" target="_blank" rel="noopener" className="b-share-btn">𝕏 Twitter</a>
               <button onClick={() => typeof window !== "undefined" && window.copyLink()} className="b-share-btn">🔗 Copy link</button>
@@ -371,6 +379,7 @@ export default function DpdpActIndianStartups() {
             </figure>
 
           <h2>6-Step DPDP Compliance Roadmap for Startups</h2>
+            <div className="sc-table-wrap">
             <table className="sc-table">
               <thead><tr><th>Step</th><th>What to Do</th><th>Timeline</th></tr></thead>
               <tbody>
@@ -384,11 +393,13 @@ export default function DpdpActIndianStartups() {
                 ].map(([s, w, t]) => <tr key={s}><td>{s}</td><td>{w}</td><td style={{whiteSpace:"nowrap",color:"var(--cy)"}}>{t}</td></tr>)}
               </tbody>
             </table>
+            </div>
           </section>
 
           <section id="dpdp-vs-gdpr">
             <h2>DPDP Act vs GDPR: Key Differences</h2>
             <p>Many startups already have GDPR compliance in place. Here is what transfers, and what does not.</p>
+            <div className="sc-table-wrap">
             <table className="sc-table">
               <thead><tr><th>Dimension</th><th>DPDP Act 2023</th><th>GDPR</th></tr></thead>
               <tbody>
@@ -403,6 +414,7 @@ export default function DpdpActIndianStartups() {
                 ].map(([d, dp, g]) => <tr key={d}><td>{d}</td><td>{dp}</td><td>{g}</td></tr>)}
               </tbody>
             </table>
+            </div>
           </section>
 
           <div className="art-cta anim">

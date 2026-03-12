@@ -51,10 +51,14 @@ export default function Soc2TypeIvsTypeII() {
           .b-tag-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px}
           .b-cat{background:rgba(232,99,43,.15);color:#E8632B;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px;border:1px solid rgba(232,99,43,.3)}
           .b-hero h1{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:800;color:#F8FAFC;line-height:1.2;max-width:820px;margin:0 auto 20px}
-          .b-author-strip{display:flex;flex-direction:column;align-items:center;gap:3px;margin-top:24px}
-          .b-author-name{font-size:15px;font-weight:700;color:#E2E8F0}
-          .b-author-meta{font-size:13px;color:#94A3B8}
-          .b-author-meta span{color:#E8632B;font-weight:600}
+          /* Author card */
+          .b-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-top:24px;flex-wrap:wrap}
+          .b-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.95rem;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(232,99,43,.3)}
+          .b-author-strip .author-info{flex:1;min-width:0}
+          .b-author-strip .name{font-weight:700;color:#F8FAFC;font-size:.95rem;margin-bottom:3px}
+          .b-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
+          .b-author-strip .date-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.78rem;color:#94A3B8}
+          .b-author-strip .dot{opacity:.3}
           .b-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.06);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
           .b-stat{background:#0B1120;padding:20px 16px;text-align:center}
           .b-stat-val{font-size:1.6rem;font-weight:800;color:#E8632B;display:block;line-height:1}
@@ -107,6 +111,8 @@ export default function Soc2TypeIvsTypeII() {
           .b-back-top{position:fixed;bottom:32px;right:32px;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);color:#fff;font-size:18px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;z-index:999}
           .b-back-top.show{opacity:1}
           @media(max-width:768px){.b-layout{grid-template-columns:1fr}.b-sidebar{position:static}.b-stats{grid-template-columns:repeat(2,1fr)}}
+          @media(max-width:600px){.b-hero h1{font-size:1.65rem}.b-author-strip{flex-direction:column;align-items:flex-start;gap:12px}.b-stats{grid-template-columns:1fr}}
+          @media(max-width:480px){.b-hero{padding:40px 16px 32px}.b-wrap{padding:0 16px 60px}}
         `}</style>
       </Head>
 
@@ -120,9 +126,20 @@ export default function Soc2TypeIvsTypeII() {
         </div>
         <h1>SOC 2 Type I vs Type II, The Distinction That Actually Matters</h1>
         <div className="b-author-strip">
-          <span className="b-author-name">Gauri Khatate</span>
-          <span className="b-author-meta"><span>✍️ Security Researcher &amp; Technical Writer</span> · 📖 5 min read</span>
-          <span className="b-author-meta">📅 March 2026 · 🏢 SecComply</span>
+          <div className="avatar">GK</div>
+          <div className="author-info">
+            <div className="name">Gauri Khatate</div>
+            <div className="meta-row">
+              <span style={{color:"var(--cy)",fontWeight:600}}>✍️ Security Researcher &amp; Technical Writer</span>
+              <span className="dot">·</span>
+              <span id="read-time">📖 5 min read</span>
+            </div>
+            <div className="date-row">
+              <span>📅 March 2026</span>
+              <span className="dot">·</span>
+              <span>🏢 SecComply</span>
+            </div>
+          </div>
         </div>
       </section>
 

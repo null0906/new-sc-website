@@ -242,11 +242,15 @@ export default function TopSecurityToolsStartup() {
         .tools-hero-h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:900;line-height:1.1;letter-spacing:-.03em;color:var(--tx);margin-bottom:18px}
         .tools-hero-h1 .acc{background:linear-gradient(90deg,#E8632B,#FF8A50);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
         .tools-hero-sub{font-size:1.08rem;line-height:1.75;color:var(--tm);max-width:740px;margin-bottom:28px}
-        .tools-author-strip{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--bs);font-size:.82rem;color:var(--tm)}
-        .tools-author-strip .avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;color:#fff;flex-shrink:0}
-        .tools-author-strip .name{font-weight:700;color:var(--tx);font-size:.9rem}
-        .tools-author-strip .sep{opacity:.3}
-        .tools-share-row{display:flex;align-items:center;gap:10px;margin-top:4px}
+        /* Author card */
+        .tools-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-top:24px;flex-wrap:wrap}
+        .tools-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.95rem;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(232,99,43,.3)}
+        .tools-author-strip .author-info{flex:1;min-width:0}
+        .tools-author-strip .name{font-weight:700;color:var(--tx);font-size:.95rem;margin-bottom:3px}
+        .tools-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
+        .tools-author-strip .date-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.78rem;color:var(--tm)}
+        .tools-author-strip .dot{opacity:.3}
+        .tools-share-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;width:100%}
         .tools-share-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:100px;font-size:.75rem;font-weight:600;border:1px solid var(--bs);background:rgba(255,255,255,.04);color:var(--tm);transition:all .2s;cursor:pointer}
         .tools-share-btn:hover{border-color:var(--cy);color:var(--cy)}
 
@@ -342,7 +346,11 @@ export default function TopSecurityToolsStartup() {
         #btt{position:fixed;bottom:28px;right:28px;width:42px;height:42px;background:#E8632B;color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(232,99,43,.4);opacity:0;transform:translateY(12px);transition:all .3s;pointer-events:none;z-index:999}
         #btt.vis{opacity:1;transform:translateY(0);pointer-events:auto}
 
-        @media(max-width:900px){.art-wrap{grid-template-columns:1fr}.sidebar{display:none}.tools-stats-bar{flex-wrap:wrap}.tools-stat{min-width:50%}}
+        .sc-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0;border-radius:8px}
+        .sc-table-wrap .sc-table{margin:0}
+        @media(max-width:900px){.art-wrap{grid-template-columns:1fr}.sidebar{display:none}.tools-stats-bar{flex-wrap:wrap}.tools-stat{min-width:50%;flex:1 1 50%}}
+        @media(max-width:600px){.tools-hero-h1{font-size:1.65rem}.tools-author-strip{flex-direction:column;align-items:flex-start;gap:12px}.tools-stat{min-width:100%;flex:1 1 100%}.sc-table{font-size:.8rem}.sc-table th,.sc-table td{padding:8px 10px}}
+        @media(max-width:480px){.tools-hero-h1{font-size:1.45rem}.tools-hero-inner{padding:0 16px}.art-wrap{padding:40px 16px 60px}.tools-share-row{gap:6px}.tools-share-btn{padding:5px 10px;font-size:.72rem}}
 
         .b-figure{margin:2em 0;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.06)}
         .b-figure img{width:100%;display:block;height:260px;object-fit:cover;filter:brightness(.92)}
@@ -373,23 +381,18 @@ export default function TopSecurityToolsStartup() {
           </p>
           <div className="tools-author-strip">
             <div className="avatar">BD</div>
-            <div>
+            <div className="author-info">
               <div className="name">Bhumika Deshmukh</div>
-              <div style={{fontSize:"0.8rem",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",marginTop:"3px"}}>
-                <span style={{color:"var(--cy)",fontWeight:600}}>✍️ Security Researcher & Technical Writer</span>
-                <span style={{opacity:0.3}}>·</span>
+              <div className="meta-row">
+                <span style={{color:"var(--cy)",fontWeight:600}}>✍️ Security Researcher &amp; Technical Writer</span>
+                <span className="dot">·</span>
                 <span id="read-time">📖 8 min read</span>
               </div>
-              <div style={{fontSize:"0.78rem",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",marginTop:"3px",color:"var(--tm)"}}>
+              <div className="date-row">
                 <span>📅 March 11, 2026</span>
-                <span style={{opacity:0.3}}>·</span>
+                <span className="dot">·</span>
                 <span>🏢 SecComply</span>
               </div>
-            </div>
-            <div className="tools-share-row" style={{marginLeft:"auto"}}>
-              <a id="sl" href="#" target="_blank" rel="noopener" className="tools-share-btn">in LinkedIn</a>
-              <a id="st" href="#" target="_blank" rel="noopener" className="tools-share-btn">𝕏 Twitter</a>
-              <button onClick={() => typeof window !== "undefined" && window.copyLink()} className="tools-share-btn">🔗 Copy link</button>
             </div>
           </div>
 
@@ -589,6 +592,7 @@ export default function TopSecurityToolsStartup() {
             <h2>How SecComply Brings This Together</h2>
             <p>Every tool above generates security evidence. The problem most startups encounter is that this evidence lives in ten different platforms, in ten different formats, and needs to be manually extracted, organised, and presented to an auditor. That is where most of the 200-plus hours of SOC 2 preparation time goes, not building controls, but proving they exist.</p>
             <p>SecComply connects to each of these tools and handles that work automatically, mapping evidence simultaneously against SOC 2, ISO 27001, and India's DPDP Act 2023:</p>
+            <div className="sc-table-wrap">
             <table className="sc-table">
               <thead>
                 <tr><th>Tool</th><th>What SecComply adds</th></tr>
@@ -607,6 +611,7 @@ export default function TopSecurityToolsStartup() {
                 ].map(([t, d]) => <tr key={t}><td>{t}</td><td>{d}</td></tr>)}
               </tbody>
             </table>
+            </div>
             <p>The result is a compliance posture that is always current, always auditor-ready, and mapped simultaneously across three frameworks, without the engineering team spending a single hour on evidence collection.</p>
           </section>
 
