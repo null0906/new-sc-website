@@ -120,7 +120,7 @@ export default function Soc2TypeIvsTypeII() {
         </div>
         <h1>SOC 2 Type I vs Type II — The Distinction That Actually Matters</h1>
         <div className="b-author-strip">
-          <span className="b-author-name">Bhumika Deshmukh</span>
+          <span className="b-author-name">Gauri Khatate</span>
           <span className="b-author-meta"><span>✍️ Security Researcher &amp; Technical Writer</span> · 📖 5 min read</span>
           <span className="b-author-meta">📅 March 2026 · 🏢 SecComply</span>
         </div>
