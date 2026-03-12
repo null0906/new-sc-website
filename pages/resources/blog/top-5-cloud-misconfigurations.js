@@ -45,7 +45,8 @@ export default function CloudMisconfigurations() {
         <style>{`
           .b-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#E8632B,#FF8A50);z-index:9999;transition:width .1s linear}
           .b-wrap{max-width:1100px;margin:0 auto;padding:0 24px 80px}
-          .b-hero{background:linear-gradient(135deg,#0B1120 0%,#0F172A 100%);border-bottom:1px solid rgba(255,255,255,.07);padding:56px 24px 48px;text-align:center}
+          :root{--cy:#E8632B}
+          .b-hero{background:linear-gradient(135deg,#0B1120 0%,#0F172A 100%);border-bottom:1px solid rgba(255,255,255,.07);padding:56px 24px 48px;display:flex;flex-direction:column;align-items:center}
           .b-back{display:inline-flex;align-items:center;gap:6px;color:#94A3B8;font-size:13px;text-decoration:none;margin-bottom:24px;transition:color .2s}
           .b-back:hover{color:#E8632B}
           .b-tag-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px}
