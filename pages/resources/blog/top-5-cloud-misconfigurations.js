@@ -51,8 +51,9 @@ export default function CloudMisconfigurations() {
           .b-tag-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px}
           .b-cat{background:rgba(232,99,43,.15);color:#E8632B;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px;border:1px solid rgba(232,99,43,.3)}
           .b-hero h1{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:800;color:#F8FAFC;line-height:1.2;max-width:820px;margin:0 auto 20px}
+          .b-hero .b-author-strip{max-width:820px;margin-left:auto;margin-right:auto}
           /* Author card */
-          .b-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-top:24px;flex-wrap:wrap}
+          .b-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-top:24px;flex-wrap:wrap;text-align:left}
           .b-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.95rem;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(232,99,43,.3)}
           .b-author-strip .author-info{flex:1;min-width:0}
           .b-author-strip .name{font-weight:700;color:#F8FAFC;font-size:.95rem;margin-bottom:3px}
