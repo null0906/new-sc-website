@@ -35,7 +35,7 @@ export default function SaaSCase() {
           <div className="article-cta-box">
             <h3>Managing multiple compliance frameworks?</h3>
             <p>SecComply's cross-framework engine reduces effort by up to 40%. See how it works.</p>
-            <a href="/contact" className="article-cta-btn">Book Free Consultation →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="article-cta-btn">Book Free Consultation →</a>
           </div>
         </div>
       </article>

@@ -149,7 +149,7 @@ export default function VAPTChecklist() {
           <div className="article-cta-box">
             <h3>Not sure if you're ready for a VAPT audit?</h3>
             <p>SecComply offers VAPT readiness assessments to help organizations identify gaps before formal testing begins. Get audit-ready with confidence.</p>
-            <a href="/contact" className="article-cta-btn">Book VAPT Readiness Assessment →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="article-cta-btn">Book VAPT Readiness Assessment →</a>
           </div>
         </div>
       </article>

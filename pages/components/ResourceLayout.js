@@ -137,7 +137,7 @@ document.querySelectorAll('.footer-col a').forEach(function(l){l.addEventListene
       <li class="res-dd"><span class="res-dd-trigger"><a href="/resources">Resources</a><span class="res-dd-arrow dropdown-arrow">&#9662;</span></span><div class="res-dd-menu"><a href="/resources/blog"><span class="dropdown-icon">&#x1F4DD;</span> Blog</a><a href="/resources/guides"><span class="dropdown-icon">&#x1F4DA;</span> Guides</a><a href="/resources/case-studies"><span class="dropdown-icon">&#x1F4C1;</span> Case Studies</a><a href="/resources/tools"><span class="dropdown-icon">&#x1F6E0;&#xFE0F;</span> Tools</a><a href="/resources/webinars"><span class="dropdown-icon">&#x1F3A5;</span> Webinars</a><a href="/resources/platform"><span class="dropdown-icon">&#x1F4BB;</span> Platform</a></div></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
-    <div class="nav-actions"><a href="https://outlook.office.com/book/info@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary" target="_blank" rel="noopener">Book Consultation <span class="btn-icon">&rarr;</span></a></div>
+    <div class="nav-actions"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary" target="_blank" rel="noopener">Book Consultation <span class="btn-icon">&rarr;</span></a></div>
     <button class="mobile-toggle">&#9776;</button>
   </div>
 </nav>`}} />

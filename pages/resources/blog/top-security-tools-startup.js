@@ -619,7 +619,7 @@ export default function TopSecurityToolsStartup() {
           <div className="art-cta anim">
             <h3>Don't let a regulator be the one who finds the gaps</h3>
             <p>SecComply maps startup controls against SOC 2, ISO 27001, and DPDP Act, and shows exactly what's missing. Book a free compliance gap assessment.</p>
-            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Free Gap Assessment →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener">Book Free Gap Assessment →</a>
           </div>
 
           {/* FAQ */}
@@ -669,7 +669,7 @@ export default function TopSecurityToolsStartup() {
           <div className="sidebar-cta">
             <h4 style={{fontSize:".72rem",fontWeight:700,textTransform:"uppercase",letterSpacing:".1em",color:"var(--cy)",marginBottom:"10px"}}>Free Assessment</h4>
             <p>See exactly which SOC 2 controls are open in your stack, in 48 hours.</p>
-            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Now →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener">Book Now →</a>
           </div>
 
           <div className="sidebar-card">

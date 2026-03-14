@@ -35,7 +35,7 @@ export default function FintechCase() {
           <div className="article-cta-box">
             <h3>Fintech compliance made simple</h3>
             <p>SecComply helps fintech companies achieve ISO 27001, SOC 2, and RBI compliance faster.</p>
-            <a href="/contact" className="article-cta-btn">Book Free Consultation →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="article-cta-btn">Book Free Consultation →</a>
           </div>
         </div>
       </article>

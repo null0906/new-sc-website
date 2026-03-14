@@ -24,7 +24,7 @@ export default function ServiceInternalAuditPage() {
     <div class="hero-badge"><span class="hero-badge-dot"></span> 📊 Risk & Controls Assessment</div>
     <h1>Internal Risk & IT Controls Audits</h1>
     <p>Independent internal audit services for risk management and control effectiveness — strengthen your security posture and meet governance requirements.</p>
-    <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Get Started &rarr;</a>
+    <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Get Started &rarr;</a>
   </div>
 </section>
 
@@ -70,7 +70,7 @@ export default function ServiceInternalAuditPage() {
     <div class="cta-content reveal">
       <h2>Ready to Get Started with <span class="accent">Internal Risk & IT Controls Audits?</span></h2>
       <p>Book a free 15-minute consultation to discuss your needs and get a customized roadmap.</p>
-      <div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book Free Consultation &rarr;</a><a href="/contact" class="btn btn-outline btn-lg">Contact Us</a></div>
+      <div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book Free Consultation &rarr;</a><a href="/contact" class="btn btn-outline btn-lg">Contact Us</a></div>
     </div>
   </div>
 </section>

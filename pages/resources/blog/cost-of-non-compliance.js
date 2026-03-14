@@ -376,7 +376,7 @@ export default function CostOfNonCompliance() {
           <div className="art-cta anim">
             <h3>Calculate your specific compliance ROI</h3>
             <p>SecComply runs a 48-hour gap assessment that quantifies your current exposure in revenue terms, blocked deals, breach probability, and regulatory fine risk, and maps the fastest path to certification.</p>
-            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Free Assessment →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener">Book Free Assessment →</a>
           </div>
 
           <section id="faq" className="faq-section">
@@ -416,7 +416,7 @@ export default function CostOfNonCompliance() {
           <div className="sidebar-cta">
             <h4 style={{fontSize:".72rem",fontWeight:700,textTransform:"uppercase",letterSpacing:".1em",color:"var(--cy)",marginBottom:"10px"}}>Free Assessment</h4>
             <p>Quantify your current compliance exposure in revenue terms in 48 hours.</p>
-            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Now →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener">Book Now →</a>
           </div>
           <div className="sidebar-card">
             <h4>Tags</h4>

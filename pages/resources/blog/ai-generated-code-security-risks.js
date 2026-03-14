@@ -354,7 +354,7 @@ export default function AiCodeSecurityRisks() {
           <div className="art-cta anim">
             <h3>AI moves fast. Security gaps move faster.</h3>
             <p>SecComply maps your engineering security posture against SOC 2, ISO 27001, and India&apos;s DPDP Act — and shows exactly where AI-generated code is creating compliance blind spots.</p>
-            <a href="/contact">Book a Free Compliance Gap Assessment →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/">Book a Free Compliance Gap Assessment →</a>
           </div>
 
           <div className="faq-section">
@@ -387,7 +387,7 @@ export default function AiCodeSecurityRisks() {
           <div className="sidebar-cta">
             <h4 style={{fontSize:'.85rem',fontWeight:700,color:'var(--tx)',marginBottom:8}}>AI Code Security Audit</h4>
             <p>Map your codebase security posture against SOC 2, ISO 27001, and DPDP Act simultaneously.</p>
-            <a href="/contact">Book a Free Assessment →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/">Book a Free Assessment →</a>
           </div>
           <div className="sidebar-card">
             <h4>Related Posts</h4>

@@ -50,7 +50,7 @@ export default function HealthcareCase() {
           <div className="article-cta-box">
             <h3>Need SOC 2 + HIPAA compliance?</h3>
             <p>SecComply specializes in dual-framework implementations for healthcare technology companies. Book your free assessment.</p>
-            <a href="/contact" className="article-cta-btn">Book Free Consultation →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="article-cta-btn">Book Free Consultation →</a>
           </div>
         </div>
       </article>

@@ -265,7 +265,7 @@ export default function ISO27001Guide() {
           <div className="article-cta-box">
             <h3>Ready to start your ISO 27001 journey?</h3>
             <p>SecComply can get you from zero to certified in 90 days. Book a free consultation to get your gap assessment started.</p>
-            <a href="/contact" className="article-cta-btn">Book Free Consultation →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="article-cta-btn">Book Free Consultation →</a>
           </div>
         </div>
       </article>

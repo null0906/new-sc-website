@@ -24,7 +24,7 @@ export default function ServiceSecurityPolicyPage() {
     <div class="hero-badge"><span class="hero-badge-dot"></span> 📜 Policy Development</div>
     <h1>Security Policy Writing & Audit Readiness</h1>
     <p>Custom security policies, procedures, and documentation — professionally crafted to meet regulatory requirements and pass audits with confidence.</p>
-    <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Get Started &rarr;</a>
+    <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Get Started &rarr;</a>
   </div>
 </section>
 
@@ -70,7 +70,7 @@ export default function ServiceSecurityPolicyPage() {
     <div class="cta-content reveal">
       <h2>Ready to Get Started with <span class="accent">Security Policy Writing & Audit Readiness?</span></h2>
       <p>Book a free 15-minute consultation to discuss your needs and get a customized roadmap.</p>
-      <div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book Free Consultation &rarr;</a><a href="/contact" class="btn btn-outline btn-lg">Contact Us</a></div>
+      <div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book Free Consultation &rarr;</a><a href="/contact" class="btn btn-outline btn-lg">Contact Us</a></div>
     </div>
   </div>
 </section>

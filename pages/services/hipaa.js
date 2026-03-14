@@ -24,7 +24,7 @@ export default function ServiceHipaaPage() {
     <div class="hero-badge"><span class="hero-badge-dot"></span> 🏥 Healthcare Data Protection</div>
     <h1>HIPAA Compliance</h1>
     <p>Comprehensive HIPAA compliance services — protect patient data, meet regulatory requirements, and avoid costly penalties.</p>
-    <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Get Started &rarr;</a>
+    <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Get Started &rarr;</a>
   </div>
 </section>
 
@@ -70,7 +70,7 @@ export default function ServiceHipaaPage() {
     <div class="cta-content reveal">
       <h2>Ready to Get Started with <span class="accent">HIPAA Compliance?</span></h2>
       <p>Book a free 15-minute consultation to discuss your needs and get a customized roadmap.</p>
-      <div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book Free Consultation &rarr;</a><a href="/contact" class="btn btn-outline btn-lg">Contact Us</a></div>
+      <div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book Free Consultation &rarr;</a><a href="/contact" class="btn btn-outline btn-lg">Contact Us</a></div>
     </div>
   </div>
 </section>

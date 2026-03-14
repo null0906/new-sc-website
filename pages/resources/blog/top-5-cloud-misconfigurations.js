@@ -244,7 +244,7 @@ export default function CloudMisconfigurations() {
             <div className="b-cta-box">
               <h4>Cloud Posture Review</h4>
               <p>SecComply continuously monitors your cloud infrastructure against SOC 2, ISO 27001, and DPDP Act, and flags every gap before an auditor finds it.</p>
-              <a href="/contact" className="b-cta-btn">Book a Free Gap Assessment →</a>
+              <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="b-cta-btn">Book a Free Gap Assessment →</a>
             </div>
             <div className="b-sidebar-box">
               <h4>Related Posts</h4>

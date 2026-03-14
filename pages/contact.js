@@ -77,7 +77,7 @@ export default function ContactPage() {
 </section>
 
 <!-- CTA -->
-<section class="cta-section"><div class="cta-glow-1"></div><div class="cta-glow-2"></div><div class="container"><div class="cta-content reveal"><h2>Ready to Get <span class="accent">Started?</span></h2><p>Connect with Shivani to discuss how SecComply can help your organization achieve compliance without complexity. Book a free 15-minute consultation.</p><div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book a Consultation <span class="btn-icon">&rarr;</span></a><a href="/" class="btn btn-outline btn-lg">Back to Home <span class="btn-icon">&rarr;</span></a></div></div></div></section>
+<section class="cta-section"><div class="cta-glow-1"></div><div class="cta-glow-2"></div><div class="container"><div class="cta-content reveal"><h2>Ready to Get <span class="accent">Started?</span></h2><p>Connect with Shivani to discuss how SecComply can help your organization achieve compliance without complexity. Book a free 15-minute consultation.</p><div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book a Consultation <span class="btn-icon">&rarr;</span></a><a href="/" class="btn btn-outline btn-lg">Back to Home <span class="btn-icon">&rarr;</span></a></div></div></div></section>
 
 `}} />
 <Script src="/assets/js/animations.js" strategy="afterInteractive" />

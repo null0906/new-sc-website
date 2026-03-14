@@ -400,7 +400,7 @@ export default function EvaluateSecurityVendor() {
           <div className="art-cta anim">
             <h3>Not sure if your vendors are actually secure?</h3>
             <p>SecComply&apos;s third-party risk assessments help you build a vendor program that satisfies ISO 27001 Annex A and SOC 2 — and actually protects your organisation.</p>
-            <a href="/contact">Book a Free Consultation →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/">Book a Free Consultation →</a>
           </div>
 
           <div className="faq-section">
@@ -432,7 +432,7 @@ export default function EvaluateSecurityVendor() {
           <div className="sidebar-cta">
             <h4 style={{fontSize:'.85rem',fontWeight:700,color:'var(--tx)',marginBottom:8}}>Vendor Risk Assessment</h4>
             <p>Build a vendor program that satisfies ISO 27001 Annex A and SOC 2 — not just a one-off checklist.</p>
-            <a href="/contact">Book a Free Consultation →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/">Book a Free Consultation →</a>
           </div>
           <div className="sidebar-card">
             <h4>Related Posts</h4>

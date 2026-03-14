@@ -257,7 +257,7 @@ export default function Top10SecurityControls() {
           <div className="art-cta anim">
             <h3>See which controls you're missing, in 48 hours</h3>
             <p>SecComply runs a gap assessment across all 10 controls and maps findings against SOC 2, ISO 27001, and DPDP Act simultaneously. You receive a prioritised remediation roadmap, not a generic checklist.</p>
-            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Free Gap Assessment →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener">Book Free Gap Assessment →</a>
           </div>
 
           <section id="faq" className="faq-section">
@@ -287,7 +287,7 @@ export default function Top10SecurityControls() {
           <div className="sidebar-cta">
             <h4 style={{fontSize:".72rem",fontWeight:700,textTransform:"uppercase",letterSpacing:".1em",color:"var(--cy)",marginBottom:"10px"}}>Free Gap Assessment</h4>
             <p>Find out which of these 10 controls are missing in your stack.</p>
-            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Now →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener">Book Now →</a>
           </div>
           <div className="sidebar-card">
             <h4>Tags</h4>

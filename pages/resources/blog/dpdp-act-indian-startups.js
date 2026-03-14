@@ -420,7 +420,7 @@ export default function DpdpActIndianStartups() {
           <div className="art-cta anim">
             <h3>Map your DPDP Act gaps before the Board does</h3>
             <p>SecComply runs a dedicated DPDP Act readiness assessment, data mapping, consent architecture review, breach notification readiness, and vendor contract audit. Output: a prioritised remediation roadmap with timelines.</p>
-            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Free DPDP Assessment →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener">Book Free DPDP Assessment →</a>
           </div>
 
           <section id="faq" className="faq-section">
@@ -451,7 +451,7 @@ export default function DpdpActIndianStartups() {
           <div className="sidebar-cta">
             <h4 style={{fontSize:".72rem",fontWeight:700,textTransform:"uppercase",letterSpacing:".1em",color:"var(--cy)",marginBottom:"10px"}}>Free Assessment</h4>
             <p>Find out exactly where your startup stands against DPDP Act requirements.</p>
-            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Now →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener">Book Now →</a>
           </div>
           <div className="sidebar-card">
             <h4>Tags</h4>

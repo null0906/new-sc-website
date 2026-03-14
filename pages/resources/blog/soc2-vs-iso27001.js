@@ -570,7 +570,7 @@ export default function Soc2VsIso27001() {
           <div className="art-cta anim">
             <h3>Unsure where to start? A gap assessment tells you exactly.</h3>
             <p>We'll look at where you are, understand your customer base, and give you a straight recommendation with a realistic roadmap. No pitch, just honest advice.</p>
-            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Free 30-Minute Call →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener">Book Free 30-Minute Call →</a>
           </div>
 
           {/* FAQ */}
@@ -615,7 +615,7 @@ export default function Soc2VsIso27001() {
           <div className="sidebar-cta">
             <h4 style={{fontSize:".72rem",fontWeight:700,textTransform:"uppercase",letterSpacing:".1em",color:"var(--cy)",marginBottom:"10px"}}>Free Advice</h4>
             <p>Get a straight recommendation on which certification is right for your business.</p>
-            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" target="_blank" rel="noopener">Book Now →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener">Book Now →</a>
           </div>
 
           <div className="sidebar-card">

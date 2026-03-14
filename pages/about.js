@@ -125,7 +125,7 @@ export default function AboutPage() {
 </section>
 
 <!-- CTA -->
-<section class="cta-section"><div class="cta-glow-1"></div><div class="cta-glow-2"></div><div class="container"><div class="cta-content reveal"><h2>Ready to Work <span class="accent">Together?</span></h2><p>Let's discuss how we can help you achieve compliance without the complexity. Book a free 15-minute consultation to get started.</p><div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/?ismsaljsauthenabled" class="btn btn-primary btn-lg" target="_blank">Book Your Free Consultation <span class="btn-icon">&rarr;</span></a></div></div></div></section>
+<section class="cta-section"><div class="cta-glow-1"></div><div class="cta-glow-2"></div><div class="container"><div class="cta-content reveal"><h2>Ready to Work <span class="accent">Together?</span></h2><p>Let's discuss how we can help you achieve compliance without the complexity. Book a free 15-minute consultation to get started.</p><div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank">Book Your Free Consultation <span class="btn-icon">&rarr;</span></a></div></div></div></section>
 
 `}} />
 <Script src="/assets/js/animations.js" strategy="afterInteractive" />

@@ -192,7 +192,7 @@ export default function InternalAudit() {
           <div className="article-cta-box">
             <h3>Need help structuring your internal audit programme?</h3>
             <p>SecComply helps organizations design and execute risk-based internal audit programmes aligned with ISO 27001 and SOC 2 requirements.</p>
-            <a href="/contact" className="article-cta-btn">Book Free Consultation →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="article-cta-btn">Book Free Consultation →</a>
           </div>
         </div>
       </article>

@@ -245,7 +245,7 @@ export default function Soc2TypeIvsTypeII() {
             <div className="b-cta-box">
               <h4>SOC 2 Readiness Assessment</h4>
               <p>SecComply maps your controls against SOC 2, ISO 27001, and DPDP Act, and shows exactly what's missing before an auditor does.</p>
-              <a href="/contact" className="b-cta-btn">Book a Free Compliance Gap Assessment →</a>
+              <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="b-cta-btn">Book a Free Compliance Gap Assessment →</a>
             </div>
             <div className="b-sidebar-box">
               <h4>Related Posts</h4>

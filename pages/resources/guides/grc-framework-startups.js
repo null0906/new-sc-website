@@ -131,7 +131,7 @@ export default function GRCFramework() {
           <div className="article-cta-box">
             <h3>Ready to strengthen your GRC framework?</h3>
             <p>Whether you're building GRC from scratch, preparing for compliance audits, or scaling securely, SecComply is your trusted GRC partner. Book a free consultation today.</p>
-            <a href="/contact" className="article-cta-btn">Book Free Consultation →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="article-cta-btn">Book Free Consultation →</a>
           </div>
         </div>
       </article>

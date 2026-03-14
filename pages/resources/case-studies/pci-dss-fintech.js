@@ -105,7 +105,7 @@ export default function PCIDSSCase() {
           <div className="article-cta-box">
             <h3>Need PCI DSS compliance support?</h3>
             <p>SecComply helps fintech and payment organizations achieve PCI DSS alignment efficiently — without disrupting operations.</p>
-            <a href="/contact" className="article-cta-btn">Book Free Consultation →</a>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="article-cta-btn">Book Free Consultation →</a>
           </div>
         </div>
       </article>
