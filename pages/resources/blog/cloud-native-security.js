@@ -276,7 +276,7 @@ export default function CloudNativeSecurity() {
           </div>
 
           <figure className="b-figure anim">
-            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&h=520&fit=crop" alt="Cloud-native infrastructure, Kubernetes containers and microservices" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&h=520&fit=crop" alt="Cloud infrastructure security monitoring and posture management" loading="lazy" />
             <figcaption>Cloud-native environments have no perimeter. Workloads spin up and tear down in seconds. Identities are non-human. The old security model does not just perform poorly, it fundamentally does not apply.</figcaption>
           </figure>
 
@@ -329,7 +329,7 @@ export default function CloudNativeSecurity() {
           </section>
 
           <figure className="b-figure anim">
-            <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1200&h=520&fit=crop" alt="DevSecOps pipeline with security gates at every stage" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&h=520&fit=crop" alt="DevSecOps pipeline, automated security scanning and code review" loading="lazy" />
             <figcaption>A mature DevSecOps pipeline embeds security gates at every stage, from the first commit to production monitoring, so developers get security feedback in their own workflow, not six weeks later.</figcaption>
           </figure>
 
