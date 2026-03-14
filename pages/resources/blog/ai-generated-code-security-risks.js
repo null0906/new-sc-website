@@ -33,7 +33,7 @@ export default function AiCodeSecurityRisks() {
       {
         "@type": "BlogPosting",
         "headline": "AI-Generated Code and Security Risks",
-        "description": "AI coding tools are shipping code faster than security reviews can keep up. Here is where the risk actually lives — insecure defaults, stale dependencies, credential leaks, over-permissioned infra — and how to build the review layer that makes AI-speed development safe.",
+        "description": "AI coding tools are shipping code faster than security reviews can keep up. Here is where the risk actually lives, insecure defaults, stale dependencies, credential leaks, over-permissioned infra, and how to build the review layer that makes AI-speed development safe.",
         "image": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/blog/ai-generated-code-security-risks.png", "width": 1200, "height": 630, "caption": "AI-generated code security risks 2026" },
         "author": { "@type": "Person", "name": "Gauri Khatate", "worksFor": { "@type": "Organization", "name": "SecComply" } },
         "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } },
@@ -48,7 +48,7 @@ export default function AiCodeSecurityRisks() {
           { "@type": "Question", "name": "How does AI code generation affect SOC 2 compliance?", "acceptedAnswer": { "@type": "Answer", "text": "AI-generated code intersects directly with SOC 2 CC8.1 (change management), CC6.1 (logical access), and CC7.1 (monitoring). Auditors now ask whether AI-generated code goes through the same review rigour as human-written code. Teams that cannot articulate a clear answer create gaps in their control narrative." } },
           { "@type": "Question", "name": "What tools should I use to secure AI-generated code?", "acceptedAnswer": { "@type": "Answer", "text": "The four essential layers are: static analysis on every commit (Snyk Code, Semgrep), secrets scanning as a merge gate (TruffleHog, GitLeaks), dependency scanning on every build (Snyk Open Source, Dependabot), and an explicit AI code review checklist to create an auditable trail." } },
           { "@type": "Question", "name": "Why do AI tools produce over-permissioned infrastructure code?", "acceptedAnswer": { "@type": "Answer", "text": "Permissive configurations are easier to demonstrate working. A scaffolded IAM role with AdministratorAccess works in every example. A role scoped to minimum required permissions requires context about the specific use case the model does not have. Least privilege must be applied on top of AI output." } },
-          { "@type": "Question", "name": "What is the velocity trap in AI-assisted development?", "acceptedAnswer": { "@type": "Answer", "text": "When developers write code manually, friction moments act as informal security review. AI-generated code arrives complete and formatted, removing that friction. The natural response is to accept and move on — bypassing the informal review layer most teams did not realise they were relying on." } }
+          { "@type": "Question", "name": "What is the velocity trap in AI-assisted development?", "acceptedAnswer": { "@type": "Answer", "text": "When developers write code manually, friction moments act as informal security review. AI-generated code arrives complete and formatted, removing that friction. The natural response is to accept and move on, bypassing the informal review layer most teams did not realise they were relying on." } }
         ]
       },
       {
@@ -67,7 +67,7 @@ export default function AiCodeSecurityRisks() {
     <Layout>
       <Head>
         <title>AI-Generated Code and Security Risks | SecComply</title>
-        <meta name="description" content="AI coding tools are shipping code faster than security reviews can keep up. Insecure defaults, stale dependencies, credential leaks — here is where the risk lives and how to manage it." />
+        <meta name="description" content="AI coding tools are shipping code faster than security reviews can keep up. Insecure defaults, stale dependencies, credential leaks, here is where the risk lives and how to manage it." />
         <meta name="keywords" content="AI-generated code security, AI coding tools risks, secure code review, AppSec 2026, static analysis, dependency scanning, secrets management, SOC 2 CC8.1, ISO 27001, DPDP Act, supply chain security, GitHub Copilot security" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="author" content="Gauri Khatate" /><meta name="language" content="en-IN" />
@@ -76,7 +76,7 @@ export default function AiCodeSecurityRisks() {
         <meta name="theme-color" content="#020617" /><meta charSet="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="AI-Generated Code and Security Risks" />
-        <meta property="og:description" content="3 in 5 AI code suggestions contain at least one flaw. Here is where the risk lives — and how to build the review layer that makes AI-speed development safe." />
+        <meta property="og:description" content="3 in 5 AI code suggestions contain at least one flaw. Here is where the risk lives, and how to build the review layer that makes AI-speed development safe." />
         <meta property="og:url" content="https://seccomply.net/resources/blog/ai-generated-code-security-risks" />
         <meta property="og:image" content="https://seccomply.net/assets/images/blog/ai-generated-code-security-risks.png" />
         <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
@@ -211,7 +211,7 @@ export default function AiCodeSecurityRisks() {
           </nav>
           <div className="tools-cat-badge">🤖 AI Security</div>
           <h1 className="tools-hero-h1">AI-Generated Code and<br /><span className="acc">Security Risks</span></h1>
-          <p className="tools-hero-sub">Somewhere between the model&apos;s confident output and the production deploy, a question often goes unasked: was any of this actually reviewed for security? AI coding tools have quietly changed what it means to ship software — and most security processes haven&apos;t caught up.</p>
+          <p className="tools-hero-sub">Somewhere between the model&apos;s confident output and the production deploy, a question often goes unasked: was any of this actually reviewed for security? AI coding tools have quietly changed what it means to ship software, and most security processes haven&apos;t caught up.</p>
           <div className="tools-author-strip">
             <div className="avatar">GK</div>
             <div className="author-info">
@@ -243,16 +243,16 @@ export default function AiCodeSecurityRisks() {
       <div className="art-wrap">
         <article className="art">
 
-          <p>The conversation around AI in software development has mostly been about productivity. Faster feature delivery, reduced boilerplate, fewer blank-screen moments. All of that is real. What gets less airtime is the security dimension — not because it is a niche concern, but because it does not surface immediately. The problems tend to arrive later, when an audit surfaces a pattern nobody noticed, or when an incident trace leads back to a function nobody wrote by hand.</p>
+          <p>The conversation around AI in software development has mostly been about productivity. Faster feature delivery, reduced boilerplate, fewer blank-screen moments. All of that is real. What gets less airtime is the security dimension, not because it is a niche concern, but because it does not surface immediately. The problems tend to arrive later, when an audit surfaces a pattern nobody noticed, or when an incident trace leads back to a function nobody wrote by hand.</p>
 
           <figure className="b-figure anim">
             <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&h=520&fit=crop" alt="Developer reviewing AI-generated code for security issues" loading="lazy" />
-            <figcaption>AI coding assistants generate code from patterns learned across billions of lines of public source code — including the insecure ones.</figcaption>
+            <figcaption>AI coding assistants generate code from patterns learned across billions of lines of public source code, including the insecure ones.</figcaption>
           </figure>
 
           <section id="how-it-works">
-            <h2>How AI Coding Tools Actually Work — and Why That Matters</h2>
-            <p>AI coding assistants — GitHub Copilot, Cursor, Amazon CodeWhisperer — generate code by predicting what comes next based on patterns learned from billions of lines of publicly available source code. That is a remarkable capability. It is also the source of the core security tension.</p>
+            <h2>How AI Coding Tools Actually Work, and Why That Matters</h2>
+            <p>AI coding assistants, GitHub Copilot, Cursor, Amazon CodeWhisperer, generate code by predicting what comes next based on patterns learned from billions of lines of publicly available source code. That is a remarkable capability. It is also the source of the core security tension.</p>
             <p>Public code is not a security benchmark. It contains deprecated patterns, insecure defaults, hardcoded credentials used in tutorials, and architectural shortcuts that made sense in context but should not be generalised. The model does not distinguish between code that was written securely and code that just happened to be widely used. It learns from both equally.</p>
             <div className="pull-quote">
               <p>&ldquo;The model doesn&apos;t know the threat model. It doesn&apos;t know who&apos;s calling the endpoint, what data is flowing through it, or what the blast radius looks like if the validation is wrong.&rdquo;</p>
@@ -261,24 +261,24 @@ export default function AiCodeSecurityRisks() {
 
           <section id="five-risks">
             <h2>Five Security Risks That Show Up Consistently</h2>
-            <p>The vulnerabilities in AI-generated code are not random. They cluster around predictable patterns — which makes them knowable, and in most cases, preventable.</p>
+            <p>The vulnerabilities in AI-generated code are not random. They cluster around predictable patterns, which makes them knowable, and in most cases, preventable.</p>
 
             <div className="risk-card anim">
               <div className="risk-num">01</div>
               <div className="risk-title">Insecure Defaults Reproduced at Scale</div>
-              <div className="risk-desc">AI models reproduce the patterns they were trained on. A significant portion of public code uses insecure defaults — disabled certificate validation, wildcard CORS headers, debug logging left on, error responses that expose stack traces. These patterns get reproduced confidently and at speed, with no visual cue that the default is wrong.</div>
+              <div className="risk-desc">AI models reproduce the patterns they were trained on. A significant portion of public code uses insecure defaults, disabled certificate validation, wildcard CORS headers, debug logging left on, error responses that expose stack traces. These patterns get reproduced confidently and at speed, with no visual cue that the default is wrong.</div>
             </div>
 
             <div className="risk-card anim">
               <div className="risk-num">02</div>
               <div className="risk-title">Stale Dependencies with Known CVEs</div>
-              <div className="risk-desc">When an AI tool suggests an import or recommends a library, it is drawing on training data with a cutoff date. That library may have accumulated critical vulnerabilities since the model learned about it. Automated dependency scanning is the only reliable check — no human reviewer can carry the current CVE list for every package in the ecosystem.</div>
+              <div className="risk-desc">When an AI tool suggests an import or recommends a library, it is drawing on training data with a cutoff date. That library may have accumulated critical vulnerabilities since the model learned about it. Automated dependency scanning is the only reliable check, no human reviewer can carry the current CVE list for every package in the ecosystem.</div>
             </div>
 
             <div className="risk-card anim">
               <div className="risk-num">03</div>
               <div className="risk-title">Shallow Input Validation</div>
-              <div className="risk-desc">Generated code tends to optimise for the expected case. Malformed input, boundary conditions, type coercion edge cases, and injection vectors often get handled incompletely — or not at all. In any API surface or user-facing feature, this is a direct path to SQL injection, XSS, and logic bypass vulnerabilities.</div>
+              <div className="risk-desc">Generated code tends to optimise for the expected case. Malformed input, boundary conditions, type coercion edge cases, and injection vectors often get handled incompletely, or not at all. In any API surface or user-facing feature, this is a direct path to SQL injection, XSS, and logic bypass vulnerabilities.</div>
             </div>
 
             <div className="risk-card anim">
@@ -290,7 +290,7 @@ export default function AiCodeSecurityRisks() {
             <div className="risk-card anim">
               <div className="risk-num">05</div>
               <div className="risk-title">Over-Permissioned Infrastructure Code</div>
-              <div className="risk-desc">AI-generated Terraform, CloudFormation, and IAM configurations tend toward permissiveness because permissive configurations are easier to demonstrate working. A scaffolded IAM role with admin access works in every example. A role scoped to minimum required permissions requires context the model does not have. Least privilege must be applied on top of AI output — it does not emerge from it.</div>
+              <div className="risk-desc">AI-generated Terraform, CloudFormation, and IAM configurations tend toward permissiveness because permissive configurations are easier to demonstrate working. A scaffolded IAM role with admin access works in every example. A role scoped to minimum required permissions requires context the model does not have. Least privilege must be applied on top of AI output, it does not emerge from it.</div>
             </div>
           </section>
 
@@ -301,19 +301,19 @@ export default function AiCodeSecurityRisks() {
 
           <section id="velocity-trap">
             <h2>The Velocity Trap</h2>
-            <p>There is a subtler problem that does not get discussed enough: the relationship between AI coding speed and the natural friction that catches security issues. When a developer writes code manually, there are moments of friction that sometimes work in the codebase&apos;s favour — reading back through logic before committing, the slight pause before accepting an approach that feels off.</p>
-            <p>AI-generated code arrives complete. It is formatted, it compiles, the tests often pass. The natural response is to accept it and move on. The friction that catches issues is missing — and with it, a layer of informal security review that most teams did not realise they were relying on.</p>
+            <p>There is a subtler problem that does not get discussed enough: the relationship between AI coding speed and the natural friction that catches security issues. When a developer writes code manually, there are moments of friction that sometimes work in the codebase&apos;s favour, reading back through logic before committing, the slight pause before accepting an approach that feels off.</p>
+            <p>AI-generated code arrives complete. It is formatted, it compiles, the tests often pass. The natural response is to accept it and move on. The friction that catches issues is missing, and with it, a layer of informal security review that most teams did not realise they were relying on.</p>
           </section>
 
           <section id="soc2">
             <h2>What This Means for SOC 2 and Compliance Teams</h2>
             <div className="soc2-callout">
-              <strong>📋 SOC 2 Common Criteria — AI Code Intersections</strong>
-              <p><strong>CC8.1 — Change management:</strong> Are all changes reviewed before production? Does AI-generated code go through the same rigour as human-written code?</p>
-              <p><strong>CC6.1 — Logical access:</strong> Are access patterns in generated infrastructure code validated against least privilege?</p>
-              <p><strong>CC7.1 — Monitoring:</strong> Is AI-generated code included in vulnerability scan scope? Are scan results reviewed and acted on?</p>
+              <strong>📋 SOC 2 Common Criteria, AI Code Intersections</strong>
+              <p><strong>CC8.1, Change management:</strong> Are all changes reviewed before production? Does AI-generated code go through the same rigour as human-written code?</p>
+              <p><strong>CC6.1, Logical access:</strong> Are access patterns in generated infrastructure code validated against least privilege?</p>
+              <p><strong>CC7.1, Monitoring:</strong> Is AI-generated code included in vulnerability scan scope? Are scan results reviewed and acted on?</p>
             </div>
-            <p>Auditors are starting to ask about AI-generated code directly. Teams that cannot articulate a clear answer are creating gaps in their control narrative. The expectation is not that AI tools are banned — it is that the review process accounts for what AI tools introduce.</p>
+            <p>Auditors are starting to ask about AI-generated code directly. Teams that cannot articulate a clear answer are creating gaps in their control narrative. The expectation is not that AI tools are banned, it is that the review process accounts for what AI tools introduce.</p>
           </section>
 
           <section id="review-layer">
@@ -324,14 +324,14 @@ export default function AiCodeSecurityRisks() {
                 <div className="check-icon">🔍</div>
                 <div>
                   <div className="check-title">Automated Static Analysis on Every Commit</div>
-                  <div className="check-desc">Snyk Code, Semgrep, and Checkmarx scan for vulnerability patterns before code reaches review. When AI-generated output is entering the codebase at volume, automated scanning is the only scalable check. Manual review catches logic problems — it cannot reliably catch the full surface area that static analysis covers.</div>
+                  <div className="check-desc">Snyk Code, Semgrep, and Checkmarx scan for vulnerability patterns before code reaches review. When AI-generated output is entering the codebase at volume, automated scanning is the only scalable check. Manual review catches logic problems, it cannot reliably catch the full surface area that static analysis covers.</div>
                 </div>
               </div>
               <div className="checklist-item">
                 <div className="check-icon">🔑</div>
                 <div>
                   <div className="check-title">Secrets Scanning as a Merge Gate</div>
-                  <div className="check-desc">TruffleHog and GitLeaks scan the full commit history and flag credentials, API keys, and tokens before they land in production. This should be a hard gate — a failed secrets scan blocks the merge. Given how AI tools generate working examples, this category of risk is structurally higher than it was with fully manual code.</div>
+                  <div className="check-desc">TruffleHog and GitLeaks scan the full commit history and flag credentials, API keys, and tokens before they land in production. This should be a hard gate, a failed secrets scan blocks the merge. Given how AI tools generate working examples, this category of risk is structurally higher than it was with fully manual code.</div>
                 </div>
               </div>
               <div className="checklist-item">
@@ -345,7 +345,7 @@ export default function AiCodeSecurityRisks() {
                 <div className="check-icon">✅</div>
                 <div>
                   <div className="check-title">An Explicit AI Code Review Checklist</div>
-                  <div className="check-desc">A short checklist — input validation confirmed, no hardcoded values, dependencies scanned, access scope verified — creates a reviewable audit trail and makes the expectation explicit rather than assumed. Teams that have defined what &ldquo;security reviewed&rdquo; means for AI-generated code are in a materially better position than those that leave it to individual discretion.</div>
+                  <div className="check-desc">A short checklist, input validation confirmed, no hardcoded values, dependencies scanned, access scope verified, creates a reviewable audit trail and makes the expectation explicit rather than assumed. Teams that have defined what &ldquo;security reviewed&rdquo; means for AI-generated code are in a materially better position than those that leave it to individual discretion.</div>
                 </div>
               </div>
             </div>
@@ -353,7 +353,7 @@ export default function AiCodeSecurityRisks() {
 
           <div className="art-cta anim">
             <h3>AI moves fast. Security gaps move faster.</h3>
-            <p>SecComply maps your engineering security posture against SOC 2, ISO 27001, and India&apos;s DPDP Act — and shows exactly where AI-generated code is creating compliance blind spots.</p>
+            <p>SecComply maps your engineering security posture against SOC 2, ISO 27001, and India&apos;s DPDP Act, and shows exactly where AI-generated code is creating compliance blind spots.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/">Book a Free Compliance Gap Assessment →</a>
           </div>
 
@@ -363,8 +363,8 @@ export default function AiCodeSecurityRisks() {
               ['Does AI-generated code create security vulnerabilities?', 'Yes. AI models are trained on public code that includes insecure patterns, deprecated libraries, and hardcoded credentials. The model reproduces those patterns without knowing which are unsafe. Research shows 3 in 5 AI code suggestions contain at least one security flaw.'],
               ['How does AI code generation affect SOC 2 compliance?', 'AI-generated code intersects directly with SOC 2 CC8.1 (change management), CC6.1 (logical access), and CC7.1 (monitoring). Auditors now ask whether AI-generated code goes through the same review rigour as human-written code. Teams that cannot articulate a clear answer create gaps in their control narrative.'],
               ['What tools should I use to secure AI-generated code?', 'The four essential layers are: static analysis on every commit (Snyk Code, Semgrep), secrets scanning as a merge gate (TruffleHog, GitLeaks), dependency scanning on every build (Snyk Open Source, Dependabot), and an explicit AI code review checklist to create an auditable trail.'],
-              ['Why do AI tools produce over-permissioned infrastructure code?', 'Permissive configurations are easier to demonstrate working. A scaffolded IAM role with AdministratorAccess works in every example. A role scoped to minimum required permissions requires context the model does not have. Least privilege must be applied on top of AI output — it does not emerge from it.'],
-              ['What is the velocity trap in AI-assisted development?', 'When developers write code manually, friction moments act as informal security review. AI-generated code arrives complete and formatted, removing that friction. The natural response is to accept and move on — bypassing the informal review layer most teams did not realise they were relying on.'],
+              ['Why do AI tools produce over-permissioned infrastructure code?', 'Permissive configurations are easier to demonstrate working. A scaffolded IAM role with AdministratorAccess works in every example. A role scoped to minimum required permissions requires context the model does not have. Least privilege must be applied on top of AI output, it does not emerge from it.'],
+              ['What is the velocity trap in AI-assisted development?', 'When developers write code manually, friction moments act as informal security review. AI-generated code arrives complete and formatted, removing that friction. The natural response is to accept and move on, bypassing the informal review layer most teams did not realise they were relying on.'],
             ].map(([q, a], i) => (
               <div key={i} className="faq-item">
                 <button className="faq-question" onClick={e => window.toggleFaq && window.toggleFaq(e.currentTarget)}>{q}<span className="faq-icon">+</span></button>

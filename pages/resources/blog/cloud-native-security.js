@@ -33,8 +33,8 @@ export default function CloudNativeSecurity() {
       {
         "@type": "BlogPosting",
         "headline": "Cloud-Native Security: Key Concepts Every Team Must Know in 2025",
-        "description": "From containers to microservices, Zero Trust to DevSecOps — a complete guide to securing modern cloud-native environments and achieving continuous compliance across ISO 27001, SOC 2, HIPAA, and GDPR.",
-        "image": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/blog/cloud-native-security.png", "width": 1200, "height": 630, "caption": "Cloud-native security concepts 2025 — containers, Kubernetes, Zero Trust, DevSecOps, CSPM" },
+        "description": "From containers to microservices, Zero Trust to DevSecOps, a complete guide to securing modern cloud-native environments and achieving continuous compliance across ISO 27001, SOC 2, HIPAA, and GDPR.",
+        "image": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/blog/cloud-native-security.png", "width": 1200, "height": 630, "caption": "Cloud-native security concepts 2025, containers, Kubernetes, Zero Trust, DevSecOps, CSPM" },
         "author": { "@type": "Person", "name": "Soham Sawant", "jobTitle": "Cybersecurity Expert & Technical Writer", "description": "Soham Sawant is a cybersecurity expert and technical writer at SecComply. With deep expertise spanning cloud security architecture, compliance automation, and threat intelligence, Soham writes at the intersection of rigorous technical accuracy and compelling narrative.", "worksFor": { "@type": "Organization", "name": "SecComply" } },
         "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } },
         "datePublished": "2025-06-01", "dateModified": "2025-06-01",
@@ -45,11 +45,11 @@ export default function CloudNativeSecurity() {
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "What is cloud-native security?", "acceptedAnswer": { "@type": "Answer", "text": "Cloud-native security is a security approach designed specifically for environments built on containers, microservices, Kubernetes, and serverless technologies. It shifts security left — embedding controls into the development and deployment pipeline rather than relying on a network perimeter boundary." } },
-          { "@type": "Question", "name": "What is the difference between cloud security and cloud-native security?", "acceptedAnswer": { "@type": "Answer", "text": "Cloud security is a broad term covering all security practices in cloud environments. Cloud-native security specifically addresses the unique challenges of containers, Kubernetes, and CI/CD pipelines — technologies with fundamentally different threat models compared to traditional virtual machines and monolithic applications." } },
-          { "@type": "Question", "name": "What is CSPM and why do organisations need it?", "acceptedAnswer": { "@type": "Answer", "text": "CSPM (Cloud Security Posture Management) continuously monitors your cloud infrastructure against security benchmarks and compliance frameworks, identifying misconfigurations in real time. Organisations need it because 82% of cloud breaches are caused by misconfiguration — not sophisticated exploits — and manual reviews cannot keep pace with the rate of infrastructure change in cloud-native environments." } },
+          { "@type": "Question", "name": "What is cloud-native security?", "acceptedAnswer": { "@type": "Answer", "text": "Cloud-native security is a security approach designed specifically for environments built on containers, microservices, Kubernetes, and serverless technologies. It shifts security left, embedding controls into the development and deployment pipeline rather than relying on a network perimeter boundary." } },
+          { "@type": "Question", "name": "What is the difference between cloud security and cloud-native security?", "acceptedAnswer": { "@type": "Answer", "text": "Cloud security is a broad term covering all security practices in cloud environments. Cloud-native security specifically addresses the unique challenges of containers, Kubernetes, and CI/CD pipelines, technologies with fundamentally different threat models compared to traditional virtual machines and monolithic applications." } },
+          { "@type": "Question", "name": "What is CSPM and why do organisations need it?", "acceptedAnswer": { "@type": "Answer", "text": "CSPM (Cloud Security Posture Management) continuously monitors your cloud infrastructure against security benchmarks and compliance frameworks, identifying misconfigurations in real time. Organisations need it because 82% of cloud breaches are caused by misconfiguration, not sophisticated exploits, and manual reviews cannot keep pace with the rate of infrastructure change in cloud-native environments." } },
           { "@type": "Question", "name": "How does cloud-native security support ISO 27001 certification?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001 requires demonstrable controls across access management (Annex A.9), operations security (A.12), and secure development (A.14). Cloud-native practices directly produce the required evidence: CSPM generates continuous configuration records, DevSecOps pipeline logs demonstrate secure development lifecycle, and Zero Trust IAM policies satisfy access control requirements." } },
-          { "@type": "Question", "name": "Where should an organisation start with cloud-native security?", "acceptedAnswer": { "@type": "Answer", "text": "Start with visibility. Deploy a CSPM tool to get a complete inventory of all cloud resources and an honest assessment of your current misconfiguration risk. From that baseline, prioritise by severity and blast radius — internet-facing resources with sensitive data first. Then layer in Kubernetes hardening, DevSecOps pipeline integration, and Zero Trust IAM policies." } }
+          { "@type": "Question", "name": "Where should an organisation start with cloud-native security?", "acceptedAnswer": { "@type": "Answer", "text": "Start with visibility. Deploy a CSPM tool to get a complete inventory of all cloud resources and an honest assessment of your current misconfiguration risk. From that baseline, prioritise by severity and blast radius, internet-facing resources with sensitive data first. Then layer in Kubernetes hardening, DevSecOps pipeline integration, and Zero Trust IAM policies." } }
         ]
       },
       {
@@ -68,7 +68,7 @@ export default function CloudNativeSecurity() {
     <Layout>
       <Head>
         <title>Cloud-Native Security: Key Concepts Every Team Must Know in 2025 | SecComply</title>
-        <meta name="description" content="From containers to microservices, Zero Trust to DevSecOps — a complete guide to securing modern cloud-native environments and achieving continuous compliance across ISO 27001, SOC 2, HIPAA, and GDPR." />
+        <meta name="description" content="From containers to microservices, Zero Trust to DevSecOps, a complete guide to securing modern cloud-native environments and achieving continuous compliance across ISO 27001, SOC 2, HIPAA, and GDPR." />
         <meta name="keywords" content="cloud-native security 2025, CSPM cloud security posture management, Zero Trust architecture, DevSecOps pipeline, Kubernetes security hardening, container security, ISO 27001 cloud compliance, SOC 2 cloud, HIPAA GDPR cloud, supply chain security SBOM, 4C model" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="author" content="Soham Sawant" /><meta name="language" content="en-IN" />
@@ -81,7 +81,7 @@ export default function CloudNativeSecurity() {
         <meta property="og:url" content="https://seccomply.net/resources/blog/cloud-native-security" />
         <meta property="og:image" content="https://seccomply.net/assets/images/blog/cloud-native-security.png" />
         <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Cloud-native security concepts 2025 — Zero Trust, Kubernetes, CSPM, DevSecOps" />
+        <meta property="og:image:alt" content="Cloud-native security concepts 2025, Zero Trust, Kubernetes, CSPM, DevSecOps" />
         <meta property="og:site_name" content="SecComply" /><meta property="og:locale" content="en_IN" />
         <meta property="article:published_time" content="2025-06-01T08:00:00+05:30" />
         <meta property="article:modified_time" content="2025-06-01T08:00:00+05:30" />
@@ -91,7 +91,7 @@ export default function CloudNativeSecurity() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@seccomply" /><meta name="twitter:creator" content="@seccomply" />
         <meta name="twitter:title" content="Cloud-Native Security: Key Concepts Every Team Must Know in 2025" />
-        <meta name="twitter:description" content="82% of cloud breaches are caused by misconfiguration. Here is the complete guide to cloud-native security — 4C model, Zero Trust, Kubernetes, CSPM." />
+        <meta name="twitter:description" content="82% of cloud breaches are caused by misconfiguration. Here is the complete guide to cloud-native security, 4C model, Zero Trust, Kubernetes, CSPM." />
         <meta name="twitter:image" content="https://seccomply.net/assets/images/blog/cloud-native-security.png" />
         <meta name="twitter:image:alt" content="Cloud-native security 2025 guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -235,7 +235,7 @@ export default function CloudNativeSecurity() {
           </nav>
           <div className="tools-cat-badge">☁️ Cloud Security</div>
           <h1 className="tools-hero-h1"><span className="acc">Cloud-Native Security</span>:<br />Key Concepts Every Team Must Know</h1>
-          <p className="tools-hero-sub">From containers to microservices, Zero Trust to DevSecOps — a complete guide to securing modern cloud-native environments and achieving continuous compliance across ISO 27001, SOC 2, HIPAA, and GDPR.</p>
+          <p className="tools-hero-sub">From containers to microservices, Zero Trust to DevSecOps, a complete guide to securing modern cloud-native environments and achieving continuous compliance across ISO 27001, SOC 2, HIPAA, and GDPR.</p>
           <div className="tools-author-strip">
             <div className="avatar">SS</div>
             <div className="author-info">
@@ -268,81 +268,81 @@ export default function CloudNativeSecurity() {
         <article className="art">
 
           <p>In 2016, attackers stole $81 million from Bangladesh Bank in a weekend. Buried in the post-mortem was a detail that barely made the headlines: the bank&apos;s core systems were not cloud-native, but the attacker&apos;s techniques absolutely were. They moved like microservices. They isolated like containers. They persisted like a Kubernetes workload that nobody thought to audit.</p>
-          <p>Today, the stakes are higher, the attack surface is infinitely larger, and cloud-native environments — containers, Kubernetes, serverless, microservices — are where your business actually lives. The question is no longer whether you need cloud-native security. The question is whether you understand it well enough to do it right.</p>
+          <p>Today, the stakes are higher, the attack surface is infinitely larger, and cloud-native environments, containers, Kubernetes, serverless, microservices, are where your business actually lives. The question is no longer whether you need cloud-native security. The question is whether you understand it well enough to do it right.</p>
 
           <div className="pull-quote">
-            <p>&ldquo;The cloud did not just change where we run software. It changed everything — how we build it, deploy it, scale it, and how we must protect it. Perimeter security was never designed for infrastructure that spins up a thousand containers in seconds and vanishes just as fast.&rdquo;</p>
+            <p>&ldquo;The cloud did not just change where we run software. It changed everything, how we build it, deploy it, scale it, and how we must protect it. Perimeter security was never designed for infrastructure that spins up a thousand containers in seconds and vanishes just as fast.&rdquo;</p>
             <cite>— Soham Sawant, Cybersecurity Expert &amp; Technical Writer, SecComply</cite>
           </div>
 
           <figure className="b-figure anim">
-            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&h=520&fit=crop" alt="Cloud-native infrastructure — Kubernetes containers and microservices" loading="lazy" />
-            <figcaption>Cloud-native environments have no perimeter. Workloads spin up and tear down in seconds. Identities are non-human. The old security model does not just perform poorly — it fundamentally does not apply.</figcaption>
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&h=520&fit=crop" alt="Cloud-native infrastructure, Kubernetes containers and microservices" loading="lazy" />
+            <figcaption>Cloud-native environments have no perimeter. Workloads spin up and tear down in seconds. Identities are non-human. The old security model does not just perform poorly, it fundamentally does not apply.</figcaption>
           </figure>
 
           <section id="what-is">
-            <h2>What Is Cloud-Native Security — and Why Does It Matter?</h2>
+            <h2>What Is Cloud-Native Security, and Why Does It Matter?</h2>
             <div className="def-box">
               <strong>📖 Definition</strong>
-              <p>Cloud-native security is a holistic security approach specifically designed for environments built on cloud-native technologies: containers, microservices, serverless functions, infrastructure-as-code, and dynamic orchestration platforms like Kubernetes. It shifts security left — embedding it into the development and deployment pipeline rather than bolting it on at the perimeter.</p>
+              <p>Cloud-native security is a holistic security approach specifically designed for environments built on cloud-native technologies: containers, microservices, serverless functions, infrastructure-as-code, and dynamic orchestration platforms like Kubernetes. It shifts security left, embedding it into the development and deployment pipeline rather than bolting it on at the perimeter.</p>
             </div>
-            <p>Traditional security models were built around a perimeter. Cloud-native environments have no moat. Workloads spin up and tear down in seconds. Identities are non-human. Networks are programmable overlays. The old model does not just perform poorly — it fundamentally does not apply.</p>
-            <p>For organisations pursuing ISO 27001, SOC 2, HIPAA, or GDPR, this is not an abstract technical concern. Every compliance framework you care about has controls that assume your infrastructure can be inventoried, access can be managed, and audit logs exist. Cloud-native environments make all of that harder — unless you build security in from day one.</p>
+            <p>Traditional security models were built around a perimeter. Cloud-native environments have no moat. Workloads spin up and tear down in seconds. Identities are non-human. Networks are programmable overlays. The old model does not just perform poorly, it fundamentally does not apply.</p>
+            <p>For organisations pursuing ISO 27001, SOC 2, HIPAA, or GDPR, this is not an abstract technical concern. Every compliance framework you care about has controls that assume your infrastructure can be inventoried, access can be managed, and audit logs exist. Cloud-native environments make all of that harder, unless you build security in from day one.</p>
           </section>
 
           <section id="four-c">
             <h2>The 4C Model: Your Security Framework for Cloud-Native</h2>
-            <p>Before you can secure a cloud-native environment, you need a mental model for what you are securing. The industry has converged on the 4C model — four concentric layers, each one dependent on the security of the layer beneath it. A vulnerability in any outer layer cascades inward.</p>
+            <p>Before you can secure a cloud-native environment, you need a mental model for what you are securing. The industry has converged on the 4C model, four concentric layers, each one dependent on the security of the layer beneath it. A vulnerability in any outer layer cascades inward.</p>
             <div className="four-c-grid">
               <div className="four-c-card anim">
                 <div className="four-c-label">Layer 1</div>
                 <div className="four-c-title">☁️ Cloud</div>
-                <div className="four-c-body">The foundation — your AWS account, Azure subscription, or GCP project. Covers IAM policies, network configurations, storage access controls, and logging. This is where CSPM operates, continuously scanning for the misconfigurations that cause 82% of all cloud breaches.</div>
+                <div className="four-c-body">The foundation, your AWS account, Azure subscription, or GCP project. Covers IAM policies, network configurations, storage access controls, and logging. This is where CSPM operates, continuously scanning for the misconfigurations that cause 82% of all cloud breaches.</div>
               </div>
               <div className="four-c-card anim">
                 <div className="four-c-label">Layer 2</div>
                 <div className="four-c-title">🔧 Cluster</div>
-                <div className="four-c-body">Your Kubernetes environment — control plane, worker nodes, RBAC policies, and network policies. A misconfigured Kubernetes cluster can turn a limited compromise into a catastrophic one. Most teams underinvest here.</div>
+                <div className="four-c-body">Your Kubernetes environment, control plane, worker nodes, RBAC policies, and network policies. A misconfigured Kubernetes cluster can turn a limited compromise into a catastrophic one. Most teams underinvest here.</div>
               </div>
               <div className="four-c-card anim">
                 <div className="four-c-label">Layer 3</div>
                 <div className="four-c-title">📦 Container</div>
-                <div className="four-c-body">The image layer — base images, application layers stacked on top, the registry you pull from, and how the container behaves at runtime. Vulnerable base images are the silent killer in most container environments.</div>
+                <div className="four-c-body">The image layer, base images, application layers stacked on top, the registry you pull from, and how the container behaves at runtime. Vulnerable base images are the silent killer in most container environments.</div>
               </div>
               <div className="four-c-card anim">
                 <div className="four-c-label">Layer 4</div>
                 <div className="four-c-title">💻 Code</div>
-                <div className="four-c-body">Your application logic, third-party dependencies, secrets management, and API design. This is where DevSecOps lives — and where the developer&apos;s daily choices either create or close vulnerabilities.</div>
+                <div className="four-c-body">Your application logic, third-party dependencies, secrets management, and API design. This is where DevSecOps lives, and where the developer&apos;s daily choices either create or close vulnerabilities.</div>
               </div>
             </div>
           </section>
 
           <section id="zero-trust">
             <h2>Zero Trust: The Philosophy That Changes Everything</h2>
-            <p>Zero Trust is arguably the most important shift in security thinking of the last decade. It can be expressed in three words — <strong>never trust, always verify</strong> — but its implications reach into every corner of how you build and operate cloud-native systems.</p>
-            <p>The concept emerged from a simple observation: the idea of a trusted internal network is a fiction. Once an attacker is inside your perimeter, traditional security has nothing left to offer. Zero Trust collapses this assumption entirely, treating every request — from a human user, a service account, an internal microservice, a CI/CD pipeline — as potentially hostile until proven otherwise.</p>
+            <p>Zero Trust is arguably the most important shift in security thinking of the last decade. It can be expressed in three words, <strong>never trust, always verify</strong>, but its implications reach into every corner of how you build and operate cloud-native systems.</p>
+            <p>The concept emerged from a simple observation: the idea of a trusted internal network is a fiction. Once an attacker is inside your perimeter, traditional security has nothing left to offer. Zero Trust collapses this assumption entirely, treating every request, from a human user, a service account, an internal microservice, a CI/CD pipeline, as potentially hostile until proven otherwise.</p>
             <div className="compliance-note">
               <strong>⚠️ Compliance Note</strong>
-              <p>Zero Trust directly satisfies ISO 27001 Annex A.9 (Access Control), SOC 2 CC6 (Logical and Physical Access Controls), and NIST CSF PR.AC. SecComply&apos;s platform maps your Zero Trust implementation to these controls and generates continuous evidence for your auditors — automatically.</p>
+              <p>Zero Trust directly satisfies ISO 27001 Annex A.9 (Access Control), SOC 2 CC6 (Logical and Physical Access Controls), and NIST CSF PR.AC. SecComply&apos;s platform maps your Zero Trust implementation to these controls and generates continuous evidence for your auditors, automatically.</p>
             </div>
-            <p>In practice, Zero Trust in a cloud-native environment means four things working together. <strong>Identity becomes your new perimeter</strong> — every workload, service account, and user must authenticate and be explicitly authorised for every action. <strong>Least privilege</strong> means IAM roles and Kubernetes RBAC are scoped to exactly what is required, nothing more. <strong>Micro-segmentation</strong> ensures that even if one workload is compromised, it cannot move freely across your environment. And <strong>continuous verification</strong> means authentication happens at every API call, every service interaction, every data access.</p>
+            <p>In practice, Zero Trust in a cloud-native environment means four things working together. <strong>Identity becomes your new perimeter</strong>, every workload, service account, and user must authenticate and be explicitly authorised for every action. <strong>Least privilege</strong> means IAM roles and Kubernetes RBAC are scoped to exactly what is required, nothing more. <strong>Micro-segmentation</strong> ensures that even if one workload is compromised, it cannot move freely across your environment. And <strong>continuous verification</strong> means authentication happens at every API call, every service interaction, every data access.</p>
           </section>
 
           <figure className="b-figure anim">
             <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1200&h=520&fit=crop" alt="DevSecOps pipeline with security gates at every stage" loading="lazy" />
-            <figcaption>A mature DevSecOps pipeline embeds security gates at every stage — from the first commit to production monitoring — so developers get security feedback in their own workflow, not six weeks later.</figcaption>
+            <figcaption>A mature DevSecOps pipeline embeds security gates at every stage, from the first commit to production monitoring, so developers get security feedback in their own workflow, not six weeks later.</figcaption>
           </figure>
 
           <section id="devsecops">
             <h2>DevSecOps: Security as a Developer Conversation</h2>
-            <p>Studies consistently show that a vulnerability found in production costs 30x more to remediate than one caught at the design stage. DevSecOps is the practice that closes that gap — making security a shared responsibility between development, operations, and security teams from the very first commit.</p>
+            <p>Studies consistently show that a vulnerability found in production costs 30x more to remediate than one caught at the design stage. DevSecOps is the practice that closes that gap, making security a shared responsibility between development, operations, and security teams from the very first commit.</p>
             <div className="concept-card anim">
-              <div className="concept-title">🔍 SAST — Static Application Security Testing</div>
+              <div className="concept-title">🔍 SAST, Static Application Security Testing</div>
               <div className="concept-body">Scans source code for vulnerabilities at commit time, before a single line reaches a build server. Developers get feedback in their workflow rather than in a report six weeks later.</div>
             </div>
             <div className="concept-card anim">
-              <div className="concept-title">📦 SCA — Software Composition Analysis</div>
-              <div className="concept-body">Audits your third-party libraries and open-source dependencies for known CVEs. This is the class of risk that gave us Log4Shell — a vulnerability hiding in a library used by hundreds of thousands of applications worldwide.</div>
+              <div className="concept-title">📦 SCA, Software Composition Analysis</div>
+              <div className="concept-body">Audits your third-party libraries and open-source dependencies for known CVEs. This is the class of risk that gave us Log4Shell, a vulnerability hiding in a library used by hundreds of thousands of applications worldwide.</div>
             </div>
             <div className="concept-card anim">
               <div className="concept-title">🐳 Container Image Scanning</div>
@@ -354,7 +354,7 @@ export default function CloudNativeSecurity() {
             </div>
             <div className="concept-card anim">
               <div className="concept-title">🔑 Secrets Detection</div>
-              <div className="concept-body">Prevents the single most common developer mistake — accidentally committing an API key or password to source control. Should run on every commit as a hard gate.</div>
+              <div className="concept-body">Prevents the single most common developer mistake, accidentally committing an API key or password to source control. Should run on every commit as a hard gate.</div>
             </div>
           </section>
 
@@ -364,19 +364,19 @@ export default function CloudNativeSecurity() {
             <ul>
               <li><strong>API Server Hardening:</strong> The Kubernetes API server controls everything. It must never be exposed to the public internet. Access must require strong authentication. Audit logging must be enabled so every API call leaves a trace.</li>
               <li><strong>RBAC Configuration:</strong> Kubernetes&apos; built-in authorisation system only protects you if it is actually configured. The default service account in a namespace has significant permissions that need reviewing and restricting. Cluster-admin should be granted to almost nobody.</li>
-              <li><strong>Pod Security Standards:</strong> Enforce that pods run as non-root users, use read-only root filesystems, and drop unnecessary Linux kernel capabilities — directly limiting what an attacker can do if they achieve code execution.</li>
+              <li><strong>Pod Security Standards:</strong> Enforce that pods run as non-root users, use read-only root filesystems, and drop unnecessary Linux kernel capabilities, directly limiting what an attacker can do if they achieve code execution.</li>
               <li><strong>Network Policies:</strong> Restrict pod-to-pod communication, which is unrestricted by default. Without them, a compromised workload can reach anything in the cluster.</li>
             </ul>
             <div className="insight-box">
               <strong>🔐 Key Insight</strong>
-              <p>Kubernetes Secrets are base64-encoded by default, not encrypted. Calling them &ldquo;secure&rdquo; is one of the most common and dangerous misconceptions in cloud-native environments. Use dedicated secrets managers — HashiCorp Vault, AWS Secrets Manager, Azure Key Vault — with dynamic secret injection.</p>
+              <p>Kubernetes Secrets are base64-encoded by default, not encrypted. Calling them &ldquo;secure&rdquo; is one of the most common and dangerous misconceptions in cloud-native environments. Use dedicated secrets managers, HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, with dynamic secret injection.</p>
             </div>
           </section>
 
           <section id="cspm">
             <h2>CSPM: The Continuous Heartbeat of Cloud Security</h2>
-            <p>If Zero Trust is the philosophy and DevSecOps is the practice, Cloud Security Posture Management is the continuous, automated assurance that both are actually working. CSPM connects to your cloud provider APIs and builds a real-time inventory of every resource, every configuration, every permission relationship — then compares that state against security benchmarks like CIS Foundations Benchmarks and against your compliance frameworks.</p>
-            <p>The value proposition is simple but profound. The average organisation takes 197 days to detect a cloud breach without CSPM. With CSPM, detection happens in minutes. For compliance teams, CSPM is transformative — instead of manual evidence collection, every passing control check becomes automated evidence, timestamped and auditor-ready.</p>
+            <p>If Zero Trust is the philosophy and DevSecOps is the practice, Cloud Security Posture Management is the continuous, automated assurance that both are actually working. CSPM connects to your cloud provider APIs and builds a real-time inventory of every resource, every configuration, every permission relationship, then compares that state against security benchmarks like CIS Foundations Benchmarks and against your compliance frameworks.</p>
+            <p>The value proposition is simple but profound. The average organisation takes 197 days to detect a cloud breach without CSPM. With CSPM, detection happens in minutes. For compliance teams, CSPM is transformative, instead of manual evidence collection, every passing control check becomes automated evidence, timestamped and auditor-ready.</p>
           </section>
 
           <section id="supply-chain">
@@ -409,7 +409,7 @@ export default function CloudNativeSecurity() {
 
           <div className="art-cta anim">
             <h3>Is Your Cloud-Native Security Posture Audit-Ready?</h3>
-            <p>SecComply ties your cloud security controls directly to ISO 27001, SOC 2, HIPAA, GDPR, and 50+ frameworks — with continuous, automated evidence collection. No more manual screenshots. No more quarterly fire drills.</p>
+            <p>SecComply ties your cloud security controls directly to ISO 27001, SOC 2, HIPAA, GDPR, and 50+ frameworks, with continuous, automated evidence collection. No more manual screenshots. No more quarterly fire drills.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener noreferrer">Book a Free Cloud Security Assessment →</a>
           </div>
 
@@ -418,18 +418,18 @@ export default function CloudNativeSecurity() {
             <div className="bio-content">
               <h4>Soham Sawant</h4>
               <div className="bio-title">Cybersecurity Expert &amp; Technical Writer, SecComply</div>
-              <p>Soham writes at the intersection of rigorous technical accuracy and compelling narrative. With deep expertise spanning cloud security architecture, compliance automation, and threat intelligence, his work helps security teams, compliance officers, and business leaders understand — and act on — the real risks facing modern cloud-native organisations. He has covered topics ranging from cloud misconfiguration to supply chain attacks, Zero Trust implementation to ISO 27001 certification strategy.</p>
+              <p>Soham writes at the intersection of rigorous technical accuracy and compelling narrative. With deep expertise spanning cloud security architecture, compliance automation, and threat intelligence, his work helps security teams, compliance officers, and business leaders understand, and act on, the real risks facing modern cloud-native organisations. He has covered topics ranging from cloud misconfiguration to supply chain attacks, Zero Trust implementation to ISO 27001 certification strategy.</p>
             </div>
           </div>
 
           <div className="faq-section">
             <h2>Frequently Asked Questions</h2>
             {[
-              ['What is cloud-native security?', 'Cloud-native security is a security approach designed specifically for environments built on containers, microservices, Kubernetes, and serverless technologies. It shifts security left — embedding controls into the development and deployment pipeline rather than relying on a network perimeter.'],
-              ['What is the difference between cloud security and cloud-native security?', 'Cloud security is a broad term covering all security practices in cloud environments. Cloud-native security specifically addresses the unique challenges of containers, Kubernetes, and CI/CD pipelines — technologies with fundamentally different threat models compared to traditional virtual machines and monolithic applications.'],
-              ['What is CSPM and why do organisations need it?', 'CSPM (Cloud Security Posture Management) continuously monitors your cloud infrastructure against security benchmarks and compliance frameworks, identifying misconfigurations in real time. Organisations need it because 82% of cloud breaches are caused by misconfiguration — not sophisticated exploits — and manual reviews cannot keep pace with the rate of infrastructure change.'],
+              ['What is cloud-native security?', 'Cloud-native security is a security approach designed specifically for environments built on containers, microservices, Kubernetes, and serverless technologies. It shifts security left, embedding controls into the development and deployment pipeline rather than relying on a network perimeter.'],
+              ['What is the difference between cloud security and cloud-native security?', 'Cloud security is a broad term covering all security practices in cloud environments. Cloud-native security specifically addresses the unique challenges of containers, Kubernetes, and CI/CD pipelines, technologies with fundamentally different threat models compared to traditional virtual machines and monolithic applications.'],
+              ['What is CSPM and why do organisations need it?', 'CSPM (Cloud Security Posture Management) continuously monitors your cloud infrastructure against security benchmarks and compliance frameworks, identifying misconfigurations in real time. Organisations need it because 82% of cloud breaches are caused by misconfiguration, not sophisticated exploits, and manual reviews cannot keep pace with the rate of infrastructure change.'],
               ['How does cloud-native security support ISO 27001 certification?', 'ISO 27001 requires demonstrable controls across access management (Annex A.9), operations security (A.12), and secure development (A.14). Cloud-native practices directly produce the required evidence: CSPM generates continuous configuration records, DevSecOps logs demonstrate secure development lifecycle, and Zero Trust IAM policies satisfy access control requirements.'],
-              ['Where should an organisation start with cloud-native security?', 'Start with visibility. Deploy a CSPM tool to get a complete inventory of all cloud resources and an honest assessment of your current misconfiguration risk. From that baseline, prioritise by severity and blast radius — internet-facing resources with sensitive data first. Then layer in Kubernetes hardening, DevSecOps integration, and Zero Trust IAM policies.'],
+              ['Where should an organisation start with cloud-native security?', 'Start with visibility. Deploy a CSPM tool to get a complete inventory of all cloud resources and an honest assessment of your current misconfiguration risk. From that baseline, prioritise by severity and blast radius, internet-facing resources with sensitive data first. Then layer in Kubernetes hardening, DevSecOps integration, and Zero Trust IAM policies.'],
             ].map(([q,a],i) => (
               <div key={i} className="faq-item">
                 <button className="faq-question" onClick={e => window.toggleFaq && window.toggleFaq(e.currentTarget)}>{q}<span className="faq-icon">+</span></button>
@@ -448,13 +448,13 @@ export default function CloudNativeSecurity() {
             <a href="#zero-trust" className="toc-link">Zero Trust Architecture</a>
             <a href="#devsecops" className="toc-link">DevSecOps Pipeline</a>
             <a href="#kubernetes" className="toc-link">Kubernetes Security</a>
-            <a href="#cspm" className="toc-link">CSPM — Continuous Assurance</a>
+            <a href="#cspm" className="toc-link">CSPM, Continuous Assurance</a>
             <a href="#supply-chain" className="toc-link">Supply Chain Security</a>
             <a href="#compliance-mapping" className="toc-link">Compliance Framework Mapping</a>
           </div>
           <div className="sidebar-cta">
             <h4 style={{fontSize:'.85rem',fontWeight:700,color:'var(--tx)',marginBottom:8}}>Cloud Security Assessment</h4>
-            <p>Map your cloud-native security posture against ISO 27001, SOC 2, HIPAA, and GDPR — with continuous automated evidence.</p>
+            <p>Map your cloud-native security posture against ISO 27001, SOC 2, HIPAA, and GDPR, with continuous automated evidence.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" target="_blank" rel="noopener noreferrer">Book a Free Consultation →</a>
           </div>
           <div className="sidebar-card">
