@@ -153,7 +153,7 @@ export default function SecurityMetricsBoardReporting() {
         <title>Security Metrics That Actually Matter to the Board, SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="Most board security reports measure activity, not risk. Discover the six metric categories and five governance questions every CISO should bring to the boardroom — with a framework boards can actually act on." />
+        <meta name="description" content="Most board security reports measure activity, not risk. Discover the six metric categories and five governance questions every CISO should bring to the boardroom, with a framework boards can actually act on." />
         <meta name="keywords" content="security metrics board, CISO board reporting, cybersecurity governance, board risk metrics, security KPIs executives, MTTD MTTR board reporting, third party risk board, SEC cybersecurity disclosure, compliance posture board, board level security" />
         <meta property="og:title" content="Security Metrics That Actually Matter to the Board" />
         <meta property="og:description" content="Six metric categories and five governance questions every CISO should bring to the boardroom. Stop reporting activity. Start reporting risk." />
@@ -184,7 +184,7 @@ export default function SecurityMetricsBoardReporting() {
               "@type": "FAQPage",
               "mainEntity": [
                 { "@type": "Question", "name": "What security metrics should a CISO present to the board?", "acceptedAnswer": { "@type": "Answer", "text": "CISOs should lead with risk-framed metrics: business systems with unmitigated exposure, mean time to detect and contain incidents, regulatory compliance posture with residual risks named, third-party risk coverage with verified (not just contracted) controls, resilience and recovery readiness that has been tested, and security culture indicators. Activity metrics like patch counts belong in operational reviews, not board packs." } },
-                { "@type": "Question", "name": "Why do most security board reports fail to communicate risk?", "acceptedAnswer": { "@type": "Answer", "text": "Most reports lead with activity metrics — vulnerabilities patched, phishing emails blocked, training hours completed — which show effort but not exposure. Under frameworks like the SEC cybersecurity disclosure rules and EU AI Act, board directors now carry personal accountability for how security risk is governed. They need risk-outcome data that informs decisions, not technical status updates." } },
+                { "@type": "Question", "name": "Why do most security board reports fail to communicate risk?", "acceptedAnswer": { "@type": "Answer", "text": "Most reports lead with activity metrics, vulnerabilities patched, phishing emails blocked, training hours completed, which show effort but not exposure. Under frameworks like the SEC cybersecurity disclosure rules and EU AI Act, board directors now carry personal accountability for how security risk is governed. They need risk-outcome data that informs decisions, not technical status updates." } },
                 { "@type": "Question", "name": "What is mean time to detect (MTTD) and why does the board care?", "acceptedAnswer": { "@type": "Answer", "text": "MTTD measures the average time between an attacker entering an environment and the organisation becoming aware. For boards, this is a survival metric: the longer an attacker operates undetected, the greater the business, regulatory, and reputational damage. Boards should see this number, understand its trend, and know what investments are reducing it." } },
                 { "@type": "Question", "name": "What regulatory frameworks require boards to govern cybersecurity risk?", "acceptedAnswer": { "@type": "Answer", "text": "The SEC's cybersecurity disclosure rules, the EU AI Act, DORA (Digital Operational Resilience Act), GDPR, and several national frameworks explicitly assign board-level accountability for cybersecurity governance. Directors can face personal liability for inadequate oversight." } },
                 { "@type": "Question", "name": "How can SecComply help improve board-level security reporting?", "acceptedAnswer": { "@type": "Answer", "text": "SecComply reviews your current security reporting framework, identifies gaps between what you are presenting and what your board actually needs, and builds a metrics structure that maps risk to business outcomes. The assessment covers detection and response benchmarks, compliance posture gaps, third-party verification status, and resilience readiness." } }
@@ -371,7 +371,7 @@ export default function SecurityMetricsBoardReporting() {
 
         <h1 className="cspm-hero-h1">Security Metrics That <em>Actually Matter</em> to the Board</h1>
 
-        <p className="cspm-hero-sub">Forty-five minutes. A slide deck full of numbers. And by the end, nobody in the room more confident about whether the organisation is actually secure. The metrics boards need are not the hardest to collect — they are the ones that answer the questions directors lie awake worrying about.</p>
+        <p className="cspm-hero-sub">Forty-five minutes. A slide deck full of numbers. And by the end, nobody in the room more confident about whether the organisation is actually secure. The metrics boards need are not the hardest to collect, they are the ones that answer the questions directors lie awake worrying about.</p>
 
         <div className="cspm-author-strip">
           <div className="avatar">BD</div>
@@ -433,7 +433,7 @@ export default function SecurityMetricsBoardReporting() {
             <rect x="44" y="360" width="74" height="7" rx="3.5" fill="url(#gRd)"/>
             <text x="170" y="367" fill="#ff4d6d" fontSize="8" fontWeight="700" fontFamily="sans-serif">62%</text>
             <circle cx="34" cy="392" r="4" fill="#ff4d6d"/>
-            <text x="44" y="396" fill="#ff4d6d" fontSize="9" fontWeight="600" fontFamily="sans-serif">CRITICAL: DPDP gap — 2 obligations</text>
+            <text x="44" y="396" fill="#ff4d6d" fontSize="9" fontWeight="600" fontFamily="sans-serif">CRITICAL: DPDP gap, 2 obligations</text>
             <text x="44" y="412" fill="#ffb703" fontSize="9" fontFamily="sans-serif">HIGH: ISO 27001 clause 9.1 pending</text>
 
             {/* ── DIVIDER ── */}
@@ -497,7 +497,7 @@ export default function SecurityMetricsBoardReporting() {
             ))}
           </svg>
         </div>
-        <p className="img-cap">A board security risk dashboard — showing six metric categories, trend lines, and the five governance questions every director needs answered each quarter.</p>
+        <p className="img-cap">A board security risk dashboard, showing six metric categories, trend lines, and the five governance questions every director needs answered each quarter.</p>
 
         {/* ── INLINE TOC ── */}
         <div className="toc-box">
@@ -527,7 +527,7 @@ export default function SecurityMetricsBoardReporting() {
             </div>
             <div className="stat-card">
               <div className="stat-n" data-target="287" data-suffix=" days">0 days</div>
-              <div className="stat-l">avg breach dwell time — the hidden board exposure<br/><span style={{fontSize:'.68rem',opacity:.55}}>IBM Cost of a Data Breach</span></div>
+              <div className="stat-l">avg breach dwell time, the hidden board exposure<br/><span style={{fontSize:'.68rem',opacity:.55}}>IBM Cost of a Data Breach</span></div>
             </div>
             <div className="stat-card">
               <div className="stat-n" data-target="6" data-suffix="">0</div>
@@ -537,30 +537,30 @@ export default function SecurityMetricsBoardReporting() {
 
           {/* PULL QUOTE */}
           <div className="pull-quote">
-            <p>"The board does not need to know how many vulnerabilities were patched. They need to know whether a breach today would be discovered, contained, and survivable — and on what timeline."</p>
+            <p>"The board does not need to know how many vulnerabilities were patched. They need to know whether a breach today would be discovered, contained, and survivable, and on what timeline."</p>
           </div>
 
           {/* SECTION 1 */}
           <section id="scene">
             <h2>The Scene in the <em>Boardroom</em></h2>
             <p>Here is a scene that plays out in boardrooms more often than most CISOs would admit: forty-five minutes to present, a slide deck full of numbers, and by the end of it not a single person in the room is any more confident about whether the organisation is actually secure.</p>
-            <p>This is not a competence problem. Most CISOs presenting to boards are technically brilliant. It is a <strong>translation problem</strong> — and it has a fix.</p>
+            <p>This is not a competence problem. Most CISOs presenting to boards are technically brilliant. It is a <strong>translation problem</strong>, and it has a fix.</p>
             <p>Picture the quarterly security update. Patch compliance is up, phishing click rates are down, vulnerabilities remediated are at an all-time high. The board nods. Someone asks a politely confused question. The CISO explains a technical concept. The slide moves on.</p>
-            <p>Nobody in that room is asking the question they actually want answered: <em>"Are we going to be in the news next quarter?"</em> And the CISO is not answering it — not because they do not care, but because the metrics they have been asked to report on do not get anywhere near it. This is the gap. And it is entirely closable.</p>
+            <p>Nobody in that room is asking the question they actually want answered: <em>"Are we going to be in the news next quarter?"</em> And the CISO is not answering it, not because they do not care, but because the metrics they have been asked to report on do not get anywhere near it. This is the gap. And it is entirely closable.</p>
           </section>
 
           {/* SECTION 2 */}
           <section id="wrong">
             <h2>What Most Security Reports <em>Get Wrong</em></h2>
-            <p>Reporting on activity made sense in an era when security was purely a technical function — show the work, justify the budget, prove the team is busy. But boards have changed. Under frameworks like the <strong>SEC's cybersecurity disclosure rules</strong> and the <strong>EU AI Act</strong>, directors now carry personal accountability for how security risk is governed — not just whether they were informed about it.</p>
+            <p>Reporting on activity made sense in an era when security was purely a technical function, show the work, justify the budget, prove the team is busy. But boards have changed. Under frameworks like the <strong>SEC's cybersecurity disclosure rules</strong> and the <strong>EU AI Act</strong>, directors now carry personal accountability for how security risk is governed, not just whether they were informed about it.</p>
             <p>That changes everything about what a board report is for. It is no longer a status update. It is a governance tool. And governance tools need to answer governance questions.</p>
 
             <div className="cmp-wrap">
               <table className="cmp-table">
                 <thead>
                   <tr>
-                    <th>✕ Activity metrics — what not to lead with</th>
-                    <th>→ Risk metrics — what to lead with instead</th>
+                    <th>✕ Activity metrics, what not to lead with</th>
+                    <th>→ Risk metrics, what to lead with instead</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -569,7 +569,7 @@ export default function SecurityMetricsBoardReporting() {
                   <tr><td>Number of phishing emails blocked</td><td className="tg-y">Regulatory obligations currently at risk</td></tr>
                   <tr><td>Hours of security training completed</td><td className="tg-y">Critical third parties with verified controls</td></tr>
                   <tr><td>Number of incidents logged</td><td className="tg-y">Coverage gaps in incident response capability</td></tr>
-                  <tr><td>Firewall rule changes this period</td><td className="tg-y">Recovery time for priority systems — tested</td></tr>
+                  <tr><td>Firewall rule changes this period</td><td className="tg-y">Recovery time for priority systems, tested</td></tr>
                 </tbody>
               </table>
             </div>
@@ -577,7 +577,7 @@ export default function SecurityMetricsBoardReporting() {
             <div className="callout co-info">
               <span className="co-icon">ℹ️</span>
               <div className="co-body">
-                <strong>Both columns matter — just not equally</strong>
+                <strong>Both columns matter, just not equally</strong>
                 <p>The left column belongs in an operational security review. The point is that it should not be the headline act when sitting in front of non-technical directors who need to make business decisions.</p>
               </div>
             </div>
@@ -586,7 +586,7 @@ export default function SecurityMetricsBoardReporting() {
           {/* SECTION 3 */}
           <section id="six">
             <h2>The Six Categories That Belong in Every <em>Board Report</em></h2>
-            <p>Think of these not as prescriptive formulas but as the six questions every board is implicitly asking — whether or not they know how to phrase them yet.</p>
+            <p>Think of these not as prescriptive formulas but as the six questions every board is implicitly asking, whether or not they know how to phrase them yet.</p>
 
             <div className="cat-grid">
               <div className="cat-card anim">
@@ -597,7 +597,7 @@ export default function SecurityMetricsBoardReporting() {
               <div className="cat-card anim">
                 <div className="cat-num">Category 02</div>
                 <h3>Detection &amp; Response Capability</h3>
-                <p>If an attacker were present today, how long to detect them? How long to contain? These are testable, measurable commitments — not estimates.</p>
+                <p>If an attacker were present today, how long to detect them? How long to contain? These are testable, measurable commitments, not estimates.</p>
               </div>
               <div className="cat-card anim">
                 <div className="cat-num">Category 03</div>
@@ -607,7 +607,7 @@ export default function SecurityMetricsBoardReporting() {
               <div className="cat-card anim">
                 <div className="cat-num">Category 04</div>
                 <h3>Third-Party Risk Coverage</h3>
-                <p>What proportion of critical suppliers have had their controls independently verified in the past twelve months — not just contractually assured?</p>
+                <p>What proportion of critical suppliers have had their controls independently verified in the past twelve months, not just contractually assured?</p>
               </div>
               <div className="cat-card anim">
                 <div className="cat-num">Category 05</div>
@@ -625,42 +625,42 @@ export default function SecurityMetricsBoardReporting() {
           {/* SECTION 4 */}
           <section id="five">
             <h2>Five Questions the Board Is <em>Actually Asking</em></h2>
-            <p>A useful test for any security metric is whether it helps answer the questions a thoughtful, worried board member carries into that meeting room. Here they are — with no diplomatic softening.</p>
+            <p>A useful test for any security metric is whether it helps answer the questions a thoughtful, worried board member carries into that meeting room. Here they are, with no diplomatic softening.</p>
 
             <ul className="q-list">
               <li className="q-item anim">
                 <div className="q-num">1</div>
                 <div className="q-body">
                   <strong>If we suffered a serious breach today, would we know?</strong>
-                  <span>This tests detection capability. The honest answer for many organisations is "eventually." The board needs to know how long "eventually" is, and what the business exposure looks like during that window. If the answer involves a lot of "it depends" — that is the metric to fix first.</span>
+                  <span>This tests detection capability. The honest answer for many organisations is "eventually." The board needs to know how long "eventually" is, and what the business exposure looks like during that window. If the answer involves a lot of "it depends", that is the metric to fix first.</span>
                 </div>
               </li>
               <li className="q-item anim">
                 <div className="q-num">2</div>
                 <div className="q-body">
                   <strong>If we knew, could we contain it before it reached customers or regulators?</strong>
-                  <span>This tests containment capability and incident response maturity. The answer depends on having tested playbooks, clear escalation paths, and actual authority to take systems offline quickly — not just a well-formatted policy document that nobody has rehearsed since it was written.</span>
+                  <span>This tests containment capability and incident response maturity. The answer depends on having tested playbooks, clear escalation paths, and actual authority to take systems offline quickly, not just a well-formatted policy document that nobody has rehearsed since it was written.</span>
                 </div>
               </li>
               <li className="q-item anim">
                 <div className="q-num">3</div>
                 <div className="q-body">
                   <strong>Are our most important vendors as secure as we are?</strong>
-                  <span>Third-party breaches have become one of the most common attack entry points. The board should understand what verification actually exists behind the confidence being expressed — beyond contracts that say the right things but have never been tested.</span>
+                  <span>Third-party breaches have become one of the most common attack entry points. The board should understand what verification actually exists behind the confidence being expressed, beyond contracts that say the right things but have never been tested.</span>
                 </div>
               </li>
               <li className="q-item anim">
                 <div className="q-num">4</div>
                 <div className="q-body">
                   <strong>What would a regulator find if they looked closely right now?</strong>
-                  <span>This is not about perfection. It is about honesty. Boards carry personal liability under several regulatory frameworks. They should know the genuine, unvarnished answer to this question before a regulator asks it — not a polished version prepared for the slide deck.</span>
+                  <span>This is not about perfection. It is about honesty. Boards carry personal liability under several regulatory frameworks. They should know the genuine, unvarnished answer to this question before a regulator asks it, not a polished version prepared for the slide deck.</span>
                 </div>
               </li>
               <li className="q-item anim">
                 <div className="q-num">5</div>
                 <div className="q-body">
                   <strong>Is our security programme keeping pace with how the business is changing?</strong>
-                  <span>New products, acquisitions, cloud migrations, and remote working expansions all change the risk profile — often faster than security programmes adapt. Board reporting should reflect whether the programme is ahead of those changes, aligned with them, or quietly running to catch up.</span>
+                  <span>New products, acquisitions, cloud migrations, and remote working expansions all change the risk profile, often faster than security programmes adapt. Board reporting should reflect whether the programme is ahead of those changes, aligned with them, or quietly running to catch up.</span>
                 </div>
               </li>
             </ul>
@@ -676,35 +676,35 @@ export default function SecurityMetricsBoardReporting() {
                 <div className="f-num">1</div>
                 <div className="f-body">
                   <strong>Lead with the risk narrative, not the data</strong>
-                  <span>Before any numbers, there should be two or three sentences answering: is our posture better, worse, or unchanged from last quarter — and why? Board members will engage with a clear, honest narrative far more readily than a table of metrics that requires them to interpret context they do not have.</span>
+                  <span>Before any numbers, there should be two or three sentences answering: is our posture better, worse, or unchanged from last quarter, and why? Board members will engage with a clear, honest narrative far more readily than a table of metrics that requires them to interpret context they do not have.</span>
                 </div>
               </li>
               <li className="anim">
                 <div className="f-num">2</div>
                 <div className="f-body">
                   <strong>Be honest about the edges of your visibility</strong>
-                  <span>One of the most powerful things a CISO can say in a board meeting is: "Here is where our detection coverage is strong, and here is where it is limited." That is not weakness — it is the kind of honesty that builds trust and makes resource conversations meaningful.</span>
+                  <span>One of the most powerful things a CISO can say in a board meeting is: "Here is where our detection coverage is strong, and here is where it is limited." That is not weakness, it is the kind of honesty that builds trust and makes resource conversations meaningful.</span>
                 </div>
               </li>
               <li className="anim">
                 <div className="f-num">3</div>
                 <div className="f-body">
                   <strong>Every metric should point to a decision</strong>
-                  <span>Ask this before including anything in a board pack: does this metric require a board decision, inform a board decision, or provide assurance that no board decision is currently required? If none of those three — it belongs in an operational report, not in front of directors.</span>
+                  <span>Ask this before including anything in a board pack: does this metric require a board decision, inform a board decision, or provide assurance that no board decision is currently required? If none of those three, it belongs in an operational report, not in front of directors.</span>
                 </div>
               </li>
               <li className="anim">
                 <div className="f-num">4</div>
                 <div className="f-body">
                   <strong>Show the trend, not just the number</strong>
-                  <span>A single data point tells a board nothing about direction. Show every key metric across at least four reporting periods. The direction of travel — improving, stable, or declining — is almost always more important than where the number sits today.</span>
+                  <span>A single data point tells a board nothing about direction. Show every key metric across at least four reporting periods. The direction of travel, improving, stable, or declining, is almost always more important than where the number sits today.</span>
                 </div>
               </li>
               <li className="anim">
                 <div className="f-num">5</div>
                 <div className="f-body">
                   <strong>Connect the security programme to what the business is doing</strong>
-                  <span>If the company opened a new office, launched a product, or made an acquisition this quarter — the board should hear how those changes affected the security risk profile and what was done about it. Security is a business function, not a technical silo.</span>
+                  <span>If the company opened a new office, launched a product, or made an acquisition this quarter, the board should hear how those changes affected the security risk profile and what was done about it. Security is a business function, not a technical silo.</span>
                 </div>
               </li>
             </ul>
@@ -722,28 +722,28 @@ export default function SecurityMetricsBoardReporting() {
           <section id="board-duties">
             <h2>The Board Has <em>Responsibilities</em> Here Too</h2>
             <p>It is easy to frame poor security reporting as a CISO problem. But boards that consistently receive poor security reporting have usually not asked clearly enough for what they actually need. The challenge runs in both directions.</p>
-            <p>Several regulatory frameworks — including the <strong>SEC's cybersecurity rules</strong> and the <strong>EU AI Act</strong> — now make explicit that boards carry accountability for how security risk is governed. That is not something that can be delegated to a committee and forgotten. It requires active, informed engagement.</p>
+            <p>Several regulatory frameworks, including the <strong>SEC's cybersecurity rules</strong> and the <strong>EU AI Act</strong>, now make explicit that boards carry accountability for how security risk is governed. That is not something that can be delegated to a committee and forgotten. It requires active, informed engagement.</p>
 
             <ul className="q-list">
               <li className="q-item anim">
                 <div className="q-num">1</div>
                 <div className="q-body">
                   <strong>Do we genuinely understand what we are approving?</strong>
-                  <span>When the board approves a security budget, a risk tolerance statement, or an incident response plan — is that approval based on genuine understanding of the trade-offs? Or is it based on trust that the people presenting the slide know what they are doing? Both may lead to the same approval, but only one constitutes governance.</span>
+                  <span>When the board approves a security budget, a risk tolerance statement, or an incident response plan, is that approval based on genuine understanding of the trade-offs? Or is it based on trust that the people presenting the slide know what they are doing? Both may lead to the same approval, but only one constitutes governance.</span>
                 </div>
               </li>
               <li className="q-item anim">
                 <div className="q-num">2</div>
                 <div className="q-body">
                   <strong>Have we walked through what a breach would actually look like?</strong>
-                  <span>Board-level crisis simulations are standard practice in financial services and increasingly expected in other regulated sectors. A board that has never walked through a breach scenario — who calls whom, what gets disclosed, who takes decisions when — is simply not prepared to lead through one when it happens.</span>
+                  <span>Board-level crisis simulations are standard practice in financial services and increasingly expected in other regulated sectors. A board that has never walked through a breach scenario, who calls whom, what gets disclosed, who takes decisions when, is simply not prepared to lead through one when it happens.</span>
                 </div>
               </li>
               <li className="q-item anim">
                 <div className="q-num">3</div>
                 <div className="q-body">
                   <strong>Does our CISO feel safe telling us difficult things?</strong>
-                  <span>One of the clearest predictors of security programme effectiveness is whether the person responsible for security has direct board access, genuine authority, and the political safety to say uncomfortable things without consequence. If the CISO feels they need to manage their messaging with the board, that is a governance failure — not a communications style choice.</span>
+                  <span>One of the clearest predictors of security programme effectiveness is whether the person responsible for security has direct board access, genuine authority, and the political safety to say uncomfortable things without consequence. If the CISO feels they need to manage their messaging with the board, that is a governance failure, not a communications style choice.</span>
                 </div>
               </li>
             </ul>
@@ -752,20 +752,20 @@ export default function SecurityMetricsBoardReporting() {
           {/* SECTION 7 */}
           <section id="principle">
             <h2>The <em>Underlying Principle</em></h2>
-            <p>Security metrics that matter to the board are those that help directors do their job: understand the risks the organisation faces, ensure appropriate resources and governance are in place, and demonstrate that — when regulators, investors, or customers ask.</p>
-            <p>This is not primarily a technical challenge. It is a communication and governance challenge. The technical work still needs doing — but how it gets reported needs to serve the people who are ultimately accountable for the organisation's resilience, not just the people who are building it.</p>
+            <p>Security metrics that matter to the board are those that help directors do their job: understand the risks the organisation faces, ensure appropriate resources and governance are in place, and demonstrate that, when regulators, investors, or customers ask.</p>
+            <p>This is not primarily a technical challenge. It is a communication and governance challenge. The technical work still needs doing, but how it gets reported needs to serve the people who are ultimately accountable for the organisation's resilience, not just the people who are building it.</p>
 
             <div className="pull-quote">
               <p>"Security is not a technical function that occasionally needs to brief the board. It is a business risk function that requires board-level attention and active governance."</p>
             </div>
 
-            <p>When the right metrics are in front of the right people, with the right framing, something shifts in that boardroom conversation. Security stops being a line item to approve and becomes a strategic priority that directors actively govern. That shift — more than any individual metric or dashboard — is what actually improves an organisation's resilience over time.</p>
+            <p>When the right metrics are in front of the right people, with the right framing, something shifts in that boardroom conversation. Security stops being a line item to approve and becomes a strategic priority that directors actively govern. That shift, more than any individual metric or dashboard, is what actually improves an organisation's resilience over time.</p>
 
             <div className="callout co-warn">
               <span className="co-icon">🎯</span>
               <div className="co-body">
                 <strong>Start With One Question at Your Next Board Meeting</strong>
-                <p>Ask your security team: "If an attacker were in our environment right now, how long would it take us to know?" If the answer is uncertain, vague, or untested — that is the metric your board report should lead with next quarter. Everything else follows from there.</p>
+                <p>Ask your security team: "If an attacker were in our environment right now, how long would it take us to know?" If the answer is uncertain, vague, or untested, that is the metric your board report should lead with next quarter. Everything else follows from there.</p>
               </div>
             </div>
           </section>
@@ -798,7 +798,7 @@ export default function SecurityMetricsBoardReporting() {
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">Why do most board security reports fail to communicate risk effectively?</strong><span className="faq-ch">▾</span></div>
-                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">Most reports lead with activity metrics — vulnerabilities patched, phishing emails blocked, training hours completed — which show effort but not exposure. Under frameworks like the SEC cybersecurity disclosure rules and EU AI Act, board directors now carry personal accountability for how security risk is governed. They need risk-outcome data that informs decisions, not technical status updates.</p></div>
+                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">Most reports lead with activity metrics, vulnerabilities patched, phishing emails blocked, training hours completed, which show effort but not exposure. Under frameworks like the SEC cybersecurity disclosure rules and EU AI Act, board directors now carry personal accountability for how security risk is governed. They need risk-outcome data that informs decisions, not technical status updates.</p></div>
               </div>
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
@@ -808,17 +808,17 @@ export default function SecurityMetricsBoardReporting() {
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">What regulatory frameworks require boards to govern cybersecurity risk?</strong><span className="faq-ch">▾</span></div>
-                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">The SEC's cybersecurity disclosure rules (applicable to US-listed companies), the EU AI Act, DORA (Digital Operational Resilience Act for financial entities), GDPR, India's DPDP Act, and several national frameworks explicitly assign board-level accountability for cybersecurity governance. Directors can face personal liability for inadequate oversight — making informed engagement a legal as well as governance imperative.</p></div>
+                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">The SEC's cybersecurity disclosure rules (applicable to US-listed companies), the EU AI Act, DORA (Digital Operational Resilience Act for financial entities), GDPR, India's DPDP Act, and several national frameworks explicitly assign board-level accountability for cybersecurity governance. Directors can face personal liability for inadequate oversight, making informed engagement a legal as well as governance imperative.</p></div>
               </div>
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">How does third-party risk fit into board-level security reporting?</strong><span className="faq-ch">▾</span></div>
-                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">Supply chain and third-party breaches have become one of the most prevalent attack vectors. Board reporting should distinguish between contractually assured security (vendor agreements that say the right things) and independently verified security (actual assessments confirming controls work). The board should know what percentage of critical suppliers fall into each category — and which critical vendors have had zero independent verification.</p></div>
+                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">Supply chain and third-party breaches have become one of the most prevalent attack vectors. Board reporting should distinguish between contractually assured security (vendor agreements that say the right things) and independently verified security (actual assessments confirming controls work). The board should know what percentage of critical suppliers fall into each category, and which critical vendors have had zero independent verification.</p></div>
               </div>
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">How can SecComply help improve board-level security reporting?</strong><span className="faq-ch">▾</span></div>
-                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">SecComply reviews your current security reporting framework, identifies gaps between what you are presenting and what your board actually needs, and builds a metrics structure that maps risk to business outcomes. The assessment covers detection and response benchmarks, compliance posture gaps, third-party verification status, and resilience readiness — presented in a format your board can engage with and act on.</p></div>
+                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">SecComply reviews your current security reporting framework, identifies gaps between what you are presenting and what your board actually needs, and builds a metrics structure that maps risk to business outcomes. The assessment covers detection and response benchmarks, compliance posture gaps, third-party verification status, and resilience readiness, presented in a format your board can engage with and act on.</p></div>
               </div>
 
             </div>

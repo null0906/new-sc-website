@@ -33,7 +33,7 @@ export default function EvaluateSecurityVendor() {
       {
         "@type": "BlogPosting",
         "headline": "How to Evaluate Your Security Vendor Without Getting Burned",
-        "description": "Choosing the wrong security vendor can cost you your ISO 27001 certification, your SOC 2 audit, and your customers' trust. Here is a structured framework — the right questions, red flags, certifications scorecard, and contract clauses — to cut through sales noise and make a decision you won't regret.",
+        "description": "Choosing the wrong security vendor can cost you your ISO 27001 certification, your SOC 2 audit, and your customers' trust. Here is a structured framework, the right questions, red flags, certifications scorecard, and contract clauses, to cut through sales noise and make a decision you won't regret.",
         "image": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/blog/how-to-evaluate-security-vendor.png", "width": 1200, "height": 630, "caption": "How to evaluate a security vendor for ISO 27001 and SOC 2" },
         "author": { "@type": "Person", "name": "Aditya Hadke", "worksFor": { "@type": "Organization", "name": "SecComply" } },
         "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } },
@@ -44,10 +44,10 @@ export default function EvaluateSecurityVendor() {
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "How often should we re-evaluate existing security vendors?", "acceptedAnswer": { "@type": "Answer", "text": "At minimum annually — and immediately when a vendor has a known security incident, changes ownership, or substantially changes how they process your data. ISO 27001 explicitly requires ongoing supplier management, not just initial due diligence." } },
+          { "@type": "Question", "name": "How often should we re-evaluate existing security vendors?", "acceptedAnswer": { "@type": "Answer", "text": "At minimum annually, and immediately when a vendor has a known security incident, changes ownership, or substantially changes how they process your data. ISO 27001 explicitly requires ongoing supplier management, not just initial due diligence." } },
           { "@type": "Question", "name": "Is a SOC 2 Type I report enough for an ISO 27001 audit?", "acceptedAnswer": { "@type": "Answer", "text": "It can satisfy the requirement to evidence third-party assessment, but your auditor will ask pointed questions about scope and recency. SOC 2 Type II is significantly stronger evidence because it demonstrates controls working over time, not just existing at a point in time." } },
-          { "@type": "Question", "name": "What if a critical vendor refuses to complete our security questionnaire?", "acceptedAnswer": { "@type": "Answer", "text": "If they hold a current SOC 2 Type II report covering your use case, that report often substitutes for a questionnaire response. If they refuse both, that refusal must be documented in your vendor risk register with compensating controls noted — or escalated to a leadership decision about whether the relationship is tenable." } },
-          { "@type": "Question", "name": "Do we need a DPA with every vendor we use?", "acceptedAnswer": { "@type": "Answer", "text": "Under GDPR and India's DPDP Act, yes — for any vendor who processes personal data on your behalf as a data processor. This includes cloud storage, CRM platforms, email tools, and analytics platforms. A data flow mapping exercise usually surfaces a long list of vendors who need formal DPAs." } }
+          { "@type": "Question", "name": "What if a critical vendor refuses to complete our security questionnaire?", "acceptedAnswer": { "@type": "Answer", "text": "If they hold a current SOC 2 Type II report covering your use case, that report often substitutes for a questionnaire response. If they refuse both, that refusal must be documented in your vendor risk register with compensating controls noted, or escalated to a leadership decision about whether the relationship is tenable." } },
+          { "@type": "Question", "name": "Do we need a DPA with every vendor we use?", "acceptedAnswer": { "@type": "Answer", "text": "Under GDPR and India's DPDP Act, yes, for any vendor who processes personal data on your behalf as a data processor. This includes cloud storage, CRM platforms, email tools, and analytics platforms. A data flow mapping exercise usually surfaces a long list of vendors who need formal DPAs." } }
         ]
       },
       {
@@ -232,7 +232,7 @@ export default function EvaluateSecurityVendor() {
           </nav>
           <div className="tools-cat-badge">🛡️ Vendor Risk</div>
           <h1 className="tools-hero-h1">How to Evaluate Your<br /><span className="acc">Security Vendor</span><br />Without Getting Burned</h1>
-          <p className="tools-hero-sub">Choosing the wrong security vendor doesn&apos;t just cost you money — it can cost you your ISO 27001 certification, your SOC 2 audit, and in the worst cases, your customers&apos; trust. Here is how to cut through the sales noise and make a decision you won&apos;t regret.</p>
+          <p className="tools-hero-sub">Choosing the wrong security vendor doesn&apos;t just cost you money, it can cost you your ISO 27001 certification, your SOC 2 audit, and in the worst cases, your customers&apos; trust. Here is how to cut through the sales noise and make a decision you won&apos;t regret.</p>
           <div className="tools-author-strip">
             <div className="avatar">AH</div>
             <div className="author-info">
@@ -268,35 +268,35 @@ export default function EvaluateSecurityVendor() {
           <p>The problem is almost never the product itself. It is that the evaluation process was designed around the vendor&apos;s sales cycle rather than your actual security needs.</p>
 
           <div className="pull-quote">
-            <p>&ldquo;Most organisations evaluate security vendors the same way they&apos;d buy software — based on features and price. That&apos;s the wrong framework entirely. You&apos;re not buying a feature set. You&apos;re entering a long-term risk relationship with a company that will have deep access to your most sensitive infrastructure.&rdquo;</p>
+            <p>&ldquo;Most organisations evaluate security vendors the same way they&apos;d buy software, based on features and price. That&apos;s the wrong framework entirely. You&apos;re not buying a feature set. You&apos;re entering a long-term risk relationship with a company that will have deep access to your most sensitive infrastructure.&rdquo;</p>
             <cite>— Aditya Hadke, Project Delivery Lead, SecComply</cite>
           </div>
 
           <figure className="b-figure anim">
             <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=520&fit=crop" alt="Security vendor due diligence meeting and contract review" loading="lazy" />
-            <figcaption>Vendor evaluation done right means asking the questions vendors don&apos;t expect — the ones that surface actual risk rather than showcasing the product.</figcaption>
+            <figcaption>Vendor evaluation done right means asking the questions vendors don&apos;t expect, the ones that surface actual risk rather than showcasing the product.</figcaption>
           </figure>
 
           <section id="questions">
             <h2>The Questions You Must Ask Before Any Demo</h2>
-            <p>Before you ever sit through a demo, you should have a structured set of questions ready — not the questions vendors expect, but the ones that actually surface risk.</p>
+            <p>Before you ever sit through a demo, you should have a structured set of questions ready, not the questions vendors expect, but the ones that actually surface risk.</p>
 
             <div className="question-card anim">
               <div className="question-num">01</div>
-              <div className="question-title">What data do you access, store, and process — and where does it live?</div>
+              <div className="question-title">What data do you access, store, and process, and where does it live?</div>
               <div className="question-body">This sounds obvious but vendors routinely underplay data residency. If you are under GDPR, DPDP, or HIPAA, you need to know exactly where your data is processed and who has access to it internally at the vendor. &ldquo;We&apos;re cloud-hosted&rdquo; is not an answer.</div>
             </div>
 
             <div className="question-card anim">
               <div className="question-num">02</div>
               <div className="question-title">Walk me through your last security incident.</div>
-              <div className="question-body">Every mature vendor has had incidents. The ones worth trusting are the ones who can talk about them clearly — what went wrong, how fast they responded, how they communicated with customers, and what changed afterward. Evasion here is a serious red flag.</div>
+              <div className="question-body">Every mature vendor has had incidents. The ones worth trusting are the ones who can talk about them clearly, what went wrong, how fast they responded, how they communicated with customers, and what changed afterward. Evasion here is a serious red flag.</div>
             </div>
 
             <div className="question-card anim">
               <div className="question-num">03</div>
               <div className="question-title">What frameworks are you certified against, and can I see the audit report?</div>
-              <div className="question-body">ISO 27001 and SOC 2 Type II are the baseline you should expect. But do not just accept the badge — ask for the actual audit report or at minimum the management letter. A SOC 2 Type I from 2021 tells you almost nothing about their current posture.</div>
+              <div className="question-body">ISO 27001 and SOC 2 Type II are the baseline you should expect. But do not just accept the badge, ask for the actual audit report or at minimum the management letter. A SOC 2 Type I from 2021 tells you almost nothing about their current posture.</div>
             </div>
 
             <div className="question-card anim">
@@ -314,7 +314,7 @@ export default function EvaluateSecurityVendor() {
 
           <section id="certifications">
             <h2>What Certifications Actually Mean</h2>
-            <p>Security certifications have become a bit like hygiene badges — everyone has them, but they do not all mean the same thing.</p>
+            <p>Security certifications have become a bit like hygiene badges, everyone has them, but they do not all mean the same thing.</p>
             <div className="sc-table-wrap">
               <table className="sc-table">
                 <thead>
@@ -327,7 +327,7 @@ export default function EvaluateSecurityVendor() {
                 </thead>
                 <tbody>
                   <tr><td>ISO 27001</td><td>Documented ISMS reviewed by an accredited auditor</td><td>That every control is watertight or continuously monitored</td><td><span className="yes-badge">✓ Yes</span></td></tr>
-                  <tr><td>SOC 2 Type II</td><td>Controls tested over 6–12 months, not a point in time</td><td>That scope covers everything you care about</td><td><span className="yes-badge">✓ Yes — prefer Type II</span></td></tr>
+                  <tr><td>SOC 2 Type II</td><td>Controls tested over 6–12 months, not a point in time</td><td>That scope covers everything you care about</td><td><span className="yes-badge">✓ Yes, prefer Type II</span></td></tr>
                   <tr><td>SOC 2 Type I</td><td>Controls existed at a single point in time</td><td>That they work consistently under real conditions</td><td><span className="ok-badge">⚡ Acceptable if recent</span></td></tr>
                   <tr><td>Pen Test Report</td><td>A third party actively tried to break them</td><td>That findings were fully remediated</td><td><span className="yes-badge">✓ Ask for remediation summary</span></td></tr>
                   <tr><td>GDPR/HIPAA &apos;Compliant&apos;</td><td>Usually just a self-assessment</td><td>Formal certification (neither framework has one)</td><td><span className="no-badge">✗ Ask for DPA/BAA instead</span></td></tr>
@@ -336,7 +336,7 @@ export default function EvaluateSecurityVendor() {
             </div>
             <div className="pro-tip">
               <strong>💡 Pro Tip</strong>
-              <p>Always ask for the SOC 2 report&apos;s scope section first. Vendors sometimes get SOC 2 certified for a narrow slice of their infrastructure — not the systems that actually handle your data. Scope gaps are one of the most common ways vendors technically hold a certification that does not apply to how you use them.</p>
+              <p>Always ask for the SOC 2 report&apos;s scope section first. Vendors sometimes get SOC 2 certified for a narrow slice of their infrastructure, not the systems that actually handle your data. Scope gaps are one of the most common ways vendors technically hold a certification that does not apply to how you use them.</p>
             </div>
           </section>
 
@@ -344,7 +344,7 @@ export default function EvaluateSecurityVendor() {
             <h2>Red Flags That Are Easy to Miss</h2>
             <figure className="b-figure anim">
               <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=520&fit=crop" alt="Contract review red flags for security vendors" loading="lazy" />
-              <figcaption>The subtler red flags often appear in the contract rather than the conversation — this is where vendors embed language that shifts risk back to you.</figcaption>
+              <figcaption>The subtler red flags often appear in the contract rather than the conversation, this is where vendors embed language that shifts risk back to you.</figcaption>
             </figure>
             <div className="redflag-card">
               <strong>🚩 Red Flags to Watch For</strong>
@@ -367,9 +367,9 @@ export default function EvaluateSecurityVendor() {
             <div className="scorecard anim">
               <h3>✅ Vendor Evaluation Dimensions</h3>
               {[
-                ['Certifications', 'ISO 27001 and SOC 2 Type II — current, in-scope, available on request without friction'],
+                ['Certifications', 'ISO 27001 and SOC 2 Type II, current, in-scope, available on request without friction'],
                 ['Data Residency & Sub-Processors', 'Documented, compliant with your regulatory obligations (GDPR, DPDP, HIPAA)'],
-                ['Incident History & Response', 'Clear, tested incident response process — they can describe a real incident and what changed'],
+                ['Incident History & Response', 'Clear, tested incident response process, they can describe a real incident and what changed'],
                 ['Penetration Testing', 'Annual third-party tests with evidence of remediation, not just findings'],
                 ['SLA & Support Quality', 'Enforceable SLAs for critical issues, dedicated security contacts, not a shared queue'],
                 ['Contractual Protections', 'DPA/BAA in place, breach notification ≤48 hours, reasonable liability cap'],
@@ -388,7 +388,7 @@ export default function EvaluateSecurityVendor() {
             <p>Even if a vendor checks every box in the evaluation, the contract is where things can quietly go wrong. These are the clauses that matter most from a security and compliance standpoint.</p>
             <div className="contract-warn">
               <strong>⚠️ Watch These Contract Clauses</strong>
-              <p>Limitation of liability clauses that cap vendor exposure to one month of fees are extremely common and extremely dangerous. If a vendor breach results in a regulatory fine under GDPR, that fine can reach 4% of your global annual turnover. One month of SaaS fees will not touch it. Push for reasonable liability coverage tied to actual harm — or seek cyber insurance that explicitly covers third-party vendor incidents.</p>
+              <p>Limitation of liability clauses that cap vendor exposure to one month of fees are extremely common and extremely dangerous. If a vendor breach results in a regulatory fine under GDPR, that fine can reach 4% of your global annual turnover. One month of SaaS fees will not touch it. Push for reasonable liability coverage tied to actual harm, or seek cyber insurance that explicitly covers third-party vendor incidents.</p>
               <p>The most important contractual element for compliance-focused organisations is the Data Processing Agreement (DPA) or Business Associate Agreement (BAA) under HIPAA. Without a valid DPA, you are technically in breach of GDPR every time personal data flows to that vendor.</p>
             </div>
             <div className="non-neg">
@@ -399,17 +399,17 @@ export default function EvaluateSecurityVendor() {
 
           <div className="art-cta anim">
             <h3>Not sure if your vendors are actually secure?</h3>
-            <p>SecComply&apos;s third-party risk assessments help you build a vendor program that satisfies ISO 27001 Annex A and SOC 2 — and actually protects your organisation.</p>
+            <p>SecComply&apos;s third-party risk assessments help you build a vendor program that satisfies ISO 27001 Annex A and SOC 2, and actually protects your organisation.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/">Book a Free Consultation →</a>
           </div>
 
           <div className="faq-section">
             <h2>Frequently Asked Questions</h2>
             {[
-              ['How often should we re-evaluate existing security vendors?', 'At minimum annually — and immediately when a vendor has a known security incident, changes ownership, or substantially changes how they process your data. ISO 27001 explicitly requires ongoing supplier management, not just initial due diligence.'],
+              ['How often should we re-evaluate existing security vendors?', 'At minimum annually, and immediately when a vendor has a known security incident, changes ownership, or substantially changes how they process your data. ISO 27001 explicitly requires ongoing supplier management, not just initial due diligence.'],
               ['Is a SOC 2 Type I report enough for an ISO 27001 audit?', 'It can satisfy the requirement to evidence third-party assessment, but your auditor will ask pointed questions about scope and recency. SOC 2 Type II is significantly stronger evidence because it demonstrates controls working over time, not just existing at a point in time.'],
-              ['What if a critical vendor refuses to complete our security questionnaire?', 'If they hold a current SOC 2 Type II report covering your use case, that report often substitutes for a questionnaire response. If they refuse both, that refusal must be documented in your vendor risk register with compensating controls noted — or escalated to a leadership decision about whether the relationship is tenable.'],
-              ['Do we need a DPA with every vendor we use?', 'Under GDPR and India\'s DPDP Act, yes — for any vendor who processes personal data on your behalf as a data processor. This includes cloud storage, CRM platforms, email tools, and analytics platforms. A data flow mapping exercise usually surfaces a long list of vendors who need formal DPAs.'],
+              ['What if a critical vendor refuses to complete our security questionnaire?', 'If they hold a current SOC 2 Type II report covering your use case, that report often substitutes for a questionnaire response. If they refuse both, that refusal must be documented in your vendor risk register with compensating controls noted, or escalated to a leadership decision about whether the relationship is tenable.'],
+              ['Do we need a DPA with every vendor we use?', 'Under GDPR and India\'s DPDP Act, yes, for any vendor who processes personal data on your behalf as a data processor. This includes cloud storage, CRM platforms, email tools, and analytics platforms. A data flow mapping exercise usually surfaces a long list of vendors who need formal DPAs.'],
             ].map(([q, a], i) => (
               <div key={i} className="faq-item">
                 <button className="faq-question" onClick={e => window.toggleFaq && window.toggleFaq(e.currentTarget)}>{q}<span className="faq-icon">+</span></button>
@@ -431,7 +431,7 @@ export default function EvaluateSecurityVendor() {
           </div>
           <div className="sidebar-cta">
             <h4 style={{fontSize:'.85rem',fontWeight:700,color:'var(--tx)',marginBottom:8}}>Vendor Risk Assessment</h4>
-            <p>Build a vendor program that satisfies ISO 27001 Annex A and SOC 2 — not just a one-off checklist.</p>
+            <p>Build a vendor program that satisfies ISO 27001 Annex A and SOC 2, not just a one-off checklist.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/">Book a Free Consultation →</a>
           </div>
           <div className="sidebar-card">

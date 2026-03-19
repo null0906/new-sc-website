@@ -51,7 +51,7 @@ export default function EndpointSecurityHybridWork() {
         <meta name="description" content="Your office perimeter vanished the day your team went remote. Learn the 5 endpoint risks in hybrid environments, what good endpoint security looks like in 2026, and how to build continuous compliance across scattered devices." />
         <meta name="keywords" content="endpoint security hybrid work, MDM remote work, endpoint compliance ISO 27001, BYOD security policy, remote device management, hybrid work security risks, endpoint encryption, antivirus compliance monitoring, SOC 2 endpoint controls, endpoint security 2026" />
         <meta property="og:title" content="Endpoint Security in a Hybrid Work World" />
-        <meta property="og:description" content="48% of organisations breached via unmanaged devices. 5 endpoint risks in hybrid environments — and what actually good looks like in 2026." />
+        <meta property="og:description" content="48% of organisations breached via unmanaged devices. 5 endpoint risks in hybrid environments, and what actually good looks like in 2026." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/endpoint-security-hybrid-work" />
         <meta property="og:image" content="https://seccomply.net/assets/images/blog/endpoint-security-og.png" />
@@ -68,11 +68,11 @@ export default function EndpointSecurityHybridWork() {
           "@graph": [
             { "@type": "Article", "headline": "Endpoint Security in a Hybrid Work World", "description": "5 endpoint risks in hybrid environments, what good endpoint security looks like in 2026, and how to build continuous compliance across distributed devices.", "author": { "@type": "Person", "name": "Gauri Khatate", "jobTitle": "Cybersecurity Analyst", "worksFor": { "@type": "Organization", "name": "SecComply" } }, "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } }, "datePublished": "2026-03-18", "dateModified": "2026-03-18", "mainEntityOfPage": "https://seccomply.net/resources/blog/endpoint-security-hybrid-work", "keywords": "endpoint security, hybrid work, MDM, BYOD, ISO 27001, SOC 2, endpoint compliance", "articleSection": "Endpoint Security", "wordCount": 1400, "timeRequired": "PT5M" },
             { "@type": "FAQPage", "mainEntity": [
-              { "@type": "Question", "name": "What is endpoint security in a hybrid work environment?", "acceptedAnswer": { "@type": "Answer", "text": "Endpoint security in a hybrid work environment refers to protecting all devices — company-issued laptops, personal BYOD devices, contractor machines, and mobile phones — that connect to your systems from outside the traditional office perimeter. It involves MDM enrollment, encryption enforcement, patch management, and continuous compliance monitoring regardless of where the device is located." } },
-              { "@type": "Question", "name": "Why is MDM essential for hybrid work security?", "acceptedAnswer": { "@type": "Answer", "text": "MDM (Mobile Device Management) gives IT teams the ability to enforce encryption policies, push security patches, remotely wipe lost or stolen devices, and verify compliance status in real time. Without MDM, remote devices are self-reporting their own security state — which creates audit gaps and genuine breach exposure. For ISO 27001 and SOC 2 compliance, MDM enrollment is typically a mandatory control." } },
-              { "@type": "Question", "name": "How do hybrid work environments affect ISO 27001 and SOC 2 compliance?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001 Annex A.8 and SOC 2 CC6 both require demonstrable control over endpoint security regardless of where employees work. Organisations need continuous evidence of encryption status, patch compliance, and antivirus health across every device. Manual, point-in-time checks create compliance drift — a device can pass its initial audit and be out of compliance within months without automated monitoring catching it." } },
+              { "@type": "Question", "name": "What is endpoint security in a hybrid work environment?", "acceptedAnswer": { "@type": "Answer", "text": "Endpoint security in a hybrid work environment refers to protecting all devices, company-issued laptops, personal BYOD devices, contractor machines, and mobile phones, that connect to your systems from outside the traditional office perimeter. It involves MDM enrollment, encryption enforcement, patch management, and continuous compliance monitoring regardless of where the device is located." } },
+              { "@type": "Question", "name": "Why is MDM essential for hybrid work security?", "acceptedAnswer": { "@type": "Answer", "text": "MDM (Mobile Device Management) gives IT teams the ability to enforce encryption policies, push security patches, remotely wipe lost or stolen devices, and verify compliance status in real time. Without MDM, remote devices are self-reporting their own security state, which creates audit gaps and genuine breach exposure. For ISO 27001 and SOC 2 compliance, MDM enrollment is typically a mandatory control." } },
+              { "@type": "Question", "name": "How do hybrid work environments affect ISO 27001 and SOC 2 compliance?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001 Annex A.8 and SOC 2 CC6 both require demonstrable control over endpoint security regardless of where employees work. Organisations need continuous evidence of encryption status, patch compliance, and antivirus health across every device. Manual, point-in-time checks create compliance drift, a device can pass its initial audit and be out of compliance within months without automated monitoring catching it." } },
               { "@type": "Question", "name": "What are the biggest endpoint security risks for remote and hybrid teams?", "acceptedAnswer": { "@type": "Answer", "text": "The five most consistent endpoint risks in hybrid environments are: unmanaged contractor and BYOD devices outside MDM, stale OS and software on remote machines with disabled auto-updates, unencrypted devices outside the office, home networks used as the security perimeter, and the absence of a continuous audit trail for compliance evidence. Each is knowable and preventable with the right tooling." } },
-              { "@type": "Question", "name": "How does SecComply help with endpoint security compliance?", "acceptedAnswer": { "@type": "Answer", "text": "SecComply's Endpoint Tracking module monitors MDM status, encryption compliance, and antivirus health across your entire device fleet in real time. It maps evidence directly to your ISO 27001, SOC 2, or DPDP controls and generates audit-ready evidence automatically — so you are not scrambling to prove compliance at audit time." } }
+              { "@type": "Question", "name": "How does SecComply help with endpoint security compliance?", "acceptedAnswer": { "@type": "Answer", "text": "SecComply's Endpoint Tracking module monitors MDM status, encryption compliance, and antivirus health across your entire device fleet in real time. It maps evidence directly to your ISO 27001, SOC 2, or DPDP controls and generates audit-ready evidence automatically, so you are not scrambling to prove compliance at audit time." } }
             ]},
             { "@type": "BreadcrumbList", "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seccomply.net" },
@@ -223,7 +223,7 @@ export default function EndpointSecurityHybridWork() {
           <span className="badge badge-gr">✓ ISO 27001 · SOC 2</span>
         </div>
         <h1 className="cspm-hero-h1">Endpoint Security in a <em>Hybrid Work</em> World</h1>
-        <p className="cspm-hero-sub">Your office perimeter vanished the day your team went remote. Here's why that matters — and what it actually takes to stay protected when your endpoints are scattered from Mumbai to Manchester.</p>
+        <p className="cspm-hero-sub">Your office perimeter vanished the day your team went remote. Here's why that matters, and what it actually takes to stay protected when your endpoints are scattered from Mumbai to Manchester.</p>
 
         <div className="cspm-author-strip">
           <div className="avatar">GK</div>
@@ -300,7 +300,7 @@ export default function EndpointSecurityHybridWork() {
             {/* Right: 5 risks */}
             <text x="634" y="44" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">TOP 5 HYBRID RISKS</text>
             {[
-              {risk:'No MDM — Contractor/BYOD Devices', sev:'CRITICAL', c:'#ff4d6d'},
+              {risk:'No MDM, Contractor/BYOD Devices', sev:'CRITICAL', c:'#ff4d6d'},
               {risk:'Stale OS on Remote Machines',       sev:'HIGH',     c:'#ffb703'},
               {risk:'Unencrypted Devices Off-Site',      sev:'HIGH',     c:'#ffb703'},
               {risk:'Home Network as Perimeter',         sev:'MEDIUM',   c:'#E8632B'},
@@ -317,7 +317,7 @@ export default function EndpointSecurityHybridWork() {
             ))}
           </svg>
         </div>
-        <p className="img-cap">Real-time endpoint compliance dashboard — 247 devices, MDM enrollment gaps, encryption status, and the 5 most common hybrid work security risks ranked by severity.</p>
+        <p className="img-cap">Real-time endpoint compliance dashboard, 247 devices, MDM enrollment gaps, encryption status, and the 5 most common hybrid work security risks ranked by severity.</p>
 
         <div className="toc-box">
           <div className="toc-lbl">In This Article</div>
@@ -348,7 +348,7 @@ export default function EndpointSecurityHybridWork() {
             <span className="co-icon">🚨</span>
             <div className="co-body">
               <strong>Real-World Scenario</strong>
-              <p>"The laptop that caused a $4.5M breach wasn't stolen — it was sitting on a developer's kitchen table in Bengaluru." A contractor accessed a shared drive from a personal laptop with an unpatched browser vulnerability. Attackers had compromised that machine weeks earlier through a phishing attack. By the time the agency noticed unusual activity, sensitive client data had already been exfiltrated. The device was just invisible.</p>
+              <p>"The laptop that caused a $4.5M breach wasn't stolen, it was sitting on a developer's kitchen table in Bengaluru." A contractor accessed a shared drive from a personal laptop with an unpatched browser vulnerability. Attackers had compromised that machine weeks earlier through a phishing attack. By the time the agency noticed unusual activity, sensitive client data had already been exfiltrated. The device was just invisible.</p>
             </div>
           </div>
 
@@ -356,36 +356,36 @@ export default function EndpointSecurityHybridWork() {
             <h2>The Real Problem Isn't Hackers. It's <em>Blind Spots.</em></h2>
             <p>Most security teams can name their biggest threats: ransomware, phishing, credential theft. What they struggle to answer is a more fundamental question: how many devices are actually connecting to your systems right now, and what state are they in?</p>
             <p>In a hybrid environment, that question becomes genuinely hard. You've got company-issued laptops, personal MacBooks employees "use just for email," contractor machines that have never touched your MDM, home routers running firmware that hasn't been updated since 2021, and mobile phones authenticating into your cloud apps without any visibility from your IT team.</p>
-            <div className="pull-quote"><p>"Every unmanaged endpoint is an open door. The question isn't if someone walks through it — it's when, and whether you'll notice."</p></div>
+            <div className="pull-quote"><p>"Every unmanaged endpoint is an open door. The question isn't if someone walks through it, it's when, and whether you'll notice."</p></div>
           </section>
 
           <section id="hr-problem">
             <h2>Your Attack Surface Has an <em>HR Problem</em></h2>
             <p>Every new hire, every contractor, every agency partner expands your attack surface. In the office, IT could physically see a new device and bring it into compliance before it touched the network. In a hybrid setup, that same device might connect from a home office in Pune or a co-working space in Amsterdam before IT ever becomes aware of its existence.</p>
-            <p>The Marks &amp; Spencer ransomware attack in early 2025 is a sobering example. Attackers compromised a third-party help desk through weak identity verification during a holiday weekend — a time when oversight was reduced and response was slow. When your endpoints aren't consistently monitored, gaps appear in exactly the moments attackers wait for.</p>
+            <p>The Marks &amp; Spencer ransomware attack in early 2025 is a sobering example. Attackers compromised a third-party help desk through weak identity verification during a holiday weekend, a time when oversight was reduced and response was slow. When your endpoints aren't consistently monitored, gaps appear in exactly the moments attackers wait for.</p>
           </section>
 
           <section id="compliance">
             <h2>Compliance Doesn't Care Where Your <em>Team Is Working From</em></h2>
-            <p>ISO 27001, SOC 2, GDPR, HIPAA — none of these frameworks have a "remote work exemption." If your employee is accessing customer data from a café in Goa on an unencrypted laptop, that's still your problem from a compliance standpoint.</p>
+            <p>ISO 27001, SOC 2, GDPR, HIPAA, none of these frameworks have a "remote work exemption." If your employee is accessing customer data from a café in Goa on an unencrypted laptop, that's still your problem from a compliance standpoint.</p>
             <p>This is where many organisations quietly panic when an audit rolls around. Their policies say "all endpoints must have encryption enabled and antivirus installed." Their reality? They have no reliable way to verify that across 200 devices spread across 12 cities.</p>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>Compliance Gap: Drift Is Invisible Without Continuous Monitoring</strong>
-                <p>Point-in-time checks miss compliance drift entirely. A device passes its initial check at enrollment. Three months later, the employee disables automatic updates. Six months later, the antivirus subscription lapses. A year later, the device is technically "in your inventory" but has drifted far outside your security baseline — and nobody caught it.</p>
+                <p>Point-in-time checks miss compliance drift entirely. A device passes its initial check at enrollment. Three months later, the employee disables automatic updates. Six months later, the antivirus subscription lapses. A year later, the device is technically "in your inventory" but has drifted far outside your security baseline, and nobody caught it.</p>
               </div>
             </div>
           </section>
 
           <section id="five-risks">
             <h2>Five Endpoint Risks That Show Up Consistently in <em>Hybrid Environments</em></h2>
-            <p>The vulnerabilities aren't random. They cluster around predictable patterns — which makes them knowable, and in most cases, preventable.</p>
+            <p>The vulnerabilities aren't random. They cluster around predictable patterns, which makes them knowable, and in most cases, preventable.</p>
             <ul className="feat-list">
               <li className="anim"><div className="f-num">1</div><div className="f-body"><strong>No MDM Enrollment on Contractor &amp; BYOD Devices</strong><span>Contractor machines and personal devices used for work often sit completely outside your MDM. No encryption enforcement, no patch compliance, no remote wipe capability. They're invisible to your security tooling but fully connected to your data.</span></div></li>
-              <li className="anim"><div className="f-num">2</div><div className="f-body"><strong>Stale OS &amp; Software on Remote Machines</strong><span>Without MDM-enforced patching, employees disable automatic updates. The result: a fleet of machines running OS versions with known CVEs, browser vulnerabilities, and lapsed endpoint protection subscriptions — none of which surface in your monitoring.</span></div></li>
-              <li className="anim"><div className="f-num">3</div><div className="f-body"><strong>Unencrypted Devices Outside the Office</strong><span>Full-disk encryption is the single most effective control for lost or stolen device scenarios. Yet in hybrid environments, IT teams frequently discover that employees disabled encryption after initial setup — and nobody caught it because nobody was checking continuously.</span></div></li>
-              <li className="anim"><div className="f-num">4</div><div className="f-body"><strong>Home Network as the Perimeter</strong><span>Corporate networks had firewalls, managed switches, and segmentation. Home networks have a consumer router shared with smart TVs and IoT devices running default credentials. When your endpoint is on that network, you're relying entirely on host-level security — which assumes the host was properly secured.</span></div></li>
+              <li className="anim"><div className="f-num">2</div><div className="f-body"><strong>Stale OS &amp; Software on Remote Machines</strong><span>Without MDM-enforced patching, employees disable automatic updates. The result: a fleet of machines running OS versions with known CVEs, browser vulnerabilities, and lapsed endpoint protection subscriptions, none of which surface in your monitoring.</span></div></li>
+              <li className="anim"><div className="f-num">3</div><div className="f-body"><strong>Unencrypted Devices Outside the Office</strong><span>Full-disk encryption is the single most effective control for lost or stolen device scenarios. Yet in hybrid environments, IT teams frequently discover that employees disabled encryption after initial setup, and nobody caught it because nobody was checking continuously.</span></div></li>
+              <li className="anim"><div className="f-num">4</div><div className="f-body"><strong>Home Network as the Perimeter</strong><span>Corporate networks had firewalls, managed switches, and segmentation. Home networks have a consumer router shared with smart TVs and IoT devices running default credentials. When your endpoint is on that network, you're relying entirely on host-level security, which assumes the host was properly secured.</span></div></li>
               <li className="anim"><div className="f-num">5</div><div className="f-body"><strong>Zero Audit Trail for Compliance Evidence</strong><span>When an auditor asks how you know all endpoints were encrypted and patched at the time of an incident, what's your answer? If you're relying on IT to periodically check devices and log results in a spreadsheet, you'll have gaps, inconsistency, and enormous prep time before every audit cycle.</span></div></li>
             </ul>
           </section>
@@ -393,8 +393,8 @@ export default function EndpointSecurityHybridWork() {
           <section id="good-practice">
             <h2>What Good Endpoint Security Actually Looks Like <em>in 2026</em></h2>
 
-            <h3>1. Know What You Have — Continuously</h3>
-            <p>Device inventory sounds boring, but it's the foundation of everything. You cannot enforce a policy on a device you don't know about. Modern endpoint compliance platforms maintain a live, up-to-date inventory — not a spreadsheet someone updates quarterly, but a real-time picture of every device. For each device, you need to know:</p>
+            <h3>1. Know What You Have, Continuously</h3>
+            <p>Device inventory sounds boring, but it's the foundation of everything. You cannot enforce a policy on a device you don't know about. Modern endpoint compliance platforms maintain a live, up-to-date inventory, not a spreadsheet someone updates quarterly, but a real-time picture of every device. For each device, you need to know:</p>
             <ul className="arrow-list">
               <li>Is full-disk encryption enabled?</li>
               <li>Is the OS patched within your acceptable window?</li>
@@ -406,12 +406,12 @@ export default function EndpointSecurityHybridWork() {
               <span className="co-icon">🛡️</span>
               <div className="co-body">
                 <strong>SecComply: Endpoint Tracking</strong>
-                <p>SecComply's Endpoint Tracking module monitors MDM status, encryption compliance, and antivirus health across your fleet in real time. Rather than waiting for an annual audit to discover gaps, you see compliance drift the moment it happens — and get prioritised remediation steps, not just a long list of tasks.</p>
+                <p>SecComply's Endpoint Tracking module monitors MDM status, encryption compliance, and antivirus health across your fleet in real time. Rather than waiting for an annual audit to discover gaps, you see compliance drift the moment it happens, and get prioritised remediation steps, not just a long list of tasks.</p>
               </div>
             </div>
 
             <h3>2. MDM Is Not Optional</h3>
-            <p>MDM gives you the ability to enforce encryption, push patches, revoke access instantly when someone leaves, and remote-wipe a device if it's lost or compromised. Without it, you're asking employees to self-report their own security state — which is roughly as reliable as asking them to self-report whether they've been phished.</p>
+            <p>MDM gives you the ability to enforce encryption, push patches, revoke access instantly when someone leaves, and remote-wipe a device if it's lost or compromised. Without it, you're asking employees to self-report their own security state, which is roughly as reliable as asking them to self-report whether they've been phished.</p>
             <div className="callout co-key">
               <span className="co-icon">✅</span>
               <div className="co-body">
@@ -421,12 +421,12 @@ export default function EndpointSecurityHybridWork() {
             </div>
 
             <h3>3. Automate the Compliance Evidence You'll Need Anyway</h3>
-            <p>Manual processes don't scale. If you're relying on IT to periodically check devices and log results in a spreadsheet, you'll spend enormous time preparing for every audit cycle — and still have gaps.</p>
+            <p>Manual processes don't scale. If you're relying on IT to periodically check devices and log results in a spreadsheet, you'll spend enormous time preparing for every audit cycle, and still have gaps.</p>
             <div className="callout co-sc">
               <span className="co-icon">🛡️</span>
               <div className="co-body">
                 <strong>SecComply: Continuous Compliance Automation</strong>
-                <p>SecComply continuously collects and validates evidence across your endpoints — MDM enrollment status, encryption flags, antivirus health — and maps that evidence directly to your ISO 27001, SOC 2, or DPDP controls. When your auditor needs evidence, it's already organised, timestamped, and ready. No scramble, no spreadsheet archaeology.</p>
+                <p>SecComply continuously collects and validates evidence across your endpoints, MDM enrollment status, encryption flags, antivirus health, and maps that evidence directly to your ISO 27001, SOC 2, or DPDP controls. When your auditor needs evidence, it's already organised, timestamped, and ready. No scramble, no spreadsheet archaeology.</p>
               </div>
             </div>
           </section>
@@ -435,20 +435,20 @@ export default function EndpointSecurityHybridWork() {
             <h2>Where to Start: A <em>Practical Roadmap</em></h2>
             <p>If you're feeling uncomfortable about the state of your endpoint security, here's a grounded starting point. You don't need to boil the ocean.</p>
             <ul className="arrow-list">
-              <li>Run a full device inventory — including contractor and personal devices used for work.</li>
+              <li>Run a full device inventory, including contractor and personal devices used for work.</li>
               <li>Identify which devices have no MDM enrollment and assess the risk they represent.</li>
               <li>Check encryption compliance across your fleet. It's the single most impactful control for lost/stolen device scenarios.</li>
-              <li>Map your endpoint gaps against your compliance framework — ISO 27001 A.8, SOC 2 CC6, DPDP — to understand your audit exposure.</li>
+              <li>Map your endpoint gaps against your compliance framework, ISO 27001 A.8, SOC 2 CC6, DPDP, to understand your audit exposure.</li>
               <li>Automate monitoring so you're catching compliance drift continuously, not annually.</li>
             </ul>
-            <div className="pull-quote"><p>"The goal isn't perfection on day one. It's visibility — knowing where your gaps are so you can close them before someone else finds them for you."</p></div>
-            <p>Hybrid work isn't going away. And endpoint security in a distributed environment isn't optional anymore — not for compliance, not for customer trust, and not for basic operational resilience. The organisations that treat it as a continuous, automated discipline rather than a periodic checkbox will be the ones that avoid the headlines.</p>
+            <div className="pull-quote"><p>"The goal isn't perfection on day one. It's visibility, knowing where your gaps are so you can close them before someone else finds them for you."</p></div>
+            <p>Hybrid work isn't going away. And endpoint security in a distributed environment isn't optional anymore, not for compliance, not for customer trust, and not for basic operational resilience. The organisations that treat it as a continuous, automated discipline rather than a periodic checkbox will be the ones that avoid the headlines.</p>
           </section>
 
           {/* CTA */}
           <div className="cta-banner">
             <h3>See What's Actually Happening on Your Endpoints</h3>
-            <p>SecComply gives you real-time visibility into MDM enrollment, encryption status, and antivirus compliance — continuously, across every device, mapped to your compliance frameworks.</p>
+            <p>SecComply gives you real-time visibility into MDM enrollment, encryption status, and antivirus compliance, continuously, across every device, mapped to your compliance frameworks.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Demo →</a>
               <a href="https://seccomply.net/services/cloud-security" className="btn-o" target="_blank" rel="noopener">View Endpoint Security Services</a>
@@ -466,11 +466,11 @@ export default function EndpointSecurityHybridWork() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div itemScope itemType="https://schema.org/FAQPage">
               {[
-                {q:"What is endpoint security in a hybrid work environment?", a:"Endpoint security in a hybrid work environment refers to protecting all devices — company-issued laptops, personal BYOD devices, contractor machines, and mobile phones — that connect to your systems from outside the traditional office perimeter. It involves MDM enrollment, encryption enforcement, patch management, and continuous compliance monitoring regardless of where the device is located."},
-                {q:"Why is MDM essential for hybrid work security?", a:"MDM gives IT teams the ability to enforce encryption policies, push security patches, remotely wipe lost or stolen devices, and verify compliance status in real time. Without MDM, remote devices are self-reporting their own security state — which creates audit gaps and genuine breach exposure. For ISO 27001 and SOC 2 compliance, MDM enrollment is typically a mandatory control."},
-                {q:"How do hybrid work environments affect ISO 27001 and SOC 2 compliance?", a:"ISO 27001 Annex A.8 and SOC 2 CC6 both require demonstrable control over endpoint security regardless of where employees work. Organisations need continuous evidence of encryption status, patch compliance, and antivirus health across every device. Manual, point-in-time checks create compliance drift — a device can pass its initial audit and be out of compliance within months without automated monitoring catching it."},
+                {q:"What is endpoint security in a hybrid work environment?", a:"Endpoint security in a hybrid work environment refers to protecting all devices, company-issued laptops, personal BYOD devices, contractor machines, and mobile phones, that connect to your systems from outside the traditional office perimeter. It involves MDM enrollment, encryption enforcement, patch management, and continuous compliance monitoring regardless of where the device is located."},
+                {q:"Why is MDM essential for hybrid work security?", a:"MDM gives IT teams the ability to enforce encryption policies, push security patches, remotely wipe lost or stolen devices, and verify compliance status in real time. Without MDM, remote devices are self-reporting their own security state, which creates audit gaps and genuine breach exposure. For ISO 27001 and SOC 2 compliance, MDM enrollment is typically a mandatory control."},
+                {q:"How do hybrid work environments affect ISO 27001 and SOC 2 compliance?", a:"ISO 27001 Annex A.8 and SOC 2 CC6 both require demonstrable control over endpoint security regardless of where employees work. Organisations need continuous evidence of encryption status, patch compliance, and antivirus health across every device. Manual, point-in-time checks create compliance drift, a device can pass its initial audit and be out of compliance within months without automated monitoring catching it."},
                 {q:"What are the biggest endpoint security risks for remote and hybrid teams?", a:"The five most consistent endpoint risks in hybrid environments are: unmanaged contractor and BYOD devices outside MDM, stale OS and software on remote machines, unencrypted devices outside the office, home networks used as the security perimeter, and the absence of a continuous audit trail for compliance evidence. Each is knowable and preventable with the right tooling."},
-                {q:"How does SecComply help with endpoint security compliance?", a:"SecComply's Endpoint Tracking module monitors MDM status, encryption compliance, and antivirus health across your entire device fleet in real time. It maps evidence directly to your ISO 27001, SOC 2, or DPDP controls and generates audit-ready evidence automatically — so you are not scrambling to prove compliance at audit time."},
+                {q:"How does SecComply help with endpoint security compliance?", a:"SecComply's Endpoint Tracking module monitors MDM status, encryption compliance, and antivirus health across your entire device fleet in real time. It maps evidence directly to your ISO 27001, SOC 2, or DPDP controls and generates audit-ready evidence automatically, so you are not scrambling to prove compliance at audit time."},
               ].map((f,i)=>(
                 <div key={i} className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong itemProp="name">{f.q}</strong><span className="faq-ch">▾</span></div>
@@ -514,7 +514,7 @@ export default function EndpointSecurityHybridWork() {
           </div>
           <div className="sb-cta">
             <h4>Unsure About Your Endpoint Coverage?</h4>
-            <p>Free 30-min consultation — we'll show you exactly what your current endpoint blind spots look like.</p>
+            <p>Free 30-min consultation, we'll show you exactly what your current endpoint blind spots look like.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

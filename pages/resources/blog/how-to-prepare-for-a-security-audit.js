@@ -142,10 +142,10 @@ export default function HowToPrepareForSecurityAudit() {
         <title>How to Prepare for a Security Audit: The Complete Guide, SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="A step-by-step guide to security audit preparation — 8 stages, the evidence auditors look for, and how to build a programme that is audit-ready by default. Covers ISO 27001, SOC 2, DPDPA, and GDPR." />
+        <meta name="description" content="A step-by-step guide to security audit preparation, 8 stages, the evidence auditors look for, and how to build a programme that is audit-ready by default. Covers ISO 27001, SOC 2, DPDPA, and GDPR." />
         <meta name="keywords" content="how to prepare for security audit, security audit preparation, ISO 27001 audit checklist, SOC 2 audit readiness, audit evidence collection, internal security audit, DPDPA compliance audit, audit gap assessment, security audit guide, information security audit" />
         <meta property="og:title" content="How to Prepare for a Security Audit: The Complete Guide" />
-        <meta property="og:description" content="8 stages, the evidence auditors actually look for, and how to build a programme that is audit-ready every day — not just in the week before the auditor arrives." />
+        <meta property="og:description" content="8 stages, the evidence auditors actually look for, and how to build a programme that is audit-ready every day, not just in the week before the auditor arrives." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/how-to-prepare-for-a-security-audit" />
         <meta property="og:image" content="https://seccomply.net/assets/images/blog/security-audit-prep-og.png" />
@@ -164,7 +164,7 @@ export default function HowToPrepareForSecurityAudit() {
             {
               "@type": "Article",
               "headline": "How to Prepare for a Security Audit: The Complete Guide",
-              "description": "A step-by-step guide to security audit preparation — 8 stages, the evidence auditors look for, and how to build a programme that is audit-ready by default.",
+              "description": "A step-by-step guide to security audit preparation, 8 stages, the evidence auditors look for, and how to build a programme that is audit-ready by default.",
               "author": { "@type": "Person", "name": "Bhumika Deshmukh", "jobTitle": "Cyber Security Analyst & Technical Writer", "worksFor": { "@type": "Organization", "name": "SecComply" } },
               "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } },
               "datePublished": "2026-03-17",
@@ -179,13 +179,13 @@ export default function HowToPrepareForSecurityAudit() {
             {
               "@type": "HowTo",
               "name": "How to Prepare for a Security Audit",
-              "description": "A structured 8-stage approach to preparing for any security audit — ISO 27001, SOC 2, DPDPA, or GDPR.",
+              "description": "A structured 8-stage approach to preparing for any security audit, ISO 27001, SOC 2, DPDPA, or GDPR.",
               "totalTime": "P3W",
               "step": [
-                { "@type": "HowToStep", "position": 1, "name": "Confirm the scope in writing", "text": "Get the scope of the audit in writing — systems, processes, locations, and framework clauses included." },
+                { "@type": "HowToStep", "position": 1, "name": "Confirm the scope in writing", "text": "Get the scope of the audit in writing, systems, processes, locations, and framework clauses included." },
                 { "@type": "HowToStep", "position": 2, "name": "Run an honest internal gap assessment", "text": "Review every control in scope: implemented and evidenced, partially in place, or genuinely missing." },
                 { "@type": "HowToStep", "position": 3, "name": "Assign a control owner to every requirement", "text": "Every requirement in scope needs a named person responsible for that control and its evidence." },
-                { "@type": "HowToStep", "position": 4, "name": "Collect and organise your evidence", "text": "Policies, logs, screenshots, access reviews, training records — everything the auditor will ask for, labelled and current." },
+                { "@type": "HowToStep", "position": 4, "name": "Collect and organise your evidence", "text": "Policies, logs, screenshots, access reviews, training records, everything the auditor will ask for, labelled and current." },
                 { "@type": "HowToStep", "position": 5, "name": "Review and update all policies", "text": "Every policy in scope should have a review date, an owner, and a current signature from an appropriate authority." },
                 { "@type": "HowToStep", "position": 6, "name": "Brief your team", "text": "Every person the auditor might speak to should understand what the audit is for and what controls exist in their area." },
                 { "@type": "HowToStep", "position": 7, "name": "Prepare your audit trail documentation", "text": "For each control, build a clear narrative: the requirement, the policy, the evidence, the owner." },
@@ -195,12 +195,12 @@ export default function HowToPrepareForSecurityAudit() {
             {
               "@type": "FAQPage",
               "mainEntity": [
-                { "@type": "Question", "name": "How long does it take to prepare for a security audit?", "acceptedAnswer": { "@type": "Answer", "text": "For a first-time ISO 27001 or SOC 2 audit, organisations typically need three to six months of structured preparation. For surveillance audits where a programme already exists, a focused three-week sprint — following the 8-stage process — can be sufficient. The earlier you start building continuous evidence collection into your daily operations, the less preparation a single audit requires." } },
+                { "@type": "Question", "name": "How long does it take to prepare for a security audit?", "acceptedAnswer": { "@type": "Answer", "text": "For a first-time ISO 27001 or SOC 2 audit, organisations typically need three to six months of structured preparation. For surveillance audits where a programme already exists, a focused three-week sprint, following the 8-stage process, can be sufficient. The earlier you start building continuous evidence collection into your daily operations, the less preparation a single audit requires." } },
                 { "@type": "Question", "name": "What evidence do auditors look for in a security audit?", "acceptedAnswer": { "@type": "Answer", "text": "Auditors consistently ask for: a signed Information Security Policy, a risk register reviewed within the past year, security awareness training records with completion dates, change management records, a tested business continuity and DR plan, DPIA records for high-risk processing, a current asset inventory, access control logs and user access reviews, an incident log, supplier contracts with security clauses, and patch management and vulnerability scan records." } },
-                { "@type": "Question", "name": "What is the most common reason organisations fail security audits?", "acceptedAnswer": { "@type": "Answer", "text": "The most common finding in first-time audits is not that controls are missing — it is that controls exist but cannot be evidenced. An organisation may genuinely enforce MFA or conduct access reviews, but without logs, screenshots, or documented processes, an auditor cannot confirm it. Evidence collection is not optional. It is the audit." } },
-                { "@type": "Question", "name": "What is the difference between ISO 27001 and SOC 2 audit preparation?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001 certification audits focus on a defined ISMS scope and evaluate implementation of Annex A controls against your Statement of Applicability. SOC 2 audits assess the Trust Service Criteria relevant to your service commitments — typically Security, Availability, and Confidentiality. ISO 27001 preparation tends to emphasise policy documentation and risk treatment; SOC 2 preparation puts more weight on system-level controls, logging, and operational evidence over the audit period." } },
-                { "@type": "Question", "name": "How can SecComply help with security audit preparation?", "acceptedAnswer": { "@type": "Answer", "text": "SecComply runs a free audit readiness assessment that maps your current controls against the framework you are being audited against — ISO 27001, SOC 2, DPDPA, GDPR, or others — and identifies exactly where the gaps are before the auditor does. We then help organisations build the evidence, policies, and audit trail documentation needed to go into the audit with confidence." } },
-                { "@type": "Question", "name": "What should you do after a security audit?", "acceptedAnswer": { "@type": "Answer", "text": "For each finding, produce a corrective action response naming the person responsible, describing the specific action, and committing to a realistic date. For certification audits, treat your findings tracker as a live document — auditors on the next cycle will check whether commitments were fulfilled. The goal after any audit is to build toward continuous readiness, where evidence is collected daily and controls are maintained without needing a pre-audit sprint." } }
+                { "@type": "Question", "name": "What is the most common reason organisations fail security audits?", "acceptedAnswer": { "@type": "Answer", "text": "The most common finding in first-time audits is not that controls are missing, it is that controls exist but cannot be evidenced. An organisation may genuinely enforce MFA or conduct access reviews, but without logs, screenshots, or documented processes, an auditor cannot confirm it. Evidence collection is not optional. It is the audit." } },
+                { "@type": "Question", "name": "What is the difference between ISO 27001 and SOC 2 audit preparation?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001 certification audits focus on a defined ISMS scope and evaluate implementation of Annex A controls against your Statement of Applicability. SOC 2 audits assess the Trust Service Criteria relevant to your service commitments, typically Security, Availability, and Confidentiality. ISO 27001 preparation tends to emphasise policy documentation and risk treatment; SOC 2 preparation puts more weight on system-level controls, logging, and operational evidence over the audit period." } },
+                { "@type": "Question", "name": "How can SecComply help with security audit preparation?", "acceptedAnswer": { "@type": "Answer", "text": "SecComply runs a free audit readiness assessment that maps your current controls against the framework you are being audited against, ISO 27001, SOC 2, DPDPA, GDPR, or others, and identifies exactly where the gaps are before the auditor does. We then help organisations build the evidence, policies, and audit trail documentation needed to go into the audit with confidence." } },
+                { "@type": "Question", "name": "What should you do after a security audit?", "acceptedAnswer": { "@type": "Answer", "text": "For each finding, produce a corrective action response naming the person responsible, describing the specific action, and committing to a realistic date. For certification audits, treat your findings tracker as a live document, auditors on the next cycle will check whether commitments were fulfilled. The goal after any audit is to build toward continuous readiness, where evidence is collected daily and controls are maintained without needing a pre-audit sprint." } }
               ]
             },
             {
@@ -385,7 +385,7 @@ export default function HowToPrepareForSecurityAudit() {
 
         <h1 className="cspm-hero-h1">How to Prepare for a <em>Security Audit</em></h1>
 
-        <p className="cspm-hero-sub">The difference between a painful audit and a straightforward one is not luck — it is whether you spent the weeks before it in reactive scramble mode, or whether you built a programme that collects evidence every day and keeps your controls audit-ready by default. Here is exactly how to do that.</p>
+        <p className="cspm-hero-sub">The difference between a painful audit and a straightforward one is not luck, it is whether you spent the weeks before it in reactive scramble mode, or whether you built a programme that collects evidence every day and keeps your controls audit-ready by default. Here is exactly how to do that.</p>
 
         <div className="cspm-author-strip">
           <div className="avatar">BD</div>
@@ -507,7 +507,7 @@ export default function HowToPrepareForSecurityAudit() {
             <text x="664" y="446" fill="rgba(200,214,229,0.3)" fontSize="7.5" fontFamily="sans-serif">6 / 11 items evidenced</text>
           </svg>
         </div>
-        <p className="img-cap">An audit readiness dashboard — 8 preparation stages, real-time evidence checklist, and framework coverage across ISO 27001, SOC 2, DPDPA, and GDPR.</p>
+        <p className="img-cap">An audit readiness dashboard, 8 preparation stages, real-time evidence checklist, and framework coverage across ISO 27001, SOC 2, DPDPA, and GDPR.</p>
 
         {/* ── INLINE TOC ── */}
         <div className="toc-box">
@@ -550,26 +550,26 @@ export default function HowToPrepareForSecurityAudit() {
             <p>"Auditors are not looking for perfection. They are looking for evidence that you take security seriously, that your controls are real, and that when something goes wrong, you know about it and you fix it."</p>
           </div>
 
-          <p>Let's be honest — the words "security audit" make most people a little nervous. Whether it's your first one or your fifth, there's always that nagging question: have we actually done everything we were supposed to do? This guide is here to help you walk in confident rather than hoping for the best.</p>
-          <p>A security audit is not an ambush. It is a structured examination of your organisation's controls, policies, and practices against a defined standard — whether that's ISO 27001, SOC 2, the DPDPA, or an internal framework. The auditor's job is to verify that what you say you do is actually what you do. Your job is to make that verification as smooth and evidence-rich as possible.</p>
+          <p>Let's be honest, the words "security audit" make most people a little nervous. Whether it's your first one or your fifth, there's always that nagging question: have we actually done everything we were supposed to do? This guide is here to help you walk in confident rather than hoping for the best.</p>
+          <p>A security audit is not an ambush. It is a structured examination of your organisation's controls, policies, and practices against a defined standard, whether that's ISO 27001, SOC 2, the DPDPA, or an internal framework. The auditor's job is to verify that what you say you do is actually what you do. Your job is to make that verification as smooth and evidence-rich as possible.</p>
 
           {/* SECTION 1 */}
           <section id="audit-types">
-            <h2>First — Understand What Kind of <em>Audit</em> You Are Facing</h2>
+            <h2>First, Understand What Kind of <em>Audit</em> You Are Facing</h2>
             <p>Not all security audits are the same, and the preparation for each looks different. Before you do anything else, get clear on exactly what you are being audited against. The most common audit types organisations face include:</p>
             <ul className="feat-list">
               <li className="anim"><div className="f-num">1</div><div className="f-body"><strong>ISO 27001 certification and surveillance audits</strong><span>Stage 1 and Stage 2 certification audits evaluate your ISMS scope, risk treatment, and Annex A control implementation. Annual surveillance audits check whether corrective actions from the previous cycle were completed.</span></div></li>
               <li className="anim"><div className="f-num">2</div><div className="f-body"><strong>SOC 2 Type I and Type II</strong><span>Type I is a point-in-time review of control design. Type II covers a defined period (typically 6–12 months) and tests whether controls operated effectively throughout. Evidence requirements are substantially higher for Type II.</span></div></li>
               <li className="anim"><div className="f-num">3</div><div className="f-body"><strong>DPDPA and GDPR compliance reviews</strong><span>Regulators and enterprise clients increasingly conduct formal reviews against India's DPDPA and the EU's GDPR. These focus on data processing records, consent mechanisms, DPIA documentation, and breach response procedures.</span></div></li>
-              <li className="anim"><div className="f-num">4</div><div className="f-body"><strong>Internal information security audits</strong><span>Internal audits are practice runs — and the most valuable ones are the honest ones. An internal audit conducted properly is your best early warning system before a third-party auditor arrives.</span></div></li>
+              <li className="anim"><div className="f-num">4</div><div className="f-body"><strong>Internal information security audits</strong><span>Internal audits are practice runs, and the most valuable ones are the honest ones. An internal audit conducted properly is your best early warning system before a third-party auditor arrives.</span></div></li>
               <li className="anim"><div className="f-num">5</div><div className="f-body"><strong>Customer-driven security questionnaires escalating to formal reviews</strong><span>Enterprise procurement security reviews often begin as questionnaires and escalate into on-site or virtual assessments. Having your evidence organised in advance turns a stressful customer review into a competitive advantage.</span></div></li>
             </ul>
           </section>
 
-          {/* SECTION 2 — mistakes table */}
+          {/* SECTION 2, mistakes table */}
           <section id="mistakes">
             <h2>What <em>Prepared Organisations</em> Do Differently</h2>
-            <p>The same preparation mistakes appear in almost every first-time audit. Here is what they look like — and what organisations that sail through audits do instead.</p>
+            <p>The same preparation mistakes appear in almost every first-time audit. Here is what they look like, and what organisations that sail through audits do instead.</p>
             <div className="cmp-wrap">
               <table className="cmp-table">
                 <thead>
@@ -590,15 +590,15 @@ export default function HowToPrepareForSecurityAudit() {
             </div>
           </section>
 
-          {/* SECTION 3 — 8 stages */}
+          {/* SECTION 3, 8 stages */}
           <section id="eight-stages">
             <h2>The Eight Stages of <em>Audit Preparation</em></h2>
-            <p>This approach works whether you have three months to prepare or three weeks. The earlier you start, the more comfortable the process — but even a focused three-week sprint, done properly, can turn a difficult audit into a clean one.</p>
+            <p>This approach works whether you have three months to prepare or three weeks. The earlier you start, the more comfortable the process, but even a focused three-week sprint, done properly, can turn a difficult audit into a clean one.</p>
             <ul className="feat-list">
               <li className="anim">
                 <div className="f-num">1</div>
                 <div className="f-body">
-                  <strong>Confirm the scope — before anything else</strong>
+                  <strong>Confirm the scope, before anything else</strong>
                   <span>Get the scope of the audit in writing. What systems, processes, and locations are included? What framework clauses or control categories apply? Scope creep is the enemy of a well-prepared audit. Know exactly what is being examined and build your evidence map from there.</span>
                 </div>
               </li>
@@ -606,7 +606,7 @@ export default function HowToPrepareForSecurityAudit() {
                 <div className="f-num">2</div>
                 <div className="f-body">
                   <strong>Run an honest internal gap assessment</strong>
-                  <span>Before the auditor arrives, you need to know where your gaps are. Not a polished version for a board slide — an honest, internal review of every control in scope. Which are implemented and evidenced? Which are partially in place? Which are genuinely missing? The third category is where your preparation time goes.</span>
+                  <span>Before the auditor arrives, you need to know where your gaps are. Not a polished version for a board slide, an honest, internal review of every control in scope. Which are implemented and evidenced? Which are partially in place? Which are genuinely missing? The third category is where your preparation time goes.</span>
                 </div>
               </li>
               <li className="anim">
@@ -620,7 +620,7 @@ export default function HowToPrepareForSecurityAudit() {
                 <div className="f-num">4</div>
                 <div className="f-body">
                   <strong>Collect and organise your evidence</strong>
-                  <span>Evidence is the currency of an audit. Policies, procedures, logs, screenshots, access reviews, training records, incident reports, risk registers — everything the auditor will ask to see needs to be findable, labelled, and current. Evidence collected in a panic two days before an audit is obvious. Evidence building for months is not.</span>
+                  <span>Evidence is the currency of an audit. Policies, procedures, logs, screenshots, access reviews, training records, incident reports, risk registers, everything the auditor will ask to see needs to be findable, labelled, and current. Evidence collected in a panic two days before an audit is obvious. Evidence building for months is not.</span>
                 </div>
               </li>
               <li className="anim">
@@ -634,42 +634,42 @@ export default function HowToPrepareForSecurityAudit() {
                 <div className="f-num">6</div>
                 <div className="f-body">
                   <strong>Brief your team</strong>
-                  <span>Auditors will speak to people — not just the CISO or the compliance lead. They will ask questions of IT staff, HR, operations, and sometimes customer-facing teams. Every person the auditor might interact with should understand what the audit is for, what controls exist in their area, and how to answer questions honestly and specifically. You are not coaching people on what to say. You are making sure they are not caught off guard.</span>
+                  <span>Auditors will speak to people, not just the CISO or the compliance lead. They will ask questions of IT staff, HR, operations, and sometimes customer-facing teams. Every person the auditor might interact with should understand what the audit is for, what controls exist in their area, and how to answer questions honestly and specifically. You are not coaching people on what to say. You are making sure they are not caught off guard.</span>
                 </div>
               </li>
               <li className="anim">
                 <div className="f-num">7</div>
                 <div className="f-body">
                   <strong>Prepare your audit trail documentation</strong>
-                  <span>The audit trail is not just your evidence files — it is the narrative that connects them. For each control, you should be able to tell a clear story: here is the requirement, here is the policy that addresses it, here is the evidence that it is implemented, and here is who owns it. Auditors move through a lot of material quickly. Make it easy for them to connect evidence to requirements.</span>
+                  <span>The audit trail is not just your evidence files, it is the narrative that connects them. For each control, you should be able to tell a clear story: here is the requirement, here is the policy that addresses it, here is the evidence that it is implemented, and here is who owns it. Auditors move through a lot of material quickly. Make it easy for them to connect evidence to requirements.</span>
                 </div>
               </li>
               <li className="anim">
                 <div className="f-num">8</div>
                 <div className="f-body">
                   <strong>Conduct a pre-audit internal walkthrough</strong>
-                  <span>Before the formal audit, walk through the process yourself — or ask a colleague who was not involved in the preparation to do it. Treat it like the real thing. Where does the evidence break down? Where is the narrative unclear? Where does the control owner look uncertain? Fix those things now, not during the audit itself.</span>
+                  <span>Before the formal audit, walk through the process yourself, or ask a colleague who was not involved in the preparation to do it. Treat it like the real thing. Where does the evidence break down? Where is the narrative unclear? Where does the control owner look uncertain? Fix those things now, not during the audit itself.</span>
                 </div>
               </li>
             </ul>
           </section>
 
-          {/* SECTION 4 — evidence */}
+          {/* SECTION 4, evidence */}
           <section id="evidence">
             <h2>The Evidence Auditors <em>Look For Most</em></h2>
             <p>Across almost every security framework, there is a consistent set of evidence types that auditors will ask for. If you have these organised, labelled, and current, the rest of the audit tends to go smoothly.</p>
 
             <div className="checklist-grid">
               {[
-                "Information Security Policy — signed and dated",
-                "Risk register — reviewed within the past year",
+                "Information Security Policy, signed and dated",
+                "Risk register, reviewed within the past year",
                 "Security awareness training records with completion dates",
                 "Change management records for significant changes",
-                "Business continuity and DR plan — tested",
+                "Business continuity and DR plan, tested",
                 "DPIA records for high-risk processing activities",
-                "Asset inventory — current and complete",
+                "Asset inventory, current and complete",
                 "Access control logs and user access reviews",
-                "Incident log — even if no major incidents occurred",
+                "Incident log, even if no major incidents occurred",
                 "Supplier / vendor contracts with security clauses",
                 "Internal audit results and management responses",
                 "Patch management and vulnerability scan records",
@@ -685,12 +685,12 @@ export default function HowToPrepareForSecurityAudit() {
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>The evidence gap that catches most organisations</strong>
-                <p>The single most common finding in first-time audits is not that controls are missing — it is that controls exist but cannot be evidenced. You may genuinely enforce MFA across all systems, but if there is no log, no screenshot, and no policy document that describes the process, an auditor cannot confirm it. Evidence is not optional. It is the audit.</p>
+                <p>The single most common finding in first-time audits is not that controls are missing, it is that controls exist but cannot be evidenced. You may genuinely enforce MFA across all systems, but if there is no log, no screenshot, and no policy document that describes the process, an auditor cannot confirm it. Evidence is not optional. It is the audit.</p>
               </div>
             </div>
           </section>
 
-          {/* SECTION 5 — during */}
+          {/* SECTION 5, during */}
           <section id="during">
             <h2>What to Do <em>During the Audit</em> Itself</h2>
             <p>By the time the auditor arrives, your preparation should have done most of the work. But there are principles that help the process go well once it is underway.</p>
@@ -699,8 +699,8 @@ export default function HowToPrepareForSecurityAudit() {
               <div className="during-item anim">
                 <span className="d-icon">🤝</span>
                 <div className="d-body">
-                  <strong>Be honest — not defensive</strong>
-                  <span>If a control is not fully implemented, say so — and explain what is in place, what is planned, and what the timeline is. Auditors who feel they are being managed tend to dig harder. Auditors who feel they are getting an honest picture of a programme that takes security seriously tend to engage constructively. Honesty is not a vulnerability in an audit. Defensiveness is.</span>
+                  <strong>Be honest, not defensive</strong>
+                  <span>If a control is not fully implemented, say so, and explain what is in place, what is planned, and what the timeline is. Auditors who feel they are being managed tend to dig harder. Auditors who feel they are getting an honest picture of a programme that takes security seriously tend to engage constructively. Honesty is not a vulnerability in an audit. Defensiveness is.</span>
                 </div>
               </div>
               <div className="during-item anim">
@@ -713,7 +713,7 @@ export default function HowToPrepareForSecurityAudit() {
               <div className="during-item anim">
                 <span className="d-icon">✅</span>
                 <div className="d-body">
-                  <strong>Do not guess — confirm and come back</strong>
+                  <strong>Do not guess, confirm and come back</strong>
                   <span>If an auditor asks a question and you are not certain of the answer, do not guess. Say you will confirm and come back within the hour. A careful, accurate answer provided promptly looks far better than an immediate answer that turns out to be wrong.</span>
                 </div>
               </div>
@@ -721,7 +721,7 @@ export default function HowToPrepareForSecurityAudit() {
                 <span className="d-icon">📝</span>
                 <div className="d-body">
                   <strong>Take notes on every finding</strong>
-                  <span>As the audit progresses, keep a running record of every finding, observation, and request the auditor raises. Do not wait for the formal report. Your notes will be valuable when triaging findings and preparing responses — and they give you a head start on corrective action planning.</span>
+                  <span>As the audit progresses, keep a running record of every finding, observation, and request the auditor raises. Do not wait for the formal report. Your notes will be valuable when triaging findings and preparing responses, and they give you a head start on corrective action planning.</span>
                 </div>
               </div>
             </div>
@@ -731,9 +731,9 @@ export default function HowToPrepareForSecurityAudit() {
             </div>
           </section>
 
-          {/* SECTION 6 — after */}
+          {/* SECTION 6, after */}
           <section id="after">
-            <h2>After the Audit — <em>What Comes Next</em></h2>
+            <h2>After the Audit, <em>What Comes Next</em></h2>
             <p>A clean audit is not an invitation to relax. A difficult audit is not a reason to panic. In both cases, the response is the same: take the findings seriously, prioritise the remediation, and use the experience to build a better programme.</p>
 
             <ul className="feat-list">
@@ -748,14 +748,14 @@ export default function HowToPrepareForSecurityAudit() {
                 <div className="f-num">2</div>
                 <div className="f-body">
                   <strong>Close the loop on surveillance audits</strong>
-                  <span>If you are on a certification cycle — ISO 27001 annually, for example — the findings from this audit become the agenda for the next one. Auditors check whether the corrective actions you committed to were actually implemented. Treat your audit findings tracker as a live document that gets updated as remediation is completed.</span>
+                  <span>If you are on a certification cycle, ISO 27001 annually, for example, the findings from this audit become the agenda for the next one. Auditors check whether the corrective actions you committed to were actually implemented. Treat your audit findings tracker as a live document that gets updated as remediation is completed.</span>
                 </div>
               </li>
               <li className="anim">
                 <div className="f-num">3</div>
                 <div className="f-body">
                   <strong>Build toward continuous readiness</strong>
-                  <span>The goal of all this preparation is not to pass an audit. It is to build a security programme that is audit-ready by default — where evidence is being collected every day, policies are reviewed on a rolling basis, and control owners know their responsibilities without needing a reminder. That is the state in which audits stop being stressful and start being straightforward.</span>
+                  <span>The goal of all this preparation is not to pass an audit. It is to build a security programme that is audit-ready by default, where evidence is being collected every day, policies are reviewed on a rolling basis, and control owners know their responsibilities without needing a reminder. That is the state in which audits stop being stressful and start being straightforward.</span>
                 </div>
               </li>
             </ul>
@@ -764,12 +764,12 @@ export default function HowToPrepareForSecurityAudit() {
               <span className="co-icon">💡</span>
               <div className="co-body">
                 <strong>From the author</strong>
-                <p>I have worked with teams that dreaded their audit and teams that genuinely looked forward to it as a way to demonstrate their programme's strength. The difference, every single time, was preparation. Not perfection — preparation. If your team is in that first category, the steps in this guide are exactly where to start.</p>
+                <p>I have worked with teams that dreaded their audit and teams that genuinely looked forward to it as a way to demonstrate their programme's strength. The difference, every single time, was preparation. Not perfection, preparation. If your team is in that first category, the steps in this guide are exactly where to start.</p>
               </div>
             </div>
           </section>
 
-          {/* SECTION 7 — checklist */}
+          {/* SECTION 7, checklist */}
           <section id="checklist">
             <h2>Pre-Audit Readiness <em>Checklist</em></h2>
             <p>Use this in the weeks before your audit to make sure nothing obvious has been missed.</p>
@@ -782,7 +782,7 @@ export default function HowToPrepareForSecurityAudit() {
                 "Evidence files organised, labelled, and current",
                 "All policies reviewed, updated, and signed off",
                 "Risk register reviewed and treatment plans updated",
-                "Staff briefed — especially those who may be interviewed",
+                "Staff briefed, especially those who may be interviewed",
                 "Access reviews completed and documented",
                 "Incident log reviewed and up to date",
                 "Vendor / supplier agreements include security clauses",
@@ -800,7 +800,7 @@ export default function HowToPrepareForSecurityAudit() {
               <span className="co-icon">🎯</span>
               <div className="co-body">
                 <strong>The audit is not the hard part</strong>
-                <p>The preparation is. And the preparation is entirely within your control. Start it earlier than feels necessary. Evidence collected in advance always looks better than evidence collected in a hurry — and it usually is.</p>
+                <p>The preparation is. And the preparation is entirely within your control. Start it earlier than feels necessary. Evidence collected in advance always looks better than evidence collected in a hurry, and it usually is.</p>
               </div>
             </div>
           </section>
@@ -808,7 +808,7 @@ export default function HowToPrepareForSecurityAudit() {
           {/* CTA BANNER */}
           <div className="cta-banner">
             <h3>Don't walk into your audit unprepared.</h3>
-            <p>SecComply runs a free audit readiness assessment — we map your current controls against the framework you're being audited against and tell you exactly where the gaps are before the auditor does.</p>
+            <p>SecComply runs a free audit readiness assessment, we map your current controls against the framework you're being audited against and tell you exactly where the gaps are before the auditor does.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book Your Free Audit Readiness Assessment →</a>
               <a href="https://seccomply.net/services/iso-27001" className="btn-o" target="_blank" rel="noopener">View ISO 27001 Services</a>
@@ -834,7 +834,7 @@ export default function HowToPrepareForSecurityAudit() {
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">How long does it take to prepare for a security audit?</strong><span className="faq-ch">▾</span></div>
-                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">For a first-time ISO 27001 or SOC 2 audit, organisations typically need three to six months of structured preparation. For surveillance audits where a programme already exists, a focused three-week sprint — following the 8-stage process — can be sufficient. The earlier you start building continuous evidence collection into your daily operations, the less preparation any single audit requires.</p></div>
+                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">For a first-time ISO 27001 or SOC 2 audit, organisations typically need three to six months of structured preparation. For surveillance audits where a programme already exists, a focused three-week sprint, following the 8-stage process, can be sufficient. The earlier you start building continuous evidence collection into your daily operations, the less preparation any single audit requires.</p></div>
               </div>
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
@@ -844,12 +844,12 @@ export default function HowToPrepareForSecurityAudit() {
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">What is the most common reason organisations fail security audits?</strong><span className="faq-ch">▾</span></div>
-                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">The most common finding in first-time audits is not that controls are missing — it is that controls exist but cannot be evidenced. An organisation may genuinely enforce MFA or conduct access reviews, but without logs, screenshots, or documented processes, an auditor cannot confirm it. Evidence collection is not optional. It is the audit.</p></div>
+                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">The most common finding in first-time audits is not that controls are missing, it is that controls exist but cannot be evidenced. An organisation may genuinely enforce MFA or conduct access reviews, but without logs, screenshots, or documented processes, an auditor cannot confirm it. Evidence collection is not optional. It is the audit.</p></div>
               </div>
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">What is the difference between ISO 27001 and SOC 2 audit preparation?</strong><span className="faq-ch">▾</span></div>
-                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">ISO 27001 certification audits focus on a defined ISMS scope and evaluate implementation of Annex A controls against your Statement of Applicability. SOC 2 audits assess the Trust Service Criteria relevant to your service commitments — typically Security, Availability, and Confidentiality. ISO 27001 preparation tends to emphasise policy documentation and risk treatment; SOC 2 preparation puts more weight on system-level controls, logging, and operational evidence over the audit period.</p></div>
+                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">ISO 27001 certification audits focus on a defined ISMS scope and evaluate implementation of Annex A controls against your Statement of Applicability. SOC 2 audits assess the Trust Service Criteria relevant to your service commitments, typically Security, Availability, and Confidentiality. ISO 27001 preparation tends to emphasise policy documentation and risk treatment; SOC 2 preparation puts more weight on system-level controls, logging, and operational evidence over the audit period.</p></div>
               </div>
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
@@ -859,7 +859,7 @@ export default function HowToPrepareForSecurityAudit() {
 
               <div className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <div className="faq-q" onClick={(e) => window.toggleFaq && window.toggleFaq(e.currentTarget)}><strong itemProp="name">How can SecComply help with security audit preparation?</strong><span className="faq-ch">▾</span></div>
-                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">SecComply runs a free audit readiness assessment that maps your current controls against the framework you are being audited against — ISO 27001, SOC 2, DPDPA, GDPR, or others — and identifies exactly where the gaps are before the auditor does. We then help organisations build the evidence, policies, and audit trail documentation needed to go into the audit with confidence.</p></div>
+                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">SecComply runs a free audit readiness assessment that maps your current controls against the framework you are being audited against, ISO 27001, SOC 2, DPDPA, GDPR, or others, and identifies exactly where the gaps are before the auditor does. We then help organisations build the evidence, policies, and audit trail documentation needed to go into the audit with confidence.</p></div>
               </div>
 
             </div>
@@ -910,7 +910,7 @@ export default function HowToPrepareForSecurityAudit() {
           </div>
           <div className="sb-cta">
             <h4>Audit Coming Up?</h4>
-            <p>Free readiness assessment — we map your controls against your framework and tell you exactly where the gaps are.</p>
+            <p>Free readiness assessment, we map your controls against your framework and tell you exactly where the gaps are.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Assessment →</a>
           </div>
         </aside>
