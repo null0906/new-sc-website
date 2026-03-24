@@ -1,0 +1,535 @@
+import Head from 'next/head'
+import Link from 'next/link'
+import Layout from '../../../components/Layout'
+import { useEffect } from 'react'
+
+export default function CSPMForAWS() {
+  useEffect(() => {
+    (function () {
+      'use strict';
+      const bar = document.getElementById('reading-progress');
+      window.addEventListener('scroll', () => { const h = document.documentElement.scrollHeight - window.innerHeight; if (bar) bar.style.width = (h > 0 ? Math.min(window.scrollY / h * 100, 100) : 0) + '%'; }, { passive: true });
+      const artEl = document.querySelector('.art'); const rtEl = document.getElementById('read-time');
+      if (artEl && rtEl) { const words = (artEl.innerText || '').trim().split(/\s+/).length; rtEl.textContent = '📖 ' + Math.max(1, Math.round(words / 220)) + ' min read'; }
+      function animateStat(el) { const target = parseFloat(el.dataset.target); const prefix = el.dataset.prefix || ''; const suffix = el.dataset.suffix || ''; const dec = !Number.isInteger(target); const dur = 1800; const t0 = performance.now(); const ease = t => 1 - Math.pow(1 - t, 4); (function frame(now) { const p = Math.min((now - t0) / dur, 1); const v = target * ease(p); el.textContent = prefix + (dec ? v.toFixed(1) : Math.floor(v)) + suffix; if (p < 1) requestAnimationFrame(frame); else el.textContent = prefix + (dec ? target.toFixed(1) : target) + suffix; })(t0); }
+      const stats = document.querySelectorAll('.stat-n[data-target]'); if (stats.length) { const io = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { animateStat(e.target); io.unobserve(e.target); } }); }, { threshold: 0.4 }); stats.forEach(el => io.observe(el)); }
+      document.querySelectorAll('a[href^="#"]').forEach(a => { a.addEventListener('click', e => { const t = document.querySelector(a.getAttribute('href')); if (!t) return; e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 24, behavior: 'smooth' }); history.pushState(null, '', a.getAttribute('href')); }); });
+      const sections = document.querySelectorAll('section[id]'); const tocLinks = document.querySelectorAll('.toc-link');
+      if (sections.length && tocLinks.length) { const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id)); }); }, { rootMargin: '-60px 0px -55% 0px', threshold: 0 }); sections.forEach(s => obs.observe(s)); }
+      const btt = document.getElementById('btt'); window.addEventListener('scroll', () => { if (btt) btt.classList.toggle('vis', window.scrollY > 600); }, { passive: true });
+      const url = encodeURIComponent('https://seccomply.net/resources/blog/cspm-aws'); const ttl = encodeURIComponent('Cloud Security Posture Management for AWS, SecComply');
+      const sl = document.getElementById('sl'); const st = document.getElementById('st');
+      if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
+      if (st) st.href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + ttl + '&via=seccomply';
+      window.copyLink = function () { const raw = 'https://seccomply.net/resources/blog/cspm-aws'; (navigator.clipboard ? navigator.clipboard.writeText(raw) : Promise.reject()).catch(() => { const ta = Object.assign(document.createElement('textarea'), { value: raw, style: 'position:fixed;opacity:0' }); document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }); toast('Link copied!'); };
+      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#E8632B;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(232,99,43,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
+      const fadeEls = document.querySelectorAll('.anim'); if (fadeEls.length && 'IntersectionObserver' in window) { const fo = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; fo.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }); fadeEls.forEach(el => { el.style.animationPlayState = 'paused'; fo.observe(el); }); }
+      window.toggleFaq = function (q) { const item = q.closest('.faq-item'); const wasOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!wasOpen) item.classList.add('open'); };
+      const first = document.querySelector('.faq-item'); if (first) first.classList.add('open');
+      document.querySelectorAll('script[type="application/ld+json"]').forEach(s => { try { const d = JSON.parse(s.textContent); const today = new Date().toISOString().split('T')[0]; const fix = obj => { if (!obj || typeof obj !== 'object') return; Object.keys(obj).forEach(k => { if (k === 'dateModified') obj[k] = today; fix(obj[k]); }); }; fix(d); s.textContent = JSON.stringify(d); } catch (_) {} });
+    })();
+  }, []);
+
+  return (
+    <Layout>
+      <Head>
+        <title>Cloud Security Posture Management for AWS: The Complete Guide | SecComply</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/assets/css/resource-pages.css" />
+        <meta name="description" content="What CSPM actually does on AWS, the top misconfigurations it catches, how it maps to ISO 27001 and SOC 2, and how to implement continuous cloud security posture management across your AWS environment." />
+        <meta name="keywords" content="CSPM AWS, cloud security posture management AWS, AWS misconfiguration detection, AWS security compliance, cloud security monitoring, AWS ISO 27001, AWS SOC 2, cloud security automation, AWS security posture, CSPM tools" />
+        <meta property="og:title" content="Cloud Security Posture Management for AWS: The Complete Guide" />
+        <meta property="og:description" content="99% of cloud breaches stem from misconfiguration. CSPM is how you find and fix them before attackers do ,continuously, automatically, across your entire AWS environment." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://seccomply.net/resources/blog/cspm-aws" />
+        <meta property="og:image" content="https://seccomply.net/assets/images/blog/cspm-aws-og.png" />
+        <meta property="article:published_time" content="2026-03-24" />
+        <meta property="article:author" content="Soham Sawant" />
+        <meta property="article:tag" content="CSPM" />
+        <meta property="article:tag" content="AWS Security" />
+        <meta property="article:tag" content="Cloud Security" />
+        <link rel="canonical" href="https://seccomply.net/resources/blog/cspm-aws" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            { "@type": "Article", "headline": "Cloud Security Posture Management for AWS: The Complete Guide", "description": "What CSPM actually does on AWS, top misconfigurations it catches, compliance mapping, and how to implement continuous cloud security posture management.", "author": { "@type": "Person", "name": "Soham Sawant", "jobTitle": "Cybersecurity Expert & Technical Writer", "worksFor": { "@type": "Organization", "name": "SecComply" } }, "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } }, "datePublished": "2026-03-24", "dateModified": "2026-03-24", "mainEntityOfPage": "https://seccomply.net/resources/blog/cspm-aws", "keywords": "CSPM, AWS security, cloud misconfiguration, ISO 27001 AWS, SOC 2 cloud, cloud security posture management", "articleSection": "Cloud Security", "wordCount": 2000, "timeRequired": "PT8M" },
+            { "@type": "FAQPage", "mainEntity": [
+              { "@type": "Question", "name": "What is Cloud Security Posture Management (CSPM)?", "acceptedAnswer": { "@type": "Answer", "text": "CSPM is a category of security tooling that continuously monitors your cloud environment ,AWS, Azure, GCP ,for misconfigurations, policy violations, and compliance gaps. Unlike point-in-time security assessments, CSPM runs continuously, detecting drift from your security baseline the moment it happens and mapping findings to compliance frameworks like ISO 27001, SOC 2, and CIS Benchmarks." } },
+              { "@type": "Question", "name": "What are the most common AWS misconfigurations CSPM detects?", "acceptedAnswer": { "@type": "Answer", "text": "The most common AWS misconfigurations include: publicly accessible S3 buckets, security groups with unrestricted inbound access (0.0.0.0/0), unencrypted EBS volumes and RDS instances, CloudTrail logging disabled, MFA not enabled on root accounts, IAM users with excessive or unused permissions, and unrotated access keys older than 90 days." } },
+              { "@type": "Question", "name": "How does CSPM help with ISO 27001 and SOC 2 compliance?", "acceptedAnswer": { "@type": "Answer", "text": "CSPM directly produces the continuous evidence that ISO 27001 Annex A.12 and SOC 2 CC6/CC7 require. It continuously monitors cloud configurations, generates timestamped evidence of control operation, and alerts on drift ,replacing the manual, point-in-time evidence collection that typically consumes weeks of pre-audit preparation." } },
+              { "@type": "Question", "name": "What is the difference between CSPM and a cloud security audit?", "acceptedAnswer": { "@type": "Answer", "text": "A cloud security audit is a point-in-time assessment ,it tells you your posture on the day it runs. CSPM is continuous ,it monitors every configuration change in real time and alerts on drift immediately. For compliance, CSPM is significantly more valuable because it provides the continuous evidence trail that auditors require, not just a snapshot." } },
+              { "@type": "Question", "name": "Which AWS services does CSPM monitor?", "acceptedAnswer": { "@type": "Answer", "text": "A comprehensive CSPM solution monitors: S3 (bucket policies, public access, encryption), EC2 (security groups, public IPs, EBS encryption), IAM (policies, MFA, access key age, unused permissions), RDS (public accessibility, encryption, backup retention), CloudTrail (enabled, log validation, multi-region), VPC (flow logs, default VPC usage, network ACLs), and Lambda (function policies, environment variable secrets)." } }
+            ]},
+            { "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seccomply.net" },
+              { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://seccomply.net/resources" },
+              { "@type": "ListItem", "position": 3, "name": "Blog", "item": "https://seccomply.net/resources/blog" },
+              { "@type": "ListItem", "position": 4, "name": "CSPM for AWS", "item": "https://seccomply.net/resources/blog/cspm-aws" }
+            ]}
+          ]
+        }) }} />
+      </Head>
+
+      <style jsx global>{`
+    :root{--cy:#E8632B;--cy2:#d0521f;--glow:rgba(232,99,43,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(232,99,43,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+    body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#E8632B,#FF8A50);z-index:9999;transition:width .1s linear}
+    .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
+    .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
+    .cspm-hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem;display:block!important}
+    .cspm-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
+    .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+    .badge-cy{background:rgba(232,99,43,.1);color:var(--cy);border:1px solid rgba(232,99,43,.25)}
+    .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
+    .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
+    .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
+    .cspm-hero-h1{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,3rem);font-weight:700;color:var(--tx);line-height:1.2;max-width:820px;margin-bottom:1.1rem}
+    .cspm-hero-h1 em{font-style:italic;color:var(--cy)}
+    .cspm-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
+    .cspm-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
+    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(232,99,43,.3)}
+    .cspm-author-strip .author-info{flex:1;min-width:0}
+    .cspm-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
+    .cspm-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
+    .cspm-author-strip .date-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.78rem;color:var(--tm)}
+    .cspm-author-strip .dot{opacity:.3}
+    .img-wrap{border-radius:16px;overflow:hidden;border:1px solid var(--bo);margin-bottom:3rem;line-height:0}
+    .img-cap{text-align:center;font-size:.76rem;color:var(--tm);margin-top:.55rem;font-style:italic}
+    .blog-layout{max-width:1280px;margin:0 auto;padding:0 2rem 5rem;display:grid;grid-template-columns:1fr 285px;gap:3rem;align-items:start}
+    .art{min-width:0}
+    .toc-box{background:var(--bgc2);border:1px solid var(--bo);border-radius:14px;padding:1.6rem;margin-bottom:3rem}
+    .toc-lbl{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:1rem}
+    .toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:.35rem 1.5rem}
+    .toc-grid a{color:var(--tb);text-decoration:none;font-size:.83rem;padding:.28rem 0;border-bottom:1px solid var(--bs);transition:color .2s;display:flex;align-items:center;gap:6px}
+    .toc-grid a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--cy);opacity:.4;flex-shrink:0}
+    .toc-grid a:hover{color:var(--cy)}.toc-grid a:hover::before{opacity:1}
+    .art h2{font-family:var(--serif);font-size:1.65rem;font-weight:700;color:var(--tx);margin:3rem 0 1.2rem;line-height:1.3}
+    .art h2 em{color:var(--cy);font-style:italic}
+    .art h3{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--tx);margin:2rem 0 .7rem}
+    .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
+    .art p strong{color:var(--tx);font-weight:600}
+    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(232,99,43,.06),transparent);border-radius:0 12px 12px 0}
+    .pull-quote p{font-family:var(--serif);font-size:1.12rem;font-style:italic;color:var(--tx)!important;margin-bottom:.5rem!important;line-height:1.6!important}
+    .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
+    .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
+    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#E8632B,#FF8A50)}
+    .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:var(--cy);line-height:1;margin-bottom:.4rem}
+    .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
+    .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
+    .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
+    .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
+    .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
+    .co-key{background:rgba(232,99,43,.06);border:1px solid rgba(232,99,43,.2)}
+    .co-sc{background:rgba(6,214,160,.05);border:1px solid rgba(6,214,160,.2)}
+    .co-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
+    .co-body p{margin-bottom:0!important;font-size:.89rem!important}
+    .co-body strong{display:block;margin-bottom:.3rem;font-size:.82rem;color:var(--tx)}
+    .feat-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:.65rem}
+    .feat-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;transition:border-color .2s,background .2s}
+    .feat-list li:hover{border-color:var(--bo);background:var(--bgc)}
+    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+    .f-body strong{display:block;color:var(--tx);font-size:.89rem;margin-bottom:3px}
+    .f-body span{font-size:.83rem;color:var(--tm)}
+    .risk-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+    .risk-card{background:var(--bgc2);border:1px solid var(--bs);border-radius:12px;padding:1.2rem 1.4rem;transition:border-color .2s}
+    .risk-card:hover{border-color:var(--bo)}
+    .risk-card .sev{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.18rem .6rem;border-radius:100px;margin-bottom:.5rem;display:inline-block}
+    .sev-crit{background:rgba(255,77,109,.15);color:#ff4d6d}
+    .sev-high{background:rgba(255,183,3,.15);color:#ffb703}
+    .sev-med{background:rgba(232,99,43,.15);color:#E8632B}
+    .risk-card h3{font-size:.9rem;font-weight:700;color:var(--tx);margin-bottom:.35rem}
+    .risk-card p{font-size:.81rem;color:var(--tm);margin-bottom:0;line-height:1.6}
+    .cmp-wrap{overflow-x:auto;margin:2rem 0;border-radius:14px;border:1px solid var(--bo)}
+    .cmp-table{width:100%;border-collapse:collapse}
+    .cmp-table th{background:var(--bgc);padding:.85rem 1.1rem;text-align:left;font-size:.77rem;font-weight:600;letter-spacing:.04em;color:var(--cy);border-bottom:1px solid var(--bo)}
+    .cmp-table td{padding:.82rem 1.1rem;font-size:.85rem;color:var(--tb);border-bottom:1px solid var(--bs);vertical-align:top}
+    .cmp-table tr:last-child td{border-bottom:none}
+    .cmp-table tr:hover td{background:rgba(232,99,43,.03)}
+    .cmp-table td:first-child{color:var(--tx);font-weight:600}
+    .faq-section{margin:3rem 0}
+    .faq-item{border:1px solid var(--bs);border-radius:12px;margin-bottom:.65rem;overflow:hidden;transition:border-color .2s}
+    .faq-item:hover{border-color:var(--bo)}
+    .faq-q{padding:1.15rem 1.5rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:var(--bgc2)}
+    .faq-q strong{font-size:.92rem;color:var(--tx)}
+    .faq-ch{color:var(--cy);font-size:1rem;transition:transform .3s;flex-shrink:0}
+    .faq-item.open .faq-ch{transform:rotate(180deg)}
+    .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
+    .faq-item.open .faq-a{display:block}
+    .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
+    .cta-banner{background:linear-gradient(135deg,rgba(232,99,43,.08),rgba(232,99,43,.03));border:1px solid rgba(232,99,43,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner h3{font-family:var(--serif);font-size:1.5rem;color:var(--tx);margin-bottom:.7rem}
+    .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
+    .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
+    .btn-p{background:var(--cy);color:#fff;padding:.7rem 1.6rem;border-radius:8px;font-weight:700;font-size:.87rem;text-decoration:none;transition:background .2s,transform .2s;display:inline-block}
+    .btn-p:hover{background:var(--cy2);transform:translateY(-2px)}
+    .btn-o{border:1px solid var(--bo);color:var(--tb);padding:.7rem 1.6rem;border-radius:8px;font-weight:600;font-size:.87rem;text-decoration:none;transition:all .2s;display:inline-block}
+    .btn-o:hover{border-color:var(--cy);color:var(--cy);transform:translateY(-2px)}
+    .share-strip{display:flex;align-items:center;gap:.65rem;justify-content:center;flex-wrap:wrap}
+    .share-lbl{font-size:.77rem;color:var(--tm)}
+    .share-btn{display:flex;align-items:center;gap:5px;padding:.4rem .9rem;border-radius:8px;font-size:.75rem;font-weight:600;cursor:pointer;border:1px solid var(--bo);background:transparent;color:var(--tb);text-decoration:none;transition:all .2s;font-family:var(--sans)}
+    .share-btn:hover{border-color:var(--cy);color:var(--cy)}
+    .sb{position:sticky;top:24px}
+    .sb-card{background:var(--bgc2);border:1px solid var(--bs);border-radius:14px;padding:1.35rem;margin-bottom:1.1rem}
+    .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
+    .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
+    .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(232,99,43,.07);border-left-color:var(--cy)}
+    .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
+    .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
+    .rel-links a:last-child{border-bottom:none}.rel-links a:hover{color:var(--cy)}
+    .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
+    .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
+    .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
+    .sb-cta{background:linear-gradient(135deg,rgba(232,99,43,.08),rgba(232,99,43,.03));border:1px solid rgba(232,99,43,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta h4{font-family:var(--serif);font-size:.98rem;color:var(--tx);margin-bottom:.5rem}
+    .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
+    .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
+    .sb-cta-btn:hover{background:var(--cy2)}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(232,99,43,.4);transition:transform .2s;z-index:50}
+    #btt.vis{display:flex}#btt:hover{transform:translateY(-3px)}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+    .anim{animation:fadeUp .55s ease both}
+    @media(max-width:1024px){.blog-layout{grid-template-columns:1fr}.sb{position:static}}
+    @media(max-width:900px){.risk-grid{grid-template-columns:1fr}.stats-row{grid-template-columns:1fr}}
+    @media(max-width:768px){.blog-layout{padding:0 1.25rem 3rem}.cspm-hero-wrap{padding:2rem 1.25rem}}
+    @media(max-width:600px){.cspm-hero-h1{font-size:1.65rem}.toc-grid{grid-template-columns:1fr}}
+      `}</style>
+
+      <div id="reading-progress"></div>
+
+      <div className="breadcrumb" itemScope itemType="https://schema.org/BreadcrumbList">
+        <span itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"><a href="https://seccomply.net/" itemProp="item"><span itemProp="name">Home</span></a><meta itemProp="position" content="1"/></span>
+        <span className="bc-sep">›</span>
+        <span itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"><a href="https://seccomply.net/resources" itemProp="item"><span itemProp="name">Resources</span></a><meta itemProp="position" content="2"/></span>
+        <span className="bc-sep">›</span>
+        <span itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"><a href="https://seccomply.net/resources/blog" itemProp="item"><span itemProp="name">Blog</span></a><meta itemProp="position" content="3"/></span>
+        <span className="bc-sep">›</span>
+        <span style={{color:'var(--tb)'}}>CSPM for AWS</span>
+      </div>
+
+      <div className="cspm-hero-wrap">
+        <div className="cspm-hero-badges">
+          <span className="badge badge-cy">☁️ Cloud Security</span>
+          <span className="badge badge-bl">🔶 AWS</span>
+          <span className="badge badge-am">🔍 CSPM</span>
+          <span className="badge badge-gr">✓ ISO 27001 · SOC 2</span>
+        </div>
+        <h1 className="cspm-hero-h1">Cloud Security Posture Management for <em>AWS</em></h1>
+        <p className="cspm-hero-sub">99% of cloud breaches stem from misconfiguration ,not sophisticated attacks. CSPM is how you find and fix them before attackers do, continuously, automatically, across your entire AWS environment.</p>
+
+        <div className="cspm-author-strip">
+          <div className="avatar">SS</div>
+          <div className="author-info">
+            <div className="name">Soham Sawant</div>
+            <div className="meta-row"><span style={{color:'var(--cy)',fontWeight:600}}>✍️ Cybersecurity Expert &amp; Technical Writer</span><span className="dot">·</span><span id="read-time">📖 8 min read</span></div>
+            <div className="date-row"><span>📅 March 2026</span><span className="dot">·</span><span>🏢 SecComply</span></div>
+          </div>
+        </div>
+
+        {/* HERO IMAGE */}
+        <div className="img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=1200&h=500&fit=crop"
+            alt="Cloud Security Posture Management AWS Dashboard"
+            style={{width:'100%',display:'block',maxHeight:'480px',objectFit:'cover'}}
+          />
+        </div>
+        <p className="img-cap">Continuous cloud security posture monitoring ,detecting misconfigurations across AWS services in real time before they become breaches.</p>
+
+        {/* INLINE SVG DASHBOARD */}
+        <div className="img-wrap">
+          <svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
+            <defs>
+              <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#E8632B"/><stop offset="100%" stopColor="#FF8A50"/></linearGradient>
+              <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#06d6a0"/><stop offset="100%" stopColor="#04b080"/></linearGradient>
+              <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ff4d6d"/><stop offset="100%" stopColor="#d0304e"/></linearGradient>
+              <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ffb703"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
+              <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgba(232,99,43,0.04)"/></pattern>
+            </defs>
+            <rect width="960" height="420" fill="url(#dots)"/>
+
+            {/* LEFT: AWS Service coverage */}
+            <rect x="16" y="16" width="220" height="388" rx="12" fill="#081826" stroke="rgba(232,99,43,0.15)" strokeWidth="1"/>
+            <text x="36" y="44" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">AWS SERVICES MONITORED</text>
+            {[
+              {svc:'S3 Buckets',         findings:12, col:'#ff4d6d', pct:92},
+              {svc:'IAM Policies',       findings:8,  col:'#ffb703', pct:78},
+              {svc:'EC2 / Security Groups',findings:6, col:'#ffb703', pct:65},
+              {svc:'RDS Instances',      findings:3,  col:'#E8632B', pct:44},
+              {svc:'CloudTrail',         findings:2,  col:'#06d6a0', pct:28},
+              {svc:'VPC / Flow Logs',    findings:1,  col:'#06d6a0', pct:18},
+              {svc:'Lambda Functions',   findings:0,  col:'#06d6a0', pct:0},
+            ].map(({svc,findings,col,pct},i)=>(
+              <g key={i}>
+                <rect x="28" y={60+i*46} width="196" height="36" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
+                <text x="44" y={78+i*46} fill="rgba(200,214,229,0.75)" fontSize="9" fontFamily="sans-serif">{svc}</text>
+                <rect x="44" y={82+i*46} width="130" height="5" rx="2.5" fill="rgba(255,255,255,0.05)"/>
+                <rect x="44" y={82+i*46} width={Math.round(130*pct/100)} height="5" rx="2.5" fill={col}/>
+                <text x="184" y={87+i*46} fill={col} fontSize="8" fontWeight="700" fontFamily="sans-serif">{findings} issues</text>
+              </g>
+            ))}
+
+            <line x1="250" y1="12" x2="250" y2="408" stroke="rgba(232,99,43,0.07)" strokeWidth="1"/>
+
+            {/* CENTRE: Posture score */}
+            <text x="490" y="42" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">AWS Security Posture Score</text>
+            <circle cx="490" cy="155" r="64" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="12"/>
+            <circle cx="490" cy="155" r="64" fill="none" stroke="url(#g4)" strokeWidth="12" strokeDasharray="252 402" strokeDashoffset="100" strokeLinecap="round"/>
+            <text x="490" y="148" textAnchor="middle" fill="#fff" fontSize="28" fontWeight="700" fontFamily="sans-serif">67%</text>
+            <text x="490" y="166" textAnchor="middle" fill="rgba(255,183,3,0.7)" fontSize="9" fontFamily="sans-serif">Needs Attention</text>
+            <text x="490" y="182" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="8" fontFamily="sans-serif">32 findings across 7 services</text>
+
+            {/* Severity breakdown */}
+            {[
+              {label:'Critical', count:'4',  col:'#ff4d6d', x:310},
+              {label:'High',     count:'12', col:'#ffb703', x:410},
+              {label:'Medium',   count:'11', col:'#E8632B', x:510},
+              {label:'Low',      count:'5',  col:'#06d6a0', x:610},
+            ].map(({label,count,col,x},i)=>(
+              <g key={i}>
+                <rect x={x} y={226} width="80" height="52" rx="9" fill="#091826" stroke={`${col}30`} strokeWidth="1"/>
+                <text x={x+40} y={248} textAnchor="middle" fill={col} fontSize="20" fontWeight="800" fontFamily="sans-serif">{count}</text>
+                <text x={x+40} y={266} textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="8.5" fontFamily="sans-serif">{label}</text>
+              </g>
+            ))}
+
+            {/* Compliance mapping */}
+            <text x="310" y="310" fill="rgba(200,214,229,0.6)" fontSize="9" fontWeight="600" fontFamily="sans-serif">Compliance Framework Coverage</text>
+            {[
+              {fw:'CIS AWS Benchmarks',  w:148, pct:'78%', col:'url(#g1)'},
+              {fw:'ISO 27001 Annex A',   w:164, pct:'86%', col:'url(#g2)'},
+              {fw:'SOC 2 CC6/CC7',       w:140, pct:'74%', col:'url(#g4)'},
+              {fw:'NIST CSF',            w:120, pct:'63%', col:'url(#g1)'},
+            ].map(({fw,w,pct,col},i)=>(
+              <g key={i}>
+                <text x="310" y={330+i*22} fill="rgba(200,214,229,0.5)" fontSize="8.5" fontFamily="sans-serif">{fw}</text>
+                <rect x="470" y={321+i*22} width="190" height="8" rx="4" fill="rgba(255,255,255,0.04)"/>
+                <rect x="470" y={321+i*22} width={w} height="8" rx="4" fill={col}/>
+                <text x="666" y={329+i*22} fill="rgba(200,214,229,0.55)" fontSize="8" fontWeight="700" fontFamily="sans-serif">{pct}</text>
+              </g>
+            ))}
+
+            <line x1="718" y1="12" x2="718" y2="408" stroke="rgba(232,99,43,0.07)" strokeWidth="1"/>
+
+            {/* RIGHT: Top findings */}
+            <text x="736" y="42" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">TOP CRITICAL FINDINGS</text>
+            {[
+              {title:'S3 bucket publicly accessible', sev:'CRITICAL', c:'#ff4d6d'},
+              {title:'Root account MFA disabled',     sev:'CRITICAL', c:'#ff4d6d'},
+              {title:'Security group: 0.0.0.0/0 SSH', sev:'HIGH',     c:'#ffb703'},
+              {title:'EBS volume unencrypted',         sev:'HIGH',     c:'#ffb703'},
+              {title:'CloudTrail logging disabled',    sev:'HIGH',     c:'#ffb703'},
+              {title:'IAM access key >90 days old',   sev:'MEDIUM',   c:'#E8632B'},
+            ].map(({title,sev,c},i)=>(
+              <g key={i}>
+                <rect x="728" y={58+i*56} width="216" height="44" rx="8" fill="#091826" stroke={`${c}28`} strokeWidth="1"/>
+                <rect x="728" y={58+i*56} width="3" height="44" rx="1.5" fill={c}/>
+                <text x="742" y={77+i*56} fill="rgba(200,214,229,0.85)" fontSize="8.5" fontFamily="sans-serif">{title}</text>
+                <rect x="742" y={83+i*56} width={sev.length*5.5} height="11" rx="3" fill={`${c}18`}/>
+                <text x="746" y={92+i*56} fill={c} fontSize="7.5" fontWeight="700" fontFamily="sans-serif">{sev}</text>
+              </g>
+            ))}
+          </svg>
+        </div>
+        <p className="img-cap">CSPM dashboard ,AWS service findings, posture score, severity breakdown, compliance framework coverage, and top critical misconfigurations requiring immediate remediation.</p>
+
+        <div className="toc-box">
+          <div className="toc-lbl">In This Article</div>
+          <div className="toc-grid">
+            <a href="#what-is-cspm">What Is CSPM?</a>
+            <a href="#why-aws">Why AWS Needs CSPM</a>
+            <a href="#top-misconfigs">Top AWS Misconfigurations</a>
+            <a href="#services">Services CSPM Monitors</a>
+            <a href="#compliance">CSPM & Compliance</a>
+            <a href="#implementation">Implementation Guide</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+      </div>
+
+      <div className="blog-layout">
+        <article className="art">
+
+          <div className="stats-row anim">
+            <div className="stat-card"><div className="stat-n" data-target="99" data-suffix="%">0%</div><div className="stat-l">of cloud security failures caused by misconfiguration, not attacks<br/><span style={{fontSize:'.68rem',opacity:.55}}>Gartner, 2024</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-target="67" data-suffix="%">0%</div><div className="stat-l">of AWS environments have at least one publicly accessible S3 bucket<br/><span style={{fontSize:'.68rem',opacity:.55}}>Wiz Cloud Security Report, 2024</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-target="3" data-suffix="× faster">0×</div><div className="stat-l">faster compliance evidence collection with continuous CSPM vs manual<br/><span style={{fontSize:'.68rem',opacity:.55}}>SecComply client data</span></div></div>
+          </div>
+
+          <section id="what-is-cspm">
+            <h2>What Is <em>Cloud Security Posture Management?</em></h2>
+            <p>Cloud Security Posture Management (CSPM) is a category of security tooling that continuously monitors your cloud environment for misconfigurations, policy violations, and compliance gaps. Unlike a one-time cloud security audit, CSPM runs around the clock ,detecting drift from your security baseline the moment a developer, a pipeline, or an automated process changes a configuration.</p>
+            <p>The core function of CSPM is deceptively simple: compare your actual cloud configuration against what it <em>should</em> look like according to security best practices and compliance frameworks, and alert you immediately when something diverges. What makes it powerful is the scale ,a comprehensive AWS environment can have thousands of resources across dozens of services, and manually checking all of them is simply not possible.</p>
+            <div className="pull-quote">
+              <p>"The most dangerous misconfiguration in your AWS environment isn't the one you know about ,it's the one that was introduced at 11pm last Tuesday by an automated deployment and hasn't been caught yet."</p>
+            </div>
+          </section>
+
+          <section id="why-aws">
+            <h2>Why AWS Specifically <em>Needs CSPM</em></h2>
+            <p>AWS's shared responsibility model puts the security of everything <em>in</em> the cloud ,configurations, data, access controls ,firmly in your hands. AWS secures the infrastructure underneath; what you build on top of it is your responsibility.</p>
+            <p>This is where most organisations get caught. AWS provides enormous flexibility ,S3 buckets can be made public with a single checkbox, security groups can be opened to the internet with one rule, IAM permissions can be granted broadly with a single policy. That flexibility is also the attack surface.</p>
+            <div className="callout co-danger">
+              <span className="co-icon">🚨</span>
+              <div className="co-body">
+                <strong>Real Breach Pattern</strong>
+                <p>The most common AWS breach sequence: developer creates an S3 bucket for testing, makes it public for convenience, forgets to restrict it. CSPM would have flagged this within seconds of creation. Without it, the bucket may sit exposed for months ,or until a breach report names your company.</p>
+              </div>
+            </div>
+            <p>The problem is compounded by the speed of cloud development. Infrastructure-as-Code pipelines can spin up dozens of resources per day. Each new resource is a potential misconfiguration. Manual review cannot keep pace ,CSPM is the only approach that scales.</p>
+          </section>
+
+          <section id="top-misconfigs">
+            <h2>Top AWS Misconfigurations <em>CSPM Catches</em></h2>
+            <p>These are the findings that appear most consistently across AWS environments ,and the ones most likely to result in a breach or a compliance finding.</p>
+            <div className="risk-grid">
+              <div className="risk-card anim"><span className="sev sev-crit">Critical</span><h3>Publicly Accessible S3 Buckets</h3><p>Any S3 bucket with public read or write access is an immediate data exposure risk. CSPM detects both bucket-level and object-level public access settings, including ACL overrides.</p></div>
+              <div className="risk-card anim"><span className="sev sev-crit">Critical</span><h3>Root Account MFA Disabled</h3><p>The AWS root account has unrestricted access to every resource. Without MFA, a compromised root credential means total account takeover. This is a CIS Benchmark Level 1 requirement.</p></div>
+              <div className="risk-card anim"><span className="sev sev-high">High</span><h3>Security Groups: 0.0.0.0/0 Inbound</h3><p>Security groups allowing inbound SSH (port 22) or RDP (port 3389) from any IP are among the most exploited misconfigurations. CSPM flags any unrestricted inbound rule immediately.</p></div>
+              <div className="risk-card anim"><span className="sev sev-high">High</span><h3>Unencrypted EBS Volumes</h3><p>EBS volumes containing application data or database files should always be encrypted at rest. Unencrypted volumes violate ISO 27001 A.10.1, SOC 2 CC6.7, and HIPAA technical safeguard requirements.</p></div>
+              <div className="risk-card anim"><span className="sev sev-high">High</span><h3>CloudTrail Logging Disabled</h3><p>CloudTrail is your audit log for every AWS API call. Without it, you have no evidence trail for compliance audits and no visibility into what happened during a security incident.</p></div>
+              <div className="risk-card anim"><span className="sev sev-med">Medium</span><h3>IAM Access Keys Older Than 90 Days</h3><p>Stale access keys are a persistent risk ,especially for service accounts. CSPM tracks key age across all IAM users and alerts when rotation policy is violated.</p></div>
+            </div>
+          </section>
+
+          <section id="services">
+            <h2>AWS Services CSPM <em>Monitors</em></h2>
+            <p>A comprehensive CSPM solution covers the full breadth of AWS services your environment uses. Here is what continuous monitoring looks like across the most critical ones:</p>
+            <ul className="feat-list">
+              <li className="anim"><div className="f-num">S3</div><div className="f-body"><strong>Simple Storage Service</strong><span>Bucket policies, public access block settings, object-level ACLs, encryption configuration, versioning, logging, and cross-account access. S3 misconfigurations are responsible for more data breaches than any other AWS service.</span></div></li>
+              <li className="anim"><div className="f-num">IAM</div><div className="f-body"><strong>Identity & Access Management</strong><span>MFA enforcement on all users, access key age and rotation, overly permissive policies (wildcard actions, wildcard resources), unused roles, and root account activity. IAM is the most complex and most critical security surface in any AWS environment.</span></div></li>
+              <li className="anim"><div className="f-num">EC2</div><div className="f-body"><strong>Elastic Compute Cloud</strong><span>Security group rules for every instance, public IP assignments, EBS volume encryption, IMDSv2 enforcement, and instance profile permissions. A single overpermissive security group can expose your entire application tier.</span></div></li>
+              <li className="anim"><div className="f-num">RDS</div><div className="f-body"><strong>Relational Database Service</strong><span>Public accessibility settings, encryption at rest, automated backup retention, deletion protection, and enhanced monitoring. Public RDS instances with weak credentials are a consistent attack vector.</span></div></li>
+              <li className="anim"><div className="f-num">VPC</div><div className="f-body"><strong>Virtual Private Cloud</strong><span>VPC flow logs enabled, default VPC usage, network ACL rules, VPN configuration, and internet gateway attachments. The VPC is the network perimeter ,misconfigurations here affect every service inside it.</span></div></li>
+            </ul>
+          </section>
+
+          <section id="compliance">
+            <h2>CSPM and <em>Compliance Frameworks</em></h2>
+            <p>For organisations pursuing ISO 27001, SOC 2, or HIPAA, CSPM is not just a security tool ,it is a compliance evidence machine. Here is how CSPM findings map to the frameworks most AWS-hosted companies need to satisfy:</p>
+            <div className="cmp-wrap">
+              <table className="cmp-table">
+                <thead><tr><th>Framework</th><th>Relevant Controls</th><th>What CSPM Provides</th></tr></thead>
+                <tbody>
+                  <tr><td>ISO 27001</td><td>A.12.1 (Operations), A.13.1 (Network Security), A.10.1 (Cryptography)</td><td>Continuous evidence of configuration compliance, timestamped findings, drift alerts</td></tr>
+                  <tr><td>SOC 2</td><td>CC6.1 (Logical Access), CC6.6 (Network Security), CC7.1 (System Operations)</td><td>Automated control monitoring, evidence for Type II audit period, change detection</td></tr>
+                  <tr><td>CIS AWS Benchmarks</td><td>Level 1 and Level 2 controls across IAM, logging, networking, storage</td><td>Direct benchmark scoring, pass/fail per control, remediation guidance</td></tr>
+                  <tr><td>NIST CSF</td><td>Identify, Protect, Detect functions</td><td>Asset discovery, configuration baseline, anomaly detection</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="callout co-sc">
+              <span className="co-icon">🛡️</span>
+              <div className="co-body">
+                <strong>SecComply: CSPM + Compliance Automation</strong>
+                <p>SecComply maps your AWS CSPM findings directly to your ISO 27001, SOC 2, or DPDP controls in real time ,so every misconfiguration finding automatically updates your compliance posture, and every resolved finding generates timestamped audit evidence. No manual mapping, no pre-audit scramble.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="implementation">
+            <h2>Implementing CSPM <em>on AWS: A Practical Guide</em></h2>
+            <p>Getting CSPM running in your AWS environment is straightforward. The key is starting with the highest-risk services and expanding coverage incrementally.</p>
+            <ul className="feat-list">
+              <li className="anim"><div className="f-num">1</div><div className="f-body"><strong>Enable AWS Security Hub</strong><span>AWS Security Hub is the native starting point ,it aggregates findings from Amazon GuardDuty, Amazon Inspector, and AWS Config into a single dashboard, pre-mapped to CIS AWS Benchmarks and other frameworks. Enable it with one click across all regions and accounts.</span></div></li>
+              <li className="anim"><div className="f-num">2</div><div className="f-body"><strong>Enable AWS Config with managed rules</strong><span>AWS Config tracks configuration changes across all your AWS resources. Enable managed Config rules for your highest-risk services first: s3-bucket-public-read-prohibited, iam-root-access-key-check, ec2-security-group-attached-to-eni. Each rule continuously evaluates compliance and logs every change.</span></div></li>
+              <li className="anim"><div className="f-num">3</div><div className="f-body"><strong>Enable CloudTrail across all regions</strong><span>Multi-region CloudTrail with log file validation is a CIS Level 1 requirement and a baseline compliance control. Enable it immediately if not already active. Store logs in a separate, protected S3 bucket with Object Lock enabled.</span></div></li>
+              <li className="anim"><div className="f-num">4</div><div className="f-body"><strong>Set remediation thresholds and alerts</strong><span>Define which findings trigger immediate alerts (critical and high) vs which generate weekly reports (medium and low). Route critical findings to your incident response channel. Use EventBridge rules to trigger automated remediation for common, safe-to-auto-fix findings like disabling public S3 access.</span></div></li>
+              <li className="anim"><div className="f-num">5</div><div className="f-body"><strong>Map findings to compliance controls</strong><span>Connect your CSPM findings to your compliance framework ,manually in a GRC spreadsheet, or automatically through a platform like SecComply. Every finding that is detected, triaged, and resolved becomes a piece of audit evidence demonstrating that your controls are operating continuously.</span></div></li>
+            </ul>
+
+            <div className="callout co-warn">
+              <span className="co-icon">⚠️</span>
+              <div className="co-body">
+                <strong>Common CSPM Implementation Mistake</strong>
+                <p>Enabling CSPM and then doing nothing with the findings. A dashboard full of unaddressed critical findings is worse than no CSPM at all ,it creates documented evidence of known vulnerabilities that were not remediated. CSPM only delivers value when findings drive action.</p>
+              </div>
+            </div>
+
+            {/* Inline image */}
+            <div className="img-wrap" style={{marginTop:'2rem'}}>
+              <img
+                src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1000&h=400&fit=crop"
+                alt="AWS Cloud Security Dashboard"
+                style={{width:'100%',display:'block',maxHeight:'360px',objectFit:'cover'}}
+              />
+            </div>
+            <p className="img-cap">AWS Security Hub aggregates findings from across your environment into a single compliance dashboard ,the native starting point for CSPM on AWS.</p>
+          </section>
+
+          <div className="cta-banner">
+            <h3>See Your AWS Security Posture in Real Time</h3>
+            <p>SecComply connects to your AWS environment and maps every misconfiguration finding directly to your ISO 27001, SOC 2, or DPDP compliance controls ,continuously, automatically.</p>
+            <div className="cta-btns">
+              <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free Cloud Security Assessment →</a>
+              <a href="https://seccomply.net/services/cloud-security" className="btn-o" target="_blank" rel="noopener">View Cloud Security Services</a>
+            </div>
+            <div className="share-strip">
+              <span className="share-lbl">Share:</span>
+              <a className="share-btn" id="sl" href="#" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+              <a className="share-btn" id="st" href="#" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.258 5.63L18.245 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X</a>
+              <button className="share-btn" onClick={()=>window.copyLink&&window.copyLink()}>🔗 Copy Link</button>
+            </div>
+          </div>
+
+          <section id="faq" className="faq-section">
+            <h2>Frequently Asked <em>Questions</em></h2>
+            <div itemScope itemType="https://schema.org/FAQPage">
+              {[
+                {q:"What is Cloud Security Posture Management (CSPM)?", a:"CSPM is a category of security tooling that continuously monitors your cloud environment ,AWS, Azure, GCP ,for misconfigurations, policy violations, and compliance gaps. Unlike point-in-time assessments, CSPM runs continuously, detecting drift from your security baseline the moment it happens and mapping findings to compliance frameworks like ISO 27001, SOC 2, and CIS Benchmarks."},
+                {q:"What are the most common AWS misconfigurations CSPM detects?", a:"The most common AWS misconfigurations include: publicly accessible S3 buckets, security groups with unrestricted inbound access (0.0.0.0/0), unencrypted EBS volumes and RDS instances, CloudTrail logging disabled, MFA not enabled on root accounts, IAM users with excessive or unused permissions, and unrotated access keys older than 90 days."},
+                {q:"How does CSPM help with ISO 27001 and SOC 2 compliance?", a:"CSPM directly produces the continuous evidence that ISO 27001 Annex A.12 and SOC 2 CC6/CC7 require. It continuously monitors cloud configurations, generates timestamped evidence of control operation, and alerts on drift ,replacing the manual, point-in-time evidence collection that typically consumes weeks of pre-audit preparation."},
+                {q:"What is the difference between CSPM and a cloud security audit?", a:"A cloud security audit is a point-in-time assessment ,it tells you your posture on the day it runs. CSPM is continuous ,it monitors every configuration change in real time and alerts on drift immediately. For compliance, CSPM is significantly more valuable because it provides the continuous evidence trail that auditors require, not just a snapshot."},
+                {q:"Which AWS services does CSPM monitor?", a:"A comprehensive CSPM solution monitors: S3 (bucket policies, public access, encryption), EC2 (security groups, public IPs, EBS encryption), IAM (policies, MFA, access key age, unused permissions), RDS (public accessibility, encryption, backup retention), CloudTrail (enabled, log validation, multi-region), VPC (flow logs, default VPC usage, network ACLs), and Lambda (function policies, environment variable secrets)."},
+              ].map((f,i)=>(
+                <div key={i} className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                  <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong itemProp="name">{f.q}</strong><span className="faq-ch">▾</span></div>
+                  <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text">{f.a}</p></div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+        </article>
+
+        <aside className="sb">
+          <div className="sb-card">
+            <div className="sb-title">In This Article</div>
+            <ul className="sb-toc">
+              <li><a href="#what-is-cspm" className="toc-link">What Is CSPM?</a></li>
+              <li><a href="#why-aws" className="toc-link">Why AWS Needs CSPM</a></li>
+              <li><a href="#top-misconfigs" className="toc-link">Top Misconfigurations</a></li>
+              <li><a href="#services" className="toc-link">Services Monitored</a></li>
+              <li><a href="#compliance" className="toc-link">Compliance Mapping</a></li>
+              <li><a href="#implementation" className="toc-link">Implementation Guide</a></li>
+              <li><a href="#faq" className="toc-link">FAQ</a></li>
+            </ul>
+          </div>
+          <div className="sb-card">
+            <div className="sb-title">🔗 Related Services</div>
+            <ul className="rel-links">
+              <li><a href="https://seccomply.net/services/cloud-security" target="_blank">☁️ Cloud Security Audit</a></li>
+              <li><a href="https://seccomply.net/services/iso-27001" target="_blank">🌍 ISO 27001 Consulting</a></li>
+              <li><a href="https://seccomply.net/services/soc-2" target="_blank">🛡️ SOC 2 Readiness</a></li>
+              <li><a href="https://seccomply.net/services/vapt" target="_blank">🔍 VAPT Services</a></li>
+              <li><a href="https://seccomply.net/services/compliance-as-a-service" target="_blank">📋 Compliance as a Service</a></li>
+            </ul>
+          </div>
+          <div className="sb-card">
+            <div className="sb-title">🏷️ Tags</div>
+            <div className="tag-cloud">
+              <span className="tag">CSPM</span><span className="tag">AWS Security</span><span className="tag">Cloud Security</span><span className="tag">Misconfiguration</span><span className="tag">ISO 27001</span><span className="tag">SOC 2</span><span className="tag">S3 Security</span><span className="tag">IAM</span><span className="tag">CloudTrail</span>
+            </div>
+          </div>
+          <div className="sb-cta">
+            <h4>AWS Security Gaps?</h4>
+            <p>Free cloud security assessment ,we'll show you exactly what CSPM would find in your environment.</p>
+            <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Assessment →</a>
+          </div>
+        </aside>
+      </div>
+      <button id="btt" onClick={()=>window.scrollTo({top:0,behavior:'smooth'})} title="Back to top">↑</button>
+    </Layout>
+  )
+}
