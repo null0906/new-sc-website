@@ -421,7 +421,7 @@ export default function GRCAutomation() {
 
           <section id="when-to-invest">
             <h2>When to Invest in <em>GRC Automation</em></h2>
-            <p>GRC automation is not the right starting point for every organisation. Here is an honest framework for deciding when the investment is justified:</p>
+            <p>GRC automation is not the right starting point for every organisation. Here is an honest framework for deciding when the investment is justified.</p>
             <ul className="feat-list">
               <li className="anim"><div className="f-num">✓</div><div className="f-body"><strong>Invest now if you are pursuing two or more frameworks simultaneously</strong><span>The efficiency gain from multi-framework control mapping becomes significant the moment you are running ISO 27001 and SOC 2 in parallel. The manual effort of maintaining two separate evidence sets is exactly what GRC automation eliminates.</span></div></li>
               <li className="anim"><div className="f-num">✓</div><div className="f-body"><strong>Invest now if you are running on cloud infrastructure with >50 services</strong><span>Manual evidence collection from cloud environments at scale is simply not feasible. The configurations change too frequently, the services are too numerous, and the evidence required is too granular. At this scale, automation is the only viable approach.</span></div></li>
