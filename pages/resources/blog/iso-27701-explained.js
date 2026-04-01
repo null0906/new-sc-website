@@ -39,11 +39,11 @@ export default function ISO27701Explained() {
         <meta name="description" content="What ISO 27701 actually requires, how it extends ISO 27001 into a Privacy Information Management System, regulatory mapping to GDPR and DPDP, the RoPA requirement, data subject rights processes, and a realistic 6-9 month implementation roadmap." />
         <meta name="keywords" content="ISO 27701 explained, ISO 27701 PIMS, privacy information management system, ISO 27701 GDPR mapping, ISO 27701 DPDP, RoPA ISO 27701, PII controller processor, ISO 27701 certification, ISO 27001 privacy extension, data subject rights ISO 27701" />
         <meta property="og:title" content="ISO 27701 Explained: Privacy Information Management for Compliance Teams" />
-        <meta property="og:description" content="ISO 27701 gives compliance teams something regulations alone do not ,a structured, auditable, internationally recognised framework for managing privacy as an operational discipline. Here is everything you need to know." />
+        <meta property="og:description" content="ISO 27701 gives compliance teams something regulations alone do not — a structured, auditable, internationally recognised framework for managing privacy as an operational discipline. Here is everything you need to know." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/iso-27701-explained" />
         <meta property="article:published_time" content="2026-03-28" />
-        <meta property="article:author" content="SecComply" />
+        <meta property="article:author" content="Aditya Hadke" />
         <meta property="article:tag" content="ISO 27701" />
         <meta property="article:tag" content="Privacy Compliance" />
         <meta property="article:tag" content="PIMS" />
@@ -55,7 +55,7 @@ export default function ISO27701Explained() {
               "@type": "Article",
               "headline": "ISO 27701 Explained: Privacy Information Management for Compliance Teams",
               "description": "What ISO 27701 requires, how it extends ISO 27001, regulatory mapping to GDPR and DPDP, the RoPA, data subject rights, and a 6-9 month implementation roadmap.",
-              "author": { "@type": "Organization", "name": "SecComply" },
+              "author": { "@type": "Person", "name": "Aditya Hadke", "jobTitle": "Cybersecurity Expert & Technical Writer", "worksFor": { "@type": "Organization", "name": "SecComply" } },
               "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } },
               "datePublished": "2026-03-28", "dateModified": "2026-03-28",
               "mainEntityOfPage": "https://seccomply.net/resources/blog/iso-27701-explained",
@@ -66,9 +66,9 @@ export default function ISO27701Explained() {
               "@type": "FAQPage",
               "mainEntity": [
                 { "@type": "Question", "name": "What is ISO 27701?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27701 is an international standard that extends ISO 27001 to cover privacy, providing a framework for building and maintaining a Privacy Information Management System (PIMS). Published in 2019, it specifies requirements for processing Personally Identifiable Information in a transparent, accountable, and demonstrably compliant manner. It works for both PII controllers (organisations that determine why and how PII is processed) and PII processors (organisations that process PII on behalf of a controller)." } },
-                { "@type": "Question", "name": "Do you need ISO 27001 before pursuing ISO 27701?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27701 is technically an extension to ISO 27001 ,it cannot stand alone without ISO 27001 as the foundation. However, organisations do not need to achieve ISO 27001 certification first; they can pursue both certifications simultaneously in a single unified programme. For organisations already certified to ISO 27001, adding ISO 27701 requires extending the existing ISMS to cover privacy controls ,not rebuilding it from scratch." } },
-                { "@type": "Question", "name": "What is a Record of Processing Activities (RoPA)?", "acceptedAnswer": { "@type": "Answer", "text": "A Record of Processing Activities (RoPA) is a documented inventory of all PII processing activities within an organisation. Required under both ISO 27701 and GDPR Article 30, each entry captures the processing purpose, legal basis, categories of data subjects and PII, categories of recipients and third parties, retention periods, and security measures applied. The RoPA must be maintained as a living document ,not a one-time certification artefact ,with a defined owner, change management process, and regular review cycle." } },
-                { "@type": "Question", "name": "Does ISO 27701 certification prove GDPR compliance?", "acceptedAnswer": { "@type": "Answer", "text": "No. ISO 27701 certification does not equal GDPR compliance, but it substantially demonstrates adherence to major GDPR articles. ISO 27701 Annex D provides a direct article-by-article mapping to GDPR, covering Articles 5, 6, 7, 13-17, 25, 28, 30, 32, 33, and 35 ,the principles of processing, lawful basis, consent, data subject rights, privacy by design, processor agreements, RoPA, security, breach notification, and DPIAs. In practice, ISO 27701 certification is widely accepted by regulators and enterprise customers as strong evidence of GDPR compliance readiness." } },
+                { "@type": "Question", "name": "Do you need ISO 27001 before pursuing ISO 27701?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27701 is technically an extension to ISO 27001 — it cannot stand alone without ISO 27001 as the foundation. However, organisations do not need to achieve ISO 27001 certification first; they can pursue both certifications simultaneously in a single unified programme. For organisations already certified to ISO 27001, adding ISO 27701 requires extending the existing ISMS to cover privacy controls — not rebuilding it from scratch." } },
+                { "@type": "Question", "name": "What is a Record of Processing Activities (RoPA)?", "acceptedAnswer": { "@type": "Answer", "text": "A Record of Processing Activities (RoPA) is a documented inventory of all PII processing activities within an organisation. Required under both ISO 27701 and GDPR Article 30, each entry captures the processing purpose, legal basis, categories of data subjects and PII, categories of recipients and third parties, retention periods, and security measures applied. The RoPA must be maintained as a living document — not a one-time certification artefact — with a defined owner, change management process, and regular review cycle." } },
+                { "@type": "Question", "name": "Does ISO 27701 certification prove GDPR compliance?", "acceptedAnswer": { "@type": "Answer", "text": "No. ISO 27701 certification does not equal GDPR compliance, but it substantially demonstrates adherence to major GDPR articles. ISO 27701 Annex D provides a direct article-by-article mapping to GDPR, covering Articles 5, 6, 7, 13-17, 25, 28, 30, 32, 33, and 35 — the principles of processing, lawful basis, consent, data subject rights, privacy by design, processor agreements, RoPA, security, breach notification, and DPIAs. In practice, ISO 27701 certification is widely accepted by regulators and enterprise customers as strong evidence of GDPR compliance readiness." } },
                 { "@type": "Question", "name": "How long does ISO 27701 implementation take?", "acceptedAnswer": { "@type": "Answer", "text": "For organisations starting from a foundation of ISO 27001 certification, a realistic ISO 27701 implementation timeline runs approximately 6 to 9 months. The four main phases are: gap assessment and scoping (months 1-2), foundation controls including RoPA and processor agreements (months 3-4), operational controls including DPIAs and consent management (months 5-6), and internal audit and certification readiness (months 7-9). Organisations pursuing both ISO 27001 and ISO 27701 simultaneously should plan for 8-12 months total." } }
               ]
             },
@@ -254,21 +254,21 @@ export default function ISO27701Explained() {
           <span className="badge badge-gr">✓ GDPR · DPDP · CCPA</span>
         </div>
         <h1 className="cspm-hero-h1">ISO 27701 Explained: <em>Privacy Information Management</em> for Compliance Teams</h1>
-        <p className="cspm-hero-sub">Privacy has moved from a legal footnote to a boardroom priority. GDPR, India's DPDP Act, and CCPA have raised the stakes for how organisations collect, process, and protect personal data. ISO 27701 is the international standard that tells you how to operationalise privacy ,systematically, auditably, and in a way that satisfies regulators, enterprise customers, and investors simultaneously.</p>
+        <p className="cspm-hero-sub">Privacy has moved from a legal footnote to a boardroom priority. GDPR, India's DPDP Act, and CCPA have raised the stakes for how organisations collect, process, and protect personal data. ISO 27701 is the international standard that tells you how to operationalise privacy — systematically, auditably, and in a way that satisfies regulators, enterprise customers, and investors simultaneously.</p>
 
         <div className="cspm-author-strip">
-          <div className="avatar">SC</div>
+          <div className="avatar">AH</div>
           <div className="author-info">
-            <div className="name">SecComply</div>
-            <div className="meta-row"><span style={{color:'var(--cy)',fontWeight:600}}>🏢 SecComply Compliance Team</span><span className="dot">·</span><span id="read-time">📖 12 min read</span></div>
-            <div className="date-row"><span>📅 March 2026</span><span className="dot">·</span><span>🔐 Privacy &amp; Compliance</span></div>
+            <div className="name">Aditya Hadke</div>
+            <div className="meta-row"><span style={{color:'var(--cy)',fontWeight:600}}>✍️ Cybersecurity Expert &amp; Technical Writer</span><span className="dot">·</span><span id="read-time">📖 12 min read</span></div>
+            <div className="date-row"><span>📅 March 2026</span><span className="dot">·</span><span>🏢 SecComply</span></div>
           </div>
         </div>
 
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&h=480&fit=crop" alt="ISO 27701 privacy information management system PIMS" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}}/>
         </div>
-        <p className="img-cap">ISO 27701 gives compliance teams a structured, auditable framework for managing privacy as an operational discipline ,not just a legal checkbox. Built as an extension to ISO 27001, it works across GDPR, DPDP, and CCPA simultaneously from a single control set.</p>
+        <p className="img-cap">ISO 27701 gives compliance teams a structured, auditable framework for managing privacy as an operational discipline — not just a legal checkbox. Built as an extension to ISO 27001, it works across GDPR, DPDP, and CCPA simultaneously from a single control set.</p>
 
         {/* SVG DASHBOARD */}
         <div className="img-wrap">
@@ -279,17 +279,17 @@ export default function ISO27701Explained() {
               <pattern id="ppat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern>
             </defs>
             <rect width="960" height="400" fill="url(#ppat)"/>
-            <text x="480" y="30" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">ISO 27701 ,PIMS Structure and Regulatory Coverage</text>
+            <text x="480" y="30" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">ISO 27701 — PIMS Structure and Regulatory Coverage</text>
 
             {/* LEFT: ISO 27001 + 27701 layer diagram */}
             <text x="36" y="54" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">ISMS + PIMS ARCHITECTURE</text>
             <rect x="20" y="62" width="290" height="316" rx="12" fill="rgba(99,102,241,0.05)" stroke="rgba(99,102,241,0.2)" strokeWidth="1.5" strokeDasharray="4,3"/>
-            <text x="165" y="82" textAnchor="middle" fill="#818cf8" fontSize="9" fontWeight="700" fontFamily="sans-serif">ISO 27001 ,Information Security (ISMS)</text>
+            <text x="165" y="82" textAnchor="middle" fill="#818cf8" fontSize="9" fontWeight="700" fontFamily="sans-serif">ISO 27001 — Information Security (ISMS)</text>
             {['Risk assessment & treatment','Access control & encryption','Incident management','Business continuity','Supplier security'].map((t,i)=>(
               <g key={i}><rect x="34" y={90+i*38} width="262" height="28" rx="7" fill="rgba(99,102,241,0.07)" stroke="rgba(99,102,241,0.15)" strokeWidth="1"/><text x="46" y={108+i*38} fill="rgba(200,214,229,0.65)" fontSize="8.5" fontFamily="sans-serif">{t}</text></g>
             ))}
             <rect x="20" y="286" width="290" height="88" rx="10" fill="rgba(232,99,43,0.07)" stroke="rgba(232,99,43,0.28)" strokeWidth="1.5"/>
-            <text x="165" y="306" textAnchor="middle" fill="#E8632B" fontSize="9" fontWeight="700" fontFamily="sans-serif">ISO 27701 Extension ,PIMS</text>
+            <text x="165" y="306" textAnchor="middle" fill="#E8632B" fontSize="9" fontWeight="700" fontFamily="sans-serif">ISO 27701 Extension — PIMS</text>
             {['PII processing controls (Annex B/C)','RoPA · consent management · DPIAs','Data subject rights workflows'].map((t,i)=>(
               <g key={i}><text x="36" y={322+i*18} fill="rgba(200,214,229,0.65)" fontSize="8" fontFamily="sans-serif">+ {t}</text></g>
             ))}
@@ -322,8 +322,8 @@ export default function ISO27701Explained() {
             <text x="740" y="54" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">REGULATORY COVERAGE</text>
             {[
               {reg:'GDPR',      coverage:'Articles 5,6,7,13-17,25,28,30,32,33,35', col:'#818cf8', pct:88},
-              {reg:'DPDP Act',  coverage:'Sections 6,7,8,11 ,consent, rights, safeguards', col:'#E8632B', pct:79},
-              {reg:'CCPA/CPRA', coverage:'Consumer rights ,access, delete, portability', col:'#ffb703', pct:74},
+              {reg:'DPDP Act',  coverage:'Sections 6,7,8,11 — consent, rights, safeguards', col:'#E8632B', pct:79},
+              {reg:'CCPA/CPRA', coverage:'Consumer rights — access, delete, portability', col:'#ffb703', pct:74},
             ].map(({reg,coverage,col,pct},i)=>(
               <g key={i}>
                 <rect x="732" y={62+i*110} width="212" height="96" rx="11" fill="#091826" stroke={`${col}25`} strokeWidth="1"/>
@@ -336,7 +336,7 @@ export default function ISO27701Explained() {
             ))}
           </svg>
         </div>
-        <p className="img-cap">ISO 27701 builds directly on top of ISO 27001 ,extending the ISMS into a PIMS with privacy-specific clauses, PII controller and processor controls, and regulatory coverage across GDPR, DPDP Act, and CCPA from a single control set.</p>
+        <p className="img-cap">ISO 27701 builds directly on top of ISO 27001 — extending the ISMS into a PIMS with privacy-specific clauses, PII controller and processor controls, and regulatory coverage across GDPR, DPDP Act, and CCPA from a single control set.</p>
 
         <div className="toc-box">
           <div className="toc-lbl">In This Article</div>
@@ -344,7 +344,7 @@ export default function ISO27701Explained() {
             <a href="#what-is">What Is ISO 27701?</a>
             <a href="#how-it-relates">How It Relates to ISO 27001</a>
             <a href="#what-it-requires">What It Requires</a>
-            <a href="#ropa">The RoPA ,Foundation of PIMS</a>
+            <a href="#ropa">The RoPA — Foundation of PIMS</a>
             <a href="#privacy-by-design">Privacy by Design</a>
             <a href="#data-subject-rights">Data Subject Rights</a>
             <a href="#vendor-risk">Third-Party Privacy Risk</a>
@@ -359,11 +359,11 @@ export default function ISO27701Explained() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>For compliance teams, the proliferation of privacy regulations creates a real operational problem: GDPR, DPDP Act, and CCPA all require similar things ,consent management, data subject rights workflows, breach notification, processor agreements ,but each regulation phrases its requirements differently, with different enforcement mechanisms and different evidence standards. ISO 27701 solves this by providing a single structured framework that maps to all three simultaneously. If your organisation already holds <a href="https://seccomply.net/resources/blog/iso-27001-explained-startups" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>ISO 27001 certification</a>, ISO 27701 is the most efficient path to demonstrating privacy maturity across every market you operate in.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>For compliance teams, the proliferation of privacy regulations creates a real operational problem: GDPR, DPDP Act, and CCPA all require similar things — consent management, data subject rights workflows, breach notification, processor agreements — but each regulation phrases its requirements differently, with different enforcement mechanisms and different evidence standards. ISO 27701 solves this by providing a single structured framework that maps to all three simultaneously. If your organisation already holds <a href="https://seccomply.net/resources/blog/iso-27001-explained-startups" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>ISO 27001 certification</a>, ISO 27701 is the most efficient path to demonstrating privacy maturity across every market you operate in.</p>
 
           <div className="stats-row anim">
-            <div className="stat-card"><div className="stat-n" data-target="2019" data-suffix="">0</div><div className="stat-l">year ISO 27701 was published ,the only international standard providing a certifiable privacy management extension to ISO 27001<br/><span style={{fontSize:'.68rem',opacity:.55}}>ISO/IEC 27701:2019</span></div></div>
-            <div className="stat-card"><div className="stat-n" data-target="88" data-suffix="%">0%</div><div className="stat-l">of GDPR articles covered by ISO 27701 controls ,including Articles 5, 6, 7, data subject rights, DPIAs, and breach notification<br/><span style={{fontSize:'.68rem',opacity:.55}}>ISO 27701 Annex D mapping</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-target="2019" data-suffix="">0</div><div className="stat-l">year ISO 27701 was published — the only international standard providing a certifiable privacy management extension to ISO 27001<br/><span style={{fontSize:'.68rem',opacity:.55}}>ISO/IEC 27701:2019</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-target="88" data-suffix="%">0%</div><div className="stat-l">of GDPR articles covered by ISO 27701 controls — including Articles 5, 6, 7, data subject rights, DPIAs, and breach notification<br/><span style={{fontSize:'.68rem',opacity:.55}}>ISO 27701 Annex D mapping</span></div></div>
             <div className="stat-card"><div className="stat-n" data-target="6" data-suffix="–9 months">0</div><div className="stat-l">typical implementation timeline for organisations already certified to ISO 27001 building on their existing ISMS<br/><span style={{fontSize:'.68rem',opacity:.55}}>SecComply implementation data</span></div></div>
           </div>
 
@@ -374,7 +374,7 @@ export default function ISO27701Explained() {
               <span className="co-icon">💡</span>
               <div className="co-body">
                 <strong>Key Distinction: Standard vs Regulation</strong>
-                <p>Unlike GDPR, which is a legal regulation with penalties, ISO 27701 is a voluntary international standard. Its value lies in providing a structured, auditable privacy management framework that simultaneously serves as evidence of compliance readiness under multiple regulations. Certification does not equal GDPR compliance ,but it substantially demonstrates it.</p>
+                <p>Unlike GDPR, which is a legal regulation with penalties, ISO 27701 is a voluntary international standard. Its value lies in providing a structured, auditable privacy management framework that simultaneously serves as evidence of compliance readiness under multiple regulations. Certification does not equal GDPR compliance — but it substantially demonstrates it.</p>
               </div>
             </div>
             <p>The standard is structured to work for two types of organisations, with separate control sets for each:</p>
@@ -404,13 +404,13 @@ export default function ISO27701Explained() {
 
           <section id="how-it-relates">
             <h2>How It Relates to <em>ISO 27001</em></h2>
-            <p>ISO 27701 is not a standalone standard. It extends ISO 27001 ,which means the ISO 27001 ISMS is the mandatory foundation. Understanding this architectural relationship prevents the most common ISO 27701 implementation mistake: trying to build a PIMS without first having the ISMS in place.</p>
+            <p>ISO 27701 is not a standalone standard. It extends ISO 27001 — which means the ISO 27001 ISMS is the mandatory foundation. Understanding this architectural relationship prevents the most common ISO 27701 implementation mistake: trying to build a PIMS without first having the ISMS in place.</p>
             <p>ISO 27701 layers privacy-specific controls on top of ISO 27001 by extending the context-setting requirements to include privacy considerations, adding privacy-specific objectives to the risk management process, introducing two new annexes of controls (Annex B for controllers, Annex C for processors), and requiring the existing ISMS scope to explicitly cover PII processing activities.</p>
             <div className="callout co-key">
               <span className="co-icon">🔗</span>
               <div className="co-body">
                 <strong>Pursuing Both Certifications Simultaneously</strong>
-                <p>Organisations that do not yet hold ISO 27001 can pursue both certifications simultaneously in a unified programme. This is more efficient than sequential implementation because the evidence collection, auditor engagement, and management processes overlap significantly. The combined audit is typically conducted by the same certification body in a single engagement ,reducing cost and team disruption.</p>
+                <p>Organisations that do not yet hold ISO 27001 can pursue both certifications simultaneously in a unified programme. This is more efficient than sequential implementation because the evidence collection, auditor engagement, and management processes overlap significantly. The combined audit is typically conducted by the same certification body in a single engagement — reducing cost and team disruption.</p>
               </div>
             </div>
           </section>
@@ -420,31 +420,31 @@ export default function ISO27701Explained() {
             <p>The standard follows the same clause structure as ISO 27001. Here is what each major clause adds for privacy:</p>
             <div className="clause-list">
               {[
-                {num:'Clause 5 ,Leadership', body:'Senior leadership must demonstrate commitment to privacy ,not just information security. A privacy policy covering PII processing purposes and data subject rights must be established. Roles and responsibilities for privacy, including a Privacy Officer or equivalent, must be formally defined.'},
-                {num:'Clause 6 ,Planning', body:'Privacy risks must be assessed as part of the existing information security risk assessment, with PII processing activities explicitly in scope. A Record of Processing Activities (RoPA) must be established and maintained. Privacy objectives must be set, measured, and reviewed.'},
-                {num:'Clause 7 ,Support', body:'All staff who handle PII must receive role-appropriate privacy training and awareness. Documentation demonstrating PII processing activities and control implementation must be maintained and version-controlled.'},
-                {num:'Clause 8 ,Operations (Controllers)', body:'Defining and documenting the legal basis for each processing activity. Implementing consent management ,obtaining, recording, and withdrawing consent. Data subject rights processes. Data minimisation enforcement. Retention and deletion procedures. DPIAs for high-risk processing. Cross-border transfer controls.'},
-                {num:'Clause 8 ,Operations (Processors)', body:"Ensuring all PII processing is performed only on documented controller instructions. Maintaining a sub-processor register and notifying the controller before engaging a new sub-processor. Assisting the controller in fulfilling data subject rights requests. Providing compliance evidence to the controller on request."},
-                {num:'Clause 9 ,Performance', body:'Internal audits of the PIMS must be conducted at planned intervals. Management reviews must evaluate privacy performance ,incident trends, audit results, data subject complaint rates, and regulatory changes.'},
-                {num:'Clause 10 ,Improvement', body:'Privacy incidents are treated as nonconformities requiring root cause analysis and documented corrective actions. The organisation must demonstrate continual improvement of the PIMS ,not just initial implementation.'},
+                {num:'Clause 5 — Leadership', body:'Senior leadership must demonstrate commitment to privacy — not just information security. A privacy policy covering PII processing purposes and data subject rights must be established. Roles and responsibilities for privacy, including a Privacy Officer or equivalent, must be formally defined.'},
+                {num:'Clause 6 — Planning', body:'Privacy risks must be assessed as part of the existing information security risk assessment, with PII processing activities explicitly in scope. A Record of Processing Activities (RoPA) must be established and maintained. Privacy objectives must be set, measured, and reviewed.'},
+                {num:'Clause 7 — Support', body:'All staff who handle PII must receive role-appropriate privacy training and awareness. Documentation demonstrating PII processing activities and control implementation must be maintained and version-controlled.'},
+                {num:'Clause 8 — Operations (Controllers)', body:'Defining and documenting the legal basis for each processing activity. Implementing consent management — obtaining, recording, and withdrawing consent. Data subject rights processes. Data minimisation enforcement. Retention and deletion procedures. DPIAs for high-risk processing. Cross-border transfer controls.'},
+                {num:'Clause 8 — Operations (Processors)', body:"Ensuring all PII processing is performed only on documented controller instructions. Maintaining a sub-processor register and notifying the controller before engaging a new sub-processor. Assisting the controller in fulfilling data subject rights requests. Providing compliance evidence to the controller on request."},
+                {num:'Clause 9 — Performance', body:'Internal audits of the PIMS must be conducted at planned intervals. Management reviews must evaluate privacy performance — incident trends, audit results, data subject complaint rates, and regulatory changes.'},
+                {num:'Clause 10 — Improvement', body:'Privacy incidents are treated as nonconformities requiring root cause analysis and documented corrective actions. The organisation must demonstrate continual improvement of the PIMS — not just initial implementation.'},
               ].map(({num, body}, i) => (
                 <div key={i} className="cl-item anim">
-                  <div className="cl-num">{num.split(' ,')[0]}</div>
-                  <div className="cl-body"><strong>{num.split(' ,')[1]}</strong><span>{body}</span></div>
+                  <div className="cl-num">{num.split(' — ')[0]}</div>
+                  <div className="cl-body"><strong>{num.split(' — ')[1]}</strong><span>{body}</span></div>
                 </div>
               ))}
             </div>
           </section>
 
           <section id="ropa">
-            <h2>The RoPA ,<em>Foundation of Your PIMS</em></h2>
+            <h2>The RoPA — <em>Foundation of Your PIMS</em></h2>
             <p>If there is one artefact that underpins ISO 27701 compliance, it is the Record of Processing Activities. Required under both ISO 27701 and GDPR Article 30, the RoPA is simultaneously an audit artefact, a data governance tool, a DPIA trigger mechanism, and a privacy risk register. At minimum, each entry must capture:</p>
             <div className="ropa-grid">
               {[
-                {icon:'🎯', title:'Processing purpose', desc:'What the PII is collected and used for ,specific, not generic'},
-                {icon:'⚖️', title:'Legal basis', desc:'Consent, contract, legal obligation, legitimate interests ,one per activity'},
-                {icon:'👤', title:'Data subject categories', desc:'Customers, employees, prospects ,who the PII belongs to'},
-                {icon:'📦', title:'PII categories', desc:'Name, email, financial data, health data ,what is collected'},
+                {icon:'🎯', title:'Processing purpose', desc:'What the PII is collected and used for — specific, not generic'},
+                {icon:'⚖️', title:'Legal basis', desc:'Consent, contract, legal obligation, legitimate interests — one per activity'},
+                {icon:'👤', title:'Data subject categories', desc:'Customers, employees, prospects — who the PII belongs to'},
+                {icon:'📦', title:'PII categories', desc:'Name, email, financial data, health data — what is collected'},
                 {icon:'🔗', title:'Recipients & processors', desc:'Internal teams, third parties, cross-border transfers'},
                 {icon:'⏱️', title:'Retention periods', desc:'How long PII is kept and the criteria for deletion or anonymisation'},
                 {icon:'🔒', title:'Security measures', desc:'Technical and organisational safeguards applied to this activity'},
@@ -467,30 +467,30 @@ export default function ISO27701Explained() {
             <div className="img-wrap" style={{marginTop:'1.5rem'}}>
               <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1000&h=360&fit=crop" alt="Privacy compliance documentation record of processing activities" style={{width:'100%',display:'block',maxHeight:'300px',objectFit:'cover'}}/>
             </div>
-            <p className="img-cap">The RoPA is the operational core of any ISO 27701-compliant PIMS ,it must be maintained as a living document, not a certification artefact. Auditors examine it closely for completeness, accuracy, and evidence of regular review.</p>
+            <p className="img-cap">The RoPA is the operational core of any ISO 27701-compliant PIMS — it must be maintained as a living document, not a certification artefact. Auditors examine it closely for completeness, accuracy, and evidence of regular review.</p>
           </section>
 
           <section id="privacy-by-design">
-            <h2>Privacy by Design ,<em>From Principle to Evidence</em></h2>
-            <p>ISO 27701 operationalises the privacy by design principle (GDPR Article 25) by requiring organisations to embed privacy considerations into the design of new systems and product features before implementation begins. For SaaS companies, this has direct engineering implications ,it is not a policy statement, it is a development process requirement.</p>
-            <p>In practice, privacy by design under ISO 27701 means Privacy Impact Assessments are triggered by defined criteria before high-risk processing begins, engineering teams consult privacy controls at the design stage with documented evidence of that consultation, default settings for new products are the most privacy-protective option available, and data minimisation is actively enforced at the schema level ,not reviewed after launch.</p>
+            <h2>Privacy by Design — <em>From Principle to Evidence</em></h2>
+            <p>ISO 27701 operationalises the privacy by design principle (GDPR Article 25) by requiring organisations to embed privacy considerations into the design of new systems and product features before implementation begins. For SaaS companies, this has direct engineering implications — it is not a policy statement, it is a development process requirement.</p>
+            <p>In practice, privacy by design under ISO 27701 means Privacy Impact Assessments are triggered by defined criteria before high-risk processing begins, engineering teams consult privacy controls at the design stage with documented evidence of that consultation, default settings for new products are the most privacy-protective option available, and data minimisation is actively enforced at the schema level — not reviewed after launch.</p>
             <div className="callout co-sc">
               <span className="co-icon">💻</span>
               <div className="co-body">
                 <strong>What Auditors Look For</strong>
-                <p>ISO 27701 auditors look for evidence that privacy by design was applied ,not just that a policy exists saying it should be. This means DPIA records for new features, design review notes, schema documentation showing only necessary fields are collected, and evidence that privacy was considered before deployment. Teams that implement this as a process rather than a paperwork exercise produce the strongest audit evidence.</p>
+                <p>ISO 27701 auditors look for evidence that privacy by design was applied — not just that a policy exists saying it should be. This means DPIA records for new features, design review notes, schema documentation showing only necessary fields are collected, and evidence that privacy was considered before deployment. Teams that implement this as a process rather than a paperwork exercise produce the strongest audit evidence.</p>
               </div>
             </div>
           </section>
 
           <section id="data-subject-rights">
-            <h2>Data Subject Rights ,<em>Building the Response Process</em></h2>
+            <h2>Data Subject Rights — <em>Building the Response Process</em></h2>
             <p>ISO 27701 requires organisations to establish operational processes for handling data subject rights requests. Under GDPR these must typically be fulfilled within 30 days. Under DPDP Act the obligation is equally firm. Each right needs a documented owner, a response workflow, an identity verification step, and a request log for audit purposes.</p>
             <div className="rights-list">
               {[
                 {right:'Right of Access', desc:'Provide individuals with a copy of their PII and information about how it is processed'},
                 {right:'Right to Rectification', desc:'Correct inaccurate or incomplete PII upon request'},
-                {right:'Right to Erasure', desc:'Delete PII where no legal basis for retention exists ,the right to be forgotten'},
+                {right:'Right to Erasure', desc:'Delete PII where no legal basis for retention exists — the right to be forgotten'},
                 {right:'Right to Restriction', desc:'Limit processing while a dispute or assessment is in progress'},
                 {right:'Right to Data Portability', desc:'Provide PII in machine-readable format for transfer to another controller'},
                 {right:'Right to Object', desc:'Allow objection to processing based on legitimate interest or direct marketing'},
@@ -502,24 +502,24 @@ export default function ISO27701Explained() {
                 </div>
               ))}
             </div>
-            <p>Each right must have a corresponding technical capability ,not just a policy. The ability to export a user's data in machine-readable format, delete their records across all systems including backups, and verify the identity of the requesting party must all be tested and evidenced before the audit.</p>
+            <p>Each right must have a corresponding technical capability — not just a policy. The ability to export a user's data in machine-readable format, delete their records across all systems including backups, and verify the identity of the requesting party must all be tested and evidenced before the audit.</p>
           </section>
 
           <section id="vendor-risk">
-            <h2>Third-Party Privacy Risk ,<em>Processor Obligations</em></h2>
-            <p>ISO 27701 places significant emphasis on the privacy risks introduced by third-party processors and sub-processors. For PII controllers, only engage processors who provide sufficient guarantees of appropriate privacy controls ,SOC 2 reports, ISO 27701 certificates, or equivalent evidence. Data Processing Agreements must be in place with all processors handling your customers' PII, specifying PII categories, processing purposes, sub-processor notification obligations, and security requirements.</p>
-            <p>Maintain a register of all processors and sub-processors including their processing locations ,to identify cross-border transfer implications ,and establish a notification process for when processors engage new sub-processors or experience a breach affecting your data. This processor register must be kept current and reviewed as part of each management review cycle.</p>
+            <h2>Third-Party Privacy Risk — <em>Processor Obligations</em></h2>
+            <p>ISO 27701 places significant emphasis on the privacy risks introduced by third-party processors and sub-processors. For PII controllers, only engage processors who provide sufficient guarantees of appropriate privacy controls — SOC 2 reports, ISO 27701 certificates, or equivalent evidence. Data Processing Agreements must be in place with all processors handling your customers' PII, specifying PII categories, processing purposes, sub-processor notification obligations, and security requirements.</p>
+            <p>Maintain a register of all processors and sub-processors including their processing locations — to identify cross-border transfer implications — and establish a notification process for when processors engage new sub-processors or experience a breach affecting your data. This processor register must be kept current and reviewed as part of each management review cycle.</p>
           </section>
 
           <section id="reg-mapping">
-            <h2>Regulatory Mapping ,<em>One Standard, Three Regimes</em></h2>
+            <h2>Regulatory Mapping — <em>One Standard, Three Regimes</em></h2>
             <div className="reg-table-wrap">
               <table className="reg-table">
                 <thead><tr><th>Regulation</th><th>Key ISO 27701 Coverage</th><th>What It Demonstrates</th></tr></thead>
                 <tbody>
                   <tr><td>GDPR</td><td>Annex D provides article-by-article mapping covering Articles 5, 6, 7, 13–17, 25, 28, 30, 32, 33, 35</td><td>Principles of processing, lawful basis, consent, data subject rights, privacy by design, processor agreements, RoPA, security, breach notification, and DPIAs</td></tr>
-                  <tr><td>DPDP Act (India)</td><td>Sections 6 (consent), 7 (notice), 8 (obligations), 11 (data principal rights)</td><td>Consent management, data minimisation, purpose limitation, data subject rights ,aligned but formal mapping documentation still maturing</td></tr>
-                  <tr><td>CCPA / CPRA</td><td>Data subject rights controls ,access, deletion, portability, opt-out</td><td>California consumer rights and CCPA's data inventory obligations via the RoPA requirement</td></tr>
+                  <tr><td>DPDP Act (India)</td><td>Sections 6 (consent), 7 (notice), 8 (obligations), 11 (data principal rights)</td><td>Consent management, data minimisation, purpose limitation, data subject rights — aligned but formal mapping documentation still maturing</td></tr>
+                  <tr><td>CCPA / CPRA</td><td>Data subject rights controls — access, deletion, portability, opt-out</td><td>California consumer rights and CCPA's data inventory obligations via the RoPA requirement</td></tr>
                   <tr><td>HIPAA</td><td>Privacy Rule safeguards, access controls, minimum necessary standard</td><td>Technical and administrative safeguards for PHI overlap significantly with ISO 27701 PII controls</td></tr>
                 </tbody>
               </table>
@@ -528,45 +528,45 @@ export default function ISO27701Explained() {
 
           <section id="audit">
             <h2>What the <em>Certification Audit Looks Like</em></h2>
-            <p>ISO 27701 is audited as an extension of ISO 27001 ,typically by the same certification body in the same audit engagement. Auditors assess evidence across three areas: documentation, implementation, and operational maturity.</p>
-            <p><strong>Documentation</strong> ,Privacy policy and PIMS scope, RoPA covering all PII processing activities, DPIA records for high-risk processing, processor agreements and sub-processor registers, data subject rights request logs.</p>
-            <p><strong>Implementation evidence</strong> ,Consent management logs, data minimisation enforcement evidence, access control restrictions to PII-handling personnel, retention schedules and deletion or anonymisation records.</p>
-            <p><strong>Operational maturity</strong> ,Completed internal PIMS audits, management review records addressing privacy metrics, corrective actions from privacy incidents, privacy training completion records for all staff handling PII.</p>
+            <p>ISO 27701 is audited as an extension of ISO 27001 — typically by the same certification body in the same audit engagement. Auditors assess evidence across three areas: documentation, implementation, and operational maturity.</p>
+            <p><strong>Documentation</strong> — Privacy policy and PIMS scope, RoPA covering all PII processing activities, DPIA records for high-risk processing, processor agreements and sub-processor registers, data subject rights request logs.</p>
+            <p><strong>Implementation evidence</strong> — Consent management logs, data minimisation enforcement evidence, access control restrictions to PII-handling personnel, retention schedules and deletion or anonymisation records.</p>
+            <p><strong>Operational maturity</strong> — Completed internal PIMS audits, management review records addressing privacy metrics, corrective actions from privacy incidents, privacy training completion records for all staff handling PII.</p>
           </section>
 
           <section id="roadmap">
-            <h2>Implementation Roadmap ,<em>6 to 9 Months from ISO 27001</em></h2>
+            <h2>Implementation Roadmap — <em>6 to 9 Months from ISO 27001</em></h2>
             <div className="roadmap-list">
               <div className="rm-event anim">
                 <div className="rm-phase">Phase 1</div>
                 <span className="rm-duration">Months 1–2</span>
                 <strong>Gap assessment and PIMS scoping</strong>
-                <p>Conduct a gap assessment against ISO 27701 requirements using your existing ISO 27001 ISMS as the baseline. Define the PIMS scope ,which legal entities, systems, and PII processing activities are in scope. Confirm whether your organisation operates as a PII controller, processor, or both.</p>
+                <p>Conduct a gap assessment against ISO 27701 requirements using your existing ISO 27001 ISMS as the baseline. Define the PIMS scope — which legal entities, systems, and PII processing activities are in scope. Confirm whether your organisation operates as a PII controller, processor, or both.</p>
               </div>
               <div className="rm-event anim">
                 <div className="rm-phase">Phase 2</div>
                 <span className="rm-duration">Months 3–4</span>
-                <strong>Foundation controls ,RoPA, legal basis, processor agreements</strong>
+                <strong>Foundation controls — RoPA, legal basis, processor agreements</strong>
                 <p>Build or update the RoPA to cover all in-scope PII processing activities. Document the legal basis for each processing activity. Review and update all processor agreements to ensure ISO 27701 alignment. Establish the data subject rights request process and assign ownership.</p>
               </div>
               <div className="rm-event anim">
                 <div className="rm-phase">Phase 3</div>
                 <span className="rm-duration">Months 5–6</span>
-                <strong>Operational controls ,DPIAs, consent, retention, training</strong>
+                <strong>Operational controls — DPIAs, consent, retention, training</strong>
                 <p>Implement the DPIA process and conduct DPIAs for any in-scope high-risk processing. Update data retention schedules and implement or verify technical deletion and anonymisation capabilities. Deploy or verify consent management mechanisms. Deliver privacy awareness training to all staff handling PII.</p>
               </div>
               <div className="rm-event anim">
                 <div className="rm-phase">Phase 4</div>
                 <span className="rm-duration">Months 7–9</span>
                 <strong>Internal audit, management review, and certification</strong>
-                <p>Conduct an internal PIMS audit against ISO 27701 requirements. Perform a management review explicitly addressing privacy performance. Remediate findings from the internal audit. Engage the certification body and schedule the Stage 1 and Stage 2 audit ,combined with your ISO 27001 surveillance or recertification if timing aligns.</p>
+                <p>Conduct an internal PIMS audit against ISO 27701 requirements. Perform a management review explicitly addressing privacy performance. Remediate findings from the internal audit. Engage the certification body and schedule the Stage 1 and Stage 2 audit — combined with your ISO 27001 surveillance or recertification if timing aligns.</p>
               </div>
             </div>
           </section>
 
           <div className="cta-banner">
             <h3>Planning Your ISO 27701 Implementation?</h3>
-            <p>SecComply runs ISO 27701 implementations with pre-built control frameworks, GDPR and DPDP mapping, RoPA templates, and DPIA workflows ,so your team focuses on implementation, not documentation overhead.</p>
+            <p>SecComply runs ISO 27701 implementations with pre-built control frameworks, GDPR and DPDP mapping, RoPA templates, and DPIA workflows — so your team focuses on implementation, not documentation overhead.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free Privacy Compliance Assessment →</a>
               <a href="https://seccomply.net/services/iso-27001" className="btn-o" target="_blank" rel="noopener">View ISO 27001 Services</a>
@@ -584,7 +584,7 @@ export default function ISO27701Explained() {
             <div itemScope itemType="https://schema.org/FAQPage">
               {[
                 {q:"What is ISO 27701?", a:"ISO 27701 is an international standard that extends ISO 27001 to cover privacy, providing a framework for building and maintaining a Privacy Information Management System (PIMS). Published in 2019, it specifies requirements for processing Personally Identifiable Information in a transparent, accountable, and demonstrably compliant manner for both PII controllers and PII processors."},
-                {q:"Do you need ISO 27001 before pursuing ISO 27701?", a:"ISO 27701 is technically an extension to ISO 27001 and cannot stand alone without it as the foundation. However, organisations do not need to achieve ISO 27001 certification first ,they can pursue both certifications simultaneously in a single unified programme. For organisations already certified to ISO 27001, adding ISO 27701 requires extending the existing ISMS to cover privacy controls, not rebuilding it from scratch."},
+                {q:"Do you need ISO 27001 before pursuing ISO 27701?", a:"ISO 27701 is technically an extension to ISO 27001 and cannot stand alone without it as the foundation. However, organisations do not need to achieve ISO 27001 certification first — they can pursue both certifications simultaneously in a single unified programme. For organisations already certified to ISO 27001, adding ISO 27701 requires extending the existing ISMS to cover privacy controls, not rebuilding it from scratch."},
                 {q:"What is a Record of Processing Activities (RoPA)?", a:"A RoPA is a documented inventory of all PII processing activities within an organisation. Required under both ISO 27701 and GDPR Article 30, each entry captures the processing purpose, legal basis, categories of data subjects and PII, recipients and third parties, retention periods, and security measures. The RoPA must be maintained as a living document with a defined owner, change management process, and regular review cycle."},
                 {q:"Does ISO 27701 certification prove GDPR compliance?", a:"No. ISO 27701 certification does not equal GDPR compliance, but ISO 27701 Annex D provides a direct article-by-article mapping to GDPR covering Articles 5, 6, 7, 13-17, 25, 28, 30, 32, 33, and 35. In practice, ISO 27701 certification is widely accepted by regulators and enterprise customers as strong evidence of GDPR compliance readiness."},
                 {q:"How long does ISO 27701 implementation take?", a:"For organisations starting from ISO 27001 certification, a realistic ISO 27701 implementation timeline runs 6 to 9 months across four phases: gap assessment and scoping (months 1-2), foundation controls including RoPA and processor agreements (months 3-4), operational controls including DPIAs and consent management (months 5-6), and internal audit and certification (months 7-9)."},
@@ -633,7 +633,7 @@ export default function ISO27701Explained() {
           </div>
           <div className="sb-cta">
             <h4>ISO 27701 Ready?</h4>
-            <p>Free assessment ,we map your ISO 27001 ISMS to ISO 27701 and build the PIMS on top.</p>
+            <p>Free assessment — we map your ISO 27001 ISMS to ISO 27701 and build the PIMS on top.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Assessment →</a>
           </div>
         </aside>
