@@ -1,87 +1,60 @@
-// pages/api/capture-lead.js
-// Handles lead form submission → sends email notification only
+import { Resend } from 'resend';
 
-import { Resend } from 'resend'
-
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
+  // Only allow POST
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' })
+    return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, phone, company, resource } = req.body
+  const { name, email, phone, company } = req.body;
 
   // Basic validation
-  if (!name || !email || !phone || !company || !resource) {
-    return res.status(400).json({ error: 'All fields are required' })
-  }
-
-  // Email format check
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  if (!emailRegex.test(email)) {
-    return res.status(400).json({ error: 'Invalid email address' })
+  if (!name || !email) {
+    return res.status(400).json({ error: 'Name and email are required' });
   }
 
   try {
     await resend.emails.send({
-      from: 'SecComply Leads <onboarding@resend.dev>',
-      to: process.env.NOTIFICATION_EMAIL,
-      subject: `🔔 New Lead — ${name} from ${company}`,
+      from: 'SecComply <onboarding@resend.dev>',
+      to: [process.env.NOTIFICATION_EMAIL],
+      subject: `New Lead: ${name} from ${company || 'Unknown Company'}`,
       html: `
-        <div style="font-family:Inter,sans-serif;max-width:560px;margin:0 auto;background:#020617;color:#c8d6e5;border-radius:16px;overflow:hidden;border:1px solid rgba(232,99,43,0.3)">
-          
-          <div style="background:linear-gradient(135deg,#E8632B,#d0521f);padding:28px 32px">
-            <div style="font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:6px">New Lead — SecComply</div>
-            <div style="font-size:22px;font-weight:700;color:#fff">${name}</div>
-            <div style="font-size:14px;color:rgba(255,255,255,0.75);margin-top:4px">${company}</div>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #f9fafb; border-radius: 8px;">
+          <div style="background: #E8632B; padding: 16px 24px; border-radius: 8px 8px 0 0;">
+            <h2 style="color: white; margin: 0; font-size: 20px;">New Lead — SecComply Website</h2>
           </div>
-
-          <div style="padding:28px 32px">
-            <table style="width:100%;border-collapse:collapse">
-              <tr>
-                <td style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:12px;color:#6a8aaa;width:140px">👤 Full Name</td>
-                <td style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px;color:#fff;font-weight:500">${name}</td>
+          <div style="background: white; padding: 24px; border-radius: 0 0 8px 8px; border: 1px solid #e5e7eb;">
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr style="border-bottom: 1px solid #f3f4f6;">
+                <td style="padding: 12px 0; color: #6b7280; font-size: 14px; width: 120px;">Full Name</td>
+                <td style="padding: 12px 0; color: #111827; font-weight: 600; font-size: 14px;">${name}</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #f3f4f6;">
+                <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Work Email</td>
+                <td style="padding: 12px 0; color: #111827; font-weight: 600; font-size: 14px;"><a href="mailto:${email}" style="color: #E8632B;">${email}</a></td>
+              </tr>
+              <tr style="border-bottom: 1px solid #f3f4f6;">
+                <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Phone</td>
+                <td style="padding: 12px 0; color: #111827; font-weight: 600; font-size: 14px;">${phone || '—'}</td>
               </tr>
               <tr>
-                <td style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:12px;color:#6a8aaa">🏢 Company</td>
-                <td style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px;color:#fff;font-weight:500">${company}</td>
-              </tr>
-              <tr>
-                <td style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:12px;color:#6a8aaa">📧 Work Email</td>
-                <td style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px;color:#fff;font-weight:500">${email}</td>
-              </tr>
-              <tr>
-                <td style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:12px;color:#6a8aaa">📞 Phone</td>
-                <td style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px;color:#fff;font-weight:500">${phone}</td>
-              </tr>
-              <tr>
-                <td style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:12px;color:#6a8aaa">📥 Downloaded</td>
-                <td style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px;color:#fff;font-weight:500">${resource}</td>
-              </tr>
-              <tr>
-                <td style="padding:12px 0;font-size:12px;color:#6a8aaa">🕐 Time (IST)</td>
-                <td style="padding:12px 0;font-size:14px;color:#fff;font-weight:500">${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', dateStyle: 'long', timeStyle: 'short' })}</td>
+                <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Company</td>
+                <td style="padding: 12px 0; color: #111827; font-weight: 600; font-size: 14px;">${company || '—'}</td>
               </tr>
             </table>
-
-            <div style="margin-top:24px;padding:16px 20px;background:rgba(232,99,43,0.08);border:1px solid rgba(232,99,43,0.25);border-radius:10px;font-size:13px;color:#c8d6e5">
-              💡 <strong style="color:#E8632B">Reply directly</strong> to this email to follow up — it goes straight to ${email}
+            <div style="margin-top: 24px; padding: 12px 16px; background: #f0fdf4; border: 1px solid #86efac; border-radius: 6px;">
+              <p style="margin: 0; color: #166534; font-size: 13px;">Received: ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })} IST</p>
             </div>
           </div>
-
-          <div style="padding:16px 32px;background:rgba(255,255,255,0.02);border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#6a8aaa;text-align:center">
-            SecComply Lead Capture · seccomply.net
-          </div>
-
         </div>
       `,
-      replyTo: email,
-    })
+    });
 
-    return res.status(200).json({ success: true })
-  } catch (err) {
-    console.error('Lead capture error:', err)
-    return res.status(500).json({ error: 'Something went wrong. Please try again.' })
+    return res.status(200).json({ success: true });
+  } catch (error) {
+    console.error('Resend error:', error);
+    return res.status(500).json({ error: 'Failed to send email' });
   }
 }
