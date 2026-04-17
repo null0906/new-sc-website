@@ -210,7 +210,7 @@ export default function WhoDoesDPDPApplyTo() {
           <defs><pattern id="pg7" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pg7)"/>
           <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DPDP Act Applicability — Industry Snapshots</text>
-          {[("SaaS","Fiduciary + Processor","#E8632B",30,40),("Fintech","Fiduciary","#06d6a0",218,40),("Healthtech","Fiduciary / Processor","#ff4d6d",406,40),("EdTech","Fiduciary / Processor","#ffb703",594,40),("HR Software","Processor for clients","#818cf8",782,40)].map(lambda _: "")}
+          
           <rect x="30" y="38" width="178" height="150" rx="12" fill="#091826" stroke="#E8632B28" strokeWidth="1.5"/>
           <rect x="30" y="38" width="178" height="3" rx="1.5" fill="#E8632B"/>
           <text x="119" y="70" textAnchor="middle" fill="#E8632B" fontSize="13" fontWeight="800" fontFamily="sans-serif">SaaS</text>

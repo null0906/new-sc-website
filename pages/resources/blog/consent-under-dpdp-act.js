@@ -202,7 +202,7 @@ export default function ConsentUnderDPDPAct() {
           <defs><pattern id="pg3" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pg3)"/>
           <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">The 5 Pillars of Valid Consent — Section 6, DPDP Act 2023</text>
-          {[("Free","Not coerced","Must not be condition of service","#818cf8",40),("Specific","Purpose-tied","Granular, not catch-all","#E8632B",226),("Informed","With notice","User understands before consenting","#06d6a0",412),("Unconditional","No bundling","Cannot be take-it-or-leave-it","#ffb703",598),("Unambiguous","Active act","Clear affirmative action required","#ff4d6d",784)].map(lambda _: "")}
+          
           <rect x="40" y="38" width="170" height="200" rx="14" fill="#091826" stroke="#818cf825" strokeWidth="1.5"/>
           <rect x="40" y="38" width="170" height="4" rx="2" fill="#818cf8"/>
           <text x="125" y="78" textAnchor="middle" fill="#818cf8" fontSize="22" fontWeight="800" fontFamily="sans-serif">FREE</text>

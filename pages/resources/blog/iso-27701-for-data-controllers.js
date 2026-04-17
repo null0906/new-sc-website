@@ -209,7 +209,7 @@ export default function ISO27701ForDataControllers() {
           <defs><pattern id="pgc" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pgc)"/>
           <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27701 — Controller Control Areas (Clause 7 + Annex B)</text>
-          {[("Legal Basis","Document basis for each activity","#818cf8",30),("RoPA","Central privacy document","#E8632B",148),("Consent","Obtain, record, allow withdrawal","#06d6a0",266),("Notices","Transparency at collection","#ffb703",384),("Rights","Operational process for all rights","#ff4d6d",502),("Minimisation","Only necessary data","#818cf8",620),("Retention","Defined periods, secure deletion","#E8632B",738),("DPIA","Assess high-risk processing","#06d6a0",856)].map(lambda _: "")}
+          
           {["Legal Basis","RoPA","Consent","Notices","Rights","Minimisation","Retention","DPIA"].map((t,i) => {
             const cols = ['#818cf8','#E8632B','#06d6a0','#ffb703','#ff4d6d','#818cf8','#E8632B','#06d6a0'];
             const descs = ['Document for each activity','Central privacy document','Obtain, record, withdraw','Transparency at collection','Operational process for all','Only necessary data','Defined periods + deletion','Assess high-risk processing'];

@@ -202,7 +202,7 @@ export default function EightRightsDataPrincipals() {
           <defs><pattern id="pg2" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="300" fill="url(#pg2)"/>
           <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">8 Rights of Data Principals — DPDP Act 2023</text>
-          {[("1","Access","§11","#818cf8",30,40),("2","Correction & Erasure","§12","#E8632B",150,40),("3","Grievance Redressal","§13","#06d6a0",270,40),("4","Nominate","§14","#ffb703",390,40),("5","Withdraw Consent","§6","#ff4d6d",510,40),("6","Automated Decisions","Implicit","#818cf8",630,40),("7","Data Portability","Rules","#E8632B",750,40),("8","Breach Notification","§8(6)","#06d6a0",870,40)].map(lambda t: "")}
+          
           <rect x="30" y="35" width="105" height="80" rx="10" fill="#091826" stroke="#818cf825" strokeWidth="1.5"/>
           <rect x="30" y="35" width="105" height="3" rx="1.5" fill="#818cf8"/>
           <text x="82" y="62" textAnchor="middle" fill="#818cf8" fontSize="18" fontWeight="800" fontFamily="sans-serif">1</text>

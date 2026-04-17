@@ -217,7 +217,7 @@ export default function ISO27001AnnexAControls() {
               <text x={x+97} y="108" textAnchor="middle" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">{t}</text>
               <text x={x+97} y="130" textAnchor="middle" fill="rgba(200,214,229,0.4)" fontSize="9" fontFamily="sans-serif">{sub}</text>
               <rect x={x+20} y="150" width="155" height="10" rx="5" fill="rgba(255,255,255,0.05)"/>
-              <rect x={x+20} y="150" width={{155*int(pct.replace('%',''))/100}} height="10" rx="5" fill={col} opacity="0.6"/>
+              <rect x={x+20} y="150" width={155*parseInt(pct)/100} height="10" rx="5" fill={col} opacity="0.6"/>
               <text x={x+97} y="180" textAnchor="middle" fill={col} fontSize="9" fontWeight="700" fontFamily="sans-serif">{pct} of all controls</text>
               <text x={x+97} y="220" textAnchor="middle" fill="rgba(200,214,229,0.35)" fontSize="8.5" fontFamily="sans-serif">{["A.5–A.8","A.6","A.7","A.8"][i]} control range</text>
             </g>

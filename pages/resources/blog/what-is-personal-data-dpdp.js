@@ -213,7 +213,7 @@ export default function WhatIsPersonalDataDPDP() {
           <rect x="30" y="38" width="450" height="240" rx="14" fill="#071820" stroke="rgba(6,214,160,0.25)" strokeWidth="1.5"/>
           <rect x="30" y="38" width="450" height="3" rx="1.5" fill="#06d6a0"/>
           <text x="255" y="65" textAnchor="middle" fill="#06d6a0" fontSize="11" fontWeight="800" fontFamily="sans-serif">✓ IN SCOPE — PERSONAL DATA</text>
-          {[("Identity:","Name, DOB, Aadhaar, PAN, Passport",90),("Contact:","Email, phone, address, IP address",110),("Financial:","Bank details, card numbers, UPI IDs",130),("Health:","Medical records, prescriptions, fitness data",150),("Biometric:","Fingerprints, facial data, iris scans",170),("Behavioural:","Browsing history, purchase patterns",190),("Location:","GPS coordinates, location history",210),("Employment:","Salary, performance reviews, leave records",230)].map(lambda _: "")}
+          
           <text x="55" y="90" fill="#06d6a0" fontSize="9.5" fontWeight="700" fontFamily="sans-serif">Identity:</text>
           <text x="120" y="90" fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">Name, DOB, Aadhaar, PAN, Passport</text>
           <text x="55" y="110" fill="#06d6a0" fontSize="9.5" fontWeight="700" fontFamily="sans-serif">Contact:</text>
