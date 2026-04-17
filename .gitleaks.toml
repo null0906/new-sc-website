@@ -1,0 +1,47 @@
+# ── SecComply — gitleaks.toml ─────────────────────────────────────────────────
+# Security fix C-03: Automated secret detection configuration
+#
+# Install gitleaks:
+#   macOS:   brew install gitleaks
+#   Windows: scoop install gitleaks (or download from github.com/gitleaks/gitleaks)
+#   Linux:   download binary from github.com/gitleaks/gitleaks/releases
+#
+# Usage:
+#   Scan entire repo:     gitleaks detect --source . -v
+#   Scan staged changes:  gitleaks protect --staged -v
+#   Scan a commit range:  gitleaks detect --log-opts="HEAD~5..HEAD"
+
+title = "SecComply Gitleaks Config"
+
+[extend]
+# Use the default gitleaks ruleset as the base
+useDefault = true
+
+# ── Custom rules for SecComply-specific patterns ─────────────────────────────
+
+[[rules]]
+id          = "resend-api-key"
+description = "Resend API Key"
+regex       = '''re_[a-zA-Z0-9]{32,}'''
+tags        = ["resend", "api-key", "secret"]
+
+[[rules]]
+id          = "next-public-secret"
+description = "Potentially exposed secret via NEXT_PUBLIC_ prefix"
+regex       = '''NEXT_PUBLIC_(?i)(key|secret|token|password|api|auth|resend|smtp|db|database|private)'''
+tags        = ["nextjs", "env", "exposure"]
+
+[[rules]]
+id          = "env-file-content"
+description = "Raw API key or secret pattern in source"
+regex       = '''(?i)(resend_api_key|notification_email)\s*=\s*["']?[^\s"']{10,}'''
+tags        = ["env", "secret"]
+
+# ── Files to always ignore ────────────────────────────────────────────────────
+[allowlist]
+description = "Global allowlist"
+paths = [
+  '''.env\.local\.example''',   # Template file — intentionally shows patterns
+  '''gitleaks\.toml''',         # This file
+  '''\.gitleaks\.toml''',
+]
