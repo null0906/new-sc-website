@@ -148,9 +148,8 @@ export default function PrivacyPolicyPage() {
       <h2><span class="policy-section-num">13</span> Contact Us</h2>
       <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please reach out to us:</p>
       <ul>
-        <li><strong>Email:</strong> shivani@seccomply.net</li>
+        <li><strong>Email:</strong> info@seccomply.net</li>
         <li><strong>Website:</strong> seccomply.net</li>
-        <li><strong>Phone:</strong> +91 9860013381</li>
       </ul>
       <div class="policy-note">For grievance redressal under the DPDP Act, you may also contact the Data Protection Board of India.</div>
 
