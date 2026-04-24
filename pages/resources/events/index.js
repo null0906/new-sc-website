@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../../components/Layout'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function EventsIndex() {
+  const [activeTab, setActiveTab] = useState('identityshield')
+
   useEffect(() => {
     try {
       const s = document.createElement('script')
@@ -92,97 +94,117 @@ export default function EventsIndex() {
 
         .event-wrap { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 
-        /* ═══ EVENT CARDS GRID ═══ */
-        .event-cards-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.75rem;
-          margin-bottom: 4rem;
+        /* ═══ TAB BAR ═══ */
+        .events-tabs {
+          display: flex;
+          gap: .5rem;
+          background: var(--surface);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 16px;
+          padding: .65rem;
+          margin-bottom: 2rem;
+          overflow-x: auto;
+          scrollbar-width: none;
         }
-        @media (max-width: 900px) {
-          .event-cards-grid { grid-template-columns: 1fr; }
+        .events-tabs::-webkit-scrollbar { display: none; }
+        .events-tab {
+          flex: 1;
+          min-width: 0;
+          padding: 1rem 1.25rem;
+          background: transparent;
+          border: 1px solid transparent;
+          border-radius: 11px;
+          cursor: pointer;
+          text-align: center;
+          transition: all 0.25s ease;
+          color: var(--text-primary);
+          font-family: inherit;
+          white-space: nowrap;
         }
-        .event-card {
+        .events-tab:hover:not(.active) {
+          background: rgba(255,255,255,0.03);
+        }
+        .events-tab.active {
+          background: rgba(232,99,43,0.08);
+          border-color: var(--accent-border);
+          box-shadow: 0 0 0 1px var(--accent-border), 0 8px 24px rgba(232,99,43,0.12);
+        }
+        .events-tab-title {
+          display: block;
+          font-size: 1rem;
+          font-weight: 800;
+          color: var(--text-primary);
+          margin-bottom: .2rem;
+          letter-spacing: -0.01em;
+        }
+        .events-tab.active .events-tab-title {
+          color: var(--accent);
+        }
+        .events-tab-meta {
+          display: block;
+          font-size: .78rem;
+          color: var(--text-muted);
+          font-weight: 500;
+        }
+        .events-tab.active .events-tab-meta {
+          color: rgba(232,99,43,0.75);
+        }
+        @media (max-width: 700px) {
+          .events-tabs { flex-direction: column; gap: .4rem; }
+          .events-tab { flex: none; text-align: left; }
+        }
+
+        /* ═══ TAB PANEL ═══ */
+        .events-panel {
           background: var(--surface);
           border: 1px solid rgba(255,255,255,0.08);
           border-radius: 20px;
           overflow: hidden;
-          transition: all 0.3s ease;
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          text-decoration: none;
-          color: inherit;
+          margin-bottom: 4rem;
+          animation: fadeIn 0.35s ease;
         }
-        .event-card.clickable { cursor: pointer; }
-        .event-card.clickable:hover {
-          transform: translateY(-8px);
-          border-color: var(--accent-border);
-          box-shadow: 0 25px 60px rgba(0,0,0,0.5), 0 0 0 1px var(--accent-border), 0 0 80px rgba(232,99,43,0.15);
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(8px); }
+          to { opacity: 1; transform: translateY(0); }
         }
-        .event-card.featured {
-          border-color: var(--accent-border);
-          background: linear-gradient(160deg, rgba(232,99,43,0.10) 0%, var(--surface) 60%);
-        }
-        .event-card.featured::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: radial-gradient(circle at top right, rgba(232,99,43,0.12), transparent 60%);
-          pointer-events: none;
-          opacity: 0;
-          transition: opacity 0.4s ease;
-        }
-        .event-card.featured:hover::before { opacity: 1; }
 
-        .event-card-media {
-          aspect-ratio: 16/10;
-          position: relative;
-          overflow: hidden;
-          background: #000;
+        /* Featured event panel — IdentityShield */
+        .panel-featured {
+          display: grid;
+          grid-template-columns: 1.1fr 1fr;
+          gap: 0;
         }
-        .event-card-media img {
+        @media (max-width: 900px) {
+          .panel-featured { grid-template-columns: 1fr; }
+        }
+        .panel-featured-media {
+          position: relative;
+          min-height: 360px;
+          background: #000;
+          overflow: hidden;
+        }
+        .panel-featured-media img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+          position: absolute;
+          inset: 0;
         }
-        .event-card.clickable:hover .event-card-media img { transform: scale(1.08); }
-        .event-card-media::after {
+        .panel-featured-media::after {
           content: '';
           position: absolute;
           inset: 0;
-          background: linear-gradient(180deg, transparent 50%, rgba(10,22,40,0.6) 100%);
+          background: linear-gradient(90deg, transparent 60%, rgba(10,22,40,0.4) 100%);
           pointer-events: none;
         }
-        .event-card-placeholder {
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(135deg, #0a1628 0%, #060f1d 100%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-          overflow: hidden;
+        @media (max-width: 900px) {
+          .panel-featured-media { min-height: 260px; }
         }
-        .event-card-placeholder::before {
-          content: '';
+        .panel-corner-badge {
           position: absolute;
-          inset: 0;
-          background: radial-gradient(circle at 30% 40%, rgba(232,99,43,0.08), transparent 50%),
-                      radial-gradient(circle at 70% 60%, rgba(129,140,248,0.06), transparent 50%);
-        }
-        .event-card-placeholder-icon {
-          font-size: 3.5rem;
-          opacity: 0.35;
-          position: relative;
-          z-index: 2;
-        }
-        .event-card-corner-badge {
-          position: absolute;
-          top: 1rem;
-          left: 1rem;
-          padding: .4rem .85rem;
+          top: 1.25rem;
+          left: 1.25rem;
+          padding: .45rem .9rem;
           border-radius: 8px;
           font-size: .72rem;
           font-weight: 800;
@@ -190,67 +212,156 @@ export default function EventsIndex() {
           letter-spacing: 0.08em;
           z-index: 3;
           backdrop-filter: blur(8px);
-        }
-        .badge-featured {
           background: var(--accent);
           color: white;
           box-shadow: 0 4px 16px rgba(232,99,43,0.4);
         }
-        .badge-upcoming {
-          background: rgba(6,214,160,0.15);
-          color: var(--cy);
-          border: 1px solid rgba(6,214,160,0.4);
-        }
-        .badge-ondemand {
-          background: rgba(129,140,248,0.15);
-          color: var(--bl);
-          border: 1px solid rgba(129,140,248,0.4);
-        }
-        .event-card-body {
-          padding: 1.75rem 1.75rem 1.85rem;
-          flex: 1;
+        .panel-featured-body {
+          padding: 2.5rem 2.25rem;
           display: flex;
           flex-direction: column;
+          justify-content: center;
         }
-        .event-card-date {
-          font-size: .78rem;
+        .panel-date {
+          font-size: .82rem;
           color: var(--accent);
           font-weight: 700;
-          margin-bottom: .65rem;
+          margin-bottom: .85rem;
           text-transform: uppercase;
           letter-spacing: 0.08em;
         }
-        .event-card-body h3 {
-          font-size: 1.35rem;
+        .panel-featured-body h2 {
+          font-size: clamp(1.6rem, 3vw, 2.1rem);
           font-weight: 800;
-          margin: 0 0 .75rem;
-          line-height: 1.25;
-          color: var(--text-primary);
+          margin: 0 0 1rem;
+          letter-spacing: -0.01em;
+          line-height: 1.2;
         }
-        .event-card-body p {
-          font-size: .92rem;
-          color: var(--text-muted);
-          line-height: 1.6;
+        .panel-featured-body p {
+          color: var(--text-body);
+          font-size: 1rem;
+          line-height: 1.65;
           margin: 0 0 1.5rem;
-          flex: 1;
         }
-        .event-card-cta {
+        .panel-meta-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: .6rem;
+          margin-bottom: 1.75rem;
+        }
+        .panel-meta-pill {
           display: inline-flex;
           align-items: center;
           gap: .4rem;
-          color: var(--accent);
-          font-weight: 700;
-          font-size: .9rem;
-          text-decoration: none;
-          margin-top: auto;
-          transition: gap 0.2s ease;
-        }
-        .event-card.clickable:hover .event-card-cta { gap: .8rem; }
-        .event-card-cta-muted {
-          color: var(--text-muted);
+          padding: .45rem .85rem;
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.1);
+          border-radius: 8px;
+          font-size: .82rem;
+          color: var(--text-body);
           font-weight: 600;
-          font-size: .88rem;
-          margin-top: auto;
+        }
+        .panel-cta {
+          display: inline-flex;
+          align-items: center;
+          gap: .5rem;
+          padding: .9rem 1.6rem;
+          background: var(--accent);
+          color: white;
+          border-radius: 10px;
+          font-weight: 700;
+          text-decoration: none;
+          font-size: .95rem;
+          transition: all 0.2s ease;
+          align-self: flex-start;
+        }
+        .panel-cta:hover {
+          background: #D9541F;
+          transform: translateY(-1px);
+          box-shadow: 0 8px 24px rgba(232,99,43,0.3);
+        }
+
+        /* Coming-soon panel */
+        .panel-coming-soon {
+          padding: 4rem 2.5rem;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+        }
+        .panel-coming-soon::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(circle at 30% 30%, rgba(6,214,160,0.06), transparent 55%),
+                      radial-gradient(circle at 70% 70%, rgba(129,140,248,0.05), transparent 55%);
+          pointer-events: none;
+        }
+        .panel-coming-soon.variant-webinar::before {
+          background: radial-gradient(circle at 30% 30%, rgba(129,140,248,0.07), transparent 55%),
+                      radial-gradient(circle at 70% 70%, rgba(232,99,43,0.04), transparent 55%);
+        }
+        .cs-icon {
+          font-size: 3.5rem;
+          margin-bottom: 1.25rem;
+          opacity: 0.85;
+          position: relative;
+        }
+        .cs-tag {
+          display: inline-block;
+          padding: .4rem .9rem;
+          border-radius: 999px;
+          font-size: .72rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          margin-bottom: 1rem;
+          position: relative;
+        }
+        .cs-tag.green {
+          background: rgba(6,214,160,0.12);
+          color: var(--cy);
+          border: 1px solid rgba(6,214,160,0.35);
+        }
+        .cs-tag.violet {
+          background: rgba(129,140,248,0.12);
+          color: var(--bl);
+          border: 1px solid rgba(129,140,248,0.35);
+        }
+        .panel-coming-soon h2 {
+          font-size: clamp(1.6rem, 3vw, 2rem);
+          font-weight: 800;
+          margin: 0 0 .85rem;
+          position: relative;
+          letter-spacing: -0.01em;
+        }
+        .panel-coming-soon > p {
+          color: var(--text-muted);
+          font-size: 1.02rem;
+          line-height: 1.65;
+          max-width: 540px;
+          margin: 0 auto 1.75rem;
+          position: relative;
+        }
+        .cs-notify {
+          display: inline-flex;
+          align-items: center;
+          gap: .5rem;
+          padding: .8rem 1.4rem;
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.12);
+          border-radius: 10px;
+          color: var(--text-primary);
+          text-decoration: none;
+          font-weight: 600;
+          font-size: .9rem;
+          transition: all 0.2s ease;
+          position: relative;
+        }
+        .cs-notify:hover {
+          background: var(--accent-soft);
+          border-color: var(--accent-border);
+          color: var(--accent);
+          transform: translateY(-1px);
         }
 
         .social-connect {
@@ -353,54 +464,94 @@ export default function EventsIndex() {
 
       <div className="event-wrap">
 
-        <div className="event-cards-grid reveal">
+        {/* ═══ TAB BAR ═══ */}
+        <div className="events-tabs reveal" role="tablist">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeTab === 'identityshield'}
+            className={`events-tab ${activeTab === 'identityshield' ? 'active' : ''}`}
+            onClick={() => setActiveTab('identityshield')}
+          >
+            <span className="events-tab-title">IdentityShield '26</span>
+            <span className="events-tab-meta">Past Event · Featured</span>
+          </button>
 
-          {/* Event 1 — IdentityShield '26 (internal detail page) */}
-          <Link href="/resources/events/identityshield-26" className="event-card clickable featured">
-            <div className="event-card-media">
-              <span className="event-card-corner-badge badge-featured">⭐ Featured</span>
-              <img src="/event-images/shivani-podium-1.jpg" alt="Shivani Tikadia speaking at IdentityShield Summit 2026" />
-            </div>
-            <div className="event-card-body">
-              <div className="event-card-date">📅 16-17 January 2026</div>
-              <h3>IdentityShield Summit '26</h3>
-              <p>India's premier AI-powered identity security summit, powered by miniOrange. Our CEO Shivani Tikadia took the arcon stage as a featured speaker.</p>
-              <span className="event-card-cta">Explore the Event →</span>
-            </div>
-          </Link>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeTab === 'upcoming'}
+            className={`events-tab ${activeTab === 'upcoming' ? 'active' : ''}`}
+            onClick={() => setActiveTab('upcoming')}
+          >
+            <span className="events-tab-title">Upcoming Events</span>
+            <span className="events-tab-meta">Coming Soon</span>
+          </button>
 
-          {/* Event 2 — Upcoming Placeholder */}
-          <div className="event-card">
-            <div className="event-card-media">
-              <span className="event-card-corner-badge badge-upcoming">📅 Upcoming</span>
-              <div className="event-card-placeholder">
-                <span className="event-card-placeholder-icon">🎤</span>
-              </div>
-            </div>
-            <div className="event-card-body">
-              <div className="event-card-date" style={{color: 'var(--cy)'}}>🔜 Announcing Soon</div>
-              <h3>More Events Coming</h3>
-              <p>Summits, workshops, and industry roundtables across India and globally. Follow us on LinkedIn to get the schedule first.</p>
-              <span className="event-card-cta-muted">Details coming soon</span>
-            </div>
-          </div>
-
-          {/* Event 3 — Webinars Placeholder */}
-          <div className="event-card">
-            <div className="event-card-media">
-              <span className="event-card-corner-badge badge-ondemand">🎥 On-Demand</span>
-              <div className="event-card-placeholder">
-                <span className="event-card-placeholder-icon">▶️</span>
-              </div>
-            </div>
-            <div className="event-card-body">
-              <div className="event-card-date" style={{color: 'var(--bl)'}}>🎬 Library In Production</div>
-              <h3>Deep-Dive Webinars</h3>
-              <p>ISO 27001, SOC 2, DPDP, GDPR — recorded sessions covering the operational realities of compliance at scale.</p>
-              <span className="event-card-cta-muted">Library launching soon</span>
-            </div>
-          </div>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeTab === 'webinars'}
+            className={`events-tab ${activeTab === 'webinars' ? 'active' : ''}`}
+            onClick={() => setActiveTab('webinars')}
+          >
+            <span className="events-tab-title">On-Demand Webinars</span>
+            <span className="events-tab-meta">Coming Soon</span>
+          </button>
         </div>
+
+        {/* ═══ TAB PANELS ═══ */}
+        {activeTab === 'identityshield' && (
+          <div className="events-panel" key="identityshield" role="tabpanel">
+            <div className="panel-featured">
+              <div className="panel-featured-media">
+                <span className="panel-corner-badge">⭐ Featured</span>
+                <img src="/event-images/shivani-podium-1.jpg" alt="Shivani Tikadia speaking at IdentityShield Summit 2026" />
+              </div>
+              <div className="panel-featured-body">
+                <div className="panel-date">📅 16-17 January 2026</div>
+                <h2>IdentityShield Summit '26</h2>
+                <p>India's premier AI-powered identity security summit, powered by miniOrange. Our CEO Shivani Tikadia took the arcon stage as a featured speaker alongside leaders shaping the future of identity-first cybersecurity.</p>
+                <div className="panel-meta-row">
+                  <span className="panel-meta-pill">📍 India</span>
+                  <span className="panel-meta-pill">🎤 Featured Speaker</span>
+                  <span className="panel-meta-pill">🤝 Powered by miniOrange</span>
+                </div>
+                <Link href="/resources/events/identityshield-26" className="panel-cta">
+                  Explore the Event →
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'upcoming' && (
+          <div className="events-panel" key="upcoming" role="tabpanel">
+            <div className="panel-coming-soon">
+              <div className="cs-icon">🎤</div>
+              <span className="cs-tag green">📅 Announcing Soon</span>
+              <h2>More Events Coming</h2>
+              <p>Summits, workshops, and industry roundtables across India and globally — we are finalising the next set of speaking engagements and partner events. Follow us on LinkedIn to get the schedule first.</p>
+              <a href="https://www.linkedin.com/company/seccomply/" target="_blank" rel="noopener noreferrer" className="cs-notify">
+                💼 Follow on LinkedIn →
+              </a>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'webinars' && (
+          <div className="events-panel" key="webinars" role="tabpanel">
+            <div className="panel-coming-soon variant-webinar">
+              <div className="cs-icon">▶️</div>
+              <span className="cs-tag violet">🎬 Library In Production</span>
+              <h2>Deep-Dive Webinars</h2>
+              <p>ISO 27001, SOC 2, DPDP, GDPR — recorded sessions covering the operational realities of compliance at scale. Our on-demand library is being produced now and will go live shortly.</p>
+              <a href="mailto:info@seccomply.net?subject=Notify%20me%20when%20webinars%20launch" className="cs-notify">
+                ✉️ Notify me at launch →
+              </a>
+            </div>
+          </div>
+        )}
 
         <div className="social-connect reveal">
           <h3>Follow the Journey</h3>
