@@ -73,6 +73,20 @@ const assessments = [
     accentBorder: 'rgba(239, 68, 68, 0.35)',
     href: 'https://forms.gle/SJsgn1BddgKZYFqw8',
     bestFor: 'Anyone running a web app, mobile app, or API exposed to the internet.'
+  },
+  {
+    id: 'hipaa',
+    flag: '⚕️',
+    name: 'HIPAA',
+    fullName: 'Health Insurance Portability & Accountability Act',
+    tagline: 'US privacy and security rules for handling protected health information (PHI).',
+    questions: 10,
+    minutes: '~2 min',
+    accent: '#14b8a6',
+    accentSoft: 'rgba(20, 184, 166, 0.12)',
+    accentBorder: 'rgba(20, 184, 166, 0.35)',
+    href: 'https://forms.gle/LC7M6x2GXJ4ueBAi6',
+    bestFor: 'Healthtech, hospitals, insurers, and any vendor handling US patient or health data.'
   }
 ]
 
@@ -95,9 +109,9 @@ export default function ComplianceGapAssessment() {
       <Head>
         <title>Identify Your Compliance Gaps | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Quick 2-minute assessments across DPDPA, ISO 27001, ISO 27701, SOC 2, and VAPT. Find out exactly which compliance frameworks your organization actually needs." />
+        <meta name="description" content="Quick 2-minute assessments across DPDPA, ISO 27001, ISO 27701, SOC 2, VAPT, and HIPAA. Find out exactly which compliance frameworks your organization actually needs." />
         <meta property="og:title" content="Identify Your Compliance Gaps — SecComply" />
-        <meta property="og:description" content="Free 2-minute assessments to identify your DPDPA, ISO 27001, ISO 27701, SOC 2, and VAPT readiness." />
+        <meta property="og:description" content="Free 2-minute assessments to identify your DPDPA, ISO 27001, ISO 27701, SOC 2, VAPT, and HIPAA readiness." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://seccomply.net/resources/tools/compliance-gap-assessment" />
         <link rel="canonical" href="https://seccomply.net/resources/tools/compliance-gap-assessment" />
@@ -400,9 +414,9 @@ export default function ComplianceGapAssessment() {
       <section className="gap-hero">
         <div className="gap-icon">🎯</div>
         <h1>Identify Your Compliance Gaps</h1>
-        <p>Five quick assessments. Pick the framework that fits your situation, answer 10 yes/no questions, and find out whether you actually need it — before you commit to any audit, certification, or vendor.</p>
+        <p>Six quick assessments. Pick the framework that fits your situation, answer 10 yes/no questions, and find out whether you actually need it — before you commit to any audit, certification, or vendor.</p>
         <div className="meta-row">
-          <span className="meta-pill"><strong>5</strong> frameworks</span>
+          <span className="meta-pill"><strong>6</strong> frameworks</span>
           <span className="meta-pill"><strong>10</strong> questions each</span>
           <span className="meta-pill"><strong>~2 min</strong> per assessment</span>
         </div>
@@ -413,7 +427,7 @@ export default function ComplianceGapAssessment() {
         <div className="info-banner reveal">
           <span className="info-banner-icon">💡</span>
           <p className="info-banner-text">
-            <strong>Not sure where to start?</strong> If you handle Indian user data, begin with DPDPA. If enterprise clients are asking for security proof, start with ISO 27001 or SOC 2. Our team will follow up with a personalised reading once you submit.
+            <strong>Not sure where to start?</strong> If you handle Indian user data, begin with DPDPA. If enterprise clients are asking for security proof, start with ISO 27001 or SOC 2. If you handle US health data, start with HIPAA. Our team will follow up with a personalised reading once you submit.
           </p>
         </div>
 
