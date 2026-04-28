@@ -192,13 +192,14 @@ export default function BoothInfosecMaestros26() {
           overflow: hidden;
         }
         .reward-card::before {
-          content: '🎁';
+          content: '';
           position: absolute;
-          top: -20px;
-          right: -10px;
-          font-size: 4rem;
-          opacity: 0.15;
-          transform: rotate(15deg);
+          top: -60px;
+          right: -60px;
+          width: 200px;
+          height: 200px;
+          background: radial-gradient(circle, rgba(255,183,3,0.12), transparent 60%);
+          pointer-events: none;
         }
         .reward-tag {
           display: inline-flex;
@@ -241,7 +242,7 @@ export default function BoothInfosecMaestros26() {
 
         /* CTA button — primary action */
         .cta-block {
-          margin-bottom: 2rem;
+          margin: 1rem 0 2rem;
           text-align: center;
         }
         .cta-button {
@@ -484,7 +485,6 @@ export default function BoothInfosecMaestros26() {
 
         {/* WELCOME */}
         <div className="welcome-card reveal">
-          <div className="welcome-emoji">👋</div>
           <h1>Welcome to the <em>SecComply Booth</em></h1>
           <p>Glad you stopped by. We are at <strong>InfoSec Maestros 2026</strong> as Strategic Compliance Automation Partner — and we built a quick way for you to walk away with something useful (and a reward).</p>
         </div>
@@ -498,29 +498,15 @@ export default function BoothInfosecMaestros26() {
           <div className="event-chip-body">
             <div className="event-chip-label">About This Event</div>
             <div className="event-chip-title">InfoSec Maestros 2026 · 15th CISO Confex</div>
-            <div className="event-chip-meta">Radisson Blu Plaza, Delhi · Read the full coverage →</div>
+            <div className="event-chip-meta">Radisson Blu Plaza, Delhi · Read the full coverage</div>
           </div>
-          <div className="event-chip-arrow">↗</div>
         </a>
 
         {/* REWARD CALLOUT */}
         <div className="reward-card reveal">
-          <span className="reward-tag">🎁 Booth Exclusive</span>
+          <span className="reward-tag">Booth Exclusive</span>
           <h2>Fill &amp; Win <em>Rewards</em></h2>
           <p>Take 2 minutes to assess your compliance readiness against the framework that matters most to you. Submit the form, show us at the booth, and collect your reward.</p>
-        </div>
-
-        {/* PRIMARY CTA */}
-        <div className="cta-block reveal">
-          <a
-            href="https://seccomply.net/resources/tools/compliance-gap-assessment"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button"
-          >
-            🎯 Start the Assessment →
-          </a>
-          <div className="cta-sub">Opens the framework picker · Takes ~2 minutes</div>
         </div>
 
         {/* STEPS */}
@@ -530,7 +516,7 @@ export default function BoothInfosecMaestros26() {
           <div className="step">
             <div className="step-num"><span>1</span></div>
             <div className="step-body">
-              <h4>Tap the orange button above</h4>
+              <h4>Tap the orange button at the bottom</h4>
               <p>It opens our compliance gap assessment hub in a new tab. Come back here when you are done.</p>
             </div>
           </div>
@@ -591,11 +577,24 @@ export default function BoothInfosecMaestros26() {
 
         {/* REWARD UNLOCK PANEL */}
         <div className={`reward-unlock ${confirmed ? 'is-visible' : ''}`}>
-          <h3>🎉 You're set — head to the booth</h3>
+          <h3>You're set — head to the booth</h3>
           <p>Show this confirmation to any SecComply team member at the booth.</p>
           <div className="reward-instructions">
             <strong>What's next:</strong> Walk over to the SecComply stand on the showcase floor, show your submitted form on your device, collect your reward, and grab a quick photo with the team. See you there!
           </div>
+        </div>
+
+        {/* PRIMARY CTA */}
+        <div className="cta-block reveal">
+          <a
+            href="https://seccomply.net/resources/tools/compliance-gap-assessment"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button"
+          >
+            Start the Assessment
+          </a>
+          <div className="cta-sub">Opens the framework picker · Takes ~2 minutes</div>
         </div>
 
         {/* FOOTER NOTE */}
