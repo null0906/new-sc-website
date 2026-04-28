@@ -4,7 +4,7 @@ import Layout from '../../../components/Layout'
 import { useEffect, useState } from 'react'
 
 export default function EventsIndex() {
-  const [activeTab, setActiveTab] = useState('identityshield')
+  const [activeTab, setActiveTab] = useState('upcoming')
 
   useEffect(() => {
     try {
@@ -25,7 +25,7 @@ export default function EventsIndex() {
         <title>Webinars & Events | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="SecComply at industry-leading cybersecurity events. Explore past events, upcoming appearances, and on-demand webinars covering compliance, ISO 27001, SOC 2, DPDP, and GDPR." />
+        <meta name="description" content="SecComply at industry-leading cybersecurity events. Past events, upcoming appearances, and on-demand webinars covering compliance, ISO 27001, SOC 2, DPDP, and GDPR." />
         <meta property="og:title" content="Webinars & Events — SecComply" />
         <meta property="og:description" content="Catch SecComply at the industry's most influential cybersecurity gatherings." />
         <meta property="og:type" content="website" />
@@ -149,6 +149,22 @@ export default function EventsIndex() {
         .events-tab.active .events-tab-meta {
           color: rgba(232,99,43,0.75);
         }
+        .pulse-dot-tab {
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: var(--cy);
+          margin-right: 5px;
+          vertical-align: middle;
+          box-shadow: 0 0 0 0 rgba(6,214,160,0.6);
+          animation: pulse-tab 1.7s infinite;
+        }
+        @keyframes pulse-tab {
+          0% { box-shadow: 0 0 0 0 rgba(6,214,160,0.6); }
+          70% { box-shadow: 0 0 0 6px rgba(6,214,160,0); }
+          100% { box-shadow: 0 0 0 0 rgba(6,214,160,0); }
+        }
         @media (max-width: 700px) {
           .events-tabs { flex-direction: column; gap: .4rem; }
           .events-tab { flex: none; text-align: left; }
@@ -168,7 +184,7 @@ export default function EventsIndex() {
           to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Featured event panel — IdentityShield */
+        /* Featured event panel */
         .panel-featured {
           display: grid;
           grid-template-columns: 1.1fr 1fr;
@@ -200,6 +216,67 @@ export default function EventsIndex() {
         @media (max-width: 900px) {
           .panel-featured-media { min-height: 260px; }
         }
+
+        /* Visual variant for upcoming event (no photo yet) */
+        .panel-featured-media.upcoming-graphic {
+          background: linear-gradient(160deg, #0a1f3a 0%, #061425 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 2rem;
+        }
+        .panel-featured-media.upcoming-graphic::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(circle at 30% 20%, rgba(232,99,43,0.15), transparent 50%),
+            radial-gradient(circle at 70% 80%, rgba(129,140,248,0.12), transparent 55%);
+        }
+        .upcoming-mark {
+          position: relative;
+          z-index: 2;
+          text-align: center;
+          color: white;
+        }
+        .upcoming-mark .um-day {
+          font-size: 5rem;
+          font-weight: 900;
+          color: var(--accent);
+          line-height: 1;
+          letter-spacing: -0.04em;
+          margin-bottom: -.25rem;
+          text-shadow: 0 4px 30px rgba(232,99,43,0.4);
+        }
+        .upcoming-mark .um-month {
+          font-size: 1.2rem;
+          font-weight: 800;
+          letter-spacing: 0.4em;
+          text-transform: uppercase;
+          margin-bottom: 1.25rem;
+        }
+        .upcoming-mark .um-line {
+          height: 1px;
+          background: linear-gradient(90deg, transparent, var(--accent-border), transparent);
+          margin: 1rem 0;
+        }
+        .upcoming-mark .um-edition {
+          font-size: .7rem;
+          color: var(--text-muted);
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-bottom: .5rem;
+        }
+        .upcoming-mark .um-name {
+          font-size: 1rem;
+          color: var(--text-primary);
+          font-weight: 700;
+          line-height: 1.4;
+          max-width: 280px;
+          margin: 0 auto;
+        }
+
         .panel-corner-badge {
           position: absolute;
           top: 1.25rem;
@@ -216,6 +293,22 @@ export default function EventsIndex() {
           color: white;
           box-shadow: 0 4px 16px rgba(232,99,43,0.4);
         }
+        .panel-corner-badge.upcoming-badge {
+          background: var(--cy);
+          box-shadow: 0 4px 16px rgba(6,214,160,0.4);
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .panel-corner-badge.upcoming-badge::before {
+          content: '';
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: white;
+          animation: pulse-tab 1.7s infinite;
+        }
+
         .panel-featured-body {
           padding: 2.5rem 2.25rem;
           display: flex;
@@ -281,7 +374,7 @@ export default function EventsIndex() {
           box-shadow: 0 8px 24px rgba(232,99,43,0.3);
         }
 
-        /* Coming-soon panel */
+        /* Coming-soon panel (still used for webinars) */
         .panel-coming-soon {
           padding: 4rem 2.5rem;
           text-align: center;
@@ -292,13 +385,9 @@ export default function EventsIndex() {
           content: '';
           position: absolute;
           inset: 0;
-          background: radial-gradient(circle at 30% 30%, rgba(6,214,160,0.06), transparent 55%),
-                      radial-gradient(circle at 70% 70%, rgba(129,140,248,0.05), transparent 55%);
-          pointer-events: none;
-        }
-        .panel-coming-soon.variant-webinar::before {
           background: radial-gradient(circle at 30% 30%, rgba(129,140,248,0.07), transparent 55%),
                       radial-gradient(circle at 70% 70%, rgba(232,99,43,0.04), transparent 55%);
+          pointer-events: none;
         }
         .cs-icon {
           font-size: 3.5rem;
@@ -316,11 +405,6 @@ export default function EventsIndex() {
           letter-spacing: 0.08em;
           margin-bottom: 1rem;
           position: relative;
-        }
-        .cs-tag.green {
-          background: rgba(6,214,160,0.12);
-          color: var(--cy);
-          border: 1px solid rgba(6,214,160,0.35);
         }
         .cs-tag.violet {
           background: rgba(129,140,248,0.12);
@@ -458,8 +542,8 @@ export default function EventsIndex() {
 
       <section className="hero-events">
         <div className="event-icon">🎤</div>
-        <h1>Webinars & Events</h1>
-        <p>Meet SecComply at the industry's most influential cybersecurity gatherings. See where we have been, who we have met, and what is coming next.</p>
+        <h1>Webinars &amp; Events</h1>
+        <p>Meet SecComply at the industry's most influential cybersecurity gatherings. See where we have been, where we are going next, and what is on the way.</p>
       </section>
 
       <div className="event-wrap">
@@ -484,8 +568,8 @@ export default function EventsIndex() {
             className={`events-tab ${activeTab === 'upcoming' ? 'active' : ''}`}
             onClick={() => setActiveTab('upcoming')}
           >
-            <span className="events-tab-title">Upcoming Events</span>
-            <span className="events-tab-meta">Coming Soon</span>
+            <span className="events-tab-title"><span className="pulse-dot-tab"></span>InfoSec Maestros '26</span>
+            <span className="events-tab-meta">Upcoming · Delhi · 8 May</span>
           </button>
 
           <button
@@ -527,21 +611,37 @@ export default function EventsIndex() {
 
         {activeTab === 'upcoming' && (
           <div className="events-panel" key="upcoming" role="tabpanel">
-            <div className="panel-coming-soon">
-              <div className="cs-icon">🎤</div>
-              <span className="cs-tag green">📅 Announcing Soon</span>
-              <h2>More Events Coming</h2>
-              <p>Summits, workshops, and industry roundtables across India and globally — we are finalising the next set of speaking engagements and partner events. Follow us on LinkedIn to get the schedule first.</p>
-              <a href="https://www.linkedin.com/company/seccomply/" target="_blank" rel="noopener noreferrer" className="cs-notify">
-                💼 Follow on LinkedIn →
-              </a>
+            <div className="panel-featured">
+              <div className="panel-featured-media upcoming-graphic">
+                <span className="panel-corner-badge upcoming-badge">Upcoming</span>
+                <div className="upcoming-mark">
+                  <div className="um-day">08</div>
+                  <div className="um-month">MAY</div>
+                  <div className="um-line"></div>
+                  <div className="um-edition">15th Edition</div>
+                  <div className="um-name">CISO &amp; Cyber Pioneers Awards &amp; Confex 2026</div>
+                </div>
+              </div>
+              <div className="panel-featured-body">
+                <div className="panel-date">📅 Friday, 8 May 2026</div>
+                <h2>InfoSec Maestros 2026</h2>
+                <p>SecComply joins the 15th CISO &amp; Cyber Pioneers Awards &amp; Confex as <strong>Strategic Compliance Automation Partner</strong>. Our CEO Shivani Tikadia is on the speaker line-up alongside India's top 100 CISOs, government technology leadership, and the people setting the bar for enterprise security.</p>
+                <div className="panel-meta-row">
+                  <span className="panel-meta-pill">📍 Radisson Blu Plaza, Delhi</span>
+                  <span className="panel-meta-pill">🎤 Speaker + Partner</span>
+                  <span className="panel-meta-pill">🏢 Organised by CIO Axis</span>
+                </div>
+                <Link href="/resources/events/infosec-maestros-26" className="panel-cta">
+                  Explore the Event →
+                </Link>
+              </div>
             </div>
           </div>
         )}
 
         {activeTab === 'webinars' && (
           <div className="events-panel" key="webinars" role="tabpanel">
-            <div className="panel-coming-soon variant-webinar">
+            <div className="panel-coming-soon">
               <div className="cs-icon">▶️</div>
               <span className="cs-tag violet">🎬 Library In Production</span>
               <h2>Deep-Dive Webinars</h2>
