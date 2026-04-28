@@ -908,16 +908,23 @@ export default function InfoSecMaestros26() {
         <h2 className="section-heading">Our CEO on the <em>Speaker Line-up</em></h2>
         <div className="keynote-panel reveal">
           <div className="keynote-image">
-            <img src="/event-images/shivani-podium-1.jpg" alt="Shivani Tikadia, CEO & Founder of SecComply, listed among the eminent speakers at InfoSec Maestros 2026" />
+            <img src="/assets/images/shivani.png" alt="Shivani Tikadia, CEO & Founder of SecComply" />
           </div>
           <div className="keynote-content">
             <h3>Shivani Tikadia</h3>
             <span className="keynote-role">CEO &amp; Founder, SecComply</span>
-            <p>Shivani joins a stage that includes CERT-In leadership, Group CISOs from Boston Consulting Group, Tata Advanced Systems, Genpact, HT Media, Mankind Pharma, J&amp;K Bank, and Samsung R&amp;D — alongside compliance and risk leaders from Grant Thornton Bharat and Ernst &amp; Young.</p>
-            <p>Her perspective at this confex centres on what most CISOs are quietly grappling with — how compliance has shifted from a once-a-year audit exercise to a continuous, automated, evidence-on-demand discipline, and what good looks like when AI is in the loop on both sides of the threat model.</p>
+            <p>
+              Shivani is a seasoned cybersecurity advisor with <strong>10+ years of experience</strong>, trusted by <strong>100+ organisations including 50+ Fortune 500 companies</strong>. She is known for helping businesses translate complex security and compliance requirements into practical, scalable, and business-aligned solutions.
+            </p>
+            <p>
+              At InfoSec Maestros 2026, Shivani joins the speaker line-up alongside CERT-In leadership, Group CISOs from Boston Consulting Group, Tata Advanced Systems, Genpact, HT Media, Mankind Pharma, J&amp;K Bank, and Samsung R&amp;D — sharing the operational reality of modern compliance programmes and what it takes to run one in a regulator-ready way.
+            </p>
             <div className="keynote-quote">
-              "The CISO conversation in 2026 is no longer 'are we compliant' — it is 'can we prove it, today, across every framework that matters, without bringing the engineering team to a halt.' That is the bar."
+              "Compliance is not a checkbox. It is the operating system of trust — and you build it the same way you build any reliable system: with documentation, rehearsal, and honest measurement."
             </div>
+            <p>
+              Beyond consulting, Shivani actively contributes to the cybersecurity ecosystem through her YouTube channel <strong>The Nadkarnees</strong>, where she regularly shares expert insights, discussions, and podcasts on cybersecurity, governance, risk, compliance, and emerging industry trends — bridging the gap between technical security and business leadership.
+            </p>
           </div>
         </div>
 
