@@ -4,7 +4,7 @@ import Layout from '../../../components/Layout'
 import { useEffect, useState } from 'react'
 
 export default function EventsIndex() {
-  const [activeTab, setActiveTab] = useState('upcoming')
+  const [activeTab, setActiveTab] = useState('past')
 
   useEffect(() => {
     try {
@@ -25,7 +25,7 @@ export default function EventsIndex() {
         <title>Webinars & Events | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="SecComply at industry-leading cybersecurity events. Past events, upcoming appearances, and on-demand webinars covering compliance, ISO 27001, SOC 2, DPDP, and GDPR." />
+        <meta name="description" content="SecComply at industry-leading cybersecurity events across India. Past events, upcoming appearances, and on-demand webinars covering compliance, ISO 27001, SOC 2, DPDP, and GDPR." />
         <meta property="og:title" content="Webinars & Events — SecComply" />
         <meta property="og:description" content="Catch SecComply at the industry's most influential cybersecurity gatherings." />
         <meta property="og:type" content="website" />
@@ -172,10 +172,6 @@ export default function EventsIndex() {
 
         /* ═══ TAB PANEL ═══ */
         .events-panel {
-          background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
-          border-radius: 20px;
-          overflow: hidden;
           margin-bottom: 4rem;
           animation: fadeIn 0.35s ease;
         }
@@ -184,11 +180,136 @@ export default function EventsIndex() {
           to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Featured event panel */
+        /* ═══ PAST EVENTS GRID ═══ */
+        .past-events-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem;
+        }
+        @media (max-width: 900px) {
+          .past-events-grid { grid-template-columns: 1fr; }
+        }
+        .past-event-card {
+          background: var(--surface);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 20px;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          text-decoration: none;
+          color: inherit;
+          transition: all 0.3s ease;
+        }
+        .past-event-card:hover {
+          transform: translateY(-4px);
+          border-color: var(--accent-border);
+          box-shadow: 0 18px 42px rgba(0,0,0,0.4), 0 0 0 1px var(--accent-border);
+        }
+        .past-event-media {
+          position: relative;
+          aspect-ratio: 16/9;
+          background: #000;
+          overflow: hidden;
+        }
+        .past-event-media img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          inset: 0;
+          transition: transform 0.5s ease;
+        }
+        .past-event-card:hover .past-event-media img {
+          transform: scale(1.04);
+        }
+        .past-event-corner-badge {
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          padding: .4rem .8rem;
+          border-radius: 8px;
+          font-size: .7rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          z-index: 3;
+          backdrop-filter: blur(8px);
+          background: var(--accent);
+          color: white;
+          box-shadow: 0 4px 16px rgba(232,99,43,0.4);
+        }
+        .past-event-corner-badge.b-attended {
+          background: var(--bl);
+          box-shadow: 0 4px 16px rgba(129,140,248,0.4);
+        }
+        .past-event-body {
+          padding: 1.75rem 1.85rem 1.85rem;
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+        }
+        .past-event-date {
+          font-size: .78rem;
+          color: var(--accent);
+          font-weight: 700;
+          margin-bottom: .65rem;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+        }
+        .past-event-body h3 {
+          font-size: 1.4rem;
+          font-weight: 800;
+          margin: 0 0 .85rem;
+          letter-spacing: -0.01em;
+          line-height: 1.25;
+        }
+        .past-event-body p {
+          color: var(--text-body);
+          font-size: .94rem;
+          line-height: 1.65;
+          margin: 0 0 1.25rem;
+          flex: 1;
+        }
+        .past-event-meta-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: .5rem;
+          margin-bottom: 1.4rem;
+        }
+        .past-event-meta-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: .35rem;
+          padding: .35rem .7rem;
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.1);
+          border-radius: 7px;
+          font-size: .76rem;
+          color: var(--text-body);
+          font-weight: 600;
+        }
+        .past-event-cta {
+          display: inline-flex;
+          align-items: center;
+          gap: .4rem;
+          color: var(--accent);
+          font-weight: 700;
+          font-size: .92rem;
+          margin-top: auto;
+        }
+        .past-event-card:hover .past-event-cta {
+          color: var(--text-primary);
+        }
+
+        /* ═══ UPCOMING (single featured panel) ═══ */
         .panel-featured {
           display: grid;
           grid-template-columns: 1.1fr 1fr;
           gap: 0;
+          background: var(--surface);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 20px;
+          overflow: hidden;
         }
         @media (max-width: 900px) {
           .panel-featured { grid-template-columns: 1fr; }
@@ -199,25 +320,6 @@ export default function EventsIndex() {
           background: #000;
           overflow: hidden;
         }
-        .panel-featured-media img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          position: absolute;
-          inset: 0;
-        }
-        .panel-featured-media::after {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(90deg, transparent 60%, rgba(10,22,40,0.4) 100%);
-          pointer-events: none;
-        }
-        @media (max-width: 900px) {
-          .panel-featured-media { min-height: 260px; }
-        }
-
-        /* Visual variant for upcoming event (no photo yet) */
         .panel-featured-media.upcoming-graphic {
           background: linear-gradient(160deg, #0a1f3a 0%, #061425 100%);
           display: flex;
@@ -276,7 +378,6 @@ export default function EventsIndex() {
           max-width: 280px;
           margin: 0 auto;
         }
-
         .panel-corner-badge {
           position: absolute;
           top: 1.25rem;
@@ -308,7 +409,6 @@ export default function EventsIndex() {
           background: white;
           animation: pulse-tab 1.7s infinite;
         }
-
         .panel-featured-body {
           padding: 2.5rem 2.25rem;
           display: flex;
@@ -374,7 +474,13 @@ export default function EventsIndex() {
           box-shadow: 0 8px 24px rgba(232,99,43,0.3);
         }
 
-        /* Coming-soon panel (still used for webinars) */
+        /* Coming-soon panel */
+        .events-panel-shell {
+          background: var(--surface);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 20px;
+          overflow: hidden;
+        }
         .panel-coming-soon {
           padding: 4rem 2.5rem;
           text-align: center;
@@ -553,12 +659,12 @@ export default function EventsIndex() {
           <button
             type="button"
             role="tab"
-            aria-selected={activeTab === 'identityshield'}
-            className={`events-tab ${activeTab === 'identityshield' ? 'active' : ''}`}
-            onClick={() => setActiveTab('identityshield')}
+            aria-selected={activeTab === 'past'}
+            className={`events-tab ${activeTab === 'past' ? 'active' : ''}`}
+            onClick={() => setActiveTab('past')}
           >
-            <span className="events-tab-title">IdentityShield '26</span>
-            <span className="events-tab-meta">Past Event · Featured</span>
+            <span className="events-tab-title">Past Events</span>
+            <span className="events-tab-meta">Where We Have Been</span>
           </button>
 
           <button
@@ -568,8 +674,8 @@ export default function EventsIndex() {
             className={`events-tab ${activeTab === 'upcoming' ? 'active' : ''}`}
             onClick={() => setActiveTab('upcoming')}
           >
-            <span className="events-tab-title"><span className="pulse-dot-tab"></span>InfoSec Maestros '26</span>
-            <span className="events-tab-meta">Upcoming · Delhi · 8 May</span>
+            <span className="events-tab-title"><span className="pulse-dot-tab"></span>Upcoming Events</span>
+            <span className="events-tab-meta">Where We Are Going Next</span>
           </button>
 
           <button
@@ -585,26 +691,46 @@ export default function EventsIndex() {
         </div>
 
         {/* ═══ TAB PANELS ═══ */}
-        {activeTab === 'identityshield' && (
-          <div className="events-panel" key="identityshield" role="tabpanel">
-            <div className="panel-featured">
-              <div className="panel-featured-media">
-                <span className="panel-corner-badge">⭐ Featured</span>
-                <img src="/event-images/shivani-podium-1.jpg" alt="Shivani Tikadia speaking at IdentityShield Summit 2026" />
-              </div>
-              <div className="panel-featured-body">
-                <div className="panel-date">📅 16-17 January 2026</div>
-                <h2>IdentityShield Summit '26</h2>
-                <p>India's premier AI-powered identity security summit, powered by miniOrange. Our CEO Shivani Tikadia took the arcon stage as a featured speaker alongside leaders shaping the future of identity-first cybersecurity.</p>
-                <div className="panel-meta-row">
-                  <span className="panel-meta-pill">📍 India</span>
-                  <span className="panel-meta-pill">🎤 Featured Speaker</span>
-                  <span className="panel-meta-pill">🤝 Powered by miniOrange</span>
+        {activeTab === 'past' && (
+          <div className="events-panel" key="past" role="tabpanel">
+            <div className="past-events-grid">
+
+              {/* CyberSec India Expo 2026 — most recent first */}
+              <Link href="/resources/events/cybersec-india-expo-26" className="past-event-card">
+                <div className="past-event-media">
+                  <span className="past-event-corner-badge b-attended">⭐ Attended</span>
+                  <img src="/event-images/cybersec-india-26/cybersec-hero.jpeg" alt="SecComply at CyberSec India Expo 2026, Bombay Exhibition Centre, Mumbai" />
                 </div>
-                <Link href="/resources/events/identityshield-26" className="panel-cta">
-                  Explore the Event →
-                </Link>
-              </div>
+                <div className="past-event-body">
+                  <div className="past-event-date">📅 23–24 April 2026</div>
+                  <h3>CyberSec India Expo 2026</h3>
+                  <p>India's flagship cybersecurity trade show — 2nd edition. Two days of CISO conversations, GRC panel discussions, and the people building India's national cyber resilience.</p>
+                  <div className="past-event-meta-row">
+                    <span className="past-event-meta-pill">📍 Mumbai</span>
+                    <span className="past-event-meta-pill">🏢 Bombay Exhibition Centre</span>
+                  </div>
+                  <span className="past-event-cta">Read the Recap →</span>
+                </div>
+              </Link>
+
+              {/* IdentityShield 26 */}
+              <Link href="/resources/events/identityshield-26" className="past-event-card">
+                <div className="past-event-media">
+                  <span className="past-event-corner-badge">⭐ Featured</span>
+                  <img src="/event-images/shivani-podium-1.jpg" alt="Shivani Tikadia speaking at IdentityShield Summit 2026" />
+                </div>
+                <div className="past-event-body">
+                  <div className="past-event-date">📅 16–17 January 2026</div>
+                  <h3>IdentityShield Summit '26</h3>
+                  <p>India's premier AI-powered identity security summit, powered by miniOrange. Our CEO Shivani Tikadia took the arcon stage as a featured speaker alongside leaders shaping the future of identity-first cybersecurity.</p>
+                  <div className="past-event-meta-row">
+                    <span className="past-event-meta-pill">📍 India</span>
+                    <span className="past-event-meta-pill">🎤 Featured Speaker</span>
+                  </div>
+                  <span className="past-event-cta">Explore the Event →</span>
+                </div>
+              </Link>
+
             </div>
           </div>
         )}
@@ -640,7 +766,7 @@ export default function EventsIndex() {
         )}
 
         {activeTab === 'webinars' && (
-          <div className="events-panel" key="webinars" role="tabpanel">
+          <div className="events-panel events-panel-shell" key="webinars" role="tabpanel">
             <div className="panel-coming-soon">
               <div className="cs-icon">▶️</div>
               <span className="cs-tag violet">🎬 Library In Production</span>
