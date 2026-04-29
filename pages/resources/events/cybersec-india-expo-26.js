@@ -365,27 +365,14 @@ export default function CyberSecIndiaExpo26() {
           aspect-ratio: 4/5;
           background: #000;
           transition: transform 0.3s ease;
+          border: 1px solid rgba(255,255,255,0.06);
         }
         .gallery-item:hover { transform: translateY(-4px); }
-        .gallery-item.wide { grid-column: span 2; aspect-ratio: 16/9; }
-        @media (max-width: 800px) { .gallery-item.wide { grid-column: span 2; } }
-        @media (max-width: 500px) { .gallery-item.wide { grid-column: span 1; } }
         .gallery-item img {
           width: 100%;
           height: 100%;
           object-fit: cover;
           display: block;
-        }
-        .gallery-caption {
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          padding: 1rem 1.25rem;
-          background: linear-gradient(180deg, transparent, rgba(0,0,0,0.85));
-          color: white;
-          font-size: .85rem;
-          font-weight: 600;
         }
 
         /* Topics grid */
@@ -656,25 +643,20 @@ export default function CyberSecIndiaExpo26() {
           A few moments from two days at the Bombay Exhibition Centre — panel discussions, conference stages, and the conversations between sessions that often matter the most.
         </p>
         <div className="gallery-wrap reveal">
-          <div className="gallery-item wide">
-            <img src="/event-images/cybersec-india-26/panel-grc.jpeg" alt="Panel discussion: Cyber Resilience by Design — How GRC Enables India's Shift to Threat-Led Security" />
-            <div className="gallery-caption">GRC Panel — "Cyber Resilience by Design"</div>
+          <div className="gallery-item">
+            <img src="/event-images/cybersec-india-26/booth-engagement.jpeg" alt="SecComply team engaging with attendees at the CyberSec India Expo 2026 trade show" />
           </div>
           <div className="gallery-item">
-            <img src="/event-images/cybersec-india-26/team-floor-1.jpeg" alt="SecComply team on the CyberSec India Expo 2026 floor" />
-            <div className="gallery-caption">On the show floor</div>
+            <img src="/event-images/cybersec-india-26/panel-grc.jpeg" alt="GRC panel discussion: Cyber Resilience by Design — How GRC Enables India's Shift to Threat-Led Security" />
           </div>
           <div className="gallery-item">
             <img src="/event-images/cybersec-india-26/conference-stage.jpeg" alt="CyberSec India Expo 2026 conference stage with delegates listening on translation headsets" />
-            <div className="gallery-caption">Conference stage — Microsoft session</div>
           </div>
           <div className="gallery-item">
-            <img src="/event-images/cybersec-india-26/team-floor-2.jpeg" alt="SecComply team networking with attendees at CyberSec India Expo 2026" />
-            <div className="gallery-caption">Hallway conversations</div>
+            <img src="/event-images/cybersec-india-26/team-1.jpeg" alt="SecComply team networking with senior cybersecurity leadership at CyberSec India Expo 2026" />
           </div>
           <div className="gallery-item">
-            <img src="/event-images/cybersec-india-26/booth-engagement.jpeg" alt="SecComply team engaging with exhibitor at the CyberSec India Expo 2026 trade show" />
-            <div className="gallery-caption">Booth engagements</div>
+            <img src="/event-images/cybersec-india-26/team-2.jpeg" alt="SecComply team meeting fellow practitioners at CyberSec India Expo 2026" />
           </div>
         </div>
 
