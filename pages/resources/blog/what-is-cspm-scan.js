@@ -530,7 +530,7 @@ export default function WhatIsCSPMScan() {
 
       <div className="pull-quote">
         <p>"Every single client I've worked with who suffered a cloud breach had a misconfiguration that was technically detectable weeks or months before the incident. The problem was never visibility. It was the absence of continuous, automated enforcement."</p>
-        <cite>— Soham Sawant, Cybersecurity Expert, SecComply</cite>
+        <cite>- Soham Sawant, Cybersecurity Expert, SecComply</cite>
       </div>
 
       <div className="stats-row">

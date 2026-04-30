@@ -187,8 +187,8 @@ export default function GDPRSelfAssessment() {
           <span className="badge badge-bl">📋 Data Privacy</span>
           <span className="badge badge-gr">🚀 Startup Guide</span>
         </div>
-        <h1 className="hero-h1">Does GDPR Apply to Your Business? — <em>A Self-Assessment Guide</em></h1>
-        <p className="hero-sub">There is a question nearly every founder asks in the first fifteen minutes of a compliance call: does GDPR even apply to us? GDPR follows the data subject, not the company. If an EU or UK resident uses your product — you are almost certainly in scope. This 8-question self-assessment tells you exactly where you stand.</p>
+        <h1 className="hero-h1">Does GDPR Apply to Your Business? - <em>A Self-Assessment Guide</em></h1>
+        <p className="hero-sub">There is a question nearly every founder asks in the first fifteen minutes of a compliance call: does GDPR even apply to us? GDPR follows the data subject, not the company. If an EU or UK resident uses your product - you are almost certainly in scope. This 8-question self-assessment tells you exactly where you stand.</p>
 
         <div className="author-strip">
           <div className="avatar">GK</div>
@@ -208,9 +208,9 @@ export default function GDPRSelfAssessment() {
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pgg" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pgg)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">GDPR Self-Assessment — Scoring Guide</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">GDPR Self-Assessment - Scoring Guide</text>
           {[
-            {range:"0–1 YES",label:"Low Scope",desc:"Likely out of scope — verify annually",col:"#6a8aaa",x:50},
+            {range:"0–1 YES",label:"Low Scope",desc:"Likely out of scope - verify annually",col:"#6a8aaa",x:50},
             {range:"2–4 YES",label:"In Scope",desc:"GDPR applies. Build baseline now.",col:"#ffb703",x:280},
             {range:"5–6 YES",label:"High Exposure",desc:"Material gap. Formal assessment needed.",col:"#E8632B",x:520},
             {range:"7–8 YES",label:"Critical",desc:"Regulatory risk is immediate.",col:"#ff4d6d",x:750},
@@ -245,28 +245,28 @@ export default function GDPRSelfAssessment() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>There is a question nearly every founder asks in the first fifteen minutes of a compliance call: <em>"Does GDPR even apply to us?"</em> Sometimes the subtext is anxiety. More often, it is optimism — the hope that because the startup is Indian, American, or Singapore-registered, a European regulation simply does not reach them. It is a reasonable hope. It is also, in most cases, <strong>wrong</strong>. GDPR follows the data subject, not the company.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>There is a question nearly every founder asks in the first fifteen minutes of a compliance call: <em>"Does GDPR even apply to us?"</em> Sometimes the subtext is anxiety. More often, it is optimism - the hope that because the startup is Indian, American, or Singapore-registered, a European regulation simply does not reach them. It is a reasonable hope. It is also, in most cases, <strong>wrong</strong>. GDPR follows the data subject, not the company.</p>
 
           <section id="extraterritorial">
             <h2>The Extraterritorial <em>Reality</em></h2>
             <p>Article 3 of GDPR extends jurisdiction in two ways that matter to every startup:</p>
             <ul>
               <li><strong>Establishment criterion:</strong> If your company has any form of establishment in the EU (an office, a subsidiary, even a single remote employee in France), GDPR applies to all your processing activities.</li>
-              <li><strong>Targeting criterion:</strong> If you offer goods or services to people in the EU/UK, or monitor their behaviour, GDPR applies. Your company can be registered in Pune or Palo Alto — it makes no difference.</li>
+              <li><strong>Targeting criterion:</strong> If you offer goods or services to people in the EU/UK, or monitor their behaviour, GDPR applies. Your company can be registered in Pune or Palo Alto - it makes no difference.</li>
             </ul>
-            <p>The targeting criterion is where most startups trip. "Offering goods or services" does not require an EU subsidiary. It requires intent — and intent is inferred from behaviour:</p>
+            <p>The targeting criterion is where most startups trip. "Offering goods or services" does not require an EU subsidiary. It requires intent - and intent is inferred from behaviour:</p>
             <ul>
               <li>Your website accepts EUR or GBP as a payment currency</li>
               <li>Your pricing page has a country dropdown that includes EU member states</li>
               <li>You run paid advertising targeted at users in Germany, France, or the Netherlands</li>
               <li>Your copy is translated into German, French, Spanish, Italian, or Dutch</li>
-              <li>Your SaaS platform is used by EU-based customers — even through a US reseller</li>
+              <li>Your SaaS platform is used by EU-based customers - even through a US reseller</li>
             </ul>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>The Frictionless Trap</strong>
-                <p>The modern SaaS stack is effectively a GDPR-scope machine. The moment you deploy Google Analytics, Meta Pixel, HubSpot forms, Intercom chat, or Stripe checkout — and an EU visitor lands on your site — you have started collecting personal data from an EU subject. There is no signup required. The data subject does not have to be a customer. They just have to visit. This is why the "we are not live in Europe yet" defence rarely works.</p>
+                <p>The modern SaaS stack is effectively a GDPR-scope machine. The moment you deploy Google Analytics, Meta Pixel, HubSpot forms, Intercom chat, or Stripe checkout - and an EU visitor lands on your site - you have started collecting personal data from an EU subject. There is no signup required. The data subject does not have to be a customer. They just have to visit. This is why the "we are not live in Europe yet" defence rarely works.</p>
               </div>
             </div>
           </section>
@@ -276,22 +276,22 @@ export default function GDPRSelfAssessment() {
             <p>Work through these honestly. At the end, count your YES answers and check the scoring band.</p>
 
             <h3>Q1: Do you have any users, customers, or visitors from the EU or UK?</h3>
-            <p>Check your analytics. Not your target market — your <strong>actual traffic and signup data</strong>. GDPR has no minimum threshold. Ten EU users counts the same as ten million when it comes to jurisdiction.</p>
+            <p>Check your analytics. Not your target market - your <strong>actual traffic and signup data</strong>. GDPR has no minimum threshold. Ten EU users counts the same as ten million when it comes to jurisdiction.</p>
 
             <h3>Q2: Do you use third-party tools that process data from EU users?</h3>
-            <p>If your CRM, email platform, analytics, payment processor, or cloud storage touches EU personal data — you are responsible for the chain. You need a DPA with every one of them.</p>
+            <p>If your CRM, email platform, analytics, payment processor, or cloud storage touches EU personal data - you are responsible for the chain. You need a DPA with every one of them.</p>
 
             <h3>Q3: Do you process special category data?</h3>
-            <p>Health data, biometric identifiers, genetic data, racial/ethnic origin, political opinions, religious beliefs, sexual orientation, trade union membership. If your product touches any — even incidentally — you almost certainly need a DPIA.</p>
+            <p>Health data, biometric identifiers, genetic data, racial/ethnic origin, political opinions, religious beliefs, sexual orientation, trade union membership. If your product touches any - even incidentally - you almost certainly need a DPIA.</p>
 
             <h3>Q4: Do you transfer data outside the EU/UK?</h3>
-            <p>If your servers are in AWS us-east-1, your analytics in Google Cloud Iowa, or your support tool has its primary database in the US — you are transferring data internationally. You need Standard Contractual Clauses and likely a Transfer Impact Assessment.</p>
+            <p>If your servers are in AWS us-east-1, your analytics in Google Cloud Iowa, or your support tool has its primary database in the US - you are transferring data internationally. You need Standard Contractual Clauses and likely a Transfer Impact Assessment.</p>
 
             <h3>Q5: Do you rely on consent as your primary legal basis?</h3>
-            <p>If your answer is "yes, we have a checkbox on signup," you are probably non-compliant. Valid GDPR consent is specific, granular, informed, and freely withdrawable — per processing purpose. Bundled consent is invalid.</p>
+            <p>If your answer is "yes, we have a checkbox on signup," you are probably non-compliant. Valid GDPR consent is specific, granular, informed, and freely withdrawable - per processing purpose. Bundled consent is invalid.</p>
 
             <h3>Q6: Can you locate, export, and delete a specific user data within 30 days?</h3>
-            <p>A Subject Access Request is not a legal event — it is an engineering event. Can your team today pull every row relating to a single user across production, backups, analytics, CRM, support, and email?</p>
+            <p>A Subject Access Request is not a legal event - it is an engineering event. Can your team today pull every row relating to a single user across production, backups, analytics, CRM, support, and email?</p>
 
             <h3>Q7: Do you have a documented breach notification procedure?</h3>
             <p>72 hours from becoming aware of a breach, you must notify the supervisory authority. That clock does not wait for your legal review, your PR team, or your CEO returning from holiday.</p>
@@ -301,12 +301,12 @@ export default function GDPRSelfAssessment() {
           </section>
 
           <section id="scoring">
-            <h2>Your Score — <em>What It Means</em></h2>
+            <h2>Your Score - <em>What It Means</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Score</th><th>Signal</th><th>Recommended Action</th></tr></thead>
                 <tbody>
-                  {[['0–1 YES','Low Scope','Likely out of scope — but verify annually. Circumstances change.'],['2–4 YES','In Scope','GDPR applies. Build baseline compliance now — data mapping, DPAs, privacy notice.'],['5–6 YES','High Exposure','Material compliance gap. Prioritise a formal readiness assessment within 30 days.'],['7–8 YES','Critical','Regulatory risk is immediate. Engage a DPO or external GRC partner this quarter.']].map(([s,si,a],i)=>(<tr key={i}><td style={{color:['var(--tm)','#ffb703','var(--cy)','#ff4d6d'][i],fontWeight:700}}>{s}</td><td>{si}</td><td>{a}</td></tr>))}
+                  {[['0–1 YES','Low Scope','Likely out of scope - but verify annually. Circumstances change.'],['2–4 YES','In Scope','GDPR applies. Build baseline compliance now - data mapping, DPAs, privacy notice.'],['5–6 YES','High Exposure','Material compliance gap. Prioritise a formal readiness assessment within 30 days.'],['7–8 YES','Critical','Regulatory risk is immediate. Engage a DPO or external GRC partner this quarter.']].map(([s,si,a],i)=>(<tr key={i}><td style={{color:['var(--tm)','#ffb703','var(--cy)','#ff4d6d'][i],fontWeight:700}}>{s}</td><td>{si}</td><td>{a}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -318,7 +318,7 @@ export default function GDPRSelfAssessment() {
               <table className="data-table">
                 <thead><tr><th>The Myth</th><th>The Reality</th></tr></thead>
                 <tbody>
-                  {[['"We are under 250 employees, so the SMB exemption applies."','There is no SMB exemption. Article 30 record-keeping relief for under 250 employees has narrow carve-outs and almost never applies for tech companies.'],['"We only process B2B data — no consumers."','B2B contact data is still personal data. A named employee work email is GDPR-covered. This is the most-fined misconception.'],['"We do not sell user data, so we are fine."','GDPR is about processing, not selling. Collecting, storing, analysing, sharing with vendors — each needs a legal basis.'],['"Our users accepted the terms — that is consent."','Bundled consent inside T&Cs is invalid. Consent must be specific, granular, and separable from other terms. Article 7 is not negotiable.'],['"We are pre-revenue, regulators will not bother."','Complaints often originate from users, not regulators. A single disgruntled EU user filing with their DPA triggers an investigation regardless of your ARR.']].map(([m,r],i)=>(<tr key={i}><td style={{color:'#ff4d6d'}}>{m}</td><td>{r}</td></tr>))}
+                  {[['"We are under 250 employees, so the SMB exemption applies."','There is no SMB exemption. Article 30 record-keeping relief for under 250 employees has narrow carve-outs and almost never applies for tech companies.'],['"We only process B2B data - no consumers."','B2B contact data is still personal data. A named employee work email is GDPR-covered. This is the most-fined misconception.'],['"We do not sell user data, so we are fine."','GDPR is about processing, not selling. Collecting, storing, analysing, sharing with vendors - each needs a legal basis.'],['"Our users accepted the terms - that is consent."','Bundled consent inside T&Cs is invalid. Consent must be specific, granular, and separable from other terms. Article 7 is not negotiable.'],['"We are pre-revenue, regulators will not bother."','Complaints often originate from users, not regulators. A single disgruntled EU user filing with their DPA triggers an investigation regardless of your ARR.']].map(([m,r],i)=>(<tr key={i}><td style={{color:'#ff4d6d'}}>{m}</td><td>{r}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -328,26 +328,26 @@ export default function GDPRSelfAssessment() {
             <h2>The 30-Day <em>Action Plan</em></h2>
             <h3>Week 1: Discover</h3>
             <ul>
-              <li><strong>Map your data flows.</strong> List every place personal data enters, lives, and exits your product — production DB, warehouse, analytics, email platform, CRM, support, backups.</li>
+              <li><strong>Map your data flows.</strong> List every place personal data enters, lives, and exits your product - production DB, warehouse, analytics, email platform, CRM, support, backups.</li>
               <li><strong>Inventory your subprocessors.</strong> Every third-party tool that touches personal data. Check each for a publicly available DPA.</li>
               <li><strong>Identify your data categories.</strong> Flag anything that qualifies as special category.</li>
             </ul>
             <h3>Week 2: Document</h3>
             <ul>
-              <li>Write or rewrite your <strong>privacy notice</strong> to reflect actual data flows — not template language.</li>
+              <li>Write or rewrite your <strong>privacy notice</strong> to reflect actual data flows - not template language.</li>
               <li>Document a <strong>legal basis for each processing activity</strong>. Default to contract necessity or legitimate interests where defensible.</li>
               <li><strong>Sign DPAs</strong> with every subprocessor. Where the vendor does not offer one, flag for replacement.</li>
             </ul>
             <h3>Week 3: Operationalise</h3>
             <ul>
-              <li>Build an <strong>in-product path for user rights</strong> — export, rectification, deletion. Not a support-email-only workflow.</li>
+              <li>Build an <strong>in-product path for user rights</strong> - export, rectification, deletion. Not a support-email-only workflow.</li>
               <li>Write a <strong>72-hour breach notification playbook</strong>. Name the on-call owner. Test with a tabletop exercise.</li>
-              <li>Implement a <strong>retention schedule</strong> with technical enforcement — automated deletion, not policy on paper.</li>
+              <li>Implement a <strong>retention schedule</strong> with technical enforcement - automated deletion, not policy on paper.</li>
             </ul>
             <h3>Week 4: Verify</h3>
             <ul>
               <li>Run a <strong>tabletop SAR drill</strong>. Pick a real user. Can you produce their full data package in under a week?</li>
-              <li>Commission an <strong>independent assessment</strong> — formal gap analysis or continuous GRC platform.</li>
+              <li>Commission an <strong>independent assessment</strong> - formal gap analysis or continuous GRC platform.</li>
               <li>Set a <strong>review cadence</strong>. GDPR posture drifts every time you add a vendor or a feature.</li>
             </ul>
             <p>Startups that treat GDPR as an engineering problem rather than a legal one close enterprise deals meaningfully faster. The same controls that satisfy a regulator are the first questions a Fortune 500 procurement team asks. For the full comparison of GDPR vs India DPDP Act, read our <a href="https://seccomply.net/resources/blog/gdpr-vs-dpdp" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>GDPR vs DPDP Act guide</a>.</p>
@@ -355,7 +355,7 @@ export default function GDPRSelfAssessment() {
 
           <div className="cta-banner">
             <h3>Not Sure Where You Stand on GDPR?</h3>
-            <p>SecComply maps your data flows, vendor risks, and compliance gaps across your real product infrastructure — continuously, not just before an audit.</p>
+            <p>SecComply maps your data flows, vendor risks, and compliance gaps across your real product infrastructure - continuously, not just before an audit.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free GDPR Consultation →</a>
             </div>
@@ -371,7 +371,7 @@ export default function GDPRSelfAssessment() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Does GDPR apply to startups outside the EU?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. GDPR applies based on where your users are located, not where your company is incorporated. If you offer goods or services to EU/UK residents or monitor their behaviour (analytics, cookies), you are in scope — regardless of your company registration, server location, or revenue.</p></div>
+              <div className="faq-a"><p>Yes. GDPR applies based on where your users are located, not where your company is incorporated. If you offer goods or services to EU/UK residents or monitor their behaviour (analytics, cookies), you are in scope - regardless of your company registration, server location, or revenue.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is there an SMB exemption from GDPR?</strong><span className="faq-ch">▾</span></div>
@@ -379,7 +379,7 @@ export default function GDPRSelfAssessment() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can a single EU user trigger GDPR obligations?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. GDPR has no minimum threshold for the number of EU data subjects. In principle, even one EU user brings you into scope. The practical enforcement risk scales with volume and severity — but the legal obligation exists from the first EU data subject.</p></div>
+              <div className="faq-a"><p>Yes. GDPR has no minimum threshold for the number of EU data subjects. In principle, even one EU user brings you into scope. The practical enforcement risk scales with volume and severity - but the legal obligation exists from the first EU data subject.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>We only process B2B data. Are we exempt from GDPR?</strong><span className="faq-ch">▾</span></div>
@@ -387,7 +387,7 @@ export default function GDPRSelfAssessment() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What happens if we score 7-8 on the self-assessment?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>A score of 7-8 indicates critical regulatory risk. You likely have material gaps across multiple GDPR obligations — data flows, legal basis, vendor agreements, user rights, and breach notification. The recommended action is to engage a Data Protection Officer or external GRC partner within the current quarter to begin a formal readiness programme.</p></div>
+              <div className="faq-a"><p>A score of 7-8 indicates critical regulatory risk. You likely have material gaps across multiple GDPR obligations - data flows, legal basis, vendor agreements, user rights, and breach notification. The recommended action is to engage a Data Protection Officer or external GRC partner within the current quarter to begin a formal readiness programme.</p></div>
             </div>
 
           </section>
@@ -422,7 +422,7 @@ export default function GDPRSelfAssessment() {
           </div>
           <div className="sb-cta">
             <h4>Need GDPR Compliance Help?</h4>
-            <p>From gap assessment to audit — we handle the entire GDPR compliance journey.</p>
+            <p>From gap assessment to audit - we handle the entire GDPR compliance journey.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

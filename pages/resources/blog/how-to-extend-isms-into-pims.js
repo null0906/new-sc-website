@@ -25,19 +25,19 @@ export default function HowToExtendISMSIntoPIMS() {
   return (
     <Layout>
       <Head>
-        <title>How to Extend Your ISMS Into a PIMS — ISO 27001 + ISO 27701 | SecComply</title>
+        <title>How to Extend Your ISMS Into a PIMS - ISO 27001 + ISO 27701 | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
         <meta name="description" content="Most organisations with ISO 27001 have done 50-70% of the work for ISO 27701 already. Here is the 7-step extension process, the documentation auditors expect, and combined vs phased certification." />
         <meta name="keywords" content="extend ISMS to PIMS, ISO 27001 to ISO 27701, ISMS PIMS extension, ISO 27701 implementation existing ISMS, combined ISO 27001 27701 certification, PIMS gap assessment, privacy management system" />
-        <meta property="og:title" content="How to Extend Your ISMS Into a PIMS — ISO 27001 + ISO 27701" />
+        <meta property="og:title" content="How to Extend Your ISMS Into a PIMS - ISO 27001 + ISO 27701" />
         <meta property="og:description" content="Most organisations with ISO 27001 have done 50-70% of the work for ISO 27701 already. Here is the 7-step extension process, the documentation auditors expect, and combined vs phased certification." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/how-to-extend-isms-into-pims" />
         <meta property="article:published_time" content="2026-04-01" />
         <meta property="article:author" content="Bhumika Deshmukh" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/how-to-extend-isms-into-pims" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to Extend Your ISMS Into a PIMS — ISO 27001 + ISO 27701","description":"Most organisations with ISO 27001 have done 50-70% of the work for ISO 27701. Here is the 7-step extension process and the combined vs phased certification decision.","author":{"@type":"Person","name":"Bhumika Deshmukh","jobTitle":"Cybersecurity Analyst & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/how-to-extend-isms-into-pims","articleSection":"ISO 27701"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Extend ISMS to PIMS","item":"https://seccomply.net/resources/blog/how-to-extend-isms-into-pims"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to Extend Your ISMS Into a PIMS - ISO 27001 + ISO 27701","description":"Most organisations with ISO 27001 have done 50-70% of the work for ISO 27701. Here is the 7-step extension process and the combined vs phased certification decision.","author":{"@type":"Person","name":"Bhumika Deshmukh","jobTitle":"Cybersecurity Analyst & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/how-to-extend-isms-into-pims","articleSection":"ISO 27701"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Extend ISMS to PIMS","item":"https://seccomply.net/resources/blog/how-to-extend-isms-into-pims"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -184,7 +184,7 @@ export default function HowToExtendISMSIntoPIMS() {
         <div className="badges">
           <span className="badge badge-cy">🔐 ISO 27701</span><span className="badge badge-bl">🛡️ ISO 27001</span><span className="badge badge-gr">✅ PIMS Extension</span>
         </div>
-        <h1 className="hero-h1">How to Extend Your ISMS Into a PIMS — <em>ISO 27001 + ISO 27701</em></h1>
+        <h1 className="hero-h1">How to Extend Your ISMS Into a PIMS - <em>ISO 27001 + ISO 27701</em></h1>
         <p className="hero-sub">Most organisations with ISO 27001 have already done 50–70% of the work for ISO 27701. This guide explains what the extension involves, the 7-step process, the documentation auditors expect, and whether to pursue combined or phased certification.</p>
 
         <div className="author-strip">
@@ -205,7 +205,7 @@ export default function HowToExtendISMSIntoPIMS() {
           <svg viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pge" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="300" fill="url(#pge)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Extending Your ISMS Into a PIMS — What ISO 27001 Covers vs What It Does Not</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Extending Your ISMS Into a PIMS - What ISO 27001 Covers vs What It Does Not</text>
           <rect x="30" y="38" width="440" height="230" rx="14" fill="#071820" stroke="rgba(6,214,160,0.25)" strokeWidth="1.5"/>
           <rect x="30" y="38" width="440" height="4" rx="2" fill="#06d6a0"/>
           <text x="250" y="65" textAnchor="middle" fill="#06d6a0" fontSize="11" fontWeight="800" fontFamily="sans-serif">✓ WHAT ISO 27001 ALREADY COVERS</text>
@@ -219,7 +219,7 @@ export default function HowToExtendISMSIntoPIMS() {
           {["Legal basis for personal data processing","PII-specific purpose limitation and minimisation","Data subject rights (access, erasure, portability)","Privacy notices and consent management","Privacy Impact Assessments (PIAs / DPIAs)","Retention and disposal schedules for PII","Controller-processor contractual requirements"].map((t,i)=>(<text key={i} x="535" y={90+i*22} fill="rgba(200,214,229,0.6)" fontSize="10" fontFamily="sans-serif">✗ {t}</text>))}
           <rect x="530" y="250" width="380" height="8" rx="4" fill="#E8632B" opacity="0.15"/>
           <rect x="530" y="250" width="130" height="8" rx="4" fill="#E8632B" opacity="0.5"/>
-          <text x="720" y="270" textAnchor="middle" fill="#E8632B" fontSize="8" fontWeight="700" fontFamily="sans-serif">~30–50% new work required — mostly documentation and process</text>
+          <text x="720" y="270" textAnchor="middle" fill="#E8632B" fontSize="8" fontWeight="700" fontFamily="sans-serif">~30–50% new work required - mostly documentation and process</text>
           <text x="480" y="295" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">The gap is not as large as it looks. Most missing elements build on infrastructure that already exists in a mature ISMS.</text>
         </svg>
         </div>
@@ -228,7 +228,7 @@ export default function HowToExtendISMSIntoPIMS() {
           <div className="toc-lbl">In This Article</div>
           <div className="toc-grid">
             <a href="#what-adds">What ISO 27701 Actually Adds</a>
-            <a href="#coverage-gap">What Your ISMS Covers — And What It Does Not</a>
+            <a href="#coverage-gap">What Your ISMS Covers - And What It Does Not</a>
             <a href="#seven-steps">The 7 Steps to Extend Your ISMS</a>
             <a href="#documentation">Documentation Auditors Expect</a>
             <a href="#combined-vs-phased">Combined vs Phased Certification</a>
@@ -241,20 +241,20 @@ export default function HowToExtendISMSIntoPIMS() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Most organisations that have achieved ISO 27001 certification have spent months building something valuable: a working Information Security Management System. What many have not yet done is extend that work to cover privacy. <strong>ISO 27701 exists precisely to close that gap.</strong> It is not a separate standard that replaces your ISMS — it is a privacy extension that sits on top of it, adding the controls, processes, and accountability structures needed to manage personal data with the same rigour you already apply to information security.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Most organisations that have achieved ISO 27001 certification have spent months building something valuable: a working Information Security Management System. What many have not yet done is extend that work to cover privacy. <strong>ISO 27701 exists precisely to close that gap.</strong> It is not a separate standard that replaces your ISMS - it is a privacy extension that sits on top of it, adding the controls, processes, and accountability structures needed to manage personal data with the same rigour you already apply to information security.</p>
 
           <section id="what-adds">
             <h2>What ISO 27701 <em>Actually Adds</em></h2>
-            <p>ISO 27701 is formally titled the Privacy Information Management System (PIMS) standard. Published in 2019 as an extension to both ISO 27001 and ISO 27002, its purpose is to help organisations demonstrate accountability for personal data — both as controllers and as processors. The additions fall into three areas:</p>
+            <p>ISO 27701 is formally titled the Privacy Information Management System (PIMS) standard. Published in 2019 as an extension to both ISO 27001 and ISO 27002, its purpose is to help organisations demonstrate accountability for personal data - both as controllers and as processors. The additions fall into three areas:</p>
             <ul>
-              <li><strong>Extended requirements on ISO 27001 Clauses 4–10</strong> — the core management system clauses — with privacy-specific additions at each stage.</li>
+              <li><strong>Extended requirements on ISO 27001 Clauses 4–10</strong> - the core management system clauses - with privacy-specific additions at each stage.</li>
               <li><strong>PIMS-specific control guidance</strong> extending ISO 27002 Annex A with privacy considerations, plus new controls covering PII handling, purpose limitation, data subject rights, and third-party data sharing.</li>
               <li><strong>Separate guidance for controllers and processors</strong>, recognising that accountability looks different depending on your role in each processing activity.</li>
             </ul>
           </section>
 
           <section id="coverage-gap">
-            <h2>What Your ISMS Covers — <em>And What It Does Not</em></h2>
+            <h2>What Your ISMS Covers - <em>And What It Does Not</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>✓ ISO 27001 Covers</th><th>✗ ISO 27001 Does Not Address</th></tr></thead>
@@ -269,48 +269,48 @@ export default function HowToExtendISMSIntoPIMS() {
           <section id="seven-steps">
             <h2>The 7 Steps to <em>Extend Your ISMS Into a PIMS</em></h2>
             <ul>
-              <li><strong>Step 1 — Privacy-specific gap assessment:</strong> Map your current ISMS against ISO 27701 additional requirements. Identify what is satisfied, what is partially covered, what is genuinely absent. This gap register becomes your implementation roadmap.</li>
-              <li><strong>Step 2 — Define your role (controller, processor, or both):</strong> ISO 27701 has separate control sets for each role. Many organisations are controllers in some contexts and processors in others — your PIMS needs to reflect that reality.</li>
-              <li><strong>Step 3 — Extend your asset inventory to cover PII:</strong> Your ISMS already has an asset inventory. Extend it to include a Record of Processing Activities (RoPA) — documenting what personal data you hold, why, the legal basis, sources, recipients, and retention periods. This is one of the most time-consuming steps and one of the most valuable.</li>
-              <li><strong>Step 4 — Update risk management to include privacy risks:</strong> Extend your risk assessment methodology with PII-specific categories: unlawful processing, excessive retention, inadequate consent, unauthorised third-party transfer. Run a privacy-focused risk assessment against your processing activities.</li>
-              <li><strong>Step 5 — Develop PIMS policies and procedures:</strong> At minimum: Privacy Policy (internal), Data Subject Rights procedure, DPIA procedure, Privacy by Design checklist, data breach procedure with PII elements, retention and disposal schedule, and controller-processor contract templates.</li>
-              <li><strong>Step 6 — Implement PIMS-specific controls:</strong> Annex B extends ISO 27002 controls with privacy guidance. Annex C and D add controls unique to controllers and processors. Most can be implemented as extensions to existing controls.</li>
-              <li><strong>Step 7 — Integrate PIMS into your audit and review cycle:</strong> A single, integrated management system — not two parallel systems. Update your internal audit programme, add privacy metrics to management review, and ensure your PIMS has a named owner.</li>
+              <li><strong>Step 1 - Privacy-specific gap assessment:</strong> Map your current ISMS against ISO 27701 additional requirements. Identify what is satisfied, what is partially covered, what is genuinely absent. This gap register becomes your implementation roadmap.</li>
+              <li><strong>Step 2 - Define your role (controller, processor, or both):</strong> ISO 27701 has separate control sets for each role. Many organisations are controllers in some contexts and processors in others - your PIMS needs to reflect that reality.</li>
+              <li><strong>Step 3 - Extend your asset inventory to cover PII:</strong> Your ISMS already has an asset inventory. Extend it to include a Record of Processing Activities (RoPA) - documenting what personal data you hold, why, the legal basis, sources, recipients, and retention periods. This is one of the most time-consuming steps and one of the most valuable.</li>
+              <li><strong>Step 4 - Update risk management to include privacy risks:</strong> Extend your risk assessment methodology with PII-specific categories: unlawful processing, excessive retention, inadequate consent, unauthorised third-party transfer. Run a privacy-focused risk assessment against your processing activities.</li>
+              <li><strong>Step 5 - Develop PIMS policies and procedures:</strong> At minimum: Privacy Policy (internal), Data Subject Rights procedure, DPIA procedure, Privacy by Design checklist, data breach procedure with PII elements, retention and disposal schedule, and controller-processor contract templates.</li>
+              <li><strong>Step 6 - Implement PIMS-specific controls:</strong> Annex B extends ISO 27002 controls with privacy guidance. Annex C and D add controls unique to controllers and processors. Most can be implemented as extensions to existing controls.</li>
+              <li><strong>Step 7 - Integrate PIMS into your audit and review cycle:</strong> A single, integrated management system - not two parallel systems. Update your internal audit programme, add privacy metrics to management review, and ensure your PIMS has a named owner.</li>
             </ul>
           </section>
 
           <section id="documentation">
             <h2>The Documentation <em>Auditors Will Expect</em></h2>
             <ul>
-              <li>Record of Processing Activities (RoPA) — complete and reviewed</li>
-              <li>Privacy Policy — internal version, signed and dated</li>
+              <li>Record of Processing Activities (RoPA) - complete and reviewed</li>
+              <li>Privacy Policy - internal version, signed and dated</li>
               <li>Data Subject Rights procedure with documented response timelines</li>
               <li>DPIA procedure and completed DPIA records for high-risk processing</li>
               <li>Privacy by Design checklist for new projects</li>
               <li>Controller-processor contracts with all relevant vendors</li>
               <li>Data breach procedure with PII-specific notification steps</li>
               <li>Consent management records (where processing relies on consent)</li>
-              <li>Data retention schedule — covering all categories of personal data</li>
-              <li>Privacy risk register — linked to your main ISMS risk register</li>
-              <li>Training records — privacy awareness training for all relevant staff</li>
-              <li>Management review minutes — including PIMS agenda items</li>
+              <li>Data retention schedule - covering all categories of personal data</li>
+              <li>Privacy risk register - linked to your main ISMS risk register</li>
+              <li>Training records - privacy awareness training for all relevant staff</li>
+              <li>Management review minutes - including PIMS agenda items</li>
             </ul>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>The Documentation Gap That Catches Most Organisations</strong>
-                <p>The most common finding in first-time ISO 27701 audits is not that privacy controls are absent — it is that they exist informally without documentation. Your team may handle data subject requests carefully, but if there is no written procedure, no defined response timeline, and no log of requests received, an auditor cannot confirm the control is real. In a PIMS audit, undocumented processes are treated as absent processes.</p>
+                <p>The most common finding in first-time ISO 27701 audits is not that privacy controls are absent - it is that they exist informally without documentation. Your team may handle data subject requests carefully, but if there is no written procedure, no defined response timeline, and no log of requests received, an auditor cannot confirm the control is real. In a PIMS audit, undocumented processes are treated as absent processes.</p>
               </div>
             </div>
           </section>
 
           <section id="combined-vs-phased">
-            <h2>Combined vs Phased Certification — <em>Which Approach Is Right</em></h2>
+            <h2>Combined vs Phased Certification - <em>Which Approach Is Right</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Combined (27001 + 27701 together)</th><th>Phased (27001 first, 27701 later)</th></tr></thead>
                 <tbody>
-                  {[['Single audit — lower total cost','ISMS foundation fully established before adding complexity'],['Integrated ISMS/PIMS from the start','Privacy gap assessment can be done more thoroughly post-27001'],['Faster time to full accountability','Easier to resource the implementation in stages'],['Best if privacy obligations are well-understood','Better fit if PII processing scope is still being mapped'],['Suitable under immediate regulatory pressure','Allows team to develop privacy expertise over time']].map(([c,p],i)=>(<tr key={i}><td>{c}</td><td>{p}</td></tr>))}
+                  {[['Single audit - lower total cost','ISMS foundation fully established before adding complexity'],['Integrated ISMS/PIMS from the start','Privacy gap assessment can be done more thoroughly post-27001'],['Faster time to full accountability','Easier to resource the implementation in stages'],['Best if privacy obligations are well-understood','Better fit if PII processing scope is still being mapped'],['Suitable under immediate regulatory pressure','Allows team to develop privacy expertise over time']].map(([c,p],i)=>(<tr key={i}><td>{c}</td><td>{p}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -321,7 +321,7 @@ export default function HowToExtendISMSIntoPIMS() {
             <h2>Pre-Implementation <em>PIMS Readiness Checklist</em></h2>
             <ul>
               <li>ISO 27001 certification in place or implementation mature</li>
-              <li>Roles defined: controller, processor, or both — for each activity</li>
+              <li>Roles defined: controller, processor, or both - for each activity</li>
               <li>Record of Processing Activities started or in progress</li>
               <li>Data flows mapped for major business functions</li>
               <li>Legal basis identified for each processing activity</li>
@@ -338,7 +338,7 @@ export default function HowToExtendISMSIntoPIMS() {
 
           <div className="cta-banner">
             <h3>Need Help with Your Compliance Journey?</h3>
-            <p>SecComply helps startups and enterprises navigate ISO 27001, ISO 27701, GDPR, and DPDP — from gap assessment to audit-ready documentation.</p>
+            <p>SecComply helps startups and enterprises navigate ISO 27001, ISO 27701, GDPR, and DPDP - from gap assessment to audit-ready documentation.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free Consultation →</a>
             </div>
@@ -358,11 +358,11 @@ export default function HowToExtendISMSIntoPIMS() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can I get ISO 27701 certified without ISO 27001?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>No. ISO 27701 is an extension to ISO 27001 and requires the ISMS foundation. However, you can pursue both certifications together in a single integrated programme — a combined audit is the most efficient approach for organisations not yet ISO 27001 certified.</p></div>
+              <div className="faq-a"><p>No. ISO 27701 is an extension to ISO 27001 and requires the ISMS foundation. However, you can pursue both certifications together in a single integrated programme - a combined audit is the most efficient approach for organisations not yet ISO 27001 certified.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the biggest gap most organisations find when extending ISMS to PIMS?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>The Record of Processing Activities (RoPA). Most organisations with ISO 27001 have an asset inventory but have not mapped personal data processing activities at the level of detail ISO 27701 requires — documenting purpose, legal basis, retention periods, recipients, and cross-border transfers for each activity.</p></div>
+              <div className="faq-a"><p>The Record of Processing Activities (RoPA). Most organisations with ISO 27001 have an asset inventory but have not mapped personal data processing activities at the level of detail ISO 27701 requires - documenting purpose, legal basis, retention periods, recipients, and cross-border transfers for each activity.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How long does it take to extend ISO 27001 into ISO 27701?</strong><span className="faq-ch">▾</span></div>
@@ -407,7 +407,7 @@ export default function HowToExtendISMSIntoPIMS() {
           </div>
           <div className="sb-cta">
             <h4>Need Compliance Help?</h4>
-            <p>From gap assessment to audit — we handle the entire compliance journey.</p>
+            <p>From gap assessment to audit - we handle the entire compliance journey.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

@@ -25,19 +25,19 @@ export default function ISO27701AnnexAControls() {
   return (
     <Layout>
       <Head>
-        <title>ISO 27701 Annex A Controls — A Plain-English Walkthrough for Teams | SecComply</title>
+        <title>ISO 27701 Annex A Controls - A Plain-English Walkthrough for Teams | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="ISO 27701 Annex A & B controls explained in plain English — 8 thematic areas for controllers and 8 for processors, with key actions for each team and practical implementation tips." />
+        <meta name="description" content="ISO 27701 Annex A & B controls explained in plain English - 8 thematic areas for controllers and 8 for processors, with key actions for each team and practical implementation tips." />
         <meta name="keywords" content="ISO 27701 Annex A controls, ISO 27701 Annex B controls, privacy controls walkthrough, controller privacy controls, processor privacy controls, privacy by design controls, PII sharing controls, RACI privacy controls" />
-        <meta property="og:title" content="ISO 27701 Annex A Controls — A Plain-English Walkthrough for Teams" />
-        <meta property="og:description" content="ISO 27701 Annex A & B controls explained in plain English — 8 thematic areas for controllers and 8 for processors, with key actions for each team and practical implementation tips." />
+        <meta property="og:title" content="ISO 27701 Annex A Controls - A Plain-English Walkthrough for Teams" />
+        <meta property="og:description" content="ISO 27701 Annex A & B controls explained in plain English - 8 thematic areas for controllers and 8 for processors, with key actions for each team and practical implementation tips." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/iso-27701-annex-a-controls" />
         <meta property="article:published_time" content="2026-04-01" />
         <meta property="article:author" content="Bhumika Deshmukh" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/iso-27701-annex-a-controls" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27701 Annex A Controls — A Plain-English Walkthrough for Teams","description":"ISO 27701 Annex A & B controls explained — 8 thematic areas for controllers and processors with key actions and implementation tips.","author":{"@type":"Person","name":"Bhumika Deshmukh","jobTitle":"Cybersecurity Analyst & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-21","dateModified":"2026-04-21","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27701-annex-a-controls","articleSection":"ISO 27701"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"ISO 27701 Annex A Controls","item":"https://seccomply.net/resources/blog/iso-27701-annex-a-controls"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27701 Annex A Controls - A Plain-English Walkthrough for Teams","description":"ISO 27701 Annex A & B controls explained - 8 thematic areas for controllers and processors with key actions and implementation tips.","author":{"@type":"Person","name":"Bhumika Deshmukh","jobTitle":"Cybersecurity Analyst & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-21","dateModified":"2026-04-21","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27701-annex-a-controls","articleSection":"ISO 27701"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"ISO 27701 Annex A Controls","item":"https://seccomply.net/resources/blog/iso-27701-annex-a-controls"}]}]}) }} />
       </Head>
       <style jsx global>{`
     :root{--cy:#E8632B;--cy2:#d0521f;--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(232,99,43,.2);--bs:rgba(255,255,255,.06);--gr:#06d6a0;--am:#ffb703;--sans:'Inter',sans-serif}
@@ -175,12 +175,12 @@ export default function ISO27701AnnexAControls() {
         <a href="https://seccomply.net/">Home</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources">Resources</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources/blog">Blog</a><span className="bc-sep">›</span>
-        <span style={{color:'var(--tb)'}}>ISO 27701 Annex A Controls — A Plai...</span>
+        <span style={{color:'var(--tb)'}}>ISO 27701 Annex A Controls - A Plai...</span>
       </div>
       <div className="hero-wrap">
         <div className="badges"><span className="badge badge-cy">🔐 ISO 27701</span><span className="badge badge-bl">📋 Annex A & B</span><span className="badge badge-gr">✅ Controls Walkthrough</span></div>
-        <h1 className="hero-h1">ISO 27701 Annex A Controls — <em>A Plain-English Walkthrough</em> for Teams</h1>
-        <p className="hero-sub">Annex A is where the rubber meets the road. It translates high-level privacy principles into concrete, auditable controls — one set for data controllers (A.2-A.8) and another for data processors (B.2-B.8). If your team is on the path to ISO 27701 certification, understanding Annex A is non-negotiable.</p>
+        <h1 className="hero-h1">ISO 27701 Annex A Controls - <em>A Plain-English Walkthrough</em> for Teams</h1>
+        <p className="hero-sub">Annex A is where the rubber meets the road. It translates high-level privacy principles into concrete, auditable controls - one set for data controllers (A.2-A.8) and another for data processors (B.2-B.8). If your team is on the path to ISO 27701 certification, understanding Annex A is non-negotiable.</p>
         <div className="author-strip">
           <div className="avatar">BD</div>
           <div className="author-info">
@@ -194,16 +194,16 @@ export default function ISO27701AnnexAControls() {
         <div className="img-wrap"><svg viewBox="0 0 960 260" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pgp2" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="260" fill="url(#pgp2)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27701 Annex A & B — Controller and Processor Controls</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27701 Annex A & B - Controller and Processor Controls</text>
           <rect x="30" y="38" width="440" height="190" rx="14" fill="#091826" stroke="#E8632B22" strokeWidth="1.5"/>
           <rect x="30" y="38" width="440" height="4" rx="2" fill="#E8632B"/>
-          <text x="250" y="65" textAnchor="middle" fill="#E8632B" fontSize="12" fontWeight="800" fontFamily="sans-serif">ANNEX A — CONTROLLER CONTROLS</text>
+          <text x="250" y="65" textAnchor="middle" fill="#E8632B" fontSize="12" fontWeight="800" fontFamily="sans-serif">ANNEX A - CONTROLLER CONTROLS</text>
           {["A.2 Collection & Processing Conditions","A.3 Obligations to PII Principals","A.4 Privacy by Design & Default","A.5 Sharing, Transfer & Disclosure","A.6 Access, Correction & Erasure","A.7 Privacy Complaints & Enquiries","A.8 Assessment of Controller Obligations"].map((t,i) => (
             <text key={i} x="55" y={88+i*20} fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">{t}</text>
           ))}
           <rect x="510" y="38" width="420" height="190" rx="14" fill="#071820" stroke="#06d6a022" strokeWidth="1.5"/>
           <rect x="510" y="38" width="420" height="4" rx="2" fill="#06d6a0"/>
-          <text x="720" y="65" textAnchor="middle" fill="#06d6a0" fontSize="12" fontWeight="800" fontFamily="sans-serif">ANNEX B — PROCESSOR CONTROLS</text>
+          <text x="720" y="65" textAnchor="middle" fill="#06d6a0" fontSize="12" fontWeight="800" fontFamily="sans-serif">ANNEX B - PROCESSOR CONTROLS</text>
           {["B.2 Collection & Processing Conditions","B.3 Obligations to PII Principals","B.4 Privacy by Design & Default","B.5 Sharing, Transfer & Disclosure","B.6 Access, Correction & Erasure","B.7 Privacy Complaints & Enquiries","B.8 Assessment of Processor Obligations"].map((t,i) => (
             <text key={i} x="535" y={88+i*20} fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">{t}</text>
           ))}
@@ -220,70 +220,70 @@ export default function ISO27701AnnexAControls() {
       </div>
       <div className="blog-layout">
         <article className="art">
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>ISO 27701 is ISO 27001's privacy-focused sibling. Where 27001 governs information security broadly, 27701 zooms in on how organisations handle Personally Identifiable Information. <strong>Annex A is where the rubber meets the road</strong> — it translates high-level privacy principles into concrete, auditable controls. One set for controllers (A.2-A.8), another for processors (B.2-B.8).</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>ISO 27701 is ISO 27001's privacy-focused sibling. Where 27001 governs information security broadly, 27701 zooms in on how organisations handle Personally Identifiable Information. <strong>Annex A is where the rubber meets the road</strong> - it translates high-level privacy principles into concrete, auditable controls. One set for controllers (A.2-A.8), another for processors (B.2-B.8).</p>
 
           <section id="structure">
-            <h2>The Structure — <em>Annex A at a Glance</em></h2>
+            <h2>The Structure - <em>Annex A at a Glance</em></h2>
             <p>Annex A is split into two parts reflecting the two primary roles in the PII ecosystem:</p>
             <ul>
-              <li><strong>Annex A (A.2-A.8):</strong> Controls for PII Controllers — organisations that determine the purpose and means of processing</li>
-              <li><strong>Annex B (B.2-B.8):</strong> Controls for PII Processors — organisations that process data on behalf of a controller</li>
+              <li><strong>Annex A (A.2-A.8):</strong> Controls for PII Controllers - organisations that determine the purpose and means of processing</li>
+              <li><strong>Annex B (B.2-B.8):</strong> Controls for PII Processors - organisations that process data on behalf of a controller</li>
             </ul>
             <p>Many organisations act as both controller and processor depending on the data flow. Each set groups requirements into eight thematic areas mirroring each other.</p>
           </section>
 
           <section id="controller-controls">
-            <h2>Controller Controls — <em>A.2 through A.8</em></h2>
+            <h2>Controller Controls - <em>A.2 through A.8</em></h2>
 
-            <h3>A.2 — Conditions for Collection and Processing</h3>
+            <h3>A.2 - Conditions for Collection and Processing</h3>
             <p>Defines the legal basis and purposes for which PII may be collected, used, and retained. Document lawful basis for each processing activity in your RoPA. Capture consent at collection with clear audit trails. Tie every data collection field to a stated purpose. Restrict processing to declared purposes only.</p>
 
-            <h3>A.3 — Obligations to PII Principals</h3>
+            <h3>A.3 - Obligations to PII Principals</h3>
             <p>Sets out transparency and notice obligations. Publish a clear, layered privacy notice at every data touchpoint. Ensure notices are in plain language. Keep notices updated when processing activities change. Train customer-facing staff on what to tell individuals.</p>
 
-            <h3>A.4 — Privacy by Design and Default</h3>
+            <h3>A.4 - Privacy by Design and Default</h3>
             <p>Privacy must be embedded from the outset, with the most privacy-protective settings as default. Include a PIA/DPIA gate in your SDLC. Default to minimum data collection. Pseudonymise or minimise data at the architecture level. Review legacy systems and retrofit privacy-by-design principles.</p>
 
-            <h3>A.5 — PII Sharing, Transfer, and Disclosure</h3>
+            <h3>A.5 - PII Sharing, Transfer, and Disclosure</h3>
             <p>Governs sharing with third parties, international transfers, and legal disclosures. Maintain a sharing register with DPAs. Assess transfer mechanisms for cross-border flows (SCCs, adequacy decisions). Document the legal basis before sharing with any third party.</p>
 
-            <h3>A.6 — Access, Correction, and Erasure</h3>
+            <h3>A.6 - Access, Correction, and Erasure</h3>
             <p>Operationalises data subject rights. Build a SAR intake and fulfilment workflow. Set SLAs for responding (e.g., 30 days). Implement technical capability to export, correct, or delete user data. Test your erasure process end-to-end.</p>
 
-            <h3>A.7 — Privacy Complaints and Enquiries</h3>
+            <h3>A.7 - Privacy Complaints and Enquiries</h3>
             <p>Defines how complaints are received, tracked, and resolved. Designate a named DPO or privacy contact. Log all complaints in a centralised register. Establish escalation paths for high-risk complaints. Track resolution times and perform root cause analysis.</p>
 
-            <h3>A.8 — Assessment of Controller Obligations</h3>
-            <p>Requires ongoing assessment of privacy obligations — legal, regulatory, and contractual. Subscribe to regulatory update services. Conduct annual reviews against current law. Maintain a legal register mapping obligations to internal controls.</p>
+            <h3>A.8 - Assessment of Controller Obligations</h3>
+            <p>Requires ongoing assessment of privacy obligations - legal, regulatory, and contractual. Subscribe to regulatory update services. Conduct annual reviews against current law. Maintain a legal register mapping obligations to internal controls.</p>
           </section>
 
           <section id="processor-controls">
-            <h2>Processor Controls — <em>B.2 through B.8</em></h2>
+            <h2>Processor Controls - <em>B.2 through B.8</em></h2>
 
-            <h3>B.2 — Conditions for Collection and Processing</h3>
+            <h3>B.2 - Conditions for Collection and Processing</h3>
             <p>Never process PII outside the documented scope of controller agreements. Maintain a processing register mapped to controller instructions. Flag and escalate any instruction you believe is unlawful. Audit sub-processors to the same standard.</p>
 
-            <h3>B.3 — Obligations to PII Principals</h3>
+            <h3>B.3 - Obligations to PII Principals</h3>
             <p>Understand where your product touches end-users directly. Ensure individual-facing communications are coordinated with the controller. Avoid privacy representations that conflict with controller notices.</p>
 
-            <h3>B.4 — Privacy by Design and Default</h3>
+            <h3>B.4 - Privacy by Design and Default</h3>
             <p>Build privacy into services so controllers can meet their own obligations. Offer data minimisation features. Provide tools for controllers to configure retention and deletion. Include privacy-protective defaults. Document privacy architecture for controller DPIAs.</p>
 
-            <h3>B.5 — PII Sharing, Transfer, and Disclosure</h3>
+            <h3>B.5 - PII Sharing, Transfer, and Disclosure</h3>
             <p>Obtain written controller approval before engaging sub-processors. Flow down data protection obligations by contract. Notify controllers promptly of sub-processor changes. Maintain a record of all international transfers.</p>
 
-            <h3>B.6 — Access, Correction, and Erasure</h3>
+            <h3>B.6 - Access, Correction, and Erasure</h3>
             <p>Build APIs or interfaces enabling controllers to extract or delete data on request. Respond promptly. Ensure deletion propagates to backups and replicas. Test deletion capability regularly.</p>
 
-            <h3>B.7 — Privacy Complaints and Enquiries</h3>
+            <h3>B.7 - Privacy Complaints and Enquiries</h3>
             <p>Set up a dedicated privacy contact for controller escalations. Forward complaints to the relevant controller without delay. Do not resolve complaints on behalf of the controller without authorisation.</p>
 
-            <h3>B.8 — Assessment of Processor Obligations</h3>
+            <h3>B.8 - Assessment of Processor Obligations</h3>
             <p>Conduct annual reviews of DPA obligations across all controller relationships. Monitor changes to processor liability under applicable law. Maintain records of processing activities per GDPR Article 30(2).</p>
           </section>
 
           <section id="practical-tips">
-            <h2>Practical Tips — <em>For Implementation</em></h2>
+            <h2>Practical Tips - <em>For Implementation</em></h2>
             <ul>
               <li><strong>Do not treat this as a legal-only exercise.</strong> Engineering, product, and DevOps all have a role in controls like A.4 (Privacy by Design) and A.6 (Access and Erasure). Build a cross-functional privacy working group early.</li>
               <li><strong>Map to existing processes first.</strong> Many controls will have partial coverage through your existing ISMS, GDPR programme, or security policies. Gap analysis before building net-new procedures.</li>
@@ -295,13 +295,13 @@ export default function ISO27701AnnexAControls() {
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>Common Audit Finding</strong>
-                <p>Organisations have controls in place but cannot produce evidence they were followed. Build documentation habits into your processes from day one — not just before an audit. An undocumented process is treated as an absent process.</p>
+                <p>Organisations have controls in place but cannot produce evidence they were followed. Build documentation habits into your processes from day one - not just before an audit. An undocumented process is treated as an absent process.</p>
               </div>
             </div>
           </section>
 
           <section id="quick-reference">
-            <h2>Quick Reference — <em>All Controls at a Glance</em></h2>
+            <h2>Quick Reference - <em>All Controls at a Glance</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Control</th><th>Topic</th><th>Primary Stakeholder</th></tr></thead>
@@ -313,7 +313,7 @@ export default function ISO27701AnnexAControls() {
           </section>
           <div className="cta-banner">
             <h3>Need Help with Your Compliance Journey?</h3>
-            <p>SecComply helps startups and enterprises navigate ISO 27001, ISO 27701, GDPR, and DPDP — from gap assessment to audit-ready documentation.</p>
+            <p>SecComply helps startups and enterprises navigate ISO 27001, ISO 27701, GDPR, and DPDP - from gap assessment to audit-ready documentation.</p>
             <div className="cta-btns"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free Consultation →</a></div>
             <div className="share-strip">
               <span className="share-lbl">Share:</span>
@@ -325,7 +325,7 @@ export default function ISO27701AnnexAControls() {
           <section id="faq" className="faq-section"><h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the difference between ISO 27701 Annex A and Annex B?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Annex A (A.2-A.8) contains controls for PII Controllers — organisations that determine the purpose and means of processing. Annex B (B.2-B.8) contains controls for PII Processors — organisations that process data on behalf of controllers. Many organisations implement both because they act as controller for some data and processor for other data.</p></div>
+              <div className="faq-a"><p>Annex A (A.2-A.8) contains controls for PII Controllers - organisations that determine the purpose and means of processing. Annex B (B.2-B.8) contains controls for PII Processors - organisations that process data on behalf of controllers. Many organisations implement both because they act as controller for some data and processor for other data.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How many controls are in ISO 27701 Annex A?</strong><span className="faq-ch">▾</span></div>
@@ -337,7 +337,7 @@ export default function ISO27701AnnexAControls() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the most commonly failed Annex A control in audits?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Evidence of controls being followed rather than merely documented. Organisations frequently have policies and procedures in place but cannot produce evidence they were executed — SAR completion logs, DPIA records, training completion certificates, or consent audit trails. Build documentation habits from day one.</p></div>
+              <div className="faq-a"><p>Evidence of controls being followed rather than merely documented. Organisations frequently have policies and procedures in place but cannot produce evidence they were executed - SAR completion logs, DPIA records, training completion certificates, or consent audit trails. Build documentation habits from day one.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How does Annex A relate to GDPR requirements?</strong><span className="faq-ch">▾</span></div>
@@ -363,7 +363,7 @@ export default function ISO27701AnnexAControls() {
               <li><a href="https://seccomply.net/resources/blog/building-a-pims-iso-27701">Building a PIMS</a></li>
           </ul></div>
           <div className="sb-card"><div className="sb-title">🏷️ Tags</div><div className="tag-cloud"><span className="tag">ISO 27701</span><span className="tag">Annex A</span><span className="tag">Annex B</span><span className="tag">Privacy Controls</span><span className="tag">Controller</span><span className="tag">Processor</span><span className="tag">RACI</span><span className="tag">Implementation</span></div></div>
-          <div className="sb-cta"><h4>Need Compliance Help?</h4><p>From gap assessment to audit — we handle the entire journey.</p><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a></div>
+          <div className="sb-cta"><h4>Need Compliance Help?</h4><p>From gap assessment to audit - we handle the entire journey.</p><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a></div>
         </aside>
       </div>
       <button id="btt" onClick={()=>window.scrollTo({top:0,behavior:'smooth'})} title="Back to top">↑</button>

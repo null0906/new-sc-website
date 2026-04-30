@@ -25,19 +25,19 @@ export default function ISO27001ScopeDefinition() {
   return (
     <Layout>
       <Head>
-        <title>ISO 27001 Scope Definition — How to Decide What Goes In and What Stays Out | SecComply</title>
+        <title>ISO 27001 Scope Definition - How to Decide What Goes In and What Stays Out | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
         <meta name="description" content="The ISMS scope is the most consequential decision before starting ISO 27001. Too broad costs time and money. Too narrow leaves gaps. Here is how to define it correctly." />
         <meta name="keywords" content="ISO 27001 scope definition, ISMS scope, how to define ISO 27001 scope, ISO 27001 scope statement, what to include in ISO 27001 scope, ISO 27001 scope too broad, ISO 27001 scope too narrow, scope boundaries" />
-        <meta property="og:title" content="ISO 27001 Scope Definition — How to Decide What Goes In and What Stays Out" />
+        <meta property="og:title" content="ISO 27001 Scope Definition - How to Decide What Goes In and What Stays Out" />
         <meta property="og:description" content="The ISMS scope is the most consequential decision before starting ISO 27001. Too broad costs time and money. Too narrow leaves gaps. Here is how to define it correctly." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/iso-27001-scope-definition" />
         <meta property="article:published_time" content="2026-04-01" />
         <meta property="article:author" content="Soham Sawant" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/iso-27001-scope-definition" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27001 Scope Definition — How to Decide What Goes In and What Stays Out","description":"The ISMS scope is the most consequential decision before starting ISO 27001. Here is how to define it correctly — with examples and common traps.","author":{"@type":"Person","name":"Soham Sawant","jobTitle":"Cybersecurity Expert & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-20","dateModified":"2026-04-20","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27001-scope-definition","articleSection":"ISO 27001"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"ISO 27001 Scope","item":"https://seccomply.net/resources/blog/iso-27001-scope-definition"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27001 Scope Definition - How to Decide What Goes In and What Stays Out","description":"The ISMS scope is the most consequential decision before starting ISO 27001. Here is how to define it correctly - with examples and common traps.","author":{"@type":"Person","name":"Soham Sawant","jobTitle":"Cybersecurity Expert & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-20","dateModified":"2026-04-20","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27001-scope-definition","articleSection":"ISO 27001"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"ISO 27001 Scope","item":"https://seccomply.net/resources/blog/iso-27001-scope-definition"}]}]}) }} />
       </Head>
       <style jsx global>{`
     :root{--cy:#E8632B;--cy2:#d0521f;--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(232,99,43,.2);--bs:rgba(255,255,255,.06);--gr:#06d6a0;--am:#ffb703;--sans:'Inter',sans-serif}
@@ -175,11 +175,11 @@ export default function ISO27001ScopeDefinition() {
         <a href="https://seccomply.net/">Home</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources">Resources</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources/blog">Blog</a><span className="bc-sep">›</span>
-        <span style={{color:'var(--tb)'}}>ISO 27001 Scope Definition — How to...</span>
+        <span style={{color:'var(--tb)'}}>ISO 27001 Scope Definition - How to...</span>
       </div>
       <div className="hero-wrap">
         <div className="badges"><span className="badge badge-cy">🌍 ISO 27001</span><span className="badge badge-bl">🛡️ ISMS</span><span className="badge badge-gr">📋 Scope</span></div>
-        <h1 className="hero-h1">ISO 27001 Scope Definition — <em>How to Decide</em> What Goes In and What Stays Out</h1>
+        <h1 className="hero-h1">ISO 27001 Scope Definition - <em>How to Decide</em> What Goes In and What Stays Out</h1>
         <p className="hero-sub">The ISMS scope is the single most consequential decision you make before starting your ISO 27001 programme. Define it too broadly and the project takes twice as long. Define it too narrowly and the certificate does not cover what enterprise buyers need to see. Here is how to get it right.</p>
         <div className="author-strip">
           <div className="avatar">SS</div>
@@ -194,7 +194,7 @@ export default function ISO27001ScopeDefinition() {
         <div className="img-wrap"><svg viewBox="0 0 960 260" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pgsc" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="260" fill="url(#pgsc)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27001 Scope — The Goldilocks Zone</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27001 Scope - The Goldilocks Zone</text>
           <rect x="30" y="40" width="280" height="180" rx="14" fill="#180a0d" stroke="rgba(255,77,109,0.25)" strokeWidth="1.5"/>
           <rect x="30" y="40" width="280" height="4" rx="2" fill="#ff4d6d"/>
           <text x="170" y="75" textAnchor="middle" fill="#ff4d6d" fontSize="14" fontWeight="800" fontFamily="sans-serif">TOO BROAD</text>
@@ -235,11 +235,11 @@ export default function ISO27001ScopeDefinition() {
       </div>
       <div className="blog-layout">
         <article className="art">
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The ISMS scope is the single most consequential decision you make before starting your ISO 27001 programme. It determines which business functions, systems, locations, and data flows are covered — and by extension, how many controls you need to implement, how long certification takes, and how much it costs. <strong>Get the scope right and the rest of the project follows logically. Get it wrong and you either overspend or end up with a certificate that does not cover what buyers need to see.</strong></p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The ISMS scope is the single most consequential decision you make before starting your ISO 27001 programme. It determines which business functions, systems, locations, and data flows are covered - and by extension, how many controls you need to implement, how long certification takes, and how much it costs. <strong>Get the scope right and the rest of the project follows logically. Get it wrong and you either overspend or end up with a certificate that does not cover what buyers need to see.</strong></p>
 
           <section id="why-matters">
             <h2>Why Scope <em>Matters</em></h2>
-            <p>ISO 27001 Clause 4.3 requires you to define the scope of your ISMS — the boundaries within which the management system operates. Everything inside the scope is subject to the full ISO 27001 requirements: risk assessment, controls, internal audit, management review, and certification audit. Everything outside the scope is explicitly excluded.</p>
+            <p>ISO 27001 Clause 4.3 requires you to define the scope of your ISMS - the boundaries within which the management system operates. Everything inside the scope is subject to the full ISO 27001 requirements: risk assessment, controls, internal audit, management review, and certification audit. Everything outside the scope is explicitly excluded.</p>
             <p>Your scope statement appears on your ISO 27001 certificate. Enterprise buyers and procurement teams read it. If your scope does not cover the product or service they are evaluating, the certificate has limited value to them.</p>
           </section>
 
@@ -250,7 +250,7 @@ export default function ISO27001ScopeDefinition() {
               <li><strong>Business functions:</strong> Which departments, teams, or business units are covered? Product engineering, DevOps, customer support, HR, finance?</li>
               <li><strong>Systems and infrastructure:</strong> Which production systems, cloud environments, internal tools, and third-party services are in scope?</li>
               <li><strong>Locations:</strong> Which physical offices, data centres (or cloud regions), and remote working arrangements are covered?</li>
-              <li><strong>Data flows:</strong> Which categories of information — customer data, employee data, financial data, source code — are within the ISMS boundary?</li>
+              <li><strong>Data flows:</strong> Which categories of information - customer data, employee data, financial data, source code - are within the ISMS boundary?</li>
             </ul>
           </section>
 
@@ -271,12 +271,12 @@ export default function ISO27001ScopeDefinition() {
             <h2>The Too-Broad <em>Trap</em></h2>
             <p>The most common mistake for larger organisations is scoping too broadly. If you include every department, every system, every location, and every data flow, you are committing to:</p>
             <ul>
-              <li>Risk-assessing every asset in the organisation — potentially hundreds of assets</li>
+              <li>Risk-assessing every asset in the organisation - potentially hundreds of assets</li>
               <li>Implementing controls across systems and teams that may not be ready</li>
               <li>A longer, more expensive certification audit (audit days scale with scope)</li>
-              <li>Higher ongoing maintenance — more controls to monitor, more evidence to collect, more people to train</li>
+              <li>Higher ongoing maintenance - more controls to monitor, more evidence to collect, more people to train</li>
             </ul>
-            <p>A broad scope is not inherently wrong — large enterprises need it. But for startups and mid-sized companies, it delays certification and increases cost without proportional benefit.</p>
+            <p>A broad scope is not inherently wrong - large enterprises need it. But for startups and mid-sized companies, it delays certification and increases cost without proportional benefit.</p>
           </section>
 
           <section id="too-narrow">
@@ -292,12 +292,12 @@ export default function ISO27001ScopeDefinition() {
           </section>
 
           <section id="scope-examples">
-            <h2>Scope Examples — <em>For Startups</em></h2>
+            <h2>Scope Examples - <em>For Startups</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Company Type</th><th>Good Scope</th><th>Common Mistake</th></tr></thead>
                 <tbody>
-                  {[['B2B SaaS (20 people)','Development, hosting, and delivery of the SaaS platform + cloud infrastructure + corporate IT + Pune office','Only corporate IT — excludes the product customers actually use'],['FinTech (50 people)','Payment processing platform + AWS infrastructure + customer data processing + supporting business functions','Entire company including R&D lab and future products not yet in production'],['Healthcare SaaS','Patient data platform + hosting + API integrations + all clinical data flows','Only the API layer — excludes the application and database'],['Consulting firm','Client engagement delivery + internal knowledge management + client data handling','Only internal email and laptops — excludes client deliverables']].map(([c,g,m],i)=>(<tr key={i}><td>{c}</td><td style={{color:'var(--gr)'}}>{g}</td><td style={{color:'#ff4d6d'}}>{m}</td></tr>))}
+                  {[['B2B SaaS (20 people)','Development, hosting, and delivery of the SaaS platform + cloud infrastructure + corporate IT + Pune office','Only corporate IT - excludes the product customers actually use'],['FinTech (50 people)','Payment processing platform + AWS infrastructure + customer data processing + supporting business functions','Entire company including R&D lab and future products not yet in production'],['Healthcare SaaS','Patient data platform + hosting + API integrations + all clinical data flows','Only the API layer - excludes the application and database'],['Consulting firm','Client engagement delivery + internal knowledge management + client data handling','Only internal email and laptops - excludes client deliverables']].map(([c,g,m],i)=>(<tr key={i}><td>{c}</td><td style={{color:'var(--gr)'}}>{g}</td><td style={{color:'#ff4d6d'}}>{m}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -307,7 +307,7 @@ export default function ISO27001ScopeDefinition() {
             <h2>Defining <em>Boundaries</em></h2>
             <p>For each dimension of scope, define what is in and what is out:</p>
             <ul>
-              <li><strong>System boundaries:</strong> List the specific systems, applications, and infrastructure components. Use names — "AWS account 123456789, eu-west-1 region" not just "cloud infrastructure."</li>
+              <li><strong>System boundaries:</strong> List the specific systems, applications, and infrastructure components. Use names - "AWS account 123456789, eu-west-1 region" not just "cloud infrastructure."</li>
               <li><strong>Organisational boundaries:</strong> List the teams and functions included. If HR is in scope (it usually is for employee data), say so explicitly.</li>
               <li><strong>Physical boundaries:</strong> List office locations. For remote-first companies, state "remote working locations of all employees within the ISMS scope."</li>
               <li><strong>Third-party boundaries:</strong> Key vendors and processors that handle in-scope data should be identified. Their management falls under Annex A supplier controls.</li>
@@ -322,11 +322,11 @@ export default function ISO27001ScopeDefinition() {
               <li><strong>Year 2:</strong> Add additional products, new cloud regions, or acquired business units</li>
               <li><strong>Year 3 (recertification):</strong> Full enterprise scope if the business has grown significantly</li>
             </ul>
-            <p>A tight initial scope is a feature, not a compromise — it is the standard approach recommended by most certification bodies and compliance consultants. For the full ISMS overview, see our <a href="https://seccomply.net/resources/blog/what-is-an-isms" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>What Is an ISMS guide</a>. For the self-assessment on whether ISO 27001 is right for your organisation, see our <a href="https://seccomply.net/resources/blog/iso-27001-self-assessment" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>ISO 27001 Self-Assessment Guide</a>.</p>
+            <p>A tight initial scope is a feature, not a compromise - it is the standard approach recommended by most certification bodies and compliance consultants. For the full ISMS overview, see our <a href="https://seccomply.net/resources/blog/what-is-an-isms" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>What Is an ISMS guide</a>. For the self-assessment on whether ISO 27001 is right for your organisation, see our <a href="https://seccomply.net/resources/blog/iso-27001-self-assessment" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>ISO 27001 Self-Assessment Guide</a>.</p>
           </section>
           <div className="cta-banner">
             <h3>Need Help with Your Compliance Journey?</h3>
-            <p>SecComply helps startups and enterprises navigate ISO 27001, ISO 27701, GDPR, and DPDP — from gap assessment to audit-ready documentation.</p>
+            <p>SecComply helps startups and enterprises navigate ISO 27001, ISO 27701, GDPR, and DPDP - from gap assessment to audit-ready documentation.</p>
             <div className="cta-btns"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free Consultation →</a></div>
             <div className="share-strip">
               <span className="share-lbl">Share:</span>
@@ -338,11 +338,11 @@ export default function ISO27001ScopeDefinition() {
           <section id="faq" className="faq-section"><h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the ISO 27001 scope statement?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>The scope statement defines the boundaries of your ISMS — which business functions, systems, locations, and data flows are covered. It appears on your ISO 27001 certificate and is read by enterprise buyers. Clause 4.3 requires you to document it, and auditors will verify that your ISMS actually covers everything the scope claims.</p></div>
+              <div className="faq-a"><p>The scope statement defines the boundaries of your ISMS - which business functions, systems, locations, and data flows are covered. It appears on your ISO 27001 certificate and is read by enterprise buyers. Clause 4.3 requires you to document it, and auditors will verify that your ISMS actually covers everything the scope claims.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can I start with a narrow scope and expand later?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes — this is the recommended approach for most startups. Start with your core product, primary cloud environment, and supporting business processes. You can expand scope at any annual surveillance audit or the three-year recertification audit. Certification bodies expect and support this pattern.</p></div>
+              <div className="faq-a"><p>Yes - this is the recommended approach for most startups. Start with your core product, primary cloud environment, and supporting business processes. You can expand scope at any annual surveillance audit or the three-year recertification audit. Certification bodies expect and support this pattern.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What happens if my scope does not cover what a customer is evaluating?</strong><span className="faq-ch">▾</span></div>
@@ -379,7 +379,7 @@ export default function ISO27001ScopeDefinition() {
               <li><a href="https://seccomply.net/resources/blog/iso-27001-risk-assessment">Risk Assessment</a></li>
           </ul></div>
           <div className="sb-card"><div className="sb-title">🏷️ Tags</div><div className="tag-cloud"><span className="tag">ISO 27001</span><span className="tag">Scope Definition</span><span className="tag">ISMS</span><span className="tag">Scope Statement</span><span className="tag">Certification</span><span className="tag">Startup</span><span className="tag">Enterprise Sales</span></div></div>
-          <div className="sb-cta"><h4>Need Compliance Help?</h4><p>From gap assessment to audit — we handle the entire journey.</p><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a></div>
+          <div className="sb-cta"><h4>Need Compliance Help?</h4><p>From gap assessment to audit - we handle the entire journey.</p><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a></div>
         </aside>
       </div>
       <button id="btt" onClick={()=>window.scrollTo({top:0,behavior:'smooth'})} title="Back to top">↑</button>

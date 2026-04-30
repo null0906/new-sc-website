@@ -28,10 +28,10 @@ export default function BuildingAPIMSISO27701() {
         <title>Building a PIMS: ISO 27701 Implementation Roadmap | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="The complete 8-phase roadmap for building a Privacy Information Management System under ISO 27701 — from scope definition and gap assessment to certification audit and continuous improvement." />
+        <meta name="description" content="The complete 8-phase roadmap for building a Privacy Information Management System under ISO 27701 - from scope definition and gap assessment to certification audit and continuous improvement." />
         <meta name="keywords" content="building a PIMS, ISO 27701 implementation roadmap, PIMS implementation steps, ISO 27701 gap assessment, RoPA ISO 27701, privacy risk assessment, ISO 27701 certification audit, PIMS readiness checklist" />
         <meta property="og:title" content="Building a PIMS: ISO 27701 Implementation Roadmap" />
-        <meta property="og:description" content="The complete 8-phase roadmap for building a Privacy Information Management System under ISO 27701 — from scope definition and gap assessment to certification audit and continuous improvement." />
+        <meta property="og:description" content="The complete 8-phase roadmap for building a Privacy Information Management System under ISO 27701 - from scope definition and gap assessment to certification audit and continuous improvement." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/building-a-pims-iso-27701" />
         <meta property="article:published_time" content="2026-04-01" />
@@ -188,7 +188,7 @@ export default function BuildingAPIMSISO27701() {
           <span className="badge badge-gr">✅ PIMS</span>
         </div>
         <h1 className="hero-h1">Building a PIMS: <em>ISO 27701 Implementation Roadmap</em></h1>
-        <p className="hero-sub">ISO 27701 is not a burden — it is a blueprint. It gives your organisation a language to talk about privacy in operational terms. This roadmap walks through all 8 implementation phases, the controls that trip people up most, and what a privacy-mature organisation actually looks like.</p>
+        <p className="hero-sub">ISO 27701 is not a burden - it is a blueprint. It gives your organisation a language to talk about privacy in operational terms. This roadmap walks through all 8 implementation phases, the controls that trip people up most, and what a privacy-mature organisation actually looks like.</p>
 
         <div className="author-strip">
           <div className="avatar">AH</div>
@@ -202,13 +202,13 @@ export default function BuildingAPIMSISO27701() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1200&h=480&fit=crop" alt="Building a PIMS ISO 27701 implementation roadmap privacy management" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">ISO 27701 extends ISO 27001 into the privacy domain. If your organisation already has an ISMS, you are building an extension — not starting from scratch.</p>
+        <p className="img-cap">ISO 27701 extends ISO 27001 into the privacy domain. If your organisation already has an ISMS, you are building an extension - not starting from scratch.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pgd" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pgd)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Building a PIMS — 8-Phase ISO 27701 Implementation Roadmap</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Building a PIMS - 8-Phase ISO 27701 Implementation Roadmap</text>
           {['Scope','Gap Assessment','Build RoPA','Risk Assessment','Implement Controls','Policies & Notices','Training & Audit','Certification'].map((label, i) => {
             const x = 30 + i * 116;
             const cols = ['#818cf8','#E8632B','#06d6a0','#ffb703','#ff4d6d','#818cf8','#E8632B','#06d6a0'];
@@ -245,73 +245,73 @@ export default function BuildingAPIMSISO27701() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>ISO 27701 extends ISO 27001 into the privacy domain. If your organisation already has an ISMS, you are building an extension — not starting from scratch. A <strong>Privacy Information Management System (PIMS)</strong> is a structured way of managing personal data across its entire lifecycle: how it is collected, stored, processed, shared, and deleted. It turns your privacy policy from a legal PDF into a set of living processes that actually protect people.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>ISO 27701 extends ISO 27001 into the privacy domain. If your organisation already has an ISMS, you are building an extension - not starting from scratch. A <strong>Privacy Information Management System (PIMS)</strong> is a structured way of managing personal data across its entire lifecycle: how it is collected, stored, processed, shared, and deleted. It turns your privacy policy from a legal PDF into a set of living processes that actually protect people.</p>
 
           <section id="what-is-pims">
-            <h2>What Is a PIMS — <em>And Why Should You Care?</em></h2>
-            <p>ISO 27701:2019 is the world's first international standard specifically designed for PIMS. It maps directly onto GDPR, India DPDP Act, PDPA, CCPA, and other privacy regulations. The standard distinguishes between controllers (Annex A — 49 controls) and processors (Annex B — 25+ controls). Your Statement of Applicability must justify which controls apply and why.</p>
+            <h2>What Is a PIMS - <em>And Why Should You Care?</em></h2>
+            <p>ISO 27701:2019 is the world's first international standard specifically designed for PIMS. It maps directly onto GDPR, India DPDP Act, PDPA, CCPA, and other privacy regulations. The standard distinguishes between controllers (Annex A - 49 controls) and processors (Annex B - 25+ controls). Your Statement of Applicability must justify which controls apply and why.</p>
             <div className="callout co-key">
               <span className="co-icon">💡</span>
               <div className="co-body">
                 <strong>Why This Matters for Compliance</strong>
-                <p>ISO 27701 certification creates the documented accountability that regulators look for when assessing privacy governance. An organisation with a certified PIMS is in a far stronger position during regulatory scrutiny than one relying on undocumented practices. It does not equal legal compliance — but it is the clearest structural signal of privacy maturity.</p>
+                <p>ISO 27701 certification creates the documented accountability that regulators look for when assessing privacy governance. An organisation with a certified PIMS is in a far stronger position during regulatory scrutiny than one relying on undocumented practices. It does not equal legal compliance - but it is the clearest structural signal of privacy maturity.</p>
               </div>
             </div>
           </section>
 
           <section id="phase-1">
-            <h2>Phase 1 — <em>Define Your PIMS Scope</em></h2>
-            <p>Determine which business functions, data flows, and processing activities are included. Identify whether you operate as controller, processor, or both — for each activity separately. This shapes the entire implementation.</p>
+            <h2>Phase 1 - <em>Define Your PIMS Scope</em></h2>
+            <p>Determine which business functions, data flows, and processing activities are included. Identify whether you operate as controller, processor, or both - for each activity separately. This shapes the entire implementation.</p>
           </section>
 
           <section id="phase-2">
-            <h2>Phase 2 — <em>Conduct a Gap Assessment</em></h2>
-            <p>Map your current state against ISO 27701 Clauses 5–8 and the applicable Annex controls. Be brutal — a gap that slips through now becomes a nonconformity in the certification audit. Produce a prioritised remediation backlog with owners and deadlines.</p>
+            <h2>Phase 2 - <em>Conduct a Gap Assessment</em></h2>
+            <p>Map your current state against ISO 27701 Clauses 5–8 and the applicable Annex controls. Be brutal - a gap that slips through now becomes a nonconformity in the certification audit. Produce a prioritised remediation backlog with owners and deadlines.</p>
           </section>
 
           <section id="phase-3">
-            <h2>Phase 3 — <em>Build Your Record of Processing Activities (RoPA)</em></h2>
+            <h2>Phase 3 - <em>Build Your Record of Processing Activities (RoPA)</em></h2>
             <p>The RoPA is the operational heart of your PIMS. Document every processing activity: purpose, legal basis, data categories, retention, recipients, third-country transfers, and security measures. Interview every department. You will find surprises.</p>
           </section>
 
           <section id="phase-4">
-            <h2>Phase 4 — <em>Privacy Risk Assessment and DPIA Framework</em></h2>
-            <p>Assess risks from the data subject perspective — not just organisational risk. Build a DPIA trigger matrix for high-risk processing. Link each risk to a control treatment. Document residual risk acceptance with sign-off from leadership.</p>
+            <h2>Phase 4 - <em>Privacy Risk Assessment and DPIA Framework</em></h2>
+            <p>Assess risks from the data subject perspective - not just organisational risk. Build a DPIA trigger matrix for high-risk processing. Link each risk to a control treatment. Document residual risk acceptance with sign-off from leadership.</p>
           </section>
 
           <section id="phase-5">
-            <h2>Phase 5 — <em>Implement Annex A and Annex B Controls</em></h2>
-            <p>Translate your risk treatment plan into operational controls. Each control needs: a policy reference, an operational procedure, an owner, evidence artefacts, and a review cadence. Produce your Statement of Applicability — it is a living document, not a one-time exercise.</p>
+            <h2>Phase 5 - <em>Implement Annex A and Annex B Controls</em></h2>
+            <p>Translate your risk treatment plan into operational controls. Each control needs: a policy reference, an operational procedure, an owner, evidence artefacts, and a review cadence. Produce your Statement of Applicability - it is a living document, not a one-time exercise.</p>
           </section>
 
           <section id="phase-6">
-            <h2>Phase 6 — <em>Policies, Procedures, and Privacy Notices</em></h2>
+            <h2>Phase 6 - <em>Policies, Procedures, and Privacy Notices</em></h2>
             <p>Write the required policy suite: Privacy Policy, Data Retention Policy, DSR Procedure, Breach Notification Procedure, and Supplier Management Policy. Create layered privacy notices for all data collection touchpoints. Update all supplier contracts with DPA schedules.</p>
           </section>
 
           <section id="phase-7">
-            <h2>Phase 7 — <em>Staff Training and Internal Audit</em></h2>
-            <p>Run role-based privacy training for all staff. Conduct at least one full internal audit cycle against ISO 27701 before Stage 1 certification. Hold a formal Management Review meeting. Document everything — auditors expect documented evidence of your own scrutiny.</p>
+            <h2>Phase 7 - <em>Staff Training and Internal Audit</em></h2>
+            <p>Run role-based privacy training for all staff. Conduct at least one full internal audit cycle against ISO 27701 before Stage 1 certification. Hold a formal Management Review meeting. Document everything - auditors expect documented evidence of your own scrutiny.</p>
           </section>
 
           <section id="phase-8">
-            <h2>Phase 8 — <em>Stage 1 and Stage 2 Certification Audit</em></h2>
-            <p>Stage 1 is a documentation review — auditors verify your PIMS is designed correctly. Stage 2 is operational verification — they test whether controls actually work. After certification, maintain a rolling programme of surveillance audits and continuous improvement.</p>
+            <h2>Phase 8 - <em>Stage 1 and Stage 2 Certification Audit</em></h2>
+            <p>Stage 1 is a documentation review - auditors verify your PIMS is designed correctly. Stage 2 is operational verification - they test whether controls actually work. After certification, maintain a rolling programme of surveillance audits and continuous improvement.</p>
           </section>
 
           <section id="tricky-controls">
             <h2>The Controls That <em>Trip People Up Most</em></h2>
             <ul>
-              <li><strong>A.7.2 — Purposes of PII Processing:</strong> Organisations discover processing for purposes that were never formally documented — or documented purposes that have quietly evolved. Every activity must have an explicit, documented purpose.</li>
-              <li><strong>A.7.4 — Consent Management:</strong> Consent records must be granular, timestamped, and withdrawable. Pre-ticked boxes and "by continuing to use this site" language are disqualifying. You need a consent management platform, not a spreadsheet.</li>
-              <li><strong>A.8.2 — Lawful Transfer Mechanisms:</strong> Cross-border transfers are among the most complex areas. SCCs, adequacy decisions, BCRs — each has specific implementation requirements. Get legal involved early on transfer mapping.</li>
-              <li><strong>Clause 8.4 — RoPA Maintenance:</strong> Your RoPA is a live document. Many organisations nail the initial build and then let it decay. Build a quarterly review trigger into your privacy calendar.</li>
+              <li><strong>A.7.2 - Purposes of PII Processing:</strong> Organisations discover processing for purposes that were never formally documented - or documented purposes that have quietly evolved. Every activity must have an explicit, documented purpose.</li>
+              <li><strong>A.7.4 - Consent Management:</strong> Consent records must be granular, timestamped, and withdrawable. Pre-ticked boxes and "by continuing to use this site" language are disqualifying. You need a consent management platform, not a spreadsheet.</li>
+              <li><strong>A.8.2 - Lawful Transfer Mechanisms:</strong> Cross-border transfers are among the most complex areas. SCCs, adequacy decisions, BCRs - each has specific implementation requirements. Get legal involved early on transfer mapping.</li>
+              <li><strong>Clause 8.4 - RoPA Maintenance:</strong> Your RoPA is a live document. Many organisations nail the initial build and then let it decay. Build a quarterly review trigger into your privacy calendar.</li>
             </ul>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>The Gap That Catches Most Organisations</strong>
-                <p>The most common finding in first-time ISO 27701 audits is not that privacy controls are absent — it is that they exist informally, without documentation. Your team may handle data subject requests carefully, but if there is no written procedure, no defined response timeline, and no log of requests received, an auditor cannot confirm the control exists. In a PIMS audit, undocumented processes are treated as absent processes.</p>
+                <p>The most common finding in first-time ISO 27701 audits is not that privacy controls are absent - it is that they exist informally, without documentation. Your team may handle data subject requests carefully, but if there is no written procedure, no defined response timeline, and no log of requests received, an auditor cannot confirm the control exists. In a PIMS audit, undocumented processes are treated as absent processes.</p>
               </div>
             </div>
           </section>
@@ -320,7 +320,7 @@ export default function BuildingAPIMSISO27701() {
             <h2>PIMS Implementation <em>Readiness Checklist</em></h2>
             <ul>
               <li>ISO 27001 certification in place or implementation mature</li>
-              <li>Roles defined: controller, processor, or both — for each activity</li>
+              <li>Roles defined: controller, processor, or both - for each activity</li>
               <li>Record of Processing Activities started or in progress</li>
               <li>Data flows mapped for major business functions</li>
               <li>Legal basis identified for each processing activity</li>
@@ -337,7 +337,7 @@ export default function BuildingAPIMSISO27701() {
 
           <div className="cta-banner">
             <h3>Need ISO 27701 Implementation Support?</h3>
-            <p>SecComply helps SaaS, FinTech, and healthcare organisations implement ISO 27701 — from gap assessment to certification audit, with pre-built control libraries and evidence collection.</p>
+            <p>SecComply helps SaaS, FinTech, and healthcare organisations implement ISO 27701 - from gap assessment to certification audit, with pre-built control libraries and evidence collection.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free ISO 27701 Consultation →</a>
             </div>
@@ -353,7 +353,7 @@ export default function BuildingAPIMSISO27701() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can I implement ISO 27701 without ISO 27001?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Not as a standalone certification. ISO 27701 is an extension to ISO 27001 and requires the ISMS foundation. However, you can pursue both certifications together in a single integrated programme — this is the most efficient path for organisations starting from scratch.</p></div>
+              <div className="faq-a"><p>Not as a standalone certification. ISO 27701 is an extension to ISO 27001 and requires the ISMS foundation. However, you can pursue both certifications together in a single integrated programme - this is the most efficient path for organisations starting from scratch.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How long does ISO 27701 implementation take?</strong><span className="faq-ch">▾</span></div>
@@ -365,11 +365,11 @@ export default function BuildingAPIMSISO27701() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Do I need different controls for controller and processor roles?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. ISO 27701 has separate control annexes — Annex A for controllers (49 controls) and Annex B for processors (25+ controls). Most SaaS organisations operate in a dual role and must implement controls from both annexes. Your Statement of Applicability documents which controls apply and in what context.</p></div>
+              <div className="faq-a"><p>Yes. ISO 27701 has separate control annexes - Annex A for controllers (49 controls) and Annex B for processors (25+ controls). Most SaaS organisations operate in a dual role and must implement controls from both annexes. Your Statement of Applicability documents which controls apply and in what context.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is the RoPA really that important?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes — it is the single most important document in your PIMS. It is simultaneously a regulatory requirement, audit artefact, data governance tool, and the foundation for consent management, data subject rights, retention schedules, and processor accountability. If one document had to survive, it would be the RoPA.</p></div>
+              <div className="faq-a"><p>Yes - it is the single most important document in your PIMS. It is simultaneously a regulatory requirement, audit artefact, data governance tool, and the foundation for consent management, data subject rights, retention schedules, and processor accountability. If one document had to survive, it would be the RoPA.</p></div>
             </div>
 
           </section>
@@ -410,7 +410,7 @@ export default function BuildingAPIMSISO27701() {
           </div>
           <div className="sb-cta">
             <h4>Need ISO 27701 Certification?</h4>
-            <p>From gap assessment to audit — we handle the entire ISO 27701 journey.</p>
+            <p>From gap assessment to audit - we handle the entire ISO 27701 journey.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

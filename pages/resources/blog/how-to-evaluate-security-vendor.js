@@ -269,7 +269,7 @@ export default function EvaluateSecurityVendor() {
 
           <div className="pull-quote">
             <p>&ldquo;Most organisations evaluate security vendors the same way they&apos;d buy software, based on features and price. That&apos;s the wrong framework entirely. You&apos;re not buying a feature set. You&apos;re entering a long-term risk relationship with a company that will have deep access to your most sensitive infrastructure.&rdquo;</p>
-            <cite>— Aditya Hadke, Project Delivery Lead, SecComply</cite>
+            <cite>- Aditya Hadke, Project Delivery Lead, SecComply</cite>
           </div>
 
           <figure className="b-figure anim">

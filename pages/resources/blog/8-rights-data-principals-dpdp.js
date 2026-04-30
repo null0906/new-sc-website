@@ -26,12 +26,12 @@ export default function EightRightsDataPrincipals() {
   return (
     <Layout>
       <Head>
-        <title>8 Rights of Data Principals Under the DPDP Act — And How Your Product Must Support Them | SecComply</title>
+        <title>8 Rights of Data Principals Under the DPDP Act - And How Your Product Must Support Them | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
         <meta name="description" content="The DPDP Act grants 8 enforceable rights to Data Principals. Failing to operationalise them in your product exposes your organisation to penalties up to ₹250 crore. Here is what each right requires in practice." />
         <meta name="keywords" content="8 rights data principals DPDP Act, right to access DPDP, right to erasure India, right to nominate DPDP, data portability India, DPDP Act penalties, grievance redressal DPDP, consent withdrawal India" />
-        <meta property="og:title" content="8 Rights of Data Principals Under the DPDP Act — And How Your Product Must Support Them" />
+        <meta property="og:title" content="8 Rights of Data Principals Under the DPDP Act - And How Your Product Must Support Them" />
         <meta property="og:description" content="The DPDP Act grants 8 enforceable rights to Data Principals. Failing to operationalise them in your product exposes your organisation to penalties up to ₹250 crore. Here is what each right requires in practice." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/8-rights-data-principals-dpdp" />
@@ -180,8 +180,8 @@ export default function EightRightsDataPrincipals() {
           <span className="badge badge-am">🏢 India Compliance</span>
           <span className="badge badge-gr">Series · Part 2 of 6</span>
         </div>
-        <h1 className="hero-h1">8 Rights of Data Principals Under the DPDP Act — <em>And How Your Product Must Support Them</em></h1>
-        <p className="hero-sub">The DPDP Act is not just about what organisations cannot do with personal data — it is equally about what individuals can demand. These 8 rights are legal requirements that must be operationalised in your product, not PR copy for your privacy page.</p>
+        <h1 className="hero-h1">8 Rights of Data Principals Under the DPDP Act - <em>And How Your Product Must Support Them</em></h1>
+        <p className="hero-sub">The DPDP Act is not just about what organisations cannot do with personal data - it is equally about what individuals can demand. These 8 rights are legal requirements that must be operationalised in your product, not PR copy for your privacy page.</p>
 
         <div className="author-strip">
           <div className="avatar">CM</div>
@@ -201,7 +201,7 @@ export default function EightRightsDataPrincipals() {
           <svg viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pg2" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="300" fill="url(#pg2)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">8 Rights of Data Principals — DPDP Act 2023</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">8 Rights of Data Principals - DPDP Act 2023</text>
           
           <rect x="30" y="35" width="105" height="80" rx="10" fill="#091826" stroke="#818cf825" strokeWidth="1.5"/>
           <rect x="30" y="35" width="105" height="3" rx="1.5" fill="#818cf8"/>
@@ -247,7 +247,7 @@ export default function EightRightsDataPrincipals() {
           <rect x="30" y="145" width="900" height="3" rx="1.5" fill="#ff4d6d"/>
           <text x="480" y="172" textAnchor="middle" fill="#ff4d6d" fontSize="11" fontWeight="800" fontFamily="sans-serif">PENALTY RISK PER UNADDRESSED RIGHT</text>
           <text x="480" y="200" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="28" fontWeight="800" fontFamily="sans-serif">Up to ₹250 Crore</text>
-          <text x="480" y="222" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="11" fontFamily="sans-serif">per instance of failure to implement adequate security safeguards — Data Protection Board of India</text>
+          <text x="480" y="222" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="11" fontFamily="sans-serif">per instance of failure to implement adequate security safeguards - Data Protection Board of India</text>
           <text x="480" y="255" textAnchor="middle" fill="rgba(200,214,229,0.35)" fontSize="9" fontFamily="sans-serif">Each unaddressed right is a potential grievance to the Board. With 8 rights to operationalise, the exposure compounds quickly.</text>
         </svg>
         </div>
@@ -279,10 +279,10 @@ export default function EightRightsDataPrincipals() {
             <a href="https://seccomply.net/resources/blog/data-principal-fiduciary-processor" style={{color:"var(--cy)",textDecoration:"none"}}>← Part 1</a> · <a href="https://seccomply.net/resources/blog/consent-under-dpdp-act" style={{color:"var(--cy)",textDecoration:"none"}}>Part 3 →</a>
           </div>
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The DPDP Act, 2023 is not just about what organisations <strong>cannot</strong> do with personal data. It is equally about what individuals <strong>can demand</strong>. The Act enshrines 8 rights for Data Principals — and the obligation falls squarely on Data Fiduciaries to honour them. If your product collects, stores, or processes personal data of Indian users, these rights are not optional features on your product roadmap. They are legal requirements.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The DPDP Act, 2023 is not just about what organisations <strong>cannot</strong> do with personal data. It is equally about what individuals <strong>can demand</strong>. The Act enshrines 8 rights for Data Principals - and the obligation falls squarely on Data Fiduciaries to honour them. If your product collects, stores, or processes personal data of Indian users, these rights are not optional features on your product roadmap. They are legal requirements.</p>
 
           <section id="right-1">
-            <h2>Right 1 — <em>Right to Access Information About Processing (Section 11)</em></h2>
+            <h2>Right 1 - <em>Right to Access Information About Processing (Section 11)</em></h2>
             <p>A Data Principal has the right to obtain a summary of what personal data the Fiduciary holds about them, the processing activities carried out, and the identities of all Data Processors and other Fiduciaries with whom their data has been shared.</p>
             <h3>What your product must do</h3>
             <ul>
@@ -301,11 +301,11 @@ export default function EightRightsDataPrincipals() {
           </section>
 
           <section id="right-2">
-            <h2>Right 2 — <em>Right to Correction and Erasure (Section 12)</em></h2>
+            <h2>Right 2 - <em>Right to Correction and Erasure (Section 12)</em></h2>
             <p>A Data Principal can request correction of inaccurate or misleading personal data, completion of incomplete data, and erasure of personal data that is no longer necessary for the purpose it was collected.</p>
             <h3>What your product must do</h3>
             <ul>
-              <li>Build correction workflows — either self-service or request-based with documented review and update process</li>
+              <li>Build correction workflows - either self-service or request-based with documented review and update process</li>
               <li>Implement erasure workflows that delete or anonymise data from primary databases and cascade deletion to backup systems</li>
               <li>Generate audit logs confirming erasure actions</li>
               <li>Maintain records of all correction and erasure requests and their resolution</li>
@@ -314,26 +314,26 @@ export default function EightRightsDataPrincipals() {
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>Important Caveat</strong>
-                <p>Erasure can be declined or deferred when retention is required by applicable law — GST records, RBI mandates, SEBI requirements. Your product must document and communicate this to the user clearly at the point of rejection.</p>
+                <p>Erasure can be declined or deferred when retention is required by applicable law - GST records, RBI mandates, SEBI requirements. Your product must document and communicate this to the user clearly at the point of rejection.</p>
               </div>
             </div>
           </section>
 
           <section id="right-3">
-            <h2>Right 3 — <em>Right to Grievance Redressal (Section 13)</em></h2>
+            <h2>Right 3 - <em>Right to Grievance Redressal (Section 13)</em></h2>
             <p>Every Data Principal has the right to have their grievances related to personal data processing addressed. If unsatisfied with the Fiduciary response, they can escalate to the <strong>Data Protection Board of India (DPBI)</strong>.</p>
             <h3>What your product must do</h3>
             <ul>
-              <li>Designate and publish a <strong>Grievance Officer</strong> — name, contact details, and response timelines must be publicly accessible in your privacy notice</li>
+              <li>Designate and publish a <strong>Grievance Officer</strong> - name, contact details, and response timelines must be publicly accessible in your privacy notice</li>
               <li>Maintain a grievance ticketing system that acknowledges receipt, provides status updates, and resolves within Rules-defined timelines</li>
               <li>Keep records of all grievances and resolutions for potential Board audits</li>
             </ul>
-            <p>Avoid routing data-related complaints through a generic customer support queue — they need a dedicated, documented track that can be presented during a Board inquiry.</p>
+            <p>Avoid routing data-related complaints through a generic customer support queue - they need a dedicated, documented track that can be presented during a Board inquiry.</p>
           </section>
 
           <section id="right-4">
-            <h2>Right 4 — <em>Right to Nominate (Section 14)</em></h2>
-            <p>A Data Principal can <strong>nominate another individual</strong> to exercise their data rights in the event of their death or incapacity. This is a uniquely thoughtful provision — and a compliance requirement that most product teams overlook entirely during initial DPDP planning.</p>
+            <h2>Right 4 - <em>Right to Nominate (Section 14)</em></h2>
+            <p>A Data Principal can <strong>nominate another individual</strong> to exercise their data rights in the event of their death or incapacity. This is a uniquely thoughtful provision - and a compliance requirement that most product teams overlook entirely during initial DPDP planning.</p>
             <h3>What your product must do</h3>
             <ul>
               <li>Provide a nomination mechanism in user account settings</li>
@@ -343,8 +343,8 @@ export default function EightRightsDataPrincipals() {
           </section>
 
           <section id="right-5">
-            <h2>Right 5 — <em>Right to Withdraw Consent (Section 6)</em></h2>
-            <p>Where processing is based on consent, the Data Principal has the right to <strong>withdraw that consent at any time</strong>. Withdrawal must be as easy as giving consent — this is the "as easy as giving" test.</p>
+            <h2>Right 5 - <em>Right to Withdraw Consent (Section 6)</em></h2>
+            <p>Where processing is based on consent, the Data Principal has the right to <strong>withdraw that consent at any time</strong>. Withdrawal must be as easy as giving consent - this is the "as easy as giving" test.</p>
             <h3>What your product must do</h3>
             <ul>
               <li>Provide a <strong>one-click or equivalent consent withdrawal mechanism</strong> in account or privacy settings</li>
@@ -362,8 +362,8 @@ export default function EightRightsDataPrincipals() {
           </section>
 
           <section id="right-6">
-            <h2>Right 6 — <em>Right Against Automated Decision-Making (Implicit)</em></h2>
-            <p>While the DPDP Act does not name this right as prominently as GDPR Article 22, Section 6(1) and related provisions implicitly support a Data Principal ability to contest decisions that materially affect them — particularly where automated profiling or scoring is involved.</p>
+            <h2>Right 6 - <em>Right Against Automated Decision-Making (Implicit)</em></h2>
+            <p>While the DPDP Act does not name this right as prominently as GDPR Article 22, Section 6(1) and related provisions implicitly support a Data Principal ability to contest decisions that materially affect them - particularly where automated profiling or scoring is involved.</p>
             <h3>What your product must do</h3>
             <ul>
               <li>If your product uses automated decision-making (credit scoring, insurance risk, job screening), implement <strong>human review pathways</strong></li>
@@ -373,8 +373,8 @@ export default function EightRightsDataPrincipals() {
           </section>
 
           <section id="right-7">
-            <h2>Right 7 — <em>Right to Data Portability (Anticipated via Rules)</em></h2>
-            <p>While not explicitly codified at GDPR Article 20 level, the framework anticipates portability rights — particularly for Significant Data Fiduciaries. Data Principals may be granted the right to receive their data in a structured, machine-readable format.</p>
+            <h2>Right 7 - <em>Right to Data Portability (Anticipated via Rules)</em></h2>
+            <p>While not explicitly codified at GDPR Article 20 level, the framework anticipates portability rights - particularly for Significant Data Fiduciaries. Data Principals may be granted the right to receive their data in a structured, machine-readable format.</p>
             <h3>What your product must do proactively</h3>
             <ul>
               <li>Design data export functionality allowing users to download their data in <strong>JSON, CSV, or XML</strong> format</li>
@@ -384,12 +384,12 @@ export default function EightRightsDataPrincipals() {
           </section>
 
           <section id="right-8">
-            <h2>Right 8 — <em>Right to Information About Breach (Section 8(6))</em></h2>
-            <p>If a personal data breach occurs and is likely to affect a Data Principal, the Data Fiduciary must <strong>notify the affected individual</strong> — in addition to notifying the Data Protection Board.</p>
+            <h2>Right 8 - <em>Right to Information About Breach (Section 8(6))</em></h2>
+            <p>If a personal data breach occurs and is likely to affect a Data Principal, the Data Fiduciary must <strong>notify the affected individual</strong> - in addition to notifying the Data Protection Board.</p>
             <h3>What your product must do</h3>
             <ul>
               <li>Maintain a breach detection and response workflow that identifies affected Data Principals</li>
-              <li>Draft breach notification templates in clear, plain language — free of technical jargon</li>
+              <li>Draft breach notification templates in clear, plain language - free of technical jargon</li>
               <li>Include in every notification: nature of the breach, data affected, likely impact, remediation steps taken, and Grievance Officer contact</li>
               <li>Deliver notifications as soon as practicable after a breach is confirmed</li>
               <li>Log all notifications sent for Board audit purposes</li>
@@ -397,7 +397,7 @@ export default function EightRightsDataPrincipals() {
           </section>
 
           <section id="quick-reference">
-            <h2>Quick Reference — <em>All 8 Rights Mapped to Product Features</em></h2>
+            <h2>Quick Reference - <em>All 8 Rights Mapped to Product Features</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>#</th><th>Right</th><th>Trigger</th><th>Product Feature Required</th></tr></thead>
@@ -406,12 +406,12 @@ export default function EightRightsDataPrincipals() {
                 </tbody>
               </table>
             </div>
-            <p>Rights under the DPDP Act are not a PR story for your privacy page. They are functional requirements. If a user cannot exercise them with minimal friction, you are non-compliant — regardless of what your privacy policy says. For the full picture on <a href="https://seccomply.net/resources/blog/consent-under-dpdp-act" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>how consent works under the DPDP Act, read Part 3 of this series</a>.</p>
+            <p>Rights under the DPDP Act are not a PR story for your privacy page. They are functional requirements. If a user cannot exercise them with minimal friction, you are non-compliant - regardless of what your privacy policy says. For the full picture on <a href="https://seccomply.net/resources/blog/consent-under-dpdp-act" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>how consent works under the DPDP Act, read Part 3 of this series</a>.</p>
           </section>
 
           <div className="cta-banner">
             <h3>Ready to Build DPDP Compliance?</h3>
-            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises — from gap assessment to audit-ready documentation.</p>
+            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises - from gap assessment to audit-ready documentation.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free DPDP Consultation →</a>
             </div>
@@ -439,11 +439,11 @@ export default function EightRightsDataPrincipals() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How quickly must a Data Fiduciary respond to a data access request?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>The Act specifies that requests must be responded to within a reasonable timeframe. Exact timelines will be specified in the Rules. In the interim, best practice is to acknowledge within 48-72 hours and resolve within 30 days — consistent with comparable international standards.</p></div>
+              <div className="faq-a"><p>The Act specifies that requests must be responded to within a reasonable timeframe. Exact timelines will be specified in the Rules. In the interim, best practice is to acknowledge within 48-72 hours and resolve within 30 days - consistent with comparable international standards.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can a Data Fiduciary refuse an erasure request?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes, in specific circumstances. Erasure can be declined or deferred when retention is required by applicable law — for example, GST records (7 years), RBI-mandated KYC records, or SEBI-mandated transaction logs. The refusal must be communicated to the user clearly, with the legal basis for continued retention documented.</p></div>
+              <div className="faq-a"><p>Yes, in specific circumstances. Erasure can be declined or deferred when retention is required by applicable law - for example, GST records (7 years), RBI-mandated KYC records, or SEBI-mandated transaction logs. The refusal must be communicated to the user clearly, with the legal basis for continued retention documented.</p></div>
             </div>
 
           </section>
@@ -483,7 +483,7 @@ export default function EightRightsDataPrincipals() {
           </div>
           <div className="sb-cta">
             <h4>Need DPDP Compliance Help?</h4>
-            <p>We run structured DPDP gap assessments — from data mapping to audit-ready documentation.</p>
+            <p>We run structured DPDP gap assessments - from data mapping to audit-ready documentation.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

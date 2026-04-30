@@ -25,20 +25,20 @@ export default function DataProtectionOfficerDPDP() {
   return (
     <Layout>
       <Head>
-        <title>What Is a Data Protection Officer (DPO) Under the DPDP Act — Do You Need One? | SecComply</title>
+        <title>What Is a Data Protection Officer (DPO) Under the DPDP Act - Do You Need One? | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="The DPO role under the DPDP Act is structured, targeted, and demanding — but targeted only at Significant Data Fiduciaries. Here is the full picture on the role, reporting structure, and when you need one." />
+        <meta name="description" content="The DPO role under the DPDP Act is structured, targeted, and demanding - but targeted only at Significant Data Fiduciaries. Here is the full picture on the role, reporting structure, and when you need one." />
         <meta name="keywords" content="data protection officer DPO DPDP Act, DPO India requirement, DPO SDF DPDP, DPO qualifications India, DPO Board reporting, Grievance Officer vs DPO, DPO outsourced India, DPDP DPO charter" />
-        <meta property="og:title" content="What Is a Data Protection Officer (DPO) Under the DPDP Act — Do You Need One?" />
-        <meta property="og:description" content="The DPO role under the DPDP Act is structured, targeted, and demanding — but targeted only at Significant Data Fiduciaries. Here is the full picture on the role, reporting structure, and when you need one." />
+        <meta property="og:title" content="What Is a Data Protection Officer (DPO) Under the DPDP Act - Do You Need One?" />
+        <meta property="og:description" content="The DPO role under the DPDP Act is structured, targeted, and demanding - but targeted only at Significant Data Fiduciaries. Here is the full picture on the role, reporting structure, and when you need one." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/data-protection-officer-dpo-dpdp" />
         <meta property="article:published_time" content="2026-04-01" />
         <meta property="article:author" content="Chandrika Mulage" />
         <meta property="article:tag" content="DPDP Act" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/data-protection-officer-dpo-dpdp" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"What Is a Data Protection Officer (DPO) Under the DPDP Act — Do You Need One?","description":"The DPO requirement under the DPDP Act applies only to Significant Data Fiduciaries. Here is the full picture on the role, reporting structure, and when you need one.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/data-protection-officer-dpo-dpdp","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"DPO Under DPDP","item":"https://seccomply.net/resources/blog/data-protection-officer-dpo-dpdp"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"What Is a Data Protection Officer (DPO) Under the DPDP Act - Do You Need One?","description":"The DPO requirement under the DPDP Act applies only to Significant Data Fiduciaries. Here is the full picture on the role, reporting structure, and when you need one.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/data-protection-officer-dpo-dpdp","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"DPO Under DPDP","item":"https://seccomply.net/resources/blog/data-protection-officer-dpo-dpdp"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -188,7 +188,7 @@ export default function DataProtectionOfficerDPDP() {
           <span className="badge badge-am">🏢 India Compliance</span>
           <span className="badge badge-gr">Part 5 of 6</span>
         </div>
-        <h1 className="hero-h1">What Is a Data Protection Officer (DPO) — <em>Do You Need One?</em></h1>
+        <h1 className="hero-h1">What Is a Data Protection Officer (DPO) - <em>Do You Need One?</em></h1>
         <p className="hero-sub">The DPO role under India's DPDP Act has distinct requirements, a narrower initial scope, and important differences from its GDPR counterpart. The central question for most Indian businesses: do you need one? The honest answer depends on your SDF status.</p>
 
         <div className="author-strip">
@@ -203,13 +203,13 @@ export default function DataProtectionOfficerDPDP() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=480&fit=crop" alt="Data Protection Officer DPO DPDP Act India governance" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">Under Section 10(2)(a), only Significant Data Fiduciaries must appoint a DPO. For everyone else, a Grievance Officer is sufficient — for now. But SDF status can arrive via government notification at any time.</p>
+        <p className="img-cap">Under Section 10(2)(a), only Significant Data Fiduciaries must appoint a DPO. For everyone else, a Grievance Officer is sufficient - for now. But SDF status can arrive via government notification at any time.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pg5" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pg5)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DPO vs Grievance Officer — DPDP Act Roles</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DPO vs Grievance Officer - DPDP Act Roles</text>
           <rect x="30" y="38" width="450" height="220" rx="14" fill="#091826" stroke="rgba(106,138,170,0.25)" strokeWidth="1.5"/>
           <rect x="30" y="38" width="450" height="3" rx="1.5" fill="#6a8aaa"/>
           <text x="255" y="65" textAnchor="middle" fill="rgba(200,214,229,0.65)" fontSize="11" fontWeight="700" fontFamily="sans-serif">GRIEVANCE OFFICER</text>
@@ -225,7 +225,7 @@ export default function DataProtectionOfficerDPDP() {
           <rect x="510" y="38" width="450" height="3" rx="1.5" fill="#E8632B"/>
           <text x="735" y="65" textAnchor="middle" fill="#E8632B" fontSize="11" fontWeight="700" fontFamily="sans-serif">DATA PROTECTION OFFICER (DPO)</text>
           <text x="540" y="92" fill="rgba(200,214,229,0.75)" fontSize="9.5" fontFamily="sans-serif">• Required ONLY for Significant Data Fiduciaries</text>
-          <text x="540" y="112" fill="#E8632B" fontSize="9.5" fontWeight="700" fontFamily="sans-serif">• MUST be based in India — non-negotiable</text>
+          <text x="540" y="112" fill="#E8632B" fontSize="9.5" fontWeight="700" fontFamily="sans-serif">• MUST be based in India - non-negotiable</text>
           <text x="540" y="132" fill="#E8632B" fontSize="9.5" fontWeight="700" fontFamily="sans-serif">• Reports DIRECTLY to Board of Directors</text>
           <text x="540" y="152" fill="rgba(200,214,229,0.75)" fontSize="9.5" fontFamily="sans-serif">• Professional expertise in data protection</text>
           <text x="540" y="172" fill="rgba(200,214,229,0.75)" fontSize="9.5" fontFamily="sans-serif">• Represents SDF before the DPBI</text>
@@ -259,20 +259,20 @@ export default function DataProtectionOfficerDPDP() {
             <strong>Part 5 of 6</strong>
           </div>
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The role of a Data Protection Officer (DPO) has long been associated with GDPR compliance in Europe. India's DPDP Act now introduces its own version — but with distinct requirements, a narrower initial scope, and important differences from its European counterpart. The central question for most Indian businesses: <strong>do you need one?</strong> The honest answer: if you are a <a href="https://seccomply.net/resources/blog/significant-data-fiduciary-sdf" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>Significant Data Fiduciary</a>, yes — mandatory. For everyone else, it is not currently required under the Act.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The role of a Data Protection Officer (DPO) has long been associated with GDPR compliance in Europe. India's DPDP Act now introduces its own version - but with distinct requirements, a narrower initial scope, and important differences from its European counterpart. The central question for most Indian businesses: <strong>do you need one?</strong> The honest answer: if you are a <a href="https://seccomply.net/resources/blog/significant-data-fiduciary-sdf" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>Significant Data Fiduciary</a>, yes - mandatory. For everyone else, it is not currently required under the Act.</p>
 
           <section id="law-says">
             <h2>What the DPDP Act <em>Says About DPOs</em></h2>
-            <p><strong>Section 10(2)(a)</strong> of the DPDP Act mandates that every <strong>Significant Data Fiduciary</strong> appoint a Data Protection Officer. This is not a generalised requirement — it applies specifically to entities notified as SDFs by the Central Government. Standard Data Fiduciaries processing personal data at lower volumes or lower risk levels are not currently required to appoint a DPO under the Act. However, they are required to appoint a <strong>Grievance Officer</strong> — which is a different, less demanding role.</p>
+            <p><strong>Section 10(2)(a)</strong> of the DPDP Act mandates that every <strong>Significant Data Fiduciary</strong> appoint a Data Protection Officer. This is not a generalised requirement - it applies specifically to entities notified as SDFs by the Central Government. Standard Data Fiduciaries processing personal data at lower volumes or lower risk levels are not currently required to appoint a DPO under the Act. However, they are required to appoint a <strong>Grievance Officer</strong> - which is a different, less demanding role.</p>
           </section>
 
           <section id="dpo-vs-grievance">
-            <h2>DPO vs Grievance Officer — <em>What Is the Difference?</em></h2>
+            <h2>DPO vs Grievance Officer - <em>What Is the Difference?</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th></th><th>Grievance Officer</th><th>Data Protection Officer</th></tr></thead>
                 <tbody>
-                  {[['Who must appoint?','All Data Fiduciaries','Significant Data Fiduciaries only'],['Primary function','Handle Data Principal complaints','Oversee DPDP compliance programme'],['Reports to','Not specified','Board of Directors directly'],['India presence','Not required','Must be based in India'],['Board accountability','No','Yes'],['DPBI representation','No','Yes — represents the SDF before the Board']].map(([q,g,d],i)=>(<tr key={i}><td>{q}</td><td>{g}</td><td style={{color:'var(--cy)'}}>{d}</td></tr>))}
+                  {[['Who must appoint?','All Data Fiduciaries','Significant Data Fiduciaries only'],['Primary function','Handle Data Principal complaints','Oversee DPDP compliance programme'],['Reports to','Not specified','Board of Directors directly'],['India presence','Not required','Must be based in India'],['Board accountability','No','Yes'],['DPBI representation','No','Yes - represents the SDF before the Board']].map(([q,g,d],i)=>(<tr key={i}><td>{q}</td><td>{g}</td><td style={{color:'var(--cy)'}}>{d}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -283,10 +283,10 @@ export default function DataProtectionOfficerDPDP() {
             <h2>What Does a DPO Do <em>Under the DPDP Act?</em></h2>
             <ul>
               <li><strong>Point of Contact for Data Principals:</strong> The DPO is the primary contact for individuals exercising their 8 rights. They ensure requests are acknowledged, tracked, and resolved within required timelines.</li>
-              <li><strong>Point of Contact for the Data Protection Board:</strong> The DPO represents the SDF before the DPBI — responding to enquiries, submitting documentation during investigations, attending hearings, and coordinating remediation.</li>
+              <li><strong>Point of Contact for the Data Protection Board:</strong> The DPO represents the SDF before the DPBI - responding to enquiries, submitting documentation during investigations, attending hearings, and coordinating remediation.</li>
               <li><strong>Overseeing the DPDP Compliance Programme:</strong> Monitoring compliance, reviewing and approving DPIAs, advising on high-risk processing, reviewing consent mechanisms, coordinating with the Independent Data Auditor.</li>
-              <li><strong>Advising the Board of Directors:</strong> Since the DPO reports directly to the Board, they function as a senior governance voice — briefing the Board on data protection risks, significant incidents, and regulatory developments.</li>
-              <li><strong>Internal Training and Awareness:</strong> Building a data protection culture — training for product, engineering, and business teams, ensuring Privacy by Design is embedded from earliest stages.</li>
+              <li><strong>Advising the Board of Directors:</strong> Since the DPO reports directly to the Board, they function as a senior governance voice - briefing the Board on data protection risks, significant incidents, and regulatory developments.</li>
+              <li><strong>Internal Training and Awareness:</strong> Building a data protection culture - training for product, engineering, and business teams, ensuring Privacy by Design is embedded from earliest stages.</li>
             </ul>
           </section>
 
@@ -297,7 +297,7 @@ export default function DataProtectionOfficerDPDP() {
             <p>Non-negotiable for SDF-designated entities. A DPO located in Singapore, the US, or the UK does not satisfy the DPDP Act requirement. If you operate globally, you will need a dedicated India-based DPO.</p>
 
             <h3>Must report to the Board of Directors</h3>
-            <p>This requirement ensures the DPO independence. Reporting to the CISO, General Counsel, or Chief Privacy Officer — if those roles are below Board level — does not satisfy the requirement. The DPO needs direct Board access.</p>
+            <p>This requirement ensures the DPO independence. Reporting to the CISO, General Counsel, or Chief Privacy Officer - if those roles are below Board level - does not satisfy the requirement. The DPO needs direct Board access.</p>
 
             <h3>Must have appropriate expertise</h3>
             <p>The Act does not specify formal certifications, but the DPO must have demonstrable professional competence in data protection law, privacy engineering, or information security management. Strong credentials include:</p>
@@ -311,10 +311,10 @@ export default function DataProtectionOfficerDPDP() {
           </section>
 
           <section id="internal-external">
-            <h2>Who Can Serve as DPO? — <em>Internal or External</em></h2>
+            <h2>Who Can Serve as DPO? - <em>Internal or External</em></h2>
 
             <h3>Internal DPO</h3>
-            <p>An employee of the SDF, appointed to the role. <strong>Advantages:</strong> institutional knowledge, internal credibility, accessibility. <strong>Challenge:</strong> potential conflicts of interest if the DPO also holds an operational role. Best practice: the DPO should not hold a role that determines data processing decisions — for example, they should not simultaneously be the Head of Product or CTO.</p>
+            <p>An employee of the SDF, appointed to the role. <strong>Advantages:</strong> institutional knowledge, internal credibility, accessibility. <strong>Challenge:</strong> potential conflicts of interest if the DPO also holds an operational role. Best practice: the DPO should not hold a role that determines data processing decisions - for example, they should not simultaneously be the Head of Product or CTO.</p>
 
             <h3>External / Outsourced DPO</h3>
             <p>A third-party professional or advisory firm appointed as DPO. Common in organisations that do not yet have the internal headcount or expertise. The outsourced DPO must still be India-based and available to represent the SDF before the Board.</p>
@@ -322,7 +322,7 @@ export default function DataProtectionOfficerDPDP() {
 
           <section id="non-sdf">
             <h2>Do Standard Data Fiduciaries <em>Need a DPO?</em></h2>
-            <p>Not under the Act current text — but consider this:</p>
+            <p>Not under the Act current text - but consider this:</p>
             <ul>
               <li>You process sensitive personal data at scale (health, financial, biometric)</li>
               <li>You serve enterprise clients who contractually require a DPO</li>
@@ -334,14 +334,14 @@ export default function DataProtectionOfficerDPDP() {
               <span className="co-icon">🔑</span>
               <div className="co-body">
                 <strong>The Minimum for Non-SDFs</strong>
-                <p>If you are not an SDF, appoint and publish your Grievance Officer details — this is mandatory for ALL Data Fiduciaries regardless of SDF status. You do not need a DPO yet, but you absolutely need a Grievance Officer.</p>
+                <p>If you are not an SDF, appoint and publish your Grievance Officer details - this is mandatory for ALL Data Fiduciaries regardless of SDF status. You do not need a DPO yet, but you absolutely need a Grievance Officer.</p>
               </div>
             </div>
           </section>
 
           <section id="dpo-auditor">
             <h2>The DPO and the <em>Independent Data Auditor</em></h2>
-            <p>SDFs must also appoint an <strong>Independent Data Auditor</strong> — a separate role from the DPO.</p>
+            <p>SDFs must also appoint an <strong>Independent Data Auditor</strong> - a separate role from the DPO.</p>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th></th><th>DPO</th><th>Independent Data Auditor</th></tr></thead>
@@ -353,18 +353,18 @@ export default function DataProtectionOfficerDPDP() {
           </section>
 
           <section id="roadmap">
-            <h2>Building Your DPO Programme — <em>A Practical Roadmap</em></h2>
+            <h2>Building Your DPO Programme - <em>A Practical Roadmap</em></h2>
             <ul>
-              <li><strong>Phase 1 — Assess your SDF status:</strong> Before appointing a DPO, confirm whether you are (or are approaching) SDF designation. Run a self-assessment against the Section 10(2) criteria.</li>
-              <li><strong>Phase 2 — Define the role and reporting structure:</strong> Create a formal DPO charter defining scope, reporting line (direct to Board), authority to review and veto high-risk processing, and budget allocation.</li>
-              <li><strong>Phase 3 — Recruit or designate the DPO:</strong> Internal appointment — assess conflict of interest. External — evaluate DPO-as-a-service providers with India presence and DPBI representation capability.</li>
-              <li><strong>Phase 4 — Build DPO infrastructure:</strong> Data mapping and inventory, consent management records, incident management, DPIA register, grievance ticketing.</li>
+              <li><strong>Phase 1 - Assess your SDF status:</strong> Before appointing a DPO, confirm whether you are (or are approaching) SDF designation. Run a self-assessment against the Section 10(2) criteria.</li>
+              <li><strong>Phase 2 - Define the role and reporting structure:</strong> Create a formal DPO charter defining scope, reporting line (direct to Board), authority to review and veto high-risk processing, and budget allocation.</li>
+              <li><strong>Phase 3 - Recruit or designate the DPO:</strong> Internal appointment - assess conflict of interest. External - evaluate DPO-as-a-service providers with India presence and DPBI representation capability.</li>
+              <li><strong>Phase 4 - Build DPO infrastructure:</strong> Data mapping and inventory, consent management records, incident management, DPIA register, grievance ticketing.</li>
             </ul>
             <div className="callout co-danger">
               <span className="co-icon">🚨</span>
               <div className="co-body">
                 <strong>What Happens If You Need a DPO and Do Not Have One</strong>
-                <p>Failure to appoint a DPO as an SDF is non-compliance with Section 10 — exposing you to penalties from the Data Protection Board. More critically, without a DPO: Data Principal requests may go unresolved, DPBI enquiries may be mishandled, DPIAs will not get done, and your Board has no structured governance channel for data protection decisions.</p>
+                <p>Failure to appoint a DPO as an SDF is non-compliance with Section 10 - exposing you to penalties from the Data Protection Board. More critically, without a DPO: Data Principal requests may go unresolved, DPBI enquiries may be mishandled, DPIAs will not get done, and your Board has no structured governance channel for data protection decisions.</p>
               </div>
             </div>
             <p>For the practical starting point on whether DPDP applies to your business at all, read our <a href="https://seccomply.net/resources/blog/dpdp-applicability-quiz-walkthrough" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>DPDP applicability quiz in Part 6 of this series</a>.</p>
@@ -372,7 +372,7 @@ export default function DataProtectionOfficerDPDP() {
 
           <div className="cta-banner">
             <h3>Ready to Build DPDP Compliance?</h3>
-            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises — from gap assessment to audit-ready documentation.</p>
+            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises - from gap assessment to audit-ready documentation.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free DPDP Consultation →</a>
             </div>
@@ -388,15 +388,15 @@ export default function DataProtectionOfficerDPDP() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is a Data Protection Officer mandatory for every Indian business under the DPDP Act?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>No. The DPO requirement under Section 10(2)(a) applies only to Significant Data Fiduciaries — entities notified by the Central Government based on factors like data volume, sensitivity, and risk. Standard Data Fiduciaries must appoint a Grievance Officer instead, which is a less demanding role.</p></div>
+              <div className="faq-a"><p>No. The DPO requirement under Section 10(2)(a) applies only to Significant Data Fiduciaries - entities notified by the Central Government based on factors like data volume, sensitivity, and risk. Standard Data Fiduciaries must appoint a Grievance Officer instead, which is a less demanding role.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can a company based outside India appoint a DPO located overseas to satisfy DPDP requirements?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>No. The DPDP Act requires the DPO of a Significant Data Fiduciary to be based in India. This is non-negotiable. A DPO located in Singapore, the US, UK, or anywhere outside India does not satisfy the requirement — even if the parent company is headquartered overseas.</p></div>
+              <div className="faq-a"><p>No. The DPDP Act requires the DPO of a Significant Data Fiduciary to be based in India. This is non-negotiable. A DPO located in Singapore, the US, UK, or anywhere outside India does not satisfy the requirement - even if the parent company is headquartered overseas.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can the CISO or General Counsel also serve as the DPO?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Generally not. The DPO must report directly to the Board of Directors. Reporting to the CISO or General Counsel — if those roles are below Board level — does not satisfy the requirement. Additionally, the DPO should not hold an operational role that determines data processing decisions, as this creates a conflict of interest.</p></div>
+              <div className="faq-a"><p>Generally not. The DPO must report directly to the Board of Directors. Reporting to the CISO or General Counsel - if those roles are below Board level - does not satisfy the requirement. Additionally, the DPO should not hold an operational role that determines data processing decisions, as this creates a conflict of interest.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is the DPO role the same as the Grievance Officer role?</strong><span className="faq-ch">▾</span></div>
@@ -443,7 +443,7 @@ export default function DataProtectionOfficerDPDP() {
           </div>
           <div className="sb-cta">
             <h4>Need DPDP Compliance Help?</h4>
-            <p>We run structured DPDP gap assessments — from data mapping to audit-ready documentation.</p>
+            <p>We run structured DPDP gap assessments - from data mapping to audit-ready documentation.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

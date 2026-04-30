@@ -25,12 +25,12 @@ export default function ISO27701AnnexBProcessorObligations() {
   return (
     <Layout>
       <Head>
-        <title>ISO 27701 Annex B Controls — Processor-Specific Obligations Unpacked | SecComply</title>
+        <title>ISO 27701 Annex B Controls - Processor-Specific Obligations Unpacked | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="ISO 27701 Annex B is written for PII processors — SaaS vendors, cloud platforms, payroll bureaus, and B2B data services. Seven control areas (B.2 to B.8) explained in operational detail with practical obligations, certification path, and common pitfalls." />
+        <meta name="description" content="ISO 27701 Annex B is written for PII processors - SaaS vendors, cloud platforms, payroll bureaus, and B2B data services. Seven control areas (B.2 to B.8) explained in operational detail with practical obligations, certification path, and common pitfalls." />
         <meta name="keywords" content="ISO 27701 Annex B, ISO 27701 processor obligations, PII processor controls, ISO 27701 certification processor, B.2 B.3 B.4 B.5 B.6 B.7 B.8 controls, processor DPA requirements, sub-processor management, privacy by design processor, GDPR Article 28" />
-        <meta property="og:title" content="ISO 27701 Annex B Controls — Processor-Specific Obligations Unpacked" />
+        <meta property="og:title" content="ISO 27701 Annex B Controls - Processor-Specific Obligations Unpacked" />
         <meta property="og:description" content="Seven Annex B control areas explained with practical obligations, certification path, and the common pitfalls auditors flag in processor certification audits." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/iso-27701-annex-b-processor-obligations" />
@@ -38,7 +38,7 @@ export default function ISO27701AnnexBProcessorObligations() {
         <meta property="article:author" content="Bhumika Deshmukh" />
         <meta property="article:tag" content="ISO 27701" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/iso-27701-annex-b-processor-obligations" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27701 Annex B Controls — Processor-Specific Obligations Unpacked","description":"ISO 27701 Annex B is written for PII processors. Seven control areas (B.2 to B.8) explained with practical obligations, certification path, and common pitfalls.","author":{"@type":"Person","name":"Bhumika Deshmukh","jobTitle":"Privacy & Compliance Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply","logo":{"@type":"ImageObject","url":"https://seccomply.net/favicon.ico"}},"datePublished":"2026-04-23","dateModified":"2026-04-23","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27701-annex-b-processor-obligations","articleSection":"ISO 27701","image":"https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&h=480&fit=crop"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://seccomply.net/resources"},{"@type":"ListItem","position":3,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":4,"name":"ISO 27701 Annex B Controls","item":"https://seccomply.net/resources/blog/iso-27701-annex-b-processor-obligations"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is ISO 27701 Annex B?","acceptedAnswer":{"@type":"Answer","text":"ISO 27701 Annex B contains the controls that apply specifically to PII processors — organisations that process personal data on behalf of a controller. It mirrors the structure of Annex A but reframes every obligation from the processor's perspective. The seven control areas (B.2 to B.8) cover lawful processing, obligations to individuals, privacy by design, data sharing, subject rights, complaints handling, and ongoing assessment of obligations."}},{"@type":"Question","name":"Who is a PII processor under ISO 27701?","acceptedAnswer":{"@type":"Answer","text":"A PII processor is any organisation that processes personal data on behalf of another organisation (the controller) under documented instructions. Typical processors include SaaS vendors, cloud infrastructure providers, payroll bureaus, marketing platforms, analytics services, and B2B data services. Many organisations are both controller and processor, depending on the data flow."}},{"@type":"Question","name":"Can I certify to ISO 27701 without ISO 27001?","acceptedAnswer":{"@type":"Answer","text":"No. ISO 27701 is an extension of ISO 27001 — you cannot certify to 27701 as a standalone standard. Your organisation must have an existing ISO 27001 ISMS in scope before pursuing 27701 certification. If you are starting from scratch, plan for both standards in parallel since the overlapping controls make this more efficient than sequential certification."}},{"@type":"Question","name":"What is the difference between Annex A and Annex B in ISO 27701?","acceptedAnswer":{"@type":"Answer","text":"Annex A applies to PII controllers — organisations that determine the purposes and means of processing. Annex B applies to PII processors — organisations that process data on a controller's behalf. The two annexes mirror each other thematically but contain different operational obligations. Many organisations are both, and need to evaluate both annexes against their data flows."}},{"@type":"Question","name":"What is the most common audit finding for processors under Annex B?","acceptedAnswer":{"@type":"Answer","text":"Incomplete deletion is consistently one of the most common processor compliance failures. Erasure must propagate beyond the live database to cover log files, backups, replicas, analytics stores, and any sub-processors that received the data. Auditors expect documented deletion procedures, technical evidence that deletion has occurred, and confirmation that deletion cascades downstream."}}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27701 Annex B Controls - Processor-Specific Obligations Unpacked","description":"ISO 27701 Annex B is written for PII processors. Seven control areas (B.2 to B.8) explained with practical obligations, certification path, and common pitfalls.","author":{"@type":"Person","name":"Bhumika Deshmukh","jobTitle":"Privacy & Compliance Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply","logo":{"@type":"ImageObject","url":"https://seccomply.net/favicon.ico"}},"datePublished":"2026-04-23","dateModified":"2026-04-23","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27701-annex-b-processor-obligations","articleSection":"ISO 27701","image":"https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&h=480&fit=crop"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://seccomply.net/resources"},{"@type":"ListItem","position":3,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":4,"name":"ISO 27701 Annex B Controls","item":"https://seccomply.net/resources/blog/iso-27701-annex-b-processor-obligations"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is ISO 27701 Annex B?","acceptedAnswer":{"@type":"Answer","text":"ISO 27701 Annex B contains the controls that apply specifically to PII processors - organisations that process personal data on behalf of a controller. It mirrors the structure of Annex A but reframes every obligation from the processor's perspective. The seven control areas (B.2 to B.8) cover lawful processing, obligations to individuals, privacy by design, data sharing, subject rights, complaints handling, and ongoing assessment of obligations."}},{"@type":"Question","name":"Who is a PII processor under ISO 27701?","acceptedAnswer":{"@type":"Answer","text":"A PII processor is any organisation that processes personal data on behalf of another organisation (the controller) under documented instructions. Typical processors include SaaS vendors, cloud infrastructure providers, payroll bureaus, marketing platforms, analytics services, and B2B data services. Many organisations are both controller and processor, depending on the data flow."}},{"@type":"Question","name":"Can I certify to ISO 27701 without ISO 27001?","acceptedAnswer":{"@type":"Answer","text":"No. ISO 27701 is an extension of ISO 27001 - you cannot certify to 27701 as a standalone standard. Your organisation must have an existing ISO 27001 ISMS in scope before pursuing 27701 certification. If you are starting from scratch, plan for both standards in parallel since the overlapping controls make this more efficient than sequential certification."}},{"@type":"Question","name":"What is the difference between Annex A and Annex B in ISO 27701?","acceptedAnswer":{"@type":"Answer","text":"Annex A applies to PII controllers - organisations that determine the purposes and means of processing. Annex B applies to PII processors - organisations that process data on a controller's behalf. The two annexes mirror each other thematically but contain different operational obligations. Many organisations are both, and need to evaluate both annexes against their data flows."}},{"@type":"Question","name":"What is the most common audit finding for processors under Annex B?","acceptedAnswer":{"@type":"Answer","text":"Incomplete deletion is consistently one of the most common processor compliance failures. Erasure must propagate beyond the live database to cover log files, backups, replicas, analytics stores, and any sub-processors that received the data. Auditors expect documented deletion procedures, technical evidence that deletion has occurred, and confirmation that deletion cascades downstream."}}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -181,8 +181,8 @@ export default function ISO27701AnnexBProcessorObligations() {
           <span className="badge badge-bl">🔏 Privacy Compliance</span>
           <span className="badge badge-gr">⚙️ For Processors</span>
         </div>
-        <h1 className="hero-h1">ISO 27701 Annex B Controls — <em>Processor-Specific Obligations</em> Unpacked</h1>
-        <p className="hero-sub">If your organisation processes personal data on behalf of clients — as a SaaS vendor, cloud platform, payroll bureau, or B2B data service — Annex B is written for you. Seven control areas (B.2 to B.8) explained in operational detail, with the certification path and the pitfalls auditors flag most.</p>
+        <h1 className="hero-h1">ISO 27701 Annex B Controls - <em>Processor-Specific Obligations</em> Unpacked</h1>
+        <p className="hero-sub">If your organisation processes personal data on behalf of clients - as a SaaS vendor, cloud platform, payroll bureau, or B2B data service - Annex B is written for you. Seven control areas (B.2 to B.8) explained in operational detail, with the certification path and the pitfalls auditors flag most.</p>
 
         <div className="author-strip">
           <div className="avatar">BD</div>
@@ -202,7 +202,7 @@ export default function ISO27701AnnexBProcessorObligations() {
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
             <defs><pattern id="pgs5" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
             <rect width="960" height="280" fill="url(#pgs5)"/>
-            <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27701 Annex B — 7 Processor Control Areas</text>
+            <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27701 Annex B - 7 Processor Control Areas</text>
             {[
               {t:"B.2",sub:"Conditions for Collection",col:"#E8632B",x:30},
               {t:"B.3",sub:"Obligations to Principals",col:"#818cf8",x:165},
@@ -244,12 +244,12 @@ export default function ISO27701AnnexBProcessorObligations() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Many teams treat ISO 27701 as a controller-only framework. That is understandable — controllers bear the headline obligations under GDPR and similar laws. But Annex B exists precisely because the standard recognises that processors carry distinct, non-trivial responsibilities, and that a weak processor is a liability for every controller that depends on them. This walkthrough unpacks the seven Annex B control areas in operational detail so your team knows exactly what each requires.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Many teams treat ISO 27701 as a controller-only framework. That is understandable - controllers bear the headline obligations under GDPR and similar laws. But Annex B exists precisely because the standard recognises that processors carry distinct, non-trivial responsibilities, and that a weak processor is a liability for every controller that depends on them. This walkthrough unpacks the seven Annex B control areas in operational detail so your team knows exactly what each requires.</p>
 
           <section id="who-for">
             <h2>Who Is This Blog <em>For?</em></h2>
-            <p>If your organisation processes personal data on behalf of clients — as a SaaS vendor, cloud infrastructure provider, payroll bureau, marketing platform, or any other B2B data service — you are a PII Processor under ISO 27701. And Annex B is written specifically for you.</p>
-            <p>If you are still working out which side of the line you sit on, it is worth reading our <a href="https://seccomply.net/resources/blog/data-principal-fiduciary-processor" className="inline-link">data principal vs fiduciary vs processor explainer</a> alongside this — many organisations are both controller and processor depending on the data flow.</p>
+            <p>If your organisation processes personal data on behalf of clients - as a SaaS vendor, cloud infrastructure provider, payroll bureau, marketing platform, or any other B2B data service - you are a PII Processor under ISO 27701. And Annex B is written specifically for you.</p>
+            <p>If you are still working out which side of the line you sit on, it is worth reading our <a href="https://seccomply.net/resources/blog/data-principal-fiduciary-processor" className="inline-link">data principal vs fiduciary vs processor explainer</a> alongside this - many organisations are both controller and processor depending on the data flow.</p>
           </section>
 
           <section id="why-matters">
@@ -258,15 +258,15 @@ export default function ISO27701AnnexBProcessorObligations() {
               <span className="co-icon">⚡</span>
               <div className="co-body">
                 <strong>Regulators Now Target Processors Directly</strong>
-                <p>Under GDPR Article 28, processors can face independent fines. ISO 27701 Annex B certification provides documented, auditable evidence that your organisation takes processor obligations seriously — a genuine differentiator in enterprise sales and a meaningful reduction in regulatory exposure.</p>
+                <p>Under GDPR Article 28, processors can face independent fines. ISO 27701 Annex B certification provides documented, auditable evidence that your organisation takes processor obligations seriously - a genuine differentiator in enterprise sales and a meaningful reduction in regulatory exposure.</p>
               </div>
             </div>
             <p>For the broader context on processor obligations under privacy law, our companion piece on <a href="https://seccomply.net/resources/blog/iso-27701-for-data-processors" className="inline-link">ISO 27701 for data processors</a> covers the Clause 9 management system requirements that sit alongside Annex B. Annex B controls are the operational obligations; Clause 9 is the governance scaffolding that holds them together.</p>
           </section>
 
           <section id="controller-vs-processor">
-            <h2>Controller vs Processor — <em>A Quick Orientation</em></h2>
-            <p>Before diving into the controls, it helps to be clear on what distinguishes a processor from a controller — because many organisations are both, depending on the data flow.</p>
+            <h2>Controller vs Processor - <em>A Quick Orientation</em></h2>
+            <p>Before diving into the controls, it helps to be clear on what distinguishes a processor from a controller - because many organisations are both, depending on the data flow.</p>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Dimension</th><th>PII Controller (Annex A)</th><th>PII Processor (Annex B)</th></tr></thead>
@@ -285,7 +285,7 @@ export default function ISO27701AnnexBProcessorObligations() {
           </section>
 
           <section id="deep-dive">
-            <h2>The Seven Annex B Control Areas — <em>Deep Dive</em></h2>
+            <h2>The Seven Annex B Control Areas - <em>Deep Dive</em></h2>
             <p>Annex B mirrors the thematic structure of Annex A but reframes every obligation from the processor perspective. Here is what each area requires in practice.</p>
 
             <div className="control-card">
@@ -293,7 +293,7 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <span className="control-card-tag">B.2</span>
                 <span className="control-card-title">Conditions for Collection and Processing</span>
               </div>
-              <p className="control-card-what"><strong>What it covers:</strong> Processors may only process PII under documented, lawful instructions from the controller. This control ensures there is no unauthorised, scope-creep, or purpose-limited processing — a foundational requirement that underpins everything else.</p>
+              <p className="control-card-what"><strong>What it covers:</strong> Processors may only process PII under documented, lawful instructions from the controller. This control ensures there is no unauthorised, scope-creep, or purpose-limited processing - a foundational requirement that underpins everything else.</p>
               <div className="control-card-label">Practical Obligations</div>
               <ul>
                 <li>Obtain and retain a signed Data Processing Agreement (DPA) with every controller before processing begins</li>
@@ -307,7 +307,7 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <span className="co-icon">💡</span>
                 <div className="co-body">
                   <strong>Real-World Scenario</strong>
-                  <p>A CRM SaaS provider receives customer data from a retail client. The provider cannot use that data to train its own AI models or enrich its own customer database — even in aggregated or anonymised form — without explicit controller authorisation and a legal basis.</p>
+                  <p>A CRM SaaS provider receives customer data from a retail client. The provider cannot use that data to train its own AI models or enrich its own customer database - even in aggregated or anonymised form - without explicit controller authorisation and a legal basis.</p>
                 </div>
               </div>
             </div>
@@ -317,12 +317,12 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <span className="control-card-tag">B.3</span>
                 <span className="control-card-title">Obligations to PII Principals</span>
               </div>
-              <p className="control-card-what"><strong>What it covers:</strong> Even as a processor, you may have limited but important direct obligations toward the individuals whose data you process — particularly where you interact with them in the course of service delivery.</p>
+              <p className="control-card-what"><strong>What it covers:</strong> Even as a processor, you may have limited but important direct obligations toward the individuals whose data you process - particularly where you interact with them in the course of service delivery.</p>
               <div className="control-card-label">Practical Obligations</div>
               <ul>
                 <li>Identify all touchpoints where your service interacts directly with end-users</li>
                 <li>Ensure individual-facing communications are pre-approved and aligned with the controller's privacy notices</li>
-                <li>Do not make independent representations about how data will be used — defer to the controller</li>
+                <li>Do not make independent representations about how data will be used - defer to the controller</li>
                 <li>Support controllers in providing individuals with information about sub-processors that have access to their data</li>
                 <li>If an individual contacts you directly with a rights request, forward it to the controller promptly and without acting on it independently</li>
                 <li>Document your approach to individual-facing interactions in your processing records</li>
@@ -338,7 +338,7 @@ export default function ISO27701AnnexBProcessorObligations() {
               <div className="control-card-label">Practical Obligations</div>
               <ul>
                 <li>Conduct a Privacy Impact Assessment (PIA) for all new features that process personal data</li>
-                <li>Default to minimum data collection in all product configurations — no opt-out required to reduce data sharing</li>
+                <li>Default to minimum data collection in all product configurations - no opt-out required to reduce data sharing</li>
                 <li>Provide controllers with granular retention controls so they can enforce their own policies</li>
                 <li>Implement pseudonymisation and encryption at rest and in transit as defaults, not optional extras</li>
                 <li>Maintain technical documentation of your privacy architecture to support client DPIAs</li>
@@ -359,7 +359,7 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <span className="control-card-tag">B.5</span>
                 <span className="control-card-title">PII Sharing, Transfer, and Disclosure</span>
               </div>
-              <p className="control-card-what"><strong>What it covers:</strong> Controls how processors may share, transfer, or disclose personal data — whether to sub-processors, across international borders, or in response to legal demands. Unauthorised sharing is one of the highest-risk areas for processors.</p>
+              <p className="control-card-what"><strong>What it covers:</strong> Controls how processors may share, transfer, or disclose personal data - whether to sub-processors, across international borders, or in response to legal demands. Unauthorised sharing is one of the highest-risk areas for processors.</p>
               <div className="control-card-label">Practical Obligations</div>
               <ul>
                 <li>Obtain explicit, written controller approval before engaging any sub-processor</li>
@@ -374,7 +374,7 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <span className="co-icon">📋</span>
                 <div className="co-body">
                   <strong>Practical Note on Sub-Processors</strong>
-                  <p>Your sub-processor list is a contractual commitment to your clients. Changes should trigger a formal notification period — typically 30 days — during which the controller may object. Build a change management workflow around this, not an ad-hoc email. Our <a href="https://seccomply.net/resources/blog/tprm-best-practices" className="inline-link">third-party risk management guide</a> covers the operational mechanics in detail.</p>
+                  <p>Your sub-processor list is a contractual commitment to your clients. Changes should trigger a formal notification period - typically 30 days - during which the controller may object. Build a change management workflow around this, not an ad-hoc email. Our <a href="https://seccomply.net/resources/blog/tprm-best-practices" className="inline-link">third-party risk management guide</a> covers the operational mechanics in detail.</p>
                 </div>
               </div>
             </div>
@@ -390,7 +390,7 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <li>Build APIs and admin interfaces that allow controllers to export, correct, or delete individual records on demand</li>
                 <li>Define and document SLAs for responding to controller requests related to individual rights (target: 72 hours)</li>
                 <li>Ensure deletion cascades to all backups, replicas, and disaster recovery stores within a documented timeframe</li>
-                <li>Test your deletion capability end-to-end at least annually — document the test results</li>
+                <li>Test your deletion capability end-to-end at least annually - document the test results</li>
                 <li>Provide controllers with audit logs of data access and modification events to support SAR responses</li>
                 <li>Train customer success and support teams to recognise and escalate rights-related requests from controllers</li>
                 <li>Do not independently interpret or act on a rights request received directly from an individual without controller authorisation</li>
@@ -409,12 +409,12 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <span className="control-card-tag">B.7</span>
                 <span className="control-card-title">Privacy Complaints and Enquiries</span>
               </div>
-              <p className="control-card-what"><strong>What it covers:</strong> Even as a processor, you need a functioning mechanism for receiving and routing privacy-related complaints — both from controllers and, in some circumstances, from individuals who contact you directly.</p>
+              <p className="control-card-what"><strong>What it covers:</strong> Even as a processor, you need a functioning mechanism for receiving and routing privacy-related complaints - both from controllers and, in some circumstances, from individuals who contact you directly.</p>
               <div className="control-card-label">Practical Obligations</div>
               <ul>
                 <li>Designate a named privacy contact or functional inbox (e.g., privacy@yourcompany.com) for complaints</li>
                 <li>Log all privacy complaints in a centralised register with date received, nature, and resolution</li>
-                <li>Forward complaints that relate to the controller's data — do not resolve them independently</li>
+                <li>Forward complaints that relate to the controller's data - do not resolve them independently</li>
                 <li>Establish escalation paths for high-severity complaints (data breaches, regulatory enquiries)</li>
                 <li>Define response SLAs: acknowledge within 24 hours, route within 48 hours, resolution timeline communicated to controller</li>
                 <li>Review complaint trends quarterly to identify systemic processing issues</li>
@@ -427,11 +427,11 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <span className="control-card-tag">B.8</span>
                 <span className="control-card-title">Assessment of Processor Obligations</span>
               </div>
-              <p className="control-card-what"><strong>What it covers:</strong> Processors must proactively monitor and assess their own legal and contractual privacy obligations. The regulatory landscape is not static — new jurisdictions adopt data protection laws, guidance evolves, and your service footprint may grow into new markets.</p>
+              <p className="control-card-what"><strong>What it covers:</strong> Processors must proactively monitor and assess their own legal and contractual privacy obligations. The regulatory landscape is not static - new jurisdictions adopt data protection laws, guidance evolves, and your service footprint may grow into new markets.</p>
               <div className="control-card-label">Practical Obligations</div>
               <ul>
                 <li>Maintain a legal obligations register covering every jurisdiction in which you process personal data</li>
-                <li>Assign ownership of regulatory monitoring to a named individual or function — not just the DPO</li>
+                <li>Assign ownership of regulatory monitoring to a named individual or function - not just the DPO</li>
                 <li>Subscribe to regulatory update services for key jurisdictions (EU, UK, US state laws, APAC)</li>
                 <li>Conduct an annual review of your DPA obligations across all active controller relationships</li>
                 <li>Assess whether your technical and organisational controls remain adequate after regulatory or contractual changes</li>
@@ -442,7 +442,7 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <span className="co-icon">🔗</span>
                 <div className="co-body">
                   <strong>Note on ISO 27001 Dependency</strong>
-                  <p>ISO 27701 certification requires an existing ISO 27001 ISMS in scope — you cannot certify to 27701 as a standalone. If your organisation is starting from scratch, plan for both standards in parallel since the overlapping controls make this far more efficient than sequential certification. We cover this in detail in <a href="https://seccomply.net/resources/blog/how-to-extend-isms-into-pims" className="inline-link">how to extend your ISMS into a PIMS</a>.</p>
+                  <p>ISO 27701 certification requires an existing ISO 27001 ISMS in scope - you cannot certify to 27701 as a standalone. If your organisation is starting from scratch, plan for both standards in parallel since the overlapping controls make this far more efficient than sequential certification. We cover this in detail in <a href="https://seccomply.net/resources/blog/how-to-extend-isms-into-pims" className="inline-link">how to extend your ISMS into a PIMS</a>.</p>
                 </div>
               </div>
             </div>
@@ -470,7 +470,7 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <div className="step-num">3</div>
                 <div className="step-body">
                   <strong>Evidence Collection</strong>
-                  <p>Auditors require documented evidence for every control — policy documents, procedure records, DPA registers, training logs, DPIA records, deletion test results, and sub-processor registers. Build evidence collection into day-to-day operations, not pre-audit sprints.</p>
+                  <p>Auditors require documented evidence for every control - policy documents, procedure records, DPA registers, training logs, DPIA records, deletion test results, and sub-processor registers. Build evidence collection into day-to-day operations, not pre-audit sprints.</p>
                 </div>
               </div>
               <div className="step-item">
@@ -484,7 +484,7 @@ export default function ISO27701AnnexBProcessorObligations() {
                 <div className="step-num">5</div>
                 <div className="step-body">
                   <strong>Certification Audit (Stage 1 + Stage 2)</strong>
-                  <p>Stage 1 is a documentation review — the auditor assesses your PIMS documentation for completeness. Stage 2 is the on-site audit, testing whether your controls operate as documented. Successful completion results in certification, typically valid for three years with annual surveillance audits.</p>
+                  <p>Stage 1 is a documentation review - the auditor assesses your PIMS documentation for completeness. Stage 2 is the on-site audit, testing whether your controls operate as documented. Successful completion results in certification, typically valid for three years with annual surveillance audits.</p>
                 </div>
               </div>
             </div>
@@ -492,7 +492,7 @@ export default function ISO27701AnnexBProcessorObligations() {
           </section>
 
           <section id="pitfalls">
-            <h2>Five Common Annex B Pitfalls — <em>And How to Avoid Them</em></h2>
+            <h2>Five Common Annex B Pitfalls - <em>And How to Avoid Them</em></h2>
 
             <h3>1. Treating DPAs as a Legal Formality</h3>
             <p>DPAs are live operational documents, not sign-and-file contracts. The processing description, retention periods, sub-processor lists, and security measures in your DPA must reflect reality. Outdated DPAs that do not match your actual processing are a significant audit risk.</p>
@@ -511,7 +511,7 @@ export default function ISO27701AnnexBProcessorObligations() {
           </section>
 
           <section id="quick-ref">
-            <h2>Quick Reference — <em>Annex B Controls at a Glance</em></h2>
+            <h2>Quick Reference - <em>Annex B Controls at a Glance</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Control</th><th>Topic</th><th>Primary Owner</th><th>Key Evidence Item</th></tr></thead>
@@ -527,12 +527,12 @@ export default function ISO27701AnnexBProcessorObligations() {
               </table>
             </div>
             <p>ISO 27701 Annex B does not ask processors to do the impossible. It asks you to do what good data stewardship already demands: process only what you are authorised to process, document everything, support your clients in meeting their obligations, and build privacy into your products from the start.</p>
-            <p>The organisations that will thrive in the next decade of privacy regulation are those that treat processor obligations not as a compliance burden, but as a product quality standard. Annex B certification is increasingly a procurement prerequisite for enterprise clients — getting ahead of it now is a commercial as much as a compliance decision. If you want to see how the controller-side controls map against this, our <a href="https://seccomply.net/resources/blog/iso-27701-annex-a-controls" className="inline-link">Annex A walkthrough</a> covers the parallel set in equivalent depth.</p>
+            <p>The organisations that will thrive in the next decade of privacy regulation are those that treat processor obligations not as a compliance burden, but as a product quality standard. Annex B certification is increasingly a procurement prerequisite for enterprise clients - getting ahead of it now is a commercial as much as a compliance decision. If you want to see how the controller-side controls map against this, our <a href="https://seccomply.net/resources/blog/iso-27701-annex-a-controls" className="inline-link">Annex A walkthrough</a> covers the parallel set in equivalent depth.</p>
           </section>
 
           <div className="cta-banner">
             <h3>Ready to Pursue ISO 27701 Annex B Certification?</h3>
-            <p>SecComply guides processors from gap assessment through to PIMS certification — DPA architecture, sub-processor management, deletion-cascade design, and audit-ready evidence systems.</p>
+            <p>SecComply guides processors from gap assessment through to PIMS certification - DPA architecture, sub-processor management, deletion-cascade design, and audit-ready evidence systems.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free ISO 27701 Consultation →</a>
             </div>
@@ -548,7 +548,7 @@ export default function ISO27701AnnexBProcessorObligations() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is ISO 27701 Annex B?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>ISO 27701 Annex B contains the controls that apply specifically to PII processors — organisations that process personal data on behalf of a controller. It mirrors the structure of Annex A but reframes every obligation from the processor's perspective. The seven control areas (B.2 to B.8) cover lawful processing, obligations to individuals, privacy by design, data sharing, subject rights, complaints handling, and ongoing assessment of obligations.</p></div>
+              <div className="faq-a"><p>ISO 27701 Annex B contains the controls that apply specifically to PII processors - organisations that process personal data on behalf of a controller. It mirrors the structure of Annex A but reframes every obligation from the processor's perspective. The seven control areas (B.2 to B.8) cover lawful processing, obligations to individuals, privacy by design, data sharing, subject rights, complaints handling, and ongoing assessment of obligations.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Who is a PII processor under ISO 27701?</strong><span className="faq-ch">▾</span></div>
@@ -556,11 +556,11 @@ export default function ISO27701AnnexBProcessorObligations() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can I certify to ISO 27701 without ISO 27001?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>No. ISO 27701 is an extension of ISO 27001 — you cannot certify to 27701 as a standalone standard. Your organisation must have an existing ISO 27001 ISMS in scope before pursuing 27701 certification. If you are starting from scratch, plan for both standards in parallel since the overlapping controls make this more efficient than sequential certification.</p></div>
+              <div className="faq-a"><p>No. ISO 27701 is an extension of ISO 27001 - you cannot certify to 27701 as a standalone standard. Your organisation must have an existing ISO 27001 ISMS in scope before pursuing 27701 certification. If you are starting from scratch, plan for both standards in parallel since the overlapping controls make this more efficient than sequential certification.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the difference between Annex A and Annex B in ISO 27701?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Annex A applies to PII controllers — organisations that determine the purposes and means of processing. Annex B applies to PII processors — organisations that process data on a controller's behalf. The two annexes mirror each other thematically but contain different operational obligations. Many organisations are both, and need to evaluate both annexes against their data flows.</p></div>
+              <div className="faq-a"><p>Annex A applies to PII controllers - organisations that determine the purposes and means of processing. Annex B applies to PII processors - organisations that process data on a controller's behalf. The two annexes mirror each other thematically but contain different operational obligations. Many organisations are both, and need to evaluate both annexes against their data flows.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the most common audit finding for processors under Annex B?</strong><span className="faq-ch">▾</span></div>
@@ -568,11 +568,11 @@ export default function ISO27701AnnexBProcessorObligations() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How long does ISO 27701 certification take for a processor?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>For an organisation with an existing ISO 27001 ISMS in place, ISO 27701 certification typically takes 4–6 months — including gap analysis, PIMS build, internal audit, and the Stage 1/Stage 2 certification audit. For organisations starting without ISO 27001, allow 9–12 months for combined certification. Running both in parallel is generally more efficient than sequential certification.</p></div>
+              <div className="faq-a"><p>For an organisation with an existing ISO 27001 ISMS in place, ISO 27701 certification typically takes 4–6 months - including gap analysis, PIMS build, internal audit, and the Stage 1/Stage 2 certification audit. For organisations starting without ISO 27001, allow 9–12 months for combined certification. Running both in parallel is generally more efficient than sequential certification.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How does Annex B relate to GDPR Article 28?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Annex B operationalises many of the obligations that GDPR Article 28 places on processors — including documented instructions, sub-processor consent, breach notification, and supporting controllers in meeting subject rights. Achieving Annex B certification provides documented, auditable evidence of Article 28 alignment, which is a meaningful differentiator in enterprise sales and reduces regulatory exposure.</p></div>
+              <div className="faq-a"><p>Annex B operationalises many of the obligations that GDPR Article 28 places on processors - including documented instructions, sub-processor consent, breach notification, and supporting controllers in meeting subject rights. Achieving Annex B certification provides documented, auditable evidence of Article 28 alignment, which is a meaningful differentiator in enterprise sales and reduces regulatory exposure.</p></div>
             </div>
           </section>
 
@@ -603,7 +603,7 @@ export default function ISO27701AnnexBProcessorObligations() {
               <li><a href="https://seccomply.net/resources/blog/iso-27701-for-data-controllers">For Data Controllers</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27701-for-data-processors">For Data Processors</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27701-annex-a-controls">Annex A Walkthrough</a></li>
-              <li><a href="https://seccomply.net/resources/blog/iso-27701-annex-b-processor-obligations">▶ Annex B — Processor Controls</a></li>
+              <li><a href="https://seccomply.net/resources/blog/iso-27701-annex-b-processor-obligations">▶ Annex B - Processor Controls</a></li>
             </ul>
           </div>
           <div className="sb-card">
@@ -612,7 +612,7 @@ export default function ISO27701AnnexBProcessorObligations() {
           </div>
           <div className="sb-cta">
             <h4>Need ISO 27701 Certification?</h4>
-            <p>Gap analysis, PIMS build, evidence collection — handled end to end.</p>
+            <p>Gap analysis, PIMS build, evidence collection - handled end to end.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

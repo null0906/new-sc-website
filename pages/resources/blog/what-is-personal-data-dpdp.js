@@ -28,17 +28,17 @@ export default function WhatIsPersonalDataDPDP() {
         <title>What Counts as Personal Data Under the DPDP Act? | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="The DPDP Act's definition of personal data is deliberately broad. Here is what your product and engineering teams need to know — including the grey zones where most companies get it wrong." />
+        <meta name="description" content="The DPDP Act's definition of personal data is deliberately broad. Here is what your product and engineering teams need to know - including the grey zones where most companies get it wrong." />
         <meta name="keywords" content="personal data DPDP Act, what is personal data India, DPDP personal data definition, IP address personal data, device ID personal data, pseudonymised data DPDP, work email personal data, personal data scope India" />
         <meta property="og:title" content="What Counts as Personal Data Under the DPDP Act?" />
-        <meta property="og:description" content="The DPDP Act's definition of personal data is deliberately broad. Here is what your product and engineering teams need to know — including the grey zones where most companies get it wrong." />
+        <meta property="og:description" content="The DPDP Act's definition of personal data is deliberately broad. Here is what your product and engineering teams need to know - including the grey zones where most companies get it wrong." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/what-is-personal-data-dpdp" />
         <meta property="article:published_time" content="2026-04-01" />
         <meta property="article:author" content="Chandrika Mulage" />
         <meta property="article:tag" content="DPDP Act" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/what-is-personal-data-dpdp" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"What Counts as Personal Data Under the DPDP Act?","description":"The DPDP Act definition of personal data is deliberately broad. Here is what your product and engineering teams need to know — including the grey zones.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/what-is-personal-data-dpdp","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Personal Data DPDP","item":"https://seccomply.net/resources/blog/what-is-personal-data-dpdp"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"What Counts as Personal Data Under the DPDP Act?","description":"The DPDP Act definition of personal data is deliberately broad. Here is what your product and engineering teams need to know - including the grey zones.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/what-is-personal-data-dpdp","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Personal Data DPDP","item":"https://seccomply.net/resources/blog/what-is-personal-data-dpdp"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -186,10 +186,10 @@ export default function WhatIsPersonalDataDPDP() {
           <span className="badge badge-cy">🇮🇳 DPDP Act 2023</span>
           <span className="badge badge-bl">📋 Data Privacy</span>
           <span className="badge badge-am">🏢 India Compliance</span>
-          <span className="badge badge-gr">Phase 1 — Basics</span>
+          <span className="badge badge-gr">Phase 1 - Basics</span>
         </div>
         <h1 className="hero-h1">What Counts as <em>Personal Data</em> Under the DPDP Act?</h1>
-        <p className="hero-sub">Before you can build a DPDP compliance programme, you need to know what you are protecting. The Act's definition is deliberately broad — if you are assuming only Aadhaar or medical records are in scope, you will have serious gaps. Here is the breakdown for your product and engineering teams.</p>
+        <p className="hero-sub">Before you can build a DPDP compliance programme, you need to know what you are protecting. The Act's definition is deliberately broad - if you are assuming only Aadhaar or medical records are in scope, you will have serious gaps. Here is the breakdown for your product and engineering teams.</p>
 
         <div className="author-strip">
           <div className="avatar">CM</div>
@@ -203,16 +203,16 @@ export default function WhatIsPersonalDataDPDP() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=480&fit=crop" alt="What counts as personal data DPDP Act India definition" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">The key phrase in the DPDP Act's definition: 'identifiable by or in relation to'. Personal data does not need to identify someone on its own — it is in scope if it can identify someone when combined with other data you hold.</p>
+        <p className="img-cap">The key phrase in the DPDP Act's definition: 'identifiable by or in relation to'. Personal data does not need to identify someone on its own - it is in scope if it can identify someone when combined with other data you hold.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pg8" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="300" fill="url(#pg8)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Personal Data Under the DPDP Act — In Scope vs Out of Scope</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Personal Data Under the DPDP Act - In Scope vs Out of Scope</text>
           <rect x="30" y="38" width="450" height="240" rx="14" fill="#071820" stroke="rgba(6,214,160,0.25)" strokeWidth="1.5"/>
           <rect x="30" y="38" width="450" height="3" rx="1.5" fill="#06d6a0"/>
-          <text x="255" y="65" textAnchor="middle" fill="#06d6a0" fontSize="11" fontWeight="800" fontFamily="sans-serif">✓ IN SCOPE — PERSONAL DATA</text>
+          <text x="255" y="65" textAnchor="middle" fill="#06d6a0" fontSize="11" fontWeight="800" fontFamily="sans-serif">✓ IN SCOPE - PERSONAL DATA</text>
           
           <text x="55" y="90" fill="#06d6a0" fontSize="9.5" fontWeight="700" fontFamily="sans-serif">Identity:</text>
           <text x="120" y="90" fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">Name, DOB, Aadhaar, PAN, Passport</text>
@@ -236,14 +236,14 @@ export default function WhatIsPersonalDataDPDP() {
           <rect x="510" y="38" width="420" height="3" rx="1.5" fill="#ff4d6d"/>
           <text x="720" y="65" textAnchor="middle" fill="#ff4d6d" fontSize="11" fontWeight="800" fontFamily="sans-serif">✗ OUT OF SCOPE</text>
           <text x="535" y="100" fill="#ff4d6d" fontSize="9.5" fontWeight="700" fontFamily="sans-serif">Anonymised:</text>
-          <text x="615" y="100" fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">Truly anonymised data —</text>
+          <text x="615" y="100" fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">Truly anonymised data -</text>
           <text x="615" y="114" fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">genuinely irreversible</text>
           <text x="535" y="145" fill="#ff4d6d" fontSize="9.5" fontWeight="700" fontFamily="sans-serif">Company Data:</text>
           <text x="625" y="145" fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">CIN, GST number, company</text>
           <text x="625" y="159" fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">name (legal entity, not individual)</text>
           <text x="535" y="190" fill="#ff4d6d" fontSize="9.5" fontWeight="700" fontFamily="sans-serif">Aggregate Stats:</text>
           <text x="640" y="190" fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">"60% of users from Maharashtra"</text>
-          <text x="640" y="204" fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">— no individual identified</text>
+          <text x="640" y="204" fill="rgba(200,214,229,0.6)" fontSize="9.5" fontFamily="sans-serif">- no individual identified</text>
           <rect x="530" y="235" width="380" height="32" rx="8" fill="rgba(255,77,109,0.07)" stroke="rgba(255,77,109,0.2)" strokeWidth="1"/>
           <text x="720" y="249" textAnchor="middle" fill="#ff4d6d" fontSize="9" fontWeight="700" fontFamily="sans-serif">Only truly irreversible anonymisation qualifies</text>
           <text x="720" y="262" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="8" fontFamily="sans-serif">Pseudonymisation is explicitly IN SCOPE</text>
@@ -267,10 +267,10 @@ export default function WhatIsPersonalDataDPDP() {
 
           <div className="series-nav anim">
             <span>📚 DPDP Act Series</span>
-            <strong>Phase 1 — Basics</strong>
+            <strong>Phase 1 - Basics</strong>
           </div>
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Before you can build a DPDP compliance programme, you need to know what you are protecting. The Act's definition is deliberately broad — if you are assuming only Aadhaar numbers or medical records are in scope, you are going to have serious gaps. Here is the breakdown your product and engineering teams need — including the grey zones where most companies get it wrong.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Before you can build a DPDP compliance programme, you need to know what you are protecting. The Act's definition is deliberately broad - if you are assuming only Aadhaar numbers or medical records are in scope, you are going to have serious gaps. Here is the breakdown your product and engineering teams need - including the grey zones where most companies get it wrong.</p>
 
           <section id="legal-definition">
             <h2>The Legal <em>Definition</em></h2>
@@ -282,12 +282,12 @@ export default function WhatIsPersonalDataDPDP() {
               </div>
             </div>
             <p>The key phrase: <strong>"identifiable by or in relation to"</strong>. Personal data does not need to identify someone on its own. It is in scope if it can identify someone when combined with other data you hold.</p>
-            <p>A user ID alone might mean nothing. Linked to a name and email in your database — both become personal data.</p>
+            <p>A user ID alone might mean nothing. Linked to a name and email in your database - both become personal data.</p>
             <div className="callout co-info">
               <span className="co-icon">💡</span>
               <div className="co-body">
                 <strong>Scope Is Digital Only</strong>
-                <p>Data in electronic form, or data originally collected offline and subsequently digitised. Pure paper records outside any digital workflow are outside the DPDP Act — but in practice, very little remains genuinely non-digital in any modern organisation.</p>
+                <p>Data in electronic form, or data originally collected offline and subsequently digitised. Pure paper records outside any digital workflow are outside the DPDP Act - but in practice, very little remains genuinely non-digital in any modern organisation.</p>
               </div>
             </div>
           </section>
@@ -296,7 +296,7 @@ export default function WhatIsPersonalDataDPDP() {
             <h2>What Is <em>In Scope vs Out of Scope</em></h2>
             <div className="scope-grid">
               <div className="scope-col sc-in">
-                <h4>✓ IN SCOPE — Personal Data</h4>
+                <h4>✓ IN SCOPE - Personal Data</h4>
                 <ul>
                   <li><strong>Identity:</strong> Name, DOB, Aadhaar, PAN, Passport</li>
                   <li><strong>Contact:</strong> Email, phone, address, IP address</li>
@@ -320,20 +320,20 @@ export default function WhatIsPersonalDataDPDP() {
           </section>
 
           <section id="grey-zones">
-            <h2>The Grey Zones — <em>Where Your Team Gets Confused</em></h2>
+            <h2>The Grey Zones - <em>Where Your Team Gets Confused</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Data Type</th><th>The Question</th><th>The Answer</th></tr></thead>
                 <tbody>
-                  {[['Device IDs / IMEIs','Not a name — can it identify someone?','Yes, when linked to a user account'],['IP Addresses','Just a number — personal data?','Yes, in most contexts — treat as in scope'],['Pseudonymised data','We replaced names with user IDs','Still in scope — you hold the lookup key'],['ML / inferred data','Credit scores, predicted health risk we generated','In scope if linked to an identifiable individual'],['Photos / videos','Profile pics, CCTV, call recordings','In scope if individuals are identifiable'],['Work email addresses','It is a company email, not personal','Still personal data — identifies a natural person']].map(([d,q,a],i)=>(<tr key={i}><td>{d}</td><td>{q}</td><td style={{color:'var(--cy)'}}>{a}</td></tr>))}
+                  {[['Device IDs / IMEIs','Not a name - can it identify someone?','Yes, when linked to a user account'],['IP Addresses','Just a number - personal data?','Yes, in most contexts - treat as in scope'],['Pseudonymised data','We replaced names with user IDs','Still in scope - you hold the lookup key'],['ML / inferred data','Credit scores, predicted health risk we generated','In scope if linked to an identifiable individual'],['Photos / videos','Profile pics, CCTV, call recordings','In scope if individuals are identifiable'],['Work email addresses','It is a company email, not personal','Still personal data - identifies a natural person']].map(([d,q,a],i)=>(<tr key={i}><td>{d}</td><td>{q}</td><td style={{color:'var(--cy)'}}>{a}</td></tr>))}
                 </tbody>
               </table>
             </div>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
-                <strong>Pseudonymisation vs Anonymisation — The Most Common Mistake</strong>
-                <p>Replacing names with user IDs in analytics while keeping the reverse-lookup table in your database is pseudonymisation, not anonymisation. It remains fully in scope under the DPDP Act. True anonymisation requires that re-identification is not reasonably possible using any data you hold — a much higher bar than most teams assume.</p>
+                <strong>Pseudonymisation vs Anonymisation - The Most Common Mistake</strong>
+                <p>Replacing names with user IDs in analytics while keeping the reverse-lookup table in your database is pseudonymisation, not anonymisation. It remains fully in scope under the DPDP Act. True anonymisation requires that re-identification is not reasonably possible using any data you hold - a much higher bar than most teams assume.</p>
               </div>
             </div>
           </section>
@@ -344,16 +344,16 @@ export default function WhatIsPersonalDataDPDP() {
               <table className="data-table">
                 <thead><tr><th>#</th><th>Action</th><th>What It Catches</th></tr></thead>
                 <tbody>
-                  {[['1','Run a field-by-field data inventory for your product','Hidden data collection you forgot about'],['2','Audit your analytics stack — Mixpanel, Amplitude, Google Analytics','Vendor tools processing personal data without DPAs'],['3','Check what vendors collect independently (client-side)','Identifiers grabbed without explicit configuration'],['4','Apply data minimisation — delete fields with no clear purpose','"Just in case" fields are compliance liability']].map(([n,a,c],i)=>(<tr key={i}><td>{n}</td><td>{a}</td><td>{c}</td></tr>))}
+                  {[['1','Run a field-by-field data inventory for your product','Hidden data collection you forgot about'],['2','Audit your analytics stack - Mixpanel, Amplitude, Google Analytics','Vendor tools processing personal data without DPAs'],['3','Check what vendors collect independently (client-side)','Identifiers grabbed without explicit configuration'],['4','Apply data minimisation - delete fields with no clear purpose','"Just in case" fields are compliance liability']].map(([n,a,c],i)=>(<tr key={i}><td>{n}</td><td>{a}</td><td>{c}</td></tr>))}
                 </tbody>
               </table>
             </div>
-            <p>Once you have a full inventory of your personal data, the next step is understanding who the obligations sit with — that is a question of <a href="https://seccomply.net/resources/blog/data-principal-fiduciary-processor" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>your role under the DPDP Act</a>. And for the consent architecture that must sit on top of this inventory, read <a href="https://seccomply.net/resources/blog/consent-under-dpdp-act" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>our guide on consent under the DPDP Act</a>.</p>
+            <p>Once you have a full inventory of your personal data, the next step is understanding who the obligations sit with - that is a question of <a href="https://seccomply.net/resources/blog/data-principal-fiduciary-processor" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>your role under the DPDP Act</a>. And for the consent architecture that must sit on top of this inventory, read <a href="https://seccomply.net/resources/blog/consent-under-dpdp-act" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>our guide on consent under the DPDP Act</a>.</p>
           </section>
 
           <div className="cta-banner">
             <h3>Ready to Build DPDP Compliance?</h3>
-            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises — from gap assessment to audit-ready documentation.</p>
+            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises - from gap assessment to audit-ready documentation.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free DPDP Consultation →</a>
             </div>
@@ -369,23 +369,23 @@ export default function WhatIsPersonalDataDPDP() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is a work email address personal data?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. sanil@company.in identifies a specific individual and is personal data under the DPDP Act. The fact that it is professional or issued by an employer does not matter — it still relates to an identifiable natural person. Work emails processed by your HR system, CRM, or email marketing tools are all in scope.</p></div>
+              <div className="faq-a"><p>Yes. sanil@company.in identifies a specific individual and is personal data under the DPDP Act. The fact that it is professional or issued by an employer does not matter - it still relates to an identifiable natural person. Work emails processed by your HR system, CRM, or email marketing tools are all in scope.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>We use randomised user IDs in analytics. Is that still personal data?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. If you can link that ID back to an individual — which you almost certainly can since it is tied to a user account — it is personal data. This is pseudonymisation, not anonymisation. The test under the DPDP Act is what is possible using all data you hold, not whether the ID is identifiable in isolation.</p></div>
+              <div className="faq-a"><p>Yes. If you can link that ID back to an individual - which you almost certainly can since it is tied to a user account - it is personal data. This is pseudonymisation, not anonymisation. The test under the DPDP Act is what is possible using all data you hold, not whether the ID is identifiable in isolation.</p></div>
             </div>
             <div className="faq-item">
-              <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What about employee data — we were not thinking about that?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Most companies focus on customer data and forget HR. Salary, attendance, performance reviews, health information, payroll bank details — all in scope. HR systems, payroll software, and background verification vendors all need to be in your compliance inventory. Employee data is one of the most commonly overlooked areas of DPDP scope.</p></div>
+              <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What about employee data - we were not thinking about that?</strong><span className="faq-ch">▾</span></div>
+              <div className="faq-a"><p>Most companies focus on customer data and forget HR. Salary, attendance, performance reviews, health information, payroll bank details - all in scope. HR systems, payroll software, and background verification vendors all need to be in your compliance inventory. Employee data is one of the most commonly overlooked areas of DPDP scope.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Are IP addresses really personal data under the DPDP Act?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>In most practical contexts, yes. An IP address can identify a specific individual when combined with other information — browsing logs, account activity, geolocation. The DPDP Act's 'identifiable by or in relation to' standard treats IP addresses as personal data in the vast majority of commercial processing scenarios. Treat them as in scope unless you can demonstrate genuine non-identifiability.</p></div>
+              <div className="faq-a"><p>In most practical contexts, yes. An IP address can identify a specific individual when combined with other information - browsing logs, account activity, geolocation. The DPDP Act's 'identifiable by or in relation to' standard treats IP addresses as personal data in the vast majority of commercial processing scenarios. Treat them as in scope unless you can demonstrate genuine non-identifiability.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What about ML-inferred data like credit scores we generate ourselves?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Inferred or derived data — credit scores, predicted health risk, churn probability — is personal data if it is linked to an identifiable individual. It does not matter that you generated it rather than collected it. Under the DPDP Act, you hold it, you are the Data Fiduciary for it, and all obligations (including access, correction, and erasure rights) apply.</p></div>
+              <div className="faq-a"><p>Inferred or derived data - credit scores, predicted health risk, churn probability - is personal data if it is linked to an identifiable individual. It does not matter that you generated it rather than collected it. Under the DPDP Act, you hold it, you are the Data Fiduciary for it, and all obligations (including access, correction, and erasure rights) apply.</p></div>
             </div>
 
           </section>
@@ -420,7 +420,7 @@ export default function WhatIsPersonalDataDPDP() {
           </div>
           <div className="sb-cta">
             <h4>Need DPDP Compliance Help?</h4>
-            <p>We run structured DPDP gap assessments — from data mapping to audit-ready documentation.</p>
+            <p>We run structured DPDP gap assessments - from data mapping to audit-ready documentation.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

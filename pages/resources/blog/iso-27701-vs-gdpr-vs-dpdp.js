@@ -25,12 +25,12 @@ export default function ISO27701VsGDPRVsDPDP() {
   return (
     <Layout>
       <Head>
-        <title>ISO 27701 vs GDPR vs DPDP — How They Overlap and Where They Differ | SecComply</title>
+        <title>ISO 27701 vs GDPR vs DPDP - How They Overlap and Where They Differ | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
         <meta name="description" content="ISO 27701, GDPR, and DPDP are complementary layers of a privacy compliance programme. Here is where they overlap, where they diverge, and how to build one programme that satisfies all three." />
         <meta name="keywords" content="ISO 27701 vs GDPR, ISO 27701 vs DPDP Act, privacy framework comparison, GDPR DPDP overlap, multi-framework compliance, ISO 27701 PIMS, consent GDPR DPDP, data breach notification GDPR DPDP" />
-        <meta property="og:title" content="ISO 27701 vs GDPR vs DPDP — How They Overlap and Where They Differ" />
+        <meta property="og:title" content="ISO 27701 vs GDPR vs DPDP - How They Overlap and Where They Differ" />
         <meta property="og:description" content="ISO 27701, GDPR, and DPDP are complementary layers of a privacy compliance programme. Here is where they overlap, where they diverge, and how to build one programme that satisfies all three." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/iso-27701-vs-gdpr-vs-dpdp" />
@@ -38,7 +38,7 @@ export default function ISO27701VsGDPRVsDPDP() {
         <meta property="article:author" content="Aditya Hadke" />
         <meta property="article:tag" content="ISO 27701" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/iso-27701-vs-gdpr-vs-dpdp" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27701 vs GDPR vs DPDP — How They Overlap and Where They Differ","description":"ISO 27701, GDPR, and DPDP are complementary layers of a privacy compliance programme. Here is where they overlap and where they diverge.","author":{"@type":"Person","name":"Aditya Hadke","jobTitle":"Cyber Security Analyst","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27701-vs-gdpr-vs-dpdp","articleSection":"ISO 27701"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"ISO 27701 vs GDPR vs DPDP","item":"https://seccomply.net/resources/blog/iso-27701-vs-gdpr-vs-dpdp"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27701 vs GDPR vs DPDP - How They Overlap and Where They Differ","description":"ISO 27701, GDPR, and DPDP are complementary layers of a privacy compliance programme. Here is where they overlap and where they diverge.","author":{"@type":"Person","name":"Aditya Hadke","jobTitle":"Cyber Security Analyst","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27701-vs-gdpr-vs-dpdp","articleSection":"ISO 27701"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"ISO 27701 vs GDPR vs DPDP","item":"https://seccomply.net/resources/blog/iso-27701-vs-gdpr-vs-dpdp"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -178,7 +178,7 @@ export default function ISO27701VsGDPRVsDPDP() {
         <a href="https://seccomply.net/">Home</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources">Resources</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources/blog">Blog</a><span className="bc-sep">›</span>
-        <span style={{color:'var(--tb)'}}>ISO 27701 vs GDPR vs DPDP — How They Ove...</span>
+        <span style={{color:'var(--tb)'}}>ISO 27701 vs GDPR vs DPDP - How They Ove...</span>
       </div>
 
       <div className="hero-wrap">
@@ -187,7 +187,7 @@ export default function ISO27701VsGDPRVsDPDP() {
           <span className="badge badge-bl">🌍 Privacy Compliance</span>
           <span className="badge badge-gr">✅ PIMS</span>
         </div>
-        <h1 className="hero-h1">ISO 27701 vs GDPR vs DPDP — <em>How They Overlap</em> and Where They Differ</h1>
+        <h1 className="hero-h1">ISO 27701 vs GDPR vs DPDP - <em>How They Overlap</em> and Where They Differ</h1>
         <p className="hero-sub">Privacy compliance today means navigating multiple frameworks simultaneously. ISO 27701 tells you how to build and run a privacy programme. GDPR and DPDP tell you what rights individuals have and what obligations you must meet under law. Here is how to build one programme that satisfies all three.</p>
 
         <div className="author-strip">
@@ -208,7 +208,7 @@ export default function ISO27701VsGDPRVsDPDP() {
           <svg viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pga" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="300" fill="url(#pga)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27701 vs GDPR vs DPDP Act — At a Glance</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27701 vs GDPR vs DPDP Act - At a Glance</text>
           <rect x="30" y="38" width="290" height="230" rx="14" fill="#091826" stroke="#E8632B28" strokeWidth="1.5"/>
           <rect x="30" y="38" width="290" height="4" rx="2" fill="#E8632B"/>
           <text x="175" y="68" textAnchor="middle" fill="#E8632B" fontSize="13" fontWeight="800" fontFamily="sans-serif">ISO 27701</text>
@@ -264,10 +264,10 @@ export default function ISO27701VsGDPRVsDPDP() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Privacy compliance has never been more complex — or more consequential. A SaaS company headquartered in India, processing data of EU residents and selling into the US market, may find itself subject to the GDPR, India's DPDP Act, and ISO 27701 certification requirements simultaneously. The challenge is that each uses different language and imposes different obligations — yet they share significant common ground. Understanding that overlap is what makes a multi-framework strategy efficient rather than duplicative.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Privacy compliance has never been more complex - or more consequential. A SaaS company headquartered in India, processing data of EU residents and selling into the US market, may find itself subject to the GDPR, India's DPDP Act, and ISO 27701 certification requirements simultaneously. The challenge is that each uses different language and imposes different obligations - yet they share significant common ground. Understanding that overlap is what makes a multi-framework strategy efficient rather than duplicative.</p>
 
           <section id="three-frameworks">
-            <h2>The Three Frameworks — <em>At a Glance</em></h2>
+            <h2>The Three Frameworks - <em>At a Glance</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th></th><th>ISO 27701</th><th>GDPR</th><th>India DPDP Act</th></tr></thead>
@@ -280,17 +280,17 @@ export default function ISO27701VsGDPRVsDPDP() {
               <span className="co-icon">🔑</span>
               <div className="co-body">
                 <strong>Key Framing</strong>
-                <p>ISO 27701 tells you HOW to build and run a privacy programme. GDPR and DPDP tell you WHAT rights individuals have and what obligations you must meet under law. The standard and the regulations are complementary, not competing — the standard is a vehicle for meeting the regulations requirements in an auditable, structured way.</p>
+                <p>ISO 27701 tells you HOW to build and run a privacy programme. GDPR and DPDP tell you WHAT rights individuals have and what obligations you must meet under law. The standard and the regulations are complementary, not competing - the standard is a vehicle for meeting the regulations requirements in an auditable, structured way.</p>
               </div>
             </div>
           </section>
 
           <section id="scope">
-            <h2>Scope and Applicability — <em>Who Does Each Apply To?</em></h2>
+            <h2>Scope and Applicability - <em>Who Does Each Apply To?</em></h2>
             <ul>
-              <li><strong>GDPR:</strong> Any organisation processing personal data of EU/EEA residents, regardless of where the organisation is based. No revenue threshold — a Pune startup with a German customer is in scope.</li>
+              <li><strong>GDPR:</strong> Any organisation processing personal data of EU/EEA residents, regardless of where the organisation is based. No revenue threshold - a Pune startup with a German customer is in scope.</li>
               <li><strong>DPDP Act:</strong> Processing of digital personal data of individuals in India, whether inside or outside India. Also applies if you offer goods or services to Indian individuals from abroad. Extraterritorial reach, similar to GDPR.</li>
-              <li><strong>ISO 27701:</strong> Any organisation that processes PII, regardless of type, size, or nature. Adopted voluntarily — not triggered by geography or nationality of data subjects.</li>
+              <li><strong>ISO 27701:</strong> Any organisation that processes PII, regardless of type, size, or nature. Adopted voluntarily - not triggered by geography or nationality of data subjects.</li>
             </ul>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
@@ -302,21 +302,21 @@ export default function ISO27701VsGDPRVsDPDP() {
           </section>
 
           <section id="legal-basis">
-            <h2>Legal Basis for Processing — <em>Similar Intent, Different Architecture</em></h2>
+            <h2>Legal Basis for Processing - <em>Similar Intent, Different Architecture</em></h2>
             <ul>
-              <li><strong>GDPR (Article 6):</strong> Six lawful bases — consent, contract performance, legal obligation, vital interests, public task, and legitimate interests. Legitimate interests allows processing without consent but requires a balancing test.</li>
-              <li><strong>DPDP Act:</strong> Consent-first with a narrower list of "legitimate uses" — employment, medical emergencies, legal proceedings, State functions. No broad "legitimate interests" balancing test equivalent to GDPR.</li>
-              <li><strong>ISO 27701:</strong> Framework-agnostic — requires you to document the legal basis for each processing activity but does not specify which bases are valid. Adapts to whichever regulation governs your organisation.</li>
+              <li><strong>GDPR (Article 6):</strong> Six lawful bases - consent, contract performance, legal obligation, vital interests, public task, and legitimate interests. Legitimate interests allows processing without consent but requires a balancing test.</li>
+              <li><strong>DPDP Act:</strong> Consent-first with a narrower list of "legitimate uses" - employment, medical emergencies, legal proceedings, State functions. No broad "legitimate interests" balancing test equivalent to GDPR.</li>
+              <li><strong>ISO 27701:</strong> Framework-agnostic - requires you to document the legal basis for each processing activity but does not specify which bases are valid. Adapts to whichever regulation governs your organisation.</li>
             </ul>
           </section>
 
           <section id="data-rights">
-            <h2>Data Subject Rights — <em>Broadly Aligned, Specifically Different</em></h2>
+            <h2>Data Subject Rights - <em>Broadly Aligned, Specifically Different</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Right</th><th>GDPR</th><th>DPDP Act</th></tr></thead>
                 <tbody>
-                  {[['Access','Full copy of data + processing info','Summary of data + identities of Fiduciaries shared with'],['Correction','Yes','Yes — includes updating incomplete/misleading data'],['Erasure','Right to be Forgotten with defined exceptions','Right to Erasure when consent withdrawn or purpose fulfilled'],['Data Portability','Yes — machine-readable format','Not explicitly defined in current Act text'],['Restriction of Processing','Yes','Not explicitly defined'],['Right to Object','Yes — especially for marketing','Via consent withdrawal (no standalone right)'],['Grievance Redressal','Complaint to DPA','Explicit Grievance Officer requirement'],['Nomination','Not present','Yes — unique to DPDP: nominate someone for post-death rights']].map(([r,g,d],i)=>(<tr key={i}><td>{r}</td><td>{g}</td><td>{d}</td></tr>))}
+                  {[['Access','Full copy of data + processing info','Summary of data + identities of Fiduciaries shared with'],['Correction','Yes','Yes - includes updating incomplete/misleading data'],['Erasure','Right to be Forgotten with defined exceptions','Right to Erasure when consent withdrawn or purpose fulfilled'],['Data Portability','Yes - machine-readable format','Not explicitly defined in current Act text'],['Restriction of Processing','Yes','Not explicitly defined'],['Right to Object','Yes - especially for marketing','Via consent withdrawal (no standalone right)'],['Grievance Redressal','Complaint to DPA','Explicit Grievance Officer requirement'],['Nomination','Not present','Yes - unique to DPDP: nominate someone for post-death rights']].map(([r,g,d],i)=>(<tr key={i}><td>{r}</td><td>{g}</td><td>{d}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -330,34 +330,34 @@ export default function ISO27701VsGDPRVsDPDP() {
           </section>
 
           <section id="consent">
-            <h2>Consent Management — <em>Where the Frameworks Diverge Most</em></h2>
+            <h2>Consent Management - <em>Where the Frameworks Diverge Most</em></h2>
             <ul>
               <li><strong>GDPR:</strong> Freely given, specific, informed, unambiguous. As easy to withdraw as to give. Pre-ticked boxes and bundled consent are invalid.</li>
-              <li><strong>DPDP Act:</strong> Goes further — consent notice must be in the Data Principal preferred language. Consent Managers (Section 6(9)) are registered intermediaries through which individuals can manage consents across multiple organisations from a single platform.</li>
-              <li><strong>ISO 27701 (Clause 7.3):</strong> Requires mechanisms to obtain, record, and allow withdrawal of consent — but defers to GDPR or DPDP for the specific standard. Your system must satisfy the more stringent of the applicable regulations.</li>
+              <li><strong>DPDP Act:</strong> Goes further - consent notice must be in the Data Principal preferred language. Consent Managers (Section 6(9)) are registered intermediaries through which individuals can manage consents across multiple organisations from a single platform.</li>
+              <li><strong>ISO 27701 (Clause 7.3):</strong> Requires mechanisms to obtain, record, and allow withdrawal of consent - but defers to GDPR or DPDP for the specific standard. Your system must satisfy the more stringent of the applicable regulations.</li>
             </ul>
           </section>
 
           <section id="breach">
-            <h2>Breach Notification — <em>Timelines and Thresholds</em></h2>
+            <h2>Breach Notification - <em>Timelines and Thresholds</em></h2>
             <ul>
               <li><strong>GDPR:</strong> 72 hours to the supervisory authority. Notify individuals if high risk to their rights. Documented, non-negotiable.</li>
-              <li><strong>DPDP Act:</strong> Must notify the Data Protection Board and affected individuals — but the specific timeline will be prescribed in forthcoming Rules. Build for 72 hours to be safe.</li>
-              <li><strong>ISO 27701:</strong> Requires documented incident response covering personal data breaches — the timeline comes from the applicable regulation. The standard ensures operational capability to detect, assess, and notify within the required window.</li>
+              <li><strong>DPDP Act:</strong> Must notify the Data Protection Board and affected individuals - but the specific timeline will be prescribed in forthcoming Rules. Build for 72 hours to be safe.</li>
+              <li><strong>ISO 27701:</strong> Requires documented incident response covering personal data breaches - the timeline comes from the applicable regulation. The standard ensures operational capability to detect, assess, and notify within the required window.</li>
             </ul>
           </section>
 
           <section id="cross-border">
-            <h2>Cross-Border Data Transfers — <em>Fundamentally Different Approaches</em></h2>
+            <h2>Cross-Border Data Transfers - <em>Fundamentally Different Approaches</em></h2>
             <ul>
               <li><strong>GDPR:</strong> Restrictive, adequacy-based. Transfers only to countries with adequacy decisions, or with safeguards (SCCs, BCRs). Requires Transfer Impact Assessments.</li>
-              <li><strong>DPDP Act:</strong> Permissive — transfers allowed to any country except those specifically blacklisted by the Central Government. The inverse of GDPR model. This is one of the most significant structural differences.</li>
+              <li><strong>DPDP Act:</strong> Permissive - transfers allowed to any country except those specifically blacklisted by the Central Government. The inverse of GDPR model. This is one of the most significant structural differences.</li>
               <li><strong>ISO 27701 (Clause 7.5):</strong> Requires you to document all cross-border transfers and apply safeguards per the applicable regulation. For GDPR: SCCs. For DPDP: check against the restricted country list once published.</li>
             </ul>
           </section>
 
           <section id="core-overlap">
-            <h2>The Core Overlap — <em>Where All Three Align</em></h2>
+            <h2>The Core Overlap - <em>Where All Three Align</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Requirement</th><th>ISO 27701</th><th>GDPR</th><th>DPDP Act</th></tr></thead>
@@ -369,7 +369,7 @@ export default function ISO27701VsGDPRVsDPDP() {
           </section>
 
           <section id="divergences">
-            <h2>Key Divergences — <em>What You Must Manage Separately</em></h2>
+            <h2>Key Divergences - <em>What You Must Manage Separately</em></h2>
             <ul>
               <li><strong>Cross-border transfer mechanisms:</strong> GDPR requires adequacy or SCCs. DPDP uses a blacklist model. Your transfer procedures need to handle both.</li>
               <li><strong>Consent language and notice:</strong> DPDP requires multilingual consent notices. GDPR requires plain language but no specific language mandate. Your consent management system needs language preferences for DPDP.</li>
@@ -383,19 +383,19 @@ export default function ISO27701VsGDPRVsDPDP() {
             <h2>Building a <em>Unified Compliance Strategy</em></h2>
             <p>The most efficient approach: use ISO 27701 as the operational backbone and manage regulation-specific requirements as extensions:</p>
             <ul>
-              <li>Implement ISO 27701 as your privacy management framework — a certified, auditable foundation that satisfies the operational requirements of both GDPR and DPDP.</li>
+              <li>Implement ISO 27701 as your privacy management framework - a certified, auditable foundation that satisfies the operational requirements of both GDPR and DPDP.</li>
               <li>Maintain regulation-specific annexes to your RoPA that tag each processing activity with the applicable regulation and specific legal basis under each.</li>
               <li>Build your data subject rights process to handle the superset of rights across both regulations, including DPDP Nomination right.</li>
-              <li>Run parallel consent notice templates — one GDPR-compliant, one DPDP-compliant (with language preferences).</li>
+              <li>Run parallel consent notice templates - one GDPR-compliant, one DPDP-compliant (with language preferences).</li>
               <li>Maintain separate transfer documentation for GDPR (SCCs, Transfer Impact Assessments) and DPDP (cross-border register checked against the restricted list).</li>
               <li>Track your DPDP Significant Data Fiduciary status. If designated, activate additional controls as a defined workstream within your PIMS.</li>
             </ul>
-            <p>ISO 27701, GDPR, and DPDP are not competing frameworks — they are complementary layers. Invest in the ISO 27701 foundation first. It is the most efficient path to demonstrating privacy maturity across all three simultaneously.</p>
+            <p>ISO 27701, GDPR, and DPDP are not competing frameworks - they are complementary layers. Invest in the ISO 27701 foundation first. It is the most efficient path to demonstrating privacy maturity across all three simultaneously.</p>
           </section>
 
           <div className="cta-banner">
             <h3>Need ISO 27701 Implementation Support?</h3>
-            <p>SecComply helps SaaS, FinTech, and healthcare organisations implement ISO 27701 — from gap assessment to certification audit, with pre-built control libraries and evidence collection.</p>
+            <p>SecComply helps SaaS, FinTech, and healthcare organisations implement ISO 27701 - from gap assessment to certification audit, with pre-built control libraries and evidence collection.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free ISO 27701 Consultation →</a>
             </div>
@@ -411,19 +411,19 @@ export default function ISO27701VsGDPRVsDPDP() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is ISO 27701 certification equivalent to GDPR compliance?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>No. ISO 27701 certification demonstrates that you have a structured, auditable privacy management system. GDPR compliance is a legal determination that depends on how you actually process data. However, ISO 27701 provides the strongest available third-party evidence of GDPR compliance readiness — regulators treat a certified PIMS as a significant factor in compliance assessments.</p></div>
+              <div className="faq-a"><p>No. ISO 27701 certification demonstrates that you have a structured, auditable privacy management system. GDPR compliance is a legal determination that depends on how you actually process data. However, ISO 27701 provides the strongest available third-party evidence of GDPR compliance readiness - regulators treat a certified PIMS as a significant factor in compliance assessments.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can ISO 27701 satisfy both GDPR and DPDP requirements simultaneously?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes, to a significant extent. The core overlap is substantial — lawful basis, data subject rights, consent management, breach notification, data minimisation, and purpose limitation are requirements across all three. The divergences (cross-border transfer mechanisms, consent language, Nomination right, SDF obligations) must be managed as targeted extensions, not separate programmes.</p></div>
+              <div className="faq-a"><p>Yes, to a significant extent. The core overlap is substantial - lawful basis, data subject rights, consent management, breach notification, data minimisation, and purpose limitation are requirements across all three. The divergences (cross-border transfer mechanisms, consent language, Nomination right, SDF obligations) must be managed as targeted extensions, not separate programmes.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the biggest difference between GDPR and the DPDP Act?</strong><span className="faq-ch">▾</span></div>
               <div className="faq-a"><p>Structurally, the biggest difference is in cross-border data transfers. GDPR uses an adequacy-based model where transfers are restricted by default and require positive approval. DPDP uses a blacklist model where transfers are permitted by default unless the destination country is specifically restricted. This is the inverse of each other and has significant implications for global data flows.</p></div>
             </div>
             <div className="faq-item">
-              <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Do I need all three — ISO 27701, GDPR compliance, and DPDP compliance?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>If you process data of both EU and Indian individuals, you are subject to both GDPR and DPDP — these are not optional. ISO 27701 is voluntary but provides the operational framework that makes complying with both regulations efficient. Most organisations subject to both regulations find that ISO 27701 pays for itself through reduced duplication.</p></div>
+              <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Do I need all three - ISO 27701, GDPR compliance, and DPDP compliance?</strong><span className="faq-ch">▾</span></div>
+              <div className="faq-a"><p>If you process data of both EU and Indian individuals, you are subject to both GDPR and DPDP - these are not optional. ISO 27701 is voluntary but provides the operational framework that makes complying with both regulations efficient. Most organisations subject to both regulations find that ISO 27701 pays for itself through reduced duplication.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the DPDP Nomination right and does GDPR have an equivalent?</strong><span className="faq-ch">▾</span></div>
@@ -467,7 +467,7 @@ export default function ISO27701VsGDPRVsDPDP() {
           </div>
           <div className="sb-cta">
             <h4>Need ISO 27701 Certification?</h4>
-            <p>From gap assessment to audit — we handle the entire ISO 27701 journey.</p>
+            <p>From gap assessment to audit - we handle the entire ISO 27701 journey.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

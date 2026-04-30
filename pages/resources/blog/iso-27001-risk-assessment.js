@@ -25,20 +25,20 @@ export default function ISO27001RiskAssessment() {
   return (
     <Layout>
       <Head>
-        <title>Risk Assessment in ISO 27001 — How It Works Step by Step | SecComply</title>
+        <title>Risk Assessment in ISO 27001 - How It Works Step by Step | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="The risk assessment is the engine of the ISMS. Here is the complete step-by-step methodology — asset identification, threat analysis, likelihood-impact scoring, risk treatment, and the risk register." />
+        <meta name="description" content="The risk assessment is the engine of the ISMS. Here is the complete step-by-step methodology - asset identification, threat analysis, likelihood-impact scoring, risk treatment, and the risk register." />
         <meta name="keywords" content="ISO 27001 risk assessment, risk assessment methodology, information security risk, risk register ISO 27001, risk treatment ISO 27001, likelihood impact matrix, risk appetite, residual risk" />
-        <meta property="og:title" content="Risk Assessment in ISO 27001 — How It Works Step by Step" />
-        <meta property="og:description" content="The risk assessment is the engine of the ISMS. Here is the complete step-by-step methodology — asset identification, threat analysis, likelihood-impact scoring, risk treatment, and the risk register." />
+        <meta property="og:title" content="Risk Assessment in ISO 27001 - How It Works Step by Step" />
+        <meta property="og:description" content="The risk assessment is the engine of the ISMS. Here is the complete step-by-step methodology - asset identification, threat analysis, likelihood-impact scoring, risk treatment, and the risk register." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/iso-27001-risk-assessment" />
         <meta property="article:published_time" content="2026-04-01" />
         <meta property="article:author" content="Soham Sawant" />
         <meta property="article:tag" content="ISO 27001" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/iso-27001-risk-assessment" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Risk Assessment in ISO 27001 — How It Works Step by Step","description":"The complete risk assessment methodology for ISO 27001 — asset identification, threat analysis, scoring, treatment, and the risk register.","author":{"@type":"Person","name":"Soham Sawant","jobTitle":"Cybersecurity Expert & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27001-risk-assessment","articleSection":"ISO 27001"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Risk Assessment","item":"https://seccomply.net/resources/blog/iso-27001-risk-assessment"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Risk Assessment in ISO 27001 - How It Works Step by Step","description":"The complete risk assessment methodology for ISO 27001 - asset identification, threat analysis, scoring, treatment, and the risk register.","author":{"@type":"Person","name":"Soham Sawant","jobTitle":"Cybersecurity Expert & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27001-risk-assessment","articleSection":"ISO 27001"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Risk Assessment","item":"https://seccomply.net/resources/blog/iso-27001-risk-assessment"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -187,8 +187,8 @@ export default function ISO27001RiskAssessment() {
           <span className="badge badge-bl">🛡️ Information Security</span>
           <span className="badge badge-gr">🚀 Startup Guide</span>
         </div>
-        <h1 className="hero-h1">Risk Assessment in ISO 27001 — <em>How It Works</em> Step by Step</h1>
-        <p className="hero-sub">The risk assessment is the engine of the ISMS. It determines which controls you need, what resources to invest, and where your security programme focuses its energy. Here is the step-by-step methodology — from asset identification to risk treatment decisions.</p>
+        <h1 className="hero-h1">Risk Assessment in ISO 27001 - <em>How It Works</em> Step by Step</h1>
+        <p className="hero-sub">The risk assessment is the engine of the ISMS. It determines which controls you need, what resources to invest, and where your security programme focuses its energy. Here is the step-by-step methodology - from asset identification to risk treatment decisions.</p>
 
         <div className="author-strip">
           <div className="avatar">SS</div>
@@ -202,13 +202,13 @@ export default function ISO27001RiskAssessment() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1200&h=480&fit=crop" alt="ISO 27001 risk assessment methodology step by step" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">Risk assessment is not a one-time exercise. It runs at least annually, and whenever a significant change occurs — new product, new vendor, new market, new threat.</p>
+        <p className="img-cap">Risk assessment is not a one-time exercise. It runs at least annually, and whenever a significant change occurs - new product, new vendor, new market, new threat.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 260" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pgs5" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="260" fill="url(#pgs5)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Risk Assessment Methodology — 4-Step Process</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Risk Assessment Methodology - 4-Step Process</text>
           {[{n:"01",t:"IDENTIFY",sub:"Assets, threats, vulnerabilities",col:"#818cf8",x:50},{n:"02",t:"ASSESS",sub:"Likelihood × Impact = Risk Score",col:"#E8632B",x:280},{n:"03",t:"TREAT",sub:"Mitigate, accept, transfer, avoid",col:"#06d6a0",x:520},{n:"04",t:"MONITOR",sub:"Review, update, improve",col:"#ffb703",x:750}].map(({n,t,sub,col,x},i) => (
             <g key={i}>
               <rect x={x} y="40" width="195" height="150" rx="14" fill="#091826" stroke={col+"25"} strokeWidth="1.5"/>
@@ -243,34 +243,34 @@ export default function ISO27001RiskAssessment() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The risk assessment is the engine of your ISMS. Everything else — your controls, your policies, your audit programme — flows from the risks you identify and how you decide to treat them. ISO 27001 Clause 6.1.2 requires a <strong>documented risk assessment methodology</strong> that is repeatable, produces consistent results, and identifies risks to the confidentiality, integrity, and availability of information. Here is how it works, step by step.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The risk assessment is the engine of your ISMS. Everything else - your controls, your policies, your audit programme - flows from the risks you identify and how you decide to treat them. ISO 27001 Clause 6.1.2 requires a <strong>documented risk assessment methodology</strong> that is repeatable, produces consistent results, and identifies risks to the confidentiality, integrity, and availability of information. Here is how it works, step by step.</p>
 
           <section id="why-matters">
             <h2>Why Risk Assessment <em>Matters</em></h2>
-            <p>Without a risk assessment, your security programme is guesswork. You are implementing controls because they seem important or because a vendor sold them to you — not because they address your actual risks. The risk assessment gives your ISMS its direction: it tells you where to invest, what to prioritise, and what you can reasonably accept.</p>
-            <p>Auditors will check three things about your risk assessment: <strong>Is the methodology documented?</strong> <strong>Are the results consistent and reproducible?</strong> <strong>Do your controls actually trace back to identified risks?</strong> If any of these fail, the risk assessment is a finding — and without a valid risk assessment, the entire ISMS foundation is questionable.</p>
+            <p>Without a risk assessment, your security programme is guesswork. You are implementing controls because they seem important or because a vendor sold them to you - not because they address your actual risks. The risk assessment gives your ISMS its direction: it tells you where to invest, what to prioritise, and what you can reasonably accept.</p>
+            <p>Auditors will check three things about your risk assessment: <strong>Is the methodology documented?</strong> <strong>Are the results consistent and reproducible?</strong> <strong>Do your controls actually trace back to identified risks?</strong> If any of these fail, the risk assessment is a finding - and without a valid risk assessment, the entire ISMS foundation is questionable.</p>
           </section>
 
           <section id="methodology">
             <h2>The Risk Assessment <em>Methodology</em></h2>
-            <p>ISO 27001 does not prescribe a specific methodology — it requires that you define one, document it, and apply it consistently. The most common approach for startups is a qualitative asset-based methodology with a likelihood-impact scoring matrix. Here are the four steps:</p>
+            <p>ISO 27001 does not prescribe a specific methodology - it requires that you define one, document it, and apply it consistently. The most common approach for startups is a qualitative asset-based methodology with a likelihood-impact scoring matrix. Here are the four steps:</p>
           </section>
 
           <section id="step-1">
-            <h2>Step 1 — <em>Asset Identification</em></h2>
+            <h2>Step 1 - <em>Asset Identification</em></h2>
             <p>List every information asset within your ISMS scope. An information asset is anything that has value to the organisation and could be compromised. Categories include:</p>
             <ul>
               <li><strong>Data assets:</strong> Customer databases, source code repositories, employee records, financial data, API keys, credentials</li>
               <li><strong>Software assets:</strong> Production applications, internal tools, SaaS subscriptions, development environments</li>
               <li><strong>Hardware assets:</strong> Servers (cloud instances count), laptops, mobile devices, network equipment</li>
-              <li><strong>People assets:</strong> Key personnel with critical knowledge or access — the bus factor</li>
+              <li><strong>People assets:</strong> Key personnel with critical knowledge or access - the bus factor</li>
               <li><strong>Service assets:</strong> Cloud infrastructure (AWS, Azure, GCP), third-party APIs, email platforms, CRM</li>
             </ul>
-            <p>For each asset, assign an owner — the person accountable for its security. Asset ownership drives accountability throughout the ISMS.</p>
+            <p>For each asset, assign an owner - the person accountable for its security. Asset ownership drives accountability throughout the ISMS.</p>
           </section>
 
           <section id="step-2">
-            <h2>Step 2 — <em>Threat and Vulnerability Analysis</em></h2>
+            <h2>Step 2 - <em>Threat and Vulnerability Analysis</em></h2>
             <p>For each asset, identify the threats it faces and the vulnerabilities that could be exploited. A threat is something that could go wrong; a vulnerability is the weakness that allows it.</p>
             <div className="data-table-wrap">
               <table className="data-table">
@@ -283,33 +283,33 @@ export default function ISO27001RiskAssessment() {
           </section>
 
           <section id="step-3">
-            <h2>Step 3 — <em>Likelihood and Impact Scoring</em></h2>
+            <h2>Step 3 - <em>Likelihood and Impact Scoring</em></h2>
             <p>For each risk scenario (asset + threat + vulnerability), score the <strong>likelihood</strong> of the threat materialising and the <strong>impact</strong> if it does. Multiply to get a risk score.</p>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Score</th><th>Likelihood</th><th>Impact</th></tr></thead>
                 <tbody>
-                  {[['1','Rare — unlikely to occur in 3 years','Negligible — minimal disruption, no data loss'],['2','Unlikely — could occur once in 3 years','Minor — short disruption, limited data exposure'],['3','Possible — could occur once per year','Moderate — significant disruption, some data loss'],['4','Likely — expected to occur multiple times per year','Major — extended outage, significant data breach'],['5','Almost certain — expected to occur frequently','Critical — business-threatening, regulatory penalties']].map(([s,l,im],i)=>(<tr key={i}><td style={{color:'var(--cy)',fontWeight:700}}>{s}</td><td>{l}</td><td>{im}</td></tr>))}
+                  {[['1','Rare - unlikely to occur in 3 years','Negligible - minimal disruption, no data loss'],['2','Unlikely - could occur once in 3 years','Minor - short disruption, limited data exposure'],['3','Possible - could occur once per year','Moderate - significant disruption, some data loss'],['4','Likely - expected to occur multiple times per year','Major - extended outage, significant data breach'],['5','Almost certain - expected to occur frequently','Critical - business-threatening, regulatory penalties']].map(([s,l,im],i)=>(<tr key={i}><td style={{color:'var(--cy)',fontWeight:700}}>{s}</td><td>{l}</td><td>{im}</td></tr>))}
                 </tbody>
               </table>
             </div>
-            <p><strong>Risk Score = Likelihood × Impact.</strong> Scores of 1-8 are typically low risk (accept or monitor). Scores of 9-16 are medium (implement controls). Scores of 17-25 are high or critical (immediate action required). Define your risk appetite — the threshold above which risks must be treated — and document it as part of your methodology.</p>
+            <p><strong>Risk Score = Likelihood × Impact.</strong> Scores of 1-8 are typically low risk (accept or monitor). Scores of 9-16 are medium (implement controls). Scores of 17-25 are high or critical (immediate action required). Define your risk appetite - the threshold above which risks must be treated - and document it as part of your methodology.</p>
           </section>
 
           <section id="step-4">
-            <h2>Step 4 — <em>Risk Treatment</em></h2>
+            <h2>Step 4 - <em>Risk Treatment</em></h2>
             <p>For each risk above your risk appetite threshold, choose a treatment option:</p>
             <ul>
               <li><strong>Mitigate:</strong> Implement controls to reduce likelihood, impact, or both. This is the most common treatment. Link each mitigation to a specific Annex A control.</li>
               <li><strong>Accept:</strong> Acknowledge the risk and document the decision, including the business rationale. Requires sign-off from the risk owner or management.</li>
-              <li><strong>Transfer:</strong> Shift the risk to a third party — typically through insurance or contractual arrangements with vendors.</li>
+              <li><strong>Transfer:</strong> Shift the risk to a third party - typically through insurance or contractual arrangements with vendors.</li>
               <li><strong>Avoid:</strong> Eliminate the activity that creates the risk entirely. Sometimes the right answer is to stop doing the risky thing.</li>
             </ul>
-            <p>The output is a <strong>Risk Treatment Plan</strong> — a documented plan showing which risks are being treated, how, by whom, and by when.</p>
+            <p>The output is a <strong>Risk Treatment Plan</strong> - a documented plan showing which risks are being treated, how, by whom, and by when.</p>
           </section>
 
           <section id="risk-register">
-            <h2>The Risk Register — <em>Your Central Risk Document</em></h2>
+            <h2>The Risk Register - <em>Your Central Risk Document</em></h2>
             <p>The risk register captures every identified risk with its assessment and treatment decision. For each entry, document:</p>
             <ul>
               <li>Risk ID and description</li>
@@ -339,20 +339,20 @@ export default function ISO27001RiskAssessment() {
           </section>
 
           <section id="ongoing">
-            <h2>Keeping It Alive — <em>Not a One-Time Exercise</em></h2>
+            <h2>Keeping It Alive - <em>Not a One-Time Exercise</em></h2>
             <p>The risk assessment is not a document you write once for certification and then file away. It must be reviewed and updated:</p>
             <ul>
               <li><strong>At least annually</strong> as part of the ISMS management review cycle</li>
-              <li><strong>When significant changes occur</strong> — new product launch, new market, new vendor, organisational restructuring, major incident</li>
-              <li><strong>When the threat landscape changes</strong> — new vulnerability classes, new attack techniques, new regulatory requirements</li>
-              <li><strong>After security incidents</strong> — each incident is a data point that may change likelihood or impact scores</li>
+              <li><strong>When significant changes occur</strong> - new product launch, new market, new vendor, organisational restructuring, major incident</li>
+              <li><strong>When the threat landscape changes</strong> - new vulnerability classes, new attack techniques, new regulatory requirements</li>
+              <li><strong>After security incidents</strong> - each incident is a data point that may change likelihood or impact scores</li>
             </ul>
             <p>The risk register should be a living document with a named owner and a defined review cadence. For the full picture on what an ISMS encompasses, see our <a href="https://seccomply.net/resources/blog/what-is-an-isms" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>What Is an ISMS guide</a>.</p>
           </section>
 
           <div className="cta-banner">
             <h3>Ready to Start Your ISO 27001 Journey?</h3>
-            <p>SecComply helps Indian startups and global enterprises implement ISO 27001 from gap assessment to certification — with realistic timelines and fixed-scope engagements.</p>
+            <p>SecComply helps Indian startups and global enterprises implement ISO 27001 from gap assessment to certification - with realistic timelines and fixed-scope engagements.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free ISO 27001 Consultation →</a>
             </div>
@@ -368,7 +368,7 @@ export default function ISO27001RiskAssessment() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Does ISO 27001 prescribe a specific risk assessment methodology?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>No. ISO 27001 Clause 6.1.2 requires a documented methodology that produces consistent, valid, and comparable results — but does not prescribe which methodology to use. The most common approach for startups is qualitative asset-based assessment with a likelihood-impact scoring matrix.</p></div>
+              <div className="faq-a"><p>No. ISO 27001 Clause 6.1.2 requires a documented methodology that produces consistent, valid, and comparable results - but does not prescribe which methodology to use. The most common approach for startups is qualitative asset-based assessment with a likelihood-impact scoring matrix.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How many risks should a typical startup identify?</strong><span className="faq-ch">▾</span></div>
@@ -380,7 +380,7 @@ export default function ISO27001RiskAssessment() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How often must the risk assessment be reviewed?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>At minimum annually, but also whenever significant changes occur — new products, new vendors, organisational changes, major incidents, or changes in the threat landscape. The risk register should be a living document, not a point-in-time exercise filed away after certification.</p></div>
+              <div className="faq-a"><p>At minimum annually, but also whenever significant changes occur - new products, new vendors, organisational changes, major incidents, or changes in the threat landscape. The risk register should be a living document, not a point-in-time exercise filed away after certification.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What happens if a risk is above the risk appetite but we choose to accept it?</strong><span className="faq-ch">▾</span></div>
@@ -415,7 +415,7 @@ export default function ISO27001RiskAssessment() {
               <li><a href="https://seccomply.net/resources/blog/iso-27001-vs-soc2-vs-gdpr">ISO 27001 vs SOC 2 vs GDPR</a></li>
               <li><a href="https://seccomply.net/resources/blog/what-is-an-isms">What Is an ISMS</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27001-business-value">Business Value of ISO 27001</a></li>
-              <li><a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls">Annex A — 93 Controls</a></li>
+              <li><a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls">Annex A - 93 Controls</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27001-risk-assessment">▶ Risk Assessment in ISO 27001</a></li>
             </ul>
           </div>
@@ -425,7 +425,7 @@ export default function ISO27001RiskAssessment() {
           </div>
           <div className="sb-cta">
             <h4>Need ISO 27001 Certification?</h4>
-            <p>Gap assessment to certification — we handle the entire journey.</p>
+            <p>Gap assessment to certification - we handle the entire journey.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

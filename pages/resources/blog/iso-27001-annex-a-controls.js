@@ -25,12 +25,12 @@ export default function ISO27001AnnexAControls() {
   return (
     <Layout>
       <Head>
-        <title>ISO 27001 Annex A Controls — All 93 Controls Explained Simply | SecComply</title>
+        <title>ISO 27001 Annex A Controls - All 93 Controls Explained Simply | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
         <meta name="description" content="ISO 27001:2022 has 93 controls in 4 categories. Here is what each category covers, the controls that matter most for startups, the 11 new controls in 2022, and how the Statement of Applicability works." />
         <meta name="keywords" content="ISO 27001 Annex A controls, 93 controls ISO 27001, ISO 27001 2022 controls, organisational controls ISO 27001, people controls, physical controls, technological controls, Statement of Applicability, SoA" />
-        <meta property="og:title" content="ISO 27001 Annex A Controls — All 93 Controls Explained Simply" />
+        <meta property="og:title" content="ISO 27001 Annex A Controls - All 93 Controls Explained Simply" />
         <meta property="og:description" content="ISO 27001:2022 has 93 controls in 4 categories. Here is what each category covers, the controls that matter most for startups, the 11 new controls in 2022, and how the Statement of Applicability works." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/iso-27001-annex-a-controls" />
@@ -38,7 +38,7 @@ export default function ISO27001AnnexAControls() {
         <meta property="article:author" content="Soham Sawant" />
         <meta property="article:tag" content="ISO 27001" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27001 Annex A Controls — All 93 Controls Explained Simply","description":"ISO 27001:2022 has 93 controls in 4 categories. Here is what each covers, the 11 new 2022 controls, and how the Statement of Applicability works.","author":{"@type":"Person","name":"Soham Sawant","jobTitle":"Cybersecurity Expert & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27001-annex-a-controls","articleSection":"ISO 27001"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Annex A Controls","item":"https://seccomply.net/resources/blog/iso-27001-annex-a-controls"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27001 Annex A Controls - All 93 Controls Explained Simply","description":"ISO 27001:2022 has 93 controls in 4 categories. Here is what each covers, the 11 new 2022 controls, and how the Statement of Applicability works.","author":{"@type":"Person","name":"Soham Sawant","jobTitle":"Cybersecurity Expert & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27001-annex-a-controls","articleSection":"ISO 27001"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Annex A Controls","item":"https://seccomply.net/resources/blog/iso-27001-annex-a-controls"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -187,7 +187,7 @@ export default function ISO27001AnnexAControls() {
           <span className="badge badge-bl">🛡️ Information Security</span>
           <span className="badge badge-gr">🚀 Startup Guide</span>
         </div>
-        <h1 className="hero-h1">ISO 27001 Annex A Controls — <em>All 93 Controls</em> Explained Simply</h1>
+        <h1 className="hero-h1">ISO 27001 Annex A Controls - <em>All 93 Controls</em> Explained Simply</h1>
         <p className="hero-sub">ISO 27001:2022 has 93 controls organised into four categories: Organisational (37), People (8), Physical (14), and Technological (34). Not all 93 apply to every organisation. Here is what each category covers, the controls that matter most for startups, and how the Statement of Applicability works.</p>
 
         <div className="author-strip">
@@ -208,7 +208,7 @@ export default function ISO27001AnnexAControls() {
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pgs4" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pgs4)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27001:2022 Annex A — 93 Controls in 4 Categories</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27001:2022 Annex A - 93 Controls in 4 Categories</text>
           {[{t:"ORGANISATIONAL",n:"37",sub:"Policies, governance, vendor mgmt",col:"#E8632B",x:50,pct:"40%"},{t:"PEOPLE",n:"8",sub:"HR, training, awareness",col:"#818cf8",x:280,pct:"9%"},{t:"PHYSICAL",n:"14",sub:"Facilities, equipment, media",col:"#06d6a0",x:520,pct:"15%"},{t:"TECHNOLOGICAL",n:"34",sub:"Access, crypto, network, app security",col:"#ffb703",x:750,pct:"37%"}].map(({t,n,sub,col,x,pct},i) => (
             <g key={i}>
               <rect x={x} y="40" width="195" height="200" rx="14" fill="#091826" stroke={col+"25"} strokeWidth="1.5"/>
@@ -245,10 +245,10 @@ export default function ISO27001AnnexAControls() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>ISO 27001:2022 Annex A contains 93 controls — down from 114 in the 2013 version. These controls are the specific security measures your organisation implements to treat identified risks. They are organised into four categories and documented in your Statement of Applicability (SoA). Here is what each category covers and which controls matter most for startups.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>ISO 27001:2022 Annex A contains 93 controls - down from 114 in the 2013 version. These controls are the specific security measures your organisation implements to treat identified risks. They are organised into four categories and documented in your Statement of Applicability (SoA). Here is what each category covers and which controls matter most for startups.</p>
 
           <section id="overview">
-            <h2>The 93 Controls — <em>At a Glance</em></h2>
+            <h2>The 93 Controls - <em>At a Glance</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Category</th><th>Controls</th><th>What It Covers</th></tr></thead>
@@ -260,7 +260,7 @@ export default function ISO27001AnnexAControls() {
           </section>
 
           <section id="organisational">
-            <h2>Organisational Controls (37) — <em>A.5</em></h2>
+            <h2>Organisational Controls (37) - <em>A.5</em></h2>
             <p>The largest category. These controls govern how your organisation manages security at a policy and governance level:</p>
             <ul>
               <li><strong>A.5.1 Information Security Policies:</strong> Top-level security policy approved by management, reviewed regularly</li>
@@ -275,7 +275,7 @@ export default function ISO27001AnnexAControls() {
           </section>
 
           <section id="people">
-            <h2>People Controls (8) — <em>A.6</em></h2>
+            <h2>People Controls (8) - <em>A.6</em></h2>
             <p>The smallest category but critically important. Security is ultimately a people problem:</p>
             <ul>
               <li><strong>A.6.1 Screening:</strong> Background verification checks before employment, proportional to the role and data access</li>
@@ -290,7 +290,7 @@ export default function ISO27001AnnexAControls() {
           </section>
 
           <section id="physical">
-            <h2>Physical Controls (14) — <em>A.7</em></h2>
+            <h2>Physical Controls (14) - <em>A.7</em></h2>
             <p>Physical security is often deprioritised by cloud-native startups, but auditors still check:</p>
             <ul>
               <li><strong>A.7.1-7.4 Perimeter and Entry:</strong> Physical security perimeters, entry controls, securing offices and facilities</li>
@@ -301,13 +301,13 @@ export default function ISO27001AnnexAControls() {
               <span className="co-icon">💡</span>
               <div className="co-body">
                 <strong>For Cloud-Native Startups</strong>
-                <p>If you have no physical office (fully remote), many physical controls can be marked as not applicable in your SoA — but you must justify why. Remote working controls (A.6.7) and endpoint security become more important in this scenario. Your cloud provider physical security (AWS, Azure, GCP) covers the data centre controls.</p>
+                <p>If you have no physical office (fully remote), many physical controls can be marked as not applicable in your SoA - but you must justify why. Remote working controls (A.6.7) and endpoint security become more important in this scenario. Your cloud provider physical security (AWS, Azure, GCP) covers the data centre controls.</p>
               </div>
             </div>
           </section>
 
           <section id="technological">
-            <h2>Technological Controls (34) — <em>A.8</em></h2>
+            <h2>Technological Controls (34) - <em>A.8</em></h2>
             <p>The most technically detailed category. Key areas include:</p>
             <ul>
               <li><strong>A.8.1-8.6 Access and Authentication:</strong> User endpoint devices, privileged access, information access restriction, authentication, capacity management</li>
@@ -333,29 +333,29 @@ export default function ISO27001AnnexAControls() {
           </section>
 
           <section id="soa">
-            <h2>The Statement of Applicability — <em>How It Works</em></h2>
+            <h2>The Statement of Applicability - <em>How It Works</em></h2>
             <p>The Statement of Applicability (SoA) is one of the most important documents in your ISMS. For each of the 93 Annex A controls, the SoA states whether the control <strong>applies</strong> to your organisation and <strong>why</strong>. If a control does not apply, the SoA must document the justification for exclusion. A typical SaaS startup applies 70-80 of the 93 controls, excluding some physical controls (if fully remote) and certain controls not relevant to their processing activities.</p>
           </section>
 
           <section id="startup-priority">
-            <h2>Startup Priority Controls — <em>Where to Focus First</em></h2>
+            <h2>Startup Priority Controls - <em>Where to Focus First</em></h2>
             <p>For a SaaS startup beginning the ISO 27001 journey, these controls typically require the most work and deliver the most value:</p>
             <ul>
-              <li><strong>A.5.1 Information Security Policies</strong> — the foundation document everything else references</li>
-              <li><strong>A.5.15-5.18 Access Control</strong> — MFA, role-based access, access reviews</li>
-              <li><strong>A.5.24-5.28 Incident Management</strong> — response procedures, breach notification, evidence collection</li>
-              <li><strong>A.6.3 Security Awareness Training</strong> — phishing simulation, data handling, incident reporting</li>
-              <li><strong>A.8.7 Malware Protection</strong> — endpoint security across all devices</li>
-              <li><strong>A.8.8 Vulnerability Management</strong> — regular scanning, patching, remediation tracking</li>
-              <li><strong>A.8.24-8.28 Secure Development</strong> — SDLC, code review, testing, secure coding</li>
-              <li><strong>A.8.13 Backup</strong> — automated backups, tested restoration, offsite storage</li>
+              <li><strong>A.5.1 Information Security Policies</strong> - the foundation document everything else references</li>
+              <li><strong>A.5.15-5.18 Access Control</strong> - MFA, role-based access, access reviews</li>
+              <li><strong>A.5.24-5.28 Incident Management</strong> - response procedures, breach notification, evidence collection</li>
+              <li><strong>A.6.3 Security Awareness Training</strong> - phishing simulation, data handling, incident reporting</li>
+              <li><strong>A.8.7 Malware Protection</strong> - endpoint security across all devices</li>
+              <li><strong>A.8.8 Vulnerability Management</strong> - regular scanning, patching, remediation tracking</li>
+              <li><strong>A.8.24-8.28 Secure Development</strong> - SDLC, code review, testing, secure coding</li>
+              <li><strong>A.8.13 Backup</strong> - automated backups, tested restoration, offsite storage</li>
             </ul>
             <p>For the full self-assessment on whether ISO 27001 is right for your organisation, see our <a href="https://seccomply.net/resources/blog/iso-27001-self-assessment" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>ISO 27001 Self-Assessment Guide</a>.</p>
           </section>
 
           <div className="cta-banner">
             <h3>Ready to Start Your ISO 27001 Journey?</h3>
-            <p>SecComply helps Indian startups and global enterprises implement ISO 27001 from gap assessment to certification — with realistic timelines and fixed-scope engagements.</p>
+            <p>SecComply helps Indian startups and global enterprises implement ISO 27001 from gap assessment to certification - with realistic timelines and fixed-scope engagements.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free ISO 27001 Consultation →</a>
             </div>
@@ -379,11 +379,11 @@ export default function ISO27001AnnexAControls() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What changed from ISO 27001:2013 to 2022?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Only Annex A controls changed — the core management system clauses remain the same. Controls decreased from 114 to 93, reorganised from 14 categories to 4. 11 new controls were added covering threat intelligence, cloud services, data deletion, data masking, DLP, secure coding, and web filtering.</p></div>
+              <div className="faq-a"><p>Only Annex A controls changed - the core management system clauses remain the same. Controls decreased from 114 to 93, reorganised from 14 categories to 4. 11 new controls were added covering threat intelligence, cloud services, data deletion, data masking, DLP, secure coding, and web filtering.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the Statement of Applicability (SoA)?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>The SoA is a document listing all 93 Annex A controls with a determination of whether each applies to your organisation and why. It is one of the most important audit artefacts — the certification body auditor will review it before and during the audit. Controls excluded without proper justification will be flagged as findings.</p></div>
+              <div className="faq-a"><p>The SoA is a document listing all 93 Annex A controls with a determination of whether each applies to your organisation and why. It is one of the most important audit artefacts - the certification body auditor will review it before and during the audit. Controls excluded without proper justification will be flagged as findings.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Which controls should a startup prioritise first?</strong><span className="faq-ch">▾</span></div>
@@ -417,7 +417,7 @@ export default function ISO27001AnnexAControls() {
               <li><a href="https://seccomply.net/resources/blog/iso-27001-vs-soc2-vs-gdpr">ISO 27001 vs SOC 2 vs GDPR</a></li>
               <li><a href="https://seccomply.net/resources/blog/what-is-an-isms">What Is an ISMS</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27001-business-value">Business Value of ISO 27001</a></li>
-              <li><a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls">▶ Annex A — 93 Controls</a></li>
+              <li><a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls">▶ Annex A - 93 Controls</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27001-risk-assessment">Risk Assessment in ISO 27001</a></li>
             </ul>
           </div>
@@ -427,7 +427,7 @@ export default function ISO27001AnnexAControls() {
           </div>
           <div className="sb-cta">
             <h4>Need ISO 27001 Certification?</h4>
-            <p>Gap assessment to certification — we handle the entire journey.</p>
+            <p>Gap assessment to certification - we handle the entire journey.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

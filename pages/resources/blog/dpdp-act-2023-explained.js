@@ -39,7 +39,7 @@ export default function DPDPActExplained() {
         <meta name="description" content="A no-jargon breakdown of India's Digital Personal Data Protection Act 2023. Who it applies to, your five core obligations, the penalty schedule up to ₹250 crore, and exactly what to do in your first 30 days." />
         <meta name="keywords" content="DPDP Act 2023 India, Digital Personal Data Protection Act, DPDP compliance, DPDP rules 2025, Data Protection Board India, DPDP obligations, DPDP penalty, data fiduciary India, Indian data privacy law, DPDP vs GDPR" />
         <meta property="og:title" content="DPDP Act 2023 Explained in Plain English" />
-        <meta property="og:description" content="India's DPDP Act is now enforceable. If your company collects or processes personal data of Indian users, you're inside a legally enforceable privacy framework — with penalties up to ₹250 crore per violation. Here's what it means." />
+        <meta property="og:description" content="India's DPDP Act is now enforceable. If your company collects or processes personal data of Indian users, you're inside a legally enforceable privacy framework - with penalties up to ₹250 crore per violation. Here's what it means." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/dpdp-act-2023-explained" />
         <meta property="og:image" content="https://seccomply.net/assets/images/blog/dpdp-act-og.png" />
@@ -52,13 +52,13 @@ export default function DPDPActExplained() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
-            { "@type": "Article", "headline": "DPDP Act 2023 Explained in Plain English", "description": "A no-jargon breakdown of India's Digital Personal Data Protection Act 2023 — who it applies to, five core obligations, the penalty schedule, and your first 30 days action plan.", "author": { "@type": "Organization", "name": "SecComply" }, "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } }, "datePublished": "2026-03-25", "dateModified": "2026-03-25", "mainEntityOfPage": "https://seccomply.net/resources/blog/dpdp-act-2023-explained", "keywords": "DPDP Act 2023, Digital Personal Data Protection, Data Protection Board India, data fiduciary, consent manager, DPDP penalty", "articleSection": "DPDP Act", "wordCount": 1400, "timeRequired": "PT7M" },
+            { "@type": "Article", "headline": "DPDP Act 2023 Explained in Plain English", "description": "A no-jargon breakdown of India's Digital Personal Data Protection Act 2023 - who it applies to, five core obligations, the penalty schedule, and your first 30 days action plan.", "author": { "@type": "Organization", "name": "SecComply" }, "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } }, "datePublished": "2026-03-25", "dateModified": "2026-03-25", "mainEntityOfPage": "https://seccomply.net/resources/blog/dpdp-act-2023-explained", "keywords": "DPDP Act 2023, Digital Personal Data Protection, Data Protection Board India, data fiduciary, consent manager, DPDP penalty", "articleSection": "DPDP Act", "wordCount": 1400, "timeRequired": "PT7M" },
             { "@type": "FAQPage", "mainEntity": [
-              { "@type": "Question", "name": "Does the DPDP Act apply to B2B companies?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. If you process personal data of Indian individuals — including your clients' employees or end users — you are in scope. B2B SaaS companies are often Data Processors for their clients' Fiduciary obligations, which comes with its own contractual and operational requirements. There is no B2B exemption in the DPDP Act." } },
-              { "@type": "Question", "name": "Is DPDP compliance the same as ISO 27001?", "acceptedAnswer": { "@type": "Answer", "text": "No. ISO 27001 is an information security standard — it addresses how you protect data assets. DPDP is a privacy regulation — it addresses your legal right to process personal data and what rights individuals have over it. There is meaningful overlap (both require security safeguards and incident response) but one does not substitute for the other. Many organisations pursuing ISO 27001 certification also need DPDP compliance, and the two programmes can be run in parallel efficiently." } },
-              { "@type": "Question", "name": "What is the Data Protection Board of India?", "acceptedAnswer": { "@type": "Answer", "text": "The Data Protection Board (DPB) is India's data privacy regulator — equivalent to the UK's ICO or France's CNIL. It can receive user complaints, investigate violations, and levy penalties up to ₹250 crore. It operates with the powers of a civil court. The DPB was formally constituted following the notification of the DPDP Rules by MeitY in November 2025." } },
+              { "@type": "Question", "name": "Does the DPDP Act apply to B2B companies?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. If you process personal data of Indian individuals - including your clients' employees or end users - you are in scope. B2B SaaS companies are often Data Processors for their clients' Fiduciary obligations, which comes with its own contractual and operational requirements. There is no B2B exemption in the DPDP Act." } },
+              { "@type": "Question", "name": "Is DPDP compliance the same as ISO 27001?", "acceptedAnswer": { "@type": "Answer", "text": "No. ISO 27001 is an information security standard - it addresses how you protect data assets. DPDP is a privacy regulation - it addresses your legal right to process personal data and what rights individuals have over it. There is meaningful overlap (both require security safeguards and incident response) but one does not substitute for the other. Many organisations pursuing ISO 27001 certification also need DPDP compliance, and the two programmes can be run in parallel efficiently." } },
+              { "@type": "Question", "name": "What is the Data Protection Board of India?", "acceptedAnswer": { "@type": "Answer", "text": "The Data Protection Board (DPB) is India's data privacy regulator - equivalent to the UK's ICO or France's CNIL. It can receive user complaints, investigate violations, and levy penalties up to ₹250 crore. It operates with the powers of a civil court. The DPB was formally constituted following the notification of the DPDP Rules by MeitY in November 2025." } },
               { "@type": "Question", "name": "What is a Consent Manager under the DPDP Act?", "acceptedAnswer": { "@type": "Answer", "text": "A Consent Manager is a registered intermediary that enables individuals to provide, manage, review, and withdraw consent across multiple platforms through a single interface. This is a uniquely Indian concept with no direct GDPR equivalent. The DPDP Rules require Consent Managers to be registered with the Data Protection Board and to meet specific technical and operational standards." } },
-              { "@type": "Question", "name": "What are the maximum penalties under the DPDP Act 2023?", "acceptedAnswer": { "@type": "Answer", "text": "The maximum penalty under the DPDP Act is ₹250 crore for security safeguard failures that lead to a data breach. Failure to notify the Data Protection Board and affected users after a breach carries up to ₹200 crore. Violations of children's data obligations also carry up to ₹200 crore. Importantly, penalties can stack — a single breach incident can simultaneously trigger the security, notification, and children's data categories." } }
+              { "@type": "Question", "name": "What are the maximum penalties under the DPDP Act 2023?", "acceptedAnswer": { "@type": "Answer", "text": "The maximum penalty under the DPDP Act is ₹250 crore for security safeguard failures that lead to a data breach. Failure to notify the Data Protection Board and affected users after a breach carries up to ₹200 crore. Violations of children's data obligations also carry up to ₹200 crore. Importantly, penalties can stack - a single breach incident can simultaneously trigger the security, notification, and children's data categories." } }
             ]},
             { "@type": "BreadcrumbList", "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seccomply.net" },
@@ -237,7 +237,7 @@ export default function DPDPActExplained() {
           <span className="badge badge-gr">Founders · CEOs · Operators</span>
         </div>
         <h1 className="cspm-hero-h1">DPDP Act 2023 <em>Explained in Plain English</em></h1>
-        <p className="cspm-hero-sub">India finally has a data privacy law that means business. If your company collects, stores, or processes personal data of Indian users, you are now inside a legally enforceable privacy framework — with penalties that can reach ₹250 crore per violation. Here is what it means, who it applies to, and what to do right now.</p>
+        <p className="cspm-hero-sub">India finally has a data privacy law that means business. If your company collects, stores, or processes personal data of Indian users, you are now inside a legally enforceable privacy framework - with penalties that can reach ₹250 crore per violation. Here is what it means, who it applies to, and what to do right now.</p>
 
         <div className="cspm-author-strip">
           <div className="avatar">SC</div>
@@ -252,7 +252,7 @@ export default function DPDPActExplained() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=1200&h=480&fit=crop" alt="India data protection privacy law DPDP Act 2023" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}}/>
         </div>
-        <p className="img-cap">India's DPDP Act 2023 — with DPDP Rules notified by MeitY in November 2025 — creates a legally enforceable privacy framework covering 850 million internet users and every company that touches their data.</p>
+        <p className="img-cap">India's DPDP Act 2023 - with DPDP Rules notified by MeitY in November 2025 - creates a legally enforceable privacy framework covering 850 million internet users and every company that touches their data.</p>
 
         {/* SVG DASHBOARD */}
         <div className="img-wrap">
@@ -264,7 +264,7 @@ export default function DPDPActExplained() {
               <pattern id="dpat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern>
             </defs>
             <rect width="960" height="420" fill="url(#dpat)"/>
-            <text x="480" y="34" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">DPDP Act 2023 — Key Facts at a Glance</text>
+            <text x="480" y="34" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">DPDP Act 2023 - Key Facts at a Glance</text>
 
             {/* LEFT: Timeline */}
             <rect x="16" y="50" width="210" height="354" rx="12" fill="#081826" stroke="rgba(232,99,43,0.15)" strokeWidth="1"/>
@@ -308,7 +308,7 @@ export default function DPDPActExplained() {
             ))}
 
             <rect x="262" y="378" width="432" height="24" rx="8" fill="rgba(255,77,109,0.07)" stroke="rgba(255,77,109,0.2)" strokeWidth="1"/>
-            <text x="478" y="394" textAnchor="middle" fill="#ff4d6d" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">⚠ Penalties can stack — a single breach can trigger multiple categories simultaneously</text>
+            <text x="478" y="394" textAnchor="middle" fill="#ff4d6d" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">⚠ Penalties can stack - a single breach can trigger multiple categories simultaneously</text>
 
             <line x1="708" y1="46" x2="708" y2="408" stroke="rgba(232,99,43,0.07)" strokeWidth="1"/>
 
@@ -318,7 +318,7 @@ export default function DPDPActExplained() {
               {num:'1', ob:'Lawful Basis',        detail:'Consent or legitimate use', col:'#E8632B'},
               {num:'2', ob:'Notice',               detail:'22 Indian languages required', col:'#E8632B'},
               {num:'3', ob:'User Rights',          detail:'Access · Correct · Erase · Nominate', col:'#ffb703'},
-              {num:'4', ob:'Security Safeguards',  detail:'Proportionate to risk — highest penalty', col:'#ff4d6d'},
+              {num:'4', ob:'Security Safeguards',  detail:'Proportionate to risk - highest penalty', col:'#ff4d6d'},
               {num:'5', ob:'Breach Notification',  detail:'Notify DPB + users ASAP', col:'#ff4d6d'},
             ].map(({num,ob,detail,col},i)=>(
               <g key={i}>
@@ -331,7 +331,7 @@ export default function DPDPActExplained() {
             ))}
           </svg>
         </div>
-        <p className="img-cap">DPDP Act 2023 at a glance — key milestones from Presidential Assent to enforcement, the full penalty schedule up to ₹250 crore, and the five core obligations every Data Fiduciary must satisfy.</p>
+        <p className="img-cap">DPDP Act 2023 at a glance - key milestones from Presidential Assent to enforcement, the full penalty schedule up to ₹250 crore, and the five core obligations every Data Fiduciary must satisfy.</p>
 
         <div className="toc-box">
           <div className="toc-lbl">In This Article</div>
@@ -358,15 +358,15 @@ export default function DPDPActExplained() {
 
           <section id="what-is">
             <h2>What Is <em>the DPDP Act?</em></h2>
-            <p>The DPDP Act is India's first comprehensive, standalone data privacy law. Before it, India relied on Section 43A of the IT Act, 2000 — written before smartphones and cloud computing existed. For a country with 850 million internet users, that was never going to be enough.</p>
-            <p>The Act received Presidential assent in August 2023, and the DPDP Rules were notified by MeitY in November 2025. With the Rules in place, the compliance obligations are no longer theoretical — they are enforceable.</p>
+            <p>The DPDP Act is India's first comprehensive, standalone data privacy law. Before it, India relied on Section 43A of the IT Act, 2000 - written before smartphones and cloud computing existed. For a country with 850 million internet users, that was never going to be enough.</p>
+            <p>The Act received Presidential assent in August 2023, and the DPDP Rules were notified by MeitY in November 2025. With the Rules in place, the compliance obligations are no longer theoretical - they are enforceable.</p>
             <div className="pull-quote">
-              <p>"The Act's core philosophy: personal data belongs to the individual, not the company that collects it. When your user gives you their phone number, they're granting a conditional licence — not ownership."</p>
+              <p>"The Act's core philosophy: personal data belongs to the individual, not the company that collects it. When your user gives you their phone number, they're granting a conditional licence - not ownership."</p>
             </div>
             <div className="callout co-info">
               <span className="co-icon">💡</span>
               <div className="co-body">
-                <strong>DPDP vs GDPR — Key Differences</strong>
+                <strong>DPDP vs GDPR - Key Differences</strong>
                 <p>DPDP draws from the EU's GDPR but is distinctly Indian. Key differences: a Consent Manager infrastructure with no GDPR equivalent, an 18-year threshold for children's data (vs 16 in GDPR), the Data Protection Board of India as the regulator (vs national DPAs in Europe), and a penalty structure denominated in crore rather than percentage of global turnover.</p>
               </div>
             </div>
@@ -374,7 +374,7 @@ export default function DPDPActExplained() {
 
           <section id="who-applies">
             <h2>Who Does <em>It Apply To?</em></h2>
-            <p>Any entity — Indian or foreign — that processes digital personal data of individuals located within India. It doesn't matter where your company is registered or where your servers sit. If you process personal data of Indian users, you are in scope.</p>
+            <p>Any entity - Indian or foreign - that processes digital personal data of individuals located within India. It doesn't matter where your company is registered or where your servers sit. If you process personal data of Indian users, you are in scope.</p>
             <div className="scope-grid">
               <div className="scope-card scope-yes anim">
                 <h3>✓ In Scope</h3>
@@ -382,7 +382,7 @@ export default function DPDPActExplained() {
                   <li>Indian startup collecting any user data</li>
                   <li>Foreign SaaS with Indian users</li>
                   <li>B2B company processing client employee data</li>
-                  <li>5-person startup — no size threshold</li>
+                  <li>5-person startup - no size threshold</li>
                   <li>App collecting name, email, or phone</li>
                 </ul>
               </div>
@@ -406,25 +406,25 @@ export default function DPDPActExplained() {
 
           <section id="four-terms">
             <h2>Four Terms <em>You Must Know</em></h2>
-            <p>Before you can understand your obligations, you need to know which role you play. The DPDP Act defines four key parties — and your responsibilities depend entirely on which one you are.</p>
+            <p>Before you can understand your obligations, you need to know which role you play. The DPDP Act defines four key parties - and your responsibilities depend entirely on which one you are.</p>
             <div className="roles-grid">
               <div className="role-card anim">
                 <div className="rc-label">Role 1</div>
                 <h3>Data Principal</h3>
-                <p>The individual whose personal data is being collected or processed. Your app user, your website visitor, your customer. They are the rights-holder under the Act — with rights to access, correction, erasure, and grievance redressal.</p>
+                <p>The individual whose personal data is being collected or processed. Your app user, your website visitor, your customer. They are the rights-holder under the Act - with rights to access, correction, erasure, and grievance redressal.</p>
               </div>
               <div className="role-card anim">
                 <div className="rc-label">Role 2</div>
                 <h3>Data Fiduciary</h3>
-                <p>The entity that decides what personal data to collect, why, and how it is processed. Your company. As a Fiduciary you carry the primary compliance obligations — lawful basis, notice, security safeguards, and breach notification.</p>
+                <p>The entity that decides what personal data to collect, why, and how it is processed. Your company. As a Fiduciary you carry the primary compliance obligations - lawful basis, notice, security safeguards, and breach notification.</p>
               </div>
               <div className="role-card anim">
                 <div className="rc-label">Role 3</div>
                 <h3>Data Processor</h3>
-                <p>A third party that processes personal data on your behalf — AWS, your CRM, your analytics tool. Processors carry contractual obligations from Fiduciaries but do not independently determine the purpose of processing.</p>
+                <p>A third party that processes personal data on your behalf - AWS, your CRM, your analytics tool. Processors carry contractual obligations from Fiduciaries but do not independently determine the purpose of processing.</p>
               </div>
               <div className="role-card anim">
-                <div className="rc-label">Role 4 — India-Specific</div>
+                <div className="rc-label">Role 4 - India-Specific</div>
                 <h3>Consent Manager</h3>
                 <p>A registered intermediary that enables individuals to provide, manage, review, and withdraw consent across multiple platforms through a single interface. No direct GDPR equivalent. Consent Managers must be registered with the Data Protection Board.</p>
               </div>
@@ -439,14 +439,14 @@ export default function DPDPActExplained() {
 
           <section id="obligations">
             <h2>Your Five <em>Core Obligations</em></h2>
-            <p>As a Data Fiduciary, these are the five obligations you must satisfy. Each one has a specific failure mode — the trap that catches most organisations who don't plan for it.</p>
+            <p>As a Data Fiduciary, these are the five obligations you must satisfy. Each one has a specific failure mode - the trap that catches most organisations who don't plan for it.</p>
             <div className="obligations-list">
               {[
-                {num:'1', title:'Lawful Basis', body:'You must have a valid lawful basis before any processing begins. Under DPDP, the primary basis is consent — freely given, specific, informed, and unambiguous. Consent must be obtained through a clear affirmative action, not pre-ticked boxes or silence.', trap:'No lawful basis = no processing. Pre-ticked consent boxes are explicitly prohibited.'},
-                {num:'2', title:'Notice', body:'You must provide a clear, plain-language notice explaining what data you collect, why, and how individuals can exercise their rights. The notice must be made available in all 22 scheduled Indian languages — not just English.', trap:'English-only notices are non-compliant. This is one of the most commonly missed requirements.'},
+                {num:'1', title:'Lawful Basis', body:'You must have a valid lawful basis before any processing begins. Under DPDP, the primary basis is consent - freely given, specific, informed, and unambiguous. Consent must be obtained through a clear affirmative action, not pre-ticked boxes or silence.', trap:'No lawful basis = no processing. Pre-ticked consent boxes are explicitly prohibited.'},
+                {num:'2', title:'Notice', body:'You must provide a clear, plain-language notice explaining what data you collect, why, and how individuals can exercise their rights. The notice must be made available in all 22 scheduled Indian languages - not just English.', trap:'English-only notices are non-compliant. This is one of the most commonly missed requirements.'},
                 {num:'3', title:'User Rights', body:'Data Principals have five rights: the right to access their data, the right to correction, the right to erasure, the right to raise a grievance, and the right to nominate someone to exercise rights on their behalf after death. You must build workflows for all five.', trap:'Having a privacy policy without an operational mechanism to respond to rights requests is non-compliant.'},
-                {num:'4', title:'Security Safeguards', body:'You must implement reasonable technical and organisational safeguards proportionate to the sensitivity of the data you process. This is the obligation with the highest penalty — ₹250 crore for failures that lead to a breach. Reasonable will be assessed by the Data Protection Board based on what was practicable given your risk profile.', trap:'Highest penalty under the Act. Having a firewall is not a defence if proportionate safeguards were not implemented.'},
-                {num:'5', title:'Breach Notification', body:'You must notify the Data Protection Board and affected Data Principals as soon as practicable after becoming aware of a breach. There is no fixed timeline in the Act itself — the DPDP Rules specify the notification requirements. Concealing or delaying notification is a separate violation.', trap:'No hiding it, no delaying it. The notification obligation exists regardless of whether the breach was your fault.'},
+                {num:'4', title:'Security Safeguards', body:'You must implement reasonable technical and organisational safeguards proportionate to the sensitivity of the data you process. This is the obligation with the highest penalty - ₹250 crore for failures that lead to a breach. Reasonable will be assessed by the Data Protection Board based on what was practicable given your risk profile.', trap:'Highest penalty under the Act. Having a firewall is not a defence if proportionate safeguards were not implemented.'},
+                {num:'5', title:'Breach Notification', body:'You must notify the Data Protection Board and affected Data Principals as soon as practicable after becoming aware of a breach. There is no fixed timeline in the Act itself - the DPDP Rules specify the notification requirements. Concealing or delaying notification is a separate violation.', trap:'No hiding it, no delaying it. The notification obligation exists regardless of whether the breach was your fault.'},
               ].map(({num,title,body,trap},i)=>(
                 <div key={i} className="ob-item anim">
                   <div className="ob-num">{num}</div>
@@ -462,32 +462,32 @@ export default function DPDPActExplained() {
 
           <section id="penalties">
             <h2>The <em>Penalty Schedule</em></h2>
-            <p>The DPDP Act's penalties are structured by violation type — and critically, they can stack. A single breach incident can simultaneously trigger the security safeguards category, the breach notification category, and if any children's data was involved, the children's data category.</p>
+            <p>The DPDP Act's penalties are structured by violation type - and critically, they can stack. A single breach incident can simultaneously trigger the security safeguards category, the breach notification category, and if any children's data was involved, the children's data category.</p>
             <div className="penalty-list">
               <div className="pen-item pen-top anim"><div className="pen-amt">₹250 Cr</div><div className="pen-desc">Security safeguard failure leading to a personal data breach</div></div>
               <div className="pen-item pen-top anim"><div className="pen-amt">₹200 Cr</div><div className="pen-desc">Failure to notify the Data Protection Board and affected users after a breach</div></div>
               <div className="pen-item pen-top anim"><div className="pen-amt">₹200 Cr</div><div className="pen-desc">Violation of children's data obligations (processing without parental consent, behavioural tracking of minors)</div></div>
-              <div className="pen-item anim"><div className="pen-amt">₹150 Cr</div><div className="pen-desc">Failure to meet Significant Data Fiduciary (SDF) obligations — additional requirements for high-risk Fiduciaries</div></div>
+              <div className="pen-item anim"><div className="pen-amt">₹150 Cr</div><div className="pen-desc">Failure to meet Significant Data Fiduciary (SDF) obligations - additional requirements for high-risk Fiduciaries</div></div>
               <div className="pen-item anim"><div className="pen-amt">₹50 Cr</div><div className="pen-desc">Failure to honour Data Principal rights (access, correction, erasure, grievance, nomination)</div></div>
             </div>
             <div className="callout co-danger">
               <span className="co-icon">🚨</span>
               <div className="co-body">
                 <strong>Penalties Stack</strong>
-                <p>A single breach incident that involves children's data and is not notified on time could simultaneously attract ₹250 Cr (security), ₹200 Cr (notification), and ₹200 Cr (children's data) — a theoretical maximum of ₹650 Cr from one event. The Data Protection Board has discretion on the actual penalty amount, but the stacking mechanism is explicit in the Act.</p>
+                <p>A single breach incident that involves children's data and is not notified on time could simultaneously attract ₹250 Cr (security), ₹200 Cr (notification), and ₹200 Cr (children's data) - a theoretical maximum of ₹650 Cr from one event. The Data Protection Board has discretion on the actual penalty amount, but the stacking mechanism is explicit in the Act.</p>
               </div>
             </div>
           </section>
 
           <section id="first-30-days">
             <h2>Your First <em>30 Days</em></h2>
-            <p>You don't need to build a complete DPDP compliance programme overnight. But you do need to start moving — and the order matters. Here is the right sequence:</p>
+            <p>You don't need to build a complete DPDP compliance programme overnight. But you do need to start moving - and the order matters. Here is the right sequence:</p>
             <div className="roadmap-list">
               {[
                 {week:'Week 1', title:'Assign a Privacy Owner', why:'Nothing moves without accountability. This person owns the programme, not just the policy document. For smaller organisations this is often the CISO, COO, or a senior founder.'},
-                {week:'Wk 1–2', title:'Run a data inventory', why:'Map every type of personal data you collect, where it is stored, who has access, and what it is used for. This is the foundation of your entire DPDP programme — you cannot satisfy any obligation without knowing what data you hold.'},
-                {week:'Wk 2–3', title:'Audit and fix your consent flows', why:'Pre-ticked boxes, bundled consent, and vague consent notices are the most common gap right now. Audit every form, checkout, sign-up, and marketing opt-in. Fix consent collection before anything else — it is the most visible obligation to regulators and users.'},
-                {week:'Wk 3–4', title:'Begin vendor DPA review', why:'Every vendor that processes personal data on your behalf needs a Data Processing Agreement. Start with your highest-risk vendors (cloud infrastructure, CRM, analytics, payroll). This takes longest — begin early.'},
+                {week:'Wk 1–2', title:'Run a data inventory', why:'Map every type of personal data you collect, where it is stored, who has access, and what it is used for. This is the foundation of your entire DPDP programme - you cannot satisfy any obligation without knowing what data you hold.'},
+                {week:'Wk 2–3', title:'Audit and fix your consent flows', why:'Pre-ticked boxes, bundled consent, and vague consent notices are the most common gap right now. Audit every form, checkout, sign-up, and marketing opt-in. Fix consent collection before anything else - it is the most visible obligation to regulators and users.'},
+                {week:'Wk 3–4', title:'Begin vendor DPA review', why:'Every vendor that processes personal data on your behalf needs a Data Processing Agreement. Start with your highest-risk vendors (cloud infrastructure, CRM, analytics, payroll). This takes longest - begin early.'},
               ].map(({week,title,why},i)=>(
                 <div key={i} className="rm-item anim">
                   <div className="rm-week">{week}</div>
@@ -500,14 +500,14 @@ export default function DPDPActExplained() {
               <span className="co-icon">🛡️</span>
               <div className="co-body">
                 <strong>SecComply: DPDP Compliance Made Practical</strong>
-                <p>SecComply helps Indian startups and enterprises build DPDP-compliant programmes from scratch — data inventory, consent flow audit, privacy notices in all required languages, vendor DPAs, and Data Protection Board readiness. We run DPDP programmes in parallel with ISO 27001 and SOC 2 to maximise efficiency across your compliance investment.</p>
+                <p>SecComply helps Indian startups and enterprises build DPDP-compliant programmes from scratch - data inventory, consent flow audit, privacy notices in all required languages, vendor DPAs, and Data Protection Board readiness. We run DPDP programmes in parallel with ISO 27001 and SOC 2 to maximise efficiency across your compliance investment.</p>
               </div>
             </div>
           </section>
 
           <div className="cta-banner">
             <h3>Get DPDP-Ready Before the DPB Comes Knocking</h3>
-            <p>SecComply maps your current data practices against DPDP obligations, identifies gaps, and builds your compliance programme — data inventory, consent flows, vendor DPAs, and breach response all included.</p>
+            <p>SecComply maps your current data practices against DPDP obligations, identifies gaps, and builds your compliance programme - data inventory, consent flows, vendor DPAs, and breach response all included.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free DPDP Assessment →</a>
               <a href="https://seccomply.net/services/compliance-as-a-service" className="btn-o" target="_blank" rel="noopener">View Compliance Services</a>
@@ -524,11 +524,11 @@ export default function DPDPActExplained() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div itemScope itemType="https://schema.org/FAQPage">
               {[
-                {q:"Does the DPDP Act apply to B2B companies?", a:"Yes. If you process personal data of Indian individuals — including your clients' employees or end users — you are in scope. B2B SaaS companies are often Data Processors for their clients' Fiduciary obligations, which comes with its own contractual and operational requirements. There is no B2B exemption in the DPDP Act."},
-                {q:"Is DPDP compliance the same as ISO 27001?", a:"No. ISO 27001 is an information security standard — it addresses how you protect data assets. DPDP is a privacy regulation — it addresses your legal right to process personal data and what rights individuals have over it. There is meaningful overlap but one does not substitute for the other. Many organisations run both programmes in parallel efficiently."},
-                {q:"What is the Data Protection Board of India?", a:"The Data Protection Board (DPB) is India's data privacy regulator — equivalent to the UK's ICO or France's CNIL. It can receive user complaints, investigate violations, and levy penalties up to ₹250 crore. It operates with the powers of a civil court and was formally constituted following the notification of the DPDP Rules in November 2025."},
+                {q:"Does the DPDP Act apply to B2B companies?", a:"Yes. If you process personal data of Indian individuals - including your clients' employees or end users - you are in scope. B2B SaaS companies are often Data Processors for their clients' Fiduciary obligations, which comes with its own contractual and operational requirements. There is no B2B exemption in the DPDP Act."},
+                {q:"Is DPDP compliance the same as ISO 27001?", a:"No. ISO 27001 is an information security standard - it addresses how you protect data assets. DPDP is a privacy regulation - it addresses your legal right to process personal data and what rights individuals have over it. There is meaningful overlap but one does not substitute for the other. Many organisations run both programmes in parallel efficiently."},
+                {q:"What is the Data Protection Board of India?", a:"The Data Protection Board (DPB) is India's data privacy regulator - equivalent to the UK's ICO or France's CNIL. It can receive user complaints, investigate violations, and levy penalties up to ₹250 crore. It operates with the powers of a civil court and was formally constituted following the notification of the DPDP Rules in November 2025."},
                 {q:"What is a Consent Manager under the DPDP Act?", a:"A Consent Manager is a registered intermediary that enables individuals to provide, manage, review, and withdraw consent across multiple platforms through a single interface. This is a uniquely Indian concept with no direct GDPR equivalent. Consent Managers must be registered with the Data Protection Board and meet specific technical and operational standards under the DPDP Rules."},
-                {q:"What are the maximum penalties under the DPDP Act 2023?", a:"The maximum penalty is ₹250 crore for security safeguard failures that lead to a data breach. Failure to notify the Data Protection Board and affected users carries up to ₹200 crore. Violations of children's data obligations also carry up to ₹200 crore. Penalties can stack — a single breach incident can simultaneously trigger the security, notification, and children's data categories."},
+                {q:"What are the maximum penalties under the DPDP Act 2023?", a:"The maximum penalty is ₹250 crore for security safeguard failures that lead to a data breach. Failure to notify the Data Protection Board and affected users carries up to ₹200 crore. Violations of children's data obligations also carry up to ₹200 crore. Penalties can stack - a single breach incident can simultaneously trigger the security, notification, and children's data categories."},
               ].map((f,i)=>(
                 <div key={i} className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong itemProp="name">{f.q}</strong><span className="faq-ch">▾</span></div>
@@ -571,7 +571,7 @@ export default function DPDPActExplained() {
           </div>
           <div className="sb-cta">
             <h4>DPDP Ready?</h4>
-            <p>Free assessment — we map your data practices against DPDP obligations and find the gaps.</p>
+            <p>Free assessment - we map your data practices against DPDP obligations and find the gaps.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Assessment →</a>
           </div>
         </aside>

@@ -187,7 +187,7 @@ export default function WhoNeedsISO27701() {
           <span className="badge badge-bl">🌍 Privacy Compliance</span>
           <span className="badge badge-gr">✅ PIMS</span>
         </div>
-        <h1 className="hero-h1">Who Needs ISO 27701? — <em>Applicability Guide</em> for Controllers and Processors</h1>
+        <h1 className="hero-h1">Who Needs ISO 27701? - <em>Applicability Guide</em> for Controllers and Processors</h1>
         <p className="hero-sub">Every organisation that handles personal data is subject to privacy obligations. ISO 27701 answers the question of how you demonstrate compliance with a structured, internationally recognised framework. Here is who it applies to, the controller-processor distinction, and whether to pursue certification or use it as an internal framework.</p>
 
         <div className="author-strip">
@@ -202,13 +202,13 @@ export default function WhoNeedsISO27701() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1200&h=480&fit=crop" alt="ISO 27701 applicability controllers processors guide" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">ISO 27701 applies to any organisation of any size that processes PII. The more pertinent question is not whether it applies, but in what capacity — controller, processor, or both.</p>
+        <p className="img-cap">ISO 27701 applies to any organisation of any size that processes PII. The more pertinent question is not whether it applies, but in what capacity - controller, processor, or both.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 260" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pgb" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="260" fill="url(#pgb)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">PII Controller vs PII Processor — ISO 27701 Roles</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">PII Controller vs PII Processor - ISO 27701 Roles</text>
           <rect x="30" y="38" width="440" height="190" rx="14" fill="#091826" stroke="#E8632B28" strokeWidth="1.5"/>
           <rect x="30" y="38" width="440" height="4" rx="2" fill="#E8632B"/>
           <text x="250" y="68" textAnchor="middle" fill="#E8632B" fontSize="12" fontWeight="800" fontFamily="sans-serif">PII CONTROLLER (Annex B)</text>
@@ -217,7 +217,7 @@ export default function WhoNeedsISO27701() {
           <text x="55" y="130" fill="rgba(200,214,229,0.6)" fontSize="9" fontFamily="sans-serif">• Healthcare provider holding patient records</text>
           <text x="55" y="148" fill="rgba(200,214,229,0.6)" fontSize="9" fontFamily="sans-serif">• E-commerce platform with shopper data</text>
           <text x="55" y="166" fill="rgba(200,214,229,0.6)" fontSize="9" fontFamily="sans-serif">• Financial institution with KYC data</text>
-          <text x="250" y="210" textAnchor="middle" fill="#E8632B" fontSize="9" fontWeight="700" fontFamily="sans-serif">Full accountability — consent, rights, notices, DPIAs</text>
+          <text x="250" y="210" textAnchor="middle" fill="#E8632B" fontSize="9" fontWeight="700" fontFamily="sans-serif">Full accountability - consent, rights, notices, DPIAs</text>
           <rect x="490" y="38" width="440" height="190" rx="14" fill="#071820" stroke="#06d6a028" strokeWidth="1.5"/>
           <rect x="490" y="38" width="440" height="4" rx="2" fill="#06d6a0"/>
           <text x="710" y="68" textAnchor="middle" fill="#06d6a0" fontSize="12" fontWeight="800" fontFamily="sans-serif">PII PROCESSOR (Annex C)</text>
@@ -226,8 +226,8 @@ export default function WhoNeedsISO27701() {
           <text x="515" y="130" fill="rgba(200,214,229,0.6)" fontSize="9" fontFamily="sans-serif">• Payroll bureau processing employee data</text>
           <text x="515" y="148" fill="rgba(200,214,229,0.6)" fontSize="9" fontFamily="sans-serif">• CRM vendor processing client data</text>
           <text x="515" y="166" fill="rgba(200,214,229,0.6)" fontSize="9" fontFamily="sans-serif">• Analytics firm processing retail datasets</text>
-          <text x="710" y="210" textAnchor="middle" fill="#06d6a0" fontSize="9" fontWeight="700" fontFamily="sans-serif">Contractual accountability — DPAs, security, breach assist</text>
-          <text x="480" y="248" textAnchor="middle" fill="rgba(200,214,229,0.35)" fontSize="9" fontFamily="sans-serif">Most SaaS companies are BOTH — controller for own data, processor for enterprise clients. ISO 27701 handles both via Annex B + Annex C.</text>
+          <text x="710" y="210" textAnchor="middle" fill="#06d6a0" fontSize="9" fontWeight="700" fontFamily="sans-serif">Contractual accountability - DPAs, security, breach assist</text>
+          <text x="480" y="248" textAnchor="middle" fill="rgba(200,214,229,0.35)" fontSize="9" fontFamily="sans-serif">Most SaaS companies are BOTH - controller for own data, processor for enterprise clients. ISO 27701 handles both via Annex B + Annex C.</text>
         </svg>
         </div>
 
@@ -249,11 +249,11 @@ export default function WhoNeedsISO27701() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Every organisation that handles personal data is, in some form, already subject to privacy obligations. Whether it is GDPR, DPDP, HIPAA, or a patchwork of state-level regulations, the question is no longer <em>whether</em> privacy compliance applies to you — it is <strong>how you demonstrate it</strong>. ISO 27701 answers that question with a structured, internationally recognised framework. But the most common question is deceptively simple: do we actually need this?</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Every organisation that handles personal data is, in some form, already subject to privacy obligations. Whether it is GDPR, DPDP, HIPAA, or a patchwork of state-level regulations, the question is no longer <em>whether</em> privacy compliance applies to you - it is <strong>how you demonstrate it</strong>. ISO 27701 answers that question with a structured, internationally recognised framework. But the most common question is deceptively simple: do we actually need this?</p>
 
           <section id="who-applies">
             <h2>Who Does ISO 27701 <em>Apply To?</em></h2>
-            <p>ISO 27701 is applicable to <strong>any organisation of any type, size, or nature</strong> that processes Personally Identifiable Information (PII). That is the standard's own statement of scope, and it is deliberately broad. If personal data flows through your systems — as a core function or even incidentally — ISO 27701 is relevant.</p>
+            <p>ISO 27701 is applicable to <strong>any organisation of any type, size, or nature</strong> that processes Personally Identifiable Information (PII). That is the standard's own statement of scope, and it is deliberately broad. If personal data flows through your systems - as a core function or even incidentally - ISO 27701 is relevant.</p>
             <div className="callout co-key">
               <span className="co-icon">💡</span>
               <div className="co-body">
@@ -264,16 +264,16 @@ export default function WhoNeedsISO27701() {
           </section>
 
           <section id="controller-processor">
-            <h2>Controllers vs Processors — <em>The Foundational Distinction</em></h2>
+            <h2>Controllers vs Processors - <em>The Foundational Distinction</em></h2>
             <h3>PII Controller</h3>
             <p>A PII controller determines the purposes and means of processing personal data. You decide what data is collected, why, how it is used, and for how long. The individuals whose data you hold have a direct relationship with you.</p>
             <h3>PII Processor</h3>
-            <p>A PII processor processes personal data on behalf of a controller, acting on the controller documented instructions. The processor does not determine the purpose — they execute the processing in service of the controller objectives.</p>
+            <p>A PII processor processes personal data on behalf of a controller, acting on the controller documented instructions. The processor does not determine the purpose - they execute the processing in service of the controller objectives.</p>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>Common Misconception</strong>
-                <p>Many SaaS founders assume they are purely processors because they "just host data" for clients. In practice, most SaaS companies are controllers for at least some personal data — particularly user account data, usage analytics, marketing data, and employee records. A data mapping exercise almost always reveals dual-role obligations.</p>
+                <p>Many SaaS founders assume they are purely processors because they "just host data" for clients. In practice, most SaaS companies are controllers for at least some personal data - particularly user account data, usage analytics, marketing data, and employee records. A data mapping exercise almost always reveals dual-role obligations.</p>
               </div>
             </div>
           </section>
@@ -284,7 +284,7 @@ export default function WhoNeedsISO27701() {
               <table className="data-table">
                 <thead><tr><th>Requirement</th><th>PII Controller (Annex B)</th><th>PII Processor (Annex C)</th></tr></thead>
                 <tbody>
-                  {[['Legal basis documentation','Must document for each processing activity','No independent basis required — under controller instructions'],['Consent management','Must obtain, record, manage withdrawal','Must support controller consent obligations'],['Data subject rights','Must have operational process for all rights','Must assist controller in responding to requests'],['Data minimisation','Must enforce purpose limitation across all processing','Must not process beyond controller instructions'],['Privacy notices','Must provide directly to data subjects','Not directly responsible'],['Sub-processor management','Must assess and bind all processors','Must notify controller before engaging sub-processors'],['Breach notification','Must notify regulators and data subjects','Must notify controller without undue delay']].map(([r,b,c],i)=>(<tr key={i}><td>{r}</td><td>{b}</td><td>{c}</td></tr>))}
+                  {[['Legal basis documentation','Must document for each processing activity','No independent basis required - under controller instructions'],['Consent management','Must obtain, record, manage withdrawal','Must support controller consent obligations'],['Data subject rights','Must have operational process for all rights','Must assist controller in responding to requests'],['Data minimisation','Must enforce purpose limitation across all processing','Must not process beyond controller instructions'],['Privacy notices','Must provide directly to data subjects','Not directly responsible'],['Sub-processor management','Must assess and bind all processors','Must notify controller before engaging sub-processors'],['Breach notification','Must notify regulators and data subjects','Must notify controller without undue delay']].map(([r,b,c],i)=>(<tr key={i}><td>{r}</td><td>{b}</td><td>{c}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -303,7 +303,7 @@ export default function WhoNeedsISO27701() {
           </section>
 
           <section id="certification-decision">
-            <h2>Certification vs Internal Framework — <em>Which Is Right for You?</em></h2>
+            <h2>Certification vs Internal Framework - <em>Which Is Right for You?</em></h2>
             <h3>Pursue Formal Certification If:</h3>
             <ul>
               <li>Enterprise customers are requesting ISO 27701 certification in vendor questionnaires</li>
@@ -321,13 +321,13 @@ export default function WhoNeedsISO27701() {
           </section>
 
           <section id="prerequisites">
-            <h2>Prerequisites — <em>What You Need Before Starting</em></h2>
+            <h2>Prerequisites - <em>What You Need Before Starting</em></h2>
             <p>ISO 27701 is an extension to ISO 27001, not a standalone standard. If you are already ISO 27001-certified, the additional effort primarily involves extending the ISMS scope to PII, building the RoPA, implementing Annex B/C controls, and updating your Statement of Applicability.</p>
             <p>If you are not yet ISO 27001-certified, the most efficient path is to pursue both certifications together in a single integrated programme. See our <a href="https://seccomply.net/resources/blog/iso-27001-explained-startups" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>ISO 27001 Explained for Startups guide</a> to get started on the foundation.</p>
           </section>
 
           <section id="self-assessment">
-            <h2>Self-Assessment — <em>Do You Need ISO 27701 Now?</em></h2>
+            <h2>Self-Assessment - <em>Do You Need ISO 27701 Now?</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Question</th><th>If YES</th></tr></thead>
@@ -340,7 +340,7 @@ export default function WhoNeedsISO27701() {
 
           <div className="cta-banner">
             <h3>Need ISO 27701 Implementation Support?</h3>
-            <p>SecComply helps SaaS, FinTech, and healthcare organisations implement ISO 27701 — from gap assessment to certification audit, with pre-built control libraries and evidence collection.</p>
+            <p>SecComply helps SaaS, FinTech, and healthcare organisations implement ISO 27701 - from gap assessment to certification audit, with pre-built control libraries and evidence collection.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free ISO 27701 Consultation →</a>
             </div>
@@ -360,19 +360,19 @@ export default function WhoNeedsISO27701() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can we implement ISO 27701 without ISO 27001?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Technically no — ISO 27701 is an extension to ISO 27001 and requires the ISMS foundation to be in place. However, you can pursue both certifications together in a single integrated programme, which is the most efficient path for organisations starting from scratch.</p></div>
+              <div className="faq-a"><p>Technically no - ISO 27701 is an extension to ISO 27001 and requires the ISMS foundation to be in place. However, you can pursue both certifications together in a single integrated programme, which is the most efficient path for organisations starting from scratch.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Our SaaS product just hosts client data. Are we only a processor?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Almost certainly not. Most SaaS companies are controllers for at least some personal data — user account information, usage analytics, marketing data, and employee records are all processing activities where you determine the purpose. A proper data mapping exercise will reveal your dual-role obligations.</p></div>
+              <div className="faq-a"><p>Almost certainly not. Most SaaS companies are controllers for at least some personal data - user account information, usage analytics, marketing data, and employee records are all processing activities where you determine the purpose. A proper data mapping exercise will reveal your dual-role obligations.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How does ISO 27701 relate to the DPDP Act?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>ISO 27701 provides the operational framework for meeting DPDP Act obligations in a structured, auditable way. While the Act defines what obligations you have, ISO 27701 defines how to implement and demonstrate them. They are complementary — the standard is a vehicle for meeting the regulation requirements.</p></div>
+              <div className="faq-a"><p>ISO 27701 provides the operational framework for meeting DPDP Act obligations in a structured, auditable way. While the Act defines what obligations you have, ISO 27701 defines how to implement and demonstrate them. They are complementary - the standard is a vehicle for meeting the regulation requirements.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is ISO 27701 certification worth the investment for a startup?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>For startups selling to enterprise customers, yes — it accelerates sales cycles by replacing lengthy vendor questionnaires with a single credential. Even without formal certification, implementing ISO 27701 controls structures your privacy programme, produces documentation enterprise buyers ask for, and builds the foundation for future certification.</p></div>
+              <div className="faq-a"><p>For startups selling to enterprise customers, yes - it accelerates sales cycles by replacing lengthy vendor questionnaires with a single credential. Even without formal certification, implementing ISO 27701 controls structures your privacy programme, produces documentation enterprise buyers ask for, and builds the foundation for future certification.</p></div>
             </div>
 
           </section>
@@ -409,7 +409,7 @@ export default function WhoNeedsISO27701() {
           </div>
           <div className="sb-cta">
             <h4>Need ISO 27701 Certification?</h4>
-            <p>From gap assessment to audit — we handle the entire ISO 27701 journey.</p>
+            <p>From gap assessment to audit - we handle the entire ISO 27701 journey.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

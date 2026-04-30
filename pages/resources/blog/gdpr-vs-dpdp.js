@@ -36,7 +36,7 @@ export default function GDPRvsDPDP() {
         <title>GDPR vs DPDP Act: Key Differences Every Indian Company Must Know | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="Side-by-side comparison of GDPR and India's DPDP Act 2023. Consent, rights, penalties, cross-border transfers, children's data thresholds — what's the same, what's different, and the gaps GDPR-compliant companies still need to fix for India." />
+        <meta name="description" content="Side-by-side comparison of GDPR and India's DPDP Act 2023. Consent, rights, penalties, cross-border transfers, children's data thresholds - what's the same, what's different, and the gaps GDPR-compliant companies still need to fix for India." />
         <meta name="keywords" content="GDPR vs DPDP, GDPR DPDP comparison, DPDP Act 2023 India GDPR, Indian data privacy GDPR, DPDP lawful basis, GDPR legitimate interests India, DPDP children data 18 years, cross border transfer DPDP, DPDP consent manager, data protection India" />
         <meta property="og:title" content="GDPR vs DPDP Act: Key Differences Every Indian Company Must Know" />
         <meta property="og:description" content="Already GDPR-compliant and treating DPDP as basically the same thing? That assumption creates compliance gaps. Here is the direct comparison you need." />
@@ -55,7 +55,7 @@ export default function GDPRvsDPDP() {
             {
               "@type": "Article",
               "headline": "GDPR vs DPDP Act: Key Differences Every Indian Company Must Know",
-              "description": "Side-by-side comparison of GDPR and India's DPDP Act — consent, rights, penalties, cross-border transfers, and the gaps GDPR-compliant companies still need to fix for India.",
+              "description": "Side-by-side comparison of GDPR and India's DPDP Act - consent, rights, penalties, cross-border transfers, and the gaps GDPR-compliant companies still need to fix for India.",
               "author": { "@type": "Organization", "name": "SecComply" },
               "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } },
               "datePublished": "2026-03-26", "dateModified": "2026-03-26",
@@ -66,11 +66,11 @@ export default function GDPRvsDPDP() {
             {
               "@type": "FAQPage",
               "mainEntity": [
-                { "@type": "Question", "name": "Does GDPR compliance mean you are DPDP compliant?", "acceptedAnswer": { "@type": "Answer", "text": "No. GDPR gives you a strong foundation — data mapping, consent flows, vendor DPAs, and breach response largely transfer. But the 22-language privacy notice requirement, the nomination right, Consent Manager integration, DPDP's narrower lawful basis framework (no Legitimate Interests), and the higher children's data threshold of 18 years all need India-specific work that a GDPR programme does not cover." } },
-                { "@type": "Question", "name": "What is GDPR's Legitimate Interests basis and why doesn't DPDP have it?", "acceptedAnswer": { "@type": "Answer", "text": "GDPR's Legitimate Interests is a lawful basis allowing organisations to process personal data without consent when their interests are not overridden by the individual's rights — commonly used for marketing to existing customers, fraud detection, and internal analytics. DPDP has no equivalent. Under DPDP, the two lawful bases are Consent and Legitimate Use (specific enumerated purposes). Any processing currently running on Legitimate Interests under GDPR may need explicit consent for Indian users." } },
-                { "@type": "Question", "name": "Which regulation has stricter children's data rules?", "acceptedAnswer": { "@type": "Answer", "text": "DPDP, significantly. GDPR sets the children's data threshold at 16 years (13 in some member states with parental consent). DPDP sets it at 18 with zero exceptions. Any organisation collecting data from users under 18 in India — regardless of what their GDPR programme allows — must obtain verifiable parental consent under DPDP." } },
-                { "@type": "Question", "name": "How do cross-border data transfers differ between GDPR and DPDP?", "acceptedAnswer": { "@type": "Answer", "text": "GDPR operates on a positive list — transfers outside the EU/EEA are blocked unless the destination country has an adequacy decision or specific safeguards (SCCs, BCRs) are in place. DPDP operates on a negative list — transfers are permitted to all countries except those specifically blocked by the Indian government. In practice, this makes DPDP's cross-border transfer regime significantly more permissive than GDPR's." } },
-                { "@type": "Question", "name": "Should Indian companies run one compliance programme or two?", "acceptedAnswer": { "@type": "Answer", "text": "One programme. Map both frameworks to a single control set. Your GDPR baseline handles data mapping, consent flows, vendor DPAs, breach response, and most rights workflows. Where DPDP requires more — 22 Indian language notices, the nomination right, Consent Manager integration, children's threshold at 18 — layer those on top. Running two separate programmes doubles administrative overhead without adding proportionate compliance benefit." } }
+                { "@type": "Question", "name": "Does GDPR compliance mean you are DPDP compliant?", "acceptedAnswer": { "@type": "Answer", "text": "No. GDPR gives you a strong foundation - data mapping, consent flows, vendor DPAs, and breach response largely transfer. But the 22-language privacy notice requirement, the nomination right, Consent Manager integration, DPDP's narrower lawful basis framework (no Legitimate Interests), and the higher children's data threshold of 18 years all need India-specific work that a GDPR programme does not cover." } },
+                { "@type": "Question", "name": "What is GDPR's Legitimate Interests basis and why doesn't DPDP have it?", "acceptedAnswer": { "@type": "Answer", "text": "GDPR's Legitimate Interests is a lawful basis allowing organisations to process personal data without consent when their interests are not overridden by the individual's rights - commonly used for marketing to existing customers, fraud detection, and internal analytics. DPDP has no equivalent. Under DPDP, the two lawful bases are Consent and Legitimate Use (specific enumerated purposes). Any processing currently running on Legitimate Interests under GDPR may need explicit consent for Indian users." } },
+                { "@type": "Question", "name": "Which regulation has stricter children's data rules?", "acceptedAnswer": { "@type": "Answer", "text": "DPDP, significantly. GDPR sets the children's data threshold at 16 years (13 in some member states with parental consent). DPDP sets it at 18 with zero exceptions. Any organisation collecting data from users under 18 in India - regardless of what their GDPR programme allows - must obtain verifiable parental consent under DPDP." } },
+                { "@type": "Question", "name": "How do cross-border data transfers differ between GDPR and DPDP?", "acceptedAnswer": { "@type": "Answer", "text": "GDPR operates on a positive list - transfers outside the EU/EEA are blocked unless the destination country has an adequacy decision or specific safeguards (SCCs, BCRs) are in place. DPDP operates on a negative list - transfers are permitted to all countries except those specifically blocked by the Indian government. In practice, this makes DPDP's cross-border transfer regime significantly more permissive than GDPR's." } },
+                { "@type": "Question", "name": "Should Indian companies run one compliance programme or two?", "acceptedAnswer": { "@type": "Answer", "text": "One programme. Map both frameworks to a single control set. Your GDPR baseline handles data mapping, consent flows, vendor DPAs, breach response, and most rights workflows. Where DPDP requires more - 22 Indian language notices, the nomination right, Consent Manager integration, children's threshold at 18 - layer those on top. Running two separate programmes doubles administrative overhead without adding proportionate compliance benefit." } }
               ]
             },
             {
@@ -243,7 +243,7 @@ export default function GDPRvsDPDP() {
           <span className="badge badge-gr">Founders · Legal Teams</span>
         </div>
         <h1 className="cspm-hero-h1">GDPR vs DPDP Act: <em>Key Differences</em> Every Indian Company Must Know</h1>
-        <p className="cspm-hero-sub">Already GDPR-compliant and treating DPDP as basically the same thing? That assumption creates compliance gaps. DPDP is philosophically aligned with GDPR — both centre the individual — but diverges in operational ways that catch every company that tries to copy-paste their GDPR setup.</p>
+        <p className="cspm-hero-sub">Already GDPR-compliant and treating DPDP as basically the same thing? That assumption creates compliance gaps. DPDP is philosophically aligned with GDPR - both centre the individual - but diverges in operational ways that catch every company that tries to copy-paste their GDPR setup.</p>
 
         <div className="cspm-author-strip">
           <div className="avatar">SC</div>
@@ -257,7 +257,7 @@ export default function GDPRvsDPDP() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&h=480&fit=crop" alt="GDPR vs DPDP data protection law comparison India Europe" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}}/>
         </div>
-        <p className="img-cap">GDPR and India's DPDP Act share the same philosophical foundation — data belongs to the individual — but diverge significantly in operational requirements. Understanding where they differ is the difference between a compliant programme and a false sense of security.</p>
+        <p className="img-cap">GDPR and India's DPDP Act share the same philosophical foundation - data belongs to the individual - but diverge significantly in operational requirements. Understanding where they differ is the difference between a compliant programme and a false sense of security.</p>
 
         {/* SVG COMPARISON DASHBOARD */}
         <div className="img-wrap">
@@ -269,7 +269,7 @@ export default function GDPRvsDPDP() {
               <pattern id="gpat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern>
             </defs>
             <rect width="960" height="400" fill="url(#gpat)"/>
-            <text x="480" y="32" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">GDPR vs DPDP Act — At a Glance</text>
+            <text x="480" y="32" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">GDPR vs DPDP Act - At a Glance</text>
 
             {/* GDPR header */}
             <rect x="16" y="46" width="440" height="340" rx="12" fill="#081826" stroke="rgba(99,102,241,0.2)" strokeWidth="1.5"/>
@@ -288,9 +288,9 @@ export default function GDPRvsDPDP() {
               {dim:'Scope of data',       gdpr:'Digital + physical personal data',     dpdp:'Digital personal data only'},
               {dim:'Lawful bases',         gdpr:'6 bases incl. Legitimate Interests',   dpdp:'2 bases: Consent + Legitimate Use'},
               {dim:'User rights',          gdpr:'8 rights (incl. portability, object)', dpdp:'5 rights (incl. unique nomination)'},
-              {dim:"Children's threshold", gdpr:'16 years (13 in some states)',          dpdp:'18 years — no exceptions'},
+              {dim:"Children's threshold", gdpr:'16 years (13 in some states)',          dpdp:'18 years - no exceptions'},
               {dim:'Language requirement', gdpr:'No specific language requirement',      dpdp:'22 scheduled Indian languages'},
-              {dim:'Consent Manager',      gdpr:'No equivalent',                         dpdp:'Yes — India-specific infrastructure'},
+              {dim:'Consent Manager',      gdpr:'No equivalent',                         dpdp:'Yes - India-specific infrastructure'},
               {dim:'Cross-border transfer',gdpr:'Positive list (blocked unless approved)',dpdp:'Negative list (permitted unless blocked)'},
               {dim:'Max penalty',          gdpr:'€20M or 4% global turnover',            dpdp:'₹250 crore flat cap'},
               {dim:'Regulator',            gdpr:'National DPAs (ICO, CNIL etc.)',         dpdp:'Data Protection Board of India'},
@@ -311,12 +311,12 @@ export default function GDPRvsDPDP() {
             <text x="724" y="380" textAnchor="middle" fill="#E8632B" fontSize="8" fontWeight="700" fontFamily="sans-serif">22 languages · Nomination right · Consent Manager · Age 18</text>
           </svg>
         </div>
-        <p className="img-cap">GDPR vs DPDP Act — 9 key dimensions compared side by side. The bottom rows highlight what each framework has that the other does not — the gap list every GDPR-compliant company needs to address for India.</p>
+        <p className="img-cap">GDPR vs DPDP Act - 9 key dimensions compared side by side. The bottom rows highlight what each framework has that the other does not - the gap list every GDPR-compliant company needs to address for India.</p>
 
         <div className="toc-box">
           <div className="toc-lbl">In This Article</div>
           <div className="toc-grid">
-            <a href="#at-a-glance">At a Glance — Key Differences</a>
+            <a href="#at-a-glance">At a Glance - Key Differences</a>
             <a href="#lawful-basis">The Lawful Basis Gap</a>
             <a href="#rights">Rights Comparison</a>
             <a href="#childrens-data">Children's Data</a>
@@ -332,29 +332,29 @@ export default function GDPRvsDPDP() {
         <article className="art">
 
           {/* INTRO */}
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>India's DPDP Act and Europe's GDPR are built on the same foundation — the belief that personal data belongs to the individual, not the organisation that collects it. For Indian companies operating in both markets, or for global companies with Indian users, this creates a natural temptation to treat the two frameworks as interchangeable. That temptation is the source of most DPDP compliance gaps. This comparison covers every dimension where the two frameworks diverge — and tells you exactly what needs India-specific work even if your GDPR programme is already mature. If you are new to DPDP and want to understand the basics first, start with our <a href="https://seccomply.net/resources/blog/dpdp-act-2023-explained" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>DPDP Act 2023 plain-English explainer</a> before reading this comparison.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>India's DPDP Act and Europe's GDPR are built on the same foundation - the belief that personal data belongs to the individual, not the organisation that collects it. For Indian companies operating in both markets, or for global companies with Indian users, this creates a natural temptation to treat the two frameworks as interchangeable. That temptation is the source of most DPDP compliance gaps. This comparison covers every dimension where the two frameworks diverge - and tells you exactly what needs India-specific work even if your GDPR programme is already mature. If you are new to DPDP and want to understand the basics first, start with our <a href="https://seccomply.net/resources/blog/dpdp-act-2023-explained" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>DPDP Act 2023 plain-English explainer</a> before reading this comparison.</p>
 
           <div className="stats-row anim">
-            <div className="stat-card"><div className="stat-n" data-target="6">0</div><div className="stat-l">lawful bases under GDPR — including Legitimate Interests<br/><span style={{fontSize:'.68rem',opacity:.55}}>GDPR Article 6</span></div></div>
-            <div className="stat-card"><div className="stat-n" data-target="2">0</div><div className="stat-l">lawful bases under DPDP — Consent and Legitimate Use only<br/><span style={{fontSize:'.68rem',opacity:.55}}>DPDP Act 2023, Section 4</span></div></div>
-            <div className="stat-card"><div className="stat-n" data-target="18" data-suffix=" years">0 years</div><div className="stat-l">children's data threshold under DPDP — versus 16 under GDPR<br/><span style={{fontSize:'.68rem',opacity:.55}}>DPDP Act 2023, Section 9</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-target="6">0</div><div className="stat-l">lawful bases under GDPR - including Legitimate Interests<br/><span style={{fontSize:'.68rem',opacity:.55}}>GDPR Article 6</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-target="2">0</div><div className="stat-l">lawful bases under DPDP - Consent and Legitimate Use only<br/><span style={{fontSize:'.68rem',opacity:.55}}>DPDP Act 2023, Section 4</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-target="18" data-suffix=" years">0 years</div><div className="stat-l">children's data threshold under DPDP - versus 16 under GDPR<br/><span style={{fontSize:'.68rem',opacity:.55}}>DPDP Act 2023, Section 9</span></div></div>
           </div>
 
           <section id="at-a-glance">
-            <h2>At a Glance — <em>The Key Differences</em></h2>
-            <p>Both frameworks share the same core philosophy — data belongs to the individual — but diverge in meaningful ways across scope, lawful bases, rights, children's data, language requirements, and penalty structure. The table below is the reference your legal team needs before building your DPDP programme.</p>
+            <h2>At a Glance - <em>The Key Differences</em></h2>
+            <p>Both frameworks share the same core philosophy - data belongs to the individual - but diverge in meaningful ways across scope, lawful bases, rights, children's data, language requirements, and penalty structure. The table below is the reference your legal team needs before building your DPDP programme.</p>
             <div className="compare-table-wrap">
               <table className="compare-table">
                 <thead><tr><th>Dimension</th><th>🇪🇺 GDPR</th><th>🇮🇳 DPDP Act 2023</th></tr></thead>
                 <tbody>
                   <tr><td>In force since</td><td>May 2018</td><td>August 2023 (Rules: November 2025)</td></tr>
                   <tr><td>Scope of data</td><td>Digital + physical personal data</td><td>Digital personal data only</td></tr>
-                  <tr><td>Lawful bases</td><td>6 (including Legitimate Interests)</td><td>2 — Consent + Legitimate Use</td></tr>
+                  <tr><td>Lawful bases</td><td>6 (including Legitimate Interests)</td><td>2 - Consent + Legitimate Use</td></tr>
                   <tr><td>Number of rights</td><td>8 rights</td><td>5 rights</td></tr>
-                  <tr><td>Children's threshold</td><td>16 years (13 in some member states)</td><td>18 years — no exceptions</td></tr>
+                  <tr><td>Children's threshold</td><td>16 years (13 in some member states)</td><td>18 years - no exceptions</td></tr>
                   <tr><td>Language requirement</td><td>None specified</td><td>All 22 scheduled Indian languages</td></tr>
-                  <tr><td>Consent Manager</td><td>No equivalent</td><td>Yes — India-specific infrastructure</td></tr>
-                  <tr><td>Cross-border transfers</td><td>Positive list — blocked unless approved</td><td>Negative list — permitted unless blocked</td></tr>
+                  <tr><td>Consent Manager</td><td>No equivalent</td><td>Yes - India-specific infrastructure</td></tr>
+                  <tr><td>Cross-border transfers</td><td>Positive list - blocked unless approved</td><td>Negative list - permitted unless blocked</td></tr>
                   <tr><td>Maximum penalty</td><td>€20M or 4% of global annual turnover</td><td>₹250 crore flat cap per violation</td></tr>
                   <tr><td>Regulator</td><td>National DPAs (ICO, CNIL, etc.)</td><td>Data Protection Board of India</td></tr>
                 </tbody>
@@ -363,13 +363,13 @@ export default function GDPRvsDPDP() {
           </section>
 
           <section id="lawful-basis">
-            <h2>The Lawful Basis Gap — <em>The One That Catches Everyone</em></h2>
-            <p>This is the single biggest operational difference between the two frameworks — and the one most likely to create immediate compliance gaps for companies that are already GDPR-compliant.</p>
-            <p>GDPR's Legitimate Interests basis is widely used across Europe — marketing to existing customers, fraud detection, internal analytics, product improvement — without explicit consent. It allows organisations to process personal data when their interests are not overridden by the individual's rights. <strong>DPDP does not have this basis.</strong></p>
+            <h2>The Lawful Basis Gap - <em>The One That Catches Everyone</em></h2>
+            <p>This is the single biggest operational difference between the two frameworks - and the one most likely to create immediate compliance gaps for companies that are already GDPR-compliant.</p>
+            <p>GDPR's Legitimate Interests basis is widely used across Europe - marketing to existing customers, fraud detection, internal analytics, product improvement - without explicit consent. It allows organisations to process personal data when their interests are not overridden by the individual's rights. <strong>DPDP does not have this basis.</strong></p>
             <div className="pull-quote">
               <p>"GDPR's Legitimate Interests is the lawful basis that most organisations use for activities they would rather not ask consent for. DPDP removes that option entirely. Either it is Consent, or it falls under the narrow list of Legitimate Use purposes."</p>
             </div>
-            <p>Under DPDP, the two lawful bases are Consent (freely given, specific, informed, and through a clear affirmative action) and Legitimate Use — a narrow list of specific purposes including employment-related processing, medical emergencies, legal obligations, and certain public interest activities. Processing that runs comfortably on Legitimate Interests under GDPR may need an entirely new consent flow for Indian users.</p>
+            <p>Under DPDP, the two lawful bases are Consent (freely given, specific, informed, and through a clear affirmative action) and Legitimate Use - a narrow list of specific purposes including employment-related processing, medical emergencies, legal obligations, and certain public interest activities. Processing that runs comfortably on Legitimate Interests under GDPR may need an entirely new consent flow for Indian users.</p>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
@@ -380,7 +380,7 @@ export default function GDPRvsDPDP() {
           </section>
 
           <section id="rights">
-            <h2>Rights Comparison — <em>What Transfers and What Does Not</em></h2>
+            <h2>Rights Comparison - <em>What Transfers and What Does Not</em></h2>
             <p>Most of the rights your GDPR programme already handles transfer directly to DPDP. But there are two GDPR-only rights and one DPDP-only right that require specific attention.</p>
             <div className="rights-grid">
               <div className="right-card right-both anim"><div className="rc-label">Both Frameworks</div><h3>Access</h3></div>
@@ -389,62 +389,62 @@ export default function GDPRvsDPDP() {
               <div className="right-card right-both anim"><div className="rc-label">Both Frameworks</div><h3>Grievance Redressal</h3></div>
               <div className="right-card right-gdpr anim"><div className="rc-label">GDPR Only</div><h3>Data Portability</h3></div>
               <div className="right-card right-gdpr anim"><div className="rc-label">GDPR Only</div><h3>Right to Object</h3></div>
-              <div className="right-card right-dpdp anim" style={{gridColumn:'1 / -1'}}><div className="rc-label">DPDP Only — Unique to India</div><h3>Nomination Right — appoint someone to exercise rights on your behalf after death or incapacity</h3></div>
+              <div className="right-card right-dpdp anim" style={{gridColumn:'1 / -1'}}><div className="rc-label">DPDP Only - Unique to India</div><h3>Nomination Right - appoint someone to exercise rights on your behalf after death or incapacity</h3></div>
             </div>
             <div className="callout co-key">
               <span className="co-icon">💡</span>
               <div className="co-body">
-                <strong>The Nomination Right — Build This Workflow</strong>
-                <p>The nomination right is unique to India — there is no GDPR equivalent. Data Principals can designate a nominee to exercise their rights on their behalf in the event of death or incapacity. You need a workflow for receiving, verifying, and acting on nominations. It has low volume but non-zero compliance weight under DPDP.</p>
+                <strong>The Nomination Right - Build This Workflow</strong>
+                <p>The nomination right is unique to India - there is no GDPR equivalent. Data Principals can designate a nominee to exercise their rights on their behalf in the event of death or incapacity. You need a workflow for receiving, verifying, and acting on nominations. It has low volume but non-zero compliance weight under DPDP.</p>
               </div>
             </div>
           </section>
 
           <section id="childrens-data">
-            <h2>Children's Data — <em>Where DPDP Is Significantly Stricter</em></h2>
-            <p>GDPR's children's data threshold is 16 years — and member states can lower this to 13 with parental consent mechanisms. DPDP sets it at <strong>18 years with zero exceptions.</strong></p>
-            <p>This matters for every organisation that collects data from users who may be under 18 in India — social platforms, gaming, e-commerce, edtech, and health apps being the most common categories. Under GDPR you may have been comfortable collecting data from 16 or 17 year olds with parental consent. Under DPDP, that is not permissible without verifiable parental consent for anyone under 18.</p>
+            <h2>Children's Data - <em>Where DPDP Is Significantly Stricter</em></h2>
+            <p>GDPR's children's data threshold is 16 years - and member states can lower this to 13 with parental consent mechanisms. DPDP sets it at <strong>18 years with zero exceptions.</strong></p>
+            <p>This matters for every organisation that collects data from users who may be under 18 in India - social platforms, gaming, e-commerce, edtech, and health apps being the most common categories. Under GDPR you may have been comfortable collecting data from 16 or 17 year olds with parental consent. Under DPDP, that is not permissible without verifiable parental consent for anyone under 18.</p>
             <div className="callout co-danger">
               <span className="co-icon">🚨</span>
               <div className="co-body">
                 <strong>Children's Data Penalty: ₹200 Crore</strong>
-                <p>Violations of children's data obligations under DPDP carry a maximum penalty of ₹200 crore — one of the highest penalty categories in the Act. If your product is used by or targeted at users under 18 in India, the children's data compliance gap is your highest-priority DPDP item.</p>
+                <p>Violations of children's data obligations under DPDP carry a maximum penalty of ₹200 crore - one of the highest penalty categories in the Act. If your product is used by or targeted at users under 18 in India, the children's data compliance gap is your highest-priority DPDP item.</p>
               </div>
             </div>
 
             <div className="img-wrap" style={{marginTop:'1.5rem'}}>
               <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=1000&h=360&fit=crop" alt="India data protection compliance" style={{width:'100%',display:'block',maxHeight:'320px',objectFit:'cover'}}/>
             </div>
-            <p className="img-cap">India's DPDP Act sets the children's data threshold at 18 — higher than any comparable global privacy regulation and one of the highest-penalty categories in the Act at ₹200 crore.</p>
+            <p className="img-cap">India's DPDP Act sets the children's data threshold at 18 - higher than any comparable global privacy regulation and one of the highest-penalty categories in the Act at ₹200 crore.</p>
           </section>
 
           <section id="cross-border">
-            <h2>Cross-Border Transfers — <em>DPDP Is More Permissive</em></h2>
+            <h2>Cross-Border Transfers - <em>DPDP Is More Permissive</em></h2>
             <p>Cross-border data transfer rules are one area where DPDP is actually less restrictive than GDPR. The two frameworks operate on opposite models:</p>
             <div className="compare-table-wrap">
               <table className="compare-table">
                 <thead><tr><th>Aspect</th><th>🇪🇺 GDPR</th><th>🇮🇳 DPDP Act 2023</th></tr></thead>
                 <tbody>
-                  <tr><td>Transfer model</td><td>Positive list — blocked by default unless destination is approved</td><td>Negative list — permitted by default unless destination is blocked</td></tr>
+                  <tr><td>Transfer model</td><td>Positive list - blocked by default unless destination is approved</td><td>Negative list - permitted by default unless destination is blocked</td></tr>
                   <tr><td>Mechanism required</td><td>Adequacy decision, SCCs, BCRs, or derogation</td><td>No specific mechanism required for permitted destinations</td></tr>
                   <tr><td>Restricted destinations</td><td>All non-EEA countries without adequacy</td><td>Only countries specifically notified by the Indian government</td></tr>
                   <tr><td>Practical impact</td><td>Significant compliance overhead for data flowing outside EU</td><td>Simpler for most current transfer destinations</td></tr>
                 </tbody>
               </table>
             </div>
-            <p>In practice, if your organisation already manages GDPR cross-border transfer requirements — SCCs with vendors, adequacy decisions for key destinations — you are likely over-compliant for DPDP purposes on this specific issue. The blocked destination list under DPDP is expected to be short. Monitor the Data Protection Board's notifications for any updates.</p>
+            <p>In practice, if your organisation already manages GDPR cross-border transfer requirements - SCCs with vendors, adequacy decisions for key destinations - you are likely over-compliant for DPDP purposes on this specific issue. The blocked destination list under DPDP is expected to be short. Monitor the Data Protection Board's notifications for any updates.</p>
           </section>
 
           <section id="gap-list">
-            <h2>If You Are Already GDPR-Compliant — <em>Your Gap List</em></h2>
+            <h2>If You Are Already GDPR-Compliant - <em>Your Gap List</em></h2>
             <p>Your data mapping, consent flows, vendor DPAs, breach response procedures, and most rights workflows from your GDPR programme transfer directly to DPDP. Here is what still needs India-specific work, prioritised by urgency:</p>
             <div className="gap-list">
               {[
                 {gap:'22-language privacy notice', effort:'med', prio:'high', desc:'Your privacy notice must be made available in all 22 scheduled Indian languages, not just English. This is one of the most commonly missed DPDP requirements and one of the first things regulators will assess.'},
-                {gap:"Children's data — raise threshold to 18", effort:'high', prio:'high', desc:'Review every user touchpoint where under-18 users may be present. Update age verification and parental consent mechanisms to apply to all users under 18, not just under 16.'},
+                {gap:"Children's data - raise threshold to 18", effort:'high', prio:'high', desc:'Review every user touchpoint where under-18 users may be present. Update age verification and parental consent mechanisms to apply to all users under 18, not just under 16.'},
                 {gap:'Lawful basis audit (Legitimate Interests → DPDP)', effort:'med', prio:'high', desc:'Map every processing activity currently using GDPR Legitimate Interests to a valid DPDP basis. For activities that cannot be mapped to Legitimate Use, build a consent flow for Indian users specifically.'},
                 {gap:'Nomination right workflow', effort:'low', prio:'med', desc:'Build a workflow for receiving, verifying, and processing nomination requests. Low volume expected initially but non-zero compliance requirement that auditors will ask about.'},
-                {gap:'Consent Manager integration (when live)', effort:'high', prio:'med', desc:'Consent Manager infrastructure is defined in the DPDP Rules but requires registration and technical integration. Begin scoping this now — when the registry goes live, integration timelines will be short.'},
+                {gap:'Consent Manager integration (when live)', effort:'high', prio:'med', desc:'Consent Manager infrastructure is defined in the DPDP Rules but requires registration and technical integration. Begin scoping this now - when the registry goes live, integration timelines will be short.'},
               ].map(({gap, effort, prio, desc}, i) => (
                 <div key={i} className="gap-item anim">
                   <div className="gap-badges">
@@ -459,21 +459,21 @@ export default function GDPRvsDPDP() {
 
           <section id="one-programme">
             <h2>One Programme or Two? <em>The Right Answer</em></h2>
-            <p>One programme. Map both frameworks to a single control set. Your GDPR baseline handles data mapping, consent flows, vendor DPAs, breach response, and most rights workflows. Where DPDP requires more — 22 Indian language notices, the nomination right, Consent Manager integration, children's threshold at 18 — layer those on top.</p>
+            <p>One programme. Map both frameworks to a single control set. Your GDPR baseline handles data mapping, consent flows, vendor DPAs, breach response, and most rights workflows. Where DPDP requires more - 22 Indian language notices, the nomination right, Consent Manager integration, children's threshold at 18 - layer those on top.</p>
             <p>Running two entirely separate compliance programmes doubles administrative overhead without adding proportionate compliance benefit. The two frameworks share enough structural DNA that a unified approach is significantly more efficient. The key is tracking which controls satisfy which framework in your GRC tool or compliance documentation, so that auditors from either jurisdiction can see clear evidence of how their specific requirements are met.</p>
             <div className="callout co-sc">
               <span className="co-icon">🛡️</span>
               <div className="co-body">
                 <strong>SecComply: Unified GDPR + DPDP Compliance</strong>
-                <p>SecComply maps your existing controls against both GDPR and DPDP simultaneously — identifying the gaps unique to each framework and building a single evidence set that satisfies both. Indian companies pursuing ISO 27001 or SOC 2 alongside DPDP can consolidate all three into one programme, dramatically reducing audit preparation overhead.</p>
+                <p>SecComply maps your existing controls against both GDPR and DPDP simultaneously - identifying the gaps unique to each framework and building a single evidence set that satisfies both. Indian companies pursuing ISO 27001 or SOC 2 alongside DPDP can consolidate all three into one programme, dramatically reducing audit preparation overhead.</p>
               </div>
             </div>
           </section>
 
           {/* CLOSING + RELATED BLOGS */}
           <div style={{marginTop:'2.5rem',padding:'1.8rem 2rem',background:'rgba(232,99,43,0.04)',border:'1px solid rgba(232,99,43,0.12)',borderRadius:'14px'}}>
-            <p style={{fontSize:'1rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1rem'}}>GDPR compliance is a strong foundation — not a finished DPDP programme. The 22-language notice, the nomination right, the absence of Legitimate Interests, and the 18-year children's threshold are not minor variations. They are operational requirements that need India-specific workflows, and they are the first areas the Data Protection Board of India will scrutinise when enforcement begins.</p>
-            <p style={{fontSize:'1rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:0}}>The good news: if you have already done the hard work of building a GDPR-compliant organisation, DPDP does not require starting over. It requires layering five specific gaps on top of a foundation you have already built. Address those gaps now — before a breach or a complaint forces a rushed remediation under regulatory scrutiny.</p>
+            <p style={{fontSize:'1rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1rem'}}>GDPR compliance is a strong foundation - not a finished DPDP programme. The 22-language notice, the nomination right, the absence of Legitimate Interests, and the 18-year children's threshold are not minor variations. They are operational requirements that need India-specific workflows, and they are the first areas the Data Protection Board of India will scrutinise when enforcement begins.</p>
+            <p style={{fontSize:'1rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:0}}>The good news: if you have already done the hard work of building a GDPR-compliant organisation, DPDP does not require starting over. It requires layering five specific gaps on top of a foundation you have already built. Address those gaps now - before a breach or a complaint forces a rushed remediation under regulatory scrutiny.</p>
           </div>
 
           {/* RELATED BLOGS */}
@@ -482,10 +482,10 @@ export default function GDPRvsDPDP() {
             <p style={{fontSize:'.92rem',color:'var(--tm)',marginBottom:'1.4rem'}}>This article is part of SecComply's DPDP series. If you are building your India compliance programme, these are the articles to read next:</p>
             <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'0.8rem'}}>
               {[
-                {href:'https://seccomply.net/resources/blog/dpdp-act-2023-explained', icon:'🇮🇳', title:'DPDP Act 2023 Explained in Plain English', desc:'New to DPDP? Start here — all 5 obligations, the penalty schedule, and your first 30 days action plan.'},
+                {href:'https://seccomply.net/resources/blog/dpdp-act-2023-explained', icon:'🇮🇳', title:'DPDP Act 2023 Explained in Plain English', desc:'New to DPDP? Start here - all 5 obligations, the penalty schedule, and your first 30 days action plan.'},
                 {href:'https://seccomply.net/resources/blog/how-to-write-security-policy', icon:'📋', title:'How to Write a Security Policy People Follow', desc:'DPDP requires documented policies. Here is how to write ones that satisfy regulators and employees.'},
                 {href:'https://seccomply.net/resources/blog/tprm-best-practices', icon:'🔗', title:'Third-Party Risk Management Best Practices', desc:'DPDP requires vendor DPAs. TPRM is the programme that manages them continuously.'},
-                {href:'https://seccomply.net/resources/blog/dpdp-act-indian-startups', icon:'🚀', title:'DPDP Act: What Indian Startups Need to Know', desc:'Startup-specific guide to DPDP readiness — practical steps without the legal jargon.'},
+                {href:'https://seccomply.net/resources/blog/dpdp-act-indian-startups', icon:'🚀', title:'DPDP Act: What Indian Startups Need to Know', desc:'Startup-specific guide to DPDP readiness - practical steps without the legal jargon.'},
               ].map(({href,icon,title,desc},i)=>(
                 <a key={i} href={href} target="_blank" rel="noopener" style={{display:'flex',gap:'0.8rem',padding:'0.9rem 1.1rem',background:'var(--bgc2)',border:'1px solid var(--bs)',borderRadius:'10px',textDecoration:'none',transition:'border-color .2s',alignItems:'flex-start'}}
                   onMouseEnter={e=>e.currentTarget.style.borderColor='rgba(232,99,43,0.3)'}
@@ -503,7 +503,7 @@ export default function GDPRvsDPDP() {
 
           <div className="cta-banner" style={{marginTop:'2.5rem'}}>
             <h3>Close Your GDPR-to-DPDP Gaps</h3>
-            <p>SecComply maps your existing GDPR controls against DPDP obligations and builds the India-specific additions — 22-language notices, nomination right, Consent Manager readiness — as a single unified programme.</p>
+            <p>SecComply maps your existing GDPR controls against DPDP obligations and builds the India-specific additions - 22-language notices, nomination right, Consent Manager readiness - as a single unified programme.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free DPDP Gap Assessment →</a>
               <a href="https://seccomply.net/services/compliance-as-a-service" className="btn-o" target="_blank" rel="noopener">View Compliance Services</a>
@@ -520,11 +520,11 @@ export default function GDPRvsDPDP() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div itemScope itemType="https://schema.org/FAQPage">
               {[
-                {q:"Does GDPR compliance mean you are DPDP compliant?", a:"No. GDPR gives you a strong foundation — data mapping, consent flows, vendor DPAs, and breach response largely transfer. But the 22-language privacy notice requirement, the nomination right, Consent Manager integration, DPDP's narrower lawful basis framework (no Legitimate Interests), and the higher children's data threshold of 18 years all need India-specific work that a GDPR programme does not cover."},
-                {q:"What is GDPR's Legitimate Interests basis and why doesn't DPDP have it?", a:"GDPR's Legitimate Interests is a lawful basis allowing organisations to process personal data without consent when their interests are not overridden by the individual's rights — commonly used for marketing to existing customers, fraud detection, and internal analytics. DPDP has no equivalent. Under DPDP, the two lawful bases are Consent and Legitimate Use (specific enumerated purposes). Any processing currently running on Legitimate Interests under GDPR may need explicit consent for Indian users."},
+                {q:"Does GDPR compliance mean you are DPDP compliant?", a:"No. GDPR gives you a strong foundation - data mapping, consent flows, vendor DPAs, and breach response largely transfer. But the 22-language privacy notice requirement, the nomination right, Consent Manager integration, DPDP's narrower lawful basis framework (no Legitimate Interests), and the higher children's data threshold of 18 years all need India-specific work that a GDPR programme does not cover."},
+                {q:"What is GDPR's Legitimate Interests basis and why doesn't DPDP have it?", a:"GDPR's Legitimate Interests is a lawful basis allowing organisations to process personal data without consent when their interests are not overridden by the individual's rights - commonly used for marketing to existing customers, fraud detection, and internal analytics. DPDP has no equivalent. Under DPDP, the two lawful bases are Consent and Legitimate Use (specific enumerated purposes). Any processing currently running on Legitimate Interests under GDPR may need explicit consent for Indian users."},
                 {q:"Which regulation has stricter children's data rules?", a:"DPDP, significantly. GDPR sets the children's data threshold at 16 years (13 in some member states with parental consent). DPDP sets it at 18 with zero exceptions. Any organisation collecting data from users under 18 in India must obtain verifiable parental consent under DPDP regardless of what their GDPR programme allows."},
-                {q:"How do cross-border data transfers differ between GDPR and DPDP?", a:"GDPR operates on a positive list — transfers outside the EU/EEA are blocked unless the destination has an adequacy decision or specific safeguards are in place. DPDP operates on a negative list — transfers are permitted to all countries except those specifically blocked by the Indian government. In practice, DPDP's cross-border transfer regime is significantly more permissive than GDPR's."},
-                {q:"Should Indian companies run one compliance programme or two?", a:"One programme. Map both frameworks to a single control set. Your GDPR baseline handles data mapping, consent flows, vendor DPAs, breach response, and most rights workflows. Where DPDP requires more — 22 Indian language notices, the nomination right, Consent Manager integration, children's threshold at 18 — layer those on top. Running two separate programmes doubles administrative overhead without proportionate benefit."},
+                {q:"How do cross-border data transfers differ between GDPR and DPDP?", a:"GDPR operates on a positive list - transfers outside the EU/EEA are blocked unless the destination has an adequacy decision or specific safeguards are in place. DPDP operates on a negative list - transfers are permitted to all countries except those specifically blocked by the Indian government. In practice, DPDP's cross-border transfer regime is significantly more permissive than GDPR's."},
+                {q:"Should Indian companies run one compliance programme or two?", a:"One programme. Map both frameworks to a single control set. Your GDPR baseline handles data mapping, consent flows, vendor DPAs, breach response, and most rights workflows. Where DPDP requires more - 22 Indian language notices, the nomination right, Consent Manager integration, children's threshold at 18 - layer those on top. Running two separate programmes doubles administrative overhead without proportionate benefit."},
               ].map((f,i)=>(
                 <div key={i} className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong itemProp="name">{f.q}</strong><span className="faq-ch">▾</span></div>
@@ -574,7 +574,7 @@ export default function GDPRvsDPDP() {
           </div>
           <div className="sb-cta">
             <h4>Close Your DPDP Gaps</h4>
-            <p>Free assessment — we map your GDPR programme against DPDP and identify exactly what needs India-specific work.</p>
+            <p>Free assessment - we map your GDPR programme against DPDP and identify exactly what needs India-specific work.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Assessment →</a>
           </div>
         </aside>

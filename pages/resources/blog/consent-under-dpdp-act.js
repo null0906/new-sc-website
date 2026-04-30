@@ -26,12 +26,12 @@ export default function ConsentUnderDPDPAct() {
   return (
     <Layout>
       <Head>
-        <title>Consent Under the DPDP Act — What's Valid, What's Not, and How to Implement It | SecComply</title>
+        <title>Consent Under the DPDP Act - What's Valid, What's Not, and How to Implement It | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
         <meta name="description" content="The DPDP Act is specific and demanding about what valid consent looks like. Pre-ticked boxes, bundled consent, and vague language will not pass the test. Here is the anatomy of valid consent under Section 6." />
         <meta name="keywords" content="consent DPDP Act India, valid consent data protection, Section 6 DPDP Act, consent management India, pre-ticked checkboxes DPDP, consent withdrawal India, consent managers DPDP, consent pillars India privacy" />
-        <meta property="og:title" content="Consent Under the DPDP Act — What's Valid, What's Not, and How to Implement It" />
+        <meta property="og:title" content="Consent Under the DPDP Act - What's Valid, What's Not, and How to Implement It" />
         <meta property="og:description" content="The DPDP Act is specific and demanding about what valid consent looks like. Pre-ticked boxes, bundled consent, and vague language will not pass the test. Here is the anatomy of valid consent under Section 6." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/consent-under-dpdp-act" />
@@ -39,7 +39,7 @@ export default function ConsentUnderDPDPAct() {
         <meta property="article:author" content="Chandrika Mulage" />
         <meta property="article:tag" content="DPDP Act" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/consent-under-dpdp-act" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Consent Under the DPDP Act — What Is Valid, What Is Not, and How to Implement It","description":"Section 6 of the DPDP Act sets out 5 pillars of valid consent. Pre-ticked boxes, bundled consent, and vague language will not pass the test.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/consent-under-dpdp-act","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Consent Under DPDP","item":"https://seccomply.net/resources/blog/consent-under-dpdp-act"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Consent Under the DPDP Act - What Is Valid, What Is Not, and How to Implement It","description":"Section 6 of the DPDP Act sets out 5 pillars of valid consent. Pre-ticked boxes, bundled consent, and vague language will not pass the test.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/consent-under-dpdp-act","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Consent Under DPDP","item":"https://seccomply.net/resources/blog/consent-under-dpdp-act"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -170,7 +170,7 @@ export default function ConsentUnderDPDPAct() {
         <a href="https://seccomply.net/">Home</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources">Resources</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources/blog">Blog</a><span className="bc-sep">›</span>
-        <span style={{color:'var(--tb)'}}>Consent Under the DPDP Act — What's Vali...</span>
+        <span style={{color:'var(--tb)'}}>Consent Under the DPDP Act - What's Vali...</span>
       </div>
 
       <div className="hero-wrap">
@@ -180,8 +180,8 @@ export default function ConsentUnderDPDPAct() {
           <span className="badge badge-am">🏢 India Compliance</span>
           <span className="badge badge-gr">Series · Part 3 of 6</span>
         </div>
-        <h1 className="hero-h1">Consent Under the DPDP Act — <em>What's Valid, What's Not,</em> and How to Implement It</h1>
-        <p className="hero-sub">Consent is the cornerstone of the DPDP Act. But not all consent is created equal. Pre-ticked boxes, vague permission statements, and buried terms in a 40-page T&C document will not pass the test. Here is what valid consent looks like — and how to build it.</p>
+        <h1 className="hero-h1">Consent Under the DPDP Act - <em>What's Valid, What's Not,</em> and How to Implement It</h1>
+        <p className="hero-sub">Consent is the cornerstone of the DPDP Act. But not all consent is created equal. Pre-ticked boxes, vague permission statements, and buried terms in a 40-page T&C document will not pass the test. Here is what valid consent looks like - and how to build it.</p>
 
         <div className="author-strip">
           <div className="avatar">CM</div>
@@ -195,13 +195,13 @@ export default function ConsentUnderDPDPAct() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=480&fit=crop" alt="Consent management DPDP Act compliance India" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">Section 6 of the DPDP Act lays down five non-negotiable pillars of valid consent. Missing even one makes the entire consent invalid — not just the specific processing activity.</p>
+        <p className="img-cap">Section 6 of the DPDP Act lays down five non-negotiable pillars of valid consent. Missing even one makes the entire consent invalid - not just the specific processing activity.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pg3" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pg3)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">The 5 Pillars of Valid Consent — Section 6, DPDP Act 2023</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">The 5 Pillars of Valid Consent - Section 6, DPDP Act 2023</text>
           
           <rect x="40" y="38" width="170" height="200" rx="14" fill="#091826" stroke="#818cf825" strokeWidth="1.5"/>
           <rect x="40" y="38" width="170" height="4" rx="2" fill="#818cf8"/>
@@ -214,7 +214,7 @@ export default function ConsentUnderDPDPAct() {
           <rect x="226" y="38" width="170" height="4" rx="2" fill="#E8632B"/>
           <text x="311" y="78" textAnchor="middle" fill="#E8632B" fontSize="22" fontWeight="800" fontFamily="sans-serif">SPECIFIC</text>
           <text x="311" y="100" textAnchor="middle" fill="rgba(200,214,229,0.6)" fontSize="9" fontFamily="sans-serif">Purpose-tied</text>
-          <text x="311" y="140" textAnchor="middle" fill="rgba(200,214,229,0.4)" fontSize="8.5" fontFamily="sans-serif">Granular — separate toggle</text>
+          <text x="311" y="140" textAnchor="middle" fill="rgba(200,214,229,0.4)" fontSize="8.5" fontFamily="sans-serif">Granular - separate toggle</text>
           <text x="311" y="155" textAnchor="middle" fill="rgba(200,214,229,0.4)" fontSize="8.5" fontFamily="sans-serif">for each processing purpose</text>
           <text x="311" y="210" textAnchor="middle" fill="rgba(232,99,43,0.5)" fontSize="8" fontFamily="sans-serif">Pillar 2 of 5</text>
           <rect x="412" y="38" width="170" height="200" rx="14" fill="#091826" stroke="#06d6a025" strokeWidth="1.5"/>
@@ -238,14 +238,14 @@ export default function ConsentUnderDPDPAct() {
           <text x="858" y="140" textAnchor="middle" fill="rgba(200,214,229,0.4)" fontSize="8.5" fontFamily="sans-serif">No pre-ticked boxes.</text>
           <text x="858" y="155" textAnchor="middle" fill="rgba(200,214,229,0.4)" fontSize="8.5" fontFamily="sans-serif">No silence as consent.</text>
           <text x="858" y="210" textAnchor="middle" fill="rgba(255,77,109,0.5)" fontSize="8" fontFamily="sans-serif">Pillar 5 of 5</text>
-          <text x="480" y="265" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">All five pillars must be satisfied simultaneously. Missing one makes the entire consent invalid — not just the specific processing activity.</text>
+          <text x="480" y="265" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">All five pillars must be satisfied simultaneously. Missing one makes the entire consent invalid - not just the specific processing activity.</text>
         </svg>
         </div>
 
         <div className="toc-box">
           <div className="toc-lbl">In This Article</div>
           <div className="toc-grid">
-            <a href="#section-6">Section 6 — What the Law Says</a>
+            <a href="#section-6">Section 6 - What the Law Says</a>
             <a href="#five-pillars">The 5 Pillars of Valid Consent</a>
             <a href="#notice-requirement">The Notice Requirement</a>
             <a href="#without-consent">Legitimate Uses Without Consent</a>
@@ -263,15 +263,15 @@ export default function ConsentUnderDPDPAct() {
 
           <div className="series-nav anim">
             <span>📚 DPDP Act Series</span>
-            <strong>Part 3: Consent Under the DPDP Act — What's</strong>
+            <strong>Part 3: Consent Under the DPDP Act - What's</strong>
             <span>·</span>
             <a href="https://seccomply.net/resources/blog/8-rights-data-principals-dpdp" style={{color:"var(--cy)",textDecoration:"none"}}>← Part 2</a> · <a href="https://seccomply.net/resources/blog/significant-data-fiduciary-sdf" style={{color:"var(--cy)",textDecoration:"none"}}>Part 4 →</a>
           </div>
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Consent is the cornerstone of India's DPDP Act. If your organisation collects personal data of Indian individuals without a lawful basis, you are processing data illegally. For most B2C products, that lawful basis is <strong>consent</strong>. But not all consent is created equal — the Act is specific about what valid consent looks like, and most existing consent implementations fail at least one of its five requirements.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Consent is the cornerstone of India's DPDP Act. If your organisation collects personal data of Indian individuals without a lawful basis, you are processing data illegally. For most B2C products, that lawful basis is <strong>consent</strong>. But not all consent is created equal - the Act is specific about what valid consent looks like, and most existing consent implementations fail at least one of its five requirements.</p>
 
           <section id="section-6">
-            <h2>Section 6 — <em>What the Law Says</em></h2>
+            <h2>Section 6 - <em>What the Law Says</em></h2>
             <p>Section 6 lays down the consent framework. The core requirement:</p>
             <div className="callout co-key">
               <span className="co-icon">📜</span>
@@ -294,10 +294,10 @@ export default function ConsentUnderDPDPAct() {
             </ul>
 
             <h3>2. Specific</h3>
-            <p>Consent must be granular — tied to a specific purpose, not a catch-all blanket permission.</p>
+            <p>Consent must be granular - tied to a specific purpose, not a catch-all blanket permission.</p>
             <ul>
               <li><strong>Invalid:</strong> "I consent to the use of my data for all purposes as described in the privacy policy."</li>
-              <li><strong>Valid:</strong> Three separate consent toggles — one for order processing, one for personalised recommendations, one for marketing emails.</li>
+              <li><strong>Valid:</strong> Three separate consent toggles - one for order processing, one for personalised recommendations, one for marketing emails.</li>
             </ul>
 
             <h3>3. Informed</h3>
@@ -307,11 +307,11 @@ export default function ConsentUnderDPDPAct() {
             <p>Consent cannot be a take-it-or-leave-it gateway to accessing a service unless that processing is genuinely essential.</p>
             <ul>
               <li><strong>Invalid:</strong> "You must consent to share your location data at all times to use our food ordering app."</li>
-              <li><strong>Valid:</strong> "Allow location access during delivery tracking" — scoped to necessity.</li>
+              <li><strong>Valid:</strong> "Allow location access during delivery tracking" - scoped to necessity.</li>
             </ul>
 
             <h3>5. Unambiguous with a Clear Affirmative Action</h3>
-            <p>Consent must be an active, deliberate act — not passive acceptance.</p>
+            <p>Consent must be an active, deliberate act - not passive acceptance.</p>
             <ul>
               <li><strong>Invalid:</strong> Pre-ticked checkboxes, continued use of a website interpreted as consent, silence treated as agreement</li>
               <li><strong>Valid:</strong> A clearly labelled checkbox the user ticks themselves, a "Yes, I Agree" button distinct from the general "Sign Up" flow, a toggle that defaults to OFF</li>
@@ -319,12 +319,12 @@ export default function ConsentUnderDPDPAct() {
           </section>
 
           <section id="notice-requirement">
-            <h2>The Notice Requirement — <em>Before Consent Can Be Sought</em></h2>
+            <h2>The Notice Requirement - <em>Before Consent Can Be Sought</em></h2>
             <p>The DPDP Act requires that a <strong>Notice</strong> be provided to the Data Principal before or at the time consent is sought. The notice must be written in clear and plain language, available in English and a scheduled Indian language, and cover: data collected, purposes, rights, grievance mechanism, and how consent can be withdrawn.</p>
             <div className="callout co-info">
               <span className="co-icon">💡</span>
               <div className="co-body">
-                <strong>Notice vs Consent — Do Not Conflate Them</strong>
+                <strong>Notice vs Consent - Do Not Conflate Them</strong>
                 <p>Your privacy policy is part of the Notice. Consent is the user response to it. Publishing a privacy policy does not constitute consent management. Notice is a disclosure; consent is the active agreement that follows it.</p>
               </div>
             </div>
@@ -332,7 +332,7 @@ export default function ConsentUnderDPDPAct() {
 
           <section id="without-consent">
             <h2>Legitimate Uses <em>Without Consent (Section 7)</em></h2>
-            <p>Consent is not the only lawful basis. Section 7 lists narrow circumstances where processing is permitted without consent — but these are frequently misunderstood as loopholes.</p>
+            <p>Consent is not the only lawful basis. Section 7 lists narrow circumstances where processing is permitted without consent - but these are frequently misunderstood as loopholes.</p>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Basis</th><th>Example</th></tr></thead>
@@ -341,15 +341,15 @@ export default function ConsentUnderDPDPAct() {
                 </tbody>
               </table>
             </div>
-            <p>If you are a commercial SaaS company, you likely cannot invoke State purposes. And using "contract performance" as a basis requires that the processing is genuinely necessary for the contract — not just convenient.</p>
+            <p>If you are a commercial SaaS company, you likely cannot invoke State purposes. And using "contract performance" as a basis requires that the processing is genuinely necessary for the contract - not just convenient.</p>
           </section>
 
           <section id="invalid-practices">
-            <h2>What Is Invalid — <em>The Common Consent Mistakes</em></h2>
+            <h2>What Is Invalid - <em>The Common Consent Mistakes</em></h2>
             <ul>
-              <li><strong>Bundled consent:</strong> Combining necessary and non-necessary processing in a single acceptance — "By creating an account, you consent to receiving promotional emails and sharing your data with our partners."</li>
+              <li><strong>Bundled consent:</strong> Combining necessary and non-necessary processing in a single acceptance - "By creating an account, you consent to receiving promotional emails and sharing your data with our partners."</li>
               <li><strong>Pre-ticked or default-ON opt-ins:</strong> Any consent checkbox that comes pre-selected.</li>
-              <li><strong>Vague language:</strong> "We may use your data to improve our services" — improve how? For what? This is not specific.</li>
+              <li><strong>Vague language:</strong> "We may use your data to improve our services" - improve how? For what? This is not specific.</li>
               <li><strong>Consent-walled services:</strong> Refusing to provide a service because a user declined non-essential consent.</li>
               <li><strong>Retrospective consent:</strong> Claiming consent for processing that began before it was collected.</li>
               <li><strong>No withdrawal mechanism:</strong> If users cannot withdraw consent as easily as they gave it, the consent architecture is non-compliant.</li>
@@ -357,31 +357,31 @@ export default function ConsentUnderDPDPAct() {
           </section>
 
           <section id="childrens-consent">
-            <h2>Children's Consent — <em>A Stricter Regime</em></h2>
-            <p>For Data Principals under 18, the DPDP Act mandates verifiable parental consent before any personal data is collected, no behavioural tracking or targeted advertising directed at minors, and age verification mechanisms. This applies even if the child is using a general-purpose platform — if you know or should reasonably know the user is a minor, heightened obligations kick in.</p>
+            <h2>Children's Consent - <em>A Stricter Regime</em></h2>
+            <p>For Data Principals under 18, the DPDP Act mandates verifiable parental consent before any personal data is collected, no behavioural tracking or targeted advertising directed at minors, and age verification mechanisms. This applies even if the child is using a general-purpose platform - if you know or should reasonably know the user is a minor, heightened obligations kick in.</p>
           </section>
 
           <section id="consent-managers">
-            <h2>Consent Managers — <em>A New Ecosystem Player (Section 6(9))</em></h2>
-            <p>The DPDP Act introduces <strong>Consent Managers</strong> — registered entities that allow Data Principals to manage their consents across multiple Fiduciaries through a single, interoperable interface. Think of it as a consent dashboard that a user can access to see all the platforms they have consented to, and revoke any of them from one place.</p>
-            <p>Your consent records must be machine-readable and API-accessible to integrate with registered Consent Managers once the ecosystem matures. Audit trails of all consents must be maintained and exportable. Consent Managers must register with the Data Protection Board — this regulatory infrastructure is being built now.</p>
+            <h2>Consent Managers - <em>A New Ecosystem Player (Section 6(9))</em></h2>
+            <p>The DPDP Act introduces <strong>Consent Managers</strong> - registered entities that allow Data Principals to manage their consents across multiple Fiduciaries through a single, interoperable interface. Think of it as a consent dashboard that a user can access to see all the platforms they have consented to, and revoke any of them from one place.</p>
+            <p>Your consent records must be machine-readable and API-accessible to integrate with registered Consent Managers once the ecosystem matures. Audit trails of all consents must be maintained and exportable. Consent Managers must register with the Data Protection Board - this regulatory infrastructure is being built now.</p>
           </section>
 
           <section id="implementation">
-            <h2>How to Implement <em>Compliant Consent — A Technical Blueprint</em></h2>
+            <h2>How to Implement <em>Compliant Consent - A Technical Blueprint</em></h2>
             <ul>
-              <li><strong>Layer 1 — Consent Notice UI:</strong> Trigger a layered privacy notice before data collection begins. Use progressive disclosure: short notice upfront, expandable detail sections. Offer language selection — at minimum English plus one regional language.</li>
-              <li><strong>Layer 2 — Granular Consent Capture:</strong> Use separate toggles for each processing purpose. Default all non-essential toggles to OFF. Record: timestamp, version of notice shown, user identifier, purpose, acceptance or rejection.</li>
-              <li><strong>Layer 3 — Consent Records Database:</strong> Store consent records with user ID, consent timestamp, notice version, purpose code, and status. Maintain immutable audit logs — tamper-evident and retrievable for Board audits.</li>
-              <li><strong>Layer 4 — Withdrawal Workflow:</strong> Surface a "Manage My Consents" page in account settings. Allow per-purpose withdrawal with immediate effect. Trigger downstream: stop processing, notify processors, update records.</li>
-              <li><strong>Layer 5 — Periodic Consent Refresh:</strong> If you materially change your processing purposes, re-seek consent — do not just update the privacy policy quietly. Material changes require a clear re-consent flow.</li>
+              <li><strong>Layer 1 - Consent Notice UI:</strong> Trigger a layered privacy notice before data collection begins. Use progressive disclosure: short notice upfront, expandable detail sections. Offer language selection - at minimum English plus one regional language.</li>
+              <li><strong>Layer 2 - Granular Consent Capture:</strong> Use separate toggles for each processing purpose. Default all non-essential toggles to OFF. Record: timestamp, version of notice shown, user identifier, purpose, acceptance or rejection.</li>
+              <li><strong>Layer 3 - Consent Records Database:</strong> Store consent records with user ID, consent timestamp, notice version, purpose code, and status. Maintain immutable audit logs - tamper-evident and retrievable for Board audits.</li>
+              <li><strong>Layer 4 - Withdrawal Workflow:</strong> Surface a "Manage My Consents" page in account settings. Allow per-purpose withdrawal with immediate effect. Trigger downstream: stop processing, notify processors, update records.</li>
+              <li><strong>Layer 5 - Periodic Consent Refresh:</strong> If you materially change your processing purposes, re-seek consent - do not just update the privacy policy quietly. Material changes require a clear re-consent flow.</li>
             </ul>
             <p>Review your existing consent flows against these five pillars today. If any fail the test, you are already in a remediation cycle you would rather start before an audit than after one. For the full picture on <a href="https://seccomply.net/resources/blog/significant-data-fiduciary-sdf" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>what additional obligations apply to Significant Data Fiduciaries, read Part 4 of this series</a>.</p>
           </section>
 
           <div className="cta-banner">
             <h3>Ready to Build DPDP Compliance?</h3>
-            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises — from gap assessment to audit-ready documentation.</p>
+            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises - from gap assessment to audit-ready documentation.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free DPDP Consultation →</a>
             </div>
@@ -397,7 +397,7 @@ export default function ConsentUnderDPDPAct() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What are the five pillars of valid consent under the DPDP Act?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>The five pillars under Section 6 are: Free (not coerced or bundled with service access), Specific (tied to a particular purpose, not a blanket permission), Informed (accompanied by a clear notice before consent is sought), Unconditional (not bundling essential and non-essential processing), and Unambiguous (requiring a clear affirmative action — no pre-ticked boxes or silence as consent).</p></div>
+              <div className="faq-a"><p>The five pillars under Section 6 are: Free (not coerced or bundled with service access), Specific (tied to a particular purpose, not a blanket permission), Informed (accompanied by a clear notice before consent is sought), Unconditional (not bundling essential and non-essential processing), and Unambiguous (requiring a clear affirmative action - no pre-ticked boxes or silence as consent).</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Are pre-ticked checkboxes valid consent under the DPDP Act?</strong><span className="faq-ch">▾</span></div>
@@ -405,7 +405,7 @@ export default function ConsentUnderDPDPAct() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the difference between a privacy notice and consent under the DPDP Act?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>A Notice is a disclosure — it tells users what data is collected, why, how it is used, and what their rights are. Consent is the active agreement by the Data Principal that follows the Notice. Publishing a privacy policy is part of the Notice obligation; it does not constitute consent. Both are required, and consent cannot be sought before the Notice is provided.</p></div>
+              <div className="faq-a"><p>A Notice is a disclosure - it tells users what data is collected, why, how it is used, and what their rights are. Consent is the active agreement by the Data Principal that follows the Notice. Publishing a privacy policy is part of the Notice obligation; it does not constitute consent. Both are required, and consent cannot be sought before the Notice is provided.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What are Consent Managers under Section 6(9) of the DPDP Act?</strong><span className="faq-ch">▾</span></div>
@@ -413,7 +413,7 @@ export default function ConsentUnderDPDPAct() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can organisations process personal data without consent under the DPDP Act?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes, in specific, narrow circumstances defined under Section 7 — including State or legal obligations, performance of a contract, medical emergencies, employment-related processing, and public interest functions. These are not loopholes and each has strict applicability criteria. Commercial SaaS companies generally cannot invoke State purposes or public interest as a lawful basis for standard business data processing.</p></div>
+              <div className="faq-a"><p>Yes, in specific, narrow circumstances defined under Section 7 - including State or legal obligations, performance of a contract, medical emergencies, employment-related processing, and public interest functions. These are not loopholes and each has strict applicability criteria. Commercial SaaS companies generally cannot invoke State purposes or public interest as a lawful basis for standard business data processing.</p></div>
             </div>
 
           </section>
@@ -452,7 +452,7 @@ export default function ConsentUnderDPDPAct() {
           </div>
           <div className="sb-cta">
             <h4>Need DPDP Compliance Help?</h4>
-            <p>We run structured DPDP gap assessments — from data mapping to audit-ready documentation.</p>
+            <p>We run structured DPDP gap assessments - from data mapping to audit-ready documentation.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

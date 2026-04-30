@@ -15,7 +15,7 @@ export default function DataPrincipalFiduciaryProcessor() {
       const sections = document.querySelectorAll('section[id]'); const tocLinks = document.querySelectorAll('.toc-link');
       if (sections.length && tocLinks.length) { const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id)); }); }, { rootMargin: '-60px 0px -55% 0px', threshold: 0 }); sections.forEach(s => obs.observe(s)); }
       const btt = document.getElementById('btt'); window.addEventListener('scroll', () => { if (btt) btt.classList.toggle('vis', window.scrollY > 600); }, { passive: true });
-      const url = encodeURIComponent('https://seccomply.net/resources/blog/data-principal-fiduciary-processor'); const ttl = encodeURIComponent('Data Principal vs Data Fiduciary vs Data Processor — SecComply');
+      const url = encodeURIComponent('https://seccomply.net/resources/blog/data-principal-fiduciary-processor'); const ttl = encodeURIComponent('Data Principal vs Data Fiduciary vs Data Processor - SecComply');
       const sl = document.getElementById('sl'); const st = document.getElementById('st');
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
       if (st) st.href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + ttl + '&via=seccomply';
@@ -29,7 +29,7 @@ export default function DataPrincipalFiduciaryProcessor() {
   const SLUG = 'data-principal-fiduciary-processor';
   const jsonLd = {
     "@context":"https://schema.org","@graph":[
-      {"@type":"Article","headline":"Data Principal vs Data Fiduciary vs Data Processor — Roles Explained Under India's DPDP Act","description":"India's DPDP Act defines three roles — Data Principal, Data Fiduciary, and Data Processor. Understand who you are and what obligations apply.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply","logo":{"@type":"ImageObject","url":"https://seccomply.net/assets/images/logo.png"}},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/data-principal-fiduciary-processor","keywords":"data principal, data fiduciary, data processor, DPDP Act, India privacy","articleSection":"DPDP Act","wordCount":1800,"timeRequired":"PT7M"},
+      {"@type":"Article","headline":"Data Principal vs Data Fiduciary vs Data Processor - Roles Explained Under India's DPDP Act","description":"India's DPDP Act defines three roles - Data Principal, Data Fiduciary, and Data Processor. Understand who you are and what obligations apply.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply","logo":{"@type":"ImageObject","url":"https://seccomply.net/assets/images/logo.png"}},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/data-principal-fiduciary-processor","keywords":"data principal, data fiduciary, data processor, DPDP Act, India privacy","articleSection":"DPDP Act","wordCount":1800,"timeRequired":"PT7M"},
       {"@type":"FAQPage","mainEntity":[
         {"@type":"Question","name":"What is the difference between a Data Fiduciary and a Data Processor under the DPDP Act?","acceptedAnswer":{"@type":"Answer","text":"A Data Fiduciary determines the purpose and means of processing personal data. A Data Processor processes data on behalf of a Fiduciary, following the Fiduciary's instructions. The Fiduciary holds primary accountability; the Processor's obligations are defined by contract."}},
         {"@type":"Question","name":"Can an organisation be both a Data Fiduciary and a Data Processor at the same time?","acceptedAnswer":{"@type":"Answer","text":"Yes. An HR SaaS platform is a Data Processor toward its enterprise clients but a Data Fiduciary toward its own employees. Each role carries its own set of obligations that must be managed separately."}},
@@ -167,12 +167,12 @@ export default function DataPrincipalFiduciaryProcessor() {
   return (
     <Layout>
       <Head>
-        <title>Data Principal vs Data Fiduciary vs Data Processor — DPDP Act Roles | SecComply</title>
+        <title>Data Principal vs Data Fiduciary vs Data Processor - DPDP Act Roles | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="India's DPDP Act defines three distinct roles — Data Principal, Data Fiduciary, and Data Processor. Understand who you are in the data ecosystem, your obligations, and what happens when one entity holds multiple roles." />
+        <meta name="description" content="India's DPDP Act defines three distinct roles - Data Principal, Data Fiduciary, and Data Processor. Understand who you are in the data ecosystem, your obligations, and what happens when one entity holds multiple roles." />
         <meta name="keywords" content="data principal DPDP Act, data fiduciary India, data processor DPDP, DPDP Act roles explained, who is data fiduciary, DPDP Act 2023 definitions, data processor obligations India" />
-        <meta property="og:title" content="Data Principal vs Data Fiduciary vs Data Processor — Roles Under India's DPDP Act" />
+        <meta property="og:title" content="Data Principal vs Data Fiduciary vs Data Processor - Roles Under India's DPDP Act" />
         <meta property="og:description" content="Before your organisation can think about DPDP compliance, you need to know who you are in the data ecosystem. This guide breaks down all three roles with examples and obligations." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/data-principal-fiduciary-processor" />
@@ -200,8 +200,8 @@ export default function DataPrincipalFiduciaryProcessor() {
           <span className="badge badge-am">🏢 India Compliance</span>
           <span className="badge badge-gr">Series · Part 1 of 6</span>
         </div>
-        <h1 className="hero-h1">Data Principal vs Data Fiduciary vs Data Processor — <em>Roles Explained</em> Under the DPDP Act</h1>
-        <p className="hero-sub">Before your organisation can think about DPDP compliance, you need to know who you are in the data ecosystem. Confusing these three roles is not a semantic error — it is a compliance risk that creates real blind spots in your consent architecture and vendor contracts.</p>
+        <h1 className="hero-h1">Data Principal vs Data Fiduciary vs Data Processor - <em>Roles Explained</em> Under the DPDP Act</h1>
+        <p className="hero-sub">Before your organisation can think about DPDP compliance, you need to know who you are in the data ecosystem. Confusing these three roles is not a semantic error - it is a compliance risk that creates real blind spots in your consent architecture and vendor contracts.</p>
 
         <div className="author-strip">
           <div className="avatar">CM</div>
@@ -215,13 +215,13 @@ export default function DataPrincipalFiduciaryProcessor() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1200&h=480&fit=crop" alt="Data privacy roles DPDP Act India compliance" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">The DPDP Act 2023 introduces three clearly defined roles. Getting your classification right is the starting line for compliance — not a checkbox to tick after the fact.</p>
+        <p className="img-cap">The DPDP Act 2023 introduces three clearly defined roles. Getting your classification right is the starting line for compliance - not a checkbox to tick after the fact.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 320" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
             <defs><pattern id="pg1" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
             <rect width="960" height="320" fill="url(#pg1)"/>
-            <text x="480" y="24" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DPDP Act 2023 — The Three Roles at a Glance</text>
+            <text x="480" y="24" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DPDP Act 2023 - The Three Roles at a Glance</text>
             <rect x="30" y="40" width="265" height="240" rx="12" fill="#091826" stroke="#818cf828" strokeWidth="1.5"/>
             <rect x="30" y="40" width="265" height="3" rx="1.5" fill="#818cf8"/>
             <text x="162" y="70" textAnchor="middle" fill="#818cf8" fontSize="10" fontWeight="800" fontFamily="sans-serif">DATA PRINCIPAL · Section 2(j)</text>
@@ -235,14 +235,14 @@ export default function DataPrincipalFiduciaryProcessor() {
             <text x="480" y="92" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">The Decision Maker</text>
             {['Consent management','Purpose limitation','Data minimisation','Breach notification','Grievance mechanism'].map((t,i)=>(<g key={i}><circle cx="368" cy={118+i*24} r="3" fill="#E8632B" opacity="0.6"/><text x="380" y={122+i*24} fill="rgba(200,214,229,0.55)" fontSize="10" fontFamily="sans-serif">{t}</text></g>))}
             <rect x="360" y="245" width="240" height="22" rx="6" fill="rgba(232,99,43,0.07)" stroke="rgba(232,99,43,0.2)" strokeWidth="1"/>
-            <text x="480" y="260" textAnchor="middle" fill="#E8632B" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">Primary accountability — duty of care</text>
+            <text x="480" y="260" textAnchor="middle" fill="#E8632B" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">Primary accountability - duty of care</text>
             <rect x="660" y="40" width="265" height="240" rx="12" fill="#071820" stroke="#06d6a028" strokeWidth="1.5"/>
             <rect x="660" y="40" width="265" height="3" rx="1.5" fill="#06d6a0"/>
             <text x="792" y="70" textAnchor="middle" fill="#06d6a0" fontSize="10" fontWeight="800" fontFamily="sans-serif">DATA PROCESSOR · Section 2(k)</text>
             <text x="792" y="92" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">The Executor</text>
             {['Cloud providers (AWS, Azure)','Payroll vendors','Analytics firms','VAPT security providers'].map((t,i)=>(<g key={i}><circle cx="688" cy={118+i*28} r="3" fill="#06d6a0" opacity="0.5"/><text x="700" y={122+i*28} fill="rgba(200,214,229,0.55)" fontSize="10" fontFamily="sans-serif">{t}</text></g>))}
             <rect x="680" y="245" width="225" height="22" rx="6" fill="rgba(6,214,160,0.05)" stroke="rgba(6,214,160,0.2)" strokeWidth="1"/>
-            <text x="792" y="260" textAnchor="middle" fill="#06d6a0" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">Secondary accountability — via contract</text>
+            <text x="792" y="260" textAnchor="middle" fill="#06d6a0" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">Secondary accountability - via contract</text>
             <text x="480" y="300" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">Key test: Who determines the PURPOSE of processing? That entity is the Data Fiduciary.</text>
           </svg>
         </div>
@@ -272,7 +272,7 @@ export default function DataPrincipalFiduciaryProcessor() {
             <a href="https://seccomply.net/resources/blog/8-rights-data-principals-dpdp" style={{color:'var(--cy)',textDecoration:'none'}}>Part 2: 8 Rights →</a>
           </div>
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>India's DPDP Act introduces a clear cast of characters — each with distinct rights, obligations, and accountability. Before your organisation can think about compliance, you need to know <strong>who you are in the data ecosystem</strong>. Confusing these roles is not a semantic error — it creates real compliance blind spots in your consent architecture and vendor contracts.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>India's DPDP Act introduces a clear cast of characters - each with distinct rights, obligations, and accountability. Before your organisation can think about compliance, you need to know <strong>who you are in the data ecosystem</strong>. Confusing these roles is not a semantic error - it creates real compliance blind spots in your consent architecture and vendor contracts.</p>
 
           <div className="role-grid anim">
             <div className="role-card rc-p"><div className="rc-label">Data Principal</div><div className="rh">The Individual</div><div className="rb">The person data is about. Has 8 enforceable rights.</div><div className="rs">Section 2(j) · DPDP Act 2023</div></div>
@@ -281,28 +281,28 @@ export default function DataPrincipalFiduciaryProcessor() {
           </div>
 
           <section id="data-principal">
-            <h2>Data Principal — <em>The Person Behind the Data</em></h2>
+            <h2>Data Principal - <em>The Person Behind the Data</em></h2>
             <p><strong>Definition (Section 2(j)):</strong> A Data Principal is the individual to whom the personal data relates. If the data is about you, you are the Data Principal.</p>
             <h3>Who qualifies?</h3>
             <ul>
               <li>A customer filling out a KYC form on a fintech app</li>
               <li>An employee whose HR records are maintained by their employer</li>
               <li>A patient whose medical history is stored in a hospital system</li>
-              <li>A child — in which case, rights are exercised by the parent or lawful guardian</li>
+              <li>A child - in which case, rights are exercised by the parent or lawful guardian</li>
             </ul>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>Children as Data Principals</strong>
-                <p>The DPDP Act gives special protection to minors under 18. Any processing of a child personal data requires verifiable parental consent. Organisations are prohibited from behavioural monitoring or targeted advertising directed at children — even on general-purpose platforms.</p>
+                <p>The DPDP Act gives special protection to minors under 18. Any processing of a child personal data requires verifiable parental consent. Organisations are prohibited from behavioural monitoring or targeted advertising directed at children - even on general-purpose platforms.</p>
               </div>
             </div>
-            <p>The Act grants Data Principals 8 enforceable rights — from accessing their data to grievance redressal. These are covered in full in <a href="https://seccomply.net/resources/blog/8-rights-data-principals-dpdp" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>Part 2 of this series on the 8 rights of Data Principals</a>.</p>
+            <p>The Act grants Data Principals 8 enforceable rights - from accessing their data to grievance redressal. These are covered in full in <a href="https://seccomply.net/resources/blog/8-rights-data-principals-dpdp" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>Part 2 of this series on the 8 rights of Data Principals</a>.</p>
           </section>
 
           <section id="data-fiduciary">
-            <h2>Data Fiduciary — <em>The Decision Maker</em></h2>
-            <p><strong>Definition (Section 2(i)):</strong> A Data Fiduciary is any person (including a company, firm, or government body) who alone or in conjunction with others determines the <strong>purpose and means</strong> of processing personal data. The term "fiduciary" is deliberate — the law treats this entity as holding data in trust, with a duty of care toward the Data Principal.</p>
+            <h2>Data Fiduciary - <em>The Decision Maker</em></h2>
+            <p><strong>Definition (Section 2(i)):</strong> A Data Fiduciary is any person (including a company, firm, or government body) who alone or in conjunction with others determines the <strong>purpose and means</strong> of processing personal data. The term "fiduciary" is deliberate - the law treats this entity as holding data in trust, with a duty of care toward the Data Principal.</p>
             <h3>Who is a Data Fiduciary?</h3>
             <ul>
               <li>An e-commerce platform that collects customer addresses and decides why (order delivery) and how (stored in their database, shared with logistics partners) that data is used</li>
@@ -322,13 +322,13 @@ export default function DataPrincipalFiduciaryProcessor() {
               <span className="co-icon">🔑</span>
               <div className="co-body">
                 <strong>The Key Test</strong>
-                <p>Who determines the purpose of processing? If you decide why data is collected and how it is used — you are the Data Fiduciary, regardless of what your contracts say. Purpose-determination is the defining criterion, not company size or industry.</p>
+                <p>Who determines the purpose of processing? If you decide why data is collected and how it is used - you are the Data Fiduciary, regardless of what your contracts say. Purpose-determination is the defining criterion, not company size or industry.</p>
               </div>
             </div>
           </section>
 
           <section id="data-processor">
-            <h2>Data Processor — <em>The Executor</em></h2>
+            <h2>Data Processor - <em>The Executor</em></h2>
             <p><strong>Definition (Section 2(k)):</strong> A Data Processor is any person who processes personal data <strong>on behalf of</strong> a Data Fiduciary.</p>
             <h3>Who is a Data Processor?</h3>
             <ul>
@@ -347,17 +347,17 @@ export default function DataPrincipalFiduciaryProcessor() {
 
           <section id="multiple-roles">
             <h2>Can One Entity <em>Hold Multiple Roles?</em></h2>
-            <p>Yes — and this is where most compliance confusion originates. Consider an HR SaaS platform:</p>
+            <p>Yes - and this is where most compliance confusion originates. Consider an HR SaaS platform:</p>
             <ul>
-              <li><strong>Toward your customers (employers):</strong> You are a <strong>Data Processor</strong> — processing employee data on your client behalf, following their configuration.</li>
-              <li><strong>Toward your own employees:</strong> You are a <strong>Data Fiduciary</strong> — determining how your team payroll, attendance, and performance data is collected and used.</li>
+              <li><strong>Toward your customers (employers):</strong> You are a <strong>Data Processor</strong> - processing employee data on your client behalf, following their configuration.</li>
+              <li><strong>Toward your own employees:</strong> You are a <strong>Data Fiduciary</strong> - determining how your team payroll, attendance, and performance data is collected and used.</li>
               <li><strong>Toward your vendors (background verification firms):</strong> You are a <strong>Data Fiduciary</strong> who has engaged a <strong>Data Processor</strong>.</li>
             </ul>
             <div className="callout co-info">
               <span className="co-icon">💡</span>
               <div className="co-body">
                 <strong>Why This Matters</strong>
-                <p>Getting this mapping wrong creates real compliance blind spots. You may be over-engineering consent workflows for data you process as a Processor — or skipping them where you actually are the Fiduciary. A documented role classification matrix is what survives an audit.</p>
+                <p>Getting this mapping wrong creates real compliance blind spots. You may be over-engineering consent workflows for data you process as a Processor - or skipping them where you actually are the Fiduciary. A documented role classification matrix is what survives an audit.</p>
               </div>
             </div>
           </section>
@@ -371,7 +371,7 @@ export default function DataPrincipalFiduciaryProcessor() {
           </section>
 
           <section id="summary-table">
-            <h2>Summary — <em>All Three Roles</em></h2>
+            <h2>Summary - <em>All Three Roles</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th></th><th>Data Principal</th><th>Data Fiduciary</th><th>Data Processor</th></tr></thead>
@@ -385,7 +385,7 @@ export default function DataPrincipalFiduciaryProcessor() {
 
           <div className="cta-banner">
             <h3>Unsure Which Role Applies to Your Organisation?</h3>
-            <p>SecComply runs structured DPDP gap assessments that map your data flows, classify your roles, and surface your exact compliance obligations — no guesswork.</p>
+            <p>SecComply runs structured DPDP gap assessments that map your data flows, classify your roles, and surface your exact compliance obligations - no guesswork.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free DPDP Consultation →</a>
             </div>
@@ -400,10 +400,10 @@ export default function DataPrincipalFiduciaryProcessor() {
           <section id="faq" className="faq-section">
             <h2>Frequently Asked <em>Questions</em></h2>
             {[
-              {q:"What is the difference between a Data Fiduciary and a Data Processor under the DPDP Act?",a:"A Data Fiduciary determines the purpose and means of processing personal data — they decide why data is collected and how it is used. A Data Processor processes data on behalf of a Fiduciary, following the Fiduciary instructions. The Fiduciary holds primary accountability; the Processor obligations are defined by contract."},
-              {q:"Can an organisation be both a Data Fiduciary and a Data Processor at the same time?",a:"Yes. This is common for SaaS companies. An HR SaaS platform is a Data Processor toward its enterprise clients but a Data Fiduciary toward its own employees. Each role carries its own set of obligations that must be managed separately — a single compliance programme that does not distinguish between these roles will have gaps."},
+              {q:"What is the difference between a Data Fiduciary and a Data Processor under the DPDP Act?",a:"A Data Fiduciary determines the purpose and means of processing personal data - they decide why data is collected and how it is used. A Data Processor processes data on behalf of a Fiduciary, following the Fiduciary instructions. The Fiduciary holds primary accountability; the Processor obligations are defined by contract."},
+              {q:"Can an organisation be both a Data Fiduciary and a Data Processor at the same time?",a:"Yes. This is common for SaaS companies. An HR SaaS platform is a Data Processor toward its enterprise clients but a Data Fiduciary toward its own employees. Each role carries its own set of obligations that must be managed separately - a single compliance programme that does not distinguish between these roles will have gaps."},
               {q:"Does the DPDP Act apply to foreign companies processing data of Indian users?",a:"Yes. The DPDP Act applies to the processing of digital personal data within India and to processing outside India if it involves offering goods or services to individuals in India. Foreign companies with Indian users are in scope regardless of where their servers are located."},
-              {q:"What happens if a Data Processor violates obligations — who is accountable?",a:"The Data Fiduciary remains primarily accountable for the actions of their Data Processors. The Fiduciary must ensure Processors comply via contractual obligations. The DPDP Act places ultimate responsibility on the Fiduciary who engaged the Processor, though Processors must also independently implement adequate security safeguards."},
+              {q:"What happens if a Data Processor violates obligations - who is accountable?",a:"The Data Fiduciary remains primarily accountable for the actions of their Data Processors. The Fiduciary must ensure Processors comply via contractual obligations. The DPDP Act places ultimate responsibility on the Fiduciary who engaged the Processor, though Processors must also independently implement adequate security safeguards."},
               {q:"How does the DPDP Act define a child Data Principal?",a:"Under the DPDP Act, a child is defined as an individual under 18 years of age. When a Data Principal is a child, their rights are exercised by a parent or lawful guardian. Processing of a child personal data requires verifiable parental consent, and behavioural monitoring or targeted advertising directed at children is prohibited even on general-purpose platforms."},
             ].map((f,i)=>(
               <div key={i} className="faq-item">

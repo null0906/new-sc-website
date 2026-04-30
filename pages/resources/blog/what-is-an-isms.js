@@ -187,8 +187,8 @@ export default function WhatIsAnISMS() {
           <span className="badge badge-bl">🛡️ Information Security</span>
           <span className="badge badge-gr">🚀 Startup Guide</span>
         </div>
-        <h1 className="hero-h1">What Is an ISMS? — <em>Information Security Management System</em> in Plain English</h1>
-        <p className="hero-sub">An ISMS is not a product you buy or a document you write. It is a management system — a structured, repeatable way of identifying security risks, deciding how to treat them, implementing controls, and proving they work. Here is what that actually looks like in practice.</p>
+        <h1 className="hero-h1">What Is an ISMS? - <em>Information Security Management System</em> in Plain English</h1>
+        <p className="hero-sub">An ISMS is not a product you buy or a document you write. It is a management system - a structured, repeatable way of identifying security risks, deciding how to treat them, implementing controls, and proving they work. Here is what that actually looks like in practice.</p>
 
         <div className="author-strip">
           <div className="avatar">SS</div>
@@ -202,13 +202,13 @@ export default function WhatIsAnISMS() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1200&h=480&fit=crop" alt="ISMS Information Security Management System explained" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">An ISMS is a management system — it governs how your organisation identifies, manages, and continuously improves its approach to information security.</p>
+        <p className="img-cap">An ISMS is a management system - it governs how your organisation identifies, manages, and continuously improves its approach to information security.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pgs2" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pgs2)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">The ISMS — Four Core Components</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">The ISMS - Four Core Components</text>
           {[{t:"PLAN",sub:"Risk assessment, scope, objectives",col:"#818cf8",x:50},{t:"DO",sub:"Implement controls, policies, training",col:"#E8632B",x:280},{t:"CHECK",sub:"Internal audit, monitoring, review",col:"#06d6a0",x:520},{t:"ACT",sub:"Correct, improve, iterate",col:"#ffb703",x:750}].map(({t,sub,col,x},i) => (
             <g key={i}>
               <rect x={x} y="45" width="180" height="160" rx="14" fill="#091826" stroke={col+"25"} strokeWidth="1.5"/>
@@ -223,7 +223,7 @@ export default function WhatIsAnISMS() {
           ))}
           <defs><marker id="ar1" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="rgba(200,214,229,0.3)"/></marker></defs>
           <text x="480" y="240" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="10" fontWeight="700" fontFamily="sans-serif">PLAN → DO → CHECK → ACT → REPEAT</text>
-          <text x="480" y="260" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">The PDCA cycle runs continuously. Each cycle improves the system. The ISMS is never "done" — it is always being improved.</text>
+          <text x="480" y="260" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">The PDCA cycle runs continuously. Each cycle improves the system. The ISMS is never "done" - it is always being improved.</text>
         </svg>
         </div>
 
@@ -246,30 +246,30 @@ export default function WhatIsAnISMS() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>An ISMS — Information Security Management System — is the most misunderstood acronym in compliance. Most people hear it and picture a document, a tool, or a checklist. It is none of those things. <strong>An ISMS is a management system</strong> — a structured, repeatable way of identifying security risks, deciding how to treat them, implementing controls, and proving they work. ISO 27001 is the international standard that defines what an ISMS must contain.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>An ISMS - Information Security Management System - is the most misunderstood acronym in compliance. Most people hear it and picture a document, a tool, or a checklist. It is none of those things. <strong>An ISMS is a management system</strong> - a structured, repeatable way of identifying security risks, deciding how to treat them, implementing controls, and proving they work. ISO 27001 is the international standard that defines what an ISMS must contain.</p>
 
           <section id="what-is-it">
             <h2>What an ISMS <em>Actually Is</em></h2>
-            <p>Think of an ISMS as the operating system for how your organisation handles information security. It is not a single document or a single tool — it is the entire ecosystem of policies, processes, people, technology, and evidence that together ensure your organisation manages security risks systematically rather than reactively.</p>
+            <p>Think of an ISMS as the operating system for how your organisation handles information security. It is not a single document or a single tool - it is the entire ecosystem of policies, processes, people, technology, and evidence that together ensure your organisation manages security risks systematically rather than reactively.</p>
             <p>An ISMS answers four questions continuously: <strong>What could go wrong?</strong> (risk assessment), <strong>What are we doing about it?</strong> (risk treatment and controls), <strong>Is it working?</strong> (monitoring, audit, review), and <strong>How do we improve?</strong> (corrective actions, management review).</p>
           </section>
 
           <section id="components">
             <h2>The Core <em>Components</em></h2>
             <ul>
-              <li><strong>Scope:</strong> What business functions, systems, locations, and data flows are covered by the ISMS. Not everything has to be in scope — but what is in scope must be managed rigorously.</li>
+              <li><strong>Scope:</strong> What business functions, systems, locations, and data flows are covered by the ISMS. Not everything has to be in scope - but what is in scope must be managed rigorously.</li>
               <li><strong>Information Security Policy:</strong> The top-level statement of management commitment to information security. Short, signed by leadership, and referenced by every other policy.</li>
               <li><strong>Risk Assessment:</strong> A formal methodology for identifying risks, assessing their likelihood and impact, and deciding how to treat each one.</li>
               <li><strong>Statement of Applicability (SoA):</strong> A document listing all 93 Annex A controls and stating which apply, which do not, and why. This is one of the most important audit artefacts.</li>
-              <li><strong>Controls:</strong> The technical and organisational measures you implement to treat identified risks — access controls, encryption, incident response, vendor management, etc.</li>
+              <li><strong>Controls:</strong> The technical and organisational measures you implement to treat identified risks - access controls, encryption, incident response, vendor management, etc.</li>
               <li><strong>Internal Audit:</strong> A periodic, independent review of whether your ISMS is operating as documented.</li>
               <li><strong>Management Review:</strong> A formal meeting where leadership reviews the ISMS performance, risk posture, and improvement opportunities.</li>
             </ul>
           </section>
 
           <section id="pdca">
-            <h2>The PDCA Cycle — <em>How an ISMS Operates</em></h2>
-            <p>An ISMS runs on the PDCA (Plan-Do-Check-Act) cycle — an iterative management method for continuous improvement:</p>
+            <h2>The PDCA Cycle - <em>How an ISMS Operates</em></h2>
+            <p>An ISMS runs on the PDCA (Plan-Do-Check-Act) cycle - an iterative management method for continuous improvement:</p>
             <ul>
               <li><strong>Plan:</strong> Define the ISMS scope, conduct risk assessment, set objectives, and design controls. This is where you figure out what needs protecting and how.</li>
               <li><strong>Do:</strong> Implement the controls, write policies and procedures, train staff, and put the ISMS into operation. This is where theory becomes practice.</li>
@@ -286,7 +286,7 @@ export default function WhatIsAnISMS() {
               <span className="co-icon">🔑</span>
               <div className="co-body">
                 <strong>Scope Strategy</strong>
-                <p>Start tight. A smaller, well-defined scope achieves certification faster and at lower cost. Many startups certify their core SaaS product and primary cloud environment first, then expand scope in subsequent years. A tight initial scope is a feature, not a compromise — it is the standard approach recommended by most certification bodies.</p>
+                <p>Start tight. A smaller, well-defined scope achieves certification faster and at lower cost. Many startups certify their core SaaS product and primary cloud environment first, then expand scope in subsequent years. A tight initial scope is a feature, not a compromise - it is the standard approach recommended by most certification bodies.</p>
               </div>
             </div>
           </section>
@@ -299,8 +299,8 @@ export default function WhatIsAnISMS() {
 
           <section id="controls">
             <h2>Controls <em>and Evidence</em></h2>
-            <p>Controls are the measures you implement to treat identified risks. ISO 27001:2022 defines 93 controls across four categories: Organisational (37), People (8), Physical (14), and Technological (34). Not all 93 apply to every organisation — your Statement of Applicability documents which apply and which do not.</p>
-            <p>For each control that applies, you need three things: a <strong>policy or procedure</strong> that documents what the control is, <strong>technical implementation</strong> that enforces it, and <strong>evidence</strong> that it is operating. Auditors test all three. A policy without implementation is a finding. Implementation without evidence is also a finding. For the complete control breakdown, see our <a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>ISO 27001 Annex A — 93 Controls Explained guide</a>.</p>
+            <p>Controls are the measures you implement to treat identified risks. ISO 27001:2022 defines 93 controls across four categories: Organisational (37), People (8), Physical (14), and Technological (34). Not all 93 apply to every organisation - your Statement of Applicability documents which apply and which do not.</p>
+            <p>For each control that applies, you need three things: a <strong>policy or procedure</strong> that documents what the control is, <strong>technical implementation</strong> that enforces it, and <strong>evidence</strong> that it is operating. Auditors test all three. A policy without implementation is a finding. Implementation without evidence is also a finding. For the complete control breakdown, see our <a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>ISO 27001 Annex A - 93 Controls Explained guide</a>.</p>
           </section>
 
           <section id="audit">
@@ -308,23 +308,23 @@ export default function WhatIsAnISMS() {
             <p>An ISMS requires two types of periodic review:</p>
             <ul>
               <li><strong>Internal Audit (Clause 9.2):</strong> You (or an independent internal auditor) review the ISMS against its own documented requirements and ISO 27001. The internal audit must be conducted at least once before the certification audit. Findings are documented and corrective actions tracked.</li>
-              <li><strong>Management Review (Clause 9.3):</strong> Leadership formally reviews the ISMS performance — risk posture changes, audit findings, incident trends, resource needs, and improvement opportunities. This meeting must be documented with minutes and action items.</li>
+              <li><strong>Management Review (Clause 9.3):</strong> Leadership formally reviews the ISMS performance - risk posture changes, audit findings, incident trends, resource needs, and improvement opportunities. This meeting must be documented with minutes and action items.</li>
             </ul>
           </section>
 
           <section id="not-an-isms">
             <h2>What an ISMS <em>Is Not</em></h2>
             <ul>
-              <li><strong>Not a product.</strong> You cannot buy an ISMS off the shelf. GRC platforms help you manage it, but the ISMS is the system itself — the policies, processes, people, and evidence.</li>
+              <li><strong>Not a product.</strong> You cannot buy an ISMS off the shelf. GRC platforms help you manage it, but the ISMS is the system itself - the policies, processes, people, and evidence.</li>
               <li><strong>Not a document.</strong> The ISMS includes documents (policies, procedures, risk registers), but it is not defined by them. An ISMS with perfect documentation but no operational controls is not an ISMS.</li>
               <li><strong>Not a one-time project.</strong> The ISMS runs continuously. It is never "done." The PDCA cycle ensures it improves with every iteration.</li>
-              <li><strong>Not just IT security.</strong> An ISMS covers people (training, HR security), physical security (office access, clean desk), and organisational controls (vendor management, business continuity) — not just firewalls and encryption.</li>
+              <li><strong>Not just IT security.</strong> An ISMS covers people (training, HR security), physical security (office access, clean desk), and organisational controls (vendor management, business continuity) - not just firewalls and encryption.</li>
             </ul>
           </section>
 
           <div className="cta-banner">
             <h3>Ready to Start Your ISO 27001 Journey?</h3>
-            <p>SecComply helps Indian startups and global enterprises implement ISO 27001 from gap assessment to certification — with realistic timelines and fixed-scope engagements.</p>
+            <p>SecComply helps Indian startups and global enterprises implement ISO 27001 from gap assessment to certification - with realistic timelines and fixed-scope engagements.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free ISO 27001 Consultation →</a>
             </div>
@@ -344,19 +344,19 @@ export default function WhatIsAnISMS() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is an ISMS the same as ISO 27001?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Not exactly. ISO 27001 is the standard that defines what an ISMS must look like. An ISMS is the actual management system you build and operate. You can have an ISMS without being ISO 27001 certified — but if you want the certification, your ISMS must meet ISO 27001 requirements.</p></div>
+              <div className="faq-a"><p>Not exactly. ISO 27001 is the standard that defines what an ISMS must look like. An ISMS is the actual management system you build and operate. You can have an ISMS without being ISO 27001 certified - but if you want the certification, your ISMS must meet ISO 27001 requirements.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How long does it take to build an ISMS?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>For a typical startup with 20-100 employees, building an ISMS from scratch takes 4-9 months — from initial scoping through to certification. If you have existing security practices (MFA, access reviews, incident response), much of the work is documenting and formalising what you already do.</p></div>
+              <div className="faq-a"><p>For a typical startup with 20-100 employees, building an ISMS from scratch takes 4-9 months - from initial scoping through to certification. If you have existing security practices (MFA, access reviews, incident response), much of the work is documenting and formalising what you already do.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Does every employee need to be involved in the ISMS?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Every employee needs security awareness training and must follow the ISMS policies. However, the core ISMS team is typically small — an ISMS owner or Information Security Manager, plus representatives from engineering, HR, and operations. Leadership involvement is required for management reviews.</p></div>
+              <div className="faq-a"><p>Every employee needs security awareness training and must follow the ISMS policies. However, the core ISMS team is typically small - an ISMS owner or Information Security Manager, plus representatives from engineering, HR, and operations. Leadership involvement is required for management reviews.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can a small startup have an ISMS?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. ISO 27001 scales to any organisation size. A 5-person startup will have a simpler ISMS than a 5,000-person enterprise — fewer assets, fewer risks, fewer controls — but the structure is the same. The standard explicitly allows scope to be proportional to the organisation.</p></div>
+              <div className="faq-a"><p>Yes. ISO 27001 scales to any organisation size. A 5-person startup will have a simpler ISMS than a 5,000-person enterprise - fewer assets, fewer risks, fewer controls - but the structure is the same. The standard explicitly allows scope to be proportional to the organisation.</p></div>
             </div>
 
           </section>
@@ -386,7 +386,7 @@ export default function WhatIsAnISMS() {
               <li><a href="https://seccomply.net/resources/blog/iso-27001-vs-soc2-vs-gdpr">ISO 27001 vs SOC 2 vs GDPR</a></li>
               <li><a href="https://seccomply.net/resources/blog/what-is-an-isms">▶ What Is an ISMS</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27001-business-value">Business Value of ISO 27001</a></li>
-              <li><a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls">Annex A — 93 Controls</a></li>
+              <li><a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls">Annex A - 93 Controls</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27001-risk-assessment">Risk Assessment in ISO 27001</a></li>
             </ul>
           </div>
@@ -396,7 +396,7 @@ export default function WhatIsAnISMS() {
           </div>
           <div className="sb-cta">
             <h4>Need ISO 27001 Certification?</h4>
-            <p>Gap assessment to certification — we handle the entire journey.</p>
+            <p>Gap assessment to certification - we handle the entire journey.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

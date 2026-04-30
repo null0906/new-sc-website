@@ -38,7 +38,7 @@ export default function WhoDoesDPDPApplyTo() {
         <meta property="article:author" content="Chandrika Mulage" />
         <meta property="article:tag" content="DPDP Act" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/who-does-dpdp-apply-to" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Who Does the DPDP Act Apply To? — A Checklist for Indian Businesses","description":"A plain-English applicability checklist for Indian businesses. Determine your DPDP scope, role, and industry-specific nuances.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/who-does-dpdp-apply-to","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Who Does DPDP Apply To","item":"https://seccomply.net/resources/blog/who-does-dpdp-apply-to"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Who Does the DPDP Act Apply To? - A Checklist for Indian Businesses","description":"A plain-English applicability checklist for Indian businesses. Determine your DPDP scope, role, and industry-specific nuances.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/who-does-dpdp-apply-to","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Who Does DPDP Apply To","item":"https://seccomply.net/resources/blog/who-does-dpdp-apply-to"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -186,9 +186,9 @@ export default function WhoDoesDPDPApplyTo() {
           <span className="badge badge-cy">🇮🇳 DPDP Act 2023</span>
           <span className="badge badge-bl">📋 Data Privacy</span>
           <span className="badge badge-am">🏢 India Compliance</span>
-          <span className="badge badge-gr">Phase 1 — Basics</span>
+          <span className="badge badge-gr">Phase 1 - Basics</span>
         </div>
-        <h1 className="hero-h1">Who Does the DPDP Act Apply To? — <em>A Checklist</em> for Indian Businesses</h1>
+        <h1 className="hero-h1">Who Does the DPDP Act Apply To? - <em>A Checklist</em> for Indian Businesses</h1>
         <p className="hero-sub">The most common question from Indian founders: does the DPDP Act even apply to us? For the vast majority of businesses in India's digital economy, yes. But the specifics depend on your role, your data, and who your users are. Here is the checklist.</p>
 
         <div className="author-strip">
@@ -209,7 +209,7 @@ export default function WhoDoesDPDPApplyTo() {
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pg7" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pg7)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DPDP Act Applicability — Industry Snapshots</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DPDP Act Applicability - Industry Snapshots</text>
           
           <rect x="30" y="38" width="178" height="150" rx="12" fill="#091826" stroke="#E8632B28" strokeWidth="1.5"/>
           <rect x="30" y="38" width="178" height="3" rx="1.5" fill="#E8632B"/>
@@ -273,16 +273,16 @@ export default function WhoDoesDPDPApplyTo() {
 
           <div className="series-nav anim">
             <span>📚 DPDP Act Series</span>
-            <strong>Phase 1 — Basics</strong>
+            <strong>Phase 1 - Basics</strong>
           </div>
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The most common question from Indian startup founders: <em>does the DPDP Act even apply to us?</em> For the vast majority of businesses in India's digital economy — yes. But the specifics depend on your role, your data, and who your users are.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The most common question from Indian startup founders: <em>does the DPDP Act even apply to us?</em> For the vast majority of businesses in India's digital economy - yes. But the specifics depend on your role, your data, and who your users are.</p>
 
           <section id="basic-test">
             <h2>The Basic <em>Applicability Test</em></h2>
             <p>You are in scope if <strong>either</strong> of these is true:</p>
             <div className="check-list">
-              <div className="check-item yes"><span className="check-mark y">1</span><div className="check-body"><strong style={{display:'block',color:'var(--tx)',marginBottom:'.2rem'}}>Processing data of individuals in India</strong>You process personal data of individuals located in India — regardless of where your company is registered or where your servers sit.</div></div>
+              <div className="check-item yes"><span className="check-mark y">1</span><div className="check-body"><strong style={{display:'block',color:'var(--tx)',marginBottom:'.2rem'}}>Processing data of individuals in India</strong>You process personal data of individuals located in India - regardless of where your company is registered or where your servers sit.</div></div>
               <div className="check-item yes"><span className="check-mark y">2</span><div className="check-body"><strong style={{display:'block',color:'var(--tx)',marginBottom:'.2rem'}}>Offering goods or services to Indian users</strong>You process personal data outside India in connection with offering goods or services to individuals in India.</div></div>
             </div>
             <div className="callout co-key">
@@ -314,7 +314,7 @@ export default function WhoDoesDPDPApplyTo() {
               <table className="data-table">
                 <thead><tr><th>Role</th><th>Who You Are</th><th>Key Obligations</th></tr></thead>
                 <tbody>
-                  {[['Data Fiduciary','You decide what to collect and why. Every company with a product.','Consent, notice, rights, security, breach notification'],['Data Processor','You process on another company instruction. Cloud, SaaS tools, agencies.','DPAs with clients, security, assist with rights requests'],['Both','Most SaaS — Fiduciary for own users, Processor for enterprise clients.','All of the above — simultaneously']].map(([r,w,k],i)=>(<tr key={i}><td>{r}</td><td>{w}</td><td>{k}</td></tr>))}
+                  {[['Data Fiduciary','You decide what to collect and why. Every company with a product.','Consent, notice, rights, security, breach notification'],['Data Processor','You process on another company instruction. Cloud, SaaS tools, agencies.','DPAs with clients, security, assist with rights requests'],['Both','Most SaaS - Fiduciary for own users, Processor for enterprise clients.','All of the above - simultaneously']].map(([r,w,k],i)=>(<tr key={i}><td>{r}</td><td>{w}</td><td>{k}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -326,7 +326,7 @@ export default function WhoDoesDPDPApplyTo() {
               <table className="data-table">
                 <thead><tr><th>Sector</th><th>Primary Role</th><th>Watch Out For</th></tr></thead>
                 <tbody>
-                  {[['SaaS','Fiduciary + Processor','Dual obligations; DPAs with every enterprise client'],['Fintech','Fiduciary','KYC data + RBI overlay + credit bureau sharing'],['Healthtech','Fiduciary or Processor','Highest scrutiny; health data = strictest obligations'],['EdTech','Fiduciary or Processor','Most users are minors — verifiable parental consent required'],['HR Software','Processor for clients','Employee data often overlooked; salary + health in scope']].map(([s,r,w],i)=>(<tr key={i}><td>{s}</td><td>{r}</td><td>{w}</td></tr>))}
+                  {[['SaaS','Fiduciary + Processor','Dual obligations; DPAs with every enterprise client'],['Fintech','Fiduciary','KYC data + RBI overlay + credit bureau sharing'],['Healthtech','Fiduciary or Processor','Highest scrutiny; health data = strictest obligations'],['EdTech','Fiduciary or Processor','Most users are minors - verifiable parental consent required'],['HR Software','Processor for clients','Employee data often overlooked; salary + health in scope']].map(([s,r,w],i)=>(<tr key={i}><td>{s}</td><td>{r}</td><td>{w}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -335,7 +335,7 @@ export default function WhoDoesDPDPApplyTo() {
 
           <div className="cta-banner">
             <h3>Ready to Build DPDP Compliance?</h3>
-            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises — from gap assessment to audit-ready documentation.</p>
+            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises - from gap assessment to audit-ready documentation.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free DPDP Consultation →</a>
             </div>
@@ -350,20 +350,20 @@ export default function WhoDoesDPDPApplyTo() {
           <section id="faq" className="faq-section">
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
-              <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>We are B2B — our clients own the data. Does DPDP still apply?</strong><span className="faq-ch">▾</span></div>
+              <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>We are B2B - our clients own the data. Does DPDP still apply?</strong><span className="faq-ch">▾</span></div>
               <div className="faq-a"><p>Yes, as a Data Processor. You need DPAs with every client, clear security obligations, and systems to help clients respond to user rights requests. Being a Processor changes the shape of your obligations, not whether they exist. In practice, many enterprise clients will also flow down specific DPDP obligations in their contracts with you.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>We anonymise all data before using it. Are we out of scope?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Only if the anonymisation is genuine and irreversible. If there is any realistic pathway to re-identify individuals from the data, it is still in scope. Pseudonymised data — where you hold the reverse-lookup key — is explicitly in scope. Test your anonymisation claim against modern re-identification techniques before relying on this exemption.</p></div>
+              <div className="faq-a"><p>Only if the anonymisation is genuine and irreversible. If there is any realistic pathway to re-identify individuals from the data, it is still in scope. Pseudonymised data - where you hold the reverse-lookup key - is explicitly in scope. Test your anonymisation claim against modern re-identification techniques before relying on this exemption.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>We are a 15-person startup. Is the DPB really going to come after us?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Probably not first. Enforcement will prioritise higher-risk operators early. But being low enforcement priority is not the same as being out of scope — and building foundations now costs a fraction of remediating later. Most importantly, contractual and commercial pressure from enterprise clients will likely force DPDP compliance long before regulatory enforcement reaches you.</p></div>
+              <div className="faq-a"><p>Probably not first. Enforcement will prioritise higher-risk operators early. But being low enforcement priority is not the same as being out of scope - and building foundations now costs a fraction of remediating later. Most importantly, contractual and commercial pressure from enterprise clients will likely force DPDP compliance long before regulatory enforcement reaches you.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Does the DPDP Act apply to non-profit organisations?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. The DPDP Act applies to any 'person' processing digital personal data, and 'person' includes companies, firms, associations, and other bodies — regardless of profit motive. NGOs, educational trusts, and charitable organisations processing personal data of Indian individuals are equally in scope.</p></div>
+              <div className="faq-a"><p>Yes. The DPDP Act applies to any 'person' processing digital personal data, and 'person' includes companies, firms, associations, and other bodies - regardless of profit motive. NGOs, educational trusts, and charitable organisations processing personal data of Indian individuals are equally in scope.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>We store only work email addresses of employees. Is that in scope?</strong><span className="faq-ch">▾</span></div>
@@ -402,7 +402,7 @@ export default function WhoDoesDPDPApplyTo() {
           </div>
           <div className="sb-cta">
             <h4>Need DPDP Compliance Help?</h4>
-            <p>We run structured DPDP gap assessments — from data mapping to audit-ready documentation.</p>
+            <p>We run structured DPDP gap assessments - from data mapping to audit-ready documentation.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

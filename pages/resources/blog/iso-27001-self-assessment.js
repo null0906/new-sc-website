@@ -36,10 +36,10 @@ export default function ISO27001SelfAssessment() {
         <title>Does ISO 27001 Apply to Your Business? A Self-Assessment Guide | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="Work through 6 triggers to decide whether ISO 27001 applies to your organisation right now — enterprise customers, international expansion, sensitive data, investor due diligence, DPDP Act, and prior incidents. Includes a scoring guide and what to do next." />
+        <meta name="description" content="Work through 6 triggers to decide whether ISO 27001 applies to your organisation right now - enterprise customers, international expansion, sensitive data, investor due diligence, DPDP Act, and prior incidents. Includes a scoring guide and what to do next." />
         <meta name="keywords" content="does ISO 27001 apply my business, ISO 27001 self assessment, do I need ISO 27001, ISO 27001 startup decision, ISO 27001 requirements India, ISO 27001 triggers, when to pursue ISO 27001, ISO 27001 checklist, ISO 27001 vs SOC 2 decision, ISO 27001 applicability" />
         <meta property="og:title" content="Does ISO 27001 Apply to Your Business? A Self-Assessment Guide" />
-        <meta property="og:description" content="ISO 27001 keeps coming up — in security questionnaires, investor due diligence, enterprise procurement checklists. Work through these 6 triggers to find out whether you need it right now." />
+        <meta property="og:description" content="ISO 27001 keeps coming up - in security questionnaires, investor due diligence, enterprise procurement checklists. Work through these 6 triggers to find out whether you need it right now." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/iso-27001-self-assessment" />
         <meta property="article:published_time" content="2026-04-01" />
@@ -53,7 +53,7 @@ export default function ISO27001SelfAssessment() {
             {
               "@type": "Article",
               "headline": "Does ISO 27001 Apply to Your Business? A Self-Assessment Guide",
-              "description": "6 triggers to decide whether ISO 27001 certification applies to your organisation — with a scoring guide and recommended next steps.",
+              "description": "6 triggers to decide whether ISO 27001 certification applies to your organisation - with a scoring guide and recommended next steps.",
               "author": { "@type": "Person", "name": "Soham Sawant", "jobTitle": "Cybersecurity Expert & Technical Writer", "worksFor": { "@type": "Organization", "name": "SecComply" } },
               "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } },
               "datePublished": "2026-04-01", "dateModified": "2026-04-01",
@@ -64,8 +64,8 @@ export default function ISO27001SelfAssessment() {
             {
               "@type": "FAQPage",
               "mainEntity": [
-                { "@type": "Question", "name": "Is there a minimum company size for ISO 27001?", "acceptedAnswer": { "@type": "Answer", "text": "No. ISO 27001 has no minimum company size, revenue threshold, or employee count. A 5-person startup collecting user data has the same core obligation considerations as a large enterprise. The standard scales to organisational size — the scope and number of applicable controls will differ, but the framework applies regardless of scale." } },
-                { "@type": "Question", "name": "How is ISO 27001 different from a penetration test?", "acceptedAnswer": { "@type": "Answer", "text": "A penetration test is a point-in-time technical assessment that identifies vulnerabilities in your systems. ISO 27001 is a continuous management system that governs how you identify, manage, and respond to information security risks — including ensuring regular penetration testing is part of your programme. A penetration test is one control that ISO 27001 may require; it is not an alternative to the standard." } },
+                { "@type": "Question", "name": "Is there a minimum company size for ISO 27001?", "acceptedAnswer": { "@type": "Answer", "text": "No. ISO 27001 has no minimum company size, revenue threshold, or employee count. A 5-person startup collecting user data has the same core obligation considerations as a large enterprise. The standard scales to organisational size - the scope and number of applicable controls will differ, but the framework applies regardless of scale." } },
+                { "@type": "Question", "name": "How is ISO 27001 different from a penetration test?", "acceptedAnswer": { "@type": "Answer", "text": "A penetration test is a point-in-time technical assessment that identifies vulnerabilities in your systems. ISO 27001 is a continuous management system that governs how you identify, manage, and respond to information security risks - including ensuring regular penetration testing is part of your programme. A penetration test is one control that ISO 27001 may require; it is not an alternative to the standard." } },
                 { "@type": "Question", "name": "Can we self-certify against ISO 27001?", "acceptedAnswer": { "@type": "Answer", "text": "No. ISO 27001 certification requires an independent audit by an accredited certification body. You can self-assess against the standard (which is what this guide is designed for), but the certification mark requires a third-party audit. Working with a compliance partner for implementation and then engaging a separate accredited certification body for the audit is the standard approach." } },
                 { "@type": "Question", "name": "Does ISO 27001 certification expire?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001 certificates are valid for three years, with annual surveillance audits in years one and two to verify continued compliance. At the end of three years, a full recertification audit is required. Surveillance audits are typically 30–40% of the cost and duration of the initial certification audit." } },
                 { "@type": "Question", "name": "What is the difference between ISO 27001 and ISO 27701?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001 is an information security management standard governing how your organisation manages security risks. ISO 27701 is a privacy extension to ISO 27001 that adds privacy-specific controls for processing Personally Identifiable Information. Both standards can be implemented and audited simultaneously if you need both information security certification and a demonstrated privacy management programme for GDPR or DPDP Act compliance." } }
@@ -251,7 +251,7 @@ export default function ISO27001SelfAssessment() {
           <span className="badge badge-bl">Founders · CTOs · Legal</span>
         </div>
         <h1 className="cspm-hero-h1">Does ISO 27001 Apply to <em>Your Business?</em> A Self-Assessment Guide</h1>
-        <p className="cspm-hero-sub">ISO 27001 keeps coming up — in security questionnaires, investor due diligence, enterprise procurement checklists. But the question most founders actually have is simpler: do we need it? Work through these 6 triggers to find out, and get a clear recommendation on what to do next.</p>
+        <p className="cspm-hero-sub">ISO 27001 keeps coming up - in security questionnaires, investor due diligence, enterprise procurement checklists. But the question most founders actually have is simpler: do we need it? Work through these 6 triggers to find out, and get a clear recommendation on what to do next.</p>
 
         <div className="cspm-author-strip">
           <div className="avatar">SS</div>
@@ -274,7 +274,7 @@ export default function ISO27001SelfAssessment() {
               <pattern id="apat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern>
             </defs>
             <rect width="960" height="380" fill="url(#apat)"/>
-            <text x="480" y="30" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">ISO 27001 Self-Assessment — 6 Triggers at a Glance</text>
+            <text x="480" y="30" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">ISO 27001 Self-Assessment - 6 Triggers at a Glance</text>
 
             {/* 6 trigger cards */}
             {[
@@ -302,7 +302,7 @@ export default function ISO27001SelfAssessment() {
             {[
               {range:'0–1 YES', label:'Build basics first', col:'#6a8aaa', x:80},
               {range:'2–3 YES', label:'Begin scoping in 6 months', col:'#ffb703', x:290},
-              {range:'4–5 YES', label:'Urgent — start now', col:'#E8632B', x:530},
+              {range:'4–5 YES', label:'Urgent - start now', col:'#E8632B', x:530},
               {range:'6 YES',   label:'Business-critical', col:'#ff4d6d', x:760},
             ].map(({range, label, col, x}) => (
               <g key={x}>
@@ -313,7 +313,7 @@ export default function ISO27001SelfAssessment() {
             ))}
           </svg>
         </div>
-        <p className="img-cap">The 6 triggers that determine whether ISO 27001 applies to your business — with a scoring guide. Score YES on 2 or more and certification should be on your 12-month roadmap.</p>
+        <p className="img-cap">The 6 triggers that determine whether ISO 27001 applies to your business - with a scoring guide. Score YES on 2 or more and certification should be on your 12-month roadmap.</p>
 
         <div className="toc-box">
           <div className="toc-lbl">In This Article</div>
@@ -325,7 +325,7 @@ export default function ISO27001SelfAssessment() {
             <a href="#trigger-4">Trigger 4: Investor Due Diligence</a>
             <a href="#trigger-5">Trigger 5: DPDP Act</a>
             <a href="#trigger-6">Trigger 6: Prior Incidents</a>
-            <a href="#your-score">Your Score — What It Means</a>
+            <a href="#your-score">Your Score - What It Means</a>
             <a href="#next-steps">What Happens Next</a>
             <a href="#mistakes">Common Mistakes</a>
             <a href="#faq">FAQ</a>
@@ -336,22 +336,22 @@ export default function ISO27001SelfAssessment() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>ISO 27001 keeps coming up — in security questionnaires, investor due diligence, enterprise procurement checklists. But the question most founders and operators actually have is simpler: <strong>do we need it?</strong> Not "what is it", not "how do we get certified" — but should your organisation be pursuing this right now, or is there something more pressing? This is a structured self-assessment. Work through the six triggers below. Score how many apply to your organisation. The guide at the end tells you what your result means and exactly what to do next. For a deeper dive into what ISO 27001 actually requires, see our <a href="https://seccomply.net/resources/blog/iso-27001-explained-startups" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>plain-English ISO 27001 guide for startups</a>.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>ISO 27001 keeps coming up - in security questionnaires, investor due diligence, enterprise procurement checklists. But the question most founders and operators actually have is simpler: <strong>do we need it?</strong> Not "what is it", not "how do we get certified" - but should your organisation be pursuing this right now, or is there something more pressing? This is a structured self-assessment. Work through the six triggers below. Score how many apply to your organisation. The guide at the end tells you what your result means and exactly what to do next. For a deeper dive into what ISO 27001 actually requires, see our <a href="https://seccomply.net/resources/blog/iso-27001-explained-startups" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>plain-English ISO 27001 guide for startups</a>.</p>
 
           <div className="stats-row anim">
-            <div className="stat-card"><div className="stat-n" data-target="70000" data-suffix="+">0+</div><div className="stat-l">organisations certified globally — making ISO 27001 the most widely adopted security standard in the world<br/><span style={{fontSize:'.68rem',opacity:.55}}>ISO Survey 2023</span></div></div>
-            <div className="stat-card"><div className="stat-n" data-prefix="₹" data-target="250" data-suffix=" Cr">₹0 Cr</div><div className="stat-l">maximum DPDP Act penalty for security safeguard failures — ISO 27001 is the strongest evidence of reasonable safeguards<br/><span style={{fontSize:'.68rem',opacity:.55}}>DPDP Act 2023, Schedule</span></div></div>
-            <div className="stat-card"><div className="stat-n" data-target="4" data-suffix="–9 months">0</div><div className="stat-l">typical certification timeline for Indian startups — from gap assessment to certification mark<br/><span style={{fontSize:'.68rem',opacity:.55}}>SecComply implementation data</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-target="70000" data-suffix="+">0+</div><div className="stat-l">organisations certified globally - making ISO 27001 the most widely adopted security standard in the world<br/><span style={{fontSize:'.68rem',opacity:.55}}>ISO Survey 2023</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-prefix="₹" data-target="250" data-suffix=" Cr">₹0 Cr</div><div className="stat-l">maximum DPDP Act penalty for security safeguard failures - ISO 27001 is the strongest evidence of reasonable safeguards<br/><span style={{fontSize:'.68rem',opacity:.55}}>DPDP Act 2023, Schedule</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-target="4" data-suffix="–9 months">0</div><div className="stat-l">typical certification timeline for Indian startups - from gap assessment to certification mark<br/><span style={{fontSize:'.68rem',opacity:.55}}>SecComply implementation data</span></div></div>
           </div>
 
           <section id="how-to-use">
             <h2>How to <em>Use This Guide</em></h2>
-            <p>Work through each of the six triggers below. For each one, decide whether it applies to your organisation — yes or no. Keep a running count of your YES answers. The scoring guide at the end tells you what your total means.</p>
+            <p>Work through each of the six triggers below. For each one, decide whether it applies to your organisation - yes or no. Keep a running count of your YES answers. The scoring guide at the end tells you what your total means.</p>
             <div className="callout co-key">
               <span className="co-icon">📋</span>
               <div className="co-body">
                 <strong>Self-Assessment Scoring</strong>
-                <p>0–1 YES: Build foundational security controls first — ISO 27001 is premature. Revisit in 12 months or when a commercial trigger arises. 2–3 YES: ISO 27001 is appropriate — begin scoping within the next 6 months. 4–5 YES: Urgent — you are likely losing deals or creating regulatory risk. Begin immediately. 6 YES: Business-critical — ISO 27001 is blocking commercial and regulatory progress.</p>
+                <p>0–1 YES: Build foundational security controls first - ISO 27001 is premature. Revisit in 12 months or when a commercial trigger arises. 2–3 YES: ISO 27001 is appropriate - begin scoping within the next 6 months. 4–5 YES: Urgent - you are likely losing deals or creating regulatory risk. Begin immediately. 6 YES: Business-critical - ISO 27001 is blocking commercial and regulatory progress.</p>
               </div>
             </div>
           </section>
@@ -361,7 +361,7 @@ export default function ISO27001SelfAssessment() {
               <span className="trigger-label">Trigger 1 of 6</span>
               <span style={{color:'var(--tx)',fontWeight:700,fontSize:'1rem'}}>Enterprise Customers Are Asking for It</span>
             </div>
-            <p>The clearest signal that ISO 27001 applies to your business is the simplest one: someone is asking for it. When enterprise procurement teams send security questionnaires, ISO 27001 certification is increasingly a checkbox item — not a nice-to-have. The pattern is consistent: a founder spends months in a sales cycle with a large enterprise, the deal gets to legal review, a security questionnaire arrives, and question 47 reads: "Does your organisation hold ISO 27001 certification?" The deal stalls.</p>
+            <p>The clearest signal that ISO 27001 applies to your business is the simplest one: someone is asking for it. When enterprise procurement teams send security questionnaires, ISO 27001 certification is increasingly a checkbox item - not a nice-to-have. The pattern is consistent: a founder spends months in a sales cycle with a large enterprise, the deal gets to legal review, a security questionnaire arrives, and question 47 reads: "Does your organisation hold ISO 27001 certification?" The deal stalls.</p>
             <p>The commercial calculus is straightforward: if ISO 27001 certification would close or accelerate one enterprise deal worth more than the certification cost, the investment pays for itself immediately. At ₹8–25 lakhs for certification, the ROI threshold is relatively low for any SaaS company with enterprise ambitions.</p>
             <div className="callout co-danger">
               <span className="co-icon">🔴</span>
@@ -377,9 +377,9 @@ export default function ISO27001SelfAssessment() {
               <span className="trigger-label">Trigger 2 of 6</span>
               <span style={{color:'var(--tx)',fontWeight:700,fontSize:'1rem'}}>You Are Expanding Into International Markets</span>
             </div>
-            <p>ISO 27001 is the globally recognised security credential. In Europe, the Middle East, Japan, Singapore, and Australia, it functions as a baseline expectation for B2B software vendors — not a differentiator, but a table stake. If your expansion strategy includes any of these markets, you will encounter the requirement.</p>
+            <p>ISO 27001 is the globally recognised security credential. In Europe, the Middle East, Japan, Singapore, and Australia, it functions as a baseline expectation for B2B software vendors - not a differentiator, but a table stake. If your expansion strategy includes any of these markets, you will encounter the requirement.</p>
             <div className="pull-quote">
-              <p>"If your first major international markets are outside the US, ISO 27001 opens significantly more doors than SOC 2 alone. Many organisations pursuing both markets run the programmes in parallel — the control overlap is large enough that combined implementation is far more efficient."</p>
+              <p>"If your first major international markets are outside the US, ISO 27001 opens significantly more doors than SOC 2 alone. Many organisations pursuing both markets run the programmes in parallel - the control overlap is large enough that combined implementation is far more efficient."</p>
             </div>
             <div className="callout co-danger">
               <span className="co-icon">🔴</span>
@@ -395,7 +395,7 @@ export default function ISO27001SelfAssessment() {
               <span className="trigger-label">Trigger 3 of 6</span>
               <span style={{color:'var(--tx)',fontWeight:700,fontSize:'1rem'}}>You Process Sensitive Data Categories</span>
             </div>
-            <p>The type of data your organisation handles is one of the strongest predictors of whether ISO 27001 certification will be required — by regulators, by customers, or by the nature of the risk you carry.</p>
+            <p>The type of data your organisation handles is one of the strongest predictors of whether ISO 27001 certification will be required - by regulators, by customers, or by the nature of the risk you carry.</p>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Data Category</th><th>Regulatory Pressure</th><th>ISO 27001 Signal</th></tr></thead>
@@ -414,14 +414,14 @@ export default function ISO27001SelfAssessment() {
               <span className="co-icon">🔴</span>
               <div className="co-body">
                 <strong>Score YES if any of these apply</strong>
-                <p>You process financial data, health information, or government/defence-related data. Your product handles personal data of children under 18. You process PII at scale — more than 10,000 individuals in your dataset. A data breach in your systems would cause serious harm to individuals or significant reputational damage.</p>
+                <p>You process financial data, health information, or government/defence-related data. Your product handles personal data of children under 18. You process PII at scale - more than 10,000 individuals in your dataset. A data breach in your systems would cause serious harm to individuals or significant reputational damage.</p>
               </div>
             </div>
 
             <div className="img-wrap" style={{marginTop:'1.5rem'}}>
               <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1000&h=360&fit=crop" alt="Data security compliance assessment checklist" style={{width:'100%',display:'block',maxHeight:'300px',objectFit:'cover'}}/>
             </div>
-            <p className="img-cap">The most important question is not "do we technically need ISO 27001?" — it is "what happens to our business if we do not have it when the next enterprise procurement review arrives?"</p>
+            <p className="img-cap">The most important question is not "do we technically need ISO 27001?" - it is "what happens to our business if we do not have it when the next enterprise procurement review arrives?"</p>
           </section>
 
           <section id="trigger-4">
@@ -429,13 +429,13 @@ export default function ISO27001SelfAssessment() {
               <span className="trigger-label">Trigger 4 of 6</span>
               <span style={{color:'var(--tx)',fontWeight:700,fontSize:'1rem'}}>Investors Are Conducting Security Due Diligence</span>
             </div>
-            <p>Series A and B fundraising rounds increasingly include security and compliance in due diligence. Institutional investors — particularly those with portfolio companies in regulated industries or those investing in enterprise SaaS — have begun asking specific questions about security posture.</p>
-            <p>ISO 27001 certification provides a defensible, independently verified answer. It signals to investors that security is managed systematically rather than reactively — which directly affects perceived operational risk and, in some cases, valuation multiples.</p>
+            <p>Series A and B fundraising rounds increasingly include security and compliance in due diligence. Institutional investors - particularly those with portfolio companies in regulated industries or those investing in enterprise SaaS - have begun asking specific questions about security posture.</p>
+            <p>ISO 27001 certification provides a defensible, independently verified answer. It signals to investors that security is managed systematically rather than reactively - which directly affects perceived operational risk and, in some cases, valuation multiples.</p>
             <div className="callout co-danger">
               <span className="co-icon">🔴</span>
               <div className="co-body">
                 <strong>Score YES if any of these apply</strong>
-                <p>You are in or approaching a fundraising round with institutional investors. An investor or their legal team has asked about your security certifications or posture. Your target investors have portfolio companies in regulated industries — fintech, healthtech, govtech, or enterprise SaaS. You have been asked to complete a security questionnaire as part of an investor due diligence process.</p>
+                <p>You are in or approaching a fundraising round with institutional investors. An investor or their legal team has asked about your security certifications or posture. Your target investors have portfolio companies in regulated industries - fintech, healthtech, govtech, or enterprise SaaS. You have been asked to complete a security questionnaire as part of an investor due diligence process.</p>
               </div>
             </div>
           </section>
@@ -445,8 +445,8 @@ export default function ISO27001SelfAssessment() {
               <span className="trigger-label">Trigger 5 of 6</span>
               <span style={{color:'var(--tx)',fontWeight:700,fontSize:'1rem'}}>DPDP Act Compliance Is Required</span>
             </div>
-            <p>India's Digital Personal Data Protection Act 2023 requires Data Fiduciaries to implement reasonable security safeguards proportionate to their processing activities. <strong>ISO 27001 is widely accepted as strong evidence of reasonable safeguards</strong> — not a guaranteed legal defence, but a substantially stronger position than having no certified security management programme.</p>
-            <p>For organisations with significant Indian user bases, DPDP compliance is not optional. The DPDP Rules notified by MeitY in November 2025 have made the obligations enforceable, with penalties up to ₹250 crore for security safeguard failures. If you are building your <a href="https://seccomply.net/resources/blog/dpdp-act-2023-explained" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>DPDP compliance programme</a>, ISO 27001 is the most efficient security foundation — the control overlap means you build once and satisfy both.</p>
+            <p>India's Digital Personal Data Protection Act 2023 requires Data Fiduciaries to implement reasonable security safeguards proportionate to their processing activities. <strong>ISO 27001 is widely accepted as strong evidence of reasonable safeguards</strong> - not a guaranteed legal defence, but a substantially stronger position than having no certified security management programme.</p>
+            <p>For organisations with significant Indian user bases, DPDP compliance is not optional. The DPDP Rules notified by MeitY in November 2025 have made the obligations enforceable, with penalties up to ₹250 crore for security safeguard failures. If you are building your <a href="https://seccomply.net/resources/blog/dpdp-act-2023-explained" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>DPDP compliance programme</a>, ISO 27001 is the most efficient security foundation - the control overlap means you build once and satisfy both.</p>
             <div className="callout co-danger">
               <span className="co-icon">🔴</span>
               <div className="co-body">
@@ -461,7 +461,7 @@ export default function ISO27001SelfAssessment() {
               <span className="trigger-label">Trigger 6 of 6</span>
               <span style={{color:'var(--tx)',fontWeight:700,fontSize:'1rem'}}>You Have Experienced a Prior Security Incident</span>
             </div>
-            <p>Organisations that have experienced a breach, data exposure, ransomware attack, or significant security incident are in a different category. The question is no longer "do we need structured security management?" — the incident already answered that. The question is whether to implement a systematic programme ad hoc or through a certified framework that provides independent verification.</p>
+            <p>Organisations that have experienced a breach, data exposure, ransomware attack, or significant security incident are in a different category. The question is no longer "do we need structured security management?" - the incident already answered that. The question is whether to implement a systematic programme ad hoc or through a certified framework that provides independent verification.</p>
             <p>ISO 27001 certification matters especially in post-incident contexts: it provides credible evidence in customer communications, regulatory responses, and insurance claims that a systematic security management programme now exists and is operating.</p>
             <div className="callout co-danger">
               <span className="co-icon">🔴</span>
@@ -473,30 +473,30 @@ export default function ISO27001SelfAssessment() {
           </section>
 
           <section id="your-score">
-            <h2>Your Score — <em>What It Means</em></h2>
+            <h2>Your Score - <em>What It Means</em></h2>
             <p>Add up your YES answers across all six triggers and find your result below:</p>
             <div className="score-grid">
               <div className="score-card sc-0 anim">
                 <div className="sc-range">0–1 YES</div>
                 <h3>Build foundational security first</h3>
-                <p>ISO 27001 is premature. Focus on foundational security controls — MFA, access reviews, vulnerability management, incident response. Revisit this assessment when a commercial trigger arises or in 12 months.</p>
+                <p>ISO 27001 is premature. Focus on foundational security controls - MFA, access reviews, vulnerability management, incident response. Revisit this assessment when a commercial trigger arises or in 12 months.</p>
                 <span className="sc-time">Revisit in 12 months</span>
               </div>
               <div className="score-card sc-1 anim">
                 <div className="sc-range">2–3 YES</div>
                 <h3>Begin scoping within 6 months</h3>
-                <p>ISO 27001 is the right investment. Begin a gap assessment and scoping exercise. This is the point where the commercial logic becomes clear — the investment is justified by the triggers you have scored.</p>
+                <p>ISO 27001 is the right investment. Begin a gap assessment and scoping exercise. This is the point where the commercial logic becomes clear - the investment is justified by the triggers you have scored.</p>
                 <span className="sc-time">6–9 month programme</span>
               </div>
               <div className="score-card sc-2 anim">
                 <div className="sc-range">4–5 YES</div>
-                <h3>Urgent — start within 30 days</h3>
+                <h3>Urgent - start within 30 days</h3>
                 <p>You are likely losing deals or creating regulatory risk right now. Begin the ISO 27001 programme immediately with external compliance support. The delay cost is real and measurable.</p>
                 <span className="sc-time">Start within 30 days</span>
               </div>
               <div className="score-card sc-3 anim">
                 <div className="sc-range">6 YES</div>
-                <h3>Business-critical — start immediately</h3>
+                <h3>Business-critical - start immediately</h3>
                 <p>ISO 27001 is blocking commercial and regulatory progress across multiple fronts. This is your most important infrastructure investment right now. Treat it with the same urgency as a production outage.</p>
                 <span className="sc-time">Start immediately</span>
               </div>
@@ -508,11 +508,11 @@ export default function ISO27001SelfAssessment() {
             <p>If your score indicates ISO 27001 is appropriate, the implementation follows five phases:</p>
             <div className="phase-list">
               {[
-                {num:'Phase 1', dur:'4–6 weeks', title:'Gap Assessment', body:'Map your current security controls against ISO 27001 requirements. Identify what you already have, what is missing, and what needs to change. This assessment determines your project timeline and budget — it is the most important investment before committing to a programme.'},
+                {num:'Phase 1', dur:'4–6 weeks', title:'Gap Assessment', body:'Map your current security controls against ISO 27001 requirements. Identify what you already have, what is missing, and what needs to change. This assessment determines your project timeline and budget - it is the most important investment before committing to a programme.'},
                 {num:'Phase 2', dur:'8–16 weeks', title:'ISMS Implementation', body:'Design and implement missing controls. Write required policies and procedures. Complete the risk assessment. Produce the Statement of Applicability. This is the longest phase and depends entirely on how many gaps the assessment found.'},
-                {num:'Phase 3', dur:'4–8 weeks', title:'ISMS Operation and Evidence Collection', body:'Run your ISMS for a period before the audit. Conduct an internal audit. Complete a management review. Collect evidence that controls are operating — not just documented. Most certification bodies want to see at least one full management cycle before Stage 2.'},
-                {num:'Phase 4', dur:'1–2 weeks', title:'Stage 1 Audit — Documentation Review', body:'The certification body auditor reviews your ISMS documentation to determine whether you are ready for the Stage 2 audit. This typically produces a short list of items to address before proceeding.'},
-                {num:'Phase 5', dur:'2–4 weeks', title:'Stage 2 Audit — Certification Decision', body:'The auditor verifies that controls are implemented and operating as documented. Certification is granted once all major findings are resolved. The certificate is valid for three years, with annual surveillance audits.'},
+                {num:'Phase 3', dur:'4–8 weeks', title:'ISMS Operation and Evidence Collection', body:'Run your ISMS for a period before the audit. Conduct an internal audit. Complete a management review. Collect evidence that controls are operating - not just documented. Most certification bodies want to see at least one full management cycle before Stage 2.'},
+                {num:'Phase 4', dur:'1–2 weeks', title:'Stage 1 Audit - Documentation Review', body:'The certification body auditor reviews your ISMS documentation to determine whether you are ready for the Stage 2 audit. This typically produces a short list of items to address before proceeding.'},
+                {num:'Phase 5', dur:'2–4 weeks', title:'Stage 2 Audit - Certification Decision', body:'The auditor verifies that controls are implemented and operating as documented. Certification is granted once all major findings are resolved. The certificate is valid for three years, with annual surveillance audits.'},
               ].map(({num, dur, title, body}, i) => (
                 <div key={i} className="phase-item anim">
                   <div className="phase-num">{num}</div>
@@ -528,10 +528,10 @@ export default function ISO27001SelfAssessment() {
             <h2>Common Mistakes <em>to Avoid</em></h2>
             {[
               {title:'Starting without a gap assessment', body:'The gap assessment determines what actually needs to be done. Organisations that skip it overbuild documentation for controls they already have and underbuild for the gaps that will fail the audit. A gap assessment takes 4–6 weeks and should precede any other implementation work.'},
-              {title:'Treating it as a documentation exercise', body:'ISO 27001 requires evidence that controls are actually operating — not just policies that say they should. Auditors interview staff, inspect systems, and review logs. A comprehensive policy library with no operational evidence will not pass Stage 2.'},
+              {title:'Treating it as a documentation exercise', body:'ISO 27001 requires evidence that controls are actually operating - not just policies that say they should. Auditors interview staff, inspect systems, and review logs. A comprehensive policy library with no operational evidence will not pass Stage 2.'},
               {title:'Underestimating internal team time', body:'The consultant handles the framework and documentation, but your team implements the controls and participates in the audit. Budget 2–4 hours per week from relevant team members throughout the programme. This is consistently the most underestimated cost.'},
               {title:'Scoping too broadly for a first certification', body:'A smaller, well-defined scope achieves certification faster and at lower cost. Many startups certify their core product and primary cloud environment first, then expand scope in subsequent years. A tight initial scope is a feature, not a compromise.'},
-              {title:'Pursuing certification before foundational controls exist', body:'ISO 27001 monitors and validates controls — it does not create them. If basic security hygiene is missing, the implementation cost will be very high and the timeline very long. Build the controls first, then certify the programme that governs them.'},
+              {title:'Pursuing certification before foundational controls exist', body:'ISO 27001 monitors and validates controls - it does not create them. If basic security hygiene is missing, the implementation cost will be very high and the timeline very long. Build the controls first, then certify the programme that governs them.'},
             ].map(({title, body}, i) => (
               <div key={i} className="mistake-item anim">
                 <div className="mi-x">✗</div>
@@ -542,7 +542,7 @@ export default function ISO27001SelfAssessment() {
 
           <div className="cta-banner">
             <h3>Ready to Start Your ISO 27001 Journey?</h3>
-            <p>SecComply runs ISO 27001 implementations for Indian startups from gap assessment to certification — with a realistic timeline, a fixed-scope engagement, and the compliance expertise your team does not have to hire full-time.</p>
+            <p>SecComply runs ISO 27001 implementations for Indian startups from gap assessment to certification - with a realistic timeline, a fixed-scope engagement, and the compliance expertise your team does not have to hire full-time.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free ISO 27001 Consultation →</a>
               <a href="https://seccomply.net/services/iso-27001" className="btn-o" target="_blank" rel="noopener">View ISO 27001 Services</a>
@@ -559,8 +559,8 @@ export default function ISO27001SelfAssessment() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div itemScope itemType="https://schema.org/FAQPage">
               {[
-                {q:"Is there a minimum company size for ISO 27001?", a:"No. ISO 27001 has no minimum company size, revenue threshold, or employee count. A 5-person startup collecting user data has the same core obligation considerations as a large enterprise. The standard scales to organisational size — the scope and number of applicable controls will differ, but the framework applies regardless of scale."},
-                {q:"How is ISO 27001 different from a penetration test?", a:"A penetration test is a point-in-time technical assessment that identifies vulnerabilities in your systems. ISO 27001 is a continuous management system governing how you identify, manage, and respond to information security risks — including ensuring regular penetration testing is part of your programme. A penetration test is one control that ISO 27001 may require; it is not an alternative to the standard."},
+                {q:"Is there a minimum company size for ISO 27001?", a:"No. ISO 27001 has no minimum company size, revenue threshold, or employee count. A 5-person startup collecting user data has the same core obligation considerations as a large enterprise. The standard scales to organisational size - the scope and number of applicable controls will differ, but the framework applies regardless of scale."},
+                {q:"How is ISO 27001 different from a penetration test?", a:"A penetration test is a point-in-time technical assessment that identifies vulnerabilities in your systems. ISO 27001 is a continuous management system governing how you identify, manage, and respond to information security risks - including ensuring regular penetration testing is part of your programme. A penetration test is one control that ISO 27001 may require; it is not an alternative to the standard."},
                 {q:"Can we self-certify against ISO 27001?", a:"No. ISO 27001 certification requires an independent audit by an accredited certification body. You can self-assess against the standard (which is what this guide is designed for), but the certification mark requires a third-party audit. Working with a compliance partner for implementation and then engaging a separate accredited certification body for the audit is the standard approach."},
                 {q:"Does ISO 27001 certification expire?", a:"ISO 27001 certificates are valid for three years, with annual surveillance audits in years one and two to verify continued compliance. At the end of three years, a full recertification audit is required. Surveillance audits are typically 30–40% of the cost and duration of the initial certification audit."},
                 {q:"What is the difference between ISO 27001 and ISO 27701?", a:"ISO 27001 is an information security management standard governing how your organisation manages security risks. ISO 27701 is a privacy extension to ISO 27001 that adds privacy-specific controls for processing Personally Identifiable Information. Both standards can be implemented and audited simultaneously if you need both information security certification and a demonstrated privacy management programme for GDPR or DPDP Act compliance."},
@@ -610,7 +610,7 @@ export default function ISO27001SelfAssessment() {
           </div>
           <div className="sb-cta">
             <h4>Not Sure Where You Stand?</h4>
-            <p>Free consultation — we run the gap assessment and tell you exactly what ISO 27001 will take for your specific organisation.</p>
+            <p>Free consultation - we run the gap assessment and tell you exactly what ISO 27001 will take for your specific organisation.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

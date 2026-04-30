@@ -25,12 +25,12 @@ export default function SoAISO27001CompleteGuide() {
   return (
     <Layout>
       <Head>
-        <title>Statement of Applicability (SoA) for ISO 27001 — A Complete Guide | SecComply</title>
+        <title>Statement of Applicability (SoA) for ISO 27001 - A Complete Guide | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
         <meta name="description" content="The Statement of Applicability is the most scrutinised document in your ISO 27001 audit. What clause 6.1.3(d) requires, how to build it from your risk assessment, the five required columns, sample entries, and the mistakes auditors flag most often." />
         <meta name="keywords" content="Statement of Applicability ISO 27001, ISO 27001 SoA, SoA template, clause 6.1.3, ISO 27001 documentation, Annex A justification, SoA example, how to write SoA, ISMS documentation, ISO 27001 audit preparation" />
-        <meta property="og:title" content="Statement of Applicability (SoA) for ISO 27001 — A Complete Guide" />
+        <meta property="og:title" content="Statement of Applicability (SoA) for ISO 27001 - A Complete Guide" />
         <meta property="og:description" content="The most scrutinised document in your ISO 27001 audit, explained. Required components, sample entries, build process, and the mistakes auditors flag most." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/soa-iso-27001-complete-guide" />
@@ -38,7 +38,7 @@ export default function SoAISO27001CompleteGuide() {
         <meta property="article:author" content="Soham Sawant" />
         <meta property="article:tag" content="ISO 27001" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/soa-iso-27001-complete-guide" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Statement of Applicability (SoA) for ISO 27001 — A Complete Guide","description":"The Statement of Applicability is the most scrutinised document in an ISO 27001 audit. Required components, sample entries, build process, and common mistakes.","author":{"@type":"Person","name":"Soham Sawant","jobTitle":"Cybersecurity Expert & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply","logo":{"@type":"ImageObject","url":"https://seccomply.net/favicon.ico"}},"datePublished":"2026-04-23","dateModified":"2026-04-23","mainEntityOfPage":"https://seccomply.net/resources/blog/soa-iso-27001-complete-guide","articleSection":"ISO 27001","image":"https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=480&fit=crop"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://seccomply.net/resources"},{"@type":"ListItem","position":3,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":4,"name":"Statement of Applicability","item":"https://seccomply.net/resources/blog/soa-iso-27001-complete-guide"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Statement of Applicability in ISO 27001?","acceptedAnswer":{"@type":"Answer","text":"The Statement of Applicability (SoA) is a document required by ISO 27001 clause 6.1.3(d). It lists every Annex A control, declares whether each applies to your organisation, justifies inclusion or exclusion, records implementation status, and references the controlling documentation. It is the bridge between your risk assessment and your selected controls — the single document that proves you have made deliberate, justified decisions about your information security posture."}},{"@type":"Question","name":"Is the Statement of Applicability mandatory?","acceptedAnswer":{"@type":"Answer","text":"Yes. Clause 6.1.3(d) of ISO 27001:2022 explicitly requires a Statement of Applicability. Without one, you cannot pass certification. It is the most reviewed document in both Stage 1 and Stage 2 audits, and exclusions without justification will be raised as non-conformities."}},{"@type":"Question","name":"How many controls go in the Statement of Applicability?","acceptedAnswer":{"@type":"Answer","text":"All 93 Annex A controls from ISO 27001:2022 must appear in the SoA — including those you exclude. The SoA must address every control by reference; you cannot simply leave out controls you have decided do not apply. A typical SaaS startup applies 70–80 controls and excludes the rest with documented justification, most commonly the physical data centre controls for fully cloud-native organisations."}},{"@type":"Question","name":"What is the difference between the SoA and the risk treatment plan?","acceptedAnswer":{"@type":"Answer","text":"The risk treatment plan is the operational schedule for treating identified risks — it lists actions, owners, and deadlines. The SoA is the control register that documents which Annex A controls apply, why, and where they are implemented. The two link together: risks identified in the risk assessment drive control selection, which is then documented in the SoA. The risk treatment plan tracks the work; the SoA documents the decision."}},{"@type":"Question","name":"How often should the SoA be updated?","acceptedAnswer":{"@type":"Answer","text":"At minimum, after every annual risk assessment. The SoA is also updated whenever your scope, threat landscape, applicable regulations, or organisational structure changes materially. Many mature ISMS programmes review the SoA quarterly to capture incremental changes. It is a living document, not a one-time deliverable."}}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Statement of Applicability (SoA) for ISO 27001 - A Complete Guide","description":"The Statement of Applicability is the most scrutinised document in an ISO 27001 audit. Required components, sample entries, build process, and common mistakes.","author":{"@type":"Person","name":"Soham Sawant","jobTitle":"Cybersecurity Expert & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply","logo":{"@type":"ImageObject","url":"https://seccomply.net/favicon.ico"}},"datePublished":"2026-04-23","dateModified":"2026-04-23","mainEntityOfPage":"https://seccomply.net/resources/blog/soa-iso-27001-complete-guide","articleSection":"ISO 27001","image":"https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=480&fit=crop"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://seccomply.net/resources"},{"@type":"ListItem","position":3,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":4,"name":"Statement of Applicability","item":"https://seccomply.net/resources/blog/soa-iso-27001-complete-guide"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Statement of Applicability in ISO 27001?","acceptedAnswer":{"@type":"Answer","text":"The Statement of Applicability (SoA) is a document required by ISO 27001 clause 6.1.3(d). It lists every Annex A control, declares whether each applies to your organisation, justifies inclusion or exclusion, records implementation status, and references the controlling documentation. It is the bridge between your risk assessment and your selected controls - the single document that proves you have made deliberate, justified decisions about your information security posture."}},{"@type":"Question","name":"Is the Statement of Applicability mandatory?","acceptedAnswer":{"@type":"Answer","text":"Yes. Clause 6.1.3(d) of ISO 27001:2022 explicitly requires a Statement of Applicability. Without one, you cannot pass certification. It is the most reviewed document in both Stage 1 and Stage 2 audits, and exclusions without justification will be raised as non-conformities."}},{"@type":"Question","name":"How many controls go in the Statement of Applicability?","acceptedAnswer":{"@type":"Answer","text":"All 93 Annex A controls from ISO 27001:2022 must appear in the SoA - including those you exclude. The SoA must address every control by reference; you cannot simply leave out controls you have decided do not apply. A typical SaaS startup applies 70–80 controls and excludes the rest with documented justification, most commonly the physical data centre controls for fully cloud-native organisations."}},{"@type":"Question","name":"What is the difference between the SoA and the risk treatment plan?","acceptedAnswer":{"@type":"Answer","text":"The risk treatment plan is the operational schedule for treating identified risks - it lists actions, owners, and deadlines. The SoA is the control register that documents which Annex A controls apply, why, and where they are implemented. The two link together: risks identified in the risk assessment drive control selection, which is then documented in the SoA. The risk treatment plan tracks the work; the SoA documents the decision."}},{"@type":"Question","name":"How often should the SoA be updated?","acceptedAnswer":{"@type":"Answer","text":"At minimum, after every annual risk assessment. The SoA is also updated whenever your scope, threat landscape, applicable regulations, or organisational structure changes materially. Many mature ISMS programmes review the SoA quarterly to capture incremental changes. It is a living document, not a one-time deliverable."}}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -182,8 +182,8 @@ export default function SoAISO27001CompleteGuide() {
           <span className="badge badge-bl">📋 Audit Documentation</span>
           <span className="badge badge-gr">✅ Certification Essentials</span>
         </div>
-        <h1 className="hero-h1">Statement of Applicability (SoA) for ISO 27001 — <em>A Complete Guide</em></h1>
-        <p className="hero-sub">The SoA is the most scrutinised document in your ISO 27001 audit. It is the bridge between your risk assessment and your selected controls — the one document that proves you have made deliberate, justified decisions about every Annex A control. Get it wrong and you lose certification. Here is exactly what clause 6.1.3(d) requires, how to build it from the ground up, and the mistakes auditors flag most.</p>
+        <h1 className="hero-h1">Statement of Applicability (SoA) for ISO 27001 - <em>A Complete Guide</em></h1>
+        <p className="hero-sub">The SoA is the most scrutinised document in your ISO 27001 audit. It is the bridge between your risk assessment and your selected controls - the one document that proves you have made deliberate, justified decisions about every Annex A control. Get it wrong and you lose certification. Here is exactly what clause 6.1.3(d) requires, how to build it from the ground up, and the mistakes auditors flag most.</p>
 
         <div className="author-strip">
           <div className="avatar">SS</div>
@@ -240,7 +240,7 @@ export default function SoAISO27001CompleteGuide() {
               <marker id="arr2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="rgba(129,140,248,0.7)"/></marker>
             </defs>
 
-            <text x="480" y="265" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">The SoA is required by clause 6.1.3(d) — the document auditors return to most often</text>
+            <text x="480" y="265" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">The SoA is required by clause 6.1.3(d) - the document auditors return to most often</text>
           </svg>
         </div>
 
@@ -263,12 +263,12 @@ export default function SoAISO27001CompleteGuide() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The Statement of Applicability is required by clause 6.1.3(d) of ISO 27001:2022. It documents every one of the 93 Annex A controls — whether you have implemented it, why you have or have not, and where the implementing evidence lives. The certification body auditor will read your SoA before they walk into your office. If it is internally inconsistent, missing controls, or weakly justified, the rest of the audit goes downhill from there. This guide takes you through the SoA from first principles to certification-ready output.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The Statement of Applicability is required by clause 6.1.3(d) of ISO 27001:2022. It documents every one of the 93 Annex A controls - whether you have implemented it, why you have or have not, and where the implementing evidence lives. The certification body auditor will read your SoA before they walk into your office. If it is internally inconsistent, missing controls, or weakly justified, the rest of the audit goes downhill from there. This guide takes you through the SoA from first principles to certification-ready output.</p>
 
           <section id="what-is-soa">
             <h2>What Is the <em>Statement of Applicability?</em></h2>
-            <p>The Statement of Applicability is a controlled document — typically a spreadsheet or a structured table inside your ISMS documentation — that lists every Annex A control alongside four mandatory pieces of information: whether it applies to your organisation, the justification for that decision, the current implementation status, and where the implementing controls and evidence are located.</p>
-            <p>It is the document that translates your <a href="https://seccomply.net/resources/blog/iso-27001-risk-assessment" className="inline-link">risk assessment</a> into a concrete control register. The risk assessment tells you what could go wrong and how badly. The SoA documents which Annex A controls you have selected to address those risks — and equally important, why you have decided certain controls do not apply to your organisation.</p>
+            <p>The Statement of Applicability is a controlled document - typically a spreadsheet or a structured table inside your ISMS documentation - that lists every Annex A control alongside four mandatory pieces of information: whether it applies to your organisation, the justification for that decision, the current implementation status, and where the implementing controls and evidence are located.</p>
+            <p>It is the document that translates your <a href="https://seccomply.net/resources/blog/iso-27001-risk-assessment" className="inline-link">risk assessment</a> into a concrete control register. The risk assessment tells you what could go wrong and how badly. The SoA documents which Annex A controls you have selected to address those risks - and equally important, why you have decided certain controls do not apply to your organisation.</p>
             <p>If you are unfamiliar with the Annex A control set itself, our <a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls" className="inline-link">walkthrough of all 93 Annex A controls</a> covers the four categories (Organisational, People, Physical, Technological) in detail. The SoA references that exact same control list.</p>
           </section>
 
@@ -281,8 +281,8 @@ export default function SoAISO27001CompleteGuide() {
                 <p>Auditors read your SoA before they walk into your office. They use it to plan the audit. They cross-reference it during the on-site review. They return to it when writing the final report. Every weakness, inconsistency, or unjustified exclusion they find becomes a finding.</p>
               </div>
             </div>
-            <p>Other ISMS documents matter, but the SoA is the master inventory. It is where the auditor's pen touches first and last. A clean, defensible SoA signals a mature ISMS programme; a sloppy or generic SoA signals the opposite — and auditors will dig deeper to find more problems.</p>
-            <p>Beyond audit, the SoA also serves as your internal map. When a new control needs implementation, when a vendor questionnaire asks about a specific Annex A area, when you onboard a new compliance owner — the SoA is the reference. Done well, it pays back many times over the effort of building it.</p>
+            <p>Other ISMS documents matter, but the SoA is the master inventory. It is where the auditor's pen touches first and last. A clean, defensible SoA signals a mature ISMS programme; a sloppy or generic SoA signals the opposite - and auditors will dig deeper to find more problems.</p>
+            <p>Beyond audit, the SoA also serves as your internal map. When a new control needs implementation, when a vendor questionnaire asks about a specific Annex A area, when you onboard a new compliance owner - the SoA is the reference. Done well, it pays back many times over the effort of building it.</p>
           </section>
 
           <section id="required-fields">
@@ -294,23 +294,23 @@ export default function SoAISO27001CompleteGuide() {
                 <tbody>
                   <tr><td>Control ID &amp; name</td><td style={{color:'var(--gr)',fontWeight:700}}>Mandatory</td><td>Reference to the Annex A control (e.g., A.5.1, A.8.24)</td></tr>
                   <tr><td>Applicability (Yes / No)</td><td style={{color:'var(--gr)',fontWeight:700}}>Mandatory</td><td>Whether the control applies to your organisation</td></tr>
-                  <tr><td>Justification</td><td style={{color:'var(--gr)',fontWeight:700}}>Mandatory</td><td>Why the control is included or excluded — the business or risk reasoning</td></tr>
+                  <tr><td>Justification</td><td style={{color:'var(--gr)',fontWeight:700}}>Mandatory</td><td>Why the control is included or excluded - the business or risk reasoning</td></tr>
                   <tr><td>Implementation status</td><td style={{color:'var(--gr)',fontWeight:700}}>Mandatory</td><td>Implemented / Partially implemented / Planned / Not applicable</td></tr>
                   <tr><td>Reference document(s)</td><td style={{color:'var(--am)',fontWeight:700}}>Strongly Recommended</td><td>Pointer to the policy, procedure, or technical control that implements it</td></tr>
                   <tr><td>Owner</td><td style={{color:'var(--am)',fontWeight:700}}>Strongly Recommended</td><td>Named individual or role accountable for the control</td></tr>
                 </tbody>
               </table>
             </div>
-            <p>The justification column is where most SoAs fail an audit. "Industry best practice" is not a justification. "Required by the risk assessment" without a risk reference is not a justification. The auditor wants to see a defensible link between identified risk, regulatory obligation, contractual requirement, or business decision — and the control selection.</p>
+            <p>The justification column is where most SoAs fail an audit. "Industry best practice" is not a justification. "Required by the risk assessment" without a risk reference is not a justification. The auditor wants to see a defensible link between identified risk, regulatory obligation, contractual requirement, or business decision - and the control selection.</p>
           </section>
 
           <section id="sample">
             <h2>A Sample <em>SoA Entry</em></h2>
-            <p>Here is what a well-constructed SoA entry looks like for a single control, illustrated with two contrasting examples — one included, one excluded.</p>
+            <p>Here is what a well-constructed SoA entry looks like for a single control, illustrated with two contrasting examples - one included, one excluded.</p>
 
             <div className="sample-soa">
-              <div className="sample-soa-head">Example 1 — Control Included</div>
-              <div className="sample-row"><span className="sample-key">Control</span><span className="sample-val">A.8.24 — Use of cryptography</span></div>
+              <div className="sample-soa-head">Example 1 - Control Included</div>
+              <div className="sample-row"><span className="sample-key">Control</span><span className="sample-val">A.8.24 - Use of cryptography</span></div>
               <div className="sample-row"><span className="sample-key">Applicable</span><span className="sample-val yes">YES</span></div>
               <div className="sample-row"><span className="sample-key">Justification</span><span className="sample-val">Risk register R-12 (unauthorised disclosure of customer PII in transit) and R-18 (data breach in cloud storage) both require cryptographic controls. DPDP Act and customer DPAs (Acme Corp, BetaCo) also require encryption at rest and in transit.</span></div>
               <div className="sample-row"><span className="sample-key">Status</span><span className="sample-val">Implemented</span></div>
@@ -319,8 +319,8 @@ export default function SoAISO27001CompleteGuide() {
             </div>
 
             <div className="sample-soa">
-              <div className="sample-soa-head">Example 2 — Control Excluded</div>
-              <div className="sample-row"><span className="sample-key">Control</span><span className="sample-val">A.7.4 — Physical security monitoring</span></div>
+              <div className="sample-soa-head">Example 2 - Control Excluded</div>
+              <div className="sample-row"><span className="sample-key">Control</span><span className="sample-val">A.7.4 - Physical security monitoring</span></div>
               <div className="sample-row"><span className="sample-key">Applicable</span><span className="sample-val no">NO</span></div>
               <div className="sample-row"><span className="sample-key">Justification</span><span className="sample-val">SecComply operates as a fully cloud-native organisation with no owned data centres or physical processing infrastructure within the ISMS scope. All production workloads are hosted on AWS, where physical security monitoring is the responsibility of AWS under the shared responsibility model (AWS SOC 2 Type II report retained on file). No physical premises within scope require monitoring.</span></div>
               <div className="sample-row"><span className="sample-key">Status</span><span className="sample-val">Not applicable</span></div>
@@ -328,60 +328,60 @@ export default function SoAISO27001CompleteGuide() {
               <div className="sample-row"><span className="sample-key">Owner</span><span className="sample-val">CISO</span></div>
             </div>
 
-            <p>The two patterns are different but the underlying logic is the same — every cell tells the auditor exactly what they need to know, with no follow-up question required. That is the bar.</p>
+            <p>The two patterns are different but the underlying logic is the same - every cell tells the auditor exactly what they need to know, with no follow-up question required. That is the bar.</p>
           </section>
 
           <section id="build-process">
             <h2>How to <em>Build the SoA</em></h2>
-            <p>Building the SoA is a six-step process. It assumes you already have a defined ISMS scope and a completed risk assessment — both prerequisites without which the SoA cannot be built.</p>
+            <p>Building the SoA is a six-step process. It assumes you already have a defined ISMS scope and a completed risk assessment - both prerequisites without which the SoA cannot be built.</p>
             <div className="step-list">
               <div className="step-item">
                 <div className="step-num">1</div>
                 <div className="step-body">
                   <strong>Confirm the ISMS Scope</strong>
-                  <p>The SoA is bounded by the scope of your ISMS. If you have not finalised the scope, do that first — see our walkthrough on <a href="https://seccomply.net/resources/blog/iso-27001-scope-definition" className="inline-link">ISO 27001 scope definition</a>. Out-of-scope assets, business units, and locations are excluded from SoA consideration entirely.</p>
+                  <p>The SoA is bounded by the scope of your ISMS. If you have not finalised the scope, do that first - see our walkthrough on <a href="https://seccomply.net/resources/blog/iso-27001-scope-definition" className="inline-link">ISO 27001 scope definition</a>. Out-of-scope assets, business units, and locations are excluded from SoA consideration entirely.</p>
                 </div>
               </div>
               <div className="step-item">
                 <div className="step-num">2</div>
                 <div className="step-body">
                   <strong>Pull the Annex A Control List</strong>
-                  <p>Start from the official ISO 27001:2022 Annex A — all 93 controls across A.5 (37 organisational), A.6 (8 people), A.7 (14 physical), A.8 (34 technological). Use the standard reference numbering exactly. Do not abbreviate, paraphrase, or renumber.</p>
+                  <p>Start from the official ISO 27001:2022 Annex A - all 93 controls across A.5 (37 organisational), A.6 (8 people), A.7 (14 physical), A.8 (34 technological). Use the standard reference numbering exactly. Do not abbreviate, paraphrase, or renumber.</p>
                 </div>
               </div>
               <div className="step-item">
                 <div className="step-num">3</div>
                 <div className="step-body">
                   <strong>Map Risks to Controls</strong>
-                  <p>For every risk in your risk register that requires treatment, identify which Annex A controls (one or many) address that risk. This mapping is what justifies inclusion. Many controls will be selected by multiple risks — record all the references in the justification column.</p>
+                  <p>For every risk in your risk register that requires treatment, identify which Annex A controls (one or many) address that risk. This mapping is what justifies inclusion. Many controls will be selected by multiple risks - record all the references in the justification column.</p>
                 </div>
               </div>
               <div className="step-item">
                 <div className="step-num">4</div>
                 <div className="step-body">
                   <strong>Add Regulatory and Contractual Drivers</strong>
-                  <p>Some controls will be selected not by risk but by external requirement — DPDP Act, GDPR, customer contractual clauses, sector regulations. Capture these as separate justifications. A single control may have both risk-based and regulatory justifications.</p>
+                  <p>Some controls will be selected not by risk but by external requirement - DPDP Act, GDPR, customer contractual clauses, sector regulations. Capture these as separate justifications. A single control may have both risk-based and regulatory justifications.</p>
                 </div>
               </div>
               <div className="step-item">
                 <div className="step-num">5</div>
                 <div className="step-body">
                   <strong>Justify Every Exclusion</strong>
-                  <p>For controls you exclude, provide a clear, defensible reason — typically based on scope (the asset class is not present), the shared responsibility model (a third party operates the control), or the risk profile (the control addresses a risk that does not exist for your organisation). Generic exclusions like "not applicable to our business" will fail.</p>
+                  <p>For controls you exclude, provide a clear, defensible reason - typically based on scope (the asset class is not present), the shared responsibility model (a third party operates the control), or the risk profile (the control addresses a risk that does not exist for your organisation). Generic exclusions like "not applicable to our business" will fail.</p>
                 </div>
               </div>
               <div className="step-item">
                 <div className="step-num">6</div>
                 <div className="step-body">
                   <strong>Reference the Implementing Documents</strong>
-                  <p>For every included control, the SoA must point to where the control actually lives — the policy that mandates it, the procedure that operates it, or the technical configuration that enforces it. Auditors will follow these references during Stage 2. Broken references are a fast way to fail.</p>
+                  <p>For every included control, the SoA must point to where the control actually lives - the policy that mandates it, the procedure that operates it, or the technical configuration that enforces it. Auditors will follow these references during Stage 2. Broken references are a fast way to fail.</p>
                 </div>
               </div>
             </div>
           </section>
 
           <section id="in-vs-out">
-            <h2>Including vs Excluding — <em>What Auditors Look For</em></h2>
+            <h2>Including vs Excluding - <em>What Auditors Look For</em></h2>
             <p>The SoA is not just an inventory; it is a series of decisions. Each decision needs to stand up to scrutiny. Here is what good and bad decisions look like, side by side.</p>
             <div className="scope-grid">
               <div className="scope-col sc-in">
@@ -400,7 +400,7 @@ export default function SoAISO27001CompleteGuide() {
                   <li>Controls "for completeness" with no risk linkage</li>
                   <li>Controls included but not actually implemented</li>
                   <li>Controls referencing draft or non-existent policies</li>
-                  <li>Controls owned by no one — orphaned controls</li>
+                  <li>Controls owned by no one - orphaned controls</li>
                   <li>Controls copied from a generic SoA template without review</li>
                 </ul>
               </div>
@@ -435,16 +435,16 @@ export default function SoAISO27001CompleteGuide() {
             <p>The fastest way to fail a Stage 1 review is to use the same justification ("Required by ISO 27001 best practice") for dozens of controls. Auditors see this as evidence the team has not actually thought about each control. Each justification should be specific to that control and ideally reference the underlying risk or requirement.</p>
 
             <h3>2. SoA Out of Sync with the Risk Register</h3>
-            <p>If a risk in the register requires a treatment that maps to control A.5.20, and the SoA marks A.5.20 as not applicable — that is a major non-conformity. Internal consistency between the risk assessment, the risk treatment plan, and the SoA is non-negotiable. Build the cross-reference and audit it before the auditor does.</p>
+            <p>If a risk in the register requires a treatment that maps to control A.5.20, and the SoA marks A.5.20 as not applicable - that is a major non-conformity. Internal consistency between the risk assessment, the risk treatment plan, and the SoA is non-negotiable. Build the cross-reference and audit it before the auditor does.</p>
 
             <h3>3. Missing the 11 New 2022 Controls</h3>
-            <p>ISO 27001:2022 introduced 11 new controls — including threat intelligence (A.5.7), cloud services (A.5.23), data masking (A.8.11), DLP (A.8.12), and secure coding (A.8.28). Organisations that built their SoA against the 2013 version need to specifically address these. Auditors check this first because it tells them whether the SoA has been refreshed or just reused.</p>
+            <p>ISO 27001:2022 introduced 11 new controls - including threat intelligence (A.5.7), cloud services (A.5.23), data masking (A.8.11), DLP (A.8.12), and secure coding (A.8.28). Organisations that built their SoA against the 2013 version need to specifically address these. Auditors check this first because it tells them whether the SoA has been refreshed or just reused.</p>
 
             <h3>4. Excluding Controls the Scope Includes</h3>
             <p>If your scope statement says you operate in a leased office in Pune, you cannot exclude all physical security controls on the basis of being cloud-native. The SoA must be consistent with the scope. Misalignment here is one of the most embarrassing audit findings because it reveals the documents were written separately and never reconciled.</p>
 
             <h3>5. Implementation Status That Does Not Match Reality</h3>
-            <p>Marking a control as "Implemented" when the policy is in draft, or when the procedure is documented but not operating, will be caught during Stage 2 testing. It is far better to be honest — "Partially implemented, target completion Q2 2026" — than to overstate. Auditors respect candour and downgrade trust quickly when reality contradicts the SoA.</p>
+            <p>Marking a control as "Implemented" when the policy is in draft, or when the procedure is documented but not operating, will be caught during Stage 2 testing. It is far better to be honest - "Partially implemented, target completion Q2 2026" - than to overstate. Auditors respect candour and downgrade trust quickly when reality contradicts the SoA.</p>
 
             <h3>6. Treating the SoA as a One-Time Deliverable</h3>
             <p>The SoA must be reviewed and updated when scope changes, when the threat environment shifts, when new regulations apply, and at the annual ISMS management review at minimum. A document dated two years ago with no version history is a red flag that the entire ISMS may be coasting.</p>
@@ -467,7 +467,7 @@ export default function SoAISO27001CompleteGuide() {
 
           <div className="cta-banner">
             <h3>Need Help Building Your SoA?</h3>
-            <p>SecComply runs SoA workshops and full ISO 27001 implementation engagements — risk-mapping methodology, audit-defensible justifications, and the cross-referencing every certification body looks for.</p>
+            <p>SecComply runs SoA workshops and full ISO 27001 implementation engagements - risk-mapping methodology, audit-defensible justifications, and the cross-referencing every certification body looks for.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free ISO 27001 Consultation →</a>
             </div>
@@ -483,7 +483,7 @@ export default function SoAISO27001CompleteGuide() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the Statement of Applicability in ISO 27001?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>The Statement of Applicability (SoA) is a document required by ISO 27001 clause 6.1.3(d). It lists every Annex A control, declares whether each applies to your organisation, justifies inclusion or exclusion, records implementation status, and references the controlling documentation. It is the bridge between your risk assessment and your selected controls — the single document that proves you have made deliberate, justified decisions about your information security posture.</p></div>
+              <div className="faq-a"><p>The Statement of Applicability (SoA) is a document required by ISO 27001 clause 6.1.3(d). It lists every Annex A control, declares whether each applies to your organisation, justifies inclusion or exclusion, records implementation status, and references the controlling documentation. It is the bridge between your risk assessment and your selected controls - the single document that proves you have made deliberate, justified decisions about your information security posture.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is the Statement of Applicability mandatory?</strong><span className="faq-ch">▾</span></div>
@@ -491,11 +491,11 @@ export default function SoAISO27001CompleteGuide() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How many controls go in the Statement of Applicability?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>All 93 Annex A controls from ISO 27001:2022 must appear in the SoA — including those you exclude. The SoA must address every control by reference; you cannot simply leave out controls you have decided do not apply. A typical SaaS startup applies 70–80 controls and excludes the rest with documented justification, most commonly the physical data centre controls for fully cloud-native organisations.</p></div>
+              <div className="faq-a"><p>All 93 Annex A controls from ISO 27001:2022 must appear in the SoA - including those you exclude. The SoA must address every control by reference; you cannot simply leave out controls you have decided do not apply. A typical SaaS startup applies 70–80 controls and excludes the rest with documented justification, most commonly the physical data centre controls for fully cloud-native organisations.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the difference between the SoA and the risk treatment plan?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>The risk treatment plan is the operational schedule for treating identified risks — it lists actions, owners, and deadlines. The SoA is the control register that documents which Annex A controls apply, why, and where they are implemented. The two link together: risks identified in the risk assessment drive control selection, which is then documented in the SoA. The risk treatment plan tracks the work; the SoA documents the decision.</p></div>
+              <div className="faq-a"><p>The risk treatment plan is the operational schedule for treating identified risks - it lists actions, owners, and deadlines. The SoA is the control register that documents which Annex A controls apply, why, and where they are implemented. The two link together: risks identified in the risk assessment drive control selection, which is then documented in the SoA. The risk treatment plan tracks the work; the SoA documents the decision.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How often should the SoA be updated?</strong><span className="faq-ch">▾</span></div>
@@ -507,7 +507,7 @@ export default function SoAISO27001CompleteGuide() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Should the SoA be in spreadsheet form or a document?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>ISO 27001 is format-agnostic — the SoA can be a spreadsheet, a structured table inside a Word document, a database, or output from a GRC tool. Most organisations use a spreadsheet for ease of sorting and filtering, but the format matters far less than the content quality. What matters is version control, cell-level traceability, and the ability to navigate the document quickly during an audit.</p></div>
+              <div className="faq-a"><p>ISO 27001 is format-agnostic - the SoA can be a spreadsheet, a structured table inside a Word document, a database, or output from a GRC tool. Most organisations use a spreadsheet for ease of sorting and filtering, but the format matters far less than the content quality. What matters is version control, cell-level traceability, and the ability to navigate the document quickly during an audit.</p></div>
             </div>
           </section>
 
@@ -536,7 +536,7 @@ export default function SoAISO27001CompleteGuide() {
               <li><a href="https://seccomply.net/resources/blog/iso-27001-vs-soc2-vs-gdpr">ISO 27001 vs SOC 2 vs GDPR</a></li>
               <li><a href="https://seccomply.net/resources/blog/what-is-an-isms">What Is an ISMS?</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27001-business-value">Business Value of ISO 27001</a></li>
-              <li><a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls">Annex A — 93 Controls</a></li>
+              <li><a href="https://seccomply.net/resources/blog/iso-27001-annex-a-controls">Annex A - 93 Controls</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27001-risk-assessment">Risk Assessment</a></li>
               <li><a href="https://seccomply.net/resources/blog/iso-27001-scope-definition">Scope Definition</a></li>
               <li><a href="https://seccomply.net/resources/blog/soa-iso-27001-complete-guide">▶ Statement of Applicability</a></li>

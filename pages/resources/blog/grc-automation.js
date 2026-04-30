@@ -36,10 +36,10 @@ export default function GRCAutomation() {
         <title>GRC Automation: The Future of Compliance | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="How GRC automation is replacing spreadsheets and manual evidence collection with continuous compliance — what it does, what it cannot do, how to evaluate platforms, and what the compliance programme of 2026 actually looks like." />
+        <meta name="description" content="How GRC automation is replacing spreadsheets and manual evidence collection with continuous compliance - what it does, what it cannot do, how to evaluate platforms, and what the compliance programme of 2026 actually looks like." />
         <meta name="keywords" content="GRC automation, GRC platform, compliance automation, ISO 27001 automation, SOC 2 automation, continuous compliance, GRC tools, compliance as code, automated evidence collection, GRC software 2026" />
         <meta property="og:title" content="GRC Automation: The Future of Compliance" />
-        <meta property="og:description" content="The compliance team that runs entirely on spreadsheets is running a programme designed for the auditing frequency of 2010. GRC automation changes what is possible — here is what it means in practice." />
+        <meta property="og:description" content="The compliance team that runs entirely on spreadsheets is running a programme designed for the auditing frequency of 2010. GRC automation changes what is possible - here is what it means in practice." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/grc-automation" />
         <meta property="article:published_time" content="2026-03-27" />
@@ -50,11 +50,11 @@ export default function GRCAutomation() {
           "@graph": [
             { "@type": "Article", "headline": "GRC Automation: The Future of Compliance", "description": "How GRC automation replaces manual compliance with continuous evidence collection, what platforms do and cannot do, and what modern compliance looks like in practice.", "author": { "@type": "Person", "name": "Soham Sawant", "jobTitle": "Cybersecurity Expert & Technical Writer", "worksFor": { "@type": "Organization", "name": "SecComply" } }, "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } }, "datePublished": "2026-03-27", "dateModified": "2026-03-27", "mainEntityOfPage": "https://seccomply.net/resources/blog/grc-automation", "keywords": "GRC automation, compliance automation, ISO 27001, SOC 2, continuous compliance, evidence collection, compliance platform", "articleSection": "Compliance Governance", "wordCount": 1900, "timeRequired": "PT8M" },
             { "@type": "FAQPage", "mainEntity": [
-              { "@type": "Question", "name": "What is GRC automation?", "acceptedAnswer": { "@type": "Answer", "text": "GRC automation refers to software platforms and tools that replace manual governance, risk, and compliance processes with automated workflows — connecting to your cloud infrastructure, SaaS tools, and systems to continuously collect evidence, map controls to compliance frameworks, track risk, and generate audit-ready reports. Instead of a compliance team manually gathering screenshots before an audit, GRC automation collects and organises evidence continuously throughout the year." } },
+              { "@type": "Question", "name": "What is GRC automation?", "acceptedAnswer": { "@type": "Answer", "text": "GRC automation refers to software platforms and tools that replace manual governance, risk, and compliance processes with automated workflows - connecting to your cloud infrastructure, SaaS tools, and systems to continuously collect evidence, map controls to compliance frameworks, track risk, and generate audit-ready reports. Instead of a compliance team manually gathering screenshots before an audit, GRC automation collects and organises evidence continuously throughout the year." } },
               { "@type": "Question", "name": "What compliance frameworks can GRC platforms automate?", "acceptedAnswer": { "@type": "Answer", "text": "Most enterprise GRC platforms support ISO 27001, SOC 2, HIPAA, PCI DSS, GDPR, and NIST CSF out of the box, with control mappings that allow a single piece of evidence to satisfy multiple frameworks simultaneously. Leading platforms increasingly include DPDP Act support for Indian organisations. The key differentiator between platforms is not which frameworks they list but how deeply they integrate with your actual systems to collect evidence automatically rather than requiring manual uploads." } },
-              { "@type": "Question", "name": "What does GRC automation not replace?", "acceptedAnswer": { "@type": "Answer", "text": "GRC automation does not replace security expertise, risk judgement, or control design. It automates evidence collection, status tracking, and reporting — but the decisions about which controls to implement, how to assess residual risk, and how to respond to a finding still require human expertise. Automation also does not replace the actual security controls themselves — it monitors and reports on them. An automated GRC platform connected to misconfigured systems will produce clean, organised evidence of misconfigured systems." } },
-              { "@type": "Question", "name": "How long does it take to implement a GRC platform?", "acceptedAnswer": { "@type": "Answer", "text": "Most organisations can achieve basic GRC platform functionality in 4-8 weeks — integrations connected, controls mapped to frameworks, evidence flowing automatically. A full implementation including custom control mapping, vendor risk workflows, policy management, and training tracking typically takes 3-6 months. The speed of implementation depends heavily on the maturity of your existing compliance documentation and the number of integrations required." } },
-              { "@type": "Question", "name": "What is the difference between GRC automation and compliance-as-a-service?", "acceptedAnswer": { "@type": "Answer", "text": "GRC automation is a software category — platforms like Vanta, Drata, or Secureframe that automate evidence collection and compliance tracking. Compliance-as-a-service is a managed service where an external team (like SecComply) runs your compliance programme — strategy, controls, evidence, audit preparation, and ongoing management. Many organisations combine both: they use a GRC platform for automation while working with a compliance team who configures it correctly, fills the gaps the platform cannot automate, and prepares them for the actual audit." } }
+              { "@type": "Question", "name": "What does GRC automation not replace?", "acceptedAnswer": { "@type": "Answer", "text": "GRC automation does not replace security expertise, risk judgement, or control design. It automates evidence collection, status tracking, and reporting - but the decisions about which controls to implement, how to assess residual risk, and how to respond to a finding still require human expertise. Automation also does not replace the actual security controls themselves - it monitors and reports on them. An automated GRC platform connected to misconfigured systems will produce clean, organised evidence of misconfigured systems." } },
+              { "@type": "Question", "name": "How long does it take to implement a GRC platform?", "acceptedAnswer": { "@type": "Answer", "text": "Most organisations can achieve basic GRC platform functionality in 4-8 weeks - integrations connected, controls mapped to frameworks, evidence flowing automatically. A full implementation including custom control mapping, vendor risk workflows, policy management, and training tracking typically takes 3-6 months. The speed of implementation depends heavily on the maturity of your existing compliance documentation and the number of integrations required." } },
+              { "@type": "Question", "name": "What is the difference between GRC automation and compliance-as-a-service?", "acceptedAnswer": { "@type": "Answer", "text": "GRC automation is a software category - platforms like Vanta, Drata, or Secureframe that automate evidence collection and compliance tracking. Compliance-as-a-service is a managed service where an external team (like SecComply) runs your compliance programme - strategy, controls, evidence, audit preparation, and ongoing management. Many organisations combine both: they use a GRC platform for automation while working with a compliance team who configures it correctly, fills the gaps the platform cannot automate, and prepares them for the actual audit." } }
             ]},
             { "@type": "BreadcrumbList", "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seccomply.net" },
@@ -222,7 +222,7 @@ export default function GRCAutomation() {
           <span className="badge badge-gr">✓ ISO 27001 · SOC 2</span>
         </div>
         <h1 className="cspm-hero-h1">GRC Automation: <em>The Future of Compliance</em></h1>
-        <p className="cspm-hero-sub">The compliance team that runs on spreadsheets is running a programme designed for annual audits, not continuous assurance. GRC automation changes what is possible — real-time control monitoring, automated evidence collection, multi-framework coverage from a single control set. Here is what it means in practice and how to evaluate whether you need it.</p>
+        <p className="cspm-hero-sub">The compliance team that runs on spreadsheets is running a programme designed for annual audits, not continuous assurance. GRC automation changes what is possible - real-time control monitoring, automated evidence collection, multi-framework coverage from a single control set. Here is what it means in practice and how to evaluate whether you need it.</p>
 
         <div className="cspm-author-strip">
           <div className="avatar">SS</div>
@@ -236,7 +236,7 @@ export default function GRCAutomation() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=480&fit=crop" alt="GRC automation compliance dashboard" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}}/>
         </div>
-        <p className="img-cap">GRC automation replaces the annual evidence scramble with continuous compliance monitoring — connecting to your cloud infrastructure, SaaS tools, and systems to collect and organise evidence automatically throughout the year.</p>
+        <p className="img-cap">GRC automation replaces the annual evidence scramble with continuous compliance monitoring - connecting to your cloud infrastructure, SaaS tools, and systems to collect and organise evidence automatically throughout the year.</p>
 
         {/* SVG DASHBOARD */}
         <div className="img-wrap">
@@ -247,7 +247,7 @@ export default function GRCAutomation() {
               <pattern id="gpat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern>
             </defs>
             <rect width="960" height="380" fill="url(#gpat)"/>
-            <text x="480" y="30" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">GRC Automation — Compliance Programme at a Glance</text>
+            <text x="480" y="30" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">GRC Automation - Compliance Programme at a Glance</text>
 
             {/* LEFT: Manual vs Automated */}
             <text x="36" y="54" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">MANUAL vs AUTOMATED COMPLIANCE</text>
@@ -272,7 +272,7 @@ export default function GRCAutomation() {
             <line x1="340" y1="42" x2="340" y2="372" stroke="rgba(232,99,43,0.07)" strokeWidth="1"/>
 
             {/* CENTRE: Control coverage */}
-            <text x="530" y="54" textAnchor="middle" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">FRAMEWORK COVERAGE — SINGLE CONTROL SET</text>
+            <text x="530" y="54" textAnchor="middle" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">FRAMEWORK COVERAGE - SINGLE CONTROL SET</text>
             {[
               {fw:'ISO 27001',  pct:88, total:'114 controls', col:'#06d6a0'},
               {fw:'SOC 2',      pct:82, total:'64 criteria',  col:'#818cf8'},
@@ -309,7 +309,7 @@ export default function GRCAutomation() {
             ))}
           </svg>
         </div>
-        <p className="img-cap">GRC automation dashboard — manual vs automated compliance comparison, framework coverage rates from a single control set, and time saved per audit cycle across evidence collection, control mapping, and reporting.</p>
+        <p className="img-cap">GRC automation dashboard - manual vs automated compliance comparison, framework coverage rates from a single control set, and time saved per audit cycle across evidence collection, control mapping, and reporting.</p>
 
         <div className="toc-box">
           <div className="toc-lbl">In This Article</div>
@@ -328,7 +328,7 @@ export default function GRCAutomation() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Compliance used to be a point-in-time exercise: gather evidence before the audit, produce the documentation, pass the audit, and repeat annually. That model made sense when auditors visited once a year and checked a set of controls that changed slowly. It does not make sense for organisations running on cloud infrastructure where configurations change daily, where multiple compliance frameworks are required simultaneously, and where customers increasingly expect continuous security assurance rather than an annual certificate. GRC automation is the technology layer that makes continuous compliance operationally feasible — and understanding exactly what it does and does not do is the difference between a well-configured compliance programme and an expensive dashboard that creates false confidence.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Compliance used to be a point-in-time exercise: gather evidence before the audit, produce the documentation, pass the audit, and repeat annually. That model made sense when auditors visited once a year and checked a set of controls that changed slowly. It does not make sense for organisations running on cloud infrastructure where configurations change daily, where multiple compliance frameworks are required simultaneously, and where customers increasingly expect continuous security assurance rather than an annual certificate. GRC automation is the technology layer that makes continuous compliance operationally feasible - and understanding exactly what it does and does not do is the difference between a well-configured compliance programme and an expensive dashboard that creates false confidence.</p>
 
           <div className="stats-row anim">
             <div className="stat-card"><div className="stat-n" data-target="73" data-suffix="%">0%</div><div className="stat-l">of compliance teams report that manual evidence collection is their biggest operational burden<br/><span style={{fontSize:'.68rem',opacity:.55}}>Gartner, 2024</span></div></div>
@@ -338,15 +338,15 @@ export default function GRCAutomation() {
 
           <section id="what-is-grc">
             <h2>What Is <em>GRC Automation?</em></h2>
-            <p>GRC — Governance, Risk, and Compliance — covers the policies, controls, risk management processes, and audit evidence that make up an organisation's compliance programme. Manual GRC runs on spreadsheets, shared drives, email threads, and the collective memory of whoever has been at the company longest. It works until it doesn't — usually the week before an audit when someone realises the evidence from eight months ago is stale.</p>
-            <p>GRC automation platforms connect to your actual systems — AWS, Azure, GCP, GitHub, Okta, Jira, Slack, HR systems — and continuously collect evidence that your controls are operating. Instead of a compliance team manually taking screenshots of access reviews, the platform pulls the data automatically, maps it to the relevant controls, and flags anomalies in real time.</p>
+            <p>GRC - Governance, Risk, and Compliance - covers the policies, controls, risk management processes, and audit evidence that make up an organisation's compliance programme. Manual GRC runs on spreadsheets, shared drives, email threads, and the collective memory of whoever has been at the company longest. It works until it doesn't - usually the week before an audit when someone realises the evidence from eight months ago is stale.</p>
+            <p>GRC automation platforms connect to your actual systems - AWS, Azure, GCP, GitHub, Okta, Jira, Slack, HR systems - and continuously collect evidence that your controls are operating. Instead of a compliance team manually taking screenshots of access reviews, the platform pulls the data automatically, maps it to the relevant controls, and flags anomalies in real time.</p>
             <div className="pull-quote">
               <p>"The difference between manual GRC and automated GRC is the difference between knowing your controls were in place on the day someone checked them and knowing your controls are in place every day."</p>
             </div>
           </section>
 
           <section id="before-after">
-            <h2>Before vs After — <em>What Actually Changes</em></h2>
+            <h2>Before vs After - <em>What Actually Changes</em></h2>
             <div className="before-after">
               <div className="ba-card ba-before anim">
                 <div className="ba-label">❌ Manual Compliance</div>
@@ -378,25 +378,25 @@ export default function GRCAutomation() {
           <section id="what-it-does">
             <h2>What GRC Platforms <em>Actually Do</em></h2>
             <ul className="feat-list">
-              <li className="anim"><div className="f-num">1</div><div className="f-body"><strong>Automated evidence collection via integrations</strong><span>The platform connects to your cloud providers, identity systems, code repositories, and SaaS tools via APIs. It continuously collects evidence — who has access to what, whether MFA is enforced, whether encryption is enabled, whether logging is active — and stores it against the relevant controls. When the auditor asks for evidence that MFA was enforced throughout the audit period, the platform produces a timestamped record rather than a screenshot taken the morning of the audit.</span></div></li>
-              <li className="anim"><div className="f-num">2</div><div className="f-body"><strong>Multi-framework control mapping</strong><span>ISO 27001 A.8.3 (Information access restriction), SOC 2 CC6.1 (Logical access), and HIPAA 164.312(a)(1) (Access control) all map to the same underlying control: restricting system access to authorised users. A GRC platform maps your evidence to all three simultaneously. The compliance team that previously ran three separate programmes can now run one programme that satisfies all three — a fundamental efficiency gain for organisations pursuing multiple certifications. If you are pursuing <a href="https://seccomply.net/resources/blog/soc2-vs-iso27001" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>both ISO 27001 and SOC 2</a>, GRC automation makes the overlap dramatically more manageable.</span></div></li>
-              <li className="anim"><div className="f-num">3</div><div className="f-body"><strong>Continuous control monitoring and alerting</strong><span>Rather than checking controls annually, the platform monitors them continuously and alerts when a control drifts from its required state — an S3 bucket that becomes publicly accessible, a user account that has not had MFA enforced, an SSL certificate approaching expiry. Compliance teams catch and remediate these gaps before they become audit findings or breach vectors.</span></div></li>
-              <li className="anim"><div className="f-num">4</div><div className="f-body"><strong>Policy and training management</strong><span>Distribute policies to employees, track acknowledgements, send reminders, and maintain a complete audit trail of who read what and when. Integrate with your security awareness training platform to track completion rates by department. All of this evidence — policy acknowledgement rates, training completion, exception management — flows automatically into your audit package.</span></div></li>
+              <li className="anim"><div className="f-num">1</div><div className="f-body"><strong>Automated evidence collection via integrations</strong><span>The platform connects to your cloud providers, identity systems, code repositories, and SaaS tools via APIs. It continuously collects evidence - who has access to what, whether MFA is enforced, whether encryption is enabled, whether logging is active - and stores it against the relevant controls. When the auditor asks for evidence that MFA was enforced throughout the audit period, the platform produces a timestamped record rather than a screenshot taken the morning of the audit.</span></div></li>
+              <li className="anim"><div className="f-num">2</div><div className="f-body"><strong>Multi-framework control mapping</strong><span>ISO 27001 A.8.3 (Information access restriction), SOC 2 CC6.1 (Logical access), and HIPAA 164.312(a)(1) (Access control) all map to the same underlying control: restricting system access to authorised users. A GRC platform maps your evidence to all three simultaneously. The compliance team that previously ran three separate programmes can now run one programme that satisfies all three - a fundamental efficiency gain for organisations pursuing multiple certifications. If you are pursuing <a href="https://seccomply.net/resources/blog/soc2-vs-iso27001" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>both ISO 27001 and SOC 2</a>, GRC automation makes the overlap dramatically more manageable.</span></div></li>
+              <li className="anim"><div className="f-num">3</div><div className="f-body"><strong>Continuous control monitoring and alerting</strong><span>Rather than checking controls annually, the platform monitors them continuously and alerts when a control drifts from its required state - an S3 bucket that becomes publicly accessible, a user account that has not had MFA enforced, an SSL certificate approaching expiry. Compliance teams catch and remediate these gaps before they become audit findings or breach vectors.</span></div></li>
+              <li className="anim"><div className="f-num">4</div><div className="f-body"><strong>Policy and training management</strong><span>Distribute policies to employees, track acknowledgements, send reminders, and maintain a complete audit trail of who read what and when. Integrate with your security awareness training platform to track completion rates by department. All of this evidence - policy acknowledgement rates, training completion, exception management - flows automatically into your audit package.</span></div></li>
               <li className="anim"><div className="f-num">5</div><div className="f-body"><strong>Vendor risk management</strong><span>Track vendor security questionnaire responses, certification expiry dates, and contract compliance across your vendor portfolio. Integrate with external security rating platforms to monitor vendor posture continuously. When a vendor's security rating drops or their certification expires, the platform flags it automatically rather than waiting for the annual review cycle.</span></div></li>
             </ul>
           </section>
 
           <section id="what-it-doesnt">
             <h2>What GRC Automation <em>Does Not Replace</em></h2>
-            <p>GRC automation is a powerful efficiency layer — but it is not a substitute for security expertise, risk judgement, or the actual controls themselves. Understanding these limits is what separates organisations that use GRC platforms effectively from those that create expensive dashboards of ongoing problems.</p>
+            <p>GRC automation is a powerful efficiency layer - but it is not a substitute for security expertise, risk judgement, or the actual controls themselves. Understanding these limits is what separates organisations that use GRC platforms effectively from those that create expensive dashboards of ongoing problems.</p>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>The Most Important Limitation</strong>
-                <p>A GRC platform connected to misconfigured systems will produce clean, well-organised, timestamped evidence of misconfigured systems. The platform does not make you secure — it makes your security posture visible and your compliance evidence organised. The controls still need to be designed correctly, implemented correctly, and tested. GRC automation is the monitoring and reporting layer, not the security control itself.</p>
+                <p>A GRC platform connected to misconfigured systems will produce clean, well-organised, timestamped evidence of misconfigured systems. The platform does not make you secure - it makes your security posture visible and your compliance evidence organised. The controls still need to be designed correctly, implemented correctly, and tested. GRC automation is the monitoring and reporting layer, not the security control itself.</p>
               </div>
             </div>
-            <p>GRC automation also does not replace the human judgement required for risk assessment — deciding which risks are acceptable, which require treatment, and how to prioritise a remediation backlog. It does not replace the security expertise required to interpret findings in context, design controls for novel threats, or navigate a complex audit conversation with an experienced auditor. And it does not replace the compliance expertise required to understand the nuances of how a standard's requirements apply to your specific architecture and business model.</p>
+            <p>GRC automation also does not replace the human judgement required for risk assessment - deciding which risks are acceptable, which require treatment, and how to prioritise a remediation backlog. It does not replace the security expertise required to interpret findings in context, design controls for novel threats, or navigate a complex audit conversation with an experienced auditor. And it does not replace the compliance expertise required to understand the nuances of how a standard's requirements apply to your specific architecture and business model.</p>
           </section>
 
           <section id="platforms">
@@ -414,7 +414,7 @@ export default function GRCAutomation() {
               <span className="co-icon">💡</span>
               <div className="co-body">
                 <strong>The Most Important Evaluation Criterion</strong>
-                <p>Do not evaluate GRC platforms based on the number of frameworks they claim to support. Evaluate them based on the depth of their integrations with your specific tech stack and how they handle the controls that cannot be automated — because every platform has them. Ask vendors: what percentage of your ISO 27001 controls require manual evidence upload? The honest answer should be around 20-30%. Any vendor claiming 95% automation is misrepresenting what automation can cover.</p>
+                <p>Do not evaluate GRC platforms based on the number of frameworks they claim to support. Evaluate them based on the depth of their integrations with your specific tech stack and how they handle the controls that cannot be automated - because every platform has them. Ask vendors: what percentage of your ISO 27001 controls require manual evidence upload? The honest answer should be around 20-30%. Any vendor claiming 95% automation is misrepresenting what automation can cover.</p>
               </div>
             </div>
           </section>
@@ -432,7 +432,7 @@ export default function GRCAutomation() {
 
           <div className="cta-banner">
             <h3>Ready to Automate Your Compliance Programme?</h3>
-            <p>SecComply helps organisations design the control framework first, then configure GRC automation to monitor it — so your platform produces evidence of real security, not just organised documentation of gaps.</p>
+            <p>SecComply helps organisations design the control framework first, then configure GRC automation to monitor it - so your platform produces evidence of real security, not just organised documentation of gaps.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free Compliance Consultation →</a>
               <a href="https://seccomply.net/services/compliance-as-a-service" className="btn-o" target="_blank" rel="noopener">View Compliance Services</a>
@@ -449,11 +449,11 @@ export default function GRCAutomation() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div itemScope itemType="https://schema.org/FAQPage">
               {[
-                {q:"What is GRC automation?", a:"GRC automation refers to software platforms that replace manual governance, risk, and compliance processes with automated workflows — connecting to your cloud infrastructure and SaaS tools to continuously collect evidence, map controls to compliance frameworks, track risk, and generate audit-ready reports. Instead of manually gathering screenshots before an audit, GRC automation collects and organises evidence continuously throughout the year."},
+                {q:"What is GRC automation?", a:"GRC automation refers to software platforms that replace manual governance, risk, and compliance processes with automated workflows - connecting to your cloud infrastructure and SaaS tools to continuously collect evidence, map controls to compliance frameworks, track risk, and generate audit-ready reports. Instead of manually gathering screenshots before an audit, GRC automation collects and organises evidence continuously throughout the year."},
                 {q:"What compliance frameworks can GRC platforms automate?", a:"Most enterprise GRC platforms support ISO 27001, SOC 2, HIPAA, PCI DSS, GDPR, and NIST CSF out of the box with control mappings that allow a single piece of evidence to satisfy multiple frameworks. Leading platforms increasingly include DPDP Act support. The key differentiator is not which frameworks they list but how deeply they integrate with your actual systems to collect evidence automatically rather than requiring manual uploads."},
-                {q:"What does GRC automation not replace?", a:"GRC automation does not replace security expertise, risk judgement, or control design. It automates evidence collection, status tracking, and reporting — but the decisions about which controls to implement and how to assess risk still require human expertise. An automated GRC platform connected to misconfigured systems will produce clean, organised evidence of misconfigured systems."},
+                {q:"What does GRC automation not replace?", a:"GRC automation does not replace security expertise, risk judgement, or control design. It automates evidence collection, status tracking, and reporting - but the decisions about which controls to implement and how to assess risk still require human expertise. An automated GRC platform connected to misconfigured systems will produce clean, organised evidence of misconfigured systems."},
                 {q:"How long does it take to implement a GRC platform?", a:"Most organisations achieve basic GRC platform functionality in 4-8 weeks. A full implementation including custom control mapping, vendor risk workflows, policy management, and training tracking typically takes 3-6 months. Speed depends heavily on the maturity of your existing compliance documentation and the number of integrations required."},
-                {q:"What is the difference between GRC automation and compliance-as-a-service?", a:"GRC automation is a software category — platforms like Vanta, Drata, or Secureframe that automate evidence collection and compliance tracking. Compliance-as-a-service is a managed service where an external team runs your compliance programme. Many organisations combine both: they use a GRC platform for automation while working with a compliance team who configures it correctly, fills the gaps the platform cannot automate, and prepares them for the actual audit."},
+                {q:"What is the difference between GRC automation and compliance-as-a-service?", a:"GRC automation is a software category - platforms like Vanta, Drata, or Secureframe that automate evidence collection and compliance tracking. Compliance-as-a-service is a managed service where an external team runs your compliance programme. Many organisations combine both: they use a GRC platform for automation while working with a compliance team who configures it correctly, fills the gaps the platform cannot automate, and prepares them for the actual audit."},
               ].map((f,i)=>(
                 <div key={i} className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong itemProp="name">{f.q}</strong><span className="faq-ch">▾</span></div>
@@ -495,7 +495,7 @@ export default function GRCAutomation() {
           </div>
           <div className="sb-cta">
             <h4>Automate Your Compliance</h4>
-            <p>Free consultation — we configure GRC automation on top of real controls, not around them.</p>
+            <p>Free consultation - we configure GRC automation on top of real controls, not around them.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

@@ -36,10 +36,10 @@ export default function SecurityPolicyGuide() {
         <title>How to Write a Security Policy People Will Actually Follow | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="Most security policies fail not because they're technically wrong but because nobody reads them. A practical guide to writing security policies that are clear, enforceable, and actually change behaviour — with ISO 27001, SOC 2, and DPDP compliance mapping." />
+        <meta name="description" content="Most security policies fail not because they're technically wrong but because nobody reads them. A practical guide to writing security policies that are clear, enforceable, and actually change behaviour - with ISO 27001, SOC 2, and DPDP compliance mapping." />
         <meta name="keywords" content="how to write security policy, information security policy, ISO 27001 security policy, SOC 2 security policy, acceptable use policy, ISMS policy, security policy template, security policy best practices, security policy framework, employee security policy" />
         <meta property="og:title" content="How to Write a Security Policy People Will Actually Follow" />
-        <meta property="og:description" content="Most security policies are written to satisfy auditors, not to change behaviour. Here's how to write one that does both — with the structure, language, and enforcement mechanisms that actually work." />
+        <meta property="og:description" content="Most security policies are written to satisfy auditors, not to change behaviour. Here's how to write one that does both - with the structure, language, and enforcement mechanisms that actually work." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/how-to-write-security-policy" />
         <meta property="og:image" content="https://seccomply.net/assets/images/blog/security-policy-og.png" />
@@ -52,19 +52,19 @@ export default function SecurityPolicyGuide() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
-            { "@type": "Article", "headline": "How to Write a Security Policy People Will Actually Follow", "description": "A practical guide to writing security policies that are clear, enforceable, and actually change behaviour — with ISO 27001, SOC 2, and DPDP compliance mapping.", "author": { "@type": "Person", "name": "Soham Sawant", "jobTitle": "Cybersecurity Expert & Technical Writer", "worksFor": { "@type": "Organization", "name": "SecComply" } }, "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } }, "datePublished": "2026-03-25", "dateModified": "2026-03-25", "mainEntityOfPage": "https://seccomply.net/resources/blog/how-to-write-security-policy", "keywords": "security policy, information security policy, ISO 27001, SOC 2, ISMS, acceptable use policy, security governance", "articleSection": "Security Governance", "wordCount": 2100, "timeRequired": "PT8M" },
+            { "@type": "Article", "headline": "How to Write a Security Policy People Will Actually Follow", "description": "A practical guide to writing security policies that are clear, enforceable, and actually change behaviour - with ISO 27001, SOC 2, and DPDP compliance mapping.", "author": { "@type": "Person", "name": "Soham Sawant", "jobTitle": "Cybersecurity Expert & Technical Writer", "worksFor": { "@type": "Organization", "name": "SecComply" } }, "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } }, "datePublished": "2026-03-25", "dateModified": "2026-03-25", "mainEntityOfPage": "https://seccomply.net/resources/blog/how-to-write-security-policy", "keywords": "security policy, information security policy, ISO 27001, SOC 2, ISMS, acceptable use policy, security governance", "articleSection": "Security Governance", "wordCount": 2100, "timeRequired": "PT8M" },
             { "@type": "HowTo", "name": "How to Write a Security Policy People Will Follow", "description": "Step-by-step guide to writing effective, enforceable security policies that satisfy ISO 27001 and SOC 2 requirements.", "step": [
               { "@type": "HowToStep", "position": 1, "name": "Define the policy's purpose and scope", "text": "Every policy must answer three questions before anything else: what does this policy protect, who does it apply to, and what happens if it is not followed. Without clear answers to all three, the policy will not be enforceable." },
               { "@type": "HowToStep", "position": 2, "name": "Write for your actual audience", "text": "A policy written for a security professional will not be followed by a sales executive. Use plain language, avoid jargon, and structure each section as a clear obligation rather than a technical description." },
               { "@type": "HowToStep", "position": 3, "name": "State obligations, not aspirations", "text": "Replace vague aspirational language with specific, measurable obligations. 'Passwords should be strong' becomes 'Passwords must be at least 14 characters and changed every 90 days.' Specific obligations are enforceable. Aspirations are not." },
-              { "@type": "HowToStep", "position": 4, "name": "Get leadership sign-off and visible sponsorship", "text": "A policy without visible leadership endorsement will be ignored. The information security policy must be signed by the CEO or equivalent and communicated from the top — not just published on an intranet page." },
-              { "@type": "HowToStep", "position": 5, "name": "Build an acknowledgement and training process", "text": "Every employee must read and acknowledge the policy — not just tick a box. Annual refreshers, role-specific training for high-risk teams, and onboarding coverage ensure the policy is actually known, not just filed." },
-              { "@type": "HowToStep", "position": 6, "name": "Review and update on a defined schedule", "text": "An outdated policy is worse than no policy — it creates documented evidence of controls that no longer exist. Review annually at minimum, and immediately after any significant incident, technology change, or regulatory update." }
+              { "@type": "HowToStep", "position": 4, "name": "Get leadership sign-off and visible sponsorship", "text": "A policy without visible leadership endorsement will be ignored. The information security policy must be signed by the CEO or equivalent and communicated from the top - not just published on an intranet page." },
+              { "@type": "HowToStep", "position": 5, "name": "Build an acknowledgement and training process", "text": "Every employee must read and acknowledge the policy - not just tick a box. Annual refreshers, role-specific training for high-risk teams, and onboarding coverage ensure the policy is actually known, not just filed." },
+              { "@type": "HowToStep", "position": 6, "name": "Review and update on a defined schedule", "text": "An outdated policy is worse than no policy - it creates documented evidence of controls that no longer exist. Review annually at minimum, and immediately after any significant incident, technology change, or regulatory update." }
             ]},
             { "@type": "FAQPage", "mainEntity": [
               { "@type": "Question", "name": "What security policies are required for ISO 27001?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001 requires an overarching Information Security Policy (Clause 5.2) plus supporting policies covering access control (A.5.15), cryptography (A.8.24), physical security (A.7), supplier relationships (A.5.19), incident management (A.5.26), and business continuity (A.5.29). The exact set depends on the scope and risk assessment, but most organisations need 10-15 policies to achieve full Annex A coverage." } },
-              { "@type": "Question", "name": "How long should a security policy be?", "acceptedAnswer": { "@type": "Answer", "text": "The overarching information security policy should be 2-4 pages — enough to state the organisation's commitment, scope, objectives, and top-level obligations without being a manual. Supporting policies covering specific topics (acceptable use, access control, incident response) can be longer but should never exceed what an employee in that role would reasonably read and retain. If a policy is longer than 10 pages, it should be split into a policy and a separate procedure document." } },
-              { "@type": "Question", "name": "What is the difference between a security policy and a security procedure?", "acceptedAnswer": { "@type": "Answer", "text": "A security policy states what must be done and why — it sets the obligation. A security procedure states how to do it — the step-by-step implementation. Policies are written for all relevant employees and signed off at the executive level. Procedures are operational documents written for the people who carry out the specific task. Keeping the two separate makes policies easier to maintain (you can update a procedure without changing the policy) and easier to communicate." } },
+              { "@type": "Question", "name": "How long should a security policy be?", "acceptedAnswer": { "@type": "Answer", "text": "The overarching information security policy should be 2-4 pages - enough to state the organisation's commitment, scope, objectives, and top-level obligations without being a manual. Supporting policies covering specific topics (acceptable use, access control, incident response) can be longer but should never exceed what an employee in that role would reasonably read and retain. If a policy is longer than 10 pages, it should be split into a policy and a separate procedure document." } },
+              { "@type": "Question", "name": "What is the difference between a security policy and a security procedure?", "acceptedAnswer": { "@type": "Answer", "text": "A security policy states what must be done and why - it sets the obligation. A security procedure states how to do it - the step-by-step implementation. Policies are written for all relevant employees and signed off at the executive level. Procedures are operational documents written for the people who carry out the specific task. Keeping the two separate makes policies easier to maintain (you can update a procedure without changing the policy) and easier to communicate." } },
               { "@type": "Question", "name": "How often should security policies be reviewed?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001 requires policies to be reviewed at planned intervals and when significant changes occur (Clause 5.2). In practice, annual reviews are the minimum. Policies should also be reviewed immediately after a security incident that reveals a gap, after a significant technology or organisational change, and when a new regulatory requirement takes effect. The review date and reviewer should be documented as part of the policy itself." } },
               { "@type": "Question", "name": "What makes a security policy enforceable?", "acceptedAnswer": { "@type": "Answer", "text": "An enforceable security policy has four characteristics: specific, measurable obligations (not vague aspirations), a clear consequence for non-compliance stated in the document, an acknowledgement process that creates a documented record that each employee has read it, and visible leadership endorsement that signals the organisation takes it seriously. Without all four, a policy is a document, not a control." } }
             ]},
@@ -245,7 +245,7 @@ export default function SecurityPolicyGuide() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=480&fit=crop" alt="Writing security policy documentation" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}}/>
         </div>
-        <p className="img-cap">A security policy is only as effective as the number of people who actually read, understand, and follow it. Most organisations have the documents — very few have the behaviour change.</p>
+        <p className="img-cap">A security policy is only as effective as the number of people who actually read, understand, and follow it. Most organisations have the documents - very few have the behaviour change.</p>
 
         {/* SVG DASHBOARD */}
         <div className="img-wrap">
@@ -257,7 +257,7 @@ export default function SecurityPolicyGuide() {
               <pattern id="sppat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern>
             </defs>
             <rect width="960" height="400" fill="url(#sppat)"/>
-            <text x="480" y="34" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">Security Policy Programme — Status Overview</text>
+            <text x="480" y="34" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">Security Policy Programme - Status Overview</text>
 
             {/* LEFT: Policy inventory */}
             <rect x="16" y="50" width="230" height="334" rx="12" fill="#081826" stroke="rgba(232,99,43,0.15)" strokeWidth="1"/>
@@ -327,7 +327,7 @@ export default function SecurityPolicyGuide() {
             ))}
           </svg>
         </div>
-        <p className="img-cap">Security policy programme dashboard — policy inventory with status, department acknowledgement rates, overall compliance score, and the six most common policy failures that auditors and attackers both exploit.</p>
+        <p className="img-cap">Security policy programme dashboard - policy inventory with status, department acknowledgement rates, overall compliance score, and the six most common policy failures that auditors and attackers both exploit.</p>
 
         <div className="toc-box">
           <div className="toc-lbl">In This Article</div>
@@ -357,30 +357,30 @@ export default function SecurityPolicyGuide() {
             <h2>Why Most Security Policies <em>Fail</em></h2>
             <p>A security policy is only effective if the people it applies to read it, understand it, and change their behaviour because of it. Most policies achieve none of these three things. They are written in dense legalese by security professionals, published to an intranet folder nobody visits, acknowledged by a checkbox click that takes three seconds, and never thought about again until the next audit.</p>
             <div className="pull-quote">
-              <p>"The most dangerous security policy is the one that was written to satisfy an auditor's checklist — because it gives the organisation the false confidence of compliance without any of the actual risk reduction."</p>
+              <p>"The most dangerous security policy is the one that was written to satisfy an auditor's checklist - because it gives the organisation the false confidence of compliance without any of the actual risk reduction."</p>
             </div>
-            <p>The failure modes are consistent across organisations of every size. Policies are written for the wrong audience. Obligations are stated vaguely. There are no consequences for non-compliance. Leadership endorsement is nominal rather than visible. And once the ISO 27001 or SOC 2 audit is complete, policies are filed and forgotten until the next certification cycle — by which point they're describing a technology environment that no longer exists.</p>
+            <p>The failure modes are consistent across organisations of every size. Policies are written for the wrong audience. Obligations are stated vaguely. There are no consequences for non-compliance. Leadership endorsement is nominal rather than visible. And once the ISO 27001 or SOC 2 audit is complete, policies are filed and forgotten until the next certification cycle - by which point they're describing a technology environment that no longer exists.</p>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>The Audit Trap</strong>
-                <p>Auditors check whether policies exist, whether they cover the required topics, and whether they have been reviewed recently. They typically cannot check whether employees actually follow them. An organisation can pass an ISO 27001 audit with a complete set of policies that nobody reads — and be breached six months later because of a behaviour the policy explicitly prohibited.</p>
+                <p>Auditors check whether policies exist, whether they cover the required topics, and whether they have been reviewed recently. They typically cannot check whether employees actually follow them. An organisation can pass an ISO 27001 audit with a complete set of policies that nobody reads - and be breached six months later because of a behaviour the policy explicitly prohibited.</p>
               </div>
             </div>
           </section>
 
           <section id="policies-you-need">
             <h2>The Policies Your Organisation <em>Actually Needs</em></h2>
-            <p>Before writing, be clear on what you need. Most organisations pursuing ISO 27001 or SOC 2 require a core set of policies. Here are the ones that matter most — and the compliance frameworks that require them.</p>
+            <p>Before writing, be clear on what you need. Most organisations pursuing ISO 27001 or SOC 2 require a core set of policies. Here are the ones that matter most - and the compliance frameworks that require them.</p>
             <div className="policy-grid">
-              <div className="policy-card anim"><span className="pc-tag pc-req">Required — ISO 27001</span><h3>Information Security Policy</h3><p>The overarching policy that states the organisation's commitment to security, sets the scope of the ISMS, and establishes top-level obligations. Must be signed by leadership. This is Clause 5.2 — every other policy flows from it.</p></div>
-              <div className="policy-card anim"><span className="pc-tag pc-req">Required — ISO 27001 · SOC 2</span><h3>Acceptable Use Policy</h3><p>What employees can and cannot do with company systems, devices, and data. The most read policy in any organisation — and the one most directly responsible for preventing insider threats and accidental data exposure.</p></div>
-              <div className="policy-card anim"><span className="pc-tag pc-req">Required — ISO 27001 · SOC 2</span><h3>Access Control Policy</h3><p>Who gets access to what systems and data, how access is granted and revoked, and the principle of least privilege. Directly maps to ISO 27001 Annex A.5.15 and SOC 2 CC6.1. One of the most frequently cited gaps in audits.</p></div>
-              <div className="policy-card anim"><span className="pc-tag pc-req">Required — ISO 27001 · DPDP</span><h3>Data Classification Policy</h3><p>How your organisation categorises data by sensitivity — typically Public, Internal, Confidential, Restricted — and the handling requirements for each tier. Essential for DPDP compliance and the foundation of most other data protection controls.</p></div>
-              <div className="policy-card anim"><span className="pc-tag pc-req">Required — ISO 27001 · SOC 2</span><h3>Incident Response Policy</h3><p>What constitutes a security incident, how it is reported, who responds, and what the escalation path looks like. Directly satisfies ISO 27001 A.5.26 and SOC 2 CC7.3/CC7.4. Must include regulatory notification obligations.</p></div>
+              <div className="policy-card anim"><span className="pc-tag pc-req">Required - ISO 27001</span><h3>Information Security Policy</h3><p>The overarching policy that states the organisation's commitment to security, sets the scope of the ISMS, and establishes top-level obligations. Must be signed by leadership. This is Clause 5.2 - every other policy flows from it.</p></div>
+              <div className="policy-card anim"><span className="pc-tag pc-req">Required - ISO 27001 · SOC 2</span><h3>Acceptable Use Policy</h3><p>What employees can and cannot do with company systems, devices, and data. The most read policy in any organisation - and the one most directly responsible for preventing insider threats and accidental data exposure.</p></div>
+              <div className="policy-card anim"><span className="pc-tag pc-req">Required - ISO 27001 · SOC 2</span><h3>Access Control Policy</h3><p>Who gets access to what systems and data, how access is granted and revoked, and the principle of least privilege. Directly maps to ISO 27001 Annex A.5.15 and SOC 2 CC6.1. One of the most frequently cited gaps in audits.</p></div>
+              <div className="policy-card anim"><span className="pc-tag pc-req">Required - ISO 27001 · DPDP</span><h3>Data Classification Policy</h3><p>How your organisation categorises data by sensitivity - typically Public, Internal, Confidential, Restricted - and the handling requirements for each tier. Essential for DPDP compliance and the foundation of most other data protection controls.</p></div>
+              <div className="policy-card anim"><span className="pc-tag pc-req">Required - ISO 27001 · SOC 2</span><h3>Incident Response Policy</h3><p>What constitutes a security incident, how it is reported, who responds, and what the escalation path looks like. Directly satisfies ISO 27001 A.5.26 and SOC 2 CC7.3/CC7.4. Must include regulatory notification obligations.</p></div>
               <div className="policy-card anim"><span className="pc-tag pc-rec">Recommended</span><h3>Cryptography Policy</h3><p>Which encryption algorithms are approved, where encryption is required (at rest, in transit), and how keys are managed. Satisfies ISO 27001 A.8.24. Prevents the "we use encryption" assertion that covers DES and MD5 as much as AES-256.</p></div>
-              <div className="policy-card anim"><span className="pc-tag pc-req">Required — ISO 27001</span><h3>Supplier Security Policy</h3><p>Security requirements for third-party vendors, onboarding and offboarding procedures, and minimum standards for suppliers with access to your systems or data. ISO 27001 A.5.19 and A.5.21. Directly addresses the third-party risk gap.</p></div>
-              <div className="policy-card anim"><span className="pc-tag pc-rec">Recommended</span><h3>Remote Working Policy</h3><p>Security requirements for employees working outside the office — device encryption, VPN usage, public Wi-Fi restrictions, screen locking. More relevant than ever post-2020 and increasingly expected by enterprise customers in vendor questionnaires.</p></div>
+              <div className="policy-card anim"><span className="pc-tag pc-req">Required - ISO 27001</span><h3>Supplier Security Policy</h3><p>Security requirements for third-party vendors, onboarding and offboarding procedures, and minimum standards for suppliers with access to your systems or data. ISO 27001 A.5.19 and A.5.21. Directly addresses the third-party risk gap.</p></div>
+              <div className="policy-card anim"><span className="pc-tag pc-rec">Recommended</span><h3>Remote Working Policy</h3><p>Security requirements for employees working outside the office - device encryption, VPN usage, public Wi-Fi restrictions, screen locking. More relevant than ever post-2020 and increasingly expected by enterprise customers in vendor questionnaires.</p></div>
             </div>
           </section>
 
@@ -391,14 +391,14 @@ export default function SecurityPolicyGuide() {
                 <div className="f-num">1</div>
                 <div className="f-body">
                   <strong>Define the purpose, scope, and consequence before writing anything else</strong>
-                  <span>Every policy must answer three questions upfront: what does this policy protect, who does it apply to, and what happens if it is not followed. Without clear answers to all three, the policy cannot be enforced. State these in the first section — not buried in an appendix.</span>
+                  <span>Every policy must answer three questions upfront: what does this policy protect, who does it apply to, and what happens if it is not followed. Without clear answers to all three, the policy cannot be enforced. State these in the first section - not buried in an appendix.</span>
                 </div>
               </li>
               <li className="anim">
                 <div className="f-num">2</div>
                 <div className="f-body">
                   <strong>Identify your actual audience and write for them</strong>
-                  <span>An acceptable use policy applies to every employee — including the sales executive who has never opened a security document. Write at the literacy level of the least technical person in scope. If the policy requires a glossary, it's too technical. If it requires a law degree to interpret, it will not be followed.</span>
+                  <span>An acceptable use policy applies to every employee - including the sales executive who has never opened a security document. Write at the literacy level of the least technical person in scope. If the policy requires a glossary, it's too technical. If it requires a law degree to interpret, it will not be followed.</span>
                 </div>
               </li>
               <li className="anim">
@@ -411,22 +411,22 @@ export default function SecurityPolicyGuide() {
               <li className="anim">
                 <div className="f-num">4</div>
                 <div className="f-body">
-                  <strong>Get genuine leadership sign-off — not just a signature</strong>
-                  <span>A policy signed by the CEO and communicated in a company-wide message is a different object from a policy signed by the CISO and published to the intranet. Visible leadership endorsement signals to every employee that this is taken seriously at the top. Without it, the policy is treated as an IT department document — optional and ignorable.</span>
+                  <strong>Get genuine leadership sign-off - not just a signature</strong>
+                  <span>A policy signed by the CEO and communicated in a company-wide message is a different object from a policy signed by the CISO and published to the intranet. Visible leadership endorsement signals to every employee that this is taken seriously at the top. Without it, the policy is treated as an IT department document - optional and ignorable.</span>
                 </div>
               </li>
               <li className="anim">
                 <div className="f-num">5</div>
                 <div className="f-body">
                   <strong>Build a real acknowledgement and training process</strong>
-                  <span>Every employee must read, understand, and formally acknowledge each policy they are subject to — not just tick a box that the document exists. For high-risk roles (finance, IT, senior leadership), require role-specific training that goes beyond reading. Track acknowledgement rates by department and follow up on gaps.</span>
+                  <span>Every employee must read, understand, and formally acknowledge each policy they are subject to - not just tick a box that the document exists. For high-risk roles (finance, IT, senior leadership), require role-specific training that goes beyond reading. Track acknowledgement rates by department and follow up on gaps.</span>
                 </div>
               </li>
               <li className="anim">
                 <div className="f-num">6</div>
                 <div className="f-body">
                   <strong>Set a review schedule and own it</strong>
-                  <span>Build the review date into the policy document itself. Assign a named owner who is accountable for initiating the annual review. Trigger reviews immediately after any significant incident, technology change, or regulatory update. An outdated policy is worse than no policy — it creates documented evidence of controls that no longer exist.</span>
+                  <span>Build the review date into the policy document itself. Assign a named owner who is accountable for initiating the annual review. Trigger reviews immediately after any significant incident, technology change, or regulatory update. An outdated policy is worse than no policy - it creates documented evidence of controls that no longer exist.</span>
                 </div>
               </li>
             </ul>
@@ -437,25 +437,25 @@ export default function SecurityPolicyGuide() {
             <p>Policy language determines whether obligations are enforceable. Here are the most common rewrites that transform vague aspirations into auditable requirements:</p>
 
             <div className="before-after">
-              <div className="ba-card ba-before anim"><div className="ba-label">❌ Before — Unenforceable</div><p>"Employees should use strong passwords and are encouraged to enable multi-factor authentication where available."</p></div>
-              <div className="ba-card ba-after anim"><div className="ba-label">✅ After — Enforceable</div><p>"All employees must use passwords of at least 14 characters. Multi-factor authentication is mandatory for all corporate systems. Non-compliance will result in access suspension."</p></div>
+              <div className="ba-card ba-before anim"><div className="ba-label">❌ Before - Unenforceable</div><p>"Employees should use strong passwords and are encouraged to enable multi-factor authentication where available."</p></div>
+              <div className="ba-card ba-after anim"><div className="ba-label">✅ After - Enforceable</div><p>"All employees must use passwords of at least 14 characters. Multi-factor authentication is mandatory for all corporate systems. Non-compliance will result in access suspension."</p></div>
             </div>
 
             <div className="before-after">
-              <div className="ba-card ba-before anim"><div className="ba-label">❌ Before — Unenforceable</div><p>"Sensitive data should be handled with care and employees are expected to use good judgement when sharing information."</p></div>
-              <div className="ba-card ba-after anim"><div className="ba-label">✅ After — Enforceable</div><p>"Data classified as Confidential or Restricted must only be shared via encrypted channels. Sharing via personal email or unencrypted messaging services is prohibited and subject to disciplinary action."</p></div>
+              <div className="ba-card ba-before anim"><div className="ba-label">❌ Before - Unenforceable</div><p>"Sensitive data should be handled with care and employees are expected to use good judgement when sharing information."</p></div>
+              <div className="ba-card ba-after anim"><div className="ba-label">✅ After - Enforceable</div><p>"Data classified as Confidential or Restricted must only be shared via encrypted channels. Sharing via personal email or unencrypted messaging services is prohibited and subject to disciplinary action."</p></div>
             </div>
 
             <div className="before-after">
-              <div className="ba-card ba-before anim"><div className="ba-label">❌ Before — Unenforceable</div><p>"IT incidents should be reported to the security team as soon as possible."</p></div>
-              <div className="ba-card ba-after anim"><div className="ba-label">✅ After — Enforceable</div><p>"All suspected security incidents must be reported to security@seccomply.net within 2 hours of discovery. Failure to report a known incident is a policy violation subject to disciplinary review."</p></div>
+              <div className="ba-card ba-before anim"><div className="ba-label">❌ Before - Unenforceable</div><p>"IT incidents should be reported to the security team as soon as possible."</p></div>
+              <div className="ba-card ba-after anim"><div className="ba-label">✅ After - Enforceable</div><p>"All suspected security incidents must be reported to security@seccomply.net within 2 hours of discovery. Failure to report a known incident is a policy violation subject to disciplinary review."</p></div>
             </div>
 
             <div className="callout co-key">
               <span className="co-icon">💡</span>
               <div className="co-body">
                 <strong>The Plain Language Test</strong>
-                <p>After drafting a policy, ask a non-technical employee in the target audience to read it and explain back to you what they are required to do. If they cannot, the policy needs to be rewritten — not the employee trained. Clarity is the responsibility of the writer, not the reader.</p>
+                <p>After drafting a policy, ask a non-technical employee in the target audience to read it and explain back to you what they are required to do. If they cannot, the policy needs to be rewritten - not the employee trained. Clarity is the responsibility of the writer, not the reader.</p>
               </div>
             </div>
 
@@ -463,17 +463,17 @@ export default function SecurityPolicyGuide() {
             <div className="img-wrap" style={{marginTop:'1.5rem'}}>
               <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=1000&h=360&fit=crop" alt="Team reviewing security documentation" style={{width:'100%',display:'block',maxHeight:'320px',objectFit:'cover'}}/>
             </div>
-            <p className="img-cap">Effective security policies are written for the people who must follow them, not the auditors who review them. The two requirements are not mutually exclusive — but most organisations optimise for only one.</p>
+            <p className="img-cap">Effective security policies are written for the people who must follow them, not the auditors who review them. The two requirements are not mutually exclusive - but most organisations optimise for only one.</p>
           </section>
 
           <section id="enforcement">
             <h2>Enforcement, Acknowledgement, <em>and Consequence</em></h2>
-            <p>A policy without enforcement is a recommendation. For a policy to be a genuine control — one that satisfies ISO 27001 or SOC 2 auditors and actually changes behaviour — it needs three things: a documented acknowledgement process, visible consequences for non-compliance, and a mechanism for tracking and following up on gaps.</p>
+            <p>A policy without enforcement is a recommendation. For a policy to be a genuine control - one that satisfies ISO 27001 or SOC 2 auditors and actually changes behaviour - it needs three things: a documented acknowledgement process, visible consequences for non-compliance, and a mechanism for tracking and following up on gaps.</p>
             <ul className="feat-list">
-              <li className="anim"><div className="f-num">📝</div><div className="f-body"><strong>Formal acknowledgement at onboarding and annually</strong><span>Every new employee signs an acknowledgement that they have read and understood relevant policies as part of onboarding. Annual re-acknowledgement is required — not optional. Track completion rates in your HRIS or GRC tool and report gaps to management. Below 90% acknowledgement for any policy is a finding.</span></div></li>
-              <li className="anim"><div className="f-num">⚠️</div><div className="f-body"><strong>State consequences explicitly in the document</strong><span>The consequence section must appear in the policy body itself — not just in the employee handbook. Options range from formal warning to termination depending on severity. The specificity matters: "subject to disciplinary action up to and including termination of employment" is enforceable. "May face consequences" is not.</span></div></li>
-              <li className="anim"><div className="f-num">📊</div><div className="f-body"><strong>Track acknowledgement rates by department and report them</strong><span>Acknowledgement rates below 80% in any department are a risk signal — they mean a significant portion of that team either doesn't know the policy exists or actively avoided reading it. Report these rates quarterly to leadership. Departments with consistently low rates need targeted intervention, not just another email reminder.</span></div></li>
-              <li className="anim"><div className="f-num">🔄</div><div className="f-body"><strong>Enforce consistently — exceptions undermine everything</strong><span>A single publicly known exception to a policy — an executive who ignored the password policy and faced no consequence — destroys the policy's authority across the entire organisation. Enforcement must be consistent regardless of seniority. If a control cannot be applied to leadership, it should not be in the policy.</span></div></li>
+              <li className="anim"><div className="f-num">📝</div><div className="f-body"><strong>Formal acknowledgement at onboarding and annually</strong><span>Every new employee signs an acknowledgement that they have read and understood relevant policies as part of onboarding. Annual re-acknowledgement is required - not optional. Track completion rates in your HRIS or GRC tool and report gaps to management. Below 90% acknowledgement for any policy is a finding.</span></div></li>
+              <li className="anim"><div className="f-num">⚠️</div><div className="f-body"><strong>State consequences explicitly in the document</strong><span>The consequence section must appear in the policy body itself - not just in the employee handbook. Options range from formal warning to termination depending on severity. The specificity matters: "subject to disciplinary action up to and including termination of employment" is enforceable. "May face consequences" is not.</span></div></li>
+              <li className="anim"><div className="f-num">📊</div><div className="f-body"><strong>Track acknowledgement rates by department and report them</strong><span>Acknowledgement rates below 80% in any department are a risk signal - they mean a significant portion of that team either doesn't know the policy exists or actively avoided reading it. Report these rates quarterly to leadership. Departments with consistently low rates need targeted intervention, not just another email reminder.</span></div></li>
+              <li className="anim"><div className="f-num">🔄</div><div className="f-body"><strong>Enforce consistently - exceptions undermine everything</strong><span>A single publicly known exception to a policy - an executive who ignored the password policy and faced no consequence - destroys the policy's authority across the entire organisation. Enforcement must be consistent regardless of seniority. If a control cannot be applied to leadership, it should not be in the policy.</span></div></li>
             </ul>
           </section>
 
@@ -483,11 +483,11 @@ export default function SecurityPolicyGuide() {
               <table className="cmp-table">
                 <thead><tr><th>Framework</th><th>Policy Requirement</th><th>What Auditors Look For</th></tr></thead>
                 <tbody>
-                  <tr><td>ISO 27001</td><td>Clause 5.2 — Information security policy; Annex A policies across 93 controls</td><td>Top-level policy signed by leadership, documented review history, evidence of communication to all relevant parties</td></tr>
-                  <tr><td>SOC 2</td><td>CC1.3 — Policies and procedures to support the achievement of commitments</td><td>Written policies covering the five Trust Service Criteria, acknowledgement records, evidence of enforcement</td></tr>
-                  <tr><td>GDPR / DPDP</td><td>Article 24 (GDPR) / Section 8(5) DPDP — Technical and organisational measures</td><td>Data classification policy, data handling procedures, evidence that employees are trained on data protection obligations</td></tr>
-                  <tr><td>HIPAA</td><td>164.308(a)(1) — Security management process; includes written policies and procedures</td><td>Written policies covering all required administrative safeguards, workforce training records, sanctions policy</td></tr>
-                  <tr><td>PCI DSS</td><td>Req 12.1 — Comprehensive information security policy</td><td>Annual review of the security policy, documented approval, distribution to all relevant personnel</td></tr>
+                  <tr><td>ISO 27001</td><td>Clause 5.2 - Information security policy; Annex A policies across 93 controls</td><td>Top-level policy signed by leadership, documented review history, evidence of communication to all relevant parties</td></tr>
+                  <tr><td>SOC 2</td><td>CC1.3 - Policies and procedures to support the achievement of commitments</td><td>Written policies covering the five Trust Service Criteria, acknowledgement records, evidence of enforcement</td></tr>
+                  <tr><td>GDPR / DPDP</td><td>Article 24 (GDPR) / Section 8(5) DPDP - Technical and organisational measures</td><td>Data classification policy, data handling procedures, evidence that employees are trained on data protection obligations</td></tr>
+                  <tr><td>HIPAA</td><td>164.308(a)(1) - Security management process; includes written policies and procedures</td><td>Written policies covering all required administrative safeguards, workforce training records, sanctions policy</td></tr>
+                  <tr><td>PCI DSS</td><td>Req 12.1 - Comprehensive information security policy</td><td>Annual review of the security policy, documented approval, distribution to all relevant personnel</td></tr>
                 </tbody>
               </table>
             </div>
@@ -495,7 +495,7 @@ export default function SecurityPolicyGuide() {
 
           <section id="review">
             <h2>Keeping Policies <em>Current</em></h2>
-            <p>An outdated policy is not a neutral document — it actively creates risk. It tells auditors that your controls were reviewed at a certain date and found adequate, when they may now be entirely inadequate for your current environment. It also creates an enforcement problem: you cannot discipline an employee for violating a policy that references systems you decommissioned two years ago.</p>
+            <p>An outdated policy is not a neutral document - it actively creates risk. It tells auditors that your controls were reviewed at a certain date and found adequate, when they may now be entirely inadequate for your current environment. It also creates an enforcement problem: you cannot discipline an employee for violating a policy that references systems you decommissioned two years ago.</p>
             <div className="callout co-sc">
               <span className="co-icon">🔄</span>
               <div className="co-body">
@@ -508,7 +508,7 @@ export default function SecurityPolicyGuide() {
 
           <div className="cta-banner">
             <h3>Need Help Building Your Policy Framework?</h3>
-            <p>SecComply builds ISO 27001 and SOC 2 compliant policy frameworks from scratch — written in plain language, tailored to your organisation, and ready for auditor review on day one.</p>
+            <p>SecComply builds ISO 27001 and SOC 2 compliant policy frameworks from scratch - written in plain language, tailored to your organisation, and ready for auditor review on day one.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free Consultation →</a>
               <a href="https://seccomply.net/services/iso-27001" className="btn-o" target="_blank" rel="noopener">View ISO 27001 Services</a>
@@ -527,7 +527,7 @@ export default function SecurityPolicyGuide() {
               {[
                 {q:"What security policies are required for ISO 27001?", a:"ISO 27001 requires an overarching Information Security Policy (Clause 5.2) plus supporting policies covering access control, cryptography, physical security, supplier relationships, incident management, and business continuity. The exact set depends on scope and risk assessment, but most organisations need 10-15 policies to achieve full Annex A coverage."},
                 {q:"How long should a security policy be?", a:"The overarching information security policy should be 2-4 pages. Supporting policies covering specific topics can be longer but should never exceed what an employee in that role would reasonably read and retain. If a policy is longer than 10 pages, it should be split into a policy and a separate procedure document."},
-                {q:"What is the difference between a security policy and a security procedure?", a:"A security policy states what must be done and why — it sets the obligation. A security procedure states how to do it — the step-by-step implementation. Policies are written for all relevant employees and signed off at the executive level. Procedures are operational documents written for the people who carry out the specific task."},
+                {q:"What is the difference between a security policy and a security procedure?", a:"A security policy states what must be done and why - it sets the obligation. A security procedure states how to do it - the step-by-step implementation. Policies are written for all relevant employees and signed off at the executive level. Procedures are operational documents written for the people who carry out the specific task."},
                 {q:"How often should security policies be reviewed?", a:"ISO 27001 requires policies to be reviewed at planned intervals and when significant changes occur. Annual reviews are the minimum. Policies should also be reviewed immediately after a security incident that reveals a gap, after a significant technology or organisational change, and when a new regulatory requirement takes effect."},
                 {q:"What makes a security policy enforceable?", a:"An enforceable security policy has four characteristics: specific measurable obligations rather than vague aspirations, a clear consequence for non-compliance stated in the document, an acknowledgement process that creates a documented record that each employee has read it, and visible leadership endorsement that signals the organisation takes it seriously. Without all four, a policy is a document, not a control."},
               ].map((f,i)=>(
@@ -573,7 +573,7 @@ export default function SecurityPolicyGuide() {
           </div>
           <div className="sb-cta">
             <h4>Need a Policy Framework?</h4>
-            <p>SecComply builds ISO 27001-ready policy sets — written in plain language, tailored to your organisation.</p>
+            <p>SecComply builds ISO 27001-ready policy sets - written in plain language, tailored to your organisation.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

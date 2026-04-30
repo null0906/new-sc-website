@@ -359,7 +359,7 @@ export default function CISOStartupGuide() {
 
           <div className="pull-quote">
             <p>"Security is not a technical problem. It is a trust problem. A CISO is the person whose entire job is making your company trustworthy, to customers, regulators, investors, and to yourself."</p>
-            <cite>— Soham Sawant, SecComply</cite>
+            <cite>- Soham Sawant, SecComply</cite>
           </div>
 
           <p>There's a moment every startup founder dreads. Not the failed product launch. Not the down round. The moment a lawyer calls and says: "Your prospect's security team came back with 47 questions on your pentest report. The deal is on hold."</p>

@@ -25,20 +25,20 @@ export default function ISO27701ForDataControllers() {
   return (
     <Layout>
       <Head>
-        <title>ISO 27701 for Data Controllers — Key Requirements and Controls Explained | SecComply</title>
+        <title>ISO 27701 for Data Controllers - Key Requirements and Controls Explained | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="The complete guide to ISO 27701 Annex B controller obligations — legal basis documentation, RoPA, consent management, data subject rights, retention, DPIAs, processor management, and privacy by design." />
+        <meta name="description" content="The complete guide to ISO 27701 Annex B controller obligations - legal basis documentation, RoPA, consent management, data subject rights, retention, DPIAs, processor management, and privacy by design." />
         <meta name="keywords" content="ISO 27701 data controller, Annex B ISO 27701, ISO 27701 controller requirements, RoPA ISO 27701, consent management ISO 27701, DPIA ISO 27701, data subject rights ISO 27701, privacy by design ISO 27701" />
-        <meta property="og:title" content="ISO 27701 for Data Controllers — Key Requirements and Controls Explained" />
-        <meta property="og:description" content="The complete guide to ISO 27701 Annex B controller obligations — legal basis documentation, RoPA, consent management, data subject rights, retention, DPIAs, processor management, and privacy by design." />
+        <meta property="og:title" content="ISO 27701 for Data Controllers - Key Requirements and Controls Explained" />
+        <meta property="og:description" content="The complete guide to ISO 27701 Annex B controller obligations - legal basis documentation, RoPA, consent management, data subject rights, retention, DPIAs, processor management, and privacy by design." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/iso-27701-for-data-controllers" />
         <meta property="article:published_time" content="2026-04-01" />
         <meta property="article:author" content="Aditya Hadke" />
         <meta property="article:tag" content="ISO 27701" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/iso-27701-for-data-controllers" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27701 for Data Controllers — Key Requirements and Controls Explained","description":"The complete guide to ISO 27701 Annex B controller obligations — legal basis, RoPA, consent, rights, retention, DPIAs, processor management, and privacy by design.","author":{"@type":"Person","name":"Aditya Hadke","jobTitle":"Cyber Security Analyst","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27701-for-data-controllers","articleSection":"ISO 27701"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"ISO 27701 for Controllers","item":"https://seccomply.net/resources/blog/iso-27701-for-data-controllers"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"ISO 27701 for Data Controllers - Key Requirements and Controls Explained","description":"The complete guide to ISO 27701 Annex B controller obligations - legal basis, RoPA, consent, rights, retention, DPIAs, processor management, and privacy by design.","author":{"@type":"Person","name":"Aditya Hadke","jobTitle":"Cyber Security Analyst","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/iso-27701-for-data-controllers","articleSection":"ISO 27701"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"ISO 27701 for Controllers","item":"https://seccomply.net/resources/blog/iso-27701-for-data-controllers"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -178,7 +178,7 @@ export default function ISO27701ForDataControllers() {
         <a href="https://seccomply.net/">Home</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources">Resources</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources/blog">Blog</a><span className="bc-sep">›</span>
-        <span style={{color:'var(--tb)'}}>ISO 27701 for Data Controllers — Key Req...</span>
+        <span style={{color:'var(--tb)'}}>ISO 27701 for Data Controllers - Key Req...</span>
       </div>
 
       <div className="hero-wrap">
@@ -187,7 +187,7 @@ export default function ISO27701ForDataControllers() {
           <span className="badge badge-bl">🌍 Privacy Compliance</span>
           <span className="badge badge-gr">✅ PIMS</span>
         </div>
-        <h1 className="hero-h1">ISO 27701 for Data Controllers — <em>Key Requirements</em> and Controls Explained</h1>
+        <h1 className="hero-h1">ISO 27701 for Data Controllers - <em>Key Requirements</em> and Controls Explained</h1>
         <p className="hero-sub">If your organisation decides what personal data to collect, why it is collected, and how it is used, you are a PII controller under ISO 27701. This blog unpacks each key controller requirement with enough operational detail to be genuinely useful for compliance teams doing the actual work.</p>
 
         <div className="author-strip">
@@ -202,13 +202,13 @@ export default function ISO27701ForDataControllers() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=480&fit=crop" alt="ISO 27701 data controllers requirements audit evidence" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">ISO 27701 for controllers is fundamentally about operationalising accountability. Policies alone will not satisfy auditors — every control area requires documented processes, technical implementation, and evidence that both are working.</p>
+        <p className="img-cap">ISO 27701 for controllers is fundamentally about operationalising accountability. Policies alone will not satisfy auditors - every control area requires documented processes, technical implementation, and evidence that both are working.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pgc" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pgc)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27701 — Controller Control Areas (Clause 7 + Annex B)</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">ISO 27701 - Controller Control Areas (Clause 7 + Annex B)</text>
           
           {["Legal Basis","RoPA","Consent","Notices","Rights","Minimisation","Retention","DPIA"].map((t,i) => {
             const cols = ['#818cf8','#E8632B','#06d6a0','#ffb703','#ff4d6d','#818cf8','#E8632B','#06d6a0'];
@@ -247,11 +247,11 @@ export default function ISO27701ForDataControllers() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>If your organisation decides what personal data to collect, why it is collected, and how it is used, you are a <strong>PII controller under ISO 27701</strong>. The defining characteristic of a controller is accountability — you made the decisions that created the privacy obligations, so you are accountable to individuals and regulators alike. ISO 27701 Annex B translates that accountability into specific operational controls.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>If your organisation decides what personal data to collect, why it is collected, and how it is used, you are a <strong>PII controller under ISO 27701</strong>. The defining characteristic of a controller is accountability - you made the decisions that created the privacy obligations, so you are accountable to individuals and regulators alike. ISO 27701 Annex B translates that accountability into specific operational controls.</p>
 
           <section id="controller-role">
             <h2>What Makes the Controller Role <em>Distinct</em></h2>
-            <p>As a controller, you made the fundamental decisions — what data to collect, for what purpose, under which legal basis, with whom to share it. Annex B controls exist because of these decisions. Processor controls (Annex C) do not include legal basis documentation, consent management, or privacy notices — because processors do not make those decisions.</p>
+            <p>As a controller, you made the fundamental decisions - what data to collect, for what purpose, under which legal basis, with whom to share it. Annex B controls exist because of these decisions. Processor controls (Annex C) do not include legal basis documentation, consent management, or privacy notices - because processors do not make those decisions.</p>
           </section>
 
           <section id="legal-basis">
@@ -261,19 +261,19 @@ export default function ISO27701ForDataControllers() {
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>Common Gap</strong>
-                <p>Many organisations complete their RoPA but leave the legal basis column as a formality, defaulting to "legitimate interests" without documentation. Auditors look for the reasoning, not just the label. For legitimate interests processing, the LIA is not optional — it is the evidence.</p>
+                <p>Many organisations complete their RoPA but leave the legal basis column as a formality, defaulting to "legitimate interests" without documentation. Auditors look for the reasoning, not just the label. For legitimate interests processing, the LIA is not optional - it is the evidence.</p>
               </div>
             </div>
           </section>
 
           <section id="ropa">
-            <h2>The Record of Processing Activities — <em>Your Central Privacy Document</em></h2>
+            <h2>The Record of Processing Activities - <em>Your Central Privacy Document</em></h2>
             <p>The RoPA is the most important single document a controller maintains. It is simultaneously a regulatory requirement, an audit artefact, a data governance tool, and the foundation on which most other privacy controls are built.</p>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>RoPA Field</th><th>What to Document</th></tr></thead>
                 <tbody>
-                  {[['Processing Activity','Clear functional description — e.g. "Customer account registration and authentication"'],['Purpose','Specific stated reason. Not vague like "business purposes"'],['Legal Basis','Applicable basis under GDPR / DPDP, with LIA reference where needed'],['Data Subjects','Customers, employees, prospects, website visitors, etc.'],['Categories of PII','Specific types: name, email, IP address, payment details, health data'],['Recipients','Internal teams and external parties, including processors and cross-border transfers'],['Retention Period','How long, or the criteria for determining deletion/anonymisation'],['Security Measures','Reference to technical and organisational controls applied'],['Transfer Mechanism','For cross-border: adequacy, SCCs, BCRs, or other approved mechanism']].map(([f,d],i)=>(<tr key={i}><td>{f}</td><td>{d}</td></tr>))}
+                  {[['Processing Activity','Clear functional description - e.g. "Customer account registration and authentication"'],['Purpose','Specific stated reason. Not vague like "business purposes"'],['Legal Basis','Applicable basis under GDPR / DPDP, with LIA reference where needed'],['Data Subjects','Customers, employees, prospects, website visitors, etc.'],['Categories of PII','Specific types: name, email, IP address, payment details, health data'],['Recipients','Internal teams and external parties, including processors and cross-border transfers'],['Retention Period','How long, or the criteria for determining deletion/anonymisation'],['Security Measures','Reference to technical and organisational controls applied'],['Transfer Mechanism','For cross-border: adequacy, SCCs, BCRs, or other approved mechanism']].map(([f,d],i)=>(<tr key={i}><td>{f}</td><td>{d}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -281,17 +281,17 @@ export default function ISO27701ForDataControllers() {
           </section>
 
           <section id="consent">
-            <h2>Consent Management — <em>The Full Lifecycle</em></h2>
-            <p>Where consent is your legal basis, implement mechanisms covering: <strong>obtaining</strong> valid consent (no pre-ticked boxes, no bundled consent), <strong>recording</strong> what the user was told, when, how they consented, and which activities the consent covers, and <strong>withdrawal</strong> as easy as giving consent — tested and documented. For DPDP Act compliance, consent notices must be available in the individual preferred language.</p>
+            <h2>Consent Management - <em>The Full Lifecycle</em></h2>
+            <p>Where consent is your legal basis, implement mechanisms covering: <strong>obtaining</strong> valid consent (no pre-ticked boxes, no bundled consent), <strong>recording</strong> what the user was told, when, how they consented, and which activities the consent covers, and <strong>withdrawal</strong> as easy as giving consent - tested and documented. For DPDP Act compliance, consent notices must be available in the individual preferred language.</p>
           </section>
 
           <section id="privacy-notices">
-            <h2>Privacy Notices — <em>Transparency as Operational Obligation</em></h2>
-            <p>Privacy notices must cover: controller identity and DPO contact, purposes and legal basis for each processing activity, legitimate interests pursued, categories of PII, recipients, international transfers, retention periods, individual rights, and right to lodge a complaint. Maintain version history with effective dates — any change to processing must be reflected in an updated notice.</p>
+            <h2>Privacy Notices - <em>Transparency as Operational Obligation</em></h2>
+            <p>Privacy notices must cover: controller identity and DPO contact, purposes and legal basis for each processing activity, legitimate interests pursued, categories of PII, recipients, international transfers, retention periods, individual rights, and right to lodge a complaint. Maintain version history with effective dates - any change to processing must be reflected in an updated notice.</p>
           </section>
 
           <section id="data-rights">
-            <h2>Data Subject Rights — <em>Building Operational Processes</em></h2>
+            <h2>Data Subject Rights - <em>Building Operational Processes</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Right</th><th>Process Must Cover</th><th>Audit Evidence</th></tr></thead>
@@ -300,7 +300,7 @@ export default function ISO27701ForDataControllers() {
                 </tbody>
               </table>
             </div>
-            <p>GDPR requires response within one calendar month. DPDP timelines will be specified in rules — build for 30 days as the safe default. Every request must be logged with date received, actions taken, and date of response.</p>
+            <p>GDPR requires response within one calendar month. DPDP timelines will be specified in rules - build for 30 days as the safe default. Every request must be logged with date received, actions taken, and date of response.</p>
           </section>
 
           <section id="minimisation">
@@ -310,27 +310,27 @@ export default function ISO27701ForDataControllers() {
 
           <section id="retention">
             <h2>Retention Schedules and <em>Secure Deletion</em></h2>
-            <p>Define retention periods at the category level. Each period must be justified by reference to the processing purpose, legal retention obligations (tax records, employment, financial), and minimum time needed. Technical enforcement is expected — automated deletion jobs, data lifecycle policies, or documented manual review with execution evidence. Soft deletes that flag records as inactive are not compliant.</p>
+            <p>Define retention periods at the category level. Each period must be justified by reference to the processing purpose, legal retention obligations (tax records, employment, financial), and minimum time needed. Technical enforcement is expected - automated deletion jobs, data lifecycle policies, or documented manual review with execution evidence. Soft deletes that flag records as inactive are not compliant.</p>
           </section>
 
           <section id="dpia">
-            <h2>Data Protection Impact Assessments — <em>DPIAs</em></h2>
+            <h2>Data Protection Impact Assessments - <em>DPIAs</em></h2>
             <p>For high-risk processing activities, a DPIA must be conducted before processing begins. Required scenarios include: systematic profiling, large-scale special category data, systematic monitoring of public areas, and new technologies with novel privacy risks. A DPIA must contain: description of the processing, necessity and proportionality assessment, risk assessment, and mitigation measures. DPIAs must be reviewed when processing changes materially.</p>
           </section>
 
           <section id="processor-management">
-            <h2>Managing Third-Party Processors — <em>The Accountability Chain</em></h2>
-            <p>Before engaging a processor, conduct privacy due diligence — review certifications, sub-processor notification processes, breach notification procedures, and end-of-contract data handling. A Data Processing Agreement (DPA) must be in place with every processor specifying: subject matter, duration, data types, controller rights, processor instructions, confidentiality, sub-processor obligations, and data return/destruction at contract end. Maintain a processor register with last security review date.</p>
+            <h2>Managing Third-Party Processors - <em>The Accountability Chain</em></h2>
+            <p>Before engaging a processor, conduct privacy due diligence - review certifications, sub-processor notification processes, breach notification procedures, and end-of-contract data handling. A Data Processing Agreement (DPA) must be in place with every processor specifying: subject matter, duration, data types, controller rights, processor instructions, confidentiality, sub-processor obligations, and data return/destruction at contract end. Maintain a processor register with last security review date.</p>
           </section>
 
           <section id="privacy-by-design">
-            <h2>Privacy by Design — <em>Embedding Controls at Product Level</em></h2>
-            <p>New features undergo a privacy review during design — not at launch. Privacy controls are documented in feature specifications. Default settings are privacy-protective. Unnecessary fields are eliminated at design time. Access to personal data is restricted by role. Auditors expect: privacy review checklists for new features, DPIA records for high-risk features, and product specs demonstrating minimisation decisions were made at design time.</p>
+            <h2>Privacy by Design - <em>Embedding Controls at Product Level</em></h2>
+            <p>New features undergo a privacy review during design - not at launch. Privacy controls are documented in feature specifications. Default settings are privacy-protective. Unnecessary fields are eliminated at design time. Access to personal data is restricted by role. Auditors expect: privacy review checklists for new features, DPIA records for high-risk features, and product specs demonstrating minimisation decisions were made at design time.</p>
           </section>
 
           <div className="cta-banner">
             <h3>Need ISO 27701 Implementation Support?</h3>
-            <p>SecComply helps SaaS, FinTech, and healthcare organisations implement ISO 27701 — from gap assessment to certification audit, with pre-built control libraries and evidence collection.</p>
+            <p>SecComply helps SaaS, FinTech, and healthcare organisations implement ISO 27701 - from gap assessment to certification audit, with pre-built control libraries and evidence collection.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free ISO 27701 Consultation →</a>
             </div>
@@ -362,7 +362,7 @@ export default function ISO27701ForDataControllers() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Does ISO 27701 require Data Protection Impact Assessments for every processing activity?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>No. DPIAs are required only for processing activities likely to result in high risk to individuals. This includes systematic profiling, large-scale special category data processing, systematic monitoring of public areas, and new technologies with novel privacy risks. However, maintaining a defined DPIA process is required for all controllers — the capability must exist even if not every activity triggers a full DPIA.</p></div>
+              <div className="faq-a"><p>No. DPIAs are required only for processing activities likely to result in high risk to individuals. This includes systematic profiling, large-scale special category data processing, systematic monitoring of public areas, and new technologies with novel privacy risks. However, maintaining a defined DPIA process is required for all controllers - the capability must exist even if not every activity triggers a full DPIA.</p></div>
             </div>
 
           </section>
@@ -403,7 +403,7 @@ export default function ISO27701ForDataControllers() {
           </div>
           <div className="sb-cta">
             <h4>Need ISO 27701 Certification?</h4>
-            <p>From gap assessment to audit — we handle the entire ISO 27701 journey.</p>
+            <p>From gap assessment to audit - we handle the entire ISO 27701 journey.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

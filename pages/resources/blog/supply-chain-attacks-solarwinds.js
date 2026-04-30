@@ -51,10 +51,10 @@ export default function SupplyChainAttacks() {
             { "@type": "Article", "headline": "Supply Chain Attacks: Lessons from SolarWinds Every Security Team Must Apply", "description": "How the SolarWinds attack happened, what it revealed about software supply chain security, and the controls every organisation must implement.", "author": { "@type": "Person", "name": "Soham Sawant", "jobTitle": "Cybersecurity Expert & Technical Writer", "worksFor": { "@type": "Organization", "name": "SecComply" } }, "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } }, "datePublished": "2026-03-27", "dateModified": "2026-03-27", "mainEntityOfPage": "https://seccomply.net/resources/blog/supply-chain-attacks-solarwinds", "keywords": "supply chain attack, SolarWinds, SUNBURST, SBOM, build pipeline security, software integrity, TPRM", "articleSection": "Supply Chain Security", "wordCount": 2000, "timeRequired": "PT8M" },
             { "@type": "FAQPage", "mainEntity": [
               { "@type": "Question", "name": "What was the SolarWinds supply chain attack?", "acceptedAnswer": { "@type": "Answer", "text": "The SolarWinds supply chain attack, discovered in December 2020, involved nation-state attackers (attributed to Russia's SVR intelligence service) compromising SolarWinds' software build pipeline and inserting a backdoor called SUNBURST into the Orion platform update. Approximately 18,000 organisations downloaded the malicious update, trusting it because it was signed with SolarWinds' legitimate digital certificate. The attackers had access to some victim environments for up to 14 months before discovery." } },
-              { "@type": "Question", "name": "How do supply chain attacks differ from direct attacks?", "acceptedAnswer": { "@type": "Answer", "text": "A direct attack targets your own systems — your firewall, your applications, your employees. A supply chain attack targets a vendor, supplier, or software component that you trust and install in your environment. The attack reaches you through the trust relationship, not through your perimeter. This makes supply chain attacks particularly dangerous because your security controls are not designed to detect malicious content arriving through a trusted, signed, verified update channel." } },
-              { "@type": "Question", "name": "What is a Software Bill of Materials (SBOM) and how does it help?", "acceptedAnswer": { "@type": "Answer", "text": "An SBOM is a machine-readable inventory of every software component in an application — libraries, frameworks, dependencies, and their versions. In a supply chain attack scenario, an SBOM allows you to rapidly determine whether a compromised component is present in your environment, which systems are affected, and what the blast radius of a compromise might be. Without an SBOM, the Log4Shell response took weeks of manual scanning; organisations with SBOMs could answer the question in hours." } },
-              { "@type": "Question", "name": "What is the SLSA framework?", "acceptedAnswer": { "@type": "Answer", "text": "SLSA (Supply chain Levels for Software Artifacts) is a security framework developed by Google that defines four levels of supply chain security maturity — from basic build integrity through fully verified, tamper-resistant provenance. At SLSA Level 1, builds are scripted. At Level 4, the build process is hermetic, fully audited, and the provenance is cryptographically verified. The SolarWinds attack occurred in a build environment with no SLSA-equivalent controls." } },
-              { "@type": "Question", "name": "How do ISO 27001 and SOC 2 address supply chain security?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001:2022 Annex A.5.19 (Information security in supplier relationships) and A.5.21 (Managing information security in the ICT supply chain) directly address supply chain risk. SOC 2 CC9.2 requires vendor risk management processes. A.8.30 (Outsourced development) applies to organisations that use external development resources. Together these controls require organisations to assess, monitor, and contractually bind suppliers — but the SolarWinds attack showed that even organisations with mature supplier controls can be compromised through the software update channel." } }
+              { "@type": "Question", "name": "How do supply chain attacks differ from direct attacks?", "acceptedAnswer": { "@type": "Answer", "text": "A direct attack targets your own systems - your firewall, your applications, your employees. A supply chain attack targets a vendor, supplier, or software component that you trust and install in your environment. The attack reaches you through the trust relationship, not through your perimeter. This makes supply chain attacks particularly dangerous because your security controls are not designed to detect malicious content arriving through a trusted, signed, verified update channel." } },
+              { "@type": "Question", "name": "What is a Software Bill of Materials (SBOM) and how does it help?", "acceptedAnswer": { "@type": "Answer", "text": "An SBOM is a machine-readable inventory of every software component in an application - libraries, frameworks, dependencies, and their versions. In a supply chain attack scenario, an SBOM allows you to rapidly determine whether a compromised component is present in your environment, which systems are affected, and what the blast radius of a compromise might be. Without an SBOM, the Log4Shell response took weeks of manual scanning; organisations with SBOMs could answer the question in hours." } },
+              { "@type": "Question", "name": "What is the SLSA framework?", "acceptedAnswer": { "@type": "Answer", "text": "SLSA (Supply chain Levels for Software Artifacts) is a security framework developed by Google that defines four levels of supply chain security maturity - from basic build integrity through fully verified, tamper-resistant provenance. At SLSA Level 1, builds are scripted. At Level 4, the build process is hermetic, fully audited, and the provenance is cryptographically verified. The SolarWinds attack occurred in a build environment with no SLSA-equivalent controls." } },
+              { "@type": "Question", "name": "How do ISO 27001 and SOC 2 address supply chain security?", "acceptedAnswer": { "@type": "Answer", "text": "ISO 27001:2022 Annex A.5.19 (Information security in supplier relationships) and A.5.21 (Managing information security in the ICT supply chain) directly address supply chain risk. SOC 2 CC9.2 requires vendor risk management processes. A.8.30 (Outsourced development) applies to organisations that use external development resources. Together these controls require organisations to assess, monitor, and contractually bind suppliers - but the SolarWinds attack showed that even organisations with mature supplier controls can be compromised through the software update channel." } }
             ]},
             { "@type": "BreadcrumbList", "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seccomply.net" },
@@ -215,7 +215,7 @@ export default function SupplyChainAttacks() {
           <span className="badge badge-gr">✓ ISO 27001 · SOC 2</span>
         </div>
         <h1 className="cspm-hero-h1">Supply Chain Attacks: <em>Lessons from SolarWinds</em></h1>
-        <p className="cspm-hero-sub">18,000 organisations downloaded a backdoor disguised as a routine software update. The SolarWinds attack did not break through firewalls or exploit zero-days — it walked through the front door, signed and trusted. Here is what it changed, and what your security programme must do differently because of it.</p>
+        <p className="cspm-hero-sub">18,000 organisations downloaded a backdoor disguised as a routine software update. The SolarWinds attack did not break through firewalls or exploit zero-days - it walked through the front door, signed and trusted. Here is what it changed, and what your security programme must do differently because of it.</p>
 
         <div className="cspm-author-strip">
           <div className="avatar">SS</div>
@@ -241,18 +241,18 @@ export default function SupplyChainAttacks() {
               <pattern id="scpat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern>
             </defs>
             <rect width="960" height="400" fill="url(#scpat)"/>
-            <text x="480" y="32" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">SolarWinds Attack — Kill Chain & Impact</text>
+            <text x="480" y="32" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">SolarWinds Attack - Kill Chain & Impact</text>
 
             {/* Attack kill chain */}
             <text x="36" y="56" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">SUNBURST KILL CHAIN</text>
             {[
-              {phase:'Initial Access',    detail:'Build pipeline compromise — Feb 2020', col:'#ff4d6d'},
+              {phase:'Initial Access',    detail:'Build pipeline compromise - Feb 2020', col:'#ff4d6d'},
               {phase:'Persistence',       detail:'SUNBURST backdoor injected into Orion DLL', col:'#ff4d6d'},
               {phase:'Delivery',          detail:'Malicious update signed, pushed to 18,000 orgs', col:'#E8632B'},
               {phase:'C2 Activation',     detail:'2-week dormancy, then beacon to avsvmcloud.com', col:'#E8632B'},
               {phase:'Lateral Movement',  detail:'Golden SAML, credential theft, pivoting', col:'#ffb703'},
               {phase:'Exfiltration',       detail:'Data from US Treasury, DHS, FireEye, MSFT', col:'#ffb703'},
-              {phase:'Discovery',         detail:'FireEye detects anomalous OAuth token — Dec 2020', col:'#06d6a0'},
+              {phase:'Discovery',         detail:'FireEye detects anomalous OAuth token - Dec 2020', col:'#06d6a0'},
             ].map(({phase,detail,col},i)=>(
               <g key={i}>
                 <rect x="20" y={66+i*40} width="400" height="30" rx="7" fill="#091826" stroke={`${col}25`} strokeWidth="1"/>
@@ -321,11 +321,11 @@ export default function SupplyChainAttacks() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>For decades, the software security model was built on a simple premise: verify the vendor, verify the certificate, trust the update. SolarWinds shattered that model in a way that is still reshaping how organisations think about trust. This article breaks down exactly how the attack worked, why it succeeded despite the victims having mature security programmes, and the specific controls that every organisation must now have in place — informed by the single most instructive supply chain attack in cybersecurity history.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>For decades, the software security model was built on a simple premise: verify the vendor, verify the certificate, trust the update. SolarWinds shattered that model in a way that is still reshaping how organisations think about trust. This article breaks down exactly how the attack worked, why it succeeded despite the victims having mature security programmes, and the specific controls that every organisation must now have in place - informed by the single most instructive supply chain attack in cybersecurity history.</p>
 
           <div className="stats-row anim">
             <div className="stat-card"><div className="stat-n" data-target="18000" data-suffix="+">0+</div><div className="stat-l">organisations that downloaded the SUNBURST backdoor in the malicious Orion update<br/><span style={{fontSize:'.68rem',opacity:.55}}>SolarWinds, 2020</span></div></div>
-            <div className="stat-card"><div className="stat-n" data-target="14" data-suffix=" months">0 months</div><div className="stat-l">maximum dwell time before the breach was detected — the attackers had been inside since February 2020<br/><span style={{fontSize:'.68rem',opacity:.55}}>FireEye, December 2020</span></div></div>
+            <div className="stat-card"><div className="stat-n" data-target="14" data-suffix=" months">0 months</div><div className="stat-l">maximum dwell time before the breach was detected - the attackers had been inside since February 2020<br/><span style={{fontSize:'.68rem',opacity:.55}}>FireEye, December 2020</span></div></div>
             <div className="stat-card"><div className="stat-n" data-prefix="$" data-target="40" data-suffix="B+">$0B+</div><div className="stat-l">estimated total cost of the SolarWinds attack across all affected organisations<br/><span style={{fontSize:'.68rem',opacity:.55}}>Cyentia Institute, 2021</span></div></div>
           </div>
 
@@ -336,22 +336,22 @@ export default function SupplyChainAttacks() {
               <div className="tl-event">
                 <div className="tl-date">October 2019</div>
                 <strong>Attackers gain initial access to SolarWinds</strong>
-                <p>The exact initial vector is still disputed — likely a phishing attack or compromise of a developer credential. The attackers spent months learning the build environment before touching anything.</p>
+                <p>The exact initial vector is still disputed - likely a phishing attack or compromise of a developer credential. The attackers spent months learning the build environment before touching anything.</p>
               </div>
               <div className="tl-event">
                 <div className="tl-date">February 2020</div>
                 <strong>SUNBURST backdoor injected into Orion source code</strong>
-                <p>The attackers modified the source code of SolarWinds Orion — a network monitoring platform used by Fortune 500 companies and US government agencies — to include a sophisticated backdoor. The modification was designed to survive code review: it looked like legitimate code, was placed in an obscure file, and included a 2-week dormancy period before activating.</p>
+                <p>The attackers modified the source code of SolarWinds Orion - a network monitoring platform used by Fortune 500 companies and US government agencies - to include a sophisticated backdoor. The modification was designed to survive code review: it looked like legitimate code, was placed in an obscure file, and included a 2-week dormancy period before activating.</p>
               </div>
               <div className="tl-event">
                 <div className="tl-date">March–June 2020</div>
                 <strong>Malicious updates signed and distributed</strong>
-                <p>SolarWinds built, signed with their legitimate digital certificate, and distributed updates containing SUNBURST to approximately 18,000 customers. Every customer who applied the update installed the backdoor — through exactly the same process they would use for any routine security update.</p>
+                <p>SolarWinds built, signed with their legitimate digital certificate, and distributed updates containing SUNBURST to approximately 18,000 customers. Every customer who applied the update installed the backdoor - through exactly the same process they would use for any routine security update.</p>
               </div>
               <div className="tl-event">
                 <div className="tl-date">April–December 2020</div>
                 <strong>Active exploitation of selected targets</strong>
-                <p>Of the 18,000 organisations that installed the backdoor, the attackers actively exploited approximately 100 — selected based on strategic interest. Targets included the US Treasury, Department of Homeland Security, FireEye, Microsoft, and dozens of other high-value organisations.</p>
+                <p>Of the 18,000 organisations that installed the backdoor, the attackers actively exploited approximately 100 - selected based on strategic interest. Targets included the US Treasury, Department of Homeland Security, FireEye, Microsoft, and dozens of other high-value organisations.</p>
               </div>
               <div className="tl-event">
                 <div className="tl-date">December 8, 2020</div>
@@ -363,27 +363,27 @@ export default function SupplyChainAttacks() {
 
           <section id="why-different">
             <h2>Why This Attack Was <em>Fundamentally Different</em></h2>
-            <p>Most security programmes are designed to detect attackers doing attacker things: scanning ports, exploiting vulnerabilities, moving laterally with stolen credentials. The SolarWinds attack did none of these things in the initial stage. It did legitimate things — installing a legitimate update, activating through a legitimate domain lookup, communicating with a command-and-control server that mimicked legitimate Orion traffic patterns.</p>
+            <p>Most security programmes are designed to detect attackers doing attacker things: scanning ports, exploiting vulnerabilities, moving laterally with stolen credentials. The SolarWinds attack did none of these things in the initial stage. It did legitimate things - installing a legitimate update, activating through a legitimate domain lookup, communicating with a command-and-control server that mimicked legitimate Orion traffic patterns.</p>
             <div className="pull-quote">
-              <p>"The SolarWinds attackers did not exploit a vulnerability in the traditional sense. They exploited trust — the trust every organisation places in its software vendors, in signed updates, in the security of their suppliers' build pipelines."</p>
+              <p>"The SolarWinds attackers did not exploit a vulnerability in the traditional sense. They exploited trust - the trust every organisation places in its software vendors, in signed updates, in the security of their suppliers' build pipelines."</p>
             </div>
             <div className="callout co-danger">
               <span className="co-icon">🚨</span>
               <div className="co-body">
                 <strong>The Uncomfortable Truth</strong>
-                <p>Most of the 18,000 organisations that installed SUNBURST had mature security programmes. Many had ISO 27001 certification. Several were cybersecurity companies. Their controls were not deficient — they were simply not designed to detect malicious code arriving through a trusted, signed, vendor-endorsed software update channel. That is the lesson.</p>
+                <p>Most of the 18,000 organisations that installed SUNBURST had mature security programmes. Many had ISO 27001 certification. Several were cybersecurity companies. Their controls were not deficient - they were simply not designed to detect malicious code arriving through a trusted, signed, vendor-endorsed software update channel. That is the lesson.</p>
               </div>
             </div>
           </section>
 
           <section id="kill-chain">
-            <h2>The Kill Chain — <em>Where It Could Have Been Stopped</em></h2>
+            <h2>The Kill Chain - <em>Where It Could Have Been Stopped</em></h2>
             <p>Every stage of the kill chain had at least one control that would have interrupted it. Understanding where those gaps were is the starting point for building defences against the next SolarWinds.</p>
             <ul className="feat-list">
-              <li className="anim"><div className="f-num">1</div><div className="f-body"><strong>Build pipeline integrity (would have prevented insertion)</strong><span>The SUNBURST backdoor was injected into the build pipeline — the automated process that compiles source code into an installable package. A build environment with strict integrity controls — reproducible builds, cryptographic verification of source code before compilation, separation of build systems from corporate networks — would have either prevented the injection or detected the modified output before signing.</span></div></li>
-              <li className="anim"><div className="f-num">2</div><div className="f-body"><strong>Code signing policy (would have flagged the anomaly)</strong><span>SolarWinds' legitimate code signing certificate was used to sign the malicious update — making it indistinguishable from legitimate updates at the certificate level. A certificate transparency log and anomaly detection on signing operations (unusual files being signed, signing outside normal windows) could have flagged the suspicious signing event.</span></div></li>
-              <li className="anim"><div className="f-num">3</div><div className="f-body"><strong>Network anomaly detection (would have detected earlier)</strong><span>SUNBURST used DNS requests to avsvmcloud.com as its command-and-control channel. This was designed to look like legitimate Orion activity — but the domain was unusual and the DNS patterns were subtly anomalous. Organisations with mature network traffic analysis and DNS monitoring detected the malicious activity faster than those relying only on signature-based detection.</span></div></li>
-              <li className="anim"><div className="f-num">4</div><div className="f-body"><strong>Zero Trust architecture (would have limited blast radius)</strong><span>In environments with Zero Trust principles — where Orion would only have the specific network access it needed for its legitimate function — lateral movement was significantly harder. Attackers in Zero Trust environments still gained a foothold but found it much harder to pivot to high-value systems. The environments hit hardest were those where Orion had broad network access consistent with its administrative function.</span></div></li>
+              <li className="anim"><div className="f-num">1</div><div className="f-body"><strong>Build pipeline integrity (would have prevented insertion)</strong><span>The SUNBURST backdoor was injected into the build pipeline - the automated process that compiles source code into an installable package. A build environment with strict integrity controls - reproducible builds, cryptographic verification of source code before compilation, separation of build systems from corporate networks - would have either prevented the injection or detected the modified output before signing.</span></div></li>
+              <li className="anim"><div className="f-num">2</div><div className="f-body"><strong>Code signing policy (would have flagged the anomaly)</strong><span>SolarWinds' legitimate code signing certificate was used to sign the malicious update - making it indistinguishable from legitimate updates at the certificate level. A certificate transparency log and anomaly detection on signing operations (unusual files being signed, signing outside normal windows) could have flagged the suspicious signing event.</span></div></li>
+              <li className="anim"><div className="f-num">3</div><div className="f-body"><strong>Network anomaly detection (would have detected earlier)</strong><span>SUNBURST used DNS requests to avsvmcloud.com as its command-and-control channel. This was designed to look like legitimate Orion activity - but the domain was unusual and the DNS patterns were subtly anomalous. Organisations with mature network traffic analysis and DNS monitoring detected the malicious activity faster than those relying only on signature-based detection.</span></div></li>
+              <li className="anim"><div className="f-num">4</div><div className="f-body"><strong>Zero Trust architecture (would have limited blast radius)</strong><span>In environments with Zero Trust principles - where Orion would only have the specific network access it needed for its legitimate function - lateral movement was significantly harder. Attackers in Zero Trust environments still gained a foothold but found it much harder to pivot to high-value systems. The environments hit hardest were those where Orion had broad network access consistent with its administrative function.</span></div></li>
             </ul>
           </section>
 
@@ -393,7 +393,7 @@ export default function SupplyChainAttacks() {
               <div className="lesson-card anim">
                 <div className="lc-num">Lesson 1</div>
                 <h3>Verify the build, not just the binary</h3>
-                <p>A signed binary proves the binary was signed by the vendor — not that the build pipeline producing it was secure. Implement build provenance verification. The SLSA framework provides a practical maturity model for securing the build pipeline itself.</p>
+                <p>A signed binary proves the binary was signed by the vendor - not that the build pipeline producing it was secure. Implement build provenance verification. The SLSA framework provides a practical maturity model for securing the build pipeline itself.</p>
               </div>
               <div className="lesson-card anim">
                 <div className="lc-num">Lesson 2</div>
@@ -403,35 +403,35 @@ export default function SupplyChainAttacks() {
               <div className="lesson-card anim">
                 <div className="lc-num">Lesson 3</div>
                 <h3>Vendor risk management is not enough</h3>
-                <p>SolarWinds would have passed any vendor security questionnaire. ISO 27001 certification, mature security programme, Fortune 500 customer base. Traditional TPRM did not — and could not — detect a compromised build pipeline. Supply chain security requires technical controls, not just contractual ones.</p>
+                <p>SolarWinds would have passed any vendor security questionnaire. ISO 27001 certification, mature security programme, Fortune 500 customer base. Traditional TPRM did not - and could not - detect a compromised build pipeline. Supply chain security requires technical controls, not just contractual ones.</p>
               </div>
               <div className="lesson-card anim">
                 <div className="lc-num">Lesson 4</div>
                 <h3>Treat software update channels as attack vectors</h3>
-                <p>Every automatic software update is a potential supply chain attack vector. This does not mean disabling updates — it means monitoring what updates install, where they come from, and what network behaviour changes immediately after installation. Anomalous post-update behaviour is a detection signal.</p>
+                <p>Every automatic software update is a potential supply chain attack vector. This does not mean disabling updates - it means monitoring what updates install, where they come from, and what network behaviour changes immediately after installation. Anomalous post-update behaviour is a detection signal.</p>
               </div>
               <div className="lesson-card anim">
                 <div className="lc-num">Lesson 5</div>
                 <h3>Segment privileged management tools</h3>
-                <p>Orion was powerful because it was a network management platform with broad access. Every privileged management tool in your environment — RMM, SIEM, endpoint management — is a high-value supply chain target. These tools should be network-segmented, zero-trust-enabled, and closely monitored for anomalous behaviour.</p>
+                <p>Orion was powerful because it was a network management platform with broad access. Every privileged management tool in your environment - RMM, SIEM, endpoint management - is a high-value supply chain target. These tools should be network-segmented, zero-trust-enabled, and closely monitored for anomalous behaviour.</p>
               </div>
               <div className="lesson-card anim">
                 <div className="lc-num">Lesson 6</div>
                 <h3>Assume breach in your detection model</h3>
-                <p>The 14-month dwell time happened because defenders were looking for attackers doing attacker things. Assume that a determined adversary is already inside and look for anomalous behaviour by trusted processes and legitimate credentials — not just for obvious indicators of compromise.</p>
+                <p>The 14-month dwell time happened because defenders were looking for attackers doing attacker things. Assume that a determined adversary is already inside and look for anomalous behaviour by trusted processes and legitimate credentials - not just for obvious indicators of compromise.</p>
               </div>
             </div>
           </section>
 
           <section id="sbom">
-            <h2>The SBOM Imperative — <em>Your Most Urgent Action</em></h2>
-            <p>Of all the lessons from SolarWinds, the Software Bill of Materials is the most immediately actionable. An SBOM is a machine-readable inventory of every software component in an application — every library, framework, and dependency with its version and source.</p>
-            <p>When Log4Shell was disclosed in December 2021 — a critical vulnerability in a logging library used by millions of applications — organisations with SBOMs were able to determine their exposure in hours. Organisations without them spent weeks manually scanning, guessing, and discovering affected systems after the fact. The same dynamic applies to supply chain attacks: if you know what is in your software, you can respond to a supply chain compromise immediately rather than reactively.</p>
+            <h2>The SBOM Imperative - <em>Your Most Urgent Action</em></h2>
+            <p>Of all the lessons from SolarWinds, the Software Bill of Materials is the most immediately actionable. An SBOM is a machine-readable inventory of every software component in an application - every library, framework, and dependency with its version and source.</p>
+            <p>When Log4Shell was disclosed in December 2021 - a critical vulnerability in a logging library used by millions of applications - organisations with SBOMs were able to determine their exposure in hours. Organisations without them spent weeks manually scanning, guessing, and discovering affected systems after the fact. The same dynamic applies to supply chain attacks: if you know what is in your software, you can respond to a supply chain compromise immediately rather than reactively.</p>
             <div className="callout co-sc">
               <span className="co-icon">📦</span>
               <div className="co-body">
                 <strong>SBOM is Now a Regulatory Requirement</strong>
-                <p>The US Executive Order 14028 on Improving the Nation's Cybersecurity (2021) mandates SBOMs for software sold to the federal government. The EU Cyber Resilience Act (CRA) introduces SBOM requirements for products sold in the EU market. DPDP Act Section 8(5) reasonable safeguards are increasingly interpreted to include supply chain transparency. If you sell software, SBOM is becoming mandatory — not optional.</p>
+                <p>The US Executive Order 14028 on Improving the Nation's Cybersecurity (2021) mandates SBOMs for software sold to the federal government. The EU Cyber Resilience Act (CRA) introduces SBOM requirements for products sold in the EU market. DPDP Act Section 8(5) reasonable safeguards are increasingly interpreted to include supply chain transparency. If you sell software, SBOM is becoming mandatory - not optional.</p>
               </div>
             </div>
           </section>
@@ -442,11 +442,11 @@ export default function SupplyChainAttacks() {
               <table className="cmp-table">
                 <thead><tr><th>Framework</th><th>Supply Chain Control</th><th>What Is Required</th></tr></thead>
                 <tbody>
-                  <tr><td>ISO 27001</td><td>A.5.19 — Information security in supplier relationships; A.5.21 — ICT supply chain management</td><td>Documented supplier security requirements, contractual controls, continuous monitoring of supplier security posture</td></tr>
-                  <tr><td>SOC 2</td><td>CC9.2 — Vendor and business partner risk management</td><td>Vendor risk assessment processes, contractual security obligations, monitoring of vendor compliance</td></tr>
-                  <tr><td>NIST CSF</td><td>ID.SC — Supply chain risk management function</td><td>Supply chain risk assessment, supplier vetting, response planning for supply chain compromises</td></tr>
-                  <tr><td>DPDP Act</td><td>Section 8(5) — Reasonable security safeguards</td><td>Supply chain security increasingly interpreted as part of reasonable safeguards for data processors</td></tr>
-                  <tr><td>EU CRA</td><td>Article 13 — Obligations of manufacturers</td><td>SBOM required for products with digital elements sold in EU market; vulnerability handling policy mandatory</td></tr>
+                  <tr><td>ISO 27001</td><td>A.5.19 - Information security in supplier relationships; A.5.21 - ICT supply chain management</td><td>Documented supplier security requirements, contractual controls, continuous monitoring of supplier security posture</td></tr>
+                  <tr><td>SOC 2</td><td>CC9.2 - Vendor and business partner risk management</td><td>Vendor risk assessment processes, contractual security obligations, monitoring of vendor compliance</td></tr>
+                  <tr><td>NIST CSF</td><td>ID.SC - Supply chain risk management function</td><td>Supply chain risk assessment, supplier vetting, response planning for supply chain compromises</td></tr>
+                  <tr><td>DPDP Act</td><td>Section 8(5) - Reasonable security safeguards</td><td>Supply chain security increasingly interpreted as part of reasonable safeguards for data processors</td></tr>
+                  <tr><td>EU CRA</td><td>Article 13 - Obligations of manufacturers</td><td>SBOM required for products with digital elements sold in EU market; vulnerability handling policy mandatory</td></tr>
                 </tbody>
               </table>
             </div>
@@ -454,7 +454,7 @@ export default function SupplyChainAttacks() {
 
           <div className="cta-banner">
             <h3>Is Your Supply Chain Risk Programme Ready?</h3>
-            <p>SecComply assesses your vendor risk, build pipeline security, and SBOM readiness against ISO 27001, SOC 2, and emerging supply chain security requirements — before the next SolarWinds finds you.</p>
+            <p>SecComply assesses your vendor risk, build pipeline security, and SBOM readiness against ISO 27001, SOC 2, and emerging supply chain security requirements - before the next SolarWinds finds you.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free Supply Chain Assessment →</a>
               <a href="https://seccomply.net/services/compliance-as-a-service" className="btn-o" target="_blank" rel="noopener">View Compliance Services</a>
@@ -472,10 +472,10 @@ export default function SupplyChainAttacks() {
             <div itemScope itemType="https://schema.org/FAQPage">
               {[
                 {q:"What was the SolarWinds supply chain attack?", a:"The SolarWinds supply chain attack involved nation-state attackers compromising SolarWinds' software build pipeline and inserting a backdoor called SUNBURST into the Orion platform update. Approximately 18,000 organisations downloaded the malicious update, trusting it because it was signed with SolarWinds' legitimate digital certificate. The attackers had access to some victim environments for up to 14 months before discovery."},
-                {q:"How do supply chain attacks differ from direct attacks?", a:"A direct attack targets your own systems — your firewall, your applications, your employees. A supply chain attack targets a vendor or software component that you trust and install in your environment. The attack reaches you through the trust relationship. This makes supply chain attacks particularly dangerous because your security controls are not designed to detect malicious content arriving through a trusted, signed, verified update channel."},
-                {q:"What is a Software Bill of Materials (SBOM) and how does it help?", a:"An SBOM is a machine-readable inventory of every software component in an application — libraries, frameworks, dependencies, and their versions. In a supply chain attack scenario, an SBOM allows you to rapidly determine whether a compromised component is present in your environment, which systems are affected, and what the blast radius might be. Organisations with SBOMs answered the Log4Shell question in hours; those without spent weeks scanning."},
-                {q:"What is the SLSA framework?", a:"SLSA (Supply chain Levels for Software Artifacts) is a security framework that defines four levels of supply chain security maturity — from basic build integrity through fully verified, tamper-resistant provenance. At SLSA Level 4, the build process is hermetic, fully audited, and the provenance is cryptographically verified. The SolarWinds attack occurred in a build environment with no SLSA-equivalent controls."},
-                {q:"How do ISO 27001 and SOC 2 address supply chain security?", a:"ISO 27001:2022 Annex A.5.19 and A.5.21 directly address supply chain risk — documented supplier security requirements, contractual controls, and continuous monitoring. SOC 2 CC9.2 requires vendor risk management. These controls require organisations to assess and monitor suppliers, but the SolarWinds attack showed that even mature supplier controls cannot catch a compromised software update channel without technical build pipeline integrity controls."},
+                {q:"How do supply chain attacks differ from direct attacks?", a:"A direct attack targets your own systems - your firewall, your applications, your employees. A supply chain attack targets a vendor or software component that you trust and install in your environment. The attack reaches you through the trust relationship. This makes supply chain attacks particularly dangerous because your security controls are not designed to detect malicious content arriving through a trusted, signed, verified update channel."},
+                {q:"What is a Software Bill of Materials (SBOM) and how does it help?", a:"An SBOM is a machine-readable inventory of every software component in an application - libraries, frameworks, dependencies, and their versions. In a supply chain attack scenario, an SBOM allows you to rapidly determine whether a compromised component is present in your environment, which systems are affected, and what the blast radius might be. Organisations with SBOMs answered the Log4Shell question in hours; those without spent weeks scanning."},
+                {q:"What is the SLSA framework?", a:"SLSA (Supply chain Levels for Software Artifacts) is a security framework that defines four levels of supply chain security maturity - from basic build integrity through fully verified, tamper-resistant provenance. At SLSA Level 4, the build process is hermetic, fully audited, and the provenance is cryptographically verified. The SolarWinds attack occurred in a build environment with no SLSA-equivalent controls."},
+                {q:"How do ISO 27001 and SOC 2 address supply chain security?", a:"ISO 27001:2022 Annex A.5.19 and A.5.21 directly address supply chain risk - documented supplier security requirements, contractual controls, and continuous monitoring. SOC 2 CC9.2 requires vendor risk management. These controls require organisations to assess and monitor suppliers, but the SolarWinds attack showed that even mature supplier controls cannot catch a compromised software update channel without technical build pipeline integrity controls."},
               ].map((f,i)=>(
                 <div key={i} className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong itemProp="name">{f.q}</strong><span className="faq-ch">▾</span></div>
@@ -517,7 +517,7 @@ export default function SupplyChainAttacks() {
           </div>
           <div className="sb-cta">
             <h4>Supply Chain Ready?</h4>
-            <p>Free assessment — we evaluate your vendor risk and build pipeline security against ISO 27001 and SOC 2.</p>
+            <p>Free assessment - we evaluate your vendor risk and build pipeline security against ISO 27001 and SOC 2.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Assessment →</a>
           </div>
         </aside>

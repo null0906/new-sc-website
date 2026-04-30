@@ -26,20 +26,20 @@ export default function SignificantDataFiduciary() {
   return (
     <Layout>
       <Head>
-        <title>Significant Data Fiduciary (SDF) — Are You One? What Changes If You Are? | SecComply</title>
+        <title>Significant Data Fiduciary (SDF) - Are You One? What Changes If You Are? | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
-        <meta name="description" content="Not all Data Fiduciaries are equal under the DPDP Act. Section 10 creates a higher-obligation tier — the Significant Data Fiduciary. Here is how the government decides, and what four additional obligations apply once you are classified." />
+        <meta name="description" content="Not all Data Fiduciaries are equal under the DPDP Act. Section 10 creates a higher-obligation tier - the Significant Data Fiduciary. Here is how the government decides, and what four additional obligations apply once you are classified." />
         <meta name="keywords" content="significant data fiduciary SDF DPDP Act, SDF obligations India, DPIA data protection impact assessment, data protection officer India, independent data auditor DPDP, SDF classification criteria, DPDP Act Section 10, SDF compliance India" />
-        <meta property="og:title" content="Significant Data Fiduciary (SDF) — Are You One? What Changes If You Are?" />
-        <meta property="og:description" content="Not all Data Fiduciaries are equal under the DPDP Act. Section 10 creates a higher-obligation tier — the Significant Data Fiduciary. Here is how the government decides, and what four additional obligations apply once you are classified." />
+        <meta property="og:title" content="Significant Data Fiduciary (SDF) - Are You One? What Changes If You Are?" />
+        <meta property="og:description" content="Not all Data Fiduciaries are equal under the DPDP Act. Section 10 creates a higher-obligation tier - the Significant Data Fiduciary. Here is how the government decides, and what four additional obligations apply once you are classified." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/significant-data-fiduciary-sdf" />
         <meta property="article:published_time" content="2026-04-01" />
         <meta property="article:author" content="Chandrika Mulage" />
         <meta property="article:tag" content="DPDP Act" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/significant-data-fiduciary-sdf" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Significant Data Fiduciary (SDF) — Are You One? What Changes If You Are?","description":"Section 10 of the DPDP Act creates a higher-obligation tier for Significant Data Fiduciaries. Learn the classification criteria and the 4 additional obligations that apply.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/significant-data-fiduciary-sdf","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Significant Data Fiduciary","item":"https://seccomply.net/resources/blog/significant-data-fiduciary-sdf"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Significant Data Fiduciary (SDF) - Are You One? What Changes If You Are?","description":"Section 10 of the DPDP Act creates a higher-obligation tier for Significant Data Fiduciaries. Learn the classification criteria and the 4 additional obligations that apply.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/significant-data-fiduciary-sdf","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Significant Data Fiduciary","item":"https://seccomply.net/resources/blog/significant-data-fiduciary-sdf"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -170,7 +170,7 @@ export default function SignificantDataFiduciary() {
         <a href="https://seccomply.net/">Home</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources">Resources</a><span className="bc-sep">›</span>
         <a href="https://seccomply.net/resources/blog">Blog</a><span className="bc-sep">›</span>
-        <span style={{color:'var(--tb)'}}>Significant Data Fiduciary (SDF) — Are Y...</span>
+        <span style={{color:'var(--tb)'}}>Significant Data Fiduciary (SDF) - Are Y...</span>
       </div>
 
       <div className="hero-wrap">
@@ -180,8 +180,8 @@ export default function SignificantDataFiduciary() {
           <span className="badge badge-am">🏢 India Compliance</span>
           <span className="badge badge-gr">Series · Part 4 of 6</span>
         </div>
-        <h1 className="hero-h1">Significant Data Fiduciary (SDF) — <em>Are You One?</em> What Changes If You Are?</h1>
-        <p className="hero-sub">Not all Data Fiduciaries are treated equally under the DPDP Act. The law reserves a higher tier of obligations for entities that handle data at scale, whose processing poses elevated risks, or who hold significant national influence. Here is how to assess your SDF exposure — and what you must do if you are one.</p>
+        <h1 className="hero-h1">Significant Data Fiduciary (SDF) - <em>Are You One?</em> What Changes If You Are?</h1>
+        <p className="hero-sub">Not all Data Fiduciaries are treated equally under the DPDP Act. The law reserves a higher tier of obligations for entities that handle data at scale, whose processing poses elevated risks, or who hold significant national influence. Here is how to assess your SDF exposure - and what you must do if you are one.</p>
 
         <div className="author-strip">
           <div className="avatar">CM</div>
@@ -195,13 +195,13 @@ export default function SignificantDataFiduciary() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=480&fit=crop" alt="Significant Data Fiduciary SDF DPDP Act India compliance assessment" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">SDF designation raises the compliance bar significantly — on accountability, governance, and technical safeguards. Whether you are already in SDF territory or scaling toward it, the time to build SDF-grade compliance is now.</p>
+        <p className="img-cap">SDF designation raises the compliance bar significantly - on accountability, governance, and technical safeguards. Whether you are already in SDF territory or scaling toward it, the time to build SDF-grade compliance is now.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pg4" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="300" fill="url(#pg4)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Significant Data Fiduciary — Section 10 DPDP Act 2023</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Significant Data Fiduciary - Section 10 DPDP Act 2023</text>
           <rect x="30" y="35" width="420" height="230" rx="14" fill="#091826" stroke="rgba(106,138,170,0.2)" strokeWidth="1.5"/>
           <rect x="30" y="35" width="420" height="3" rx="1.5" fill="#6a8aaa"/>
           <text x="240" y="62" textAnchor="middle" fill="rgba(200,214,229,0.6)" fontSize="11" fontWeight="700" fontFamily="sans-serif">STANDARD DATA FIDUCIARY</text>
@@ -220,12 +220,12 @@ export default function SignificantDataFiduciary() {
           <text x="540" y="92" fill="rgba(200,214,229,0.7)" fontSize="10" fontFamily="sans-serif">✅ All standard obligations above</text>
           <text x="540" y="116" fill="#E8632B" fontSize="10" fontWeight="700" fontFamily="sans-serif">+ DPO: India-based, reports to Board of Directors</text>
           <text x="540" y="140" fill="#E8632B" fontSize="10" fontWeight="700" fontFamily="sans-serif">+ Independent Data Auditor (external, periodic)</text>
-          <text x="540" y="164" fill="#E8632B" fontSize="10" fontWeight="700" fontFamily="sans-serif">+ Periodic DPIAs — every new high-risk activity</text>
-          <text x="540" y="188" fill="#E8632B" fontSize="10" fontWeight="700" fontFamily="sans-serif">+ Algorithm audits — bias, fairness, transparency</text>
+          <text x="540" y="164" fill="#E8632B" fontSize="10" fontWeight="700" fontFamily="sans-serif">+ Periodic DPIAs - every new high-risk activity</text>
+          <text x="540" y="188" fill="#E8632B" fontSize="10" fontWeight="700" fontFamily="sans-serif">+ Algorithm audits - bias, fairness, transparency</text>
           <rect x="540" y="210" width="360" height="40" rx="8" fill="rgba(232,99,43,0.08)" stroke="rgba(232,99,43,0.2)" strokeWidth="1"/>
           <text x="720" y="226" textAnchor="middle" fill="#E8632B" fontSize="9" fontWeight="700" fontFamily="sans-serif">Penalties: ₹150–250 crore per violation category</text>
-          <text x="720" y="242" textAnchor="middle" fill="rgba(200,214,229,0.35)" fontSize="8" fontFamily="sans-serif">Data Protection Board — tiered penalty schedule</text>
-          <text x="480" y="285" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">SDF classification is a Government notification under Section 10 — it can arrive at any time. Build SDF-grade compliance before it does.</text>
+          <text x="720" y="242" textAnchor="middle" fill="rgba(200,214,229,0.35)" fontSize="8" fontFamily="sans-serif">Data Protection Board - tiered penalty schedule</text>
+          <text x="480" y="285" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">SDF classification is a Government notification under Section 10 - it can arrive at any time. Build SDF-grade compliance before it does.</text>
         </svg>
         </div>
 
@@ -249,16 +249,16 @@ export default function SignificantDataFiduciary() {
 
           <div className="series-nav anim">
             <span>📚 DPDP Act Series</span>
-            <strong>Part 4: Significant Data Fiduciary (SDF) — </strong>
+            <strong>Part 4: Significant Data Fiduciary (SDF) - </strong>
             <span>·</span>
             <a href="https://seccomply.net/resources/blog/consent-under-dpdp-act" style={{color:"var(--cy)",textDecoration:"none"}}>← Part 3</a> · <a href="https://seccomply.net/resources/blog/data-protection-officer-dpo-dpdp" style={{color:"var(--cy)",textDecoration:"none"}}>Part 5 →</a>
           </div>
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Not all Data Fiduciaries are treated equally under India's DPDP Act. The law reserves a higher tier of obligations for entities that handle data at scale, whose processing poses elevated risks, or who hold significant national or societal influence. These are <strong>Significant Data Fiduciaries (SDFs)</strong> — and if you are one, or are on the path to becoming one, the compliance requirements are substantially more demanding.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Not all Data Fiduciaries are treated equally under India's DPDP Act. The law reserves a higher tier of obligations for entities that handle data at scale, whose processing poses elevated risks, or who hold significant national or societal influence. These are <strong>Significant Data Fiduciaries (SDFs)</strong> - and if you are one, or are on the path to becoming one, the compliance requirements are substantially more demanding.</p>
 
           <section id="what-is-sdf">
             <h2>What Is a <em>Significant Data Fiduciary?</em></h2>
-            <p><strong>Section 10 of the DPDP Act</strong> empowers the Central Government to notify any Data Fiduciary or class of Fiduciaries as a Significant Data Fiduciary, based on an assessment of risk. The classification is not permanent or automatic — it is a Government notification that can be updated as the digital landscape evolves.</p>
+            <p><strong>Section 10 of the DPDP Act</strong> empowers the Central Government to notify any Data Fiduciary or class of Fiduciaries as a Significant Data Fiduciary, based on an assessment of risk. The classification is not permanent or automatic - it is a Government notification that can be updated as the digital landscape evolves.</p>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
@@ -269,7 +269,7 @@ export default function SignificantDataFiduciary() {
           </section>
 
           <section id="criteria">
-            <h2>The Criteria — <em>How Does the Government Decide?</em></h2>
+            <h2>The Criteria - <em>How Does the Government Decide?</em></h2>
             <p>Section 10(2) specifies the factors the Government will consider:</p>
             <div className="data-table-wrap">
               <table className="data-table">
@@ -291,7 +291,7 @@ export default function SignificantDataFiduciary() {
               <li><strong>Influence:</strong> Does your platform shape public discourse? Do advertisers use your platform for political campaigns?</li>
               <li><strong>Geography:</strong> Is your business model dependent on processing data at national scale across India?</li>
             </ul>
-            <p>If you answer yes to multiple questions, prepare for SDF-level compliance — even if the formal notification has not arrived.</p>
+            <p>If you answer yes to multiple questions, prepare for SDF-level compliance - even if the formal notification has not arrived.</p>
           </section>
 
           <section id="additional-obligations">
@@ -299,20 +299,20 @@ export default function SignificantDataFiduciary() {
             <p>Beyond the standard Data Fiduciary obligations, Section 10 imposes four additional requirements:</p>
 
             <h3>1. Appointment of a Data Protection Officer (DPO)</h3>
-            <p>SDFs must appoint a DPO who is <strong>based in India</strong> (non-negotiable — a remote appointment from overseas does not qualify), represents the SDF before the Data Protection Board, and reports directly to the <strong>Board of Directors</strong> — not the CISO, General Counsel, or CTO. This independence of reporting line is deliberate: the DPO must be free from conflicts of interest. For the full picture on the DPO role, read <a href="https://seccomply.net/resources/blog/data-protection-officer-dpo-dpdp" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>Part 5 of this series on the DPO under the DPDP Act</a>.</p>
+            <p>SDFs must appoint a DPO who is <strong>based in India</strong> (non-negotiable - a remote appointment from overseas does not qualify), represents the SDF before the Data Protection Board, and reports directly to the <strong>Board of Directors</strong> - not the CISO, General Counsel, or CTO. This independence of reporting line is deliberate: the DPO must be free from conflicts of interest. For the full picture on the DPO role, read <a href="https://seccomply.net/resources/blog/data-protection-officer-dpo-dpdp" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>Part 5 of this series on the DPO under the DPDP Act</a>.</p>
 
             <h3>2. Appointment of an Independent Data Auditor</h3>
-            <p>SDFs must engage an <strong>Independent Data Auditor</strong> to evaluate the SDF compliance with the DPDP Act, audit data management practices, processing activities, and technical safeguards, and audit algorithms if the SDF uses automated profiling or decision-making. This is analogous to financial audits — an external, objective assessment that goes beyond self-certification.</p>
+            <p>SDFs must engage an <strong>Independent Data Auditor</strong> to evaluate the SDF compliance with the DPDP Act, audit data management practices, processing activities, and technical safeguards, and audit algorithms if the SDF uses automated profiling or decision-making. This is analogous to financial audits - an external, objective assessment that goes beyond self-certification.</p>
 
             <h3>3. Periodic Data Protection Impact Assessments (DPIAs)</h3>
-            <p>SDFs must conduct DPIAs — a structured evaluation of how specific processing activities impact Data Principal rights. A DPIA covers what data is processed and why, what risks it poses to individuals, mitigating controls in place, and residual risk assessment. DPIAs are not one-time exercises — they must be conducted whenever a new high-risk processing activity is introduced.</p>
+            <p>SDFs must conduct DPIAs - a structured evaluation of how specific processing activities impact Data Principal rights. A DPIA covers what data is processed and why, what risks it poses to individuals, mitigating controls in place, and residual risk assessment. DPIAs are not one-time exercises - they must be conducted whenever a new high-risk processing activity is introduced.</p>
 
             <h3>4. Algorithmic Transparency and Fairness Obligations</h3>
             <p>If an SDF uses algorithms for profiling, recommendation, or automated decision-making, it must conduct audits of those algorithms, assess whether algorithms introduce bias or discriminatory outcomes, and publish or make available to the Board algorithm audit results. This is a significant obligation for platforms using AI or ML at the core of their product.</p>
           </section>
 
           <section id="side-by-side">
-            <h2>SDF vs Standard Data Fiduciary — <em>Side by Side</em></h2>
+            <h2>SDF vs Standard Data Fiduciary - <em>Side by Side</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Obligation</th><th>Standard Fiduciary</th><th>SDF</th></tr></thead>
@@ -324,29 +324,29 @@ export default function SignificantDataFiduciary() {
           </section>
 
           <section id="cross-border">
-            <h2>Cross-Border Data Transfers — <em>Additional Scrutiny for SDFs</em></h2>
+            <h2>Cross-Border Data Transfers - <em>Additional Scrutiny for SDFs</em></h2>
             <p>The DPDP Act (Section 16) restricts transfer of personal data to countries notified by the Central Government. SDFs face heightened scrutiny in this area, and their data transfer agreements are more likely to be subject to Government review. If you are an SDF using global cloud infrastructure (AWS US regions, Azure Europe), your data localisation or transfer safeguards will be examined more rigorously.</p>
           </section>
 
           <section id="compliance-roadmap">
-            <h2>SDF Compliance Roadmap — <em>Where to Start</em></h2>
+            <h2>SDF Compliance Roadmap - <em>Where to Start</em></h2>
             <ul>
-              <li><strong>Immediate:</strong> Identify and appoint a DPO — India-based, with a direct Board reporting line. This takes time to recruit, so start early. Commission an Independent Data Audit to assess your current DPDP posture.</li>
-              <li><strong>Short-term (3–6 months):</strong> Build a DPIA programme — define which processing activities require DPIAs, assign ownership, and conduct your first round. Map your algorithms — list every algorithm that processes personal data and assess for bias and risk.</li>
+              <li><strong>Immediate:</strong> Identify and appoint a DPO - India-based, with a direct Board reporting line. This takes time to recruit, so start early. Commission an Independent Data Audit to assess your current DPDP posture.</li>
+              <li><strong>Short-term (3–6 months):</strong> Build a DPIA programme - define which processing activities require DPIAs, assign ownership, and conduct your first round. Map your algorithms - list every algorithm that processes personal data and assess for bias and risk.</li>
               <li><strong>Ongoing:</strong> Periodic DPIAs built into your product release and change management process. Algorithm audit cycle at minimum annually. DPO reporting cadence to the Board of Directors.</li>
             </ul>
             <div className="callout co-danger">
               <span className="co-icon">🚨</span>
               <div className="co-body">
                 <strong>The Cost of Non-Compliance for SDFs</strong>
-                <p>Failure to observe SDF-specific obligations can attract penalties in the higher ranges — up to ₹150–250 crore per violation category, as assessed by the Data Protection Board. Beyond financial penalties, Board findings are public — reputational damage to a large-scale platform can be severe and lasting.</p>
+                <p>Failure to observe SDF-specific obligations can attract penalties in the higher ranges - up to ₹150–250 crore per violation category, as assessed by the Data Protection Board. Beyond financial penalties, Board findings are public - reputational damage to a large-scale platform can be severe and lasting.</p>
               </div>
             </div>
           </section>
 
           <div className="cta-banner">
             <h3>Ready to Build DPDP Compliance?</h3>
-            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises — from gap assessment to audit-ready documentation.</p>
+            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises - from gap assessment to audit-ready documentation.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free DPDP Consultation →</a>
             </div>
@@ -362,11 +362,11 @@ export default function SignificantDataFiduciary() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>How does the government decide which organisations are Significant Data Fiduciaries?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>The Central Government uses the criteria in Section 10(2) — including volume of data processed, sensitivity of personal data, risk to the rights of Data Principals, potential national security impact, risk to electoral democracy, public order implications, and impact on India's sovereignty and integrity. The classification is a Government notification and can be updated as the digital landscape evolves.</p></div>
+              <div className="faq-a"><p>The Central Government uses the criteria in Section 10(2) - including volume of data processed, sensitivity of personal data, risk to the rights of Data Principals, potential national security impact, risk to electoral democracy, public order implications, and impact on India's sovereignty and integrity. The classification is a Government notification and can be updated as the digital landscape evolves.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Does a Significant Data Fiduciary need to appoint a DPO based in India?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. This is non-negotiable. A DPO located in Singapore, the US, or the UK does not satisfy the DPDP Act requirement. The DPO must be India-based and available to represent the SDF before the Data Protection Board of India. Additionally, the DPO must report directly to the Board of Directors — not to the CISO, General Counsel, or any other function.</p></div>
+              <div className="faq-a"><p>Yes. This is non-negotiable. A DPO located in Singapore, the US, or the UK does not satisfy the DPDP Act requirement. The DPO must be India-based and available to represent the SDF before the Data Protection Board of India. Additionally, the DPO must report directly to the Board of Directors - not to the CISO, General Counsel, or any other function.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is a Data Protection Impact Assessment (DPIA) and who must conduct it?</strong><span className="faq-ch">▾</span></div>
@@ -378,7 +378,7 @@ export default function SignificantDataFiduciary() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What penalties apply if an SDF fails to comply with Section 10 requirements?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Failure to observe SDF-specific obligations can attract penalties in the higher ranges of the DPDP Act penalty schedule — up to ₹150–250 crore per violation category, as assessed by the Data Protection Board. Beyond financial penalties, Board findings are public records, meaning reputational damage compounds financial penalties for large-scale platforms.</p></div>
+              <div className="faq-a"><p>Failure to observe SDF-specific obligations can attract penalties in the higher ranges of the DPDP Act penalty schedule - up to ₹150–250 crore per violation category, as assessed by the Data Protection Board. Beyond financial penalties, Board findings are public records, meaning reputational damage compounds financial penalties for large-scale platforms.</p></div>
             </div>
 
           </section>
@@ -416,7 +416,7 @@ export default function SignificantDataFiduciary() {
           </div>
           <div className="sb-cta">
             <h4>Need DPDP Compliance Help?</h4>
-            <p>We run structured DPDP gap assessments — from data mapping to audit-ready documentation.</p>
+            <p>We run structured DPDP gap assessments - from data mapping to audit-ready documentation.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

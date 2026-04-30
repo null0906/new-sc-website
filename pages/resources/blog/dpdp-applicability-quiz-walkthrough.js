@@ -25,12 +25,12 @@ export default function DPDPApplicabilityQuiz() {
   return (
     <Layout>
       <Head>
-        <title>Do I Need to Comply? — DPDP Act Applicability Quiz Walkthrough | SecComply</title>
+        <title>Do I Need to Comply? - DPDP Act Applicability Quiz Walkthrough | SecComply</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/resource-pages.css" />
         <meta name="description" content="A structured 7-question walkthrough to self-assess DPDP Act applicability and compliance tier. Includes exemptions, volume thresholds, cross-border considerations, and an immediate action plan." />
         <meta name="keywords" content="DPDP Act applicability quiz, does DPDP apply to my business, DPDP Act scope India, DPDP applicability checklist, DPDP Act compliance tier, personal data DPDP, DPDP exemptions, DPDP cross-border transfers" />
-        <meta property="og:title" content="Do I Need to Comply? — DPDP Act Applicability Quiz Walkthrough" />
+        <meta property="og:title" content="Do I Need to Comply? - DPDP Act Applicability Quiz Walkthrough" />
         <meta property="og:description" content="A structured 7-question walkthrough to self-assess DPDP Act applicability and compliance tier. Includes exemptions, volume thresholds, cross-border considerations, and an immediate action plan." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/dpdp-applicability-quiz-walkthrough" />
@@ -38,7 +38,7 @@ export default function DPDPApplicabilityQuiz() {
         <meta property="article:author" content="Chandrika Mulage" />
         <meta property="article:tag" content="DPDP Act" />
         <link rel="canonical" href="https://seccomply.net/resources/blog/dpdp-applicability-quiz-walkthrough" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Do I Need to Comply? — DPDP Act Applicability Quiz Walkthrough","description":"A structured 7-question walkthrough to self-assess DPDP Act applicability and compliance tier.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/dpdp-applicability-quiz-walkthrough","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"DPDP Applicability Quiz","item":"https://seccomply.net/resources/blog/dpdp-applicability-quiz-walkthrough"}]}]}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Do I Need to Comply? - DPDP Act Applicability Quiz Walkthrough","description":"A structured 7-question walkthrough to self-assess DPDP Act applicability and compliance tier.","author":{"@type":"Person","name":"Chandrika Mulage","jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"SecComply Technologies"}},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://seccomply.net/resources/blog/dpdp-applicability-quiz-walkthrough","articleSection":"DPDP Act"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"DPDP Applicability Quiz","item":"https://seccomply.net/resources/blog/dpdp-applicability-quiz-walkthrough"}]}]}) }} />
       </Head>
 
       <style jsx global>{`
@@ -188,8 +188,8 @@ export default function DPDPApplicabilityQuiz() {
           <span className="badge badge-am">🏢 India Compliance</span>
           <span className="badge badge-gr">Part 6 of 6</span>
         </div>
-        <h1 className="hero-h1">"Do I Need to Comply?" — <em>DPDP Act Applicability Quiz</em> Walkthrough</h1>
-        <p className="hero-sub">The most common question from Indian businesses engaging with the DPDP Act: does this even apply to me? This structured walkthrough helps you self-assess whether the DPDP Act applies to your organisation — and to what degree.</p>
+        <h1 className="hero-h1">"Do I Need to Comply?" - <em>DPDP Act Applicability Quiz</em> Walkthrough</h1>
+        <p className="hero-sub">The most common question from Indian businesses engaging with the DPDP Act: does this even apply to me? This structured walkthrough helps you self-assess whether the DPDP Act applies to your organisation - and to what degree.</p>
 
         <div className="author-strip">
           <div className="avatar">CM</div>
@@ -203,13 +203,13 @@ export default function DPDPApplicabilityQuiz() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&h=480&fit=crop" alt="DPDP Act applicability quiz compliance assessment India" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">Work through these 7 questions in order. By the end, you will know your compliance tier — and the specific actions you need to take right now.</p>
+        <p className="img-cap">Work through these 7 questions in order. By the end, you will know your compliance tier - and the specific actions you need to take right now.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pg6" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="300" fill="url(#pg6)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DPDP Act — Compliance Tier Self-Assessment</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DPDP Act - Compliance Tier Self-Assessment</text>
           <rect x="30" y="38" width="222" height="230" rx="14" fill="#091826" stroke="rgba(106,138,170,0.2)" strokeWidth="1.5"/>
           <rect x="30" y="38" width="222" height="4" rx="2" fill="#6a8aaa"/>
           <text x="141" y="70" textAnchor="middle" fill="rgba(200,214,229,0.55)" fontSize="10" fontWeight="800" fontFamily="sans-serif">TIER 1</text>
@@ -218,7 +218,7 @@ export default function DPDPApplicabilityQuiz() {
           <text x="141" y="134" textAnchor="middle" fill="rgba(200,214,229,0.4)" fontSize="9" fontFamily="sans-serif">statutory exemption</text>
           <text x="141" y="180" textAnchor="middle" fill="rgba(200,214,229,0.5)" fontSize="9" fontWeight="700" fontFamily="sans-serif">ACTION</text>
           <text x="141" y="198" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="8.5" fontFamily="sans-serif">Document exemption basis</text>
-          <text x="141" y="212" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="8.5" fontFamily="sans-serif">Verify — do not assume</text>
+          <text x="141" y="212" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="8.5" fontFamily="sans-serif">Verify - do not assume</text>
           <rect x="262" y="38" width="222" height="230" rx="14" fill="#071820" stroke="rgba(6,214,160,0.25)" strokeWidth="1.5"/>
           <rect x="262" y="38" width="222" height="4" rx="2" fill="#06d6a0"/>
           <text x="373" y="70" textAnchor="middle" fill="#06d6a0" fontSize="10" fontWeight="800" fontFamily="sans-serif">TIER 2</text>
@@ -246,7 +246,7 @@ export default function DPDPApplicabilityQuiz() {
           <text x="837" y="180" textAnchor="middle" fill="#ff4d6d" fontSize="9" fontWeight="700" fontFamily="sans-serif">ACTION</text>
           <text x="837" y="198" textAnchor="middle" fill="rgba(200,214,229,0.5)" fontSize="8.5" fontFamily="sans-serif">Tier 3 + DPO + Auditor +</text>
           <text x="837" y="212" textAnchor="middle" fill="rgba(200,214,229,0.5)" fontSize="8.5" fontFamily="sans-serif">DPIAs + Algorithm audits</text>
-          <text x="480" y="288" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">Work through the 7 questions below to determine your tier — and the specific actions your organisation must take.</text>
+          <text x="480" y="288" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">Work through the 7 questions below to determine your tier - and the specific actions your organisation must take.</text>
         </svg>
         </div>
 
@@ -275,10 +275,10 @@ export default function DPDPApplicabilityQuiz() {
             <strong>Part 6 of 6</strong>
           </div>
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The most common question we get from Indian businesses engaging with the DPDP Act for the first time is simple: <em>does this even apply to me?</em> Its application depends on a few key variables — where you are incorporated, where your users are located, what type of data you collect, and what you do with it. Work through these 7 questions in order. By the end, you will know your compliance tier.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>The most common question we get from Indian businesses engaging with the DPDP Act for the first time is simple: <em>does this even apply to me?</em> Its application depends on a few key variables - where you are incorporated, where your users are located, what type of data you collect, and what you do with it. Work through these 7 questions in order. By the end, you will know your compliance tier.</p>
 
           <section id="q1">
-            <h2>Q1 — <em>Is the data you process "digital personal data"?</em></h2>
+            <h2>Q1 - <em>Is the data you process "digital personal data"?</em></h2>
             <p><strong>Digital personal data</strong> = data about a natural person in digital form, or data originally non-digital but subsequently digitised.</p>
             <div className="scope-grid">
               <div className="scope-col sc-in">
@@ -296,29 +296,29 @@ export default function DPDPApplicabilityQuiz() {
                 <ul>
                   <li>Purely anonymised data (re-identification not reasonably possible)</li>
                   <li>Aggregated statistical data (e.g., "60% of users prefer Product A")</li>
-                  <li>Data about legal entities — only natural persons are covered</li>
+                  <li>Data about legal entities - only natural persons are covered</li>
                 </ul>
               </div>
             </div>
-            <p><strong>If NO:</strong> The DPDP Act does not apply to this dataset. But be careful — even aggregated data may contain identifiable subsets. <strong>If YES:</strong> Proceed to Q2.</p>
+            <p><strong>If NO:</strong> The DPDP Act does not apply to this dataset. But be careful - even aggregated data may contain identifiable subsets. <strong>If YES:</strong> Proceed to Q2.</p>
           </section>
 
           <section id="q2">
-            <h2>Q2 — <em>Is the data of Indian individuals?</em></h2>
+            <h2>Q2 - <em>Is the data of Indian individuals?</em></h2>
             <ul>
-              <li><strong>Scenario A — Users in India:</strong> DPDP applies. Irrespective of where your company is incorporated.</li>
-              <li><strong>Scenario B — Incorporated in India, users exclusively outside India:</strong> DPDP may apply only to the extent MeitY notifies applicability. Watch for Rules-level clarification.</li>
-              <li><strong>Scenario C — Foreign company with Indian users:</strong> DPDP applies if you offer goods or services to individuals in India or profile them, regardless of server location.</li>
-              <li><strong>Scenario D — BPO model (processing in India for overseas principal):</strong> The DPDP Act exempts such processing, but your contractual obligations under DPDP may still apply.</li>
+              <li><strong>Scenario A - Users in India:</strong> DPDP applies. Irrespective of where your company is incorporated.</li>
+              <li><strong>Scenario B - Incorporated in India, users exclusively outside India:</strong> DPDP may apply only to the extent MeitY notifies applicability. Watch for Rules-level clarification.</li>
+              <li><strong>Scenario C - Foreign company with Indian users:</strong> DPDP applies if you offer goods or services to individuals in India or profile them, regardless of server location.</li>
+              <li><strong>Scenario D - BPO model (processing in India for overseas principal):</strong> The DPDP Act exempts such processing, but your contractual obligations under DPDP may still apply.</li>
             </ul>
             <p>Proceed to Q3 if you are in Scenarios A or C.</p>
           </section>
 
           <section id="q3">
-            <h2>Q3 — <em>Does any exemption apply?</em></h2>
+            <h2>Q3 - <em>Does any exemption apply?</em></h2>
             <ul>
               <li><strong>Personal / domestic purposes:</strong> Processing for purely personal use. Very unlikely if you are a registered business.</li>
-              <li><strong>Publicly available data:</strong> Narrow exemption — does not justify bulk scraping. Must be genuinely and legitimately in the public domain.</li>
+              <li><strong>Publicly available data:</strong> Narrow exemption - does not justify bulk scraping. Must be genuinely and legitimately in the public domain.</li>
               <li><strong>State security, law enforcement, or courts:</strong> Only if you are a Government entity exercising statutory functions.</li>
               <li><strong>Research, archiving, statistical purposes:</strong> Only for research / statistical functions with adequate safeguards and no individual identification.</li>
             </ul>
@@ -326,7 +326,7 @@ export default function DPDPApplicabilityQuiz() {
           </section>
 
           <section id="q4">
-            <h2>Q4 — <em>What type of personal data are you processing?</em></h2>
+            <h2>Q4 - <em>What type of personal data are you processing?</em></h2>
             <h3>General Personal Data</h3>
             <p>Names, email addresses, phone numbers, preferences, purchase history, browsing behaviour. Standard DPDP obligations apply.</p>
             <h3>Sensitive Personal Data (High Risk)</h3>
@@ -334,12 +334,12 @@ export default function DPDPApplicabilityQuiz() {
           </section>
 
           <section id="q5">
-            <h2>Q5 — <em>What is your processing volume?</em></h2>
+            <h2>Q5 - <em>What is your processing volume?</em></h2>
             <div className="data-table-wrap">
               <table className="data-table">
                 <thead><tr><th>Volume</th><th>Likely Classification</th></tr></thead>
                 <tbody>
-                  {[['Less than 1 lakh Data Principals','Standard Data Fiduciary — lower regulatory attention'],['1 lakh to 10 lakh','Standard Fiduciary — begin building mature compliance'],['10 lakh to 1 crore','High SDF risk — start SDF-level programme preparation'],['Over 1 crore','Very high SDF risk — act as if SDF notification is imminent']].map(([v,c],i)=>(<tr key={i}><td>{v}</td><td>{c}</td></tr>))}
+                  {[['Less than 1 lakh Data Principals','Standard Data Fiduciary - lower regulatory attention'],['1 lakh to 10 lakh','Standard Fiduciary - begin building mature compliance'],['10 lakh to 1 crore','High SDF risk - start SDF-level programme preparation'],['Over 1 crore','Very high SDF risk - act as if SDF notification is imminent']].map(([v,c],i)=>(<tr key={i}><td>{v}</td><td>{c}</td></tr>))}
                 </tbody>
               </table>
             </div>
@@ -347,17 +347,17 @@ export default function DPDPApplicabilityQuiz() {
           </section>
 
           <section id="q6">
-            <h2>Q6 — <em>Are you a Data Fiduciary, Processor, or both?</em></h2>
+            <h2>Q6 - <em>Are you a Data Fiduciary, Processor, or both?</em></h2>
             <p>Refer to <a href="https://seccomply.net/resources/blog/data-principal-fiduciary-processor" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>Part 1 of this series on DPDP roles</a> for full definitions.</p>
             <ul>
-              <li><strong>Data Fiduciary:</strong> Full DPDP obligations apply — consent, Grievance Officer, breach management.</li>
+              <li><strong>Data Fiduciary:</strong> Full DPDP obligations apply - consent, Grievance Officer, breach management.</li>
               <li><strong>Data Processor:</strong> Fewer direct obligations, but contractual obligations from the Fiduciary impose compliance requirements.</li>
               <li><strong>Both:</strong> Apply Fiduciary-level obligations for data where you set the purpose; Processor-level for client data you process under contract.</li>
             </ul>
           </section>
 
           <section id="q7">
-            <h2>Q7 — <em>Do you transfer personal data outside India?</em></h2>
+            <h2>Q7 - <em>Do you transfer personal data outside India?</em></h2>
             <p>The DPDP Act (Section 16) restricts transfer to countries the Central Government may notify as permitted or restricted. The permitted / restricted list has not yet been published, but the framework is in place.</p>
             <ul>
               <li>Do you use US or EU-based cloud providers (AWS, Azure, GCP) for Indian user data?</li>
@@ -368,7 +368,7 @@ export default function DPDPApplicabilityQuiz() {
           </section>
 
           <section id="compliance-tier">
-            <h2>Your Compliance Tier — <em>Where You Sit</em></h2>
+            <h2>Your Compliance Tier - <em>Where You Sit</em></h2>
             <div className="tier-grid">
               <div className="tier-card t1"><div className="tn">Tier 1</div><div className="tt">Exempt</div><div className="td">Processing anonymised data, personal / domestic, or under statutory exemption</div></div>
               <div className="tier-card t2"><div className="tn">Tier 2</div><div className="tt">Standard Processor</div><div className="td">Process on behalf of a Fiduciary; do not determine purpose</div></div>
@@ -378,21 +378,21 @@ export default function DPDPApplicabilityQuiz() {
           </section>
 
           <section id="action-plan">
-            <h2>Immediate Action Plan — <em>Regardless of Tier</em></h2>
+            <h2>Immediate Action Plan - <em>Regardless of Tier</em></h2>
             <ul>
               <li><strong>Data Inventory:</strong> Map every personal data category you collect, the purpose, storage location, and sharing. You cannot comply with what you have not mapped.</li>
               <li><strong>Consent Audit:</strong> Review existing consent mechanisms against the five-pillar standard (free, specific, informed, unconditional, unambiguous).</li>
               <li><strong>Appoint a Grievance Officer:</strong> Publish name and contact details in your privacy notice. Mandatory for ALL Data Fiduciaries.</li>
-              <li><strong>Update Privacy Notice:</strong> Review for DPDP compliance — data categories, purposes, rights, Grievance Officer, in plain language.</li>
+              <li><strong>Update Privacy Notice:</strong> Review for DPDP compliance - data categories, purposes, rights, Grievance Officer, in plain language.</li>
               <li><strong>Vendor Chain Assessment:</strong> For each third-party vendor processing Indian personal data, review the contract for DPDP-compliant data processing terms.</li>
               <li><strong>Breach Response Plan:</strong> Defined, tested incident response procedure including Board notification timelines and Data Principal communication.</li>
             </ul>
-            <p>"Do I need to comply?" is the right question — but it is only the beginning. For most Indian businesses collecting personal data of Indian individuals, the answer is <strong>yes</strong>. The degree, timeline, and investment depend on your tier.</p>
+            <p>"Do I need to comply?" is the right question - but it is only the beginning. For most Indian businesses collecting personal data of Indian individuals, the answer is <strong>yes</strong>. The degree, timeline, and investment depend on your tier.</p>
           </section>
 
           <div className="cta-banner">
             <h3>Ready to Build DPDP Compliance?</h3>
-            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises — from gap assessment to audit-ready documentation.</p>
+            <p>SecComply delivers structured DPDP compliance programmes for Indian startups and enterprises - from gap assessment to audit-ready documentation.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free DPDP Consultation →</a>
             </div>
@@ -408,11 +408,11 @@ export default function DPDPApplicabilityQuiz() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Does the DPDP Act apply to small startups with few users?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. The DPDP Act has no size threshold, no SME exemption, and no minimum user count for basic applicability. A 5-person startup collecting personal data of Indian individuals is in scope exactly as much as a 5,000-person enterprise. The volume of users affects whether you are likely to be designated a Significant Data Fiduciary — it does not affect whether the Act applies at all.</p></div>
+              <div className="faq-a"><p>Yes. The DPDP Act has no size threshold, no SME exemption, and no minimum user count for basic applicability. A 5-person startup collecting personal data of Indian individuals is in scope exactly as much as a 5,000-person enterprise. The volume of users affects whether you are likely to be designated a Significant Data Fiduciary - it does not affect whether the Act applies at all.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Are we exempt from the DPDP Act if we only process anonymised data?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Only if the anonymisation is genuinely irreversible — meaning there is no realistic pathway to re-identify individuals from the data, even when combined with other data you hold. Pseudonymised data, where you retain a reverse-lookup key, is explicitly in scope. Most real-world 'anonymisation' is actually pseudonymisation and remains subject to the Act.</p></div>
+              <div className="faq-a"><p>Only if the anonymisation is genuinely irreversible - meaning there is no realistic pathway to re-identify individuals from the data, even when combined with other data you hold. Pseudonymised data, where you retain a reverse-lookup key, is explicitly in scope. Most real-world 'anonymisation' is actually pseudonymisation and remains subject to the Act.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>If our business is registered outside India but has Indian users, does DPDP apply?</strong><span className="faq-ch">▾</span></div>
@@ -424,7 +424,7 @@ export default function DPDPApplicabilityQuiz() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Can we transfer Indian user data to US or EU cloud providers?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Cross-border data transfers are restricted under Section 16 to countries the Central Government may notify as permitted or restricted. The permitted / restricted country list has not yet been published, but the framework is in place. Transfers remain possible in the interim, but organisations should prepare for eventual restrictions — particularly for sensitive data categories — and consider proactive data localisation.</p></div>
+              <div className="faq-a"><p>Cross-border data transfers are restricted under Section 16 to countries the Central Government may notify as permitted or restricted. The permitted / restricted country list has not yet been published, but the framework is in place. Transfers remain possible in the interim, but organisations should prepare for eventual restrictions - particularly for sensitive data categories - and consider proactive data localisation.</p></div>
             </div>
 
           </section>
@@ -464,7 +464,7 @@ export default function DPDPApplicabilityQuiz() {
           </div>
           <div className="sb-cta">
             <h4>Need DPDP Compliance Help?</h4>
-            <p>We run structured DPDP gap assessments — from data mapping to audit-ready documentation.</p>
+            <p>We run structured DPDP gap assessments - from data mapping to audit-ready documentation.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>

@@ -187,8 +187,8 @@ export default function WhatCountsPersonalDataGDPR() {
           <span className="badge badge-bl">📋 Data Privacy</span>
           <span className="badge badge-gr">🚀 Startup Guide</span>
         </div>
-        <h1 className="hero-h1">What Counts as Personal Data Under GDPR? — <em>With Real Examples</em></h1>
-        <p className="hero-sub">The short answer: more than you think. Under GDPR, personal data is not just names and emails — it is the invisible exhaust your product emits: IPs, cookies, device IDs, behavioural logs, pseudonymous identifiers, inferred attributes. Here is the breakdown with real-world examples.</p>
+        <h1 className="hero-h1">What Counts as Personal Data Under GDPR? - <em>With Real Examples</em></h1>
+        <p className="hero-sub">The short answer: more than you think. Under GDPR, personal data is not just names and emails - it is the invisible exhaust your product emits: IPs, cookies, device IDs, behavioural logs, pseudonymous identifiers, inferred attributes. Here is the breakdown with real-world examples.</p>
 
         <div className="author-strip">
           <div className="avatar">GK</div>
@@ -202,16 +202,16 @@ export default function WhatCountsPersonalDataGDPR() {
         <div className="img-wrap">
           <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=480&fit=crop" alt="What counts as personal data GDPR examples definition" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} />
         </div>
-        <p className="img-cap">The question is not whether a field looks personal. It is whether, given what you already hold, a person can be singled out. If the answer is yes — even theoretically — GDPR has an opinion about how you treat that row.</p>
+        <p className="img-cap">The question is not whether a field looks personal. It is whether, given what you already hold, a person can be singled out. If the answer is yes - even theoretically - GDPR has an opinion about how you treat that row.</p>
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
           <defs><pattern id="pgh" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern></defs>
           <rect width="960" height="280" fill="url(#pgh)"/>
-          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Personal Data Under GDPR — What Most Teams Get Wrong</text>
+          <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Personal Data Under GDPR - What Most Teams Get Wrong</text>
           <rect x="30" y="38" width="580" height="210" rx="14" fill="#071820" stroke="rgba(6,214,160,0.25)" strokeWidth="1.5"/>
           <rect x="30" y="38" width="580" height="4" rx="2" fill="#06d6a0"/>
-          <text x="320" y="65" textAnchor="middle" fill="#06d6a0" fontSize="11" fontWeight="800" fontFamily="sans-serif">YES — THIS IS PERSONAL DATA UNDER GDPR</text>
+          <text x="320" y="65" textAnchor="middle" fill="#06d6a0" fontSize="11" fontWeight="800" fontFamily="sans-serif">YES - THIS IS PERSONAL DATA UNDER GDPR</text>
           {["Dynamic IP address in server logs","Cookie ID used for analytics","Mobile advertising ID (IDFA, GAID)","Licence plate in dashcam footage","Voice recording from support call","Pseudonymised customer ID (user_a7f9c2)","Photo uploaded to signup flow","Work email: jdoe@acme.com"].map((t,i) => (
             <text key={i} x="55" y={90+i*20} fill="rgba(200,214,229,0.6)" fontSize="10" fontFamily="sans-serif">✓ {t}</text>
           ))}
@@ -219,12 +219,12 @@ export default function WhatCountsPersonalDataGDPR() {
           <rect x="640" y="38" width="290" height="4" rx="2" fill="#ff4d6d"/>
           <text x="785" y="65" textAnchor="middle" fill="#ff4d6d" fontSize="11" fontWeight="800" fontFamily="sans-serif">NOT PERSONAL DATA</text>
           <text x="665" y="95" fill="rgba(200,214,229,0.6)" fontSize="10" fontFamily="sans-serif">✗ Truly anonymous data</text>
-          <text x="678" y="112" fill="rgba(200,214,229,0.45)" fontSize="9" fontFamily="sans-serif">(irreversible — no one can re-identify)</text>
+          <text x="678" y="112" fill="rgba(200,214,229,0.45)" fontSize="9" fontFamily="sans-serif">(irreversible - no one can re-identify)</text>
           <text x="665" y="140" fill="rgba(200,214,229,0.6)" fontSize="10" fontFamily="sans-serif">✗ Company-level data</text>
-          <text x="678" y="157" fill="rgba(200,214,229,0.45)" fontSize="9" fontFamily="sans-serif">(CIN, GST — legal entity, not person)</text>
+          <text x="678" y="157" fill="rgba(200,214,229,0.45)" fontSize="9" fontFamily="sans-serif">(CIN, GST - legal entity, not person)</text>
           <text x="665" y="185" fill="rgba(200,214,229,0.6)" fontSize="10" fontFamily="sans-serif">✗ Aggregate statistics</text>
           <text x="678" y="202" fill="rgba(200,214,229,0.45)" fontSize="9" fontFamily="sans-serif">("60% of users from Germany")</text>
-          <text x="480" y="268" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">The test: could a person be singled out using this data — alone or combined with what you already hold? If yes, it is personal data.</text>
+          <text x="480" y="268" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">The test: could a person be singled out using this data - alone or combined with what you already hold? If yes, it is personal data.</text>
         </svg>
         </div>
 
@@ -245,12 +245,12 @@ export default function WhatCountsPersonalDataGDPR() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Think about the last form you filled out online. Now picture everything your product quietly picked up <em>around</em> the fields you actually typed into: the IP address, the device model, the timestamp, a handful of cookie IDs, maybe the rough city you were in. Under GDPR, <strong>most of that is personal data too</strong>. Not just the name and email — the passive exhaust your browser left behind. This is the single biggest misunderstanding founders bring into a compliance conversation.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Think about the last form you filled out online. Now picture everything your product quietly picked up <em>around</em> the fields you actually typed into: the IP address, the device model, the timestamp, a handful of cookie IDs, maybe the rough city you were in. Under GDPR, <strong>most of that is personal data too</strong>. Not just the name and email - the passive exhaust your browser left behind. This is the single biggest misunderstanding founders bring into a compliance conversation.</p>
 
           <section id="definition">
             <h2>The Definition, <em>Plainly</em></h2>
             <p>Article 4 of GDPR says personal data is <strong>any information relating to an identified or identifiable natural person</strong>. Two words carry almost all the weight: <em>identifiable</em> and <em>relating to</em>.</p>
-            <p>"Identifiable" does not mean the data names someone directly. It means someone could be <strong>singled out</strong> by using that data — alone, or combined with other information you reasonably have access to. The regulator question is never "does this piece of data name a human?" It is "could a human be picked out of a crowd using this?"</p>
+            <p>"Identifiable" does not mean the data names someone directly. It means someone could be <strong>singled out</strong> by using that data - alone, or combined with other information you reasonably have access to. The regulator question is never "does this piece of data name a human?" It is "could a human be picked out of a crowd using this?"</p>
           </section>
 
           <section id="surprise-table">
@@ -259,47 +259,47 @@ export default function WhatCountsPersonalDataGDPR() {
               <table className="data-table">
                 <thead><tr><th>Looks Harmless</th><th>Actually Personal Data?</th></tr></thead>
                 <tbody>
-                  {[['Dynamic IP address in server logs','Yes. The CJEU ruled on this in Breyer v. Germany (2016). If you can combine the IP with ISP data to identify a person, it is personal data.'],['Cookie ID used for analytics','Yes. Online identifiers are called out explicitly in Recital 30 of GDPR.'],['Mobile advertising ID (IDFA, GAID)','Yes. Persistent identifier that maps to one device and usually one human.'],['Licence plate in dashcam footage','Yes. Identifiers that resolve to a person via a public register still qualify.'],['Voice recording from a support call','Yes. Voice is biometric; depending on processing, it can be special category data.'],['Pseudonymised customer ID (user_a7f9c2)','Still personal data. Pseudonymisation reduces risk — it does not remove you from GDPR scope.'],['Photo uploaded to your signup flow','Yes. Faces are biometric data the moment they are processed to identify someone.'],['Work email: jdoe@acme.com','Yes. B2B personal data is still personal data — this is the most common founder blind spot.']].map(([h,a],i)=>(<tr key={i}><td>{h}</td><td>{a}</td></tr>))}
+                  {[['Dynamic IP address in server logs','Yes. The CJEU ruled on this in Breyer v. Germany (2016). If you can combine the IP with ISP data to identify a person, it is personal data.'],['Cookie ID used for analytics','Yes. Online identifiers are called out explicitly in Recital 30 of GDPR.'],['Mobile advertising ID (IDFA, GAID)','Yes. Persistent identifier that maps to one device and usually one human.'],['Licence plate in dashcam footage','Yes. Identifiers that resolve to a person via a public register still qualify.'],['Voice recording from a support call','Yes. Voice is biometric; depending on processing, it can be special category data.'],['Pseudonymised customer ID (user_a7f9c2)','Still personal data. Pseudonymisation reduces risk - it does not remove you from GDPR scope.'],['Photo uploaded to your signup flow','Yes. Faces are biometric data the moment they are processed to identify someone.'],['Work email: jdoe@acme.com','Yes. B2B personal data is still personal data - this is the most common founder blind spot.']].map(([h,a],i)=>(<tr key={i}><td>{h}</td><td>{a}</td></tr>))}
                 </tbody>
               </table>
             </div>
           </section>
 
           <section id="combination-trap">
-            <h2>The Combination Trap — <em>Where Fields Become Personal</em></h2>
+            <h2>The Combination Trap - <em>Where Fields Become Personal</em></h2>
             <div className="callout co-warn">
               <span className="co-icon">⚠️</span>
               <div className="co-body">
                 <strong>The Combination Trap</strong>
-                <p>A pin code on its own is not personal data. A browser fingerprint on its own is not personal data. A purchase amount on its own is not personal data. But when your analytics warehouse joins all three on a session ID — which most do, by design — the combined record points to one person. The moment that join happens, the whole record becomes personal data. Regulators do not evaluate fields in isolation; they evaluate what you can reconstruct by joining them.</p>
+                <p>A pin code on its own is not personal data. A browser fingerprint on its own is not personal data. A purchase amount on its own is not personal data. But when your analytics warehouse joins all three on a session ID - which most do, by design - the combined record points to one person. The moment that join happens, the whole record becomes personal data. Regulators do not evaluate fields in isolation; they evaluate what you can reconstruct by joining them.</p>
               </div>
             </div>
           </section>
 
           <section id="special-category">
-            <h2>Special Category Data — <em>The Sharper Edge</em></h2>
+            <h2>Special Category Data - <em>The Sharper Edge</em></h2>
             <p>A narrow slice of personal data carries extra obligations under Article 9. These need a stronger legal basis and usually a Data Protection Impact Assessment:</p>
             <ul>
-              <li><strong>Health and medical records</strong> — anything from a doctor note to a fitness tracker step count, if tied to a person</li>
-              <li><strong>Biometric data</strong> — face scans, voiceprints, fingerprints, when used to identify someone</li>
-              <li><strong>Genetic data</strong> — including saliva tests and ancestry results</li>
-              <li><strong>Race or ethnic origin</strong> — including information inferred from photographs</li>
+              <li><strong>Health and medical records</strong> - anything from a doctor note to a fitness tracker step count, if tied to a person</li>
+              <li><strong>Biometric data</strong> - face scans, voiceprints, fingerprints, when used to identify someone</li>
+              <li><strong>Genetic data</strong> - including saliva tests and ancestry results</li>
+              <li><strong>Race or ethnic origin</strong> - including information inferred from photographs</li>
               <li><strong>Political opinions, religious beliefs, philosophical beliefs</strong></li>
-              <li><strong>Trade union membership</strong> — often caught in HR platforms</li>
-              <li><strong>Sex life and sexual orientation</strong> — including data inferable from dating apps or ad targeting segments</li>
+              <li><strong>Trade union membership</strong> - often caught in HR platforms</li>
+              <li><strong>Sex life and sexual orientation</strong> - including data inferable from dating apps or ad targeting segments</li>
             </ul>
-            <p>If your product touches any of these — even as a side effect — your risk posture changes materially. A fitness app logging heart rate is in Article 9 territory. A recruitment tool extracting photos from CVs is doing biometric processing. These are not edge cases; they are common product features whose compliance footprint gets underestimated.</p>
+            <p>If your product touches any of these - even as a side effect - your risk posture changes materially. A fitness app logging heart rate is in Article 9 territory. A recruitment tool extracting photos from CVs is doing biometric processing. These are not edge cases; they are common product features whose compliance footprint gets underestimated.</p>
           </section>
 
           <section id="anonymous-vs-pseudo">
-            <h2>"But We Anonymised It" — <em>Did You, Though?</em></h2>
+            <h2>"But We Anonymised It" - <em>Did You, Though?</em></h2>
             <p><strong>Anonymous</strong> means the data cannot be linked back to a person by anyone, using any reasonably available means. Truly anonymous data is out of GDPR scope entirely. It is also hard to achieve.</p>
-            <p><strong>Pseudonymous</strong> means you have replaced direct identifiers with tokens, but the mapping back to real people still exists somewhere — in a separate table, a key management service, or a vendor system. Pseudonymous data is a good security practice. It is not anonymity. It is <strong>still fully inside GDPR</strong>.</p>
+            <p><strong>Pseudonymous</strong> means you have replaced direct identifiers with tokens, but the mapping back to real people still exists somewhere - in a separate table, a key management service, or a vendor system. Pseudonymous data is a good security practice. It is not anonymity. It is <strong>still fully inside GDPR</strong>.</p>
             <div className="callout co-key">
               <span className="co-icon">🔑</span>
               <div className="co-body">
                 <strong>Quick Rule of Thumb</strong>
-                <p>If your engineering team can, given a week, rebuild the link between the dataset and the original user — it is pseudonymous. If nobody on earth can rebuild that link, including you — it is anonymous. Almost every "anonymised" production dataset we have audited turns out to be the first kind.</p>
+                <p>If your engineering team can, given a week, rebuild the link between the dataset and the original user - it is pseudonymous. If nobody on earth can rebuild that link, including you - it is anonymous. Almost every "anonymised" production dataset we have audited turns out to be the first kind.</p>
               </div>
             </div>
           </section>
@@ -308,17 +308,17 @@ export default function WhatCountsPersonalDataGDPR() {
             <h2>A Quick Test <em>to Run on Your Own Product</em></h2>
             <p>Pick any table in your production database. Ask four questions about a single row:</p>
             <ul>
-              <li>Does it contain something that points to one specific human — by name, by ID, by a persistent identifier?</li>
+              <li>Does it contain something that points to one specific human - by name, by ID, by a persistent identifier?</li>
               <li>Even if no single field does, could you combine two or three fields in this table, or across tables you operate, to pick out one person?</li>
-              <li>Could someone else who got a copy of this row — a vendor, a contractor, an attacker — combine it with information they might reasonably have, and identify the person?</li>
-              <li>Is any of the content special category — health, biometric, religious, political, sexual orientation, ethnic origin?</li>
+              <li>Could someone else who got a copy of this row - a vendor, a contractor, an attacker - combine it with information they might reasonably have, and identify the person?</li>
+              <li>Is any of the content special category - health, biometric, religious, political, sexual orientation, ethnic origin?</li>
             </ul>
-            <p>If the answer to any of the first three is yes, that row is personal data under GDPR. If the fourth is yes, you have heightened obligations. Most product schemas fail at least the first two questions on most tables — and that is the honest starting point for building a real compliance programme. For the comparison of how GDPR personal data scope differs from India DPDP Act, read our <a href="https://seccomply.net/resources/blog/what-is-personal-data-dpdp" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>What Counts as Personal Data Under DPDP Act guide</a>.</p>
+            <p>If the answer to any of the first three is yes, that row is personal data under GDPR. If the fourth is yes, you have heightened obligations. Most product schemas fail at least the first two questions on most tables - and that is the honest starting point for building a real compliance programme. For the comparison of how GDPR personal data scope differs from India DPDP Act, read our <a href="https://seccomply.net/resources/blog/what-is-personal-data-dpdp" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>What Counts as Personal Data Under DPDP Act guide</a>.</p>
           </section>
 
           <div className="cta-banner">
             <h3>Not Sure Where You Stand on GDPR?</h3>
-            <p>SecComply maps your data flows, vendor risks, and compliance gaps across your real product infrastructure — continuously, not just before an audit.</p>
+            <p>SecComply maps your data flows, vendor risks, and compliance gaps across your real product infrastructure - continuously, not just before an audit.</p>
             <div className="cta-btns">
               <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free GDPR Consultation →</a>
             </div>
@@ -334,7 +334,7 @@ export default function WhatCountsPersonalDataGDPR() {
             <h2>Frequently Asked <em>Questions</em></h2>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is an IP address personal data under GDPR?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes, in most practical contexts. The Court of Justice of the European Union ruled in Breyer v. Germany (2016) that even dynamic IP addresses can be personal data when the entity holding them has the legal means to identify the individual — for example, by combining the IP with ISP records or user account data.</p></div>
+              <div className="faq-a"><p>Yes, in most practical contexts. The Court of Justice of the European Union ruled in Breyer v. Germany (2016) that even dynamic IP addresses can be personal data when the entity holding them has the legal means to identify the individual - for example, by combining the IP with ISP records or user account data.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is a work email address like john@company.com personal data?</strong><span className="faq-ch">▾</span></div>
@@ -342,15 +342,15 @@ export default function WhatCountsPersonalDataGDPR() {
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Is pseudonymised data still covered by GDPR?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. Pseudonymisation replaces direct identifiers with tokens but the mapping back to real people still exists. Pseudonymous data is a good security practice that reduces risk, but it does not remove the data from GDPR scope. Only truly irreversible anonymisation — where no one can reconstruct the link — takes data outside GDPR.</p></div>
+              <div className="faq-a"><p>Yes. Pseudonymisation replaces direct identifiers with tokens but the mapping back to real people still exists. Pseudonymous data is a good security practice that reduces risk, but it does not remove the data from GDPR scope. Only truly irreversible anonymisation - where no one can reconstruct the link - takes data outside GDPR.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>What is the difference between anonymous and pseudonymous data?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Anonymous data cannot be linked back to a person by anyone using any reasonably available means — it is outside GDPR scope entirely. Pseudonymous data has had direct identifiers replaced with tokens, but the reverse mapping exists somewhere. The test: if your team can rebuild the link given a week of effort, it is pseudonymous and still GDPR-covered.</p></div>
+              <div className="faq-a"><p>Anonymous data cannot be linked back to a person by anyone using any reasonably available means - it is outside GDPR scope entirely. Pseudonymous data has had direct identifiers replaced with tokens, but the reverse mapping exists somewhere. The test: if your team can rebuild the link given a week of effort, it is pseudonymous and still GDPR-covered.</p></div>
             </div>
             <div className="faq-item">
               <div className="faq-q" onClick={(e)=>window.toggleFaq&&window.toggleFaq(e.currentTarget)}><strong>Does GDPR cover data I infer or generate, like credit scores or ML predictions?</strong><span className="faq-ch">▾</span></div>
-              <div className="faq-a"><p>Yes. Inferred or derived data — credit scores, predicted churn risk, health risk assessments — is personal data if it relates to an identifiable individual. It does not matter that you generated it rather than collected it directly. All GDPR obligations, including access, correction, and erasure rights, apply to inferred data.</p></div>
+              <div className="faq-a"><p>Yes. Inferred or derived data - credit scores, predicted churn risk, health risk assessments - is personal data if it relates to an identifiable individual. It does not matter that you generated it rather than collected it directly. All GDPR obligations, including access, correction, and erasure rights, apply to inferred data.</p></div>
             </div>
 
           </section>
@@ -386,7 +386,7 @@ export default function WhatCountsPersonalDataGDPR() {
           </div>
           <div className="sb-cta">
             <h4>Need GDPR Compliance Help?</h4>
-            <p>From gap assessment to audit — we handle the entire GDPR compliance journey.</p>
+            <p>From gap assessment to audit - we handle the entire GDPR compliance journey.</p>
             <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="sb-cta-btn" target="_blank" rel="noopener">Book Free Consultation →</a>
           </div>
         </aside>
