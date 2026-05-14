@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git show *)"
+    ],
+    "additionalDirectories": [
+      "\\tmp",
+      "E:\\SecComply Website New\\pages\\resources\\blog"
+    ]
+  }
+}
