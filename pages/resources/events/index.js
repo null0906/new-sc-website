@@ -242,6 +242,10 @@ export default function EventsIndex() {
           background: var(--bl);
           box-shadow: 0 4px 16px rgba(129,140,248,0.4);
         }
+        .past-event-corner-badge.b-award {
+          background: var(--cy);
+          box-shadow: 0 4px 16px rgba(6,214,160,0.4);
+        }
         .past-event-body {
           padding: 1.75rem 1.85rem 1.85rem;
           display: flex;
@@ -517,6 +521,11 @@ export default function EventsIndex() {
           color: var(--bl);
           border: 1px solid rgba(129,140,248,0.35);
         }
+        .cs-tag.orange {
+          background: rgba(232,99,43,0.12);
+          color: var(--accent);
+          border: 1px solid var(--accent-border);
+        }
         .panel-coming-soon h2 {
           font-size: clamp(1.6rem, 3vw, 2rem);
           font-weight: 800;
@@ -695,7 +704,26 @@ export default function EventsIndex() {
           <div className="events-panel" key="past" role="tabpanel">
             <div className="past-events-grid">
 
-              {/* CyberSec India Expo 2026 — most recent first */}
+              {/* CIO AXIS CISO & Cyber Pioneers 2026 — most recent past event */}
+              <Link href="/resources/events/ciso-cyber-pioneers-26" className="past-event-card">
+                <div className="past-event-media">
+                  <span className="past-event-corner-badge b-award">🏆 Award Winner</span>
+                  <img src="/event-images/infosec-maestros-26/01-hero-shivani-keynote.jpg" alt="Shivani Tikadia delivering the keynote at CISO & Cyber Pioneers 2026, Radisson Blu Plaza, Delhi" />
+                </div>
+                <div className="past-event-body">
+                  <div className="past-event-date">📅 8 May 2026</div>
+                  <h3>CIO AXIS CISO &amp; Cyber Pioneers 2026</h3>
+                  <p>The 15th edition of CIO AXIS&apos;s flagship cybersecurity awards. SecComply attended as Strategic Compliance Automation Partner — Shivani Tikadia delivered the keynote &quot;The Kingdom &amp; The Crown&quot;, Sanil Nadkarni received the Cyber Pioneer Award, and the team hosted a sponsor booth.</p>
+                  <div className="past-event-meta-row">
+                    <span className="past-event-meta-pill">📍 Radisson Blu Plaza, Delhi</span>
+                    <span className="past-event-meta-pill">🏆 Cyber Pioneer Award</span>
+                    <span className="past-event-meta-pill">🎤 Keynote + Panel</span>
+                  </div>
+                  <span className="past-event-cta">Read the Recap →</span>
+                </div>
+              </Link>
+
+              {/* CyberSec India Expo 2026 */}
               <Link href="/resources/events/cybersec-india-expo-26" className="past-event-card">
                 <div className="past-event-media">
                   <span className="past-event-corner-badge b-attended">⭐ Attended</span>
@@ -736,31 +764,15 @@ export default function EventsIndex() {
         )}
 
         {activeTab === 'upcoming' && (
-          <div className="events-panel" key="upcoming" role="tabpanel">
-            <div className="panel-featured">
-              <div className="panel-featured-media upcoming-graphic">
-                <span className="panel-corner-badge upcoming-badge">Upcoming</span>
-                <div className="upcoming-mark">
-                  <div className="um-day">08</div>
-                  <div className="um-month">MAY</div>
-                  <div className="um-line"></div>
-                  <div className="um-edition">15th Edition</div>
-                  <div className="um-name">CISO &amp; Cyber Pioneers Awards &amp; Confex 2026</div>
-                </div>
-              </div>
-              <div className="panel-featured-body">
-                <div className="panel-date">📅 Friday, 8 May 2026</div>
-                <h2>InfoSec Maestros 2026</h2>
-                <p>SecComply joins the 15th CISO &amp; Cyber Pioneers Awards &amp; Confex as <strong>Strategic Compliance Automation Partner</strong>. Our CEO Shivani Tikadia is on the speaker line-up alongside India's top 100 CISOs, government technology leadership, and the people setting the bar for enterprise security.</p>
-                <div className="panel-meta-row">
-                  <span className="panel-meta-pill">📍 Radisson Blu Plaza, Delhi</span>
-                  <span className="panel-meta-pill">🎤 Speaker + Partner</span>
-                  <span className="panel-meta-pill">🏢 Organised by CIO Axis</span>
-                </div>
-                <Link href="/resources/events/infosec-maestros-26" className="panel-cta">
-                  Explore the Event →
-                </Link>
-              </div>
+          <div className="events-panel events-panel-shell" key="upcoming" role="tabpanel">
+            <div className="panel-coming-soon">
+              <div className="cs-icon">📅</div>
+              <span className="cs-tag orange">📍 Next Appearances</span>
+              <h2>Next Appearances Being Finalised</h2>
+              <p>We are confirming our next round of speaking engagements, sponsorships, and panel appearances across India and globally. Drop us a note to be the first to know when they are announced.</p>
+              <a href="mailto:info@seccomply.net?subject=Notify%20me%20about%20SecComply%20upcoming%20events" className="cs-notify">
+                ✉️ Notify me when announced →
+              </a>
             </div>
           </div>
         )}

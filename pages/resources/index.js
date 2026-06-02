@@ -31,13 +31,13 @@ const categories = [
     count: '3 Articles'
   },
   {
-    tag: 'WEBINAR',
-    icon: '🎥',
+    tag: 'EVENTS',
+    icon: '🎤',
     title: 'Webinars & Events',
-    desc: 'On-demand recordings of past webinars and upcoming live sessions with industry experts and thought leaders.',
-    href: '/resources/webinars',
-    cta: 'Watch Now',
-    count: 'Coming Soon'
+    desc: 'Recaps from cybersecurity events across India, upcoming appearances, and on-demand webinars with industry experts.',
+    href: '/resources/events',
+    cta: 'Explore Events',
+    count: '3 Past Events'
   },
   {
     tag: 'TOOL',
