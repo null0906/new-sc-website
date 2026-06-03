@@ -36,6 +36,7 @@ export default function LeadForm({
     email: '',
     mobile: '',
     interestedIn: presetInterest || '',
+    multiSelect: [], // services chosen when interestedIn === 'Multiple'
     heardAbout: '',
     consentEnquiry: false,
     consentMarketing: false,
@@ -43,9 +44,43 @@ export default function LeadForm({
   const [status, setStatus] = useState('idle') // idle | submitting | done | error
   const [error, setError] = useState('')
 
+  // Services shown as checkboxes under the "Multiple" choice (everything except
+  // the "Multiple" entry itself). Always the full list, regardless of any preset.
+  const multiChoices = interestOptions.filter((o) => o !== 'Multiple')
+
+  // When a service is preset (e.g. the pricing modal opened for one service), the
+  // dropdown only needs that service + "Multiple" — showing all 17 is overwhelming.
+  // The full list still lives behind "Multiple" as checkboxes.
+  const dropdownOptions =
+    presetInterest && interestOptions.includes(presetInterest)
+      ? [presetInterest, ...(interestOptions.includes('Multiple') ? ['Multiple'] : [])]
+      : interestOptions
+
   const set = (k) => (e) => {
     const v = e.target.type === 'checkbox' ? e.target.checked : e.target.value
     setForm((f) => ({ ...f, [k]: v }))
+  }
+
+  // Switching the "Interested in" dropdown. When the user picks "Multiple" and
+  // had a single service selected, seed the checkboxes with that service.
+  const onInterestChange = (e) => {
+    const v = e.target.value
+    setForm((f) => {
+      const next = { ...f, interestedIn: v }
+      if (v === 'Multiple' && f.multiSelect.length === 0 && f.interestedIn && f.interestedIn !== 'Multiple') {
+        next.multiSelect = [f.interestedIn]
+      }
+      return next
+    })
+  }
+
+  const toggleMulti = (key) => () => {
+    setForm((f) => ({
+      ...f,
+      multiSelect: f.multiSelect.includes(key)
+        ? f.multiSelect.filter((k) => k !== key)
+        : [...f.multiSelect, key],
+    }))
   }
 
   const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)
@@ -58,7 +93,15 @@ export default function LeadForm({
     if (!emailValid) return setError('Please enter a valid work email.')
     if (!form.mobile.trim()) return setError('Please enter a mobile number.')
     if (!form.interestedIn) return setError('Please tell us what you’re interested in.')
+    if (form.interestedIn === 'Multiple' && form.multiSelect.length < 2)
+      return setError('Please select at least two services, or choose a single service above.')
     if (!form.consentEnquiry) return setError('Enquiry consent is required to continue.')
+
+    // When "Multiple" is chosen, record the actual services picked.
+    const interestedIn =
+      form.interestedIn === 'Multiple'
+        ? `Multiple: ${form.multiSelect.join(', ')}`
+        : form.interestedIn
 
     setStatus('submitting')
     const payload = {
@@ -67,7 +110,7 @@ export default function LeadForm({
       employees: form.employees,
       email: form.email.trim(),
       mobile: form.mobile.trim(),
-      interestedIn: form.interestedIn,
+      interestedIn,
       heardAbout: form.heardAbout || undefined,
       consentEnquiry: form.consentEnquiry,
       consentMarketing: form.consentMarketing,
@@ -121,11 +164,33 @@ export default function LeadForm({
 
         <label className="lf-field">
           <span>Interested in <em>*</em></span>
-          <select value={form.interestedIn} onChange={set('interestedIn')}>
+          <select value={form.interestedIn} onChange={onInterestChange}>
             <option value="">Select…</option>
-            {interestOptions.map((o) => <option key={o} value={o}>{o}</option>)}
+            {dropdownOptions.map((o) => <option key={o} value={o}>{o}</option>)}
           </select>
         </label>
+
+        {form.interestedIn === 'Multiple' && (
+          <div className="lf-field lf-col-2 lf-multi">
+            <span>Select the services you’re interested in <em>*</em></span>
+            <div className="lf-multi-grid">
+              {multiChoices.map((o) => {
+                const checked = form.multiSelect.includes(o)
+                return (
+                  <label key={o} className={`lf-multi-opt ${checked ? 'checked' : ''}`}>
+                    <input type="checkbox" checked={checked} onChange={toggleMulti(o)} />
+                    <span>{o}</span>
+                  </label>
+                )
+              })}
+            </div>
+            <span className="lf-multi-hint">
+              {form.multiSelect.length > 0
+                ? `${form.multiSelect.length} selected`
+                : 'Pick two or more.'}
+            </span>
+          </div>
+        )}
 
         <label className="lf-field">
           <span>Work email <em>*</em></span>
@@ -191,6 +256,21 @@ const lfStyles = `
     transition:border-color .2s ease;
   }
   .lf-field input:focus, .lf-field select:focus { border-color:var(--accent,#E8632B); }
+  .lf-multi { gap:.5rem; }
+  .lf-multi-grid { display:grid; grid-template-columns:1fr 1fr; gap:.5rem; }
+  @media (max-width:560px){ .lf-multi-grid { grid-template-columns:1fr; } }
+  .lf-multi-opt {
+    display:flex; align-items:center; gap:.55rem;
+    font-size:.85rem; color:var(--text-secondary,#94A3B8);
+    background:var(--bg-primary,#020617);
+    border:1px solid var(--border-hover,rgba(255,255,255,.12));
+    border-radius:10px; padding:.55rem .7rem; cursor:pointer;
+    transition:border-color .2s ease, background .2s ease, color .2s ease;
+  }
+  .lf-multi-opt:hover { border-color:var(--accent,#E8632B); }
+  .lf-multi-opt.checked { border-color:var(--accent,#E8632B); background:rgba(232,99,43,.08); color:var(--white,#F8FAFC); }
+  .lf-multi-opt input { width:16px; height:16px; accent-color:var(--accent,#E8632B); flex-shrink:0; cursor:pointer; }
+  .lf-multi-hint { font-size:.74rem; color:var(--text-muted,#64748B); }
   .lf-consent-notice {
     font-size:.74rem; line-height:1.55; color:var(--text-muted,#64748B);
     background:rgba(255,255,255,.03); border:1px solid var(--border,rgba(255,255,255,.06));
