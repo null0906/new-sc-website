@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
-import LeadForm from '../components/LeadForm'
+import LeadForm from '../../../components/LeadForm'
 
 const BOOK_URL = 'https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/'
 
@@ -126,7 +126,7 @@ export default function Assessment() {
       <Head>
         <title>Free DPDP Assessment | SecComply</title>
         <meta name="description" content="A free 10-question DPDP readiness assessment across 8 domains. Get your overall score, a per-domain breakdown and your top 3 gaps mapped to DPDP Act sections in about 5 minutes." />
-        <link rel="canonical" href="https://seccomply.net/assessment" />
+        <link rel="canonical" href="https://seccomply.net/resources/assessments/assessment" />
       </Head>
 
       <main className="as2">

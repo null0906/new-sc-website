@@ -66,7 +66,7 @@ export default function Scanner() {
       <Head>
         <title>Free DPDP Scanner | SecComply</title>
         <meta name="description" content="Free DPDP scanner — enter your website URL and get a 0–100 readiness score across six DPDP signals in about 30 seconds. Automated and indicative, not a legal audit." />
-        <link rel="canonical" href="https://seccomply.net/scanner" />
+        <link rel="canonical" href="https://seccomply.net/resources/assessments/scanner" />
       </Head>
 
       <main className="scan-page">
@@ -140,7 +140,7 @@ export default function Scanner() {
 
             <div className="scan-cta">
               <a href={BOOK_URL} target="_blank" rel="noopener noreferrer" className="scan-btn-primary">📅 Book a consultation call →</a>
-              <Link href="/assessment" className="scan-btn-outline">Run the full 10-question assessment →</Link>
+              <Link href="/resources/assessments/assessment" className="scan-btn-outline">Run the full 10-question assessment →</Link>
               <button className="scan-btn-ghost" onClick={reset}>Scan another site</button>
             </div>
           </section>

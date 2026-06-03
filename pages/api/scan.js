@@ -96,7 +96,7 @@ async function fetchHtml(url) {
       signal: controller.signal,
       headers: {
         'User-Agent':
-          'Mozilla/5.0 (compatible; SecComplyDPDPScanner/1.0; +https://seccomply.net/scanner)',
+          'Mozilla/5.0 (compatible; SecComplyDPDPScanner/1.0; +https://seccomply.net/resources/assessments/scanner)',
         Accept: 'text/html,application/xhtml+xml',
       },
     })

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
+import Layout from '../../../components/Layout'
 import { useEffect } from 'react'
 
 export default function AssessmentsIndex() {
@@ -429,7 +429,7 @@ export default function AssessmentsIndex() {
         <div className="as-grid">
 
           {/* DPDP Scanner */}
-          <Link href="/scanner" className="as-card reveal">
+          <Link href="/resources/assessments/scanner" className="as-card reveal">
             <div className="as-card-head">
               <span className="as-card-tag quick">⚡ Quick Check</span>
               <span className="as-card-time">~30 seconds</span>
@@ -450,7 +450,7 @@ export default function AssessmentsIndex() {
           </Link>
 
           {/* Free DPDP Assessment */}
-          <Link href="/assessment" className="as-card reveal">
+          <Link href="/resources/assessments/assessment" className="as-card reveal">
             <div className="as-card-head">
               <span className="as-card-tag deep">🧭 Deep Dive</span>
               <span className="as-card-time">~5 minutes</span>

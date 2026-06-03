@@ -25,8 +25,7 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </Layout>
       )}
-      {/* Mounted at App level so the banner appears on every page,
-          regardless of which layout (Layout or ResourceLayout) is active. */}
+      {/* Mounted at App level so the banner appears on every page. */}
       <CookieBanner />
     </>
   )
