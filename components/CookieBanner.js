@@ -83,7 +83,7 @@ export default function CookieBanner() {
           pointer-events:auto;
           max-width:1180px; margin:0 auto;
           background:#0F172A;
-          border:1px solid rgba(232,99,43,.25);
+          border:1px solid rgba(0, 129, 242,.25);
           border-radius:14px;
           box-shadow:0 20px 60px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.04);
           padding:22px 26px;
@@ -101,11 +101,11 @@ export default function CookieBanner() {
           margin:0;
         }
         .sc-banner-link{
-          color:#E8632B; text-decoration:none;
-          border-bottom:1px solid rgba(232,99,43,.4);
+          color:#0081f2; text-decoration:none;
+          border-bottom:1px solid rgba(0, 129, 242,.4);
           transition:border-color .15s;
         }
-        .sc-banner-link:hover{border-bottom-color:#E8632B}
+        .sc-banner-link:hover{border-bottom-color:#0081f2}
         .sc-banner-actions{
           display:flex; gap:10px; align-items:center; flex-wrap:wrap;
         }
@@ -119,8 +119,8 @@ export default function CookieBanner() {
           white-space:nowrap;
         }
         .sc-btn-primary{
-          background:#E8632B; color:#fff;
-          border-color:#E8632B;
+          background:#0081f2; color:#fff;
+          border-color:#0081f2;
         }
         .sc-btn-primary:hover{background:#d0521f; border-color:#d0521f}
         .sc-btn-secondary{

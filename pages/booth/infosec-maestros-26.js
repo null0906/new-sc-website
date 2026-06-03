@@ -30,10 +30,10 @@ export default function BoothInfosecMaestros26() {
           --bg: #020617;
           --surface: #0a1628;
           --surface-2: #091826;
-          --accent: #E8632B;
-          --accent-2: #FF8A50;
-          --accent-soft: rgba(232, 99, 43, 0.15);
-          --accent-border: rgba(232, 99, 43, 0.3);
+          --accent: #0081f2;
+          --accent-2: #38A8FF;
+          --accent-soft: rgba(0, 129, 242, 0.15);
+          --accent-border: rgba(0, 129, 242, 0.3);
           --text-primary: #f8fafc;
           --text-body: #c8d6e5;
           --text-muted: #94a3b8;
@@ -50,7 +50,7 @@ export default function BoothInfosecMaestros26() {
         }
         body {
           background:
-            radial-gradient(circle at 15% 10%, rgba(232,99,43,0.12), transparent 40%),
+            radial-gradient(circle at 15% 10%, rgba(0, 129, 242,0.12), transparent 40%),
             radial-gradient(circle at 85% 90%, rgba(129,140,248,0.08), transparent 45%),
             #020617;
           background-attachment: fixed;
@@ -68,7 +68,7 @@ export default function BoothInfosecMaestros26() {
 
         /* Welcome */
         .welcome-card {
-          background: linear-gradient(135deg, rgba(232,99,43,0.10) 0%, rgba(10,22,40,0.9) 100%);
+          background: linear-gradient(135deg, rgba(0, 129, 242,0.10) 0%, rgba(10,22,40,0.9) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2rem 1.75rem;
@@ -84,7 +84,7 @@ export default function BoothInfosecMaestros26() {
           right: -60px;
           width: 200px;
           height: 200px;
-          background: radial-gradient(circle, rgba(232,99,43,0.18), transparent 60%);
+          background: radial-gradient(circle, rgba(0, 129, 242,0.18), transparent 60%);
           pointer-events: none;
         }
         .welcome-emoji { font-size: 2.5rem; line-height: 1; margin-bottom: .85rem; }
@@ -124,7 +124,7 @@ export default function BoothInfosecMaestros26() {
         .event-chip:hover {
           border-color: var(--accent-border);
           transform: translateY(-2px);
-          box-shadow: 0 10px 30px rgba(232,99,43,0.08);
+          box-shadow: 0 10px 30px rgba(0, 129, 242,0.08);
         }
         .event-chip-mark {
           width: 60px;
@@ -182,7 +182,7 @@ export default function BoothInfosecMaestros26() {
 
         /* Reward callout */
         .reward-card {
-          background: linear-gradient(135deg, rgba(255,183,3,0.08), rgba(232,99,43,0.06));
+          background: linear-gradient(135deg, rgba(255,183,3,0.08), rgba(0, 129, 242,0.06));
           border: 1px solid rgba(255,183,3,0.3);
           border-radius: 18px;
           padding: 1.75rem 1.5rem;
@@ -258,7 +258,7 @@ export default function BoothInfosecMaestros26() {
           text-decoration: none;
           font-size: 1.05rem;
           transition: all 0.25s ease;
-          box-shadow: 0 8px 28px rgba(232,99,43,0.4);
+          box-shadow: 0 8px 28px rgba(0, 129, 242,0.4);
           width: 100%;
           max-width: 380px;
           letter-spacing: -0.01em;
@@ -278,7 +278,7 @@ export default function BoothInfosecMaestros26() {
         .cta-button:hover::before { left: 100%; }
         .cta-button:hover {
           transform: translateY(-2px);
-          box-shadow: 0 12px 36px rgba(232,99,43,0.5);
+          box-shadow: 0 12px 36px rgba(0, 129, 242,0.5);
         }
         .cta-button:active { transform: translateY(0); }
         .cta-sub {
@@ -369,7 +369,7 @@ export default function BoothInfosecMaestros26() {
           border-radius: 6px;
           letter-spacing: 0.02em;
         }
-        .fw-1 { background: rgba(232,99,43,0.12); color: var(--accent); }
+        .fw-1 { background: rgba(0, 129, 242,0.12); color: var(--accent); }
         .fw-2 { background: rgba(6,214,160,0.12); color: var(--cy); }
         .fw-3 { background: rgba(129,140,248,0.12); color: var(--bl); }
         .fw-4 { background: rgba(59,130,246,0.12); color: #3b82f6; }
@@ -424,7 +424,7 @@ export default function BoothInfosecMaestros26() {
 
         /* Reward unlock card */
         .reward-unlock {
-          background: linear-gradient(135deg, rgba(6,214,160,0.08), rgba(232,99,43,0.05));
+          background: linear-gradient(135deg, rgba(6,214,160,0.08), rgba(0, 129, 242,0.05));
           border: 1px solid rgba(6,214,160,0.35);
           border-radius: 18px;
           padding: 1.5rem;

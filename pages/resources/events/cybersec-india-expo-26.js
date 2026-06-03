@@ -37,9 +37,9 @@ export default function CyberSecIndiaExpo26() {
           --bg: #020617;
           --surface: #0a1628;
           --surface-2: #091826;
-          --accent: #E8632B;
-          --accent-soft: rgba(232, 99, 43, 0.15);
-          --accent-border: rgba(232, 99, 43, 0.3);
+          --accent: #0081f2;
+          --accent-soft: rgba(0, 129, 242, 0.15);
+          --accent-border: rgba(0, 129, 242, 0.3);
           --text-primary: #f8fafc;
           --text-body: #c8d6e5;
           --text-muted: #94a3b8;
@@ -70,7 +70,7 @@ export default function CyberSecIndiaExpo26() {
         /* ═══ HERO CARD ═══ */
         .event-hero-card {
           position: relative;
-          background: linear-gradient(135deg, rgba(232,99,43,0.08) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgba(0, 129, 242,0.08) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 24px;
           overflow: hidden;
@@ -84,7 +84,7 @@ export default function CyberSecIndiaExpo26() {
           right: -100px;
           width: 300px;
           height: 300px;
-          background: radial-gradient(circle, rgba(232,99,43,0.15), transparent 60%);
+          background: radial-gradient(circle, rgba(0, 129, 242,0.15), transparent 60%);
           pointer-events: none;
         }
         .event-hero-inner {
@@ -183,7 +183,7 @@ export default function CyberSecIndiaExpo26() {
         .btn-primary:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(232,99,43,0.3);
+          box-shadow: 0 8px 24px rgba(0, 129, 242,0.3);
         }
         .btn-secondary {
           display: inline-flex;
@@ -259,7 +259,7 @@ export default function CyberSecIndiaExpo26() {
         .stat-card:hover {
           border-color: var(--accent-border);
           transform: translateY(-3px);
-          box-shadow: 0 10px 30px rgba(232,99,43,0.1);
+          box-shadow: 0 10px 30px rgba(0, 129, 242,0.1);
         }
         .stat-num {
           font-size: 1.85rem;
@@ -432,7 +432,7 @@ export default function CyberSecIndiaExpo26() {
         }
         .audience-pill:hover {
           border-color: var(--accent-border);
-          background: rgba(232,99,43,0.04);
+          background: rgba(0, 129, 242,0.04);
         }
         .audience-icon { font-size: 1.6rem; margin-bottom: .35rem; }
         .audience-pill-title {
@@ -485,7 +485,7 @@ export default function CyberSecIndiaExpo26() {
         }
 
         .cta-events-banner {
-          background: linear-gradient(135deg, rgba(232,99,43,0.12) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgba(0, 129, 242,0.12) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2.75rem;

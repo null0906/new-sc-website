@@ -237,7 +237,7 @@ export default function CookiePreferences({ open, onClose }) {
           display:inline-block; vertical-align:middle;
           font-family:inherit;
         }
-        .sc-toggle-on{background:#E8632B}
+        .sc-toggle-on{background:#0081f2}
         .sc-toggle-disabled{cursor:not-allowed; opacity:.5}
         .sc-toggle-knob{
           display:block;

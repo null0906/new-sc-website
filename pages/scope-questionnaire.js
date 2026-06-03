@@ -147,7 +147,7 @@ export default function ScopeQuestionnaire() {
         .sq-back { display:inline-block; color:var(--text-muted); font-size:.9rem; text-decoration:none; margin-bottom:1.5rem; }
         .sq-back:hover { color:var(--accent); }
         .sq-head { text-align:center; margin-bottom:2.25rem; }
-        .sq-badge { display:inline-block; padding:.35rem .9rem; border-radius:var(--radius-full); background:rgba(232,99,43,.1); color:var(--accent-light); border:1px solid rgba(232,99,43,.25); font-size:.74rem; font-weight:700; margin-bottom:1rem; }
+        .sq-badge { display:inline-block; padding:.35rem .9rem; border-radius:var(--radius-full); background:rgba(0, 129, 242,.1); color:var(--accent-light); border:1px solid rgba(0, 129, 242,.25); font-size:.74rem; font-weight:700; margin-bottom:1rem; }
         .sq-head h1 { font-size:clamp(1.9rem,5vw,2.7rem); font-weight:800; color:var(--white); margin:0 0 .75rem; }
         .accent { background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
         .sq-head p { color:var(--text-secondary); font-size:1rem; line-height:1.6; max-width:560px; margin:0 auto; }
@@ -167,7 +167,7 @@ export default function ScopeQuestionnaire() {
         .sq-tristate { display:flex; gap:.5rem; }
         .sq-tri { flex:1; padding:.6rem; background:var(--bg-primary); border:1px solid var(--border-hover); border-radius:8px; color:var(--text-secondary); font-size:.88rem; cursor:pointer; font-family:inherit; transition:all .15s ease; }
         .sq-tri:hover { border-color:var(--accent); }
-        .sq-tri.sel { background:rgba(232,99,43,.12); border-color:var(--accent); color:var(--white); font-weight:600; }
+        .sq-tri.sel { background:rgba(0, 129, 242,.12); border-color:var(--accent); color:var(--white); font-weight:600; }
         .sq-consent-notice { font-size:.74rem; line-height:1.55; color:var(--text-muted); background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:10px; padding:.85rem 1rem; }
         .sq-check { display:flex; align-items:flex-start; gap:.6rem; font-size:.84rem; color:var(--text-secondary); line-height:1.45; cursor:pointer; }
         .sq-check input { margin-top:2px; width:16px; height:16px; accent-color:var(--accent); flex-shrink:0; }

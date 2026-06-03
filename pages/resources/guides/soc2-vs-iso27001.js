@@ -67,10 +67,10 @@ export default function SOC2vsISO() {
           <div style={{ overflowX: 'auto', margin: '24px 0' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>
               <thead>
-                <tr style={{ background: 'rgba(232,99,43,0.15)' }}>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#e8632b', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Area</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#e8632b', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>ISO 27001</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#e8632b', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>SOC 2</th>
+                <tr style={{ background: 'rgba(0, 129, 242,0.15)' }}>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Area</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>ISO 27001</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>SOC 2</th>
                 </tr>
               </thead>
               <tbody>

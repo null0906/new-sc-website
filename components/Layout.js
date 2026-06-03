@@ -79,10 +79,10 @@ if(hero){
   function rz(){hw=hero.offsetWidth;hh=hero.offsetHeight;cv.width=hw;cv.height=hh}
   function initP(){pts=[];var n=Math.floor((hw*hh)/18000);for(var i=0;i<n;i++)pts.push({x:Math.random()*hw,y:Math.random()*hh,vx:(Math.random()-0.5)*0.4,vy:(Math.random()-0.5)*0.4,r:Math.random()*1.5+0.5,a:Math.random()*0.4+0.1})}
   function draw(){ctx.clearRect(0,0,hw,hh);
-    for(var i=0;i<pts.length;i++){for(var j=i+1;j<pts.length;j++){var dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<120){ctx.beginPath();ctx.strokeStyle='rgba(232,99,43,'+(1-d/120)*0.12+')';ctx.lineWidth=0.5;ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.stroke()}}}
-    pts.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>hw)p.vx*=-1;if(p.y<0||p.y>hh)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle='rgba(232,99,43,'+p.a+')';ctx.fill()});
+    for(var i=0;i<pts.length;i++){for(var j=i+1;j<pts.length;j++){var dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<120){ctx.beginPath();ctx.strokeStyle='rgba(0, 129, 242,'+(1-d/120)*0.12+')';ctx.lineWidth=0.5;ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.stroke()}}}
+    pts.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>hw)p.vx*=-1;if(p.y<0||p.y>hh)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle='rgba(0, 129, 242,'+p.a+')';ctx.fill()});
     var hr=hero.getBoundingClientRect(),rx=mx-hr.left,ry=my-hr.top;
-    if(rx>0&&rx<hw&&ry>0&&ry<hh){pts.forEach(function(p){var dx2=rx-p.x,dy2=ry-p.y,d2=Math.sqrt(dx2*dx2+dy2*dy2);if(d2<150){p.vx+=dx2*0.0003;p.vy+=dy2*0.0003}});var g=ctx.createRadialGradient(rx,ry,0,rx,ry,150);g.addColorStop(0,'rgba(232,99,43,0.08)');g.addColorStop(1,'rgba(232,99,43,0)');ctx.beginPath();ctx.arc(rx,ry,150,0,Math.PI*2);ctx.fillStyle=g;ctx.fill()}
+    if(rx>0&&rx<hw&&ry>0&&ry<hh){pts.forEach(function(p){var dx2=rx-p.x,dy2=ry-p.y,d2=Math.sqrt(dx2*dx2+dy2*dy2);if(d2<150){p.vx+=dx2*0.0003;p.vy+=dy2*0.0003}});var g=ctx.createRadialGradient(rx,ry,0,rx,ry,150);g.addColorStop(0,'rgba(0, 129, 242,0.08)');g.addColorStop(1,'rgba(0, 129, 242,0)');ctx.beginPath();ctx.arc(rx,ry,150,0,Math.PI*2);ctx.fillStyle=g;ctx.fill()}
     requestAnimationFrame(draw)}
   rz();initP();draw();window.addEventListener('resize',function(){rz();initP()});
 }
@@ -122,7 +122,7 @@ if(!document.querySelector('#ripple-styles')){var rs=document.createElement('sty
 document.querySelectorAll('.btn-primary,.btn-outline').forEach(function(b){b.addEventListener('click',function(e){var r=this.getBoundingClientRect(),rip=document.createElement('span');rip.style.cssText='position:absolute;border-radius:50%;background:rgba(255,255,255,0.25);width:100px;height:100px;left:'+(e.clientX-r.left-50)+'px;top:'+(e.clientY-r.top-50)+'px;transform:scale(0);animation:rippleExpand 0.6s ease-out forwards;pointer-events:none;';this.style.position='relative';this.style.overflow='hidden';this.appendChild(rip);setTimeout(function(){rip.remove()},600)})});
 
 /* === ACTIVE NAV LINK === */
-var cp=window.location.pathname;document.querySelectorAll('.nav-links a').forEach(function(l){var h=l.getAttribute('href');if(h&&h!=='/'&&h!=='#'&&cp.includes(h)){l.style.color='var(--white)'}});
+var cp=window.location.pathname;document.querySelectorAll('.nav-links a').forEach(function(l){var h=l.getAttribute('href');if(h&&h!=='/'&&h!=='#'&&cp.includes(h)){l.style.color='var(--accent-light)';l.classList.add('active')}});
 
 /* === TEAM AVATAR FADE === */
 document.querySelectorAll('.team-avatar img').forEach(function(img){img.style.opacity='0';img.style.transition='opacity 0.6s ease';if(img.complete){img.style.opacity='1'}else{img.addEventListener('load',function(){img.style.opacity='1'})}});
@@ -143,15 +143,15 @@ document.querySelectorAll('.footer-col a').forEach(function(l){l.addEventListene
     <>
       <Head>
         <style>{`
-#cursor-spotlight{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(232,99,43,0.06) 0%,rgba(232,99,43,0.02) 30%,transparent 70%);pointer-events:none;z-index:1;transform:translate(-50%,-50%);transition:opacity 0.3s;will-change:left,top}
+#cursor-spotlight{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0, 129, 242,0.06) 0%,rgba(0, 129, 242,0.02) 30%,transparent 70%);pointer-events:none;z-index:1;transform:translate(-50%,-50%);transition:opacity 0.3s;will-change:left,top}
 @media(hover:none){#cursor-spotlight{display:none}}
 .feature-card,.service-card,.team-card,.resource-card,.tab-card,.fw-card,.step-card,.testi-card{position:relative;overflow:hidden}
-.feature-card::before,.service-card::before,.team-card::before,.resource-card::before,.fw-card::before,.step-card::before,.testi-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border-radius:inherit;opacity:0;transition:opacity 0.4s ease;background:radial-gradient(300px circle at var(--glow-x,50%) var(--glow-y,50%),rgba(232,99,43,0.12),transparent 60%);pointer-events:none;z-index:1}
+.feature-card::before,.service-card::before,.team-card::before,.resource-card::before,.fw-card::before,.step-card::before,.testi-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border-radius:inherit;opacity:0;transition:opacity 0.4s ease;background:radial-gradient(300px circle at var(--glow-x,50%) var(--glow-y,50%),rgba(0, 129, 242,0.12),transparent 60%);pointer-events:none;z-index:1}
 .card-glow-active::before{opacity:1}
-.feature-card::after,.service-card::after,.team-card::after{content:'';position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px;border-radius:inherit;opacity:0;transition:opacity 0.4s ease;background:radial-gradient(400px circle at var(--glow-x,50%) var(--glow-y,50%),rgba(232,99,43,0.25),transparent 50%);z-index:-1;pointer-events:none}
+.feature-card::after,.service-card::after,.team-card::after{content:'';position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px;border-radius:inherit;opacity:0;transition:opacity 0.4s ease;background:radial-gradient(400px circle at var(--glow-x,50%) var(--glow-y,50%),rgba(0, 129, 242,0.25),transparent 50%);z-index:-1;pointer-events:none}
 .card-glow-active::after{opacity:1}
 .ambient-orb{position:absolute;border-radius:50%;pointer-events:none;z-index:0;filter:blur(80px)}
-.ambient-orb-1{width:400px;height:400px;background:rgba(232,99,43,0.06);top:10%;right:-100px;animation:orbFloat1 12s ease-in-out infinite}
+.ambient-orb-1{width:400px;height:400px;background:rgba(0, 129, 242,0.06);top:10%;right:-100px;animation:orbFloat1 12s ease-in-out infinite}
 .ambient-orb-2{width:350px;height:350px;background:rgba(16,185,129,0.04);bottom:10%;left:-80px;animation:orbFloat2 15s ease-in-out infinite}
 @keyframes orbFloat1{0%,100%{transform:translate(0,0) scale(1);opacity:0.6}33%{transform:translate(-40px,30px) scale(1.1);opacity:0.8}66%{transform:translate(20px,-20px) scale(0.95);opacity:0.5}}
 @keyframes orbFloat2{0%,100%{transform:translate(0,0) scale(1);opacity:0.5}50%{transform:translate(50px,-30px) scale(1.15);opacity:0.7}}
@@ -159,19 +159,19 @@ document.querySelectorAll('.footer-col a').forEach(function(l){l.addEventListene
 .btn-primary::before{content:'';position:absolute;top:-2px;left:-2px;right:-2px;bottom:-2px;border-radius:inherit;background:var(--gradient-accent);z-index:-1;opacity:0;filter:blur(12px);transition:opacity 0.4s ease}
 .btn-primary:hover::before{opacity:0.6;animation:btnGlowPulse 2s ease-in-out infinite}
 @keyframes btnGlowPulse{0%,100%{filter:blur(12px);opacity:0.5}50%{filter:blur(18px);opacity:0.7}}
-#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--gradient-accent);z-index:10000;transition:width 0.1s linear;box-shadow:0 0 10px rgba(232,99,43,0.5),0 0 20px rgba(232,99,43,0.2)}
+#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--gradient-accent);z-index:10000;transition:width 0.1s linear;box-shadow:0 0 10px rgba(0, 129, 242,0.5),0 0 20px rgba(0, 129, 242,0.2)}
 #hero-particles{opacity:0.7}
 .section-title{transition:text-shadow 0.4s ease}
-.section-title:hover{text-shadow:0 0 30px rgba(232,99,43,0.2),0 0 60px rgba(232,99,43,0.1)}
+.section-title:hover{text-shadow:0 0 30px rgba(0, 129, 242,0.2),0 0 60px rgba(0, 129, 242,0.1)}
 .feature-card,.service-card,.team-card{transition:transform 0.4s cubic-bezier(.16,1,.3,1),border-color 0.4s ease,box-shadow 0.4s ease,background 0.4s ease}
-.feature-card:hover,.service-card:hover,.team-card:hover{box-shadow:0 20px 60px rgba(0,0,0,0.4),0 0 40px rgba(232,99,43,0.08)}
-.navbar.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3),0 1px 0 rgba(232,99,43,0.08)}
-.fw-card:hover{border-color:rgba(232,99,43,0.2);box-shadow:0 8px 32px rgba(0,0,0,0.3),0 0 20px rgba(232,99,43,0.06)}
+.feature-card:hover,.service-card:hover,.team-card:hover{box-shadow:0 20px 60px rgba(0,0,0,0.4),0 0 40px rgba(0, 129, 242,0.08)}
+.navbar.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3),0 1px 0 rgba(0, 129, 242,0.08)}
+.fw-card:hover{border-color:rgba(0, 129, 242,0.2);box-shadow:0 8px 32px rgba(0,0,0,0.3),0 0 20px rgba(0, 129, 242,0.06)}
 .cta-section{position:relative}
-.cta-section::before{content:'';position:absolute;top:50%;left:50%;width:600px;height:600px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(232,99,43,0.1) 0%,transparent 70%);border-radius:50%;pointer-events:none;animation:ctaGlow 4s ease-in-out infinite}
+.cta-section::before{content:'';position:absolute;top:50%;left:50%;width:600px;height:600px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(0, 129, 242,0.1) 0%,transparent 70%);border-radius:50%;pointer-events:none;animation:ctaGlow 4s ease-in-out infinite}
 @keyframes ctaGlow{0%,100%{opacity:0.5;transform:translate(-50%,-50%) scale(1)}50%{opacity:0.8;transform:translate(-50%,-50%) scale(1.1)}}
-.step-number{text-shadow:0 0 20px rgba(232,99,43,0.4);transition:text-shadow 0.3s ease}
-.step-card:hover .step-number{text-shadow:0 0 30px rgba(232,99,43,0.6),0 0 60px rgba(232,99,43,0.3)}
+.step-number{text-shadow:0 0 20px rgba(0, 129, 242,0.4);transition:text-shadow 0.3s ease}
+.step-card:hover .step-number{text-shadow:0 0 30px rgba(0, 129, 242,0.6),0 0 60px rgba(0, 129, 242,0.3)}
         `}</style>
       </Head>
       <style
@@ -205,13 +205,13 @@ document.querySelectorAll('.footer-col a').forEach(function(l){l.addEventListene
             .nav-dropdown-menu .mega-divider{display:block;background:rgba(255,255,255,.08);margin:0 30px}
             .nav-dropdown-menu .mega-section{padding:0 4px;min-width:0;display:flex;flex-direction:column}
             .nav-dropdown-menu .mega-section-head{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;padding:10px 14px;border:1px solid rgba(255,255,255,.08);border-radius:12px;background:rgba(255,255,255,.03)}
-            .nav-dropdown-menu .mega-section-icon{width:24px;height:24px;border-radius:8px;background:rgba(232,99,43,.15);border:1px solid rgba(232,99,43,.2);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+            .nav-dropdown-menu .mega-section-icon{width:24px;height:24px;border-radius:8px;background:rgba(0, 129, 242,.15);border:1px solid rgba(0, 129, 242,.2);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
             .nav-dropdown-menu .mega-section-title{font-size:15px;font-weight:700;letter-spacing:.01em;color:rgba(148,163,184,.7);text-transform:none}
             .nav-dropdown-menu .mega-grid{display:grid;grid-template-columns:repeat(2,minmax(220px,1fr));gap:8px 18px;align-content:start}
             .nav-dropdown-menu .mega-section:last-child .mega-grid{flex:1;align-content:start;row-gap:42px}
             .nav-dropdown-menu .mega-item{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;text-decoration:none;transition:all .15s;color:#94A3B8;font-size:15px;font-weight:500;min-width:0;white-space:normal}
-            .nav-dropdown-menu .mega-item:hover{background:rgba(232,99,43,.08);color:#F8FAFC}
-            .nav-dropdown-menu .mega-item:hover .mega-item-icon{background:rgba(232,99,43,.2);border-color:rgba(232,99,43,.35)}
+            .nav-dropdown-menu .mega-item:hover{background:rgba(0, 129, 242,.08);color:#F8FAFC}
+            .nav-dropdown-menu .mega-item:hover .mega-item-icon{background:rgba(0, 129, 242,.2);border-color:rgba(0, 129, 242,.35)}
             .nav-dropdown-menu .mega-item::after{display:none}
             .nav-dropdown-menu .mega-item-icon{width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;transition:all .15s}
             .nav-dropdown-menu .mega-item-text{line-height:1.3;min-width:0}
@@ -239,13 +239,13 @@ document.querySelectorAll('.footer-col a').forEach(function(l){l.addEventListene
             }
             .res-dd:hover .res-dd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
             .res-dd-menu a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;font-size:15px;font-weight:600;color:var(--blue-400);transition:all .15s;white-space:nowrap}
-            .res-dd-menu a:hover{background:rgba(232,99,43,.08);color:var(--white)}
+            .res-dd-menu a:hover{background:rgba(0, 129, 242,.08);color:var(--white)}
             .res-dd-menu a::after{display:none}
             .dropdown-icon{width:30px;height:30px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px}
-            .res-dd-menu a:hover .dropdown-icon{background:rgba(232,99,43,.2);border-color:rgba(232,99,43,.35)}
+            .res-dd-menu a:hover .dropdown-icon{background:rgba(0, 129, 242,.2);border-color:rgba(0, 129, 242,.35)}
             .footer-socials-box{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
             .fsoc{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);color:#94A3B8;transition:all .2s;text-decoration:none}
-            .fsoc:hover{background:rgba(232,99,43,.15);border-color:rgba(232,99,43,.35);color:#E8632B}
+            .fsoc:hover{background:rgba(0, 129, 242,.15);border-color:rgba(0, 129, 242,.35);color:#0081f2}
             .fsoc svg{width:15px;height:15px;fill:currentColor}
             html,body{margin:0;padding:0}
             #__next{display:flex;flex-direction:column;min-height:100vh}
@@ -276,7 +276,7 @@ document.querySelectorAll('.footer-col a').forEach(function(l){l.addEventListene
     <a href="/" class="logo"><img src="/assets/images/logo.png" alt="SecComply" style="height:40px"><span class="tm-mark">&trade;</span></a>
     <ul class="nav-links">
       <li><a href="/about">About</a></li>
-      <li class="nav-dropdown"><span class="nav-dropdown-trigger"><a href="/#services">Services</a><span class="dropdown-arrow">&#9662;</span></span><div class="nav-dropdown-menu"><div class="mega-inner"><div class="mega-section"><div class="mega-section-head"><span class="mega-section-icon">🏅</span><span class="mega-section-title">Certifications &amp; Standards</span></div><div class="mega-grid"><a href="/services/iso-27001" class="mega-item"><span class="mega-item-icon">🌐</span><span class="mega-item-text">ISO 27001</span></a><a href="/services/iso-27701" class="mega-item"><span class="mega-item-icon">🔏</span><span class="mega-item-text">ISO 27701</span></a><a href="/services/soc-2" class="mega-item"><span class="mega-item-icon">🛡️</span><span class="mega-item-text">SOC 2 Audits</span></a><a href="/services/gdpr" class="mega-item"><span class="mega-item-icon">🇪🇺</span><span class="mega-item-text">GDPR Compliance</span></a><a href="/services/hipaa" class="mega-item"><span class="mega-item-icon">🏥</span><span class="mega-item-text">HIPAA</span></a><a href="/services/iso-42001" class="mega-item"><span class="mega-item-icon">🤖</span><span class="mega-item-text">ISO 42001</span></a><a href="/services/iso-27017" class="mega-item"><span class="mega-item-icon">☁️</span><span class="mega-item-text">ISO 27017</span></a><a href="/services/iso-27018" class="mega-item"><span class="mega-item-icon">🔒</span><span class="mega-item-text">ISO 27018</span></a><a href="/services/nist-csf" class="mega-item"><span class="mega-item-icon">🇺🇸</span><span class="mega-item-text">NIST CSF 2.0</span></a><a href="/services/dpdp" class="mega-item"><span class="mega-item-icon">🇮🇳</span><span class="mega-item-text">DPDP Act</span></a></div></div><div class="mega-divider"></div><div class="mega-section"><div class="mega-section-head"><span class="mega-section-icon">🔐</span><span class="mega-section-title">Security Services</span></div><div class="mega-grid"><a href="/services/vapt" class="mega-item"><span class="mega-item-icon">🔍</span><span class="mega-item-text">VAPT Testing</span></a><a href="/services/ciso" class="mega-item"><span class="mega-item-icon">💼</span><span class="mega-item-text">CISO as a Service</span></a><a href="/services/cloud-security" class="mega-item"><span class="mega-item-icon">⛅</span><span class="mega-item-text">Cloud Security Audit</span></a><a href="/services/security-policy" class="mega-item"><span class="mega-item-icon">📜</span><span class="mega-item-text">Security Policy</span></a><a href="/services/compliance-as-a-service" class="mega-item"><span class="mega-item-icon">⚙️</span><span class="mega-item-text">Compliance as a Service</span></a><a href="/services/internal-audit" class="mega-item"><span class="mega-item-icon">📊</span><span class="mega-item-text">Internal Audit</span></a></div></div><div class="mega-divider"></div><div class="mega-section"><div class="mega-section-head"><span class="mega-section-icon">🤖</span><span class="mega-section-title">AI Engineering</span></div><div class="mega-grid"><a href="/services/ai-agents" class="mega-item"><span class="mega-item-icon">🧬</span><span class="mega-item-text">AI Agents &amp; Agentic Workflows</span></a></div></div></div></div></li>
+      <li class="nav-dropdown"><span class="nav-dropdown-trigger"><a href="/services">Services</a><span class="dropdown-arrow">&#9662;</span></span><div class="nav-dropdown-menu"><div class="mega-inner"><div class="mega-section"><div class="mega-section-head"><span class="mega-section-icon">🏅</span><span class="mega-section-title">Certifications &amp; Standards</span></div><div class="mega-grid"><a href="/services/iso-27001" class="mega-item"><span class="mega-item-icon">🌐</span><span class="mega-item-text">ISO 27001</span></a><a href="/services/iso-27701" class="mega-item"><span class="mega-item-icon">🔏</span><span class="mega-item-text">ISO 27701</span></a><a href="/services/soc-2" class="mega-item"><span class="mega-item-icon">🛡️</span><span class="mega-item-text">SOC 2 Audits</span></a><a href="/services/gdpr" class="mega-item"><span class="mega-item-icon">🇪🇺</span><span class="mega-item-text">GDPR Compliance</span></a><a href="/services/hipaa" class="mega-item"><span class="mega-item-icon">🏥</span><span class="mega-item-text">HIPAA</span></a><a href="/services/iso-42001" class="mega-item"><span class="mega-item-icon">🤖</span><span class="mega-item-text">ISO 42001</span></a><a href="/services/iso-27017" class="mega-item"><span class="mega-item-icon">☁️</span><span class="mega-item-text">ISO 27017</span></a><a href="/services/iso-27018" class="mega-item"><span class="mega-item-icon">🔒</span><span class="mega-item-text">ISO 27018</span></a><a href="/services/nist-csf" class="mega-item"><span class="mega-item-icon">🇺🇸</span><span class="mega-item-text">NIST CSF 2.0</span></a><a href="/services/dpdp" class="mega-item"><span class="mega-item-icon">🇮🇳</span><span class="mega-item-text">DPDP Act</span></a></div></div><div class="mega-divider"></div><div class="mega-section"><div class="mega-section-head"><span class="mega-section-icon">🔐</span><span class="mega-section-title">Security Services</span></div><div class="mega-grid"><a href="/services/vapt" class="mega-item"><span class="mega-item-icon">🔍</span><span class="mega-item-text">VAPT Testing</span></a><a href="/services/ciso" class="mega-item"><span class="mega-item-icon">💼</span><span class="mega-item-text">CISO as a Service</span></a><a href="/services/cloud-security" class="mega-item"><span class="mega-item-icon">⛅</span><span class="mega-item-text">Cloud Security Audit</span></a><a href="/services/security-policy" class="mega-item"><span class="mega-item-icon">📜</span><span class="mega-item-text">Security Policy</span></a><a href="/services/compliance-as-a-service" class="mega-item"><span class="mega-item-icon">⚙️</span><span class="mega-item-text">Compliance as a Service</span></a><a href="/services/internal-audit" class="mega-item"><span class="mega-item-icon">📊</span><span class="mega-item-text">Internal Audit</span></a></div></div><div class="mega-divider"></div><div class="mega-section"><div class="mega-section-head"><span class="mega-section-icon">🤖</span><span class="mega-section-title">AI Engineering</span></div><div class="mega-grid"><a href="/services/ai-agents" class="mega-item"><span class="mega-item-icon">🧬</span><span class="mega-item-text">AI Agents &amp; Agentic Workflows</span></a></div></div></div></div></li>
       <li class="res-dd"><span class="res-dd-trigger"><a href="/resources">Resources</a><span class="res-dd-arrow dropdown-arrow">&#9662;</span></span><div class="res-dd-menu"><a href="/resources/blog"><span class="dropdown-icon">&#x1F4DD;</span> Blog</a><a href="/resources/guides"><span class="dropdown-icon">&#x1F4DA;</span> Guides</a><a href="/resources/assessments"><span class="dropdown-icon">&#x1F3AF;</span> Assessments</a><a href="/resources/tools"><span class="dropdown-icon">&#x1F6E0;&#xFE0F;</span> Tools</a><a href="/resources/events"><span class="dropdown-icon">&#x1F3A4;</span> Events</a><a href="/resources/platform"><span class="dropdown-icon">&#x1F4BB;</span> Platform</a></div></li>
       <li><a href="/pricing">Pricing</a></li>
       <li><a href="/contact">Contact</a></li>

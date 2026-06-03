@@ -261,7 +261,7 @@ export default function Assessment() {
         @media (max-width:560px){ .as2-industries { grid-template-columns:1fr; } }
         .as2-ind { padding:.85rem 1rem; background:var(--bg-card); border:1px solid var(--border-hover); border-radius:10px; color:var(--text-primary); font-size:.9rem; cursor:pointer; font-family:inherit; transition:all .15s ease; }
         .as2-ind:hover { border-color:var(--accent); }
-        .as2-ind.sel { background:rgba(232,99,43,.12); border-color:var(--accent); color:var(--white); font-weight:600; }
+        .as2-ind.sel { background:rgba(0, 129, 242,.12); border-color:var(--accent); color:var(--white); font-weight:600; }
         .as2-next, .as2-submit { background:var(--gradient-accent); color:#fff; border:none; border-radius:10px; padding:.9rem 1.7rem; font-size:.95rem; font-weight:700; cursor:pointer; font-family:inherit; }
         .as2-next:disabled { opacity:.5; cursor:not-allowed; }
 
@@ -273,7 +273,7 @@ export default function Assessment() {
         .as2-options { display:flex; flex-direction:column; gap:.7rem; max-width:480px; margin:0 auto 1.5rem; }
         .as2-opt { padding:1rem 1.25rem; background:var(--bg-card); border:1px solid var(--border-hover); border-radius:12px; color:var(--text-primary); font-size:.98rem; cursor:pointer; font-family:inherit; transition:all .15s ease; text-align:left; }
         .as2-opt:hover { border-color:var(--accent); transform:translateY(-1px); }
-        .as2-opt.sel { background:rgba(232,99,43,.12); border-color:var(--accent); color:var(--white); font-weight:600; }
+        .as2-opt.sel { background:rgba(0, 129, 242,.12); border-color:var(--accent); color:var(--white); font-weight:600; }
         .as2-prev { background:none; border:none; color:var(--text-muted); font-size:.9rem; cursor:pointer; font-family:inherit; }
         .as2-prev:disabled { opacity:.4; cursor:not-allowed; }
 
@@ -299,7 +299,7 @@ export default function Assessment() {
 
         .as2-gaps { list-style:none; counter-reset:gap; padding:0; margin:0; display:flex; flex-direction:column; gap:.7rem; text-align:left; }
         .as2-gaps li { counter-increment:gap; background:var(--bg-card); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:12px; padding:1rem 1.1rem 1rem 2.8rem; position:relative; }
-        .as2-gaps li::before { content:counter(gap); position:absolute; left:1rem; top:1rem; width:22px; height:22px; border-radius:50%; background:rgba(232,99,43,.15); color:var(--accent); font-size:.78rem; font-weight:800; display:flex; align-items:center; justify-content:center; }
+        .as2-gaps li::before { content:counter(gap); position:absolute; left:1rem; top:1rem; width:22px; height:22px; border-radius:50%; background:rgba(0, 129, 242,.15); color:var(--accent); font-size:.78rem; font-weight:800; display:flex; align-items:center; justify-content:center; }
         .as2-gap-risk { margin:0 0 .4rem; color:var(--white); font-size:.92rem; line-height:1.5; }
         .as2-gap-sec { font-size:.76rem; color:var(--accent-light); font-weight:600; }
 

@@ -21,7 +21,9 @@
   .nav-links li { padding:12px 0; border-bottom:1px solid var(--border); }
   .nav-dropdown-menu { position:static; transform:none; opacity:1; visibility:visible; background:transparent; border:none; box-shadow:none; padding:8px 0 0 20px; min-width:auto; display:none; }
   .nav-dropdown.open .nav-dropdown-menu { display:block; }
+  .navbar-inner { display:flex; justify-content:space-between; }
   .nav-actions .btn { display:none; }
+  .nav-phone { display:none; }
   .mobile-toggle { display:block; }
 
   .hero { padding:120px 0 60px; min-height:auto; }
@@ -45,7 +47,7 @@
   .dash-sidebar { width:100%; border-right:none; border-bottom:1px solid var(--border); padding:10px; display:flex; overflow-x:auto; gap:4px; flex-wrap:nowrap; }
   .dash-sidebar-section { display:none; }
   .dash-sidebar-item { white-space:nowrap; padding:6px 12px; font-size:0.72rem; border:1px solid var(--border); border-radius:var(--radius-full); }
-  .dash-sidebar-item.active { border-color:rgba(232,99,43,0.3); border-right:none; }
+  .dash-sidebar-item.active { border-color:rgba(0, 129, 242,0.3); border-right:none; }
   .dash-kpis { grid-template-columns:repeat(2,1fr); }
   .dash-table { overflow-x:auto; }
   .dash-table-header, .dash-table-row { min-width:500px; }

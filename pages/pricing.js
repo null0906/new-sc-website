@@ -92,7 +92,7 @@ export default function Pricing() {
       <style jsx>{`
         .pr { max-width:1100px; margin:0 auto; padding:2.5rem 1.5rem 5rem; }
         .pr-hero { text-align:center; max-width:680px; margin:0 auto 2.5rem; }
-        .pr-badge { display:inline-block; padding:.35rem .9rem; border-radius:var(--radius-full); background:rgba(232,99,43,.1); color:var(--accent-light); border:1px solid rgba(232,99,43,.25); font-size:.74rem; font-weight:700; margin-bottom:1rem; }
+        .pr-badge { display:inline-block; padding:.35rem .9rem; border-radius:var(--radius-full); background:rgba(0, 129, 242,.1); color:var(--accent-light); border:1px solid rgba(0, 129, 242,.25); font-size:.74rem; font-weight:700; margin-bottom:1rem; }
         .pr-hero h1 { font-size:clamp(2rem,5vw,3rem); font-weight:800; margin:0 0 1rem; color:var(--white); }
         .accent { background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
         .pr-hero p { color:var(--text-secondary); font-size:1.02rem; line-height:1.6; margin:0; }
@@ -101,8 +101,8 @@ export default function Pricing() {
         @media (max-width:900px){ .pr-grid { grid-template-columns:repeat(2,1fr); } }
         @media (max-width:600px){ .pr-grid { grid-template-columns:1fr; } }
         .pr-card { position:relative; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.6rem 1.5rem; display:flex; flex-direction:column; gap:.6rem; transition:all .3s ease; }
-        .pr-card:hover { border-color:rgba(232,99,43,.3); transform:translateY(-3px); box-shadow:var(--shadow-md); }
-        .pr-card.featured { border-color:rgba(232,99,43,.35); }
+        .pr-card:hover { border-color:rgba(0, 129, 242,.3); transform:translateY(-3px); box-shadow:var(--shadow-md); }
+        .pr-card.featured { border-color:rgba(0, 129, 242,.35); }
         .pr-card-flag { position:absolute; top:-.6rem; right:1rem; background:var(--gradient-accent); color:#fff; font-size:.62rem; font-weight:800; letter-spacing:.04em; text-transform:uppercase; padding:.2rem .6rem; border-radius:var(--radius-full); }
         .pr-card-icon { font-size:1.9rem; }
         .pr-card h2 { font-size:1.15rem; font-weight:800; color:var(--white); margin:0; }
@@ -111,11 +111,11 @@ export default function Pricing() {
         .pr-card-btn:hover { transform:translateY(-1px); }
 
         .pr-scope { margin-top:2.5rem; }
-        .pr-scope-inner { background:linear-gradient(135deg,rgba(232,99,43,.1),rgba(15,23,42,.6)); border:1px solid rgba(232,99,43,.3); border-radius:var(--radius-lg); padding:2rem 2.25rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
+        .pr-scope-inner { background:linear-gradient(135deg,rgba(0, 129, 242,.1),rgba(15,23,42,.6)); border:1px solid rgba(0, 129, 242,.3); border-radius:var(--radius-lg); padding:2rem 2.25rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
         .pr-scope h3 { font-size:1.25rem; font-weight:800; color:var(--white); margin:0 0 .5rem; }
         .pr-scope p { color:var(--text-secondary); font-size:.92rem; line-height:1.6; margin:0; max-width:560px; }
         .pr-scope-btn { white-space:nowrap; background:var(--bg-card); border:1px solid var(--accent); color:var(--accent-light); padding:.8rem 1.4rem; border-radius:10px; font-weight:700; text-decoration:none; font-size:.92rem; }
-        .pr-scope-btn:hover { background:rgba(232,99,43,.1); }
+        .pr-scope-btn:hover { background:rgba(0, 129, 242,.1); }
 
         .pr-overlay { position:fixed; inset:0; background:rgba(2,6,23,.8); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center; padding:1.5rem; z-index:1000; }
         .pr-modal { background:var(--bg-secondary); border:1px solid var(--border-hover); border-radius:var(--radius-lg); padding:2rem; max-width:560px; width:100%; max-height:90vh; overflow-y:auto; position:relative; }

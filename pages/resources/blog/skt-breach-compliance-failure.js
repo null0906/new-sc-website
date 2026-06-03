@@ -65,7 +65,7 @@ export default function SKTBreach() {
         if (!t) {
           t = document.createElement('div');
           t.id = 'sc-toast';
-          t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#E8632B;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(232,99,43,.4);opacity:0;transition:opacity .3s;pointer-events:none';
+          t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#0081f2;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(0, 129, 242,.4);opacity:0;transition:opacity .3s;pointer-events:none';
           document.body.appendChild(t);
         }
         t.textContent = msg;
@@ -115,11 +115,11 @@ export default function SKTBreach() {
       </Head>
 
       <style jsx global>{`
-        :root{--cy:#E8632B;--cy2:#d0521f;--glow:rgba(232,99,43,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#F8FAFC;--tb:#E2E8F0;--tm:#94A3B8;--bo:rgba(232,99,43,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#10B981;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
+        :root{--cy:#0081f2;--cy2:#d0521f;--glow:rgba(0, 129, 242,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#F8FAFC;--tb:#E2E8F0;--tm:#94A3B8;--bo:rgba(0, 129, 242,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#10B981;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         html{scroll-behavior:smooth}
         body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-        #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#E8632B,#FF8A50);z-index:9999;transition:width .1s linear}
+        #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#0081f2,#38A8FF);z-index:9999;transition:width .1s linear}
         .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
         .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}
         .breadcrumb a:hover{color:var(--cy)}
@@ -127,7 +127,7 @@ export default function SKTBreach() {
         .skt-hero{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem;display:block !important;grid-template-columns:none !important;flex-direction:column !important}
         .skt-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem;clear:both}
         .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-        .badge-cy{background:rgba(232,99,43,.1);color:var(--cy);border:1px solid rgba(232,99,43,.3)}
+        .badge-cy{background:rgba(0, 129, 242,.1);color:var(--cy);border:1px solid rgba(0, 129, 242,.3)}
         .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
         .badge-red{background:rgba(255,77,109,.1);color:#ff4d6d;border:1px solid rgba(255,77,109,.25)}
         .skt-hero-h1{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,3rem);font-weight:800;color:var(--tx);line-height:1.2;max-width:780px;margin-bottom:1.1rem;letter-spacing:-1px;display:block;clear:both}
@@ -135,7 +135,7 @@ export default function SKTBreach() {
         .skt-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72;display:block;clear:both}
         /* Author card */
         .skt-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;clear:both;flex-wrap:wrap}
-        .skt-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(232,99,43,.3)}
+        .skt-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0081f2,#38A8FF);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(0, 129, 242,.3)}
         .skt-author-strip .author-info{flex:1;min-width:0}
         .skt-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
         .skt-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
@@ -155,19 +155,19 @@ export default function SKTBreach() {
         .art h2 em{color:var(--cy);font-style:italic}
         .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
         .art p strong{color:var(--tx);font-weight:600}
-        .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(232,99,43,.06),transparent);border-radius:0 12px 12px 0}
+        .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(0, 129, 242,.06),transparent);border-radius:0 12px 12px 0}
         .pull-quote p{font-size:1.05rem;font-style:italic;color:var(--tx)!important;margin-bottom:.5rem!important;line-height:1.65!important}
         .pull-quote cite{font-size:.77rem;color:var(--tm)}
-        .def-box{background:linear-gradient(135deg,rgba(232,99,43,.07),rgba(232,99,43,.02));border:1px solid rgba(232,99,43,.22);border-radius:14px;padding:1.6rem 2rem;margin:2rem 0}
+        .def-box{background:linear-gradient(135deg,rgba(0, 129, 242,.07),rgba(0, 129, 242,.02));border:1px solid rgba(0, 129, 242,.22);border-radius:14px;padding:1.6rem 2rem;margin:2rem 0}
         .def-lbl{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cy);margin-bottom:.6rem}
         .def-box p{font-size:.97rem;color:var(--tx)!important;margin-bottom:0!important;line-height:1.7}
         .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
         .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
-        .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#E8632B,#FF8A50)}
+        .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#0081f2,#38A8FF)}
         .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:800;color:var(--cy);line-height:1;margin-bottom:.4rem}
         .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
         .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
-        .co-info{background:rgba(232,99,43,.06);border:1px solid rgba(232,99,43,.2)}
+        .co-info{background:rgba(0, 129, 242,.06);border:1px solid rgba(0, 129, 242,.2)}
         .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
         .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
         .co-verdict{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
@@ -182,7 +182,7 @@ export default function SKTBreach() {
         .cmp-table th{background:var(--bgc);padding:.75rem 1rem;text-align:left;font-size:.76rem;font-weight:700;letter-spacing:.04em;color:var(--cy);border-bottom:1px solid var(--bo)}
         .cmp-table td{padding:.78rem 1rem;font-size:.84rem;color:var(--tb);border-bottom:1px solid var(--bs);vertical-align:top}
         .cmp-table tr:last-child td{border-bottom:none}
-        .cmp-table tr:hover td{background:rgba(232,99,43,.03)}
+        .cmp-table tr:hover td{background:rgba(0, 129, 242,.03)}
         .cost-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:.5rem}
         .cost-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.9rem 1.1rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;font-size:.88rem;color:var(--tb)}
         .cost-list li::before{content:'▸';color:var(--cy);flex-shrink:0;margin-top:1px;font-size:.8rem}
@@ -190,7 +190,7 @@ export default function SKTBreach() {
         .feat-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:.65rem}
         .feat-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;transition:border-color .2s}
         .feat-list li:hover{border-color:var(--bo)}
-        .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+        .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#0081f2,#38A8FF);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
         .f-body strong{display:block;color:var(--tx);font-size:.89rem;margin-bottom:3px}
         .f-body span{font-size:.83rem;color:var(--tm)}
         .mapping-table-wrap{overflow-x:auto;margin:2rem 0;border-radius:14px;border:1px solid var(--bo)}
@@ -198,7 +198,7 @@ export default function SKTBreach() {
         .map-table th{background:var(--bgc);padding:.85rem 1.1rem;text-align:left;font-size:.76rem;font-weight:700;letter-spacing:.04em;color:var(--cy);border-bottom:1px solid var(--bo)}
         .map-table td{padding:.82rem 1.1rem;font-size:.84rem;color:var(--tb);border-bottom:1px solid var(--bs);vertical-align:top}
         .map-table tr:last-child td{border-bottom:none}
-        .map-table tr:hover td{background:rgba(232,99,43,.03)}
+        .map-table tr:hover td{background:rgba(0, 129, 242,.03)}
         .faq-section{margin:3rem 0}
         .faq-item{border:1px solid var(--bs);border-radius:12px;margin-bottom:.65rem;overflow:hidden;transition:border-color .2s}
         .faq-item:hover{border-color:var(--bo)}
@@ -209,7 +209,7 @@ export default function SKTBreach() {
         .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
         .faq-item.open .faq-a{display:block}
         .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-        .cta-banner{background:linear-gradient(135deg,rgba(232,99,43,.08),rgba(232,99,43,.03));border:1px solid rgba(232,99,43,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+        .cta-banner{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.03));border:1px solid rgba(0, 129, 242,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
         .cta-banner h3{font-size:1.5rem;font-weight:800;color:var(--tx);margin-bottom:.7rem}
         .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
         .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -226,7 +226,7 @@ export default function SKTBreach() {
         .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
         .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
         .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-        .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(232,99,43,.07);border-left-color:var(--cy)}
+        .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(0, 129, 242,.07);border-left-color:var(--cy)}
         .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
         .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
         .rel-links a:last-child{border-bottom:none}
@@ -234,12 +234,12 @@ export default function SKTBreach() {
         .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
         .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
         .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
-        .sb-cta{background:linear-gradient(135deg,rgba(232,99,43,.08),rgba(232,99,43,.02));border:1px solid rgba(232,99,43,.22);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+        .sb-cta{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.02));border:1px solid rgba(0, 129, 242,.22);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
         .sb-cta h4{font-size:.98rem;font-weight:700;color:var(--tx);margin-bottom:.5rem}
         .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
         .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
         .sb-cta-btn:hover{background:var(--cy2)}
-        #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(232,99,43,.4);transition:transform .2s;z-index:50}
+        #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0, 129, 242,.4);transition:transform .2s;z-index:50}
         #btt.vis{display:flex}
         #btt:hover{transform:translateY(-3px)}
         @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
@@ -296,20 +296,20 @@ export default function SKTBreach() {
         <div className="img-wrap">
           <svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#0a0f1e 0%,#04060f 100%)'}}>
             <defs>
-              <linearGradient id="gOr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#E8632B"/><stop offset="100%" stopColor="#FF8A50"/></linearGradient>
+              <linearGradient id="gOr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#0081f2"/><stop offset="100%" stopColor="#38A8FF"/></linearGradient>
               <linearGradient id="gRd" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ff4d6d"/><stop offset="100%" stopColor="#cc2244"/></linearGradient>
               <linearGradient id="gGr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#10B981"/><stop offset="100%" stopColor="#059669"/></linearGradient>
-              <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(232,99,43,0.04)" strokeWidth="1"/></pattern>
+              <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(0, 129, 242,0.04)" strokeWidth="1"/></pattern>
             </defs>
             <rect width="960" height="420" fill="url(#grid)"/>
             {/* Title */}
-            <text x="480" y="38" textAnchor="middle" fill="rgba(232,99,43,0.9)" fontSize="13" fontWeight="700" fontFamily="sans-serif" letterSpacing="2">SK TELECOM BREACH, COMPLIANCE FAILURE TIMELINE</text>
+            <text x="480" y="38" textAnchor="middle" fill="rgba(0, 129, 242,0.9)" fontSize="13" fontWeight="700" fontFamily="sans-serif" letterSpacing="2">SK TELECOM BREACH, COMPLIANCE FAILURE TIMELINE</text>
             {/* Timeline line */}
-            <line x1="60" y1="110" x2="900" y2="110" stroke="rgba(232,99,43,0.2)" strokeWidth="1.5" strokeDasharray="6,4"/>
+            <line x1="60" y1="110" x2="900" y2="110" stroke="rgba(0, 129, 242,0.2)" strokeWidth="1.5" strokeDasharray="6,4"/>
             {/* Event 1 */}
-            <circle cx="140" cy="110" r="8" fill="#E8632B"/>
-            <rect x="80" y="128" width="120" height="62" rx="8" fill="#0d1626" stroke="rgba(232,99,43,0.25)" strokeWidth="1"/>
-            <text x="140" y="148" textAnchor="middle" fill="#E8632B" fontSize="9" fontWeight="700" fontFamily="sans-serif">APR 2025</text>
+            <circle cx="140" cy="110" r="8" fill="#0081f2"/>
+            <rect x="80" y="128" width="120" height="62" rx="8" fill="#0d1626" stroke="rgba(0, 129, 242,0.25)" strokeWidth="1"/>
+            <text x="140" y="148" textAnchor="middle" fill="#0081f2" fontSize="9" fontWeight="700" fontFamily="sans-serif">APR 2025</text>
             <text x="140" y="163" textAnchor="middle" fill="rgba(226,232,240,0.9)" fontSize="9" fontFamily="sans-serif">Malware detected</text>
             <text x="140" y="177" textAnchor="middle" fill="rgba(226,232,240,0.9)" fontSize="9" fontFamily="sans-serif">on USIM servers</text>
             {/* Event 2 */}
@@ -342,9 +342,9 @@ export default function SKTBreach() {
             <text x="160" y="263" textAnchor="middle" fill="#ff4d6d" fontSize="26" fontWeight="800" fontFamily="sans-serif">$97.2M</text>
             <text x="160" y="283" textAnchor="middle" fill="rgba(148,163,184,0.8)" fontSize="9" fontFamily="sans-serif">PIPC regulatory fine</text>
             <text x="160" y="298" textAnchor="middle" fill="rgba(148,163,184,0.5)" fontSize="8" fontFamily="sans-serif">Largest in South Korean history</text>
-            <rect x="280" y="230" width="200" height="90" rx="12" fill="#0d1626" stroke="rgba(232,99,43,0.3)" strokeWidth="1"/>
+            <rect x="280" y="230" width="200" height="90" rx="12" fill="#0d1626" stroke="rgba(0, 129, 242,0.3)" strokeWidth="1"/>
             <rect x="280" y="230" width="200" height="3" rx="1.5" fill="url(#gOr)"/>
-            <text x="380" y="263" textAnchor="middle" fill="#E8632B" fontSize="26" fontWeight="800" fontFamily="sans-serif">23M</text>
+            <text x="380" y="263" textAnchor="middle" fill="#0081f2" fontSize="26" fontWeight="800" fontFamily="sans-serif">23M</text>
             <text x="380" y="283" textAnchor="middle" fill="rgba(148,163,184,0.8)" fontSize="9" fontFamily="sans-serif">Subscribers affected</text>
             <text x="380" y="298" textAnchor="middle" fill="rgba(148,163,184,0.5)" fontSize="8" fontFamily="sans-serif">USIM auth keys exposed</text>
             <rect x="500" y="230" width="200" height="90" rx="12" fill="#0d1626" stroke="rgba(255,183,3,0.3)" strokeWidth="1"/>
@@ -434,7 +434,7 @@ export default function SKTBreach() {
 
             {/* IMAGE 2, Network segmentation diagram */}
             <div style={{margin:'2rem 0'}}>
-              <svg viewBox="0 0 780 200" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'#06101a',borderRadius:'14px',border:'1px solid rgba(232,99,43,0.15)'}}>
+              <svg viewBox="0 0 780 200" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'#06101a',borderRadius:'14px',border:'1px solid rgba(0, 129, 242,0.15)'}}>
                 <defs>
                   <marker id="ar2" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto"><polygon points="0 0,7 3.5,0 7" fill="rgba(255,77,109,0.6)"/></marker>
                   <marker id="ar3" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto"><polygon points="0 0,7 3.5,0 7" fill="rgba(16,185,129,0.6)"/></marker>

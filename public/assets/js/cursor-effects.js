@@ -180,7 +180,7 @@
           if (dist < 120) {
             var opacity = (1 - dist / 120) * 0.12;
             ctx.beginPath();
-            ctx.strokeStyle = 'rgba(232, 99, 43, ' + opacity + ')';
+            ctx.strokeStyle = 'rgba(0, 129, 242, ' + opacity + ')';
             ctx.lineWidth = 0.5;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
@@ -198,7 +198,7 @@
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(232, 99, 43, ' + p.alpha + ')';
+        ctx.fillStyle = 'rgba(0, 129, 242, ' + p.alpha + ')';
         ctx.fill();
       });
 
@@ -220,8 +220,8 @@
 
         // Glow at cursor position
         var gradient = ctx.createRadialGradient(relX, relY, 0, relX, relY, 150);
-        gradient.addColorStop(0, 'rgba(232, 99, 43, 0.08)');
-        gradient.addColorStop(1, 'rgba(232, 99, 43, 0)');
+        gradient.addColorStop(0, 'rgba(0, 129, 242, 0.08)');
+        gradient.addColorStop(1, 'rgba(0, 129, 242, 0)');
         ctx.beginPath();
         ctx.arc(relX, relY, 150, 0, Math.PI * 2);
         ctx.fillStyle = gradient;

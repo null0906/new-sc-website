@@ -38,10 +38,10 @@ function LeadModal({ onClose }) {
 
       {/* Modal */}
       <div style={{position:'fixed',top:'50%',left:'50%',transform:'translate(-50%,-50%)',zIndex:1001,width:'100%',maxWidth:'480px',padding:'0 16px'}}>
-        <div style={{background:'#0B1120',border:'1px solid rgba(232,99,43,0.3)',borderRadius:'20px',overflow:'hidden',boxShadow:'0 25px 60px rgba(0,0,0,0.6)'}}>
+        <div style={{background:'#0B1120',border:'1px solid rgba(0, 129, 242,0.3)',borderRadius:'20px',overflow:'hidden',boxShadow:'0 25px 60px rgba(0,0,0,0.6)'}}>
 
           {/* Header */}
-          <div style={{background:'linear-gradient(135deg,#E8632B,#d0521f)',padding:'24px 28px',position:'relative'}}>
+          <div style={{background:'linear-gradient(135deg,#0081f2,#d0521f)',padding:'24px 28px',position:'relative'}}>
             <button onClick={onClose} style={{position:'absolute',top:'14px',right:'16px',background:'rgba(255,255,255,0.15)',border:'none',color:'#fff',width:'28px',height:'28px',borderRadius:'50%',cursor:'pointer',fontSize:'14px',display:'flex',alignItems:'center',justifyContent:'center'}}>✕</button>
             <div style={{fontSize:'11px',fontWeight:700,letterSpacing:'2px',textTransform:'uppercase',color:'rgba(255,255,255,0.75)',marginBottom:'4px'}}>Free Download</div>
             <div style={{fontSize:'18px',fontWeight:700,color:'#fff'}}>ISO 27001 Implementation Guide</div>
@@ -58,7 +58,7 @@ function LeadModal({ onClose }) {
                 <a
                   href="/pdfs/SecComply_ISO_27001_Implementation.pdf"
                   download
-                  style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'#E8632B',color:'#fff',padding:'12px 28px',borderRadius:'10px',fontWeight:700,fontSize:'15px',textDecoration:'none'}}
+                  style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'#0081f2',color:'#fff',padding:'12px 28px',borderRadius:'10px',fontWeight:700,fontSize:'15px',textDecoration:'none'}}
                 >
                   ⬇️ Download PDF Now
                 </a>
@@ -73,7 +73,7 @@ function LeadModal({ onClose }) {
                 ].map(({ label, name, type, placeholder }) => (
                   <div key={name} style={{marginBottom:'14px'}}>
                     <label style={{display:'block',fontSize:'12px',fontWeight:600,color:'#c8d6e5',marginBottom:'5px'}}>
-                      {label} <span style={{color:'#E8632B'}}>*</span>
+                      {label} <span style={{color:'#0081f2'}}>*</span>
                     </label>
                     <input
                       type={type}
@@ -83,7 +83,7 @@ function LeadModal({ onClose }) {
                       onChange={handleChange}
                       required
                       style={{width:'100%',background:'#0F172A',border:'1.5px solid rgba(255,255,255,0.08)',borderRadius:'8px',padding:'10px 14px',fontSize:'14px',color:'#fff',fontFamily:'inherit',outline:'none',transition:'border-color .2s'}}
-                      onFocus={e => e.target.style.borderColor='#E8632B'}
+                      onFocus={e => e.target.style.borderColor='#0081f2'}
                       onBlur={e => e.target.style.borderColor='rgba(255,255,255,0.08)'}
                     />
                   </div>
@@ -98,7 +98,7 @@ function LeadModal({ onClose }) {
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  style={{width:'100%',background:'linear-gradient(135deg,#E8632B,#d0521f)',color:'#fff',border:'none',borderRadius:'10px',padding:'13px',fontSize:'15px',fontWeight:700,cursor:'pointer',fontFamily:'inherit',marginTop:'4px',display:'flex',alignItems:'center',justifyContent:'center',gap:'8px',opacity:status==='submitting'?0.7:1}}
+                  style={{width:'100%',background:'linear-gradient(135deg,#0081f2,#d0521f)',color:'#fff',border:'none',borderRadius:'10px',padding:'13px',fontSize:'15px',fontWeight:700,cursor:'pointer',fontFamily:'inherit',marginTop:'4px',display:'flex',alignItems:'center',justifyContent:'center',gap:'8px',opacity:status==='submitting'?0.7:1}}
                 >
                   {status === 'submitting' ? (
                     <><span style={{display:'inline-block',width:'16px',height:'16px',border:'2px solid rgba(255,255,255,0.4)',borderTopColor:'#fff',borderRadius:'50%',animation:'spin .7s linear infinite'}}/> Processing…</>
@@ -146,8 +146,8 @@ export default function ISO27001Guide() {
 
         {/* Download Banner */}
         <div style={{
-          background: 'rgba(232,99,43,0.08)',
-          border: '1px solid rgba(232,99,43,0.25)',
+          background: 'rgba(0, 129, 242,0.08)',
+          border: '1px solid rgba(0, 129, 242,0.25)',
           borderRadius: '12px',
           padding: '20px 24px',
           marginBottom: '32px',
@@ -168,7 +168,7 @@ export default function ISO27001Guide() {
               alignItems: 'center',
               gap: '8px',
               padding: '10px 22px',
-              background: '#e8632b',
+              background: '#0081f2',
               color: '#fff',
               fontWeight: 600,
               fontSize: '0.88rem',
@@ -245,10 +245,10 @@ export default function ISO27001Guide() {
           <div style={{ overflowX: 'auto', margin: '24px 0' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>
               <thead>
-                <tr style={{ background: 'rgba(232,99,43,0.15)' }}>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#e8632b', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Phase</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#e8632b', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>What Has to Be Done</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#e8632b', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Timeline</th>
+                <tr style={{ background: 'rgba(0, 129, 242,0.15)' }}>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Phase</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>What Has to Be Done</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Timeline</th>
                 </tr>
               </thead>
               <tbody>
@@ -261,7 +261,7 @@ export default function ISO27001Guide() {
                   <tr key={i} style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
                     <td style={{ padding: '12px 16px', fontWeight: 700, color: '#fff' }}>{row.phase}</td>
                     <td style={{ padding: '12px 16px' }}>{row.tasks}</td>
-                    <td style={{ padding: '12px 16px', whiteSpace: 'nowrap', color: '#e8632b', fontWeight: 600 }}>{row.time}</td>
+                    <td style={{ padding: '12px 16px', whiteSpace: 'nowrap', color: '#0081f2', fontWeight: 600 }}>{row.time}</td>
                   </tr>
                 ))}
               </tbody>
@@ -348,7 +348,7 @@ export default function ISO27001Guide() {
             <button
               onClick={() => setShowModal(true)}
               className="article-cta-btn"
-              style={{ background: '#E8632B', color: '#fff', border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}
+              style={{ background: '#0081f2', color: '#fff', border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}
             >
               ⬇ Download PDF Guide
             </button>

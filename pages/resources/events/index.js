@@ -37,9 +37,9 @@ export default function EventsIndex() {
         :root {
           --bg: #020617;
           --surface: #0a1628;
-          --accent: #E8632B;
-          --accent-soft: rgba(232, 99, 43, 0.15);
-          --accent-border: rgba(232, 99, 43, 0.3);
+          --accent: #0081f2;
+          --accent-soft: rgba(0, 129, 242, 0.15);
+          --accent-border: rgba(0, 129, 242, 0.3);
           --text-primary: #f8fafc;
           --text-body: #c8d6e5;
           --text-muted: #94a3b8;
@@ -125,9 +125,9 @@ export default function EventsIndex() {
           background: rgba(255,255,255,0.03);
         }
         .events-tab.active {
-          background: rgba(232,99,43,0.08);
+          background: rgba(0, 129, 242,0.08);
           border-color: var(--accent-border);
-          box-shadow: 0 0 0 1px var(--accent-border), 0 8px 24px rgba(232,99,43,0.12);
+          box-shadow: 0 0 0 1px var(--accent-border), 0 8px 24px rgba(0, 129, 242,0.12);
         }
         .events-tab-title {
           display: block;
@@ -147,7 +147,7 @@ export default function EventsIndex() {
           font-weight: 500;
         }
         .events-tab.active .events-tab-meta {
-          color: rgba(232,99,43,0.75);
+          color: rgba(0, 129, 242,0.75);
         }
         .pulse-dot-tab {
           display: inline-block;
@@ -236,7 +236,7 @@ export default function EventsIndex() {
           backdrop-filter: blur(8px);
           background: var(--accent);
           color: white;
-          box-shadow: 0 4px 16px rgba(232,99,43,0.4);
+          box-shadow: 0 4px 16px rgba(0, 129, 242,0.4);
         }
         .past-event-corner-badge.b-attended {
           background: var(--bl);
@@ -336,7 +336,7 @@ export default function EventsIndex() {
           position: absolute;
           inset: 0;
           background:
-            radial-gradient(circle at 30% 20%, rgba(232,99,43,0.15), transparent 50%),
+            radial-gradient(circle at 30% 20%, rgba(0, 129, 242,0.15), transparent 50%),
             radial-gradient(circle at 70% 80%, rgba(129,140,248,0.12), transparent 55%);
         }
         .upcoming-mark {
@@ -352,7 +352,7 @@ export default function EventsIndex() {
           line-height: 1;
           letter-spacing: -0.04em;
           margin-bottom: -.25rem;
-          text-shadow: 0 4px 30px rgba(232,99,43,0.4);
+          text-shadow: 0 4px 30px rgba(0, 129, 242,0.4);
         }
         .upcoming-mark .um-month {
           font-size: 1.2rem;
@@ -396,7 +396,7 @@ export default function EventsIndex() {
           backdrop-filter: blur(8px);
           background: var(--accent);
           color: white;
-          box-shadow: 0 4px 16px rgba(232,99,43,0.4);
+          box-shadow: 0 4px 16px rgba(0, 129, 242,0.4);
         }
         .panel-corner-badge.upcoming-badge {
           background: var(--cy);
@@ -475,7 +475,7 @@ export default function EventsIndex() {
         .panel-cta:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(232,99,43,0.3);
+          box-shadow: 0 8px 24px rgba(0, 129, 242,0.3);
         }
 
         /* Coming-soon panel */
@@ -496,7 +496,7 @@ export default function EventsIndex() {
           position: absolute;
           inset: 0;
           background: radial-gradient(circle at 30% 30%, rgba(129,140,248,0.07), transparent 55%),
-                      radial-gradient(circle at 70% 70%, rgba(232,99,43,0.04), transparent 55%);
+                      radial-gradient(circle at 70% 70%, rgba(0, 129, 242,0.04), transparent 55%);
           pointer-events: none;
         }
         .cs-icon {
@@ -522,7 +522,7 @@ export default function EventsIndex() {
           border: 1px solid rgba(129,140,248,0.35);
         }
         .cs-tag.orange {
-          background: rgba(232,99,43,0.12);
+          background: rgba(0, 129, 242,0.12);
           color: var(--accent);
           border: 1px solid var(--accent-border);
         }
@@ -596,7 +596,7 @@ export default function EventsIndex() {
         }
 
         .cta-events-banner {
-          background: linear-gradient(135deg, rgba(232,99,43,0.12) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgba(0, 129, 242,0.12) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2.75rem;
@@ -631,7 +631,7 @@ export default function EventsIndex() {
         .btn-primary:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(232,99,43,0.3);
+          box-shadow: 0 8px 24px rgba(0, 129, 242,0.3);
         }
         .btn-secondary {
           display: inline-flex;

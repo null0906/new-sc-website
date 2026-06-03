@@ -22,7 +22,7 @@ export default function GRCAutomation() {
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
       if (st) st.href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + ttl + '&via=seccomply';
       window.copyLink = function () { const raw = 'https://seccomply.net/resources/blog/grc-automation'; (navigator.clipboard ? navigator.clipboard.writeText(raw) : Promise.reject()).catch(() => { const ta = Object.assign(document.createElement('textarea'), { value: raw, style: 'position:fixed;opacity:0' }); document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }); toast('Link copied!'); };
-      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#E8632B;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(232,99,43,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
+      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#0081f2;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(0, 129, 242,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
       const fadeEls = document.querySelectorAll('.anim'); if (fadeEls.length && 'IntersectionObserver' in window) { const fo = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; fo.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }); fadeEls.forEach(el => { el.style.animationPlayState = 'paused'; fo.observe(el); }); }
       window.toggleFaq = function (q) { const item = q.closest('.faq-item'); const wasOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!wasOpen) item.classList.add('open'); };
       const first = document.querySelector('.faq-item'); if (first) first.classList.add('open');
@@ -67,16 +67,16 @@ export default function GRCAutomation() {
       </Head>
 
       <style jsx global>{`
-    :root{--cy:#E8632B;--cy2:#d0521f;--glow:rgba(232,99,43,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(232,99,43,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif}
+    :root{--cy:#0081f2;--cy2:#d0521f;--glow:rgba(0, 129, 242,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(0, 129, 242,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#E8632B,#FF8A50);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#0081f2,#38A8FF);z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
     .cspm-hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem;display:block!important}
     .cspm-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-    .badge-cy{background:rgba(232,99,43,.1);color:var(--cy);border:1px solid rgba(232,99,43,.25)}
+    .badge-cy{background:rgba(0, 129, 242,.1);color:var(--cy);border:1px solid rgba(0, 129, 242,.25)}
     .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
     .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
     .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
@@ -84,7 +84,7 @@ export default function GRCAutomation() {
     .cspm-hero-h1 em{font-style:italic;color:var(--cy)}
     .cspm-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     .cspm-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(232,99,43,.3)}
+    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0081f2,#38A8FF);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(0, 129, 242,.3)}
     .cspm-author-strip .author-info{flex:1;min-width:0}
     .cspm-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .cspm-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
@@ -104,18 +104,18 @@ export default function GRCAutomation() {
     .art h2 em{color:var(--cy);font-style:italic}
     .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
     .art p strong{color:var(--tx);font-weight:600}
-    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(232,99,43,.06),transparent);border-radius:0 12px 12px 0}
+    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(0, 129, 242,.06),transparent);border-radius:0 12px 12px 0}
     .pull-quote p{font-family:var(--serif);font-size:1.12rem;font-style:italic;color:var(--tx)!important;margin-bottom:.5rem!important;line-height:1.6!important}
     .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
     .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
-    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#E8632B,#FF8A50)}
+    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#0081f2,#38A8FF)}
     .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:var(--cy);line-height:1;margin-bottom:.4rem}
     .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
     .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
     .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
     .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
-    .co-key{background:rgba(232,99,43,.06);border:1px solid rgba(232,99,43,.2)}
+    .co-key{background:rgba(0, 129, 242,.06);border:1px solid rgba(0, 129, 242,.2)}
     .co-sc{background:rgba(6,214,160,.05);border:1px solid rgba(6,214,160,.2)}
     .co-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
     .co-body p{margin-bottom:0!important;font-size:.89rem!important}
@@ -123,7 +123,7 @@ export default function GRCAutomation() {
     .feat-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:.65rem}
     .feat-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;transition:border-color .2s,background .2s}
     .feat-list li:hover{border-color:var(--bo);background:var(--bgc)}
-    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#E8632B,#FF8A50);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#0081f2,#38A8FF);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
     .f-body strong{display:block;color:var(--tx);font-size:.89rem;margin-bottom:3px}
     .f-body span{font-size:.83rem;color:var(--tm)}
     .before-after{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2rem 0}
@@ -144,14 +144,14 @@ export default function GRCAutomation() {
     .plat-card p{font-size:.8rem;color:var(--tm);margin:0;line-height:1.55}
     .plat-tag{font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.12rem .5rem;border-radius:4px;display:inline-block;margin-bottom:.4rem}
     .pt-global{background:rgba(99,102,241,.12);color:#818cf8}
-    .pt-india{background:rgba(232,99,43,.12);color:#E8632B}
+    .pt-india{background:rgba(0, 129, 242,.12);color:#0081f2}
     .pt-open{background:rgba(6,214,160,.12);color:#06d6a0}
     .cmp-wrap{overflow-x:auto;margin:2rem 0;border-radius:14px;border:1px solid var(--bo)}
     .cmp-table{width:100%;border-collapse:collapse}
     .cmp-table th{background:var(--bgc);padding:.85rem 1.1rem;text-align:left;font-size:.77rem;font-weight:600;letter-spacing:.04em;color:var(--cy);border-bottom:1px solid var(--bo)}
     .cmp-table td{padding:.82rem 1.1rem;font-size:.85rem;color:var(--tb);border-bottom:1px solid var(--bs);vertical-align:top}
     .cmp-table tr:last-child td{border-bottom:none}
-    .cmp-table tr:hover td{background:rgba(232,99,43,.03)}
+    .cmp-table tr:hover td{background:rgba(0, 129, 242,.03)}
     .cmp-table td:first-child{color:var(--tx);font-weight:600}
     .faq-section{margin:3rem 0}
     .faq-item{border:1px solid var(--bs);border-radius:12px;margin-bottom:.65rem;overflow:hidden;transition:border-color .2s}
@@ -163,7 +163,7 @@ export default function GRCAutomation() {
     .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-    .cta-banner{background:linear-gradient(135deg,rgba(232,99,43,.08),rgba(232,99,43,.03));border:1px solid rgba(232,99,43,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.03));border:1px solid rgba(0, 129, 242,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-family:var(--serif);font-size:1.5rem;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -180,19 +180,19 @@ export default function GRCAutomation() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(232,99,43,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(0, 129, 242,.07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}.rel-links a:hover{color:var(--cy)}
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
-    .sb-cta{background:linear-gradient(135deg,rgba(232,99,43,.08),rgba(232,99,43,.03));border:1px solid rgba(232,99,43,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.03));border:1px solid rgba(0, 129, 242,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-family:var(--serif);font-size:.98rem;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
     .sb-cta-btn:hover{background:var(--cy2)}
-    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(232,99,43,.4);transition:transform .2s;z-index:50}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0, 129, 242,.4);transition:transform .2s;z-index:50}
     #btt.vis{display:flex}#btt:hover{transform:translateY(-3px)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
     .anim{animation:fadeUp .55s ease both}
@@ -242,9 +242,9 @@ export default function GRCAutomation() {
         <div className="img-wrap">
           <svg viewBox="0 0 960 380" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
             <defs>
-              <linearGradient id="gg1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#E8632B"/><stop offset="100%" stopColor="#FF8A50"/></linearGradient>
+              <linearGradient id="gg1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#0081f2"/><stop offset="100%" stopColor="#38A8FF"/></linearGradient>
               <linearGradient id="gg2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#06d6a0"/><stop offset="100%" stopColor="#04b080"/></linearGradient>
-              <pattern id="gpat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(232,99,43,0.04)"/></pattern>
+              <pattern id="gpat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(0, 129, 242,0.04)"/></pattern>
             </defs>
             <rect width="960" height="380" fill="url(#gpat)"/>
             <text x="480" y="30" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">GRC Automation - Compliance Programme at a Glance</text>
@@ -269,7 +269,7 @@ export default function GRCAutomation() {
               </g>
             ))}
 
-            <line x1="340" y1="42" x2="340" y2="372" stroke="rgba(232,99,43,0.07)" strokeWidth="1"/>
+            <line x1="340" y1="42" x2="340" y2="372" stroke="rgba(0, 129, 242,0.07)" strokeWidth="1"/>
 
             {/* CENTRE: Control coverage */}
             <text x="530" y="54" textAnchor="middle" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">FRAMEWORK COVERAGE - SINGLE CONTROL SET</text>
@@ -277,8 +277,8 @@ export default function GRCAutomation() {
               {fw:'ISO 27001',  pct:88, total:'114 controls', col:'#06d6a0'},
               {fw:'SOC 2',      pct:82, total:'64 criteria',  col:'#818cf8'},
               {fw:'PCI DSS',    pct:74, total:'251 req',      col:'#ffb703'},
-              {fw:'HIPAA',      pct:79, total:'54 safeguards',col:'#E8632B'},
-              {fw:'DPDP Act',   pct:71, total:'8 obligations',col:'#E8632B'},
+              {fw:'HIPAA',      pct:79, total:'54 safeguards',col:'#0081f2'},
+              {fw:'DPDP Act',   pct:71, total:'8 obligations',col:'#0081f2'},
               {fw:'NIST CSF',   pct:85, total:'108 outcomes', col:'#06d6a0'},
             ].map(({fw,pct,total,col},i)=>(
               <g key={i}>
@@ -291,12 +291,12 @@ export default function GRCAutomation() {
               </g>
             ))}
 
-            <line x1="740" y1="42" x2="740" y2="372" stroke="rgba(232,99,43,0.07)" strokeWidth="1"/>
+            <line x1="740" y1="42" x2="740" y2="372" stroke="rgba(0, 129, 242,0.07)" strokeWidth="1"/>
 
             {/* RIGHT: Time savings */}
             <text x="758" y="54" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">TIME SAVED PER AUDIT CYCLE</text>
             {[
-              {label:'Evidence collection', saved:'6 weeks', col:'#E8632B'},
+              {label:'Evidence collection', saved:'6 weeks', col:'#0081f2'},
               {label:'Control mapping',     saved:'3 weeks', col:'#ffb703'},
               {label:'Report generation',   saved:'1 week',  col:'#06d6a0'},
               {label:'Vendor evidence',     saved:'2 weeks', col:'#818cf8'},
@@ -328,7 +328,7 @@ export default function GRCAutomation() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(232,99,43,0.3)',paddingLeft:'1.2rem'}}>Compliance used to be a point-in-time exercise: gather evidence before the audit, produce the documentation, pass the audit, and repeat annually. That model made sense when auditors visited once a year and checked a set of controls that changed slowly. It does not make sense for organisations running on cloud infrastructure where configurations change daily, where multiple compliance frameworks are required simultaneously, and where customers increasingly expect continuous security assurance rather than an annual certificate. GRC automation is the technology layer that makes continuous compliance operationally feasible - and understanding exactly what it does and does not do is the difference between a well-configured compliance programme and an expensive dashboard that creates false confidence.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(0, 129, 242,0.3)',paddingLeft:'1.2rem'}}>Compliance used to be a point-in-time exercise: gather evidence before the audit, produce the documentation, pass the audit, and repeat annually. That model made sense when auditors visited once a year and checked a set of controls that changed slowly. It does not make sense for organisations running on cloud infrastructure where configurations change daily, where multiple compliance frameworks are required simultaneously, and where customers increasingly expect continuous security assurance rather than an annual certificate. GRC automation is the technology layer that makes continuous compliance operationally feasible - and understanding exactly what it does and does not do is the difference between a well-configured compliance programme and an expensive dashboard that creates false confidence.</p>
 
           <div className="stats-row anim">
             <div className="stat-card"><div className="stat-n" data-target="73" data-suffix="%">0%</div><div className="stat-l">of compliance teams report that manual evidence collection is their biggest operational burden<br/><span style={{fontSize:'.68rem',opacity:.55}}>Gartner, 2024</span></div></div>

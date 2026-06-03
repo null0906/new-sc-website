@@ -20,7 +20,7 @@ export default function CookiePolicy() {
       </Head>
 
       <style jsx global>{`
-        :root{--cy:#E8632B;--cy2:#d0521f;--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(232,99,43,.2);--bs:rgba(255,255,255,.06);--gr:#06d6a0;--am:#ffb703;--sans:'Inter',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif}
+        :root{--cy:#0081f2;--cy2:#d0521f;--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(0, 129, 242,.2);--bs:rgba(255,255,255,.06);--gr:#06d6a0;--am:#ffb703;--sans:'Inter',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif}
         body{background:var(--bg);color:var(--tb);font-family:var(--sans);line-height:1.7;margin:0;-webkit-font-smoothing:antialiased}
         .cp-wrap{max-width:880px;margin:0 auto;padding:3.5rem 2rem 5rem}
         .cp-eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cy);margin-bottom:1.2rem;display:block}
@@ -31,19 +31,19 @@ export default function CookiePolicy() {
         .cp-meta-cell:last-child{border-right:none}
         .cp-meta-label{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:4px}
         .cp-meta-val{font-size:.92rem;color:var(--tx);font-weight:600}
-        .cp-callout{background:linear-gradient(135deg,rgba(232,99,43,.08),rgba(232,99,43,.03));border:1px solid rgba(232,99,43,.25);border-left:4px solid var(--cy);border-radius:14px;padding:1.4rem 1.6rem;margin:0 0 3rem}
+        .cp-callout{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.03));border:1px solid rgba(0, 129, 242,.25);border-left:4px solid var(--cy);border-radius:14px;padding:1.4rem 1.6rem;margin:0 0 3rem}
         .cp-callout-label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:6px}
         .cp-callout-body{font-size:.95rem;color:var(--tb);line-height:1.65;margin:0}
         .cp-callout-body strong{color:var(--tx)}
-        .cp-callout-body a{color:var(--cy);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(232,99,43,.3)}
+        .cp-callout-body a{color:var(--cy);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(0, 129, 242,.3)}
         .cp-callout-body a:hover{border-bottom-color:var(--cy)}
         .cp-h2{font-size:1.5rem;font-weight:700;color:var(--tx);margin:2.6rem 0 1rem;letter-spacing:-.005em}
         .cp-p{font-size:1rem;line-height:1.8;color:var(--tb);margin:0 0 1.1rem}
         .cp-p strong{color:var(--tx);font-weight:600}
-        .cp-p a{color:var(--cy);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(232,99,43,.3);transition:border-color .15s}
+        .cp-p a{color:var(--cy);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(0, 129, 242,.3);transition:border-color .15s}
         .cp-p a:hover{border-bottom-color:var(--cy)}
         .cp-cat{margin:2rem 0 0;border:1px solid var(--bs);border-radius:14px;overflow:hidden;background:var(--bgc2)}
-        .cp-cat-banner{padding:1rem 1.4rem;border-bottom:1px solid var(--bs);background:rgba(232,99,43,.06)}
+        .cp-cat-banner{padding:1rem 1.4rem;border-bottom:1px solid var(--bs);background:rgba(0, 129, 242,.06)}
         .cp-cat-banner.muted{background:rgba(148,163,184,.06)}
         .cp-cat-label{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cy);margin-bottom:4px}
         .cp-cat-banner.muted .cp-cat-label{color:var(--tm)}
@@ -59,7 +59,7 @@ export default function CookiePolicy() {
         .cp-list li:last-child{border-bottom:none}
         .cp-list li::before{content:'';position:absolute;left:0;top:14px;width:6px;height:6px;border-radius:2px;background:var(--cy);opacity:.7}
         .cp-list li strong{color:var(--tx)}
-        .cp-list li a{color:var(--cy);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(232,99,43,.3)}
+        .cp-list li a{color:var(--cy);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(0, 129, 242,.3)}
         .cp-list li a:hover{border-bottom-color:var(--cy)}
         @media(max-width:640px){
           .cp-wrap{padding:2.4rem 1.2rem 3rem}
