@@ -775,6 +775,7 @@ export default function ServiceAiAgentsPage() {
       <p>A 30-minute call with a SecComply engineer &mdash; not a salesperson. We&rsquo;ll assess whether your workflow is a strong candidate, sketch the architecture, and hand you a one-page proposal with a build timeline and ROI estimate. No commitment, no lock-in.</p>
       <div class="cta-buttons">
         <a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book Your Scoping Call <span class="btn-icon">&rarr;</span></a>
+        <a href="/pricing" class="btn btn-outline btn-lg">See Pricing <span class="btn-icon">&rarr;</span></a>
       </div>
       <p style="margin-top:16px;font-size:0.85rem;color:var(--text-muted)">Or email us at <a href="mailto:hello@seccomply.net" style="color:var(--text-secondary);text-decoration:underline;text-underline-offset:2px">hello@seccomply.net</a></p>
     </div>

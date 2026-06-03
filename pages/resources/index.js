@@ -13,13 +13,13 @@ const categories = [
     count: '3 Guides'
   },
   {
-    tag: 'CASE STUDY',
-    icon: '🏆',
-    title: 'Case Studies',
-    desc: 'Real client success stories showing transformations from zero compliance to certified and audit-ready status.',
-    href: '/resources/case-studies',
-    cta: 'Read Stories',
-    count: '3 Stories'
+    tag: 'ASSESSMENT',
+    icon: '🎯',
+    title: 'Assessments',
+    desc: 'Free DPDP compliance tools — a 30-second URL scanner and a 5-minute 10-question assessment. Find your gaps before the regulator does.',
+    href: '/resources/assessments',
+    cta: 'Run Assessment',
+    count: '2 Tools'
   },
   {
     tag: 'BLOG',
@@ -64,7 +64,7 @@ export default function Resources() {
     <Layout>
       <Head>
         <title>Resources - SecComply</title>
-        <meta name="description" content="Compliance guides, case studies, tools, webinars and more from SecComply." />
+        <meta name="description" content="Compliance guides, DPDP assessments, tools, webinars and more from SecComply." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

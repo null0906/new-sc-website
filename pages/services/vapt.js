@@ -70,7 +70,7 @@ export default function ServiceVaptPage() {
     <div class="cta-content reveal">
       <h2>Ready to Get Started with <span class="accent">Vulnerability Assessment & Penetration Testing?</span></h2>
       <p>Book a free 15-minute consultation to discuss your needs and get a customized roadmap.</p>
-      <div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book Free Consultation &rarr;</a><a href="/contact" class="btn btn-outline btn-lg">Contact Us</a></div>
+      <div class="cta-buttons"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book Free Consultation &rarr;</a><a href="/pricing" class="btn btn-outline btn-lg">See Pricing &rarr;</a><a href="/contact" class="btn btn-outline btn-lg">Contact Us</a></div>
     </div>
   </div>
 </section>
