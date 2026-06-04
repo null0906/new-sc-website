@@ -704,6 +704,60 @@ export default function EventsIndex() {
           <div className="events-panel" key="past" role="tabpanel">
             <div className="past-events-grid">
 
+              {/* Mumbai Tech Week 2026 */}
+              <Link href="/resources/events/mumbai-tech-week-26" className="past-event-card">
+                <div className="past-event-media">
+                  <span className="past-event-corner-badge b-attended">⭐ Attended</span>
+                  <img src="/event-images/mumbai-tech-week-26/05.jpg" alt="SecComply at Mumbai Tech Week 2026, Jio World Convention Centre" />
+                </div>
+                <div className="past-event-body">
+                  <div className="past-event-date">📅 29–30 May 2026</div>
+                  <h3>Mumbai Tech Week 2026</h3>
+                  <p>India&apos;s largest technology festival — 2nd edition. Two days of &quot;AI in Action&quot; at the Jio World Centre, and the trust-and-security questions behind AI at scale.</p>
+                  <div className="past-event-meta-row">
+                    <span className="past-event-meta-pill">📍 Mumbai</span>
+                    <span className="past-event-meta-pill">🏢 Jio World Convention Centre</span>
+                  </div>
+                  <span className="past-event-cta">Read the Recap →</span>
+                </div>
+              </Link>
+
+              {/* DSCI FinSec Conclave 2026 */}
+              <Link href="/resources/events/finsec-conclave-26" className="past-event-card">
+                <div className="past-event-media">
+                  <span className="past-event-corner-badge b-attended">⭐ Attended</span>
+                  <img src="/event-images/finsec-conclave-26/01.jpg" alt="SecComply at the DSCI FinSec Conclave 2026, The Westin Powai Lake, Mumbai" />
+                </div>
+                <div className="past-event-body">
+                  <div className="past-event-date">📅 28–29 May 2026</div>
+                  <h3>DSCI FinSec Conclave 2026</h3>
+                  <p>India&apos;s premier financial-sector security conclave by DSCI — 8th edition. Privacy operationalisation, third-party risk, fraud defence, and AI security across BFSI.</p>
+                  <div className="past-event-meta-row">
+                    <span className="past-event-meta-pill">📍 Mumbai</span>
+                    <span className="past-event-meta-pill">🏢 The Westin, Powai Lake</span>
+                  </div>
+                  <span className="past-event-cta">Read the Recap →</span>
+                </div>
+              </Link>
+
+              {/* DxFS 2026 — Hyderabad */}
+              <Link href="/resources/events/dxfs-hyderabad-26" className="past-event-card">
+                <div className="past-event-media">
+                  <span className="past-event-corner-badge b-attended">⭐ Attended</span>
+                  <img src="/event-images/dxfs-hyderabad-26/01.jpg" alt="SecComply at ICAI DxFS 2026, Novotel Hyderabad Convention Centre" />
+                </div>
+                <div className="past-event-body">
+                  <div className="past-event-date">📅 22–23 May 2026</div>
+                  <h3>DxFS 2026 — Hyderabad</h3>
+                  <p>ICAI&apos;s Digital Transformation Finance Summit — 2nd edition. Where the assurance profession meets cybersecurity, data protection, forensic accounting, and digital assurance.</p>
+                  <div className="past-event-meta-row">
+                    <span className="past-event-meta-pill">📍 Hyderabad</span>
+                    <span className="past-event-meta-pill">🏢 Novotel HICC</span>
+                  </div>
+                  <span className="past-event-cta">Read the Recap →</span>
+                </div>
+              </Link>
+
               {/* CIO AXIS CISO & Cyber Pioneers 2026 — most recent past event */}
               <Link href="/resources/events/ciso-cyber-pioneers-26" className="past-event-card">
                 <div className="past-event-media">
