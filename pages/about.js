@@ -99,6 +99,17 @@ export default function AboutPage() {
         <p class="team-bio">Cybersecurity and AI expert with leadership roles at BYJU'S, Myntra, and PropertyGuru. Co-Founder of TradeOn.Ai and PXLSense.Ai, building next-gen solutions at the intersection of AI, finance, and security.</p>
         <a href="https://www.linkedin.com/in/shyamv89/" class="team-linkedin" target="_blank">Connect on LinkedIn &rarr;</a>
       </div>
+      <!-- Pratap Shahane -->
+      <div class="team-card reveal delay-2">
+        <div class="team-avatar-glow">
+          <img src="/assets/images/pratap-shahane.png" alt="Pratap Shahane" loading="lazy">
+        </div>
+        <h3>Pratap Shahane</h3>
+        <div class="team-role">Advisory Board</div>
+        <div class="team-exp">Ex-Mphasis, Ex-Accenture &bull; CISO &amp; Information Security Leader</div>
+        <p class="team-bio">A veteran CISO and information security leader with deep expertise across governance, risk, and compliance. Pratap has built and led enterprise security and SoX/ITGC programs at firms including Mphasis, Accenture, and 3i Infotech, and advises organizations on ISO 27001, SOC 2, PCI DSS, and incident response.</p>
+        <a href="https://www.linkedin.com/in/pratap-shahane-5a1bb29/" class="team-linkedin" target="_blank">Connect on LinkedIn &rarr;</a>
+      </div>
     </div>
   </div>
 </section>

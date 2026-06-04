@@ -1,0 +1,13 @@
+
+> seccomply-website@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1962ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1736ms (344 modules)
+ GET / 200 in 1959ms
