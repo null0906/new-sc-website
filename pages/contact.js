@@ -24,6 +24,12 @@ export default function ContactPage() {
       <div class="hero-badge"><span class="hero-badge-dot"></span> Get In Touch</div>
       <h1>Connect With <span class="accent">Our</span> <span class="green">Leadership</span></h1>
       <p class="hero-sub">Have questions about compliance? Let's discuss how SecComply can help your organization.</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px">
+        <span style="padding:7px 18px;background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.85);border-radius:9999px;font-size:12px;font-weight:600;color:#fff">&#10003; Ex-PwC Led Team</span>
+        <span style="padding:7px 18px;background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.85);border-radius:9999px;font-size:12px;font-weight:600;color:#fff">&#10003; ISO 27001 Lead Auditors</span>
+        <span style="padding:7px 18px;background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.85);border-radius:9999px;font-size:12px;font-weight:600;color:#fff">&#10003; 100% First-Attempt Pass Rate</span>
+        <span style="padding:7px 18px;background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.85);border-radius:9999px;font-size:12px;font-weight:600;color:#fff">&#10003; Global Delivery</span>
+      </div>
     </div>
   </div>
 </section>
