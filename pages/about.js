@@ -77,6 +77,18 @@ export default function AboutPage() {
         <a href="https://www.linkedin.com/in/shivani-tikadia-nadkarni/" class="team-linkedin" target="_blank">Connect on LinkedIn &rarr;</a>
       </div>
 
+      <!-- Runal Bawaskar -->
+      <div class="team-card reveal delay-2">
+        <div class="team-avatar-glow">
+          <img src="/assets/images/Runal.jpeg" alt="Runal Bawaskar" loading="lazy">
+        </div>
+        <h3>Runal Bawaskar</h3>
+        <div class="team-role">Co-Founder</div>
+        <div class="team-exp">Co-Founder, SecComply</div>
+        <p class="team-bio">As Co-Founder, Runal helps shape SecComply's vision and growth, partnering with clients to make enterprise-grade security and compliance accessible, practical, and scalable for businesses at every stage.</p>
+        <a href="https://www.linkedin.com/in/runalbawaskar/" class="team-linkedin" target="_blank">Connect on LinkedIn &rarr;</a>
+      </div>
+
       <!-- Vandana Pawar -->
       <div class="team-card reveal delay-3">
         <div class="team-avatar-glow">
