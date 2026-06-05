@@ -12,10 +12,10 @@
   --text-primary: #E2E8F0;
   --text-secondary: #94A3B8;
   --text-muted: #64748B;
-  --accent: #0081f2;
-  --accent-light: #38A8FF;
-  --accent-dark: #0066C4;
-  --gradient-accent: linear-gradient(135deg, #0081f2, #38A8FF);
+  --accent: #FF6000;
+  --accent-light: #FF8A3D;
+  --accent-dark: #CC4D00;
+  --gradient-accent: linear-gradient(135deg, #FF6000, #FF8A3D);
   --green: #10B981;
   --green-dim: rgba(16,185,129,0.15);
   --yellow: #F59E0B;
@@ -44,8 +44,8 @@
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
   --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
   --shadow-lg: 0 10px 40px rgba(0,0,0,0.5);
-  --shadow-glow: 0 0 30px rgba(0, 129, 242,0.15);
-  --shadow-glow-strong: 0 0 60px rgba(0, 129, 242,0.25);
+  --shadow-glow: 0 0 30px rgba(255, 96, 0,0.15);
+  --shadow-glow-strong: 0 0 60px rgba(255, 96, 0,0.25);
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
 }

@@ -80,9 +80,9 @@ export default function IdentityShield26() {
           --bg: #020617;
           --surface: #0a1628;
           --surface-2: #091826;
-          --accent: #0081f2;
-          --accent-soft: rgba(0, 129, 242, 0.15);
-          --accent-border: rgba(0, 129, 242, 0.3);
+          --accent: #FF6000;
+          --accent-soft: rgba(255, 96, 0, 0.15);
+          --accent-border: rgba(255, 96, 0, 0.3);
           --text-primary: #f8fafc;
           --text-body: #c8d6e5;
           --text-muted: #94a3b8;
@@ -113,7 +113,7 @@ export default function IdentityShield26() {
         /* ═══ HERO CARD ═══ */
         .event-hero-card {
           position: relative;
-          background: linear-gradient(135deg, rgba(0, 129, 242,0.10) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgba(255, 96, 0,0.10) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 24px;
           overflow: hidden;
@@ -127,7 +127,7 @@ export default function IdentityShield26() {
           right: -100px;
           width: 300px;
           height: 300px;
-          background: radial-gradient(circle, rgba(0, 129, 242,0.2), transparent 60%);
+          background: radial-gradient(circle, rgba(255, 96, 0,0.2), transparent 60%);
           pointer-events: none;
         }
         .event-hero-inner {
@@ -221,7 +221,7 @@ export default function IdentityShield26() {
         .btn-primary:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(0, 129, 242,0.3);
+          box-shadow: 0 8px 24px rgba(255, 96, 0,0.3);
         }
         .btn-secondary {
           display: inline-flex;
@@ -268,7 +268,7 @@ export default function IdentityShield26() {
           right: 1.5rem;
           background: rgba(10,22,40,0.9);
           backdrop-filter: blur(12px);
-          border: 1px solid rgba(0, 129, 242,0.3);
+          border: 1px solid rgba(255, 96, 0,0.3);
           border-radius: 12px;
           padding: 1rem 1.25rem;
           z-index: 2;
@@ -379,7 +379,7 @@ export default function IdentityShield26() {
         .stat-card:hover {
           border-color: var(--accent-border);
           transform: translateY(-3px);
-          box-shadow: 0 10px 30px rgba(0, 129, 242,0.1);
+          box-shadow: 0 10px 30px rgba(255, 96, 0,0.1);
         }
         .stat-num {
           font-size: 1.85rem;
@@ -549,7 +549,7 @@ export default function IdentityShield26() {
         }
         .audience-pill:hover {
           border-color: var(--accent-border);
-          background: rgba(0, 129, 242,0.04);
+          background: rgba(255, 96, 0,0.04);
         }
         .audience-icon { font-size: 1.6rem; margin-bottom: .35rem; }
         .audience-pill-title {
@@ -587,7 +587,7 @@ export default function IdentityShield26() {
         }
         .mosaic-item:hover {
           border-color: var(--accent-border);
-          box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 60px rgba(0, 129, 242,0.15);
+          box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 60px rgba(255, 96, 0,0.15);
           z-index: 5;
         }
         .mosaic-item img {
@@ -604,7 +604,7 @@ export default function IdentityShield26() {
           content: '';
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, transparent 40%, rgba(0, 129, 242,0.08) 100%);
+          background: linear-gradient(135deg, transparent 40%, rgba(255, 96, 0,0.08) 100%);
           pointer-events: none;
           opacity: 0;
           transition: opacity 0.4s ease;
@@ -627,7 +627,7 @@ export default function IdentityShield26() {
         /* Glow pulse on featured mosaic item */
         .mosaic-item.mosaic-featured {
           border-color: var(--accent-border);
-          box-shadow: 0 0 0 1px var(--accent-border), 0 0 40px rgba(0, 129, 242,0.1);
+          box-shadow: 0 0 0 1px var(--accent-border), 0 0 40px rgba(255, 96, 0,0.1);
         }
 
         /* ═══ LIGHTBOX (no caption) ═══ */
@@ -681,7 +681,7 @@ export default function IdentityShield26() {
 
         /* ═══ TAKEAWAYS ═══ */
         .takeaways-box {
-          background: linear-gradient(135deg, rgba(0, 129, 242,0.06) 0%, var(--surface) 100%);
+          background: linear-gradient(135deg, rgba(255, 96, 0,0.06) 0%, var(--surface) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 18px;
           padding: 2.5rem;
@@ -707,7 +707,7 @@ export default function IdentityShield26() {
 
         /* ═══ CTA / SOCIAL ═══ */
         .cta-events-banner {
-          background: linear-gradient(135deg, rgba(0, 129, 242,0.12) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgba(255, 96, 0,0.12) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2.75rem;

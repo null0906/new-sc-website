@@ -22,7 +22,7 @@ export default function CISOStartupGuide() {
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
       if (st) st.href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + ttl + '&via=seccomply';
       window.copyLink = function () { const raw = 'https://seccomply.net/resources/blog/ciso-startup-guide'; (navigator.clipboard ? navigator.clipboard.writeText(raw) : Promise.reject()).catch(() => { const ta = Object.assign(document.createElement('textarea'), { value: raw, style: 'position:fixed;opacity:0' }); document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }); toast('Link copied!'); };
-      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#0081f2;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(0, 129, 242,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
+      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#FF6000;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(255, 96, 0,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
       const fadeEls = document.querySelectorAll('.anim'); if (fadeEls.length && 'IntersectionObserver' in window) { const fo = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; fo.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }); fadeEls.forEach(el => { el.style.animationPlayState = 'paused'; fo.observe(el); }); }
       window.toggleFaq = function (q) { const item = q.closest('.faq-item'); const wasOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!wasOpen) item.classList.add('open'); };
       const first = document.querySelector('.faq-item'); if (first) first.classList.add('open');
@@ -71,16 +71,16 @@ export default function CISOStartupGuide() {
       </Head>
 
       <style jsx global>{`
-    :root{--cy:#0081f2;--cy2:#d0521f;--glow:rgba(0, 129, 242,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(0, 129, 242,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif}
+    :root{--cy:#FF6000;--cy2:#d0521f;--glow:rgba(255, 96, 0,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#0081f2,#38A8FF);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
     .cspm-hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem;display:block!important}
     .cspm-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-    .badge-cy{background:rgba(0, 129, 242,.1);color:var(--cy);border:1px solid rgba(0, 129, 242,.25)}
+    .badge-cy{background:rgba(255, 96, 0,.1);color:var(--cy);border:1px solid rgba(255, 96, 0,.25)}
     .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
     .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
     .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
@@ -88,7 +88,7 @@ export default function CISOStartupGuide() {
     .cspm-hero-h1 em{font-style:italic;color:var(--cy)}
     .cspm-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     .cspm-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0081f2,#38A8FF);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(0, 129, 242,.3)}
+    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(255, 96, 0,.3)}
     .cspm-author-strip .author-info{flex:1;min-width:0}
     .cspm-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .cspm-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
@@ -109,17 +109,17 @@ export default function CISOStartupGuide() {
     .art h3{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--tx);margin:2rem 0 .7rem}
     .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
     .art p strong{color:var(--tx);font-weight:600}
-    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(0, 129, 242,.06),transparent);border-radius:0 12px 12px 0}
+    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(255, 96, 0,.06),transparent);border-radius:0 12px 12px 0}
     .pull-quote p{font-family:var(--serif);font-size:1.12rem;font-style:italic;color:var(--tx)!important;margin-bottom:.5rem!important;line-height:1.6!important}
     .pull-quote cite{font-size:.77rem;color:var(--tm)}
     .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
     .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
-    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#0081f2,#38A8FF)}
+    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FF6000,#FF8A3D)}
     .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:var(--cy);line-height:1;margin-bottom:.4rem}
     .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
     .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
-    .co-key{background:rgba(0, 129, 242,.06);border:1px solid rgba(0, 129, 242,.2)}
+    .co-key{background:rgba(255, 96, 0,.06);border:1px solid rgba(255, 96, 0,.2)}
     .co-gr{background:rgba(6,214,160,.05);border:1px solid rgba(6,214,160,.2)}
     .co-sc{background:rgba(6,214,160,.05);border:1px solid rgba(6,214,160,.2)}
     .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
@@ -129,7 +129,7 @@ export default function CISOStartupGuide() {
     .feat-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:.65rem}
     .feat-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;transition:border-color .2s,background .2s}
     .feat-list li:hover{border-color:var(--bo);background:var(--bgc)}
-    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#0081f2,#38A8FF);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
     .f-body strong{display:block;color:var(--tx);font-size:.89rem;margin-bottom:3px}
     .f-body span{font-size:.83rem;color:var(--tm)}
     .cmp-wrap{overflow-x:auto;margin:2rem 0;border-radius:14px;border:1px solid var(--bo)}
@@ -137,7 +137,7 @@ export default function CISOStartupGuide() {
     .cmp-table th{background:var(--bgc);padding:.85rem 1.1rem;text-align:left;font-size:.77rem;font-weight:600;letter-spacing:.04em;color:var(--cy);border-bottom:1px solid var(--bo)}
     .cmp-table td{padding:.82rem 1.1rem;font-size:.85rem;color:var(--tb);border-bottom:1px solid var(--bs);vertical-align:top}
     .cmp-table tr:last-child td{border-bottom:none}
-    .cmp-table tr:hover td{background:rgba(0, 129, 242,.03)}
+    .cmp-table tr:hover td{background:rgba(255, 96, 0,.03)}
     .cmp-table td:first-child{color:var(--tx);font-weight:600;white-space:nowrap}
     .stage-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
     .stage-card{background:var(--bgc2);border:1px solid var(--bs);border-radius:12px;padding:1.3rem 1.5rem;transition:border-color .2s}
@@ -156,10 +156,10 @@ export default function CISOStartupGuide() {
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
     .author-box{display:flex;gap:1.2rem;padding:1.6rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:16px;margin:2.5rem 0;align-items:flex-start}
-    .author-box .av{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#0081f2,#38A8FF);display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:800;color:#fff;flex-shrink:0}
+    .author-box .av{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:800;color:#fff;flex-shrink:0}
     .author-box .av-body h4{font-size:.95rem;font-weight:700;color:var(--tx);margin-bottom:.25rem}
     .author-box .av-body p{font-size:.83rem;color:var(--tm);margin-bottom:0;line-height:1.65}
-    .cta-banner{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.03));border:1px solid rgba(0, 129, 242,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-family:var(--serif);font-size:1.5rem;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -176,19 +176,19 @@ export default function CISOStartupGuide() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(0, 129, 242,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(255, 96, 0,.07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}.rel-links a:hover{color:var(--cy)}
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
-    .sb-cta{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.03));border:1px solid rgba(0, 129, 242,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-family:var(--serif);font-size:.98rem;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
     .sb-cta-btn:hover{background:var(--cy2)}
-    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0, 129, 242,.4);transition:transform .2s;z-index:50}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(255, 96, 0,.4);transition:transform .2s;z-index:50}
     #btt.vis{display:flex}#btt:hover{transform:translateY(-3px)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
     .anim{animation:fadeUp .55s ease both}
@@ -235,24 +235,24 @@ export default function CISOStartupGuide() {
         <div className="img-wrap">
           <svg viewBox="0 0 960 440" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
             <defs>
-              <linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#0081f2"/><stop offset="100%" stopColor="#38A8FF"/></linearGradient>
+              <linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#FF6000"/><stop offset="100%" stopColor="#FF8A3D"/></linearGradient>
               <linearGradient id="cg2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#06d6a0"/><stop offset="100%" stopColor="#04b080"/></linearGradient>
               <linearGradient id="cg3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#818cf8"/><stop offset="100%" stopColor="#6366f1"/></linearGradient>
               <linearGradient id="cg4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ffb703"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
-              <pattern id="cpat" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgba(0, 129, 242,0.04)"/></pattern>
+              <pattern id="cpat" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgba(255, 96, 0,0.04)"/></pattern>
             </defs>
             <rect width="960" height="440" fill="url(#cpat)"/>
 
             {/* LEFT, CISO Responsibility Wheel */}
-            <rect x="16" y="16" width="224" height="408" rx="12" fill="#081826" stroke="rgba(0, 129, 242,0.15)" strokeWidth="1"/>
+            <rect x="16" y="16" width="224" height="408" rx="12" fill="#081826" stroke="rgba(255, 96, 0,0.15)" strokeWidth="1"/>
             <text x="36" y="44" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">CISO RESPONSIBILITY WHEEL</text>
             {[
-              {label:'Security Strategy',    icon:'🎯', col:'#0081f2'},
+              {label:'Security Strategy',    icon:'🎯', col:'#FF6000'},
               {label:'Compliance & Certs',   icon:'📋', col:'#06d6a0'},
               {label:'Risk Management',      icon:'⚖️', col:'#818cf8'},
               {label:'Board Reporting',      icon:'📊', col:'#ffb703'},
               {label:'Incident Command',     icon:'🚨', col:'#ff4d6d'},
-              {label:'Vendor Assessment',    icon:'🔍', col:'#0081f2'},
+              {label:'Vendor Assessment',    icon:'🔍', col:'#FF6000'},
               {label:'Policy & Governance',  icon:'📄', col:'#06d6a0'},
               {label:'Security Culture',     icon:'👥', col:'#818cf8'},
             ].map(({label,icon,col},i)=>(
@@ -264,7 +264,7 @@ export default function CISOStartupGuide() {
               </g>
             ))}
 
-            <line x1="254" y1="12" x2="254" y2="428" stroke="rgba(0, 129, 242,0.07)" strokeWidth="1"/>
+            <line x1="254" y1="12" x2="254" y2="428" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
 
             {/* CENTRE, Hiring Timeline / Impact */}
             <text x="494" y="44" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">CISO Impact Dashboard</text>
@@ -272,7 +272,7 @@ export default function CISOStartupGuide() {
             {/* Before/After metric cards */}
             {[
               {label:'Time to ISO 27001',    before:'9–12 mo',  after:'3–4 mo',  pct:'+66%', col:'#06d6a0'},
-              {label:'Enterprise Deal Rate', before:'Stalled',   after:'+40%',    pct:'↑',    col:'#0081f2'},
+              {label:'Enterprise Deal Rate', before:'Stalled',   after:'+40%',    pct:'↑',    col:'#FF6000'},
               {label:'Incident Response',    before:'Ad hoc',    after:'Rehearsed',pct:'✓',   col:'#818cf8'},
               {label:'Board Narrative',      before:'None',      after:'Monthly',  pct:'✓',   col:'#ffb703'},
             ].map(({label,before,after,pct,col},i)=>(
@@ -299,7 +299,7 @@ export default function CISOStartupGuide() {
             <text x="270" y="412" fill="rgba(200,214,229,0.55)" fontSize="9" fontWeight="600" fontFamily="sans-serif">HIRING STAGE GUIDE</text>
             {[
               {stage:'Seed',     note:'Founder-led',    col:'rgba(255,255,255,0.15)', w:60},
-              {stage:'Series A', note:'vCISO now →',    col:'#0081f2', w:100},
+              {stage:'Series A', note:'vCISO now →',    col:'#FF6000', w:100},
               {stage:'Series B', note:'FT CISO',        col:'#06d6a0', w:100},
               {stage:'Series C+',note:'CISO dept',      col:'#818cf8', w:80},
             ].reduce((acc,{stage,note,col,w},i)=>{
@@ -309,7 +309,7 @@ export default function CISOStartupGuide() {
               return acc;
             },{els:[],offset:0}).els}
 
-            <line x1="726" y1="12" x2="726" y2="428" stroke="rgba(0, 129, 242,0.07)" strokeWidth="1"/>
+            <line x1="726" y1="12" x2="726" y2="428" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
 
             {/* RIGHT, vCISO vs FT comparison */}
             <text x="744" y="44" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">vCISO vs FULL-TIME</text>
@@ -327,7 +327,7 @@ export default function CISOStartupGuide() {
                 <text x="748" y={88+i*56} fill="#818cf8" fontSize="8" fontFamily="sans-serif">v: {vciso}</text>
                 <text x="748" y={98+i*56} fill="#06d6a0" fontSize="8" fontFamily="sans-serif" style={{display:'none'}}/>
                 <rect x="736" y={96+i*56} width="204" height="1" fill="rgba(255,255,255,0.04)"/>
-                <text x="748" y={95+i*56} fill="#0081f2" fontSize="7.5" fontFamily="sans-serif">ft: {ft}</text>
+                <text x="748" y={95+i*56} fill="#FF6000" fontSize="7.5" fontFamily="sans-serif">ft: {ft}</text>
               </g>
             ))}
           </svg>
@@ -381,11 +381,11 @@ export default function CISOStartupGuide() {
             {/* CISO vs IT Manager SVG */}
             <div className="img-wrap" style={{marginTop:'2rem'}}>
               <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'#081826'}}>
-                <defs><linearGradient id="cg1b" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#0081f2"/><stop offset="100%" stopColor="#38A8FF"/></linearGradient></defs>
+                <defs><linearGradient id="cg1b" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#FF6000"/><stop offset="100%" stopColor="#FF8A3D"/></linearGradient></defs>
                 <text x="380" y="28" textAnchor="middle" fill="rgba(200,214,229,0.7)" fontSize="11" fontWeight="700" fontFamily="sans-serif">CISO vs IT Manager, Role Comparison</text>
                 {/* CISO */}
-                <rect x="30" y="42" width="320" height="140" rx="10" fill="rgba(0, 129, 242,0.06)" stroke="rgba(0, 129, 242,0.25)" strokeWidth="1"/>
-                <text x="190" y="62" textAnchor="middle" fill="#0081f2" fontSize="11" fontWeight="700" fontFamily="sans-serif">CISO, Strategic Executive</text>
+                <rect x="30" y="42" width="320" height="140" rx="10" fill="rgba(255, 96, 0,0.06)" stroke="rgba(255, 96, 0,0.25)" strokeWidth="1"/>
+                <text x="190" y="62" textAnchor="middle" fill="#FF6000" fontSize="11" fontWeight="700" fontFamily="sans-serif">CISO, Strategic Executive</text>
                 {['Risk strategy & appetite','Compliance programme ownership','Board & investor reporting','Aligning security with business goals','Incident command leadership'].map((t,i)=><text key={i} x="50" y={80+i*18} fill="rgba(200,214,229,0.7)" fontSize="9" fontFamily="sans-serif">✓ {t}</text>)}
                 {/* IT Manager */}
                 <rect x="410" y="42" width="320" height="140" rx="10" fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.25)" strokeWidth="1"/>
@@ -416,7 +416,7 @@ export default function CISOStartupGuide() {
 
             <div className="stage-grid">
               <div className="stage-card anim"><div className="stage-icon">🌱</div><h3>Seed Stage</h3><p>Founder-led security is fine. Focus on secure architecture and sensible defaults. A CISO is premature, but hire one to advise on framework selection early.</p></div>
-              <div className="stage-card anim" style={{borderColor:'rgba(0, 129, 242,0.3)'}}><div className="stage-icon">🚀</div><h3>Series A ← You need one now</h3><p>Enterprise procurement questionnaires start arriving. Security questionnaires, SOC 2 requests, due diligence. Without a CISO, you fake it, and that creates liability.</p></div>
+              <div className="stage-card anim" style={{borderColor:'rgba(255, 96, 0,0.3)'}}><div className="stage-icon">🚀</div><h3>Series A ← You need one now</h3><p>Enterprise procurement questionnaires start arriving. Security questionnaires, SOC 2 requests, due diligence. Without a CISO, you fake it, and that creates liability.</p></div>
               <div className="stage-card anim"><div className="stage-icon">📈</div><h3>Series B</h3><p>Full-time CISO becomes the right move. The compliance programme should be in motion and you need someone fully embedded to own it end-to-end.</p></div>
               <div className="stage-card anim"><div className="stage-icon">🏢</div><h3>Series C+</h3><p>CISO builds and leads a security department. Multiple certifications running concurrently. Security becomes a formal business function, not a hire.</p></div>
             </div>
@@ -479,13 +479,13 @@ export default function CISOStartupGuide() {
                     <text x="215" y={73+i*44} fill="rgba(200,214,229,0.25)" fontSize="14" fontFamily="sans-serif">→</text>
                     <rect x="235" y={58+i*44} width="165" height="22" rx="5" fill="rgba(6,214,160,0.08)" stroke="rgba(6,214,160,0.2)" strokeWidth="1"/>
                     <text x="317" y={74+i*44} textAnchor="middle" fill="#06d6a0" fontSize="9.5" fontWeight="700" fontFamily="sans-serif">{after}</text>
-                    <rect x="420" y={58+i*44} width="150" height="22" rx="5" fill="rgba(0, 129, 242,0.08)" stroke="rgba(0, 129, 242,0.2)" strokeWidth="1"/>
-                    <text x="495" y={74+i*44} textAnchor="middle" fill="#0081f2" fontSize="9" fontWeight="700" fontFamily="sans-serif">{improvement}</text>
+                    <rect x="420" y={58+i*44} width="150" height="22" rx="5" fill="rgba(255, 96, 0,0.08)" stroke="rgba(255, 96, 0,0.2)" strokeWidth="1"/>
+                    <text x="495" y={74+i*44} textAnchor="middle" fill="#FF6000" fontSize="9" fontWeight="700" fontFamily="sans-serif">{improvement}</text>
                   </g>
                 ))}
                 <text x="112" y={218} textAnchor="middle" fill="rgba(255,77,109,0.5)" fontSize="8" fontFamily="sans-serif">WITHOUT CISO</text>
                 <text x="317" y={218} textAnchor="middle" fill="rgba(6,214,160,0.5)" fontSize="8" fontFamily="sans-serif">WITH CISO</text>
-                <text x="495" y={218} textAnchor="middle" fill="rgba(0, 129, 242,0.5)" fontSize="8" fontFamily="sans-serif">IMPROVEMENT</text>
+                <text x="495" y={218} textAnchor="middle" fill="rgba(255, 96, 0,0.5)" fontSize="8" fontFamily="sans-serif">IMPROVEMENT</text>
               </svg>
             </div>
             <p className="img-cap">Fig 4. Before and after a CISO: measurable impact on compliance speed, incident response, and enterprise deal velocity.</p>

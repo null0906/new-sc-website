@@ -33,7 +33,7 @@ export default function EndpointSecurityHybridWork() {
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
       if (st) st.href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + ttl + '&via=seccomply';
       window.copyLink = function () { const raw = 'https://seccomply.net/resources/blog/endpoint-security-hybrid-work'; (navigator.clipboard ? navigator.clipboard.writeText(raw) : Promise.reject()).catch(() => { const ta = Object.assign(document.createElement('textarea'), { value: raw, style: 'position:fixed;opacity:0' }); document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }); toast('Link copied!'); };
-      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#0081f2;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(0, 129, 242,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
+      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#FF6000;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(255, 96, 0,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
       const fadeEls = document.querySelectorAll('.anim');
       if (fadeEls.length && 'IntersectionObserver' in window) { const fo = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; fo.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }); fadeEls.forEach(el => { el.style.animationPlayState = 'paused'; fo.observe(el); }); }
       window.toggleFaq = function (q) { const item = q.closest('.faq-item'); const wasOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!wasOpen) item.classList.add('open'); };
@@ -85,16 +85,16 @@ export default function EndpointSecurityHybridWork() {
       </Head>
 
       <style jsx global>{`
-    :root{--cy:#0081f2;--cy2:#d0521f;--glow:rgba(0, 129, 242,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(0, 129, 242,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
+    :root{--cy:#FF6000;--cy2:#d0521f;--glow:rgba(255, 96, 0,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#0081f2,#38A8FF);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
     .cspm-hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem;display:block !important}
     .cspm-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-    .badge-cy{background:rgba(0, 129, 242,.1);color:var(--cy);border:1px solid rgba(0, 129, 242,.25)}
+    .badge-cy{background:rgba(255, 96, 0,.1);color:var(--cy);border:1px solid rgba(255, 96, 0,.25)}
     .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
     .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
     .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
@@ -102,7 +102,7 @@ export default function EndpointSecurityHybridWork() {
     .cspm-hero-h1 em{font-style:italic;color:var(--cy)}
     .cspm-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     .cspm-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0081f2,#38A8FF);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(0, 129, 242,.3)}
+    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(255, 96, 0,.3)}
     .cspm-author-strip .author-info{flex:1;min-width:0}
     .cspm-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .cspm-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
@@ -123,21 +123,21 @@ export default function EndpointSecurityHybridWork() {
     .art h3{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--tx);margin:2rem 0 .7rem}
     .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
     .art p strong{color:var(--tx);font-weight:600}
-    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(0, 129, 242,.06),transparent);border-radius:0 12px 12px 0}
+    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(255, 96, 0,.06),transparent);border-radius:0 12px 12px 0}
     .pull-quote p{font-family:var(--serif);font-size:1.1rem;font-style:italic;color:var(--tx)!important;margin-bottom:.5rem!important;line-height:1.6!important}
-    .def-box{background:linear-gradient(135deg,rgba(0, 129, 242,.07),rgba(0, 129, 242,.02));border:1px solid rgba(0, 129, 242,.22);border-radius:14px;padding:1.6rem 2rem;margin:2rem 0}
+    .def-box{background:linear-gradient(135deg,rgba(255, 96, 0,.07),rgba(255, 96, 0,.02));border:1px solid rgba(255, 96, 0,.22);border-radius:14px;padding:1.6rem 2rem;margin:2rem 0}
     .def-lbl{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cy);margin-bottom:.6rem}
     .def-box p{font-size:.97rem;color:var(--tx)!important;margin-bottom:0!important;line-height:1.7}
     .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:2.5rem 0}
     .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
-    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#0081f2,#38A8FF)}
+    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FF6000,#FF8A3D)}
     .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:var(--cy);line-height:1;margin-bottom:.4rem}
     .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
     .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
     .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
     .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
-    .co-key{background:rgba(0, 129, 242,.06);border:1px solid rgba(0, 129, 242,.2)}
+    .co-key{background:rgba(255, 96, 0,.06);border:1px solid rgba(255, 96, 0,.2)}
     .co-sc{background:rgba(6,214,160,.05);border:1px solid rgba(6,214,160,.2)}
     .co-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
     .co-body p{margin-bottom:0!important;font-size:.89rem!important}
@@ -145,7 +145,7 @@ export default function EndpointSecurityHybridWork() {
     .feat-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:.65rem}
     .feat-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;transition:border-color .2s,background .2s}
     .feat-list li:hover{border-color:var(--bo);background:var(--bgc)}
-    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#0081f2,#38A8FF);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
     .f-body strong{display:block;color:var(--tx);font-size:.89rem;margin-bottom:3px}
     .f-body span{font-size:.83rem;color:var(--tm)}
     .arrow-list{list-style:none;margin:1.2rem 0;display:flex;flex-direction:column;gap:.5rem}
@@ -162,7 +162,7 @@ export default function EndpointSecurityHybridWork() {
     .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-    .cta-banner{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.03));border:1px solid rgba(0, 129, 242,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-family:var(--serif);font-size:1.5rem;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -179,19 +179,19 @@ export default function EndpointSecurityHybridWork() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(0, 129, 242,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(255, 96, 0,.07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}.rel-links a:hover{color:var(--cy)}
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
-    .sb-cta{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.03));border:1px solid rgba(0, 129, 242,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-family:var(--serif);font-size:.98rem;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
     .sb-cta-btn:hover{background:var(--cy2)}
-    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0, 129, 242,.4);transition:transform .2s;z-index:50}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(255, 96, 0,.4);transition:transform .2s;z-index:50}
     #btt.vis{display:flex}#btt:hover{transform:translateY(-3px)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
     .anim{animation:fadeUp .55s ease both}
@@ -238,15 +238,15 @@ export default function EndpointSecurityHybridWork() {
         <div className="img-wrap">
           <svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
             <defs>
-              <linearGradient id="gOr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#0081f2"/><stop offset="100%" stopColor="#38A8FF"/></linearGradient>
+              <linearGradient id="gOr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#FF6000"/><stop offset="100%" stopColor="#FF8A3D"/></linearGradient>
               <linearGradient id="gGr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#06d6a0"/><stop offset="100%" stopColor="#04b080"/></linearGradient>
               <linearGradient id="gRd" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ff4d6d"/><stop offset="100%" stopColor="#d0304e"/></linearGradient>
               <linearGradient id="gAm" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ffb703"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
-              <pattern id="ep" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgba(0, 129, 242,0.04)"/></pattern>
+              <pattern id="ep" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgba(255, 96, 0,0.04)"/></pattern>
             </defs>
             <rect width="960" height="420" fill="url(#ep)"/>
             {/* Device fleet panel */}
-            <rect x="18" y="18" width="220" height="384" rx="12" fill="#081826" stroke="rgba(0, 129, 242,0.15)" strokeWidth="1"/>
+            <rect x="18" y="18" width="220" height="384" rx="12" fill="#081826" stroke="rgba(255, 96, 0,0.15)" strokeWidth="1"/>
             <text x="38" y="46" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">DEVICE FLEET STATUS</text>
             <text x="38" y="60" fill="rgba(100,160,200,0.4)" fontSize="8" fontFamily="sans-serif">247 endpoints · live</text>
             {[
@@ -264,13 +264,13 @@ export default function EndpointSecurityHybridWork() {
                 <text x="48" y={132+i*72} fill={c} fontSize="8" fontFamily="sans-serif">{status}</text>
               </g>
             ))}
-            <line x1="252" y1="14" x2="252" y2="406" stroke="rgba(0, 129, 242,0.07)" strokeWidth="1"/>
+            <line x1="252" y1="14" x2="252" y2="406" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
             {/* Centre: Compliance score */}
             <text x="480" y="44" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">Endpoint Compliance Dashboard</text>
             <circle cx="480" cy="160" r="62" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="11"/>
             <circle cx="480" cy="160" r="62" fill="none" stroke="url(#gOr)" strokeWidth="11" strokeDasharray="258 390" strokeDashoffset="97" strokeLinecap="round"/>
             <text x="480" y="153" textAnchor="middle" fill="#fff" fontSize="26" fontWeight="700" fontFamily="sans-serif">63%</text>
-            <text x="480" y="170" textAnchor="middle" fill="rgba(0, 129, 242,0.7)" fontSize="9" fontFamily="sans-serif">Fleet Compliant</text>
+            <text x="480" y="170" textAnchor="middle" fill="rgba(255, 96, 0,0.7)" fontSize="9" fontFamily="sans-serif">Fleet Compliant</text>
             <text x="480" y="185" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="8" fontFamily="sans-serif">91 devices need attention</text>
             {/* Mini cards */}
             <rect x="360" y="236" width="84" height="54" rx="8" fill="#091826" stroke="rgba(6,214,160,0.2)" strokeWidth="1"/>
@@ -296,14 +296,14 @@ export default function EndpointSecurityHybridWork() {
                 <text x="575" y={335+i*18} fill="rgba(200,214,229,0.55)" fontSize="8" fontWeight="700" fontFamily="sans-serif">{pct}</text>
               </g>
             ))}
-            <line x1="614" y1="14" x2="614" y2="406" stroke="rgba(0, 129, 242,0.07)" strokeWidth="1"/>
+            <line x1="614" y1="14" x2="614" y2="406" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
             {/* Right: 5 risks */}
             <text x="634" y="44" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">TOP 5 HYBRID RISKS</text>
             {[
               {risk:'No MDM, Contractor/BYOD Devices', sev:'CRITICAL', c:'#ff4d6d'},
               {risk:'Stale OS on Remote Machines',       sev:'HIGH',     c:'#ffb703'},
               {risk:'Unencrypted Devices Off-Site',      sev:'HIGH',     c:'#ffb703'},
-              {risk:'Home Network as Perimeter',         sev:'MEDIUM',   c:'#0081f2'},
+              {risk:'Home Network as Perimeter',         sev:'MEDIUM',   c:'#FF6000'},
               {risk:'Zero Audit Trail for Evidence',     sev:'HIGH',     c:'#ffb703'},
             ].map(({risk,sev,c},i)=>(
               <g key={i}>

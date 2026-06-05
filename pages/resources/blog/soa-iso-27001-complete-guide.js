@@ -42,16 +42,16 @@ export default function SoAISO27001CompleteGuide() {
       </Head>
 
       <style jsx global>{`
-    :root{--cy:#0081f2;--cy2:#d0521f;--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(0, 129, 242,.2);--bs:rgba(255,255,255,.06);--gr:#06d6a0;--am:#ffb703;--sans:'Inter',sans-serif}
+    :root{--cy:#FF6000;--cy2:#d0521f;--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--gr:#06d6a0;--am:#ffb703;--sans:'Inter',sans-serif}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#0081f2,#38A8FF);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
     .hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem}
     .badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-    .badge-cy{background:rgba(0, 129, 242,.1);color:var(--cy);border:1px solid rgba(0, 129, 242,.25)}
+    .badge-cy{background:rgba(255, 96, 0,.1);color:var(--cy);border:1px solid rgba(255, 96, 0,.25)}
     .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
     .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
     .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
@@ -59,7 +59,7 @@ export default function SoAISO27001CompleteGuide() {
     .hero-h1 em{font-style:italic;color:var(--cy)}
     .hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     .author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0081f2,#38A8FF);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(0, 129, 242,.3)}
+    .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(255, 96, 0,.3)}
     .author-info{flex:1}.aname{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .ameta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
     .adate{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--tm)}.dot{opacity:.3}
@@ -78,7 +78,7 @@ export default function SoAISO27001CompleteGuide() {
     .art h3{font-size:1.05rem;font-weight:700;color:var(--cy);margin:1.8rem 0 .8rem}
     .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
     .art p strong{color:var(--tx)}
-    .art a.inline-link{color:var(--cy);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(0, 129, 242,0.3)}
+    .art a.inline-link{color:var(--cy);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(255, 96, 0,0.3)}
     .art a.inline-link:hover{border-bottom-color:var(--cy)}
     .art ul{margin:0 0 1.4rem;padding:0;list-style:none}
     .art ul li{padding:.4rem 0 .4rem 1.4rem;position:relative;font-size:.95rem;color:var(--tb);border-bottom:1px solid var(--bs)}
@@ -92,7 +92,7 @@ export default function SoAISO27001CompleteGuide() {
     .data-table tr:last-child td{border-bottom:none}
     .data-table td:first-child{color:var(--tx);font-weight:600}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
-    .co-key{background:rgba(0, 129, 242,.06);border:1px solid rgba(0, 129, 242,.2)}
+    .co-key{background:rgba(255, 96, 0,.06);border:1px solid rgba(255, 96, 0,.2)}
     .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
     .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
     .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
@@ -131,7 +131,7 @@ export default function SoAISO27001CompleteGuide() {
     .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-    .cta-banner{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.03));border:1px solid rgba(0, 129, 242,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-size:1.5rem;font-weight:700;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -146,19 +146,19 @@ export default function SoAISO27001CompleteGuide() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(0, 129, 242,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(255, 96, 0,.07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}.rel-links a:hover{color:var(--cy)}
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy)}
-    .sb-cta{background:linear-gradient(135deg,rgba(0, 129, 242,.08),rgba(0, 129, 242,.03));border:1px solid rgba(0, 129, 242,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-size:.98rem;font-weight:700;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
     .sb-cta-btn:hover{background:var(--cy2)}
-    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0, 129, 242,.4);z-index:50}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(255, 96, 0,.4);z-index:50}
     #btt.vis{display:flex}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
     .anim{animation:fadeUp .55s ease both}
@@ -201,7 +201,7 @@ export default function SoAISO27001CompleteGuide() {
 
         <div className="img-wrap">
           <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
-            <defs><pattern id="pgs6" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(0, 129, 242,0.04)"/></pattern></defs>
+            <defs><pattern id="pgs6" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(255, 96, 0,0.04)"/></pattern></defs>
             <rect width="960" height="280" fill="url(#pgs6)"/>
             <text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">The SoA: From Risk Assessment to Audit Evidence</text>
 
@@ -214,11 +214,11 @@ export default function SoAISO27001CompleteGuide() {
             <text x="155" y="172" textAnchor="middle" fill="rgba(200,214,229,0.5)" fontSize="9" fontFamily="sans-serif">Drives control selection</text>
 
             {/* SoA box (centre) */}
-            <rect x="385" y="60" width="190" height="160" rx="14" fill="#091826" stroke="#0081f240" strokeWidth="2"/>
-            <rect x="385" y="60" width="190" height="5" rx="2" fill="#0081f2"/>
-            <text x="480" y="100" textAnchor="middle" fill="#0081f2" fontSize="14" fontWeight="800" fontFamily="sans-serif">SoA</text>
+            <rect x="385" y="60" width="190" height="160" rx="14" fill="#091826" stroke="#FF600040" strokeWidth="2"/>
+            <rect x="385" y="60" width="190" height="5" rx="2" fill="#FF6000"/>
+            <text x="480" y="100" textAnchor="middle" fill="#FF6000" fontSize="14" fontWeight="800" fontFamily="sans-serif">SoA</text>
             <text x="480" y="118" textAnchor="middle" fill="rgba(200,214,229,0.7)" fontSize="9" fontWeight="600" fontFamily="sans-serif">Statement of Applicability</text>
-            <line x1="410" y1="135" x2="550" y2="135" stroke="rgba(0, 129, 242,0.2)" strokeWidth="1"/>
+            <line x1="410" y1="135" x2="550" y2="135" stroke="rgba(255, 96, 0,0.2)" strokeWidth="1"/>
             <text x="480" y="153" textAnchor="middle" fill="rgba(200,214,229,0.55)" fontSize="9" fontFamily="sans-serif">All 93 Annex A controls</text>
             <text x="480" y="170" textAnchor="middle" fill="rgba(200,214,229,0.55)" fontSize="9" fontFamily="sans-serif">Applicability + justification</text>
             <text x="480" y="187" textAnchor="middle" fill="rgba(200,214,229,0.55)" fontSize="9" fontFamily="sans-serif">Implementation status</text>
@@ -233,10 +233,10 @@ export default function SoAISO27001CompleteGuide() {
             <text x="805" y="172" textAnchor="middle" fill="rgba(200,214,229,0.5)" fontSize="9" fontFamily="sans-serif">Re-checked in surveillance</text>
 
             {/* Arrows */}
-            <path d="M 250 140 L 380 140" stroke="rgba(0, 129, 242,0.5)" strokeWidth="2" fill="none" markerEnd="url(#arr1)"/>
+            <path d="M 250 140 L 380 140" stroke="rgba(255, 96, 0,0.5)" strokeWidth="2" fill="none" markerEnd="url(#arr1)"/>
             <path d="M 575 140 L 705 140" stroke="rgba(129,140,248,0.5)" strokeWidth="2" fill="none" markerEnd="url(#arr2)"/>
             <defs>
-              <marker id="arr1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="rgba(0, 129, 242,0.7)"/></marker>
+              <marker id="arr1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="rgba(255, 96, 0,0.7)"/></marker>
               <marker id="arr2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="rgba(129,140,248,0.7)"/></marker>
             </defs>
 
@@ -263,7 +263,7 @@ export default function SoAISO27001CompleteGuide() {
       <div className="blog-layout">
         <article className="art">
 
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(0, 129, 242,0.3)',paddingLeft:'1.2rem'}}>The Statement of Applicability is required by clause 6.1.3(d) of ISO 27001:2022. It documents every one of the 93 Annex A controls - whether you have implemented it, why you have or have not, and where the implementing evidence lives. The certification body auditor will read your SoA before they walk into your office. If it is internally inconsistent, missing controls, or weakly justified, the rest of the audit goes downhill from there. This guide takes you through the SoA from first principles to certification-ready output.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(255, 96, 0,0.3)',paddingLeft:'1.2rem'}}>The Statement of Applicability is required by clause 6.1.3(d) of ISO 27001:2022. It documents every one of the 93 Annex A controls - whether you have implemented it, why you have or have not, and where the implementing evidence lives. The certification body auditor will read your SoA before they walk into your office. If it is internally inconsistent, missing controls, or weakly justified, the rest of the audit goes downhill from there. This guide takes you through the SoA from first principles to certification-ready output.</p>
 
           <section id="what-is-soa">
             <h2>What Is the <em>Statement of Applicability?</em></h2>

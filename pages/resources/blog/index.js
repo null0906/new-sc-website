@@ -115,16 +115,16 @@ export default function Blog() {
       <style jsx global>{`
         .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:40px auto 80px;padding:0 24px}
         .blog-card{background:rgba(15,23,42,.6);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:28px 24px;display:flex;flex-direction:column;gap:12px;transition:all .3s ease;text-decoration:none;color:inherit;position:relative;overflow:hidden}
-        .blog-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#0081f2,#38A8FF);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+        .blog-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#FF6000,#FF8A3D);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.16,1,.3,1)}
         .blog-card:hover::before{transform:scaleX(1)}
-        .blog-card:hover{border-color:rgba(0, 129, 242,.3);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0, 129, 242,.1)}
-        .blog-tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.68rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;background:rgba(0, 129, 242,.12);color:#0081f2;width:fit-content}
+        .blog-card:hover{border-color:rgba(255, 96, 0,.3);transform:translateY(-4px);box-shadow:0 12px 40px rgba(255, 96, 0,.1)}
+        .blog-tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.68rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;background:rgba(255, 96, 0,.12);color:#FF6000;width:fit-content}
         .blog-icon{font-size:1.6rem;line-height:1}
         .blog-card h3{font-size:1rem;font-weight:700;color:#F8FAFC;margin:0;line-height:1.4}
         .blog-card p{font-size:.86rem;color:#94A3B8;line-height:1.6;margin:0;flex:1}
         .blog-meta{font-size:.75rem;color:#64748B;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
         .blog-meta .dot{opacity:.4}
-        .blog-cta{color:#0081f2;font-size:.85rem;font-weight:600;display:inline-flex;align-items:center;gap:5px;transition:gap .2s;margin-top:4px}
+        .blog-cta{color:#FF6000;font-size:.85rem;font-weight:600;display:inline-flex;align-items:center;gap:5px;transition:gap .2s;margin-top:4px}
         .blog-card:hover .blog-cta{gap:9px}
         @media(max-width:900px){.blog-grid{grid-template-columns:repeat(2,1fr)}}
         @media(max-width:600px){.blog-grid{grid-template-columns:1fr;padding:0 16px}}

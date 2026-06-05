@@ -4,7 +4,7 @@
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; -webkit-font-smoothing:antialiased; }
 body { font-family:var(--font-sans); background:var(--bg-primary); color:var(--text-primary); line-height:1.7; overflow-x:hidden; }
-::selection { background:rgba(0, 129, 242,0.3); color:var(--white); }
+::selection { background:rgba(255, 96, 0,0.3); color:var(--white); }
 ::-webkit-scrollbar { width:8px; }
 ::-webkit-scrollbar-track { background:var(--bg-secondary); }
 ::-webkit-scrollbar-thumb { background:var(--accent); border-radius:4px; }
@@ -28,10 +28,10 @@ h3 { font-size:1.2rem; font-weight:600; line-height:1.4; }
 
 /* Buttons */
 .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border-radius:var(--radius-md); font-weight:600; font-size:0.9rem; cursor:pointer; transition:all var(--duration-fast) var(--ease-out); border:none; position:relative; overflow:hidden; white-space:nowrap; }
-.btn-primary { background:var(--gradient-accent); color:white; box-shadow:0 4px 15px rgba(0, 129, 242,0.3); }
-.btn-primary:hover { transform:translateY(-2px); box-shadow:0 6px 25px rgba(0, 129, 242,0.4); }
+.btn-primary { background:var(--gradient-accent); color:white; box-shadow:0 4px 15px rgba(255, 96, 0,0.3); }
+.btn-primary:hover { transform:translateY(-2px); box-shadow:0 6px 25px rgba(255, 96, 0,0.4); }
 .btn-outline { background:transparent; color:var(--text-primary); border:1px solid var(--border-hover); }
-.btn-outline:hover { border-color:var(--accent); color:var(--accent-light); background:rgba(0, 129, 242,0.05); }
+.btn-outline:hover { border-color:var(--accent); color:var(--accent-light); background:rgba(255, 96, 0,0.05); }
 .btn-lg { padding:16px 32px; font-size:1rem; border-radius:12px; }
 .btn-icon { transition:transform 0.2s; }
 .btn:hover .btn-icon { transform:translateX(3px); }

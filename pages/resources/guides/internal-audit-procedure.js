@@ -61,9 +61,9 @@ export default function InternalAudit() {
           <div style={{ overflowX: 'auto', margin: '24px 0' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>
               <thead>
-                <tr style={{ background: 'rgba(0, 129, 242,0.15)' }}>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)', minWidth: '160px' }}>Role</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Key Responsibilities</th>
+                <tr style={{ background: 'rgba(255, 96, 0,0.15)' }}>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)', minWidth: '160px' }}>Role</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Key Responsibilities</th>
                 </tr>
               </thead>
               <tbody>
@@ -128,10 +128,10 @@ export default function InternalAudit() {
           <div style={{ overflowX: 'auto', margin: '24px 0' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>
               <thead>
-                <tr style={{ background: 'rgba(0, 129, 242,0.15)' }}>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Classification</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Definition</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Examples</th>
+                <tr style={{ background: 'rgba(255, 96, 0,0.15)' }}>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Classification</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Definition</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Examples</th>
                 </tr>
               </thead>
               <tbody>
@@ -158,9 +158,9 @@ export default function InternalAudit() {
           <div style={{ overflowX: 'auto', margin: '24px 0' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>
               <thead>
-                <tr style={{ background: 'rgba(0, 129, 242,0.15)' }}>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Overdue Duration</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#0081f2', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Escalation Level</th>
+                <tr style={{ background: 'rgba(255, 96, 0,0.15)' }}>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Overdue Duration</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Escalation Level</th>
                 </tr>
               </thead>
               <tbody>

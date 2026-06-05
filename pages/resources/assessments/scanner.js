@@ -211,12 +211,12 @@ export default function Scanner() {
 
         .scan-bonus { display:flex; flex-wrap:wrap; gap:.5rem; }
         .scan-chip { padding:.4rem .8rem; border-radius:var(--radius-full); font-size:.8rem; border:1px solid var(--border); }
-        .scan-chip.on { background:rgba(0, 129, 242,.1); color:var(--accent-light); border-color:rgba(0, 129, 242,.3); }
+        .scan-chip.on { background:rgba(255, 96, 0,.1); color:var(--accent-light); border-color:rgba(255, 96, 0,.3); }
         .scan-chip.off { color:var(--text-muted); }
 
         .scan-cta { margin-top:2.5rem; display:flex; flex-direction:column; align-items:center; gap:.9rem; }
         .scan-btn-primary { background:var(--gradient-accent); color:#fff; padding:.9rem 1.7rem; border-radius:10px; font-weight:700; text-decoration:none; }
-        .scan-btn-outline { color:var(--accent); border:1px solid var(--accent-border,rgba(0, 129, 242,.3)); padding:.75rem 1.4rem; border-radius:10px; font-weight:600; text-decoration:none; font-size:.92rem; }
+        .scan-btn-outline { color:var(--accent); border:1px solid var(--accent-border,rgba(255, 96, 0,.3)); padding:.75rem 1.4rem; border-radius:10px; font-weight:600; text-decoration:none; font-size:.92rem; }
         .scan-btn-ghost { background:none; border:none; color:var(--text-muted); font-size:.88rem; cursor:pointer; text-decoration:underline; font-family:inherit; }
       `}</style>
     </>

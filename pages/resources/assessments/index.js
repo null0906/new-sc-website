@@ -36,9 +36,9 @@ export default function AssessmentsIndex() {
           --bg: #020617;
           --surface: #0a1628;
           --surface-2: #0f1f3a;
-          --accent: #0081f2;
-          --accent-soft: rgba(0, 129, 242, 0.15);
-          --accent-border: rgba(0, 129, 242, 0.3);
+          --accent: #FF6000;
+          --accent-soft: rgba(255, 96, 0, 0.15);
+          --accent-border: rgba(255, 96, 0, 0.3);
           --text-primary: #f8fafc;
           --text-body: #c8d6e5;
           --text-muted: #94a3b8;
@@ -134,7 +134,7 @@ export default function AssessmentsIndex() {
           position: absolute;
           top: 0; left: 0; right: 0;
           height: 3px;
-          background: linear-gradient(90deg, var(--accent), #38A8FF);
+          background: linear-gradient(90deg, var(--accent), #FF8A3D);
           transform: scaleX(0);
           transform-origin: left;
           transition: transform 0.4s cubic-bezier(.16,1,.3,1);
@@ -275,7 +275,7 @@ export default function AssessmentsIndex() {
           color: var(--accent);
           text-transform: uppercase;
           letter-spacing: 0.06em;
-          border-bottom: 1px solid rgba(0, 129, 242,0.18);
+          border-bottom: 1px solid rgba(255, 96, 0,0.18);
           vertical-align: bottom;
         }
         .as-compare-table th:first-child {
@@ -320,7 +320,7 @@ export default function AssessmentsIndex() {
           content: '';
           flex: 1;
           height: 1px;
-          background: rgba(0, 129, 242,0.18);
+          background: rgba(255, 96, 0,0.18);
         }
         .as-next-grid {
           display: grid;
@@ -371,7 +371,7 @@ export default function AssessmentsIndex() {
 
         /* --- CTA BANNER --- */
         .as-cta-banner {
-          background: linear-gradient(135deg, rgba(0, 129, 242,0.12) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgba(255, 96, 0,0.12) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2.75rem;
@@ -407,7 +407,7 @@ export default function AssessmentsIndex() {
         .as-cta-btn:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(0, 129, 242,0.3);
+          box-shadow: 0 8px 24px rgba(255, 96, 0,0.3);
         }
 
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }

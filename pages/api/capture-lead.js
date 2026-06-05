@@ -65,7 +65,7 @@ export default async function handler(req, res) {
       subject: `New ${sourceLabel}: ${organisation || contactName || email}`,
       html: `
         <div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;padding:24px;background:#f9fafb;border-radius:8px;">
-          <div style="background:#0081f2;padding:16px 24px;border-radius:8px 8px 0 0;">
+          <div style="background:#FF6000;padding:16px 24px;border-radius:8px 8px 0 0;">
             <h2 style="color:white;margin:0;font-size:20px;">${sourceLabel} — ${headline}</h2>
           </div>
           <div style="background:white;padding:24px;border-radius:0 0 8px 8px;border:1px solid #e5e7eb;">
@@ -84,7 +84,7 @@ export default async function handler(req, res) {
             ${
               detailRows
                 ? `<div style="margin-top:20px;">
-                     <p style="margin:0 0 8px;font-size:12px;font-weight:700;color:#0081f2;text-transform:uppercase;letter-spacing:.05em;">Submitted details</p>
+                     <p style="margin:0 0 8px;font-size:12px;font-weight:700;color:#FF6000;text-transform:uppercase;letter-spacing:.05em;">Submitted details</p>
                      <table style="width:100%;border-collapse:collapse;">${detailRows}</table>
                    </div>`
                 : ''

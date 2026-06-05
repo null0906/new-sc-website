@@ -68,7 +68,7 @@ export default function ServicesIndex() {
       <style jsx>{`
         .sv { max-width:1180px; margin:0 auto; padding:7rem 1.5rem 5rem; }
         .sv-hero { text-align:center; max-width:760px; margin:0 auto 3rem; }
-        .sv-badge { display:inline-flex; align-items:center; gap:8px; padding:.4rem 1rem; border-radius:var(--radius-full); background:rgba(0, 129, 242,.08); color:var(--accent-light); border:1px solid rgba(0, 129, 242,.2); font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.12em; margin-bottom:1.1rem; }
+        .sv-badge { display:inline-flex; align-items:center; gap:8px; padding:.4rem 1rem; border-radius:var(--radius-full); background:rgba(255, 96, 0,.08); color:var(--accent-light); border:1px solid rgba(255, 96, 0,.2); font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.12em; margin-bottom:1.1rem; }
         .sv-badge-dot { width:6px; height:6px; border-radius:50%; background:var(--accent); }
         .sv-hero h1 { font-size:clamp(2.1rem,5vw,3.2rem); font-weight:800; line-height:1.12; letter-spacing:-1.5px; margin:0 0 1.1rem; color:var(--white); }
         .accent { color:var(--accent-light); }
@@ -81,8 +81,8 @@ export default function ServicesIndex() {
         .sv-card { position:relative; overflow:hidden; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.7rem 1.6rem; display:flex; flex-direction:column; gap:.55rem; transition:all .3s ease; color:inherit; text-decoration:none; }
         .sv-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:var(--gradient-accent); transform:scaleX(0); transform-origin:left; transition:transform .45s cubic-bezier(.16,1,.3,1); }
         .sv-card:hover::before { transform:scaleX(1); }
-        .sv-card:hover { border-color:rgba(0, 129, 242,.3); transform:translateY(-4px); box-shadow:0 16px 50px rgba(0,0,0,.3); background:var(--bg-card-hover); }
-        .sv-card.featured { border-color:rgba(0, 129, 242,.35); }
+        .sv-card:hover { border-color:rgba(255, 96, 0,.3); transform:translateY(-4px); box-shadow:0 16px 50px rgba(0,0,0,.3); background:var(--bg-card-hover); }
+        .sv-card.featured { border-color:rgba(255, 96, 0,.35); }
         .sv-flag { position:absolute; top:-.6rem; right:1rem; background:var(--gradient-accent); color:#fff; font-size:.6rem; font-weight:800; letter-spacing:.05em; text-transform:uppercase; padding:.22rem .6rem; border-radius:var(--radius-full); }
         .sv-icon { font-size:2rem; }
         .sv-card h2 { font-size:1.12rem; font-weight:800; color:var(--white); margin:.3rem 0 0; }
@@ -91,15 +91,15 @@ export default function ServicesIndex() {
         .sv-card:hover .sv-learn { gap:11px; }
 
         .sv-cta { margin-top:3rem; }
-        .sv-cta-inner { background:linear-gradient(135deg,rgba(0, 129, 242,.1),rgba(15,23,42,.6)); border:1px solid rgba(0, 129, 242,.3); border-radius:var(--radius-lg); padding:2.2rem 2.4rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
+        .sv-cta-inner { background:linear-gradient(135deg,rgba(255, 96, 0,.1),rgba(15,23,42,.6)); border:1px solid rgba(255, 96, 0,.3); border-radius:var(--radius-lg); padding:2.2rem 2.4rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
         .sv-cta h3 { font-size:1.4rem; font-weight:800; color:var(--white); margin:0 0 .5rem; }
         .sv-cta p { color:var(--text-secondary); font-size:.95rem; line-height:1.6; margin:0; max-width:560px; }
         .sv-cta-btns { display:flex; gap:.7rem; flex-wrap:wrap; }
         .sv-cta-btn { white-space:nowrap; padding:.8rem 1.5rem; border-radius:10px; font-weight:700; text-decoration:none; font-size:.92rem; transition:all .2s ease; }
-        .sv-cta-btn.primary { background:var(--gradient-accent); color:#fff; box-shadow:0 0 20px rgba(0, 129, 242,.25); }
-        .sv-cta-btn.primary:hover { transform:translateY(-2px); box-shadow:0 0 32px rgba(0, 129, 242,.35); }
+        .sv-cta-btn.primary { background:var(--gradient-accent); color:#fff; box-shadow:0 0 20px rgba(255, 96, 0,.25); }
+        .sv-cta-btn.primary:hover { transform:translateY(-2px); box-shadow:0 0 32px rgba(255, 96, 0,.35); }
         .sv-cta-btn.ghost { background:var(--bg-card); border:1px solid var(--accent); color:var(--accent-light); }
-        .sv-cta-btn.ghost:hover { background:rgba(0, 129, 242,.1); }
+        .sv-cta-btn.ghost:hover { background:rgba(255, 96, 0,.1); }
       `}</style>
     </>
   )

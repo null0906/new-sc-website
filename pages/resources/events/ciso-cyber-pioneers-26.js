@@ -114,10 +114,10 @@ export default function CISOCyberPioneers26() {
       </Head>
 
       <style jsx global>{`
-        :root{--cy:#0081f2;--cy2:#d0521f;--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(0, 129, 242,.2);--bs:rgba(255,255,255,.06);--gr:#06d6a0;--am:#ffb703;--bl:#818cf8;--sans:'Inter',sans-serif}
+        :root{--cy:#FF6000;--cy2:#d0521f;--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--gr:#06d6a0;--am:#ffb703;--bl:#818cf8;--sans:'Inter',sans-serif}
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
         body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.7;-webkit-font-smoothing:antialiased}
-        #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#0081f2,#38A8FF);z-index:9999;transition:width .1s linear}
+        #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
         .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
         .breadcrumb a{color:var(--tm);text-decoration:none}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
 
@@ -133,7 +133,7 @@ export default function CISOCyberPioneers26() {
         .ev-meta-item{display:flex;align-items:center;gap:.5rem}
         .ev-meta-item strong{color:var(--tx);font-weight:600}
         .ev-intro{font-size:1.02rem;color:var(--tb);line-height:1.75;margin-bottom:1.5rem}
-        .ev-hero-img{border-radius:16px;overflow:hidden;border:1px solid var(--bo);line-height:0;box-shadow:0 20px 60px rgba(0, 129, 242,.12)}
+        .ev-hero-img{border-radius:16px;overflow:hidden;border:1px solid var(--bo);line-height:0;box-shadow:0 20px 60px rgba(255, 96, 0,.12)}
         .ev-hero-img img{width:100%;height:auto;display:block}
 
         .ev-section{max-width:1280px;margin:0 auto;padding:2.5rem 2rem}
@@ -172,7 +172,7 @@ export default function CISOCyberPioneers26() {
         .ev-about p{margin-bottom:1rem}
         .ev-about strong{color:var(--tx)}
 
-        .cta-final{background:linear-gradient(135deg,rgba(0, 129, 242,.1),rgba(15,23,42,.95));border:1px solid var(--bo);border-radius:16px;padding:2.5rem 2rem;text-align:center;margin:3rem 0}
+        .cta-final{background:linear-gradient(135deg,rgba(255, 96, 0,.1),rgba(15,23,42,.95));border:1px solid var(--bo);border-radius:16px;padding:2.5rem 2rem;text-align:center;margin:3rem 0}
         .cta-final h3{font-size:1.4rem;color:var(--tx);margin-bottom:.75rem}
         .cta-final p{font-size:.95rem;color:var(--tb);max-width:560px;margin:0 auto 1.5rem}
         .cta-final a{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.7rem;background:var(--cy);color:#fff;text-decoration:none;border-radius:10px;font-weight:700;font-size:.93rem;transition:background .2s}

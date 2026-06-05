@@ -12,9 +12,9 @@ const assessments = [
     tagline: 'For any organisation collecting or processing personal data of Indian citizens.',
     questions: 10,
     minutes: '~2 min',
-    accent: '#0081f2',
-    accentSoft: 'rgba(0, 129, 242, 0.12)',
-    accentBorder: 'rgba(0, 129, 242, 0.35)',
+    accent: '#FF6000',
+    accentSoft: 'rgba(255, 96, 0, 0.12)',
+    accentBorder: 'rgba(255, 96, 0, 0.35)',
     href: 'https://forms.gle/nq6WFu9zfhWrMiAbA',
     bestFor: 'SaaS, fintech, e-commerce, healthtech, EdTech — anyone handling Indian user data.'
   },
@@ -121,9 +121,9 @@ export default function ComplianceGapAssessment() {
         :root {
           --bg: #020617;
           --surface: #0a1628;
-          --accent: #0081f2;
-          --accent-soft: rgba(0, 129, 242, 0.15);
-          --accent-border: rgba(0, 129, 242, 0.3);
+          --accent: #FF6000;
+          --accent-soft: rgba(255, 96, 0, 0.15);
+          --accent-border: rgba(255, 96, 0, 0.3);
           --text-primary: #f8fafc;
           --text-body: #c8d6e5;
           --text-muted: #94a3b8;
@@ -331,7 +331,7 @@ export default function ComplianceGapAssessment() {
         }
 
         .info-banner {
-          background: linear-gradient(135deg, rgba(0, 129, 242,0.08) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgba(255, 96, 0,0.08) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 18px;
           padding: 1.5rem 1.75rem;
@@ -354,7 +354,7 @@ export default function ComplianceGapAssessment() {
         .info-banner-text strong { color: var(--text-primary); }
 
         .cta-banner {
-          background: linear-gradient(135deg, rgba(0, 129, 242,0.12) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgba(255, 96, 0,0.12) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2.75rem;
@@ -387,7 +387,7 @@ export default function ComplianceGapAssessment() {
         .btn-primary:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(0, 129, 242,0.3);
+          box-shadow: 0 8px 24px rgba(255, 96, 0,0.3);
         }
         .btn-secondary {
           display: inline-flex;

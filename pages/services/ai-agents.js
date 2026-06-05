@@ -45,7 +45,7 @@ export default function ServiceAiAgentsPage() {
 .ai-mesh-layer { position:absolute; border-radius:50%; filter:blur(100px); will-change:transform,opacity; pointer-events:none; }
 .ai-mesh-l1 { width:600px; height:600px; background:rgba(20,184,166,0.10); top:-150px; left:-100px; animation:aiMesh1 60s ease-in-out infinite; }
 .ai-mesh-l2 { width:500px; height:500px; background:rgba(124,92,255,0.07); top:-80px; right:-80px; animation:aiMesh2 60s ease-in-out infinite 20s; }
-.ai-mesh-l3 { width:400px; height:400px; background:rgba(0, 129, 242,0.05); bottom:-60px; left:40%; animation:aiMesh3 60s ease-in-out infinite 40s; }
+.ai-mesh-l3 { width:400px; height:400px; background:rgba(255, 96, 0,0.05); bottom:-60px; left:40%; animation:aiMesh3 60s ease-in-out infinite 40s; }
 @keyframes aiMesh1 { 0%,100%{ transform:translate(0,0); opacity:0.7; } 50%{ transform:translate(80px,40px); opacity:1; } }
 @keyframes aiMesh2 { 0%,100%{ transform:translate(0,0); opacity:0.5; } 50%{ transform:translate(-60px,50px); opacity:0.8; } }
 @keyframes aiMesh3 { 0%,100%{ transform:translate(0,0); opacity:0.4; } 50%{ transform:translate(40px,-50px); opacity:0.7; } }
@@ -179,7 +179,7 @@ export default function ServiceAiAgentsPage() {
 /* Zone bar */
 .ag-zones { display:flex; align-items:center; padding:8px 28px; border-bottom:1px solid var(--border); background:rgba(0,0,0,0.15); gap:0; }
 .ag-zone { font-size:0.65rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; }
-.ag-zone-admin { color:rgba(0, 129, 242,0.65); flex:0 0 108px; }
+.ag-zone-admin { color:rgba(255, 96, 0,0.65); flex:0 0 108px; }
 .ag-zone-agent { flex:1; text-align:center; color:rgba(20,184,166,0.65); }
 .ag-zone-sys { color:rgba(148,163,184,0.5); flex:0 0 116px; text-align:right; }
 /* Pipeline scroll */
