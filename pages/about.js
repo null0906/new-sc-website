@@ -88,6 +88,17 @@ export default function AboutPage() {
         <p class="team-bio">Governance, Risk, and Compliance expert specializing in guiding organizations toward achieving and maintaining compliance with ISO 27001, ISO 27701, and ISO 42001. Her expertise extends to GDPR and HIPAA.</p>
         <a href="https://www.linkedin.com/in/vandana-pawar-2681892b2/" class="team-linkedin" target="_blank">Connect on LinkedIn &rarr;</a>
       </div>
+      <!-- Sneha Joshi -->
+      <div class="team-card reveal delay-2">
+        <div class="team-avatar-glow">
+          <img src="/assets/images/sneha-joshi.png" alt="Sneha Joshi" loading="lazy">
+        </div>
+        <h3>Sneha Joshi</h3>
+        <div class="team-role">Partner &ndash; Cyber, Privacy &amp; Security Governance</div>
+        <div class="team-exp">16+ Years in Cybersecurity &amp; Privacy &bull; Ex-PwC, Grant Thornton, Capita</div>
+        <p class="team-bio">A cybersecurity and privacy leader with 16+ years across technology and security. Sneha has driven transformation, automation, and security programs at global firms including PwC, Grant Thornton, Wipro, and Capita, with deep expertise in data privacy, GRC, and third-party risk management.</p>
+        <a href="https://www.linkedin.com/in/sneha-joshi-15a71544/" class="team-linkedin" target="_blank">Connect on LinkedIn &rarr;</a>
+      </div>
       <!-- Shyam V -->
       <div class="team-card reveal delay-3">
         <div class="team-avatar-glow">
