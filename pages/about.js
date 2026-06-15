@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <>
       <Head>
-        <title>About | SecComply — Cybersecurity Compliance Experts</title>
+        <title>About | SecComply - Cybersecurity Compliance Experts</title>
         <meta name="description" content="Meet the SecComply team. Ex-CISOs, senior auditors, and security experts who have been in your shoes." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </Head>
@@ -41,13 +41,13 @@ export default function AboutPage() {
         <div class="section-badge"><span class="section-badge-dot"></span> Our Story</div>
         <h2>Founded by Security Professionals Who Get It</h2>
         <p>SecComply was founded by security professionals who experienced firsthand the complexity and frustration of achieving compliance in fast growing companies.</p>
-        <p>After years of working as CISOs and senior security leaders, we realized that most compliance frameworks were designed by auditors for auditors — not for the businesses that need to implement them.</p>
+        <p>After years of working as CISOs and senior security leaders, we realized that most compliance frameworks were designed by auditors for auditors - not for the businesses that need to implement them.</p>
         <p>We started SecComply to bridge that gap, bringing real world experience and practical solutions to companies struggling with security compliance.</p>
       </div>
       <div class="reveal-right">
         <div class="trust-inner" style="flex-direction:column;gap:32px;">
           <div class="trust-stat"><div class="trust-stat-number" data-count="100" data-suffix="+">0+</div><div class="trust-stat-label">Companies Secured</div></div>
-          <div class="trust-stat"><div class="trust-stat-number">Zero</div><div class="trust-stat-label">Failed Audits — 100% success rate</div></div>
+          <div class="trust-stat"><div class="trust-stat-number">Zero</div><div class="trust-stat-label">Failed Audits - 100% success rate</div></div>
           <div class="trust-stat"><div class="trust-stat-number">4-8</div><div class="trust-stat-label">Weeks Average Time to Compliance</div></div>
           <div class="trust-stat"><div class="trust-stat-number" data-count="50" data-suffix="+">0+</div><div class="trust-stat-label">Certifications Across Our Team</div></div>
         </div>
@@ -95,8 +95,7 @@ export default function AboutPage() {
         </div>
         <h3>Sneha Joshi</h3>
         <div class="team-role">Partner &ndash; Cyber, Privacy &amp; Security Governance</div>
-        <div class="team-exp">16+ Years in Cybersecurity &amp; Privacy &bull; Ex-PwC, Grant Thornton, Capita</div>
-        <p class="team-bio">A cybersecurity and privacy leader with 16+ years across technology and security. Sneha has driven transformation, automation, and security programs at global firms including PwC, Grant Thornton, Wipro, and Capita, with deep expertise in data privacy, GRC, and third-party risk management.</p>
+        <p class="team-bio">16+ years in technology &amp; cybersecurity. Ex-PwC, Grant Thornton, Wipro &amp; Capita &mdash; specializing in data privacy, GRC and third-party risk management.</p>
         <a href="https://www.linkedin.com/in/sneha-joshi-15a71544/" class="team-linkedin" target="_blank">Connect on LinkedIn &rarr;</a>
       </div>
       <!-- Shyam V -->

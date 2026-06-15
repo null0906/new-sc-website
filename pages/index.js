@@ -22,9 +22,9 @@ document.querySelectorAll('.nav-dropdown').forEach(dd=>{const trigger=dd.querySe
   return (
     <>
       <Head>
-        <title>SecComply — Expert Compliance &amp; Security Services</title>
+        <title>SecComply - Expert Compliance &amp; Security Services</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="SecComply delivers enterprise-grade compliance and security services — ISO 27001, SOC 2, GDPR, DPDP, VAPT, and CISO-as-a-Service — getting your business audit-ready and secure." />
+        <meta name="description" content="SecComply delivers enterprise-grade compliance and security services - ISO 27001, SOC 2, GDPR, DPDP, VAPT, and CISO-as-a-Service - getting your business audit-ready and secure." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style dangerouslySetInnerHTML={{__html: `:root{--blue-950:#020617;--blue-900:#0B1120;--blue-850:#0F172A;--blue-800:#1E293B;--blue-700:#334155;--blue-600:#475569;--blue-400:#94A3B8;--blue-300:#CBD5E1;--blue-200:#E2E8F0;--white:#FFF;--accent:#FF6000;--accent-light:#FF8A3D;--green:#10B981;--green-light:#34D399;--teal:#14B8A6;--purple:#8B5CF6;--red:#EF4444;--yellow:#F59E0B;--bg-hero:linear-gradient(165deg,#010309 0%,#050d1a 30%,#07111f 50%,#040c17 100%);--bg-dark:#020617;--bg-section:#0B1120;--bg-card:#111B2E;--bg-card-hover:#162036;--gradient-accent:linear-gradient(135deg,#FF6000,#FF8A3D);--radius-sm:8px;--radius-md:12px;--radius-lg:12px;--radius-xl:20px;--radius-full:9999px;--transition:0.3s cubic-bezier(0.4,0,0.2,1);--ease-spring:cubic-bezier(0.34,1.56,0.64,1)}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,Roboto,Helvetica,Arial,sans-serif;color:var(--blue-400);background:var(--bg-dark);line-height:1.6;overflow-x:hidden}img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{border:none;cursor:pointer;font-family:inherit;background:none}.container{max-width:1200px;margin:0 auto;padding:0 24px}
