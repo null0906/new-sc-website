@@ -647,25 +647,16 @@ export default function DxFSHyderabad26() {
             <img src="/event-images/dxfs-hyderabad-26/01.jpg" alt="SecComply CEO Shivani Tikadia at the ICAI DxFS 2026 welcome backdrop, Novotel Hyderabad" />
           </div>
           <div className="gallery-item">
-            <img src="/event-images/dxfs-hyderabad-26/02.jpg" alt="A SecComply team member at the ICAI DxFS 2026 welcome backdrop, Hyderabad" />
-          </div>
-          <div className="gallery-item">
             <img src="/event-images/dxfs-hyderabad-26/03.jpg" alt="SecComply in conversation with a senior delegate at ICAI DxFS 2026, Hyderabad" />
           </div>
           <div className="gallery-item">
             <img src="/event-images/dxfs-hyderabad-26/04.jpg" alt="SecComply networking with a profession leader at ICAI DxFS 2026" />
           </div>
           <div className="gallery-item">
-            <img src="/event-images/dxfs-hyderabad-26/05.jpg" alt="SecComply with a senior leader at ICAI DxFS 2026, Hyderabad" />
-          </div>
-          <div className="gallery-item">
             <img src="/event-images/dxfs-hyderabad-26/06.jpg" alt="SecComply at an exhibitor booth during ICAI DxFS 2026, Hyderabad" />
           </div>
           <div className="gallery-item">
             <img src="/event-images/dxfs-hyderabad-26/07.jpg" alt="SecComply in conversation at an exhibitor booth, ICAI DxFS 2026" />
-          </div>
-          <div className="gallery-item">
-            <img src="/event-images/dxfs-hyderabad-26/08.jpg" alt="Group photo with delegates at ICAI DxFS 2026, Novotel Hyderabad" />
           </div>
           <div className="gallery-item">
             <img src="/event-images/dxfs-hyderabad-26/09.jpg" alt="SecComply at the DxFS 2026 welcome backdrop, Hyderabad" />
