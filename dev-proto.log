@@ -1,0 +1,84 @@
+
+> seccomply-website@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1389ms
+ ○ Compiling /prototype ...
+ ✓ Compiled /prototype in 1171ms (346 modules)
+ GET /_next/static/webpack/a87af25251dc45ad.webpack.hot-update.json 404 in 1296ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /prototype 200 in 1291ms
+ GET /prototype 200 in 14ms
+ GET /prototype 200 in 27ms
+ GET /prototype 200 in 38ms
+ GET /prototype 200 in 27ms
+ GET /prototype 200 in 38ms
+ ✓ Compiled / in 324ms (348 modules)
+ GET / 200 in 415ms
+ ✓ Compiled in 235ms (348 modules)
+ GET /prototype 200 in 35ms
+ GET /prototype 200 in 23ms
+ GET /prototype 200 in 16ms
+ GET /prototype 200 in 12ms
+ GET /prototype 200 in 17ms
+ ✓ Compiled in 100ms (348 modules)
+ GET /prototype 200 in 18ms
+ GET /prototype 200 in 26ms
+ GET /prototype 200 in 35ms
+ ✓ Compiled in 324ms (348 modules)
+ ✓ Compiled in 311ms (348 modules)
+ GET /prototype 200 in 52ms
+ GET / 200 in 29ms
+ ✓ Compiled in 103ms (348 modules)
+ GET / 200 in 24ms
+ GET / 200 in 22ms
+ ○ Compiling /services ...
+ ✓ Compiled /services in 733ms (363 modules)
+ GET /services 200 in 799ms
+ GET / 200 in 21ms
+ GET / 200 in 16ms
+ GET / 200 in 27ms
+ ✓ Compiled in 517ms (356 modules)
+ GET / 200 in 74ms
+ GET / 200 in 190ms
+ GET / 200 in 33ms
+ GET /prototype 200 in 64ms
+ ✓ Compiled in 412ms (356 modules)
+ ✓ Compiled in 127ms (356 modules)
+ ✓ Compiled in 119ms (356 modules)
+ ✓ Compiled in 77ms (356 modules)
+ GET / 200 in 35ms
+ ✓ Compiled in 82ms (356 modules)
+ ✓ Compiled in 100ms (356 modules)
+ ✓ Compiled in 92ms (356 modules)
+ GET / 200 in 30ms
+ GET /prototype 200 in 13ms
+ GET / 200 in 40ms
+ ✓ Compiled in 78ms (356 modules)
+ ✓ Compiled in 93ms (356 modules)
+ ✓ Compiled in 16ms (222 modules)
+ ✓ Compiled in 27ms (130 modules)
+ ✓ Compiled /_error in 223ms (354 modules)
+ GET /prototype 404 in 99ms
+ ✓ Compiled in 102ms (354 modules)
+ GET /prototype 404 in 13ms
+ GET / 200 in 13ms
+ GET / 200 in 50ms
+ GET / 200 in 27ms
+ GET / 200 in 16ms
+ GET / 200 in 17ms
+ GET / 200 in 19ms
+ GET / 200 in 124ms
+ GET /client-logos/flipkart.jpg 404 in 24ms
+ ✓ Compiled in 567ms (352 modules)
+ ✓ Compiled in 260ms (352 modules)
+ GET / 200 in 73ms
+ ✓ Compiled /_error in 88ms (354 modules)
+ GET /client-logos/flipkart.jpg 404 in 128ms
+ ✓ Compiled in 83ms (354 modules)
+ GET / 200 in 29ms
