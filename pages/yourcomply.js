@@ -323,6 +323,19 @@ export default function YourComply() {
         cleanups.push(() => { c.removeEventListener('mousemove', mm); c.removeEventListener('mouseleave', ml) })
       })
 
+      // Main-page-style cursor proximity glow on cards
+      document.querySelectorAll('.yc-card, .yc-stat, .yc-step, .yc-why-new, .yc-fw, .yc-panel').forEach((c) => {
+        const mm = (e) => {
+          const r = c.getBoundingClientRect()
+          c.style.setProperty('--glow-x', `${e.clientX - r.left}px`)
+          c.style.setProperty('--glow-y', `${e.clientY - r.top}px`)
+          c.classList.add('yc-glow-active')
+        }
+        const ml = () => c.classList.remove('yc-glow-active')
+        c.addEventListener('mousemove', mm); c.addEventListener('mouseleave', ml)
+        cleanups.push(() => { c.removeEventListener('mousemove', mm); c.removeEventListener('mouseleave', ml) })
+      })
+
       // Mouse-follow glow on primary CTAs
       document.querySelectorAll('.yc-cta-glow').forEach((b) => {
         const mm = (e) => {
@@ -952,6 +965,15 @@ export default function YourComply() {
         .yc-cta h2 { position: relative; font-size: clamp(1.7rem, 4vw, 2.6rem); font-weight: 900; color: var(--white); margin: 0 0 14px; letter-spacing: -.02em; }
         .yc-cta p { position: relative; font-size: 1.05rem; color: var(--text-secondary); max-width: 560px; margin: 0 auto 30px; line-height: 1.6; }
         .yc-cta-btns { position: relative; display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+
+        /* Main-page-style cursor proximity glow (additive — follows the pointer like the homepage cards) */
+        .yc-card, .yc-fw, .yc-why-new { position: relative; }
+        .yc-card::after, .yc-stat::after, .yc-step::after, .yc-why-new::after, .yc-fw::after, .yc-panel::after {
+          content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; z-index: 2;
+          transition: opacity .4s ease;
+          background: radial-gradient(320px circle at var(--glow-x, 50%) var(--glow-y, 50%), rgba(255,96,0,.14), transparent 60%);
+        }
+        .yc-glow-active::after { opacity: 1; }
 
         /* ============ Keyframes ============ */
         @keyframes ycUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }

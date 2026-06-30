@@ -82,3 +82,6 @@
  GET /client-logos/flipkart.jpg 404 in 128ms
  ✓ Compiled in 83ms (354 modules)
  GET / 200 in 29ms
+ GET / 200 in 23ms
+ GET / 200 in 37ms
+ GET / 200 in 25ms
