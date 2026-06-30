@@ -535,7 +535,7 @@ export default function SKTBreach() {
               <table className="map-table">
                 <thead><tr><th>SKT Compliance Failure</th><th>SecComply Feature</th><th>Framework Covered</th></tr></thead>
                 <tbody>
-                  <tr><td>No data encryption</td><td>Automated data classification + encryption control tracking in Overwatch gap dashboard</td><td><strong>ISO 27001 A.8.24, SOC 2 CC6.1, DPDP Act S.8</strong></td></tr>
+                  <tr><td>No data encryption</td><td>Automated data classification + encryption control tracking in the SecComply gap dashboard</td><td><strong>ISO 27001 A.8.24, SOC 2 CC6.1, DPDP Act S.8</strong></td></tr>
                   <tr><td>No network segmentation</td><td>Cloud Security Scanner flags exposed management interfaces and missing segmentation in AWS, Azure, GCP</td><td><strong>ISO 27001 A.8.22, SOC 2 CC6.6</strong></td></tr>
                   <tr><td>Poor access privilege management</td><td>Continuous access control monitoring + quarterly access review workflows built into platform</td><td><strong>ISO 27001 A.8.2, SOC 2 CC6.3</strong></td></tr>
                   <tr><td>Delayed breach notification</td><td>Pre-built Incident Response playbooks with automated notification workflow templates; breach timer built in</td><td><strong>DPDP Act, GDPR Art.33, HIPAA §164.412</strong></td></tr>
