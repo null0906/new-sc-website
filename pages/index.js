@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Script from 'next/script'
+import dynamic from 'next/dynamic'
 import { useEffect } from 'react'
+
+const EarthScene = dynamic(() => import('../components/canvas/EarthScene'), { ssr: false })
 
 export default function IndexPage() {
 
@@ -18,6 +21,124 @@ document.querySelectorAll('.nav-dropdown').forEach(dd=>{const trigger=dd.querySe
       return () => { if(s.parentNode) s.parentNode.removeChild(s); };
     } catch(e) { console.error('Script error:', e); }
   }, []);
+
+  useEffect(() => {
+    let frameId = 0
+    let currentX = 0
+    let currentY = 18
+    let currentScale = 0.92
+    let currentOpacity = 0
+    let currentScrim = 0
+    let scrollY = 0
+    let sectionPoses = []
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const mobile = window.matchMedia('(max-width: 767px)')
+
+    const sectionMap = [
+      { selector: '.hero', x: 0, y: 18, scale: 1.15, opacity: 1, scrim: 0 },
+      { selector: '.trust-bar', x: 0, y: 8, scale: 1.04, opacity: 0.7, scrim: 0.34 },
+      { selector: '.trust-founder-section', x: 42, y: 2, scale: 0.94, opacity: 0.58, scrim: 0.5 },
+      { selector: '.clients-section', x: 0, y: -8, scale: 0.82, opacity: 0.48, scrim: 0.56 },
+      { selector: '.services-section', x: 44, y: 4, scale: 0.92, opacity: 0.52, scrim: 0.58 },
+      { selector: '.whyus-section', x: -44, y: 6, scale: 0.9, opacity: 0.5, scrim: 0.58 },
+      { selector: '.steps-section', x: 0, y: -18, scale: 0.78, opacity: 0.46, scrim: 0.62 },
+      { selector: '.frameworks-section', x: -42, y: 0, scale: 0.9, opacity: 0.5, scrim: 0.58 },
+      { selector: '.team-section', x: 42, y: 8, scale: 0.9, opacity: 0.48, scrim: 0.6 },
+      { selector: '.resources-section', x: -42, y: 2, scale: 0.9, opacity: 0.48, scrim: 0.6 },
+      { selector: '.industries-section', x: 0, y: -12, scale: 0.8, opacity: 0.44, scrim: 0.62 },
+      { selector: '.testimonials-section', x: -38, y: 10, scale: 0.88, opacity: 0.5, scrim: 0.56 },
+      { selector: '.cta-section', x: 0, y: 16, scale: 0.98, opacity: 0.64, scrim: 0.42 },
+    ]
+
+    const buildSectionPoses = () => {
+      const xLimit = mobile.matches ? 13 : 44
+      sectionPoses = sectionMap
+        .map((anchor) => {
+          const element = document.querySelector(anchor.selector)
+          if (!element) return null
+          const rect = element.getBoundingClientRect()
+          const top = rect.top + window.scrollY
+          const bottom = top + rect.height
+          return {
+            ...anchor,
+            top,
+            bottom,
+            center: top + rect.height * 0.5,
+            x: mobile.matches ? Math.max(Math.min(anchor.x * 0.34, xLimit), -xLimit) : anchor.x,
+            y: mobile.matches ? anchor.y + 8 : anchor.y,
+            scale: mobile.matches ? Math.min(anchor.scale + 0.04, 1.08) : anchor.scale,
+            scrim: mobile.matches ? Math.min(anchor.scrim + 0.08, 0.68) : anchor.scrim,
+          }
+        })
+        .filter(Boolean)
+        .sort((a, b) => a.top - b.top)
+
+      if (!sectionPoses.length) {
+        sectionPoses = [{ top: 0, bottom: Infinity, center: 0, x: 0, y: 18, scale: 1, opacity: 0.8, scrim: 0.4 }]
+      }
+    }
+
+    const getActivePose = (scrollPosition) => {
+      const viewportCenter = scrollPosition + window.innerHeight * 0.5
+      const active = sectionPoses.find((pose) => viewportCenter >= pose.top && viewportCenter < pose.bottom)
+      if (active) return active
+      return sectionPoses.reduce((closest, pose) => (
+        Math.abs(pose.center - viewportCenter) < Math.abs(closest.center - viewportCenter) ? pose : closest
+      ), sectionPoses[0])
+    }
+
+    const updateScrollProgress = () => {
+      scrollY = window.scrollY
+    }
+
+    const glide = (current, target, ease, maxStep) => {
+      const next = current + (target - current) * ease
+      const delta = next - current
+      if (Math.abs(delta) <= maxStep) return next
+      return current + Math.sign(delta) * maxStep
+    }
+
+    const frame = () => {
+      const globe = document.querySelector('.space-earth-layer')
+      const text = document.querySelector('.hero-content')
+      const hero = document.querySelector('.hero')
+      const scrim = document.querySelector('.space-earth-scrim')
+      const target = getActivePose(reducedMotion.matches ? 0 : scrollY)
+
+      currentX = glide(currentX, target.x, 0.045, mobile.matches ? 0.16 : 0.32)
+      currentY = glide(currentY, target.y, 0.045, mobile.matches ? 0.12 : 0.22)
+      currentScale = glide(currentScale, target.scale, 0.055, 0.006)
+      currentOpacity = glide(currentOpacity, target.opacity, 0.08, 0.012)
+      currentScrim = glide(currentScrim, target.scrim, 0.08, 0.012)
+
+      if (globe) {
+        globe.style.transform = `translate3d(${currentX}vw, ${currentY}vh, 0) scale(${currentScale})`
+        globe.style.opacity = String(Math.max(currentOpacity, mobile.matches ? 0.5 : 0.52))
+      }
+      if (scrim) {
+        scrim.style.opacity = String(currentScrim)
+      }
+      if (text) {
+        text.style.transform = 'translate3d(0,0,0)'
+        text.style.textAlign = 'center'
+      }
+      if (hero) hero.style.setProperty('--hero-card-shift', '0px')
+
+      frameId = window.requestAnimationFrame(frame)
+    }
+
+    buildSectionPoses()
+    updateScrollProgress()
+    window.addEventListener('scroll', updateScrollProgress, { passive: true })
+    window.addEventListener('resize', buildSectionPoses)
+    frameId = window.requestAnimationFrame(frame)
+
+    return () => {
+      window.cancelAnimationFrame(frameId)
+      window.removeEventListener('scroll', updateScrollProgress)
+      window.removeEventListener('resize', buildSectionPoses)
+    }
+  }, [])
 
   return (
     <>
@@ -125,7 +246,91 @@ document.querySelectorAll('.nav-dropdown').forEach(dd=>{const trigger=dd.querySe
 .clients-note{text-align:center;margin-top:14px;font-size:14px;color:#64748B}
 @media(max-width:1024px){.founder-grid{grid-template-columns:1fr;gap:40px}}
 @media(max-width:768px){.trust-founder-section,.clients-section{padding:60px 0}.client-tile{width:138px;height:82px;padding:12px 16px}.client-logo{max-height:42px}.client-marquee{gap:12px}.cm-track{gap:12px}}`}} />
+<style dangerouslySetInnerHTML={{__html: `
+:root{
+  --space-void:#02040a;
+  --space-900:#060d18;
+  --space-800:#0a1422;
+  --space-700:#111e30;
+  --space-glass:rgba(8,16,30,0.72);
+  --text-primary:#f0f4f8;
+  --text-secondary:#9fb0c5;
+  --text-muted:#5a7088;
+  --brand-primary:var(--accent);
+  --brand-secondary:var(--accent-light);
+  --blue-950:var(--space-void);
+  --blue-900:var(--space-900);
+  --blue-850:var(--space-800);
+  --blue-800:var(--space-700);
+  --blue-700:#203149;
+  --blue-600:var(--text-muted);
+  --blue-400:var(--text-secondary);
+  --blue-300:#c5d2e3;
+  --blue-200:#dce6f2;
+  --white:var(--text-primary);
+  --bg-hero:transparent;
+  --bg-dark:var(--space-void);
+  --bg-section:var(--space-900);
+  --bg-card:var(--space-800);
+  --bg-card-hover:var(--space-700);
+}
+html,body,#__next{background:var(--space-void);min-height:100%}
+body{color:var(--text-secondary)}
+#__next{position:relative;isolation:isolate}
+.earth-scroll-range{position:absolute;top:0;left:0;width:1px;height:100vh;pointer-events:none;z-index:-1}
+.space-starfield{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(circle at 12% 18%,rgba(255,255,255,.8) 0 1px,transparent 1.5px),radial-gradient(circle at 38% 42%,rgba(159,176,197,.65) 0 1px,transparent 1.4px),radial-gradient(circle at 71% 26%,rgba(255,138,61,.52) 0 1px,transparent 1.35px),radial-gradient(circle at 86% 72%,rgba(255,255,255,.7) 0 1px,transparent 1.5px),radial-gradient(circle at 25% 82%,rgba(159,176,197,.55) 0 1px,transparent 1.3px);background-size:220px 220px,310px 310px,390px 390px,270px 270px,440px 440px;opacity:.42}
+.space-starfield::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 8%,rgba(255,96,0,.08),transparent 42%),linear-gradient(180deg,rgba(2,4,10,.1),rgba(2,4,10,.78))}
+.space-earth-layer{position:fixed;left:0;right:0;top:0;height:100vh;z-index:2;pointer-events:none;opacity:0;transition:opacity .35s ease;will-change:transform;transform-origin:center center;mask-image:linear-gradient(#000 0%,#000 78%,transparent 100%)}
+.space-earth-layer::before{content:'';position:absolute;left:50%;bottom:-18vh;width:min(132vw,1500px);aspect-ratio:1;border-radius:50%;transform:translateX(-50%);background:radial-gradient(circle,rgba(255,96,0,.32) 0%,rgba(255,96,0,.18) 35%,rgba(255,138,61,.1) 54%,transparent 72%);filter:blur(20px);opacity:1;z-index:0}
+.space-earth-scrim{position:fixed;inset:0;z-index:2;pointer-events:none;opacity:0;background:linear-gradient(180deg,rgba(2,4,10,.18),rgba(2,4,10,.56)),radial-gradient(ellipse at 50% 48%,rgba(2,4,10,.18),rgba(2,4,10,.62) 68%);transition:opacity .25s ease;will-change:opacity}
+.earth-scene-canvas{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
+.earth-scene-surface{position:relative;z-index:1;display:block;width:100%;height:100%}
+.earth-scene-fallback-globe{display:none;position:absolute;left:50%;bottom:-18vh;width:min(112vw,1180px);aspect-ratio:1;border-radius:50%;transform:translateX(-50%);background:radial-gradient(circle at 52% 35%,rgba(255,138,61,.28) 0 1px,transparent 1.8px),radial-gradient(circle at 42% 48%,rgba(255,96,0,.22) 0 1px,transparent 2px),radial-gradient(circle at 60% 56%,rgba(255,255,255,.18) 0 1px,transparent 1.8px),radial-gradient(circle at 50% 50%,rgba(255,96,0,.18),rgba(255,96,0,.08) 36%,rgba(5,10,20,.62) 56%,rgba(1,3,8,.96) 70%);background-size:28px 28px,38px 38px,52px 52px,100% 100%;box-shadow:0 0 90px rgba(255,96,0,.26),inset 0 0 70px rgba(255,96,0,.16);border:1px solid rgba(255,138,61,.22);z-index:1}
+.earth-scene-fallback .earth-scene-surface{display:none}
+.earth-scene-fallback .earth-scene-fallback-globe{display:block}
+.navbar{background:rgba(2,4,10,.18);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.navbar.scrolled{background:rgba(2,4,10,.8);border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 12px 40px rgba(0,0,0,.34)}
+.hero,.trust-bar,.trust-founder-section,.clients-section,.services-section,.whyus-section,.steps-section,.frameworks-section,.team-section,.resources-section,.industries-section,.testimonials-section,.cta-section{position:relative;z-index:3}
+.hero{min-height:100vh;background:radial-gradient(ellipse at 50% 82%,rgba(255,96,0,.12),transparent 40%);isolation:isolate}
+.hero::before{content:'';position:absolute;inset:72px max(24px,calc((100vw - 980px)/2)) 70px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:linear-gradient(180deg,rgba(8,16,30,.08),rgba(8,16,30,.02));z-index:2;pointer-events:none;transform:translate3d(var(--hero-card-shift,0),0,0);will-change:transform}
+.hero-content::before{content:'';position:absolute;inset:-30px -42px -28px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:linear-gradient(135deg,rgba(6,13,24,.5),rgba(6,13,24,.24));box-shadow:0 24px 90px rgba(0,0,0,.36),inset 0 1px 0 rgba(255,255,255,.08);backdrop-filter:blur(15px) saturate(135%);-webkit-backdrop-filter:blur(15px) saturate(135%);z-index:-1;pointer-events:none}
+.hero-content{padding:56px 28px 60px;text-shadow:0 2px 30px rgba(0,0,0,.62);will-change:transform}
+.hero-grid,.hero-particle-canvas{opacity:.38}
+.hero-glow,.hero-glow-center,.hero-glow-ring,.hero-glow-ring-2{opacity:.28}
+.trust-bar{padding:42px 0;background:transparent;border-bottom:0}
+.trust-inner,.founder-detail,.founder-photo,.founder-badge{background:var(--space-glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);border-radius:16px}
+.trust-inner{padding:26px 28px;box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.trust-stat-number,.whyus-ring-num,.whyus-float-num{color:var(--brand-primary)}
+.trust-stat-label,.section-desc,.founder-cap span,.vmv-ds,.service-card p,.service-bullets,.whyus-left p,.whyus-feature-text p,.step-card p,.fw-sub,.team-bio,.team-story,.resource-card p,.testi-role,.clients-note{color:var(--text-secondary)}
+.trust-founder-section{background:linear-gradient(180deg,transparent 0%,rgba(6,13,24,.72) 90%);padding-bottom:110px}
+.trust-founder-section .section-header{max-width:920px;margin-bottom:48px;padding:28px 34px;background:rgba(8,16,30,.78);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,.36),inset 0 1px 0 rgba(255,255,255,.06)}
+.trust-founder-section .section-title{margin-bottom:14px;text-shadow:0 2px 24px rgba(0,0,0,.62)}
+.trust-founder-section .section-desc{max-width:760px;margin:0 auto;color:#c5d2e3;text-shadow:0 1px 18px rgba(0,0,0,.7)}
+.clients-section,.services-section,.whyus-section,.steps-section,.frameworks-section,.team-section,.resources-section,.industries-section,.testimonials-section,.cta-section{background:transparent!important}
+.section-title,.service-card h3,.whyus-left h2,.whyus-feature-text h4,.step-card h3,.fw-name,.team-card h3,.resource-card h3,.testi-name,.cta-content h2,.vmv-tt{color:var(--text-primary)}
+.service-card,.whyus-feature,.whyus-panel,.whyus-float,.step-card,.fw-card,.team-card,.resource-card,.testi-card,.vmv-card,.industry-pill,.cta-content{background:rgba(10,20,34,.82);border-color:rgba(255,255,255,.11);box-shadow:0 18px 50px rgba(0,0,0,.24);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.service-card:hover,.step-card:hover,.fw-card:hover,.team-card:hover,.resource-card:hover,.testi-card:hover,.vmv-card:hover,.industry-pill:hover{background:var(--space-700);border-color:rgba(255,96,0,.28)}
+.service-icon,.fw-icon,.resource-icon,.whyus-feature-icon,.vmv-ico{color:var(--brand-secondary)}
+.client-tile{background:rgba(255,255,255,.92);border-color:rgba(255,255,255,.16);box-shadow:0 14px 42px rgba(0,0,0,.24)}
+.client-logo{filter:none;opacity:.96;mix-blend-mode:multiply}
+.client-tile:hover{background:#fff;border-color:rgba(255,96,0,.4)}
+.footer{position:relative;z-index:2;background:var(--space-void)}
+@media(max-width:768px){
+  .space-earth-layer{height:100vh}
+  .space-earth-layer::before{bottom:-10vh;width:140vw;filter:blur(18px)}
+  .hero{min-height:92vh}
+  .hero::before{inset:86px 14px 52px}
+  .hero-content::before{inset:-30px -12px -26px;border-radius:14px}
+  .hero-content{padding:48px 18px 58px}
+  .trust-inner{gap:22px;padding:22px 18px}
+  .trust-founder-section .section-header{padding:22px 18px;margin-bottom:34px}
+}
+`}} />
       </Head>
+      <div id="earth-scroll-range" className="earth-scroll-range" aria-hidden="true" />
+      <div className="space-starfield" aria-hidden="true" />
+      <div className="space-earth-layer" aria-hidden="true"><EarthScene /></div>
+      <div className="space-earth-scrim" aria-hidden="true" />
       <div dangerouslySetInnerHTML={{__html: `
 <section class="hero"><div class="hero-grid"></div><canvas id="particleSphere" class="hero-particle-canvas"></canvas><div class="hero-glow hero-glow-1"></div><div class="hero-glow hero-glow-2"></div><div class="hero-glow hero-glow-3"></div><div class="hero-glow-center"></div><div class="hero-glow-ring"></div><div class="hero-glow-ring-2"></div><div class="container"><div class="hero-content"><div class="hero-badge"><span class="hero-badge-dot"></span> ENTERPRISE-GRADE SECURITY &amp; COMPLIANCE</div><h1>Enterprise Security,<br><span class="accent">Engineered Around You</span></h1><p class="hero-sub">End-to-end security, compliance, and governance &mdash; built for the scale, scrutiny, and stakes of the modern enterprise.</p><div class="hero-ctas"><a href="/resources/assessments" class="btn btn-primary btn-lg">Get Free Assessment <span class="btn-icon">&rarr;</span></a><a href="/services" class="btn btn-outline btn-lg">Explore Services</a></div><div class="hero-logos"><div class="hero-logos-row"><span class="hero-logo-pill">&#10003; ISO 27001</span><span class="hero-logo-pill">&#10003; SOC 2</span><span class="hero-logo-pill">&#10003; DPDP</span><span class="hero-logo-pill">&#10003; GDPR</span><span class="hero-logo-pill">&#10003; ISO 27701</span><span class="hero-logo-pill">&#10003; HIPAA</span><span class="hero-logo-pill">&#10003; VAPT</span></div></div></div></div></section>
 
