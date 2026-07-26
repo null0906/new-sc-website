@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import Logo from './Logo'
 
 export default function SiteNav({ scrolled }) {
   const [openMenu, setOpenMenu] = useState(null) // 'services' | 'resources' | null
@@ -48,8 +49,8 @@ export default function SiteNav({ scrolled }) {
   return (
     <nav className={scrolled ? 'navbar scrolled' : 'navbar'} id="navbar" ref={navRef}>
       <div className="navbar-inner">
-        <Link href="/" className="logo" onClick={closeAll}>
-          <img src="/assets/images/logo.png" alt="SecComply" style={{ height: '40px' }} />
+        <Link href="/" className="logo" onClick={closeAll} aria-label="SecComply">
+          <Logo height={34} />
           <span className="tm-mark">{'™'}</span>
         </Link>
         <ul className={mobileOpen ? 'nav-links open' : 'nav-links'}>

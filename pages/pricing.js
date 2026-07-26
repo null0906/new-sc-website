@@ -103,11 +103,11 @@ export default function Pricing() {
         .pr-card { position:relative; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.6rem 1.5rem; display:flex; flex-direction:column; gap:.6rem; transition:all .3s ease; }
         .pr-card:hover { border-color:rgb(var(--accent-rgb) / .3); transform:translateY(-3px); box-shadow:var(--shadow-md); }
         .pr-card.featured { border-color:rgb(var(--accent-rgb) / .35); }
-        .pr-card-flag { position:absolute; top:-.6rem; right:1rem; background:var(--gradient-accent); color:var(--white); font-size:.62rem; font-weight:800; letter-spacing:.04em; text-transform:uppercase; padding:.2rem .6rem; border-radius:var(--radius-full); }
+        .pr-card-flag { position:absolute; top:-.6rem; right:1rem; background:var(--gradient-accent); color:#fff; font-size:.62rem; font-weight:800; letter-spacing:.04em; text-transform:uppercase; padding:.2rem .6rem; border-radius:var(--radius-full); }
         .pr-card-icon { font-size:1.9rem; }
         .pr-card h2 { font-size:1.15rem; font-weight:800; color:var(--white); margin:0; }
         .pr-card p { color:var(--text-secondary); font-size:.88rem; line-height:1.55; margin:0; flex:1; }
-        .pr-card-btn { align-self:flex-start; margin-top:.4rem; background:var(--gradient-accent); color:var(--white); border:none; border-radius:10px; padding:.65rem 1.2rem; font-size:.86rem; font-weight:700; cursor:pointer; font-family:inherit; transition:transform .15s ease; }
+        .pr-card-btn { align-self:flex-start; margin-top:.4rem; background:var(--gradient-accent); color:#fff; border:none; border-radius:10px; padding:.65rem 1.2rem; font-size:.86rem; font-weight:700; cursor:pointer; font-family:inherit; transition:transform .15s ease; }
         .pr-card-btn:hover { transform:translateY(-1px); }
 
         .pr-scope { margin-top:2.5rem; }

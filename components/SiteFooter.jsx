@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Logo from './Logo'
 
 const openCookiePreferences = (e) => {
   e.preventDefault()
@@ -13,11 +14,11 @@ export default function SiteFooter() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Link href="/" className="logo">
-              <img src="/assets/images/logo.png" alt="SecComply" style={{ height: '40px' }} />
+            <Link href="/" className="logo" aria-label="SecComply">
+              <Logo height={32} />
               <span className="tm-mark">{'™'}</span>
             </Link>
-            <p style={{ color: '#64748B', fontSize: '14px', lineHeight: 1.65, margin: '14px 0 18px' }}>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.65, margin: '14px 0 18px' }}>
               We help businesses stay audit-ready, breach-proof, and compliant — without the complexity.
             </p>
             <div className="footer-socials-box">

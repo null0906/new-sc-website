@@ -70,7 +70,7 @@ export default function Resources() {
 
       <div dangerouslySetInnerHTML={{__html: `<style>
         .res-hero{padding:120px 24px 40px;text-align:center;max-width:800px;margin:0 auto}
-        .res-hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;color:#fff;margin-bottom:16px}
+        .res-hero h1{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.2rem);font-weight:600;letter-spacing:-0.02em;color:var(--white);margin-bottom:16px}
         .res-hero p{font-size:1.1rem;color:rgb(var(--p-white-rgb) / .55);line-height:1.7}
         .res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:40px auto 100px;padding:0 24px}
         @media(max-width:900px){.res-grid{grid-template-columns:repeat(2,1fr)}}
@@ -83,7 +83,7 @@ export default function Resources() {
         .res-tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.7rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;background:rgb(var(--accent-rgb) / .15);color:var(--accent)}
         .res-count{font-size:.75rem;color:rgb(var(--p-white-rgb) / .35);font-weight:500}
         .res-icon{font-size:2.2rem;line-height:1}
-        .res-card h3{font-size:1.3rem;font-weight:700;color:#fff;margin:0}
+        .res-card h3{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--white);margin:0}
         .res-card p{font-size:.92rem;color:rgb(var(--p-white-rgb) / .5);line-height:1.6;margin:0;flex:1}
         .res-cta{color:var(--accent);font-size:.9rem;font-weight:600;display:flex;align-items:center;gap:6px;margin-top:4px;transition:gap .2s}
         .res-card:hover .res-cta{gap:10px}

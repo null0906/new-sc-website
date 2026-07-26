@@ -380,7 +380,7 @@ export default function Northiron() {
       <Script src="/assets/js/counters.js" strategy="afterInteractive" />
       <Script src="/assets/js/accordion.js" strategy="afterInteractive" />
 
-      <main className="ni-page theme-iron">
+      <main className="ni-page">
         {/* ── 1. HERO ─────────────────────────────────────── */}
         <section className="ni-hero">
           <div className="ni-hero-bg" aria-hidden="true">
@@ -413,7 +413,7 @@ export default function Northiron() {
           <div className="ni-hero-inner">
             <span className="ni-eyebrow"><span className="ni-eyebrow-dot" /> The SecComply Platform</span>
             <h1 className="ni-h1">
-              <span className="ni-grad" data-text="Northiron.ai">Northiron.ai</span>
+              <span className="ni-grad" data-text="Northiron.ai">Northiron<span className="dot-ai">.ai</span></span>
               <span className="ni-h1-line">Compliance, automated.</span>
             </h1>
             <p className="ni-lede">
@@ -740,9 +740,9 @@ export default function Northiron() {
         .ni-eyebrow { display: inline-flex; align-items: center; gap: 9px; padding: 7px 16px; border-radius: var(--radius-full); background: rgb(var(--accent-rgb) / .08); border: 1px solid rgb(var(--accent-rgb) / .22); font-size: .8rem; font-weight: 600; color: var(--accent-light); margin-bottom: 24px; animation: ycUp .7s var(--ease-out) both; }
         .ni-eyebrow-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); animation: pulse 2s infinite; }
         .ni-h1 { margin: 0 0 22px; display: flex; flex-direction: column; gap: 4px; animation: ycUp .7s var(--ease-out) .08s both; }
-        .ni-grad { position: relative; font-size: clamp(2.9rem, 7.6vw, 5.6rem); font-weight: 900; line-height: 1; letter-spacing: -.03em; background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--accent-tint), var(--accent-light), var(--accent)); background-size: 220% auto; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; filter: drop-shadow(0 4px 26px rgb(var(--accent-rgb) / .3)); animation: textShimmer 7s linear infinite; }
-        .ni-grad::after { content: attr(data-text); position: absolute; inset: 0; background: inherit; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: blur(20px); opacity: .42; z-index: -1; }
-        .ni-h1-line { font-size: clamp(1.45rem, 3.6vw, 2.3rem); font-weight: 800; color: #fff; letter-spacing: -.01em; text-shadow: 0 2px 34px rgb(var(--p-white-rgb) / .55); }
+        .ni-grad { position: relative; font-family: var(--font-display); font-size: clamp(2.9rem, 7.6vw, 5.6rem); font-weight: 600; line-height: 1; letter-spacing: -.035em; color: var(--white); }
+        .ni-grad .dot-ai { color: var(--accent); }
+        .ni-h1-line { font-family: var(--font-display); font-size: clamp(1.45rem, 3.6vw, 2.3rem); font-weight: 600; color: var(--white); letter-spacing: -.02em; }
         .ni-lede { font-size: 1.14rem; color: var(--text-secondary); line-height: 1.7; max-width: 640px; margin: 0 auto 14px; animation: ycUp .7s var(--ease-out) .16s both; }
         .ni-lede-2 { font-size: 1rem; color: var(--text-secondary); animation-delay: .22s; }
         .ni-hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin: 30px 0 36px; animation: ycUp .7s var(--ease-out) .3s both; }
@@ -805,7 +805,7 @@ export default function Northiron() {
         .ycm-map-fws em { font-style: normal; font-size: .64rem; font-weight: 700; color: var(--accent-light); background: rgb(var(--accent-rgb) / .1); border: 1px solid rgb(var(--accent-rgb) / .2); padding: 2px 7px; border-radius: 5px; }
         .ycm-meter { position: relative; height: 26px; border-radius: 8px; background: rgb(var(--p-white-rgb) / .05); overflow: hidden; display: flex; align-items: center; }
         .ycm-meter-fill { position: absolute; left: 0; top: 0; bottom: 0; width: var(--w); background: var(--gradient-accent); border-radius: 8px; transform-origin: left; animation: ycGrow 1.2s var(--ease-out) both; }
-        .ycm-meter b { position: relative; z-index: 1; font-size: .68rem; font-weight: 800; color: #fff; padding-left: 10px; }
+        .ycm-meter b { position: relative; z-index: 1; font-size: .68rem; font-weight: 700; color: var(--white); padding-left: 10px; }
         .ycm-wave { width: 100%; height: 56px; }
         .ycm-wave polyline { stroke-dasharray: 700; stroke-dashoffset: 700; animation: ycDraw 1.8s var(--ease-out) forwards; filter: drop-shadow(0 0 5px rgb(var(--accent-rgb) / .5)); }
         .ycm-status { display: flex; align-items: center; gap: 9px; font-size: .8rem; color: var(--text-secondary); padding: 8px 10px; border-radius: 9px; background: rgb(var(--p-white-rgb) / .02); border: 1px solid var(--border); }

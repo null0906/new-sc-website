@@ -16,7 +16,7 @@
 :root {
   /* ---------- Layer A: primitives ---------- */
   --p-accent: #C2410C;         --p-accent-rgb: 194,65,12;
-  --p-accent-light: #D3540F;   --p-accent-light-rgb: 211,84,15;
+  --p-accent-light: #BE480A;   --p-accent-light-rgb: 190,72,10;
   --p-accent-dark: #9A3412;    --p-accent-dark-rgb: 154,52,18;
 
   --p-bg-primary: #FCFCFD;
@@ -124,9 +124,9 @@
   --blue-950: var(--p-bg-primary);
   --blue-850: var(--p-bg-card);
   --blue-600: #475569;
-  --blue-300: #CBD5E1;
+  --blue-300: var(--p-text-primary);
   --blue-200: var(--p-text-primary);
-  --green-light: #34D399;
+  --green-light: var(--p-green);
   --bg-hero: var(--p-bg-primary);
   --bg-dark: var(--p-bg-primary);
   --bg-section: var(--p-bg-secondary);
@@ -180,68 +180,4 @@
   --destructive-foreground: var(--p-bg-card);
   --input: var(--border);
   --ring: var(--accent);              --ring-rgb: var(--accent-rgb);
-}
-
-/* ============================================================
-   .theme-iron — Northiron.ai dark sub-brand
-
-   Scoped override: wrap a page/section in this class and every
-   var(--bg-primary)/var(--accent)/etc reference inside it resolves
-   to these dark, graphite-and-oxide values instead of the site's
-   light "Register" palette — no per-component changes needed.
-   Reads as iron/graphite rather than navy, tying the treatment to
-   the name; luminance-lifted accent so it still holds on dark.
-   ============================================================ */
-.theme-iron {
-  --p-accent: #E4622A;         --p-accent-rgb: 228,98,42;
-  --p-accent-light: #F07C42;   --p-accent-light-rgb: 240,124,66;
-  --p-accent-dark: #B84A1C;    --p-accent-dark-rgb: 184,74,28;
-
-  --p-bg-primary: #0B0C0E;
-  --p-bg-secondary: #141619;
-  --p-bg-card: #16181C;        --p-bg-card-rgb: 22,24,28;
-  --p-bg-card-hover: #1E2126;  --p-bg-card-hover-rgb: 30,33,38;
-
-  --p-white: #F4F5F6;          --p-white-rgb: 244,245,246;
-  --p-text-primary: #C7CBD1;
-  --p-text-secondary: #9CA3AB;
-  --p-text-muted: #6B7280;
-
-  /* Dark UI reads its semantic colors at their original brights,
-     not the deepened-for-light-ground versions Layer A uses site-wide. */
-  --p-green: #10B981;  --p-green-rgb: 16,185,129;
-  --p-yellow: #F59E0B; --p-yellow-rgb: 245,158,11;
-  --p-red: #EF4444;    --p-red-rgb: 239,68,68;
-  --p-blue: #3B82F6;   --p-blue-rgb: 59,130,246;
-  --p-purple: #8B5CF6; --p-purple-rgb: 139,92,246;
-  --p-teal: #14B8A6;   --p-teal-rgb: 20,184,166;
-
-  --bg-primary: var(--p-bg-primary);
-  --bg-secondary: var(--p-bg-secondary);
-  --bg-card: var(--p-bg-card); --bg-card-rgb: var(--p-bg-card-rgb);
-  --bg-card-hover: var(--p-bg-card-hover); --bg-card-hover-rgb: var(--p-bg-card-hover-rgb);
-  --border: rgba(255,255,255,.08);
-  --border-hover: rgba(255,255,255,.14);
-
-  --white: var(--p-white);
-  --text-primary: var(--p-text-primary);
-  --text-secondary: var(--p-text-secondary);
-  --text-muted: var(--p-text-muted);
-
-  --accent: var(--p-accent);            --accent-rgb: var(--p-accent-rgb);
-  --accent-light: var(--p-accent-light); --accent-light-rgb: var(--p-accent-light-rgb);
-  --accent-dark: var(--p-accent-dark);   --accent-dark-rgb: var(--p-accent-dark-rgb);
-  --accent-tint: rgb(var(--p-accent-rgb) / .12);
-  --gradient-accent: var(--p-accent);
-
-  --green: var(--p-green);   --green-rgb: var(--p-green-rgb);   --green-dim: rgb(var(--p-green-rgb) / 0.15);
-  --yellow: var(--p-yellow); --yellow-rgb: var(--p-yellow-rgb); --yellow-dim: rgb(var(--p-yellow-rgb) / 0.15);
-  --red: var(--p-red);       --red-rgb: var(--p-red-rgb);       --red-dim: rgb(var(--p-red-rgb) / 0.15);
-  --blue: var(--p-blue);     --blue-rgb: var(--p-blue-rgb);     --blue-dim: rgb(var(--p-blue-rgb) / 0.15);
-  --purple: var(--p-purple); --purple-rgb: var(--p-purple-rgb); --purple-dim: rgb(var(--p-purple-rgb) / 0.15);
-  --teal: var(--p-teal);     --teal-rgb: var(--p-teal-rgb);     --teal-dim: rgb(var(--p-teal-rgb) / 0.15);
-
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
-  --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
-  --shadow-lg: 0 10px 40px rgba(0,0,0,0.5);
 }

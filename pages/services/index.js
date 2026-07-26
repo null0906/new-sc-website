@@ -77,7 +77,7 @@ export default function ServicesIndex() {
 .svc-card:hover::before { transform:scaleX(1); }
 .svc-card:hover { border-color:rgb(var(--accent-rgb) / 0.3); background:var(--bg-card-hover); transform:translateY(-5px); box-shadow:0 16px 50px rgb(var(--p-white-rgb) / 0.35), 0 0 24px rgb(var(--accent-rgb) / 0.06); }
 .svc-card.featured { border-color:rgb(var(--accent-rgb) / 0.35); }
-.svc-flag { position:absolute; top:14px; right:-34px; transform:rotate(38deg); background:var(--gradient-accent); color:var(--white); font-size:0.56rem; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; padding:4px 38px; pointer-events:none; }
+.svc-flag { position:absolute; top:14px; right:-34px; transform:rotate(38deg); background:var(--gradient-accent); color:#fff; font-size:0.56rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:4px 38px; pointer-events:none; }
 .svc-ico { width:48px; height:48px; display:flex; align-items:center; justify-content:center; font-size:22px; border-radius:12px; background:rgb(var(--accent-rgb) / 0.1); border:1px solid rgb(var(--p-white-rgb) / 0.06); margin-bottom:16px; transition:transform 0.35s var(--ease-spring); }
 .svc-card:hover .svc-ico { transform:scale(1.08) rotate(-3deg); }
 .svc-card h3 { font-size:1.05rem; font-weight:800; color:var(--white); margin-bottom:8px; letter-spacing:-0.3px; }
