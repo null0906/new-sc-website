@@ -77,18 +77,17 @@ export default function IdentityShield26() {
 
       <style jsx global>{`
         :root {
-          --bg: #020617;
-          --surface: #0a1628;
-          --surface-2: #091826;
-          --accent: #FF6000;
-          --accent-soft: rgba(255, 96, 0, 0.15);
-          --accent-border: rgba(255, 96, 0, 0.3);
-          --text-primary: #f8fafc;
-          --text-body: #c8d6e5;
-          --text-muted: #94a3b8;
-          --cy: #06d6a0;
-          --bl: #818cf8;
-          --yl: #ffb703;
+          --bg: var(--bg-primary);
+          --surface: var(--bg-card);
+          --surface-2: var(--bg-secondary);
+          --accent-soft: rgb(var(--accent-rgb) / 0.15);
+          --accent-border: rgb(var(--accent-rgb) / 0.3);
+          --text-primary: var(--white);
+          --text-body: var(--text-primary);
+          --text-muted: var(--text-secondary);
+          --cy: var(--teal);
+          --bl: var(--purple);
+          --yl: var(--yellow);
         }
         body {
           background: var(--bg);
@@ -113,12 +112,12 @@ export default function IdentityShield26() {
         /* ═══ HERO CARD ═══ */
         .event-hero-card {
           position: relative;
-          background: linear-gradient(135deg, rgba(255, 96, 0,0.10) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.10) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 24px;
           overflow: hidden;
           margin-bottom: 3rem;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+          box-shadow: 0 20px 60px rgb(var(--p-white-rgb) / 0.4);
         }
         .event-hero-card::before {
           content: '';
@@ -127,7 +126,7 @@ export default function IdentityShield26() {
           right: -100px;
           width: 300px;
           height: 300px;
-          background: radial-gradient(circle, rgba(255, 96, 0,0.2), transparent 60%);
+          background: radial-gradient(circle, rgb(var(--accent-rgb) / 0.2), transparent 60%);
           pointer-events: none;
         }
         .event-hero-inner {
@@ -163,9 +162,9 @@ export default function IdentityShield26() {
           border: 1px solid var(--accent-border);
         }
         .status-date {
-          background: rgba(6,214,160,0.12);
+          background: rgb(var(--teal-rgb) / 0.12);
           color: var(--cy);
-          border: 1px solid rgba(6,214,160,0.3);
+          border: 1px solid rgb(var(--teal-rgb) / 0.3);
         }
         .event-hero-content h1 {
           font-size: 2.4rem;
@@ -186,8 +185,8 @@ export default function IdentityShield26() {
           gap: 1rem;
           margin-bottom: 2rem;
           padding: 1.5rem 0;
-          border-top: 1px solid rgba(255,255,255,0.08);
-          border-bottom: 1px solid rgba(255,255,255,0.08);
+          border-top: 1px solid rgb(var(--p-white-rgb) / 0.08);
+          border-bottom: 1px solid rgb(var(--p-white-rgb) / 0.08);
         }
         .meta-item { display: flex; flex-direction: column; gap: .25rem; }
         .meta-label {
@@ -221,7 +220,7 @@ export default function IdentityShield26() {
         .btn-primary:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(255, 96, 0,0.3);
+          box-shadow: 0 8px 24px rgb(var(--accent-rgb) / 0.3);
         }
         .btn-secondary {
           display: inline-flex;
@@ -230,7 +229,7 @@ export default function IdentityShield26() {
           padding: .85rem 1.6rem;
           background: transparent;
           color: var(--text-primary);
-          border: 1px solid rgba(255,255,255,0.2);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.2);
           border-radius: 10px;
           font-weight: 600;
           text-decoration: none;
@@ -258,7 +257,7 @@ export default function IdentityShield26() {
         .visual-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(180deg, transparent 45%, rgba(2,6,23,0.9) 100%);
+          background: linear-gradient(180deg, transparent 45%, rgb(var(--p-white-rgb) / 0.9) 100%);
           pointer-events: none;
         }
         .speaker-tag {
@@ -268,7 +267,7 @@ export default function IdentityShield26() {
           right: 1.5rem;
           background: rgba(10,22,40,0.9);
           backdrop-filter: blur(12px);
-          border: 1px solid rgba(255, 96, 0,0.3);
+          border: 1px solid rgb(var(--accent-rgb) / 0.3);
           border-radius: 12px;
           padding: 1rem 1.25rem;
           z-index: 2;
@@ -307,7 +306,7 @@ export default function IdentityShield26() {
         /* ═══ KEYNOTE PANEL ═══ */
         .keynote-panel {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 20px;
           padding: 2.5rem;
           margin-bottom: 3rem;
@@ -370,7 +369,7 @@ export default function IdentityShield26() {
         @media (max-width: 700px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
         .stat-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 14px;
           padding: 1.5rem 1.25rem;
           text-align: center;
@@ -379,7 +378,7 @@ export default function IdentityShield26() {
         .stat-card:hover {
           border-color: var(--accent-border);
           transform: translateY(-3px);
-          box-shadow: 0 10px 30px rgba(255, 96, 0,0.1);
+          box-shadow: 0 10px 30px rgb(var(--accent-rgb) / 0.1);
         }
         .stat-num {
           font-size: 1.85rem;
@@ -406,7 +405,7 @@ export default function IdentityShield26() {
         @media (max-width: 800px) { .session-highlights { grid-template-columns: 1fr; } }
         .highlight-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 16px;
           padding: 1.75rem;
           display: flex;
@@ -449,7 +448,7 @@ export default function IdentityShield26() {
         @media (max-width: 800px) { .day-split { grid-template-columns: 1fr; } }
         .day-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 18px;
           padding: 2rem;
         }
@@ -484,7 +483,7 @@ export default function IdentityShield26() {
           color: var(--text-body);
           font-size: .9rem;
           line-height: 1.5;
-          border-bottom: 1px solid rgba(255,255,255,0.05);
+          border-bottom: 1px solid rgb(var(--p-white-rgb) / 0.05);
           display: flex;
           gap: .75rem;
           align-items: flex-start;
@@ -501,7 +500,7 @@ export default function IdentityShield26() {
         }
         .topic-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 12px;
           padding: 1.5rem;
           transition: all 0.3s ease;
@@ -509,7 +508,7 @@ export default function IdentityShield26() {
         .topic-card:hover {
           border-color: var(--accent-border);
           transform: translateY(-2px);
-          box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+          box-shadow: 0 10px 30px rgb(var(--p-white-rgb) / 0.2);
         }
         .topic-icon { font-size: 1.5rem; margin-bottom: .75rem; }
         .topic-card h4 {
@@ -528,7 +527,7 @@ export default function IdentityShield26() {
         /* ═══ AUDIENCE ═══ */
         .who-we-met {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 18px;
           padding: 2.5rem;
           margin-bottom: 3rem;
@@ -540,8 +539,8 @@ export default function IdentityShield26() {
           margin-top: 1.75rem;
         }
         .audience-pill {
-          background: rgba(255,255,255,0.03);
-          border: 1px solid rgba(255,255,255,0.08);
+          background: rgb(var(--p-white-rgb) / 0.03);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 10px;
           padding: 1rem 1.25rem;
           text-align: center;
@@ -549,7 +548,7 @@ export default function IdentityShield26() {
         }
         .audience-pill:hover {
           border-color: var(--accent-border);
-          background: rgba(255, 96, 0,0.04);
+          background: rgb(var(--accent-rgb) / 0.04);
         }
         .audience-icon { font-size: 1.6rem; margin-bottom: .35rem; }
         .audience-pill-title {
@@ -580,14 +579,14 @@ export default function IdentityShield26() {
           cursor: pointer;
           position: relative;
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           transition: box-shadow 0.4s ease, border-color 0.3s ease, transform 0.3s ease;
           transform-style: preserve-3d;
           will-change: transform;
         }
         .mosaic-item:hover {
           border-color: var(--accent-border);
-          box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 60px rgba(255, 96, 0,0.15);
+          box-shadow: 0 20px 50px rgb(var(--p-white-rgb) / 0.5), 0 0 60px rgb(var(--accent-rgb) / 0.15);
           z-index: 5;
         }
         .mosaic-item img {
@@ -604,7 +603,7 @@ export default function IdentityShield26() {
           content: '';
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, transparent 40%, rgba(255, 96, 0,0.08) 100%);
+          background: linear-gradient(135deg, transparent 40%, rgb(var(--accent-rgb) / 0.08) 100%);
           pointer-events: none;
           opacity: 0;
           transition: opacity 0.4s ease;
@@ -627,14 +626,14 @@ export default function IdentityShield26() {
         /* Glow pulse on featured mosaic item */
         .mosaic-item.mosaic-featured {
           border-color: var(--accent-border);
-          box-shadow: 0 0 0 1px var(--accent-border), 0 0 40px rgba(255, 96, 0,0.1);
+          box-shadow: 0 0 0 1px var(--accent-border), 0 0 40px rgb(var(--accent-rgb) / 0.1);
         }
 
         /* ═══ LIGHTBOX (no caption) ═══ */
         .lightbox {
           position: fixed;
           inset: 0;
-          background: rgba(2,6,23,0.96);
+          background: rgb(var(--p-white-rgb) / 0.96);
           backdrop-filter: blur(8px);
           z-index: 999;
           display: none;
@@ -658,7 +657,7 @@ export default function IdentityShield26() {
           max-width: 100%;
           max-height: 90vh;
           border-radius: 12px;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+          box-shadow: 0 20px 60px rgb(var(--p-white-rgb) / 0.6);
           display: block;
         }
         .lb-close {
@@ -681,7 +680,7 @@ export default function IdentityShield26() {
 
         /* ═══ TAKEAWAYS ═══ */
         .takeaways-box {
-          background: linear-gradient(135deg, rgba(255, 96, 0,0.06) 0%, var(--surface) 100%);
+          background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.06) 0%, var(--surface) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 18px;
           padding: 2.5rem;
@@ -691,7 +690,7 @@ export default function IdentityShield26() {
         .takeaways-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .85rem; }
         .takeaways-list li {
           padding: 1rem 1.25rem;
-          background: rgba(255,255,255,0.02);
+          background: rgb(var(--p-white-rgb) / 0.02);
           border-left: 3px solid var(--accent);
           border-radius: 6px;
           color: var(--text-body);
@@ -707,7 +706,7 @@ export default function IdentityShield26() {
 
         /* ═══ CTA / SOCIAL ═══ */
         .cta-events-banner {
-          background: linear-gradient(135deg, rgba(255, 96, 0,0.12) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.12) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2.75rem;
@@ -727,7 +726,7 @@ export default function IdentityShield26() {
 
         .social-connect {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 20px;
           padding: 2.5rem 2.25rem;
           margin: 2rem 0 3rem;
@@ -741,8 +740,8 @@ export default function IdentityShield26() {
           align-items: center;
           gap: .5rem;
           padding: .7rem 1.2rem;
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.1);
+          background: rgb(var(--p-white-rgb) / 0.04);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.1);
           border-radius: 10px;
           color: var(--text-primary);
           text-decoration: none;

@@ -33,18 +33,17 @@ export default function AssessmentsIndex() {
 
       <style jsx global>{`
         :root {
-          --bg: #020617;
-          --surface: #0a1628;
-          --surface-2: #0f1f3a;
-          --accent: #FF6000;
-          --accent-soft: rgba(255, 96, 0, 0.15);
-          --accent-border: rgba(255, 96, 0, 0.3);
-          --text-primary: #f8fafc;
-          --text-body: #c8d6e5;
-          --text-muted: #94a3b8;
-          --cy: #06d6a0;
-          --bl: #818cf8;
-          --am: #ffb703;
+          --bg: var(--bg-primary);
+          --surface: var(--bg-card);
+          --surface-2: var(--bg-secondary);
+          --accent-soft: rgb(var(--accent-rgb) / 0.15);
+          --accent-border: rgb(var(--accent-rgb) / 0.3);
+          --text-primary: var(--white);
+          --text-body: var(--text-primary);
+          --text-muted: var(--text-secondary);
+          --cy: var(--teal);
+          --bl: var(--purple);
+          --am: var(--yellow);
         }
         body {
           background: var(--bg);
@@ -80,7 +79,7 @@ export default function AssessmentsIndex() {
           font-weight: 800;
           margin: 0 0 1rem;
           letter-spacing: -0.02em;
-          background: linear-gradient(135deg, #fff 0%, #c8d6e5 100%);
+          background: linear-gradient(135deg, #fff 0%, var(--text-primary) 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -98,8 +97,8 @@ export default function AssessmentsIndex() {
           padding: .35rem .85rem;
           font-size: .72rem;
           color: var(--text-muted);
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.08);
+          background: rgb(var(--p-white-rgb) / 0.04);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 999px;
           letter-spacing: 0.04em;
         }
@@ -117,7 +116,7 @@ export default function AssessmentsIndex() {
 
         .as-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 20px;
           padding: 2rem 2rem 2.25rem;
           display: flex;
@@ -134,7 +133,7 @@ export default function AssessmentsIndex() {
           position: absolute;
           top: 0; left: 0; right: 0;
           height: 3px;
-          background: linear-gradient(90deg, var(--accent), #FF8A3D);
+          background: linear-gradient(90deg, var(--accent), var(--accent-light));
           transform: scaleX(0);
           transform-origin: left;
           transition: transform 0.4s cubic-bezier(.16,1,.3,1);
@@ -143,7 +142,7 @@ export default function AssessmentsIndex() {
         .as-card:hover {
           transform: translateY(-4px);
           border-color: var(--accent-border);
-          box-shadow: 0 18px 42px rgba(0,0,0,0.4), 0 0 0 1px var(--accent-border);
+          box-shadow: 0 18px 42px rgb(var(--p-white-rgb) / 0.4), 0 0 0 1px var(--accent-border);
         }
 
         .as-card-head {
@@ -164,14 +163,14 @@ export default function AssessmentsIndex() {
           letter-spacing: 0.08em;
         }
         .as-card-tag.quick {
-          background: rgba(6,214,160,0.12);
+          background: rgb(var(--teal-rgb) / 0.12);
           color: var(--cy);
-          border: 1px solid rgba(6,214,160,0.3);
+          border: 1px solid rgb(var(--teal-rgb) / 0.3);
         }
         .as-card-tag.deep {
-          background: rgba(129,140,248,0.12);
+          background: rgb(var(--purple-rgb) / 0.12);
           color: var(--bl);
-          border: 1px solid rgba(129,140,248,0.3);
+          border: 1px solid rgb(var(--purple-rgb) / 0.3);
         }
         .as-card-time {
           font-size: .78rem;
@@ -247,7 +246,7 @@ export default function AssessmentsIndex() {
         /* --- COMPARISON TABLE --- */
         .as-compare {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 20px;
           padding: 2rem 2.25rem;
           margin-bottom: 3rem;
@@ -275,7 +274,7 @@ export default function AssessmentsIndex() {
           color: var(--accent);
           text-transform: uppercase;
           letter-spacing: 0.06em;
-          border-bottom: 1px solid rgba(255, 96, 0,0.18);
+          border-bottom: 1px solid rgb(var(--accent-rgb) / 0.18);
           vertical-align: bottom;
         }
         .as-compare-table th:first-child {
@@ -285,7 +284,7 @@ export default function AssessmentsIndex() {
           padding: .85rem 1rem .85rem 0;
           font-size: .9rem;
           color: var(--text-body);
-          border-bottom: 1px solid rgba(255,255,255,0.05);
+          border-bottom: 1px solid rgb(var(--p-white-rgb) / 0.05);
           vertical-align: top;
         }
         .as-compare-table td:first-child {
@@ -320,7 +319,7 @@ export default function AssessmentsIndex() {
           content: '';
           flex: 1;
           height: 1px;
-          background: rgba(255, 96, 0,0.18);
+          background: rgb(var(--accent-rgb) / 0.18);
         }
         .as-next-grid {
           display: grid;
@@ -331,7 +330,7 @@ export default function AssessmentsIndex() {
         @media (max-width: 760px) { .as-next-grid { grid-template-columns: 1fr; } }
         .as-next-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.06);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.06);
           border-radius: 14px;
           padding: 1.5rem 1.6rem;
           text-decoration: none;
@@ -371,7 +370,7 @@ export default function AssessmentsIndex() {
 
         /* --- CTA BANNER --- */
         .as-cta-banner {
-          background: linear-gradient(135deg, rgba(255, 96, 0,0.12) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.12) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2.75rem;
@@ -407,7 +406,7 @@ export default function AssessmentsIndex() {
         .as-cta-btn:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(255, 96, 0,0.3);
+          box-shadow: 0 8px 24px rgb(var(--accent-rgb) / 0.3);
         }
 
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }

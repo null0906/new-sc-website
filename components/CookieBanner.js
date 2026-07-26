@@ -82,57 +82,57 @@ export default function CookieBanner() {
         .sc-banner{
           pointer-events:auto;
           max-width:1180px; margin:0 auto;
-          background:#0F172A;
-          border:1px solid rgba(255, 96, 0,.25);
-          border-radius:14px;
-          box-shadow:0 20px 60px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.04);
+          background:var(--bg-card);
+          border:1px solid var(--border);
+          border-radius:var(--radius-lg);
+          box-shadow:var(--shadow-lg);
           padding:22px 26px;
           display:flex; align-items:center; gap:24px;
           flex-wrap:wrap;
-          font-family:'Inter',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+          font-family:var(--font-sans);
         }
         .sc-banner-text{flex:1; min-width:280px}
         .sc-banner-title{
-          font-size:15px; font-weight:700; color:#F8FAFC;
+          font-size:15px; font-weight:700; color:var(--white);
           margin:0 0 6px;
         }
         .sc-banner-body{
-          font-size:13.5px; line-height:1.6; color:#94A3B8;
+          font-size:13.5px; line-height:1.6; color:var(--text-secondary);
           margin:0;
         }
         .sc-banner-link{
-          color:#FF6000; text-decoration:none;
-          border-bottom:1px solid rgba(255, 96, 0,.4);
+          color:var(--accent); text-decoration:none;
+          border-bottom:1px solid rgb(var(--accent-rgb) / .4);
           transition:border-color .15s;
         }
-        .sc-banner-link:hover{border-bottom-color:#FF6000}
+        .sc-banner-link:hover{border-bottom-color:var(--accent)}
         .sc-banner-actions{
           display:flex; gap:10px; align-items:center; flex-wrap:wrap;
         }
         .sc-btn{
           font-family:inherit;
           font-size:13px; font-weight:600;
-          padding:10px 18px; border-radius:8px;
+          padding:10px 18px; border-radius:var(--radius-md);
           border:1px solid transparent; cursor:pointer;
           transition:all .15s ease;
           letter-spacing:.005em;
           white-space:nowrap;
         }
         .sc-btn-primary{
-          background:#FF6000; color:#fff;
-          border-color:#FF6000;
+          background:var(--accent); color:var(--p-bg-card);
+          border-color:var(--accent);
         }
-        .sc-btn-primary:hover{background:#d0521f; border-color:#d0521f}
+        .sc-btn-primary:hover{background:var(--accent-dark); border-color:var(--accent-dark)}
         .sc-btn-secondary{
-          background:rgba(255,255,255,.05); color:#F8FAFC;
-          border-color:rgba(255,255,255,.12);
+          background:var(--bg-card-hover); color:var(--white);
+          border-color:var(--border-hover);
         }
-        .sc-btn-secondary:hover{background:rgba(255,255,255,.08); border-color:rgba(255,255,255,.2)}
+        .sc-btn-secondary:hover{background:var(--bg-secondary); border-color:var(--text-muted)}
         .sc-btn-ghost{
-          background:transparent; color:#94A3B8;
-          border-color:rgba(148,163,184,.25);
+          background:transparent; color:var(--text-secondary);
+          border-color:var(--border-hover);
         }
-        .sc-btn-ghost:hover{color:#F8FAFC; border-color:rgba(148,163,184,.5)}
+        .sc-btn-ghost:hover{color:var(--white); border-color:var(--text-muted)}
 
         @media(max-width:768px){
           .sc-banner-wrap{padding:12px}

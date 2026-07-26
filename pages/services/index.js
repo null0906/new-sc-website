@@ -65,9 +65,9 @@ export default function ServicesIndex() {
 
 /* Group header row: icon chip + title + rule line */
 .svc-group-head { display:flex; align-items:center; gap:14px; margin-bottom:8px; }
-.svc-group-ico { width:44px; height:44px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:20px; border-radius:12px; background:rgba(255, 96, 0,0.1); border:1px solid rgba(255, 96, 0,0.2); }
+.svc-group-ico { width:44px; height:44px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:20px; border-radius:12px; background:rgb(var(--accent-rgb) / 0.1); border:1px solid rgb(var(--accent-rgb) / 0.2); }
 .svc-group-head h2 { font-size:1.35rem; font-weight:800; color:var(--white); letter-spacing:-0.5px; white-space:nowrap; }
-.svc-group-line { flex:1; height:1px; background:linear-gradient(to right, rgba(255, 96, 0,0.35), rgba(255,255,255,0.05)); }
+.svc-group-line { flex:1; height:1px; background:linear-gradient(to right, rgb(var(--accent-rgb) / 0.35), rgb(var(--p-white-rgb) / 0.05)); }
 .svc-group-desc { color:var(--text-secondary); font-size:0.92rem; margin:0 0 26px 58px; }
 
 /* Card grid — equal-height, aligned */
@@ -75,10 +75,10 @@ export default function ServicesIndex() {
 .svc-card { position:relative; overflow:hidden; display:flex; flex-direction:column; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:26px 24px; transition:all 0.35s var(--ease-out); text-decoration:none; color:inherit; }
 .svc-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:var(--gradient-accent); transform:scaleX(0); transform-origin:left; transition:transform 0.45s var(--ease-out); }
 .svc-card:hover::before { transform:scaleX(1); }
-.svc-card:hover { border-color:rgba(255, 96, 0,0.3); background:var(--bg-card-hover); transform:translateY(-5px); box-shadow:0 16px 50px rgba(0,0,0,0.35), 0 0 24px rgba(255, 96, 0,0.06); }
-.svc-card.featured { border-color:rgba(255, 96, 0,0.35); }
-.svc-flag { position:absolute; top:14px; right:-34px; transform:rotate(38deg); background:var(--gradient-accent); color:#fff; font-size:0.56rem; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; padding:4px 38px; pointer-events:none; }
-.svc-ico { width:48px; height:48px; display:flex; align-items:center; justify-content:center; font-size:22px; border-radius:12px; background:rgba(255, 96, 0,0.1); border:1px solid rgba(255,255,255,0.06); margin-bottom:16px; transition:transform 0.35s var(--ease-spring); }
+.svc-card:hover { border-color:rgb(var(--accent-rgb) / 0.3); background:var(--bg-card-hover); transform:translateY(-5px); box-shadow:0 16px 50px rgb(var(--p-white-rgb) / 0.35), 0 0 24px rgb(var(--accent-rgb) / 0.06); }
+.svc-card.featured { border-color:rgb(var(--accent-rgb) / 0.35); }
+.svc-flag { position:absolute; top:14px; right:-34px; transform:rotate(38deg); background:var(--gradient-accent); color:var(--white); font-size:0.56rem; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; padding:4px 38px; pointer-events:none; }
+.svc-ico { width:48px; height:48px; display:flex; align-items:center; justify-content:center; font-size:22px; border-radius:12px; background:rgb(var(--accent-rgb) / 0.1); border:1px solid rgb(var(--p-white-rgb) / 0.06); margin-bottom:16px; transition:transform 0.35s var(--ease-spring); }
 .svc-card:hover .svc-ico { transform:scale(1.08) rotate(-3deg); }
 .svc-card h3 { font-size:1.05rem; font-weight:800; color:var(--white); margin-bottom:8px; letter-spacing:-0.3px; }
 .svc-card p { font-size:0.87rem; line-height:1.6; color:var(--text-secondary); flex:1; margin-bottom:16px; }
@@ -87,7 +87,7 @@ export default function ServicesIndex() {
 
 /* Bottom CTA band */
 .svc-cta { padding:40px 0 90px; }
-.svc-cta-inner { background:linear-gradient(135deg, rgba(255, 96, 0,0.1), rgba(15,23,42,0.6)); border:1px solid rgba(255, 96, 0,0.3); border-radius:var(--radius-xl); padding:38px 42px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+.svc-cta-inner { background:linear-gradient(135deg, rgb(var(--accent-rgb) / 0.1), rgb(var(--bg-card-rgb) / 0.6)); border:1px solid rgb(var(--accent-rgb) / 0.3); border-radius:var(--radius-xl); padding:38px 42px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
 .svc-cta-inner h3 { font-size:1.4rem; font-weight:800; color:var(--white); margin-bottom:8px; letter-spacing:-0.5px; }
 .svc-cta-inner p { color:var(--text-secondary); font-size:0.95rem; line-height:1.6; max-width:560px; }
 .svc-cta-btns { display:flex; gap:12px; flex-wrap:wrap; }
@@ -135,7 +135,6 @@ ${GROUPS.map((g, gi) => `
       `}} />
 
       <Script src="/assets/js/animations.js" strategy="afterInteractive" />
-      <Script src="/assets/js/effects.js" strategy="afterInteractive" />
     </>
   )
 }

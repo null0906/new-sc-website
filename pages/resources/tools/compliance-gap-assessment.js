@@ -12,9 +12,9 @@ const assessments = [
     tagline: 'For any organisation collecting or processing personal data of Indian citizens.',
     questions: 10,
     minutes: '~2 min',
-    accent: '#FF6000',
-    accentSoft: 'rgba(255, 96, 0, 0.12)',
-    accentBorder: 'rgba(255, 96, 0, 0.35)',
+    accent: 'var(--accent)',
+    accentSoft: 'rgb(var(--accent-rgb) / 0.12)',
+    accentBorder: 'rgb(var(--accent-rgb) / 0.35)',
     href: 'https://forms.gle/nq6WFu9zfhWrMiAbA',
     bestFor: 'SaaS, fintech, e-commerce, healthtech, EdTech — anyone handling Indian user data.'
   },
@@ -26,9 +26,9 @@ const assessments = [
     tagline: 'Globally recognised standard for proving you take information security seriously.',
     questions: 10,
     minutes: '~2 min',
-    accent: '#06d6a0',
-    accentSoft: 'rgba(6, 214, 160, 0.12)',
-    accentBorder: 'rgba(6, 214, 160, 0.35)',
+    accent: 'var(--teal)',
+    accentSoft: 'rgb(var(--teal-rgb) / 0.12)',
+    accentBorder: 'rgb(var(--teal-rgb) / 0.35)',
     href: 'https://forms.gle/yWGhhAfhKKm2WQb4A',
     bestFor: 'Companies asked for security proof by enterprise clients or expanding globally.'
   },
@@ -40,9 +40,9 @@ const assessments = [
     tagline: 'The privacy extension to ISO 27001 — for organisations processing personal data at scale.',
     questions: 10,
     minutes: '~2 min',
-    accent: '#818cf8',
-    accentSoft: 'rgba(129, 140, 248, 0.12)',
-    accentBorder: 'rgba(129, 140, 248, 0.35)',
+    accent: 'var(--purple)',
+    accentSoft: 'rgb(var(--purple-rgb) / 0.12)',
+    accentBorder: 'rgb(var(--purple-rgb) / 0.35)',
     href: 'https://forms.gle/wTR2oa62PU6Kpd8aA',
     bestFor: 'Data processors needing to demonstrate GDPR / DPDPA / privacy compliance to clients.'
   },
@@ -54,9 +54,9 @@ const assessments = [
     tagline: 'The de-facto trust standard for SaaS and cloud providers — especially serving US clients.',
     questions: 10,
     minutes: '~2 min',
-    accent: '#3b82f6',
-    accentSoft: 'rgba(59, 130, 246, 0.12)',
-    accentBorder: 'rgba(59, 130, 246, 0.35)',
+    accent: 'var(--blue)',
+    accentSoft: 'rgb(var(--blue-rgb) / 0.12)',
+    accentBorder: 'rgb(var(--blue-rgb) / 0.35)',
     href: 'https://forms.gle/s82T98kTMKJaLqE79',
     bestFor: 'SaaS, MSPs, and cloud platforms whose customers ask for a SOC 2 report.'
   },
@@ -68,9 +68,9 @@ const assessments = [
     tagline: 'Active security testing for your applications, APIs, and infrastructure.',
     questions: 10,
     minutes: '~2 min',
-    accent: '#ef4444',
-    accentSoft: 'rgba(239, 68, 68, 0.12)',
-    accentBorder: 'rgba(239, 68, 68, 0.35)',
+    accent: 'var(--red)',
+    accentSoft: 'rgb(var(--red-rgb) / 0.12)',
+    accentBorder: 'rgb(var(--red-rgb) / 0.35)',
     href: 'https://forms.gle/SJsgn1BddgKZYFqw8',
     bestFor: 'Anyone running a web app, mobile app, or API exposed to the internet.'
   },
@@ -82,7 +82,7 @@ const assessments = [
     tagline: 'US privacy and security rules for handling protected health information (PHI).',
     questions: 10,
     minutes: '~2 min',
-    accent: '#14b8a6',
+    accent: 'var(--teal)',
     accentSoft: 'rgba(20, 184, 166, 0.12)',
     accentBorder: 'rgba(20, 184, 166, 0.35)',
     href: 'https://forms.gle/LC7M6x2GXJ4ueBAi6',
@@ -119,14 +119,13 @@ export default function ComplianceGapAssessment() {
 
       <style jsx global>{`
         :root {
-          --bg: #020617;
-          --surface: #0a1628;
-          --accent: #FF6000;
-          --accent-soft: rgba(255, 96, 0, 0.15);
-          --accent-border: rgba(255, 96, 0, 0.3);
-          --text-primary: #f8fafc;
-          --text-body: #c8d6e5;
-          --text-muted: #94a3b8;
+          --bg: var(--bg-primary);
+          --surface: var(--bg-card);
+          --accent-soft: rgb(var(--accent-rgb) / 0.15);
+          --accent-border: rgb(var(--accent-rgb) / 0.3);
+          --text-primary: var(--white);
+          --text-body: var(--text-primary);
+          --text-muted: var(--text-secondary);
         }
         body {
           background: var(--bg);
@@ -162,7 +161,7 @@ export default function ComplianceGapAssessment() {
           font-weight: 800;
           margin: 0 0 1rem;
           letter-spacing: -0.02em;
-          background: linear-gradient(135deg, #fff 0%, #c8d6e5 100%);
+          background: linear-gradient(135deg, #fff 0%, var(--text-primary) 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -183,7 +182,7 @@ export default function ComplianceGapAssessment() {
           justify-content: center;
           padding: .85rem 1.5rem;
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 999px;
           margin-top: .5rem;
         }
@@ -214,7 +213,7 @@ export default function ComplianceGapAssessment() {
 
         .gap-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 18px;
           padding: 1.75rem 1.6rem 1.85rem;
           display: flex;
@@ -237,7 +236,7 @@ export default function ComplianceGapAssessment() {
         .gap-card:hover {
           transform: translateY(-6px);
           border-color: var(--card-border, var(--accent-border));
-          box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 0 1px var(--card-border, var(--accent-border));
+          box-shadow: 0 20px 50px rgb(var(--p-white-rgb) / 0.4), 0 0 0 1px var(--card-border, var(--accent-border));
         }
         .gap-card:hover::before { opacity: 1; }
 
@@ -276,7 +275,7 @@ export default function ComplianceGapAssessment() {
           color: var(--text-muted);
           line-height: 1.55;
           padding: .75rem .9rem;
-          background: rgba(255,255,255,0.025);
+          background: rgb(var(--p-white-rgb) / 0.025);
           border-left: 2px solid var(--card-color, var(--accent));
           border-radius: 0 8px 8px 0;
           margin-bottom: 1.25rem;
@@ -289,7 +288,7 @@ export default function ComplianceGapAssessment() {
           gap: 1rem;
           padding-top: 1rem;
           margin-bottom: 1.1rem;
-          border-top: 1px solid rgba(255,255,255,0.06);
+          border-top: 1px solid rgb(var(--p-white-rgb) / 0.06);
           position: relative;
         }
         .gap-card-stat {
@@ -331,7 +330,7 @@ export default function ComplianceGapAssessment() {
         }
 
         .info-banner {
-          background: linear-gradient(135deg, rgba(255, 96, 0,0.08) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.08) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 18px;
           padding: 1.5rem 1.75rem;
@@ -354,7 +353,7 @@ export default function ComplianceGapAssessment() {
         .info-banner-text strong { color: var(--text-primary); }
 
         .cta-banner {
-          background: linear-gradient(135deg, rgba(255, 96, 0,0.12) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.12) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2.75rem;
@@ -387,7 +386,7 @@ export default function ComplianceGapAssessment() {
         .btn-primary:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(255, 96, 0,0.3);
+          box-shadow: 0 8px 24px rgb(var(--accent-rgb) / 0.3);
         }
         .btn-secondary {
           display: inline-flex;
@@ -396,7 +395,7 @@ export default function ComplianceGapAssessment() {
           padding: .9rem 1.6rem;
           background: transparent;
           color: var(--text-primary);
-          border: 1px solid rgba(255,255,255,0.2);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.2);
           border-radius: 10px;
           font-weight: 600;
           text-decoration: none;

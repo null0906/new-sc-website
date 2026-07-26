@@ -59,11 +59,11 @@ export default function InternalAudit() {
           <h2>Key Roles and Responsibilities</h2>
 
           <div style={{ overflowX: 'auto', margin: '24px 0' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgb(var(--p-white-rgb) / 0.75)' }}>
               <thead>
-                <tr style={{ background: 'rgba(255, 96, 0,0.15)' }}>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)', minWidth: '160px' }}>Role</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Key Responsibilities</th>
+                <tr style={{ background: 'rgb(var(--accent-rgb) / 0.15)' }}>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: 'var(--accent)', fontWeight: 700, borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.08)', minWidth: '160px' }}>Role</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: 'var(--accent)', fontWeight: 700, borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.08)' }}>Key Responsibilities</th>
                 </tr>
               </thead>
               <tbody>
@@ -75,7 +75,7 @@ export default function InternalAudit() {
                   ['Risk & Compliance Team', 'Maintains audit calendar, nonconformity register, and corrective action tracker'],
                   ['Executive Management', 'Reviews critical findings, approves corrective action plans, drives accountability'],
                 ].map(([role, resp], i) => (
-                  <tr key={i} style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                  <tr key={i} style={{ borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.06)' }}>
                     <td style={{ padding: '12px 16px', fontWeight: 700, color: '#fff' }}>{role}</td>
                     <td style={{ padding: '12px 16px' }}>{resp}</td>
                   </tr>
@@ -126,12 +126,12 @@ export default function InternalAudit() {
           <h2>Nonconformity Classification</h2>
 
           <div style={{ overflowX: 'auto', margin: '24px 0' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgb(var(--p-white-rgb) / 0.75)' }}>
               <thead>
-                <tr style={{ background: 'rgba(255, 96, 0,0.15)' }}>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Classification</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Definition</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Examples</th>
+                <tr style={{ background: 'rgb(var(--accent-rgb) / 0.15)' }}>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: 'var(--accent)', fontWeight: 700, borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.08)' }}>Classification</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: 'var(--accent)', fontWeight: 700, borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.08)' }}>Definition</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: 'var(--accent)', fontWeight: 700, borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.08)' }}>Examples</th>
                 </tr>
               </thead>
               <tbody>
@@ -140,10 +140,10 @@ export default function InternalAudit() {
                   ['Minor Nonconformity', 'Partial or isolated lapse that does not pose immediate high risk', 'Outdated procedure with minor deviation, delayed logging of backup verification'],
                   ['Observation / OFI', 'Noted weakness or inefficiency that may impact long-term performance or audit readiness', 'Inconsistent ticket tagging, no periodic review tracker for awareness training'],
                 ].map(([cls, def, ex], i) => (
-                  <tr key={i} style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                  <tr key={i} style={{ borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.06)' }}>
                     <td style={{ padding: '12px 16px', fontWeight: 700, color: '#fff' }}>{cls}</td>
                     <td style={{ padding: '12px 16px' }}>{def}</td>
-                    <td style={{ padding: '12px 16px', fontSize: '0.82rem', color: 'rgba(255,255,255,0.45)' }}>{ex}</td>
+                    <td style={{ padding: '12px 16px', fontSize: '0.82rem', color: 'rgb(var(--p-white-rgb) / 0.45)' }}>{ex}</td>
                   </tr>
                 ))}
               </tbody>
@@ -156,11 +156,11 @@ export default function InternalAudit() {
           </p>
 
           <div style={{ overflowX: 'auto', margin: '24px 0' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgb(var(--p-white-rgb) / 0.75)' }}>
               <thead>
-                <tr style={{ background: 'rgba(255, 96, 0,0.15)' }}>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Overdue Duration</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Escalation Level</th>
+                <tr style={{ background: 'rgb(var(--accent-rgb) / 0.15)' }}>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: 'var(--accent)', fontWeight: 700, borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.08)' }}>Overdue Duration</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: 'var(--accent)', fontWeight: 700, borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.08)' }}>Escalation Level</th>
                 </tr>
               </thead>
               <tbody>
@@ -169,7 +169,7 @@ export default function InternalAudit() {
                   ['16–30 Days', 'CISO / Department Head'],
                   ['>30 Days or Repeat Delay', 'Executive Sponsor / Risk Committee'],
                 ].map(([days, level], i) => (
-                  <tr key={i} style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                  <tr key={i} style={{ borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.06)' }}>
                     <td style={{ padding: '12px 16px', color: '#fff', fontWeight: 600 }}>{days}</td>
                     <td style={{ padding: '12px 16px' }}>{level}</td>
                   </tr>

@@ -91,7 +91,7 @@ function ScoreRing({ score, tone }) {
   const color = { red: 'var(--red)', amber: 'var(--yellow)', green: 'var(--green)' }[tone] || 'var(--accent)'
   return (
     <svg width="170" height="170" viewBox="0 0 170 170">
-      <circle cx="85" cy="85" r={r} fill="none" stroke="rgba(255,255,255,.08)" strokeWidth="13" />
+      <circle cx="85" cy="85" r={r} fill="none" stroke="rgb(var(--p-white-rgb) / .08)" strokeWidth="13" />
       <circle cx="85" cy="85" r={r} fill="none" stroke={color} strokeWidth="13" strokeLinecap="round"
         strokeDasharray={circ} strokeDashoffset={circ * (1 - score / 100)} transform="rotate(-90 85 85)"
         style={{ transition: 'stroke-dashoffset 1s var(--ease-out)' }} />
@@ -251,7 +251,7 @@ export default function Assessment() {
         .as2-narrow, .as2-results { text-align:center; }
         .as2-back { display:inline-block; color:var(--text-muted); font-size:.9rem; text-decoration:none; margin-bottom:1.25rem; }
         .as2-back:hover { color:var(--accent); }
-        .as2-badge { display:inline-block; padding:.35rem .9rem; border-radius:var(--radius-full); background:rgba(129,140,248,.12); color:#818cf8; border:1px solid rgba(129,140,248,.3); font-size:.74rem; font-weight:700; margin-bottom:1rem; }
+        .as2-badge { display:inline-block; padding:.35rem .9rem; border-radius:var(--radius-full); background:rgb(var(--purple-rgb) / .12); color:var(--purple); border:1px solid rgb(var(--purple-rgb) / .3); font-size:.74rem; font-weight:700; margin-bottom:1rem; }
         .as2 h1 { font-size:clamp(2rem,5vw,3rem); font-weight:800; margin:0 0 .75rem; color:var(--white); }
         .accent { background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
         .as2-lede { color:var(--text-secondary); font-size:1.02rem; line-height:1.6; max-width:560px; margin:0 auto 2rem; }
@@ -261,11 +261,11 @@ export default function Assessment() {
         @media (max-width:560px){ .as2-industries { grid-template-columns:1fr; } }
         .as2-ind { padding:.85rem 1rem; background:var(--bg-card); border:1px solid var(--border-hover); border-radius:10px; color:var(--text-primary); font-size:.9rem; cursor:pointer; font-family:inherit; transition:all .15s ease; }
         .as2-ind:hover { border-color:var(--accent); }
-        .as2-ind.sel { background:rgba(255, 96, 0,.12); border-color:var(--accent); color:var(--white); font-weight:600; }
+        .as2-ind.sel { background:rgb(var(--accent-rgb) / .12); border-color:var(--accent); color:var(--white); font-weight:600; }
         .as2-next, .as2-submit { background:var(--gradient-accent); color:#fff; border:none; border-radius:10px; padding:.9rem 1.7rem; font-size:.95rem; font-weight:700; cursor:pointer; font-family:inherit; }
         .as2-next:disabled { opacity:.5; cursor:not-allowed; }
 
-        .as2-progress { height:6px; background:rgba(255,255,255,.08); border-radius:var(--radius-full); overflow:hidden; margin-bottom:1.5rem; }
+        .as2-progress { height:6px; background:rgb(var(--p-white-rgb) / .08); border-radius:var(--radius-full); overflow:hidden; margin-bottom:1.5rem; }
         .as2-progress-bar { height:100%; background:var(--gradient-accent); border-radius:var(--radius-full); transition:width .3s var(--ease-out); }
         .as2-qmeta { display:flex; justify-content:space-between; align-items:center; font-size:.8rem; color:var(--text-muted); margin-bottom:1rem; flex-wrap:wrap; gap:.5rem; }
         .as2-qdomain { color:var(--accent-light); font-weight:600; }
@@ -273,7 +273,7 @@ export default function Assessment() {
         .as2-options { display:flex; flex-direction:column; gap:.7rem; max-width:480px; margin:0 auto 1.5rem; }
         .as2-opt { padding:1rem 1.25rem; background:var(--bg-card); border:1px solid var(--border-hover); border-radius:12px; color:var(--text-primary); font-size:.98rem; cursor:pointer; font-family:inherit; transition:all .15s ease; text-align:left; }
         .as2-opt:hover { border-color:var(--accent); transform:translateY(-1px); }
-        .as2-opt.sel { background:rgba(255, 96, 0,.12); border-color:var(--accent); color:var(--white); font-weight:600; }
+        .as2-opt.sel { background:rgb(var(--accent-rgb) / .12); border-color:var(--accent); color:var(--white); font-weight:600; }
         .as2-prev { background:none; border:none; color:var(--text-muted); font-size:.9rem; cursor:pointer; font-family:inherit; }
         .as2-prev:disabled { opacity:.4; cursor:not-allowed; }
 
@@ -289,7 +289,7 @@ export default function Assessment() {
         .as2-bars { display:flex; flex-direction:column; gap:.65rem; }
         .as2-bar-row { display:flex; align-items:center; gap:.85rem; }
         .as2-bar-label { width:150px; flex-shrink:0; text-align:left; font-size:.82rem; color:var(--text-secondary); }
-        .as2-bar-track { flex:1; height:12px; background:rgba(255,255,255,.06); border-radius:var(--radius-full); overflow:hidden; position:relative; }
+        .as2-bar-track { flex:1; height:12px; background:rgb(var(--p-white-rgb) / .06); border-radius:var(--radius-full); overflow:hidden; position:relative; }
         .as2-bar-fill { height:100%; border-radius:var(--radius-full); transition:width .8s var(--ease-out); }
         .as2-bar-fill.red { background:var(--red); }
         .as2-bar-fill.amber { background:var(--yellow); }
@@ -299,7 +299,7 @@ export default function Assessment() {
 
         .as2-gaps { list-style:none; counter-reset:gap; padding:0; margin:0; display:flex; flex-direction:column; gap:.7rem; text-align:left; }
         .as2-gaps li { counter-increment:gap; background:var(--bg-card); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:12px; padding:1rem 1.1rem 1rem 2.8rem; position:relative; }
-        .as2-gaps li::before { content:counter(gap); position:absolute; left:1rem; top:1rem; width:22px; height:22px; border-radius:50%; background:rgba(255, 96, 0,.15); color:var(--accent); font-size:.78rem; font-weight:800; display:flex; align-items:center; justify-content:center; }
+        .as2-gaps li::before { content:counter(gap); position:absolute; left:1rem; top:1rem; width:22px; height:22px; border-radius:50%; background:rgb(var(--accent-rgb) / .15); color:var(--accent); font-size:.78rem; font-weight:800; display:flex; align-items:center; justify-content:center; }
         .as2-gap-risk { margin:0 0 .4rem; color:var(--white); font-size:.92rem; line-height:1.5; }
         .as2-gap-sec { font-size:.76rem; color:var(--accent-light); font-weight:600; }
 

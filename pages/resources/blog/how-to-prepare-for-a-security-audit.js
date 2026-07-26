@@ -96,7 +96,7 @@ export default function HowToPrepareForSecurityAudit() {
         if (!t) {
           t = document.createElement('div');
           t.id = 'sc-toast';
-          t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#FF6000;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(255, 96, 0,.4);opacity:0;transition:opacity .3s;pointer-events:none';
+          t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgb(var(--accent-rgb) / .4);opacity:0;transition:opacity .3s;pointer-events:none';
           document.body.appendChild(t);
         }
         t.textContent = msg;
@@ -155,10 +155,7 @@ export default function HowToPrepareForSecurityAudit() {
         <meta property="article:tag" content="Security Audit" />
         <meta property="article:tag" content="ISO 27001" />
         <meta property="article:tag" content="SOC 2" />
-        <link rel="canonical" href="https://seccomply.net/resources/blog/how-to-prepare-for-a-security-audit" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        <link rel="canonical" href="https://seccomply.net/resources/blog/how-to-prepare-for-a-security-audit" />        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
             {
@@ -217,11 +214,10 @@ export default function HowToPrepareForSecurityAudit() {
       </Head>
 
       <style jsx global>{`
-    :root{--cy:#FF6000;--cy2:#d0521f;--glow:rgba(255, 96, 0,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-light));z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}
     .breadcrumb a:hover{color:var(--cy)}
@@ -229,15 +225,15 @@ export default function HowToPrepareForSecurityAudit() {
     .cspm-hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem;display:block !important;grid-template-columns:none !important}
     .cspm-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-    .badge-cy{background:rgba(255, 96, 0,.1);color:var(--cy);border:1px solid rgba(255, 96, 0,.25)}
-    .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
-    .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
-    .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
+    .badge-cy{background:rgb(var(--accent-rgb) / .1);color:var(--cy);border:1px solid rgb(var(--accent-rgb) / .25)}
+    .badge-bl{background:rgb(var(--purple-rgb) / .1);color:var(--purple);border:1px solid rgb(var(--purple-rgb) / .25)}
+    .badge-gr{background:rgb(var(--green-rgb) / .1);color:var(--gr);border:1px solid rgb(var(--green-rgb) / .25)}
+    .badge-am{background:rgb(var(--yellow-rgb) / .1);color:var(--am);border:1px solid rgb(var(--yellow-rgb) / .25)}
     .cspm-hero-h1{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,3rem);font-weight:700;color:var(--tx);line-height:1.2;max-width:780px;margin-bottom:1.1rem}
     .cspm-hero-h1 em{font-style:italic;color:var(--cy)}
     .cspm-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     .cspm-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(255, 96, 0,.3)}
+    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgb(var(--accent-rgb) / .3)}
     .cspm-author-strip .author-info{flex:1;min-width:0}
     .cspm-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .cspm-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
@@ -259,29 +255,29 @@ export default function HowToPrepareForSecurityAudit() {
     .art h3{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--tx);margin:2rem 0 .7rem}
     .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
     .art p strong{color:var(--tx);font-weight:600}
-    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(255, 96, 0,.06),transparent);border-radius:0 12px 12px 0}
+    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgb(var(--accent-rgb) / .06),transparent);border-radius:0 12px 12px 0}
     .pull-quote p{font-family:var(--serif);font-size:1.1rem;font-style:italic;color:var(--tx)!important;margin-bottom:.5rem!important;line-height:1.6!important}
     .pull-quote cite{font-size:.77rem;color:var(--tm)}
-    .def-box{background:linear-gradient(135deg,rgba(255, 96, 0,.07),rgba(255, 96, 0,.02));border:1px solid rgba(255, 96, 0,.22);border-radius:14px;padding:1.6rem 2rem;margin:2rem 0}
+    .def-box{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .07),rgb(var(--accent-rgb) / .02));border:1px solid rgb(var(--accent-rgb) / .22);border-radius:14px;padding:1.6rem 2rem;margin:2rem 0}
     .def-lbl{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cy);margin-bottom:.6rem}
     .def-box p{font-size:.97rem;color:var(--tx)!important;margin-bottom:0!important;line-height:1.7}
     .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
     .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
-    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FF6000,#FF8A3D)}
+    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-light))}
     .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:var(--cy);line-height:1;margin-bottom:.4rem}
     .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
-    .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
-    .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
-    .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
-    .co-key{background:rgba(255, 96, 0,.06);border:1px solid rgba(255, 96, 0,.2)}
+    .co-info{background:rgb(var(--purple-rgb) / .07);border:1px solid rgb(var(--purple-rgb) / .2)}
+    .co-warn{background:rgb(var(--yellow-rgb) / .06);border:1px solid rgb(var(--yellow-rgb) / .2)}
+    .co-danger{background:rgb(var(--red-rgb) / .06);border:1px solid rgb(var(--red-rgb) / .2)}
+    .co-key{background:rgb(var(--accent-rgb) / .06);border:1px solid rgb(var(--accent-rgb) / .2)}
     .co-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
     .co-body p{margin-bottom:0!important;font-size:.89rem!important}
     .co-body strong{display:block;margin-bottom:.3rem;font-size:.82rem;color:var(--tx)}
     .feat-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:.65rem}
     .feat-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;transition:border-color .2s,background .2s}
     .feat-list li:hover{border-color:var(--bo);background:var(--bgc)}
-    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
     .f-body strong{display:block;color:var(--tx);font-size:.89rem;margin-bottom:3px}
     .f-body span{font-size:.83rem;color:var(--tm)}
     .cmp-wrap{overflow-x:auto;margin:2rem 0;border-radius:14px;border:1px solid var(--bo)}
@@ -289,12 +285,12 @@ export default function HowToPrepareForSecurityAudit() {
     .cmp-table th{background:var(--bgc);padding:.85rem 1.1rem;text-align:left;font-size:.77rem;font-weight:600;letter-spacing:.04em;color:var(--cy);border-bottom:1px solid var(--bo)}
     .cmp-table td{padding:.82rem 1.1rem;font-size:.85rem;color:var(--tb);border-bottom:1px solid var(--bs);vertical-align:top}
     .cmp-table tr:last-child td{border-bottom:none}
-    .cmp-table tr:hover td{background:rgba(255, 96, 0,.03)}
+    .cmp-table tr:hover td{background:rgb(var(--accent-rgb) / .03)}
     .tg-y{color:var(--gr);font-weight:600}.tg-n{color:var(--red);font-weight:600}.tg-m{color:var(--am);font-weight:600}
     .checklist-grid{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin:1.5rem 0}
     .chk-item{display:flex;align-items:flex-start;gap:.65rem;padding:.75rem 1rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:9px;font-size:.83rem;color:var(--tb);transition:border-color .2s}
     .chk-item:hover{border-color:var(--bo)}
-    .chk-box{width:18px;height:18px;border-radius:4px;border:1.5px solid rgba(255, 96, 0,.4);background:rgba(255, 96, 0,.06);flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:var(--cy)}
+    .chk-box{width:18px;height:18px;border-radius:4px;border:1.5px solid rgb(var(--accent-rgb) / .4);background:rgb(var(--accent-rgb) / .06);flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:var(--cy)}
     .during-grid{display:flex;flex-direction:column;gap:.75rem;margin:1.5rem 0}
     .during-item{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem 1.4rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:12px;transition:border-color .2s}
     .during-item:hover{border-color:var(--bo)}
@@ -311,7 +307,7 @@ export default function HowToPrepareForSecurityAudit() {
     .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-    .cta-banner{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-family:var(--serif);font-size:1.5rem;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -328,7 +324,7 @@ export default function HowToPrepareForSecurityAudit() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(255, 96, 0,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgb(var(--accent-rgb) / .07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}
@@ -336,12 +332,12 @@ export default function HowToPrepareForSecurityAudit() {
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
-    .sb-cta{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-family:var(--serif);font-size:.98rem;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
     .sb-cta-btn:hover{background:var(--cy2)}
-    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(255, 96, 0,.4);transition:transform .2s;z-index:50}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgb(var(--accent-rgb) / .4);transition:transform .2s;z-index:50}
     #btt.vis{display:flex}
     #btt:hover{transform:translateY(-3px)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
@@ -408,16 +404,16 @@ export default function HowToPrepareForSecurityAudit() {
         <div className="img-wrap">
           <svg viewBox="0 0 960 440" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
             <defs>
-              <linearGradient id="gOr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#FF6000"/><stop offset="100%" stopColor="#FF8A3D"/></linearGradient>
-              <linearGradient id="gGr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#06d6a0"/><stop offset="100%" stopColor="#04b080"/></linearGradient>
-              <linearGradient id="gAm" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ffb703"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
-              <linearGradient id="gRd" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ff4d6d"/><stop offset="100%" stopColor="#d0304e"/></linearGradient>
-              <pattern id="adots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="13" cy="13" r=".9" fill="rgba(255, 96, 0,0.045)"/></pattern>
+              <linearGradient id="gOr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--accent)"/><stop offset="100%" stopColor="var(--accent-light)"/></linearGradient>
+              <linearGradient id="gGr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--green)"/><stop offset="100%" stopColor="var(--green)"/></linearGradient>
+              <linearGradient id="gAm" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--yellow)"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
+              <linearGradient id="gRd" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--red)"/><stop offset="100%" stopColor="var(--red)"/></linearGradient>
+              <pattern id="adots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="13" cy="13" r=".9" fill="rgb(var(--accent-rgb) / 0.045)"/></pattern>
             </defs>
             <rect width="960" height="440" fill="url(#adots)"/>
 
             {/* ── LEFT: Audit Stages Progress ── */}
-            <rect x="18" y="18" width="210" height="404" rx="12" fill="#081826" stroke="rgba(255, 96, 0,0.15)" strokeWidth="1"/>
+            <rect x="18" y="18" width="210" height="404" rx="12" fill="var(--bg-secondary)" stroke="rgb(var(--accent-rgb) / 0.15)" strokeWidth="1"/>
             <text x="38" y="46" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">8 STAGES OF AUDIT PREP</text>
             {[
               { label: "Confirm Scope",         done: true  },
@@ -430,15 +426,15 @@ export default function HowToPrepareForSecurityAudit() {
               { label: "Pre-Audit Walkthrough", done: false },
             ].map(({ label, done }, i) => (
               <g key={i}>
-                <rect x="30" y={60 + i * 44} width="186" height="34" rx="7" fill={done ? "rgba(6,214,160,0.07)" : "rgba(255,255,255,0.03)"} stroke={done ? "rgba(6,214,160,0.2)" : "rgba(255,255,255,0.06)"} strokeWidth="1"/>
-                <circle cx="50" cy={60 + i * 44 + 17} r="9" fill={done ? "rgba(6,214,160,0.15)" : "rgba(255, 96, 0,0.1)"} stroke={done ? "#06d6a0" : "rgba(255, 96, 0,0.3)"} strokeWidth="1.2"/>
-                <text x="50" y={60 + i * 44 + 21} textAnchor="middle" fill={done ? "#06d6a0" : "rgba(255, 96, 0,0.6)"} fontSize="8" fontWeight="700" fontFamily="sans-serif">{done ? "✓" : `${i+1}`}</text>
-                <text x="68" y={60 + i * 44 + 20} fill={done ? "#c8d6e5" : "rgba(200,214,229,0.5)"} fontSize="9" fontFamily="sans-serif">{label}</text>
+                <rect x="30" y={60 + i * 44} width="186" height="34" rx="7" fill={done ? "rgb(var(--green-rgb) / 0.07)" : "rgba(255,255,255,0.03)"} stroke={done ? "rgb(var(--green-rgb) / 0.2)" : "rgba(255,255,255,0.06)"} strokeWidth="1"/>
+                <circle cx="50" cy={60 + i * 44 + 17} r="9" fill={done ? "rgb(var(--green-rgb) / 0.15)" : "rgb(var(--accent-rgb) / 0.1)"} stroke={done ? "var(--green)" : "rgb(var(--accent-rgb) / 0.3)"} strokeWidth="1.2"/>
+                <text x="50" y={60 + i * 44 + 21} textAnchor="middle" fill={done ? "var(--green)" : "rgb(var(--accent-rgb) / 0.6)"} fontSize="8" fontWeight="700" fontFamily="sans-serif">{done ? "✓" : `${i+1}`}</text>
+                <text x="68" y={60 + i * 44 + 20} fill={done ? "var(--text-primary)" : "rgba(200,214,229,0.5)"} fontSize="9" fontFamily="sans-serif">{label}</text>
               </g>
             ))}
 
             {/* divider */}
-            <line x1="242" y1="14" x2="242" y2="426" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
+            <line x1="242" y1="14" x2="242" y2="426" stroke="rgb(var(--accent-rgb) / 0.07)" strokeWidth="1"/>
 
             {/* ── CENTRE: Audit Readiness Score ── */}
             <text x="520" y="46" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="14" fontWeight="700" fontFamily="sans-serif">Audit Readiness Dashboard</text>
@@ -449,19 +445,19 @@ export default function HowToPrepareForSecurityAudit() {
             <circle cx="520" cy="178" r="66" fill="none" stroke="url(#gGr)" strokeWidth="12"
               strokeDasharray="290 414" strokeDashoffset="103" strokeLinecap="round"/>
             <text x="520" y="170" textAnchor="middle" fill="#fff" fontSize="28" fontWeight="700" fontFamily="sans-serif">70%</text>
-            <text x="520" y="188" textAnchor="middle" fill="rgba(6,214,160,0.7)" fontSize="9" fontFamily="sans-serif">Audit Ready</text>
+            <text x="520" y="188" textAnchor="middle" fill="rgb(var(--green-rgb) / 0.7)" fontSize="9" fontFamily="sans-serif">Audit Ready</text>
             <text x="520" y="204" textAnchor="middle" fill="rgba(200,214,229,0.35)" fontSize="8" fontFamily="sans-serif">5 of 8 stages complete</text>
 
             {/* Mini cards */}
-            <rect x="394" y="256" width="90" height="58" rx="9" fill="#091826" stroke="rgba(6,214,160,0.2)" strokeWidth="1"/>
-            <text x="439" y="278" textAnchor="middle" fill="#06d6a0" fontSize="20" fontWeight="700" fontFamily="sans-serif">5</text>
+            <rect x="394" y="256" width="90" height="58" rx="9" fill="var(--bg-secondary)" stroke="rgb(var(--green-rgb) / 0.2)" strokeWidth="1"/>
+            <text x="439" y="278" textAnchor="middle" fill="var(--green)" fontSize="20" fontWeight="700" fontFamily="sans-serif">5</text>
             <text x="439" y="293" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="8" fontFamily="sans-serif">Stages Done</text>
-            <text x="439" y="306" textAnchor="middle" fill="rgba(6,214,160,0.5)" fontSize="7.5" fontFamily="sans-serif">✓ on track</text>
+            <text x="439" y="306" textAnchor="middle" fill="rgb(var(--green-rgb) / 0.5)" fontSize="7.5" fontFamily="sans-serif">✓ on track</text>
 
-            <rect x="494" y="256" width="90" height="58" rx="9" fill="#091826" stroke="rgba(255,183,3,0.2)" strokeWidth="1"/>
-            <text x="539" y="278" textAnchor="middle" fill="#ffb703" fontSize="20" fontWeight="700" fontFamily="sans-serif">3</text>
+            <rect x="494" y="256" width="90" height="58" rx="9" fill="var(--bg-secondary)" stroke="rgb(var(--yellow-rgb) / 0.2)" strokeWidth="1"/>
+            <text x="539" y="278" textAnchor="middle" fill="var(--yellow)" fontSize="20" fontWeight="700" fontFamily="sans-serif">3</text>
             <text x="539" y="293" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="8" fontFamily="sans-serif">Remaining</text>
-            <text x="539" y="306" textAnchor="middle" fill="rgba(255,183,3,0.5)" fontSize="7.5" fontFamily="sans-serif">complete by D-7</text>
+            <text x="539" y="306" textAnchor="middle" fill="rgb(var(--yellow-rgb) / 0.5)" fontSize="7.5" fontFamily="sans-serif">complete by D-7</text>
 
             {/* Framework coverage bars */}
             <text x="394" y="344" fill="rgba(200,214,229,0.6)" fontSize="9" fontWeight="600" fontFamily="sans-serif">Framework Coverage</text>
@@ -480,7 +476,7 @@ export default function HowToPrepareForSecurityAudit() {
             ))}
 
             {/* divider */}
-            <line x1="650" y1="14" x2="650" y2="426" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
+            <line x1="650" y1="14" x2="650" y2="426" stroke="rgb(var(--accent-rgb) / 0.07)" strokeWidth="1"/>
 
             {/* ── RIGHT: Evidence Checklist ── */}
             <text x="672" y="46" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">EVIDENCE CHECKLIST</text>
@@ -498,9 +494,9 @@ export default function HowToPrepareForSecurityAudit() {
               { label: "DPIA Records",                 done: false },
             ].map(({ label, done }, i) => (
               <g key={i}>
-                <rect x="664" y={60 + i * 34} width="276" height="26" rx="6" fill={done ? "rgba(6,214,160,0.05)" : "rgba(255,255,255,0.02)"} stroke={done ? "rgba(6,214,160,0.15)" : "rgba(255,255,255,0.05)"} strokeWidth="1"/>
-                <rect x="672" y={67 + i * 34} width="12" height="12" rx="3" fill={done ? "#06d6a0" : "rgba(255,255,255,0.05)"} stroke={done ? "#06d6a0" : "rgba(255,255,255,0.15)"} strokeWidth="1"/>
-                {done && <text x="678" y={78 + i * 34} textAnchor="middle" fill="#040f1b" fontSize="8" fontWeight="800" fontFamily="sans-serif">✓</text>}
+                <rect x="664" y={60 + i * 34} width="276" height="26" rx="6" fill={done ? "rgb(var(--green-rgb) / 0.05)" : "rgba(255,255,255,0.02)"} stroke={done ? "rgb(var(--green-rgb) / 0.15)" : "rgba(255,255,255,0.05)"} strokeWidth="1"/>
+                <rect x="672" y={67 + i * 34} width="12" height="12" rx="3" fill={done ? "var(--green)" : "rgba(255,255,255,0.05)"} stroke={done ? "var(--green)" : "rgba(255,255,255,0.15)"} strokeWidth="1"/>
+                {done && <text x="678" y={78 + i * 34} textAnchor="middle" fill="var(--bg-secondary)" fontSize="8" fontWeight="800" fontFamily="sans-serif">✓</text>}
                 <text x="692" y={77 + i * 34} fill={done ? "rgba(200,214,229,0.85)" : "rgba(200,214,229,0.4)"} fontSize="8.5" fontFamily="sans-serif">{label}</text>
               </g>
             ))}

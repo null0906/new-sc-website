@@ -24,10 +24,10 @@ export default function AboutPage() {
       <h1>Cybersecurity Experts <span class="accent">Who've Been</span> <span class="green">In Your Shoes</span></h1>
       <p class="hero-sub">We combine deep expertise with practical experience to deliver compliance results that matter.</p>
       <div style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px">
-        <span style="padding:7px 18px;background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.85);border-radius:9999px;font-size:12px;font-weight:600;color:#fff">&#10003; Ex-PwC Led Team</span>
-        <span style="padding:7px 18px;background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.85);border-radius:9999px;font-size:12px;font-weight:600;color:#fff">&#10003; ISO 27001 Lead Auditors</span>
-        <span style="padding:7px 18px;background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.85);border-radius:9999px;font-size:12px;font-weight:600;color:#fff">&#10003; 100% First-Attempt Pass Rate</span>
-        <span style="padding:7px 18px;background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.85);border-radius:9999px;font-size:12px;font-weight:600;color:#fff">&#10003; Global Delivery</span>
+        <span style="padding:7px 18px;background:var(--bg-card);border:1px solid var(--border-hover);border-radius:9999px;font-size:12px;font-weight:600;color:var(--white)">&#10003; Ex-PwC Led Team</span>
+        <span style="padding:7px 18px;background:var(--bg-card);border:1px solid var(--border-hover);border-radius:9999px;font-size:12px;font-weight:600;color:var(--white)">&#10003; ISO 27001 Lead Auditors</span>
+        <span style="padding:7px 18px;background:var(--bg-card);border:1px solid var(--border-hover);border-radius:9999px;font-size:12px;font-weight:600;color:var(--white)">&#10003; 100% First-Attempt Pass Rate</span>
+        <span style="padding:7px 18px;background:var(--bg-card);border:1px solid var(--border-hover);border-radius:9999px;font-size:12px;font-weight:600;color:var(--white)">&#10003; Global Delivery</span>
       </div>
     </div>
   </div>
@@ -157,7 +157,6 @@ export default function AboutPage() {
 `}} />
 <Script src="/assets/js/animations.js" strategy="afterInteractive" />
       <Script src="/assets/js/counters.js" strategy="afterInteractive" />
-      <Script src="/assets/js/effects.js" strategy="afterInteractive" />
     </>
   )
 }

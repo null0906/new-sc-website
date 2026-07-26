@@ -15,10 +15,7 @@ export default function ServiceAiAgentsPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AI Agents Built for Your Security Team — SecComply" />
         <meta name="twitter:description" content="Custom-built cybersecurity AI agents and agentic workflows that plug into your existing stack and operate within your policies." />
-        <link rel="canonical" href="https://seccomply.net/services/ai-agents" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-        <script
+        <link rel="canonical" href="https://seccomply.net/services/ai-agents" />        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","name":"AI Agents & Agentic Workflows","description":"Custom-built cybersecurity AI agents and agentic workflows that automate firewall reviews, vendor risk assessments, access recertifications, and more.","provider":{"@type":"Organization","name":"SecComply","url":"https://seccomply.net"},"areaServed":"Worldwide","url":"https://seccomply.net/services/ai-agents"}`}}
         />
@@ -45,7 +42,7 @@ export default function ServiceAiAgentsPage() {
 .ai-mesh-layer { position:absolute; border-radius:50%; filter:blur(100px); will-change:transform,opacity; pointer-events:none; }
 .ai-mesh-l1 { width:600px; height:600px; background:rgba(20,184,166,0.10); top:-150px; left:-100px; animation:aiMesh1 60s ease-in-out infinite; }
 .ai-mesh-l2 { width:500px; height:500px; background:rgba(124,92,255,0.07); top:-80px; right:-80px; animation:aiMesh2 60s ease-in-out infinite 20s; }
-.ai-mesh-l3 { width:400px; height:400px; background:rgba(255, 96, 0,0.05); bottom:-60px; left:40%; animation:aiMesh3 60s ease-in-out infinite 40s; }
+.ai-mesh-l3 { width:400px; height:400px; background:rgb(var(--accent-rgb) / 0.05); bottom:-60px; left:40%; animation:aiMesh3 60s ease-in-out infinite 40s; }
 @keyframes aiMesh1 { 0%,100%{ transform:translate(0,0); opacity:0.7; } 50%{ transform:translate(80px,40px); opacity:1; } }
 @keyframes aiMesh2 { 0%,100%{ transform:translate(0,0); opacity:0.5; } 50%{ transform:translate(-60px,50px); opacity:0.8; } }
 @keyframes aiMesh3 { 0%,100%{ transform:translate(0,0); opacity:0.4; } 50%{ transform:translate(40px,-50px); opacity:0.7; } }
@@ -121,7 +118,7 @@ export default function ServiceAiAgentsPage() {
 .ai-card-tag {
   display:inline-block; align-self:flex-start;
   padding:3px 10px; margin-bottom:10px;
-  background:rgba(255,255,255,0.04); border:1px solid var(--border);
+  background:rgb(var(--p-white-rgb) / 0.04); border:1px solid var(--border);
   border-radius:var(--radius-full);
   font-size:0.68rem; font-weight:600; color:var(--text-muted);
   text-transform:uppercase; letter-spacing:0.04em; white-space:nowrap;
@@ -174,30 +171,30 @@ export default function ServiceAiAgentsPage() {
 /* ── Firewall Pipeline Diagram ───────────────────────────── */
 .ag-section { padding:80px 0; background:var(--bg-secondary); }
 .ag-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; }
-.ag-card-header { display:flex; flex-wrap:wrap; gap:8px; padding:14px 24px; background:rgba(0,0,0,0.2); border-bottom:1px solid var(--border); }
+.ag-card-header { display:flex; flex-wrap:wrap; gap:8px; padding:14px 24px; background:rgb(var(--p-white-rgb) / 0.2); border-bottom:1px solid var(--border); }
 .ag-badge-pill { padding:4px 12px; background:rgba(20,184,166,0.08); border:1px solid rgba(20,184,166,0.18); border-radius:20px; font-size:0.72rem; font-weight:600; color:var(--teal); }
 /* Zone bar */
-.ag-zones { display:flex; align-items:center; padding:8px 28px; border-bottom:1px solid var(--border); background:rgba(0,0,0,0.15); gap:0; }
+.ag-zones { display:flex; align-items:center; padding:8px 28px; border-bottom:1px solid var(--border); background:rgb(var(--p-white-rgb) / 0.15); gap:0; }
 .ag-zone { font-size:0.65rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; }
-.ag-zone-admin { color:rgba(255, 96, 0,0.65); flex:0 0 108px; }
+.ag-zone-admin { color:rgb(var(--accent-rgb) / 0.65); flex:0 0 108px; }
 .ag-zone-agent { flex:1; text-align:center; color:rgba(20,184,166,0.65); }
 .ag-zone-sys { color:rgba(148,163,184,0.5); flex:0 0 116px; text-align:right; }
 /* Pipeline scroll */
-.ag-pipe-scroll { overflow-x:auto; padding:28px 24px 12px; scrollbar-width:thin; scrollbar-color:rgba(255,255,255,0.08) transparent; }
+.ag-pipe-scroll { overflow-x:auto; padding:28px 24px 12px; scrollbar-width:thin; scrollbar-color:rgb(var(--p-white-rgb) / 0.08) transparent; }
 .ag-pipe-row { display:flex; align-items:flex-start; min-width:840px; }
 /* Node */
 .ag-pipe-node { flex-shrink:0; width:108px; display:flex; flex-direction:column; align-items:center; }
 .ag-pipe-box {
   width:88px; height:88px;
-  background:rgba(15,23,42,0.85);
-  border:1px solid rgba(255,255,255,0.07);
+  background:rgb(var(--bg-card-rgb) / 0.85);
+  border:1px solid rgb(var(--p-white-rgb) / 0.07);
   border-radius:16px;
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px;
   position:relative; overflow:hidden;
   transition:transform 0.22s ease, border-color 0.22s, box-shadow 0.22s;
 }
 .ag-pipe-box::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; border-radius:0 0 2px 2px; }
-.ag-pipe-box:hover { transform:translateY(-4px); border-color:rgba(255,255,255,0.13); box-shadow:0 12px 32px rgba(0,0,0,0.4); }
+.ag-pipe-box:hover { transform:translateY(-4px); border-color:rgb(var(--p-white-rgb) / 0.13); box-shadow:0 12px 32px rgb(var(--p-white-rgb) / 0.4); }
 .ag-pipe-icon { font-size:1.75rem; line-height:1; display:block; }
 .ag-pipe-short { font-size:0.62rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-muted); }
 .ag-pipe-name { margin-top:10px; font-size:0.72rem; font-weight:600; color:var(--white); text-align:center; line-height:1.35; padding:0 4px; min-height:2.7em; }
@@ -205,23 +202,23 @@ export default function ServiceAiAgentsPage() {
 .ag-n-orange .ag-pipe-box::after { background:var(--accent); }
 .ag-n-teal   .ag-pipe-box::after { background:var(--teal); }
 .ag-n-purple .ag-pipe-box::after { background:var(--purple); }
-.ag-n-blue   .ag-pipe-box::after { background:#3B82F6; }
+.ag-n-blue   .ag-pipe-box::after { background:var(--blue); }
 .ag-n-indigo .ag-pipe-box::after { background:#6366F1; }
-.ag-n-yellow .ag-pipe-box::after { background:#F59E0B; }
+.ag-n-yellow .ag-pipe-box::after { background:var(--yellow); }
 .ag-n-green  .ag-pipe-box::after { background:var(--green); }
 /* Gate node glow */
-.ag-n-gate .ag-pipe-box { border-color:rgba(245,158,11,0.2); background:rgba(245,158,11,0.04); box-shadow:0 0 24px rgba(245,158,11,0.07); }
-.ag-n-gate .ag-pipe-box:hover { border-color:rgba(245,158,11,0.35); box-shadow:0 12px 32px rgba(245,158,11,0.12); }
+.ag-n-gate .ag-pipe-box { border-color:rgb(var(--yellow-rgb) / 0.2); background:rgb(var(--yellow-rgb) / 0.04); box-shadow:0 0 24px rgb(var(--yellow-rgb) / 0.07); }
+.ag-n-gate .ag-pipe-box:hover { border-color:rgb(var(--yellow-rgb) / 0.35); box-shadow:0 12px 32px rgb(var(--yellow-rgb) / 0.12); }
 /* Connectors */
 .ag-pipe-conn { flex:1; min-width:14px; height:88px; display:flex; align-items:center; position:relative; }
-.ag-pipe-conn::before { content:''; position:absolute; top:50%; left:2px; right:2px; height:1px; background:rgba(255,255,255,0.07); }
-.ag-pipe-conn::after { content:'›'; position:absolute; right:0; top:50%; transform:translateY(-53%); color:rgba(255,255,255,0.1); font-size:1rem; line-height:1; }
+.ag-pipe-conn::before { content:''; position:absolute; top:50%; left:2px; right:2px; height:1px; background:rgb(var(--p-white-rgb) / 0.07); }
+.ag-pipe-conn::after { content:'›'; position:absolute; right:0; top:50%; transform:translateY(-53%); color:rgb(var(--p-white-rgb) / 0.1); font-size:1rem; line-height:1; }
 .ag-pipe-dot { position:absolute; top:50%; width:6px; height:6px; border-radius:50%; background:var(--teal); box-shadow:0 0 8px rgba(20,184,166,0.9); transform:translateY(-50%); animation:agPipeDot 2.2s ease-in-out infinite; }
 @keyframes agPipeDot { 0%{ left:0; opacity:0; } 10%{ opacity:1; } 90%{ opacity:1; } 100%{ left:calc(100% - 6px); opacity:0; } }
 /* System chips */
 .ag-pipe-chips { display:flex; flex-direction:column; align-items:center; gap:5px; margin-top:8px; width:100%; }
-.ag-pipe-vline { width:1px; height:18px; background:repeating-linear-gradient(to bottom,rgba(255,255,255,0.1) 0,rgba(255,255,255,0.1) 4px,transparent 4px,transparent 8px); }
-.ag-chip { display:flex; align-items:center; gap:5px; padding:4px 8px 4px 5px; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.07); border-radius:20px; white-space:nowrap; width:max-content; max-width:100px; }
+.ag-pipe-vline { width:1px; height:18px; background:repeating-linear-gradient(to bottom,rgb(var(--p-white-rgb) / 0.1) 0,rgb(var(--p-white-rgb) / 0.1) 4px,transparent 4px,transparent 8px); }
+.ag-chip { display:flex; align-items:center; gap:5px; padding:4px 8px 4px 5px; background:rgb(var(--p-white-rgb) / 0.02); border:1px solid rgb(var(--p-white-rgb) / 0.07); border-radius:20px; white-space:nowrap; width:max-content; max-width:100px; }
 .ag-chip.ag-chip-write { border-color:rgba(20,184,166,0.22); background:rgba(20,184,166,0.05); }
 .ag-chip-ico { font-size:0.8rem; }
 .ag-chip-name { font-size:0.64rem; font-weight:700; color:var(--text-secondary); line-height:1.2; display:block; }
@@ -229,7 +226,7 @@ export default function ServiceAiAgentsPage() {
 .ag-chip.ag-chip-write .ag-chip-name { color:var(--teal); }
 .ag-chip.ag-chip-write .ag-chip-acc { color:rgba(20,184,166,0.65); }
 /* Stats bar */
-.ag-stats-bar { display:flex; align-items:center; justify-content:space-around; padding:20px 24px; background:rgba(0,0,0,0.25); border-top:1px solid var(--border); flex-wrap:wrap; gap:16px; }
+.ag-stats-bar { display:flex; align-items:center; justify-content:space-around; padding:20px 24px; background:rgb(var(--p-white-rgb) / 0.25); border-top:1px solid var(--border); flex-wrap:wrap; gap:16px; }
 .ag-stat { text-align:center; }
 .ag-stat-val { display:block; font-size:1.25rem; font-weight:800; color:var(--white); line-height:1; margin-bottom:4px; }
 .ag-stat-sub { display:block; font-size:0.7rem; color:var(--text-muted); line-height:1.3; }
@@ -318,31 +315,31 @@ export default function ServiceAiAgentsPage() {
 
           <!-- Ticket pill 0 — "Firewall rule review queued" Agent→Tools (w=178) -->
           <g class="ai-t0">
-            <rect x="0" y="0" width="178" height="26" rx="13" fill="#0F172A" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
+            <rect x="0" y="0" width="178" height="26" rx="13" fill="var(--bg-card)" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
             <text x="89" y="17" text-anchor="middle" fill="rgba(226,232,240,0.9)" font-size="9.5" font-family="Inter,sans-serif">Firewall rule review queued</text>
           </g>
 
           <!-- Ticket pill 1 — "Vendor SAQ drafted" Tools→Guardrails (w=148) -->
           <g class="ai-t1">
-            <rect x="0" y="0" width="148" height="26" rx="13" fill="#0F172A" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
+            <rect x="0" y="0" width="148" height="26" rx="13" fill="var(--bg-card)" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
             <text x="74" y="17" text-anchor="middle" fill="rgba(226,232,240,0.9)" font-size="9.5" font-family="Inter,sans-serif">Vendor SAQ drafted</text>
           </g>
 
           <!-- Ticket pill 2 — "Access drift detected" Guardrails→Agent (w=158) -->
           <g class="ai-t2">
-            <rect x="0" y="0" width="158" height="26" rx="13" fill="#0F172A" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
+            <rect x="0" y="0" width="158" height="26" rx="13" fill="var(--bg-card)" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
             <text x="79" y="17" text-anchor="middle" fill="rgba(226,232,240,0.9)" font-size="9.5" font-family="Inter,sans-serif">Access drift detected</text>
           </g>
 
           <!-- Ticket pill 3 — "Evidence pulled" Agent→Guardrails (w=128) -->
           <g class="ai-t3">
-            <rect x="0" y="0" width="128" height="26" rx="13" fill="#0F172A" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
+            <rect x="0" y="0" width="128" height="26" rx="13" fill="var(--bg-card)" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
             <text x="64" y="17" text-anchor="middle" fill="rgba(226,232,240,0.9)" font-size="9.5" font-family="Inter,sans-serif">Evidence pulled</text>
           </g>
 
           <!-- Ticket pill 4 — "Alert triaged" Tools→Agent (w=118) -->
           <g class="ai-t4">
-            <rect x="0" y="0" width="118" height="26" rx="13" fill="#0F172A" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
+            <rect x="0" y="0" width="118" height="26" rx="13" fill="var(--bg-card)" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
             <text x="59" y="17" text-anchor="middle" fill="rgba(226,232,240,0.9)" font-size="9.5" font-family="Inter,sans-serif">Alert triaged</text>
           </g>
         </svg>
@@ -787,7 +784,6 @@ export default function ServiceAiAgentsPage() {
       <Script src="/assets/js/animations.js" strategy="afterInteractive" />
       <Script src="/assets/js/counters.js" strategy="afterInteractive" />
       <Script src="/assets/js/accordion.js" strategy="afterInteractive" />
-      <Script src="/assets/js/effects.js" strategy="afterInteractive" />
     </>
   )
 }

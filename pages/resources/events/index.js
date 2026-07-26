@@ -35,16 +35,15 @@ export default function EventsIndex() {
 
       <style jsx global>{`
         :root {
-          --bg: #020617;
-          --surface: #0a1628;
-          --accent: #FF6000;
-          --accent-soft: rgba(255, 96, 0, 0.15);
-          --accent-border: rgba(255, 96, 0, 0.3);
-          --text-primary: #f8fafc;
-          --text-body: #c8d6e5;
-          --text-muted: #94a3b8;
-          --cy: #06d6a0;
-          --bl: #818cf8;
+          --bg: var(--bg-primary);
+          --surface: var(--bg-card);
+          --accent-soft: rgb(var(--accent-rgb) / 0.15);
+          --accent-border: rgb(var(--accent-rgb) / 0.3);
+          --text-primary: var(--white);
+          --text-body: var(--text-primary);
+          --text-muted: var(--text-secondary);
+          --cy: var(--teal);
+          --bl: var(--purple);
         }
         body {
           background: var(--bg);
@@ -80,7 +79,7 @@ export default function EventsIndex() {
           font-weight: 800;
           margin: 0 0 1rem;
           letter-spacing: -0.02em;
-          background: linear-gradient(135deg, #fff 0%, #c8d6e5 100%);
+          background: linear-gradient(135deg, #fff 0%, var(--text-primary) 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -99,7 +98,7 @@ export default function EventsIndex() {
           display: flex;
           gap: .5rem;
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 16px;
           padding: .65rem;
           margin-bottom: 2rem;
@@ -122,12 +121,12 @@ export default function EventsIndex() {
           white-space: nowrap;
         }
         .events-tab:hover:not(.active) {
-          background: rgba(255,255,255,0.03);
+          background: rgb(var(--p-white-rgb) / 0.03);
         }
         .events-tab.active {
-          background: rgba(255, 96, 0,0.08);
+          background: rgb(var(--accent-rgb) / 0.08);
           border-color: var(--accent-border);
-          box-shadow: 0 0 0 1px var(--accent-border), 0 8px 24px rgba(255, 96, 0,0.12);
+          box-shadow: 0 0 0 1px var(--accent-border), 0 8px 24px rgb(var(--accent-rgb) / 0.12);
         }
         .events-tab-title {
           display: block;
@@ -147,7 +146,7 @@ export default function EventsIndex() {
           font-weight: 500;
         }
         .events-tab.active .events-tab-meta {
-          color: rgba(255, 96, 0,0.75);
+          color: rgb(var(--accent-rgb) / 0.75);
         }
         .pulse-dot-tab {
           display: inline-block;
@@ -157,13 +156,13 @@ export default function EventsIndex() {
           background: var(--cy);
           margin-right: 5px;
           vertical-align: middle;
-          box-shadow: 0 0 0 0 rgba(6,214,160,0.6);
+          box-shadow: 0 0 0 0 rgb(var(--teal-rgb) / 0.6);
           animation: pulse-tab 1.7s infinite;
         }
         @keyframes pulse-tab {
-          0% { box-shadow: 0 0 0 0 rgba(6,214,160,0.6); }
-          70% { box-shadow: 0 0 0 6px rgba(6,214,160,0); }
-          100% { box-shadow: 0 0 0 0 rgba(6,214,160,0); }
+          0% { box-shadow: 0 0 0 0 rgb(var(--teal-rgb) / 0.6); }
+          70% { box-shadow: 0 0 0 6px rgb(var(--teal-rgb) / 0); }
+          100% { box-shadow: 0 0 0 0 rgb(var(--teal-rgb) / 0); }
         }
         @media (max-width: 700px) {
           .events-tabs { flex-direction: column; gap: .4rem; }
@@ -191,7 +190,7 @@ export default function EventsIndex() {
         }
         .past-event-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 20px;
           overflow: hidden;
           display: flex;
@@ -203,7 +202,7 @@ export default function EventsIndex() {
         .past-event-card:hover {
           transform: translateY(-4px);
           border-color: var(--accent-border);
-          box-shadow: 0 18px 42px rgba(0,0,0,0.4), 0 0 0 1px var(--accent-border);
+          box-shadow: 0 18px 42px rgb(var(--p-white-rgb) / 0.4), 0 0 0 1px var(--accent-border);
         }
         .past-event-media {
           position: relative;
@@ -236,15 +235,15 @@ export default function EventsIndex() {
           backdrop-filter: blur(8px);
           background: var(--accent);
           color: white;
-          box-shadow: 0 4px 16px rgba(255, 96, 0,0.4);
+          box-shadow: 0 4px 16px rgb(var(--accent-rgb) / 0.4);
         }
         .past-event-corner-badge.b-attended {
           background: var(--bl);
-          box-shadow: 0 4px 16px rgba(129,140,248,0.4);
+          box-shadow: 0 4px 16px rgb(var(--purple-rgb) / 0.4);
         }
         .past-event-corner-badge.b-award {
           background: var(--cy);
-          box-shadow: 0 4px 16px rgba(6,214,160,0.4);
+          box-shadow: 0 4px 16px rgb(var(--teal-rgb) / 0.4);
         }
         .past-event-body {
           padding: 1.75rem 1.85rem 1.85rem;
@@ -285,8 +284,8 @@ export default function EventsIndex() {
           align-items: center;
           gap: .35rem;
           padding: .35rem .7rem;
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.1);
+          background: rgb(var(--p-white-rgb) / 0.04);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.1);
           border-radius: 7px;
           font-size: .76rem;
           color: var(--text-body);
@@ -311,7 +310,7 @@ export default function EventsIndex() {
           grid-template-columns: 1.1fr 1fr;
           gap: 0;
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 20px;
           overflow: hidden;
         }
@@ -336,8 +335,8 @@ export default function EventsIndex() {
           position: absolute;
           inset: 0;
           background:
-            radial-gradient(circle at 30% 20%, rgba(255, 96, 0,0.15), transparent 50%),
-            radial-gradient(circle at 70% 80%, rgba(129,140,248,0.12), transparent 55%);
+            radial-gradient(circle at 30% 20%, rgb(var(--accent-rgb) / 0.15), transparent 50%),
+            radial-gradient(circle at 70% 80%, rgb(var(--purple-rgb) / 0.12), transparent 55%);
         }
         .upcoming-mark {
           position: relative;
@@ -352,7 +351,7 @@ export default function EventsIndex() {
           line-height: 1;
           letter-spacing: -0.04em;
           margin-bottom: -.25rem;
-          text-shadow: 0 4px 30px rgba(255, 96, 0,0.4);
+          text-shadow: 0 4px 30px rgb(var(--accent-rgb) / 0.4);
         }
         .upcoming-mark .um-month {
           font-size: 1.2rem;
@@ -396,11 +395,11 @@ export default function EventsIndex() {
           backdrop-filter: blur(8px);
           background: var(--accent);
           color: white;
-          box-shadow: 0 4px 16px rgba(255, 96, 0,0.4);
+          box-shadow: 0 4px 16px rgb(var(--accent-rgb) / 0.4);
         }
         .panel-corner-badge.upcoming-badge {
           background: var(--cy);
-          box-shadow: 0 4px 16px rgba(6,214,160,0.4);
+          box-shadow: 0 4px 16px rgb(var(--teal-rgb) / 0.4);
           display: inline-flex;
           align-items: center;
           gap: 6px;
@@ -451,8 +450,8 @@ export default function EventsIndex() {
           align-items: center;
           gap: .4rem;
           padding: .45rem .85rem;
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.1);
+          background: rgb(var(--p-white-rgb) / 0.04);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.1);
           border-radius: 8px;
           font-size: .82rem;
           color: var(--text-body);
@@ -475,13 +474,13 @@ export default function EventsIndex() {
         .panel-cta:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(255, 96, 0,0.3);
+          box-shadow: 0 8px 24px rgb(var(--accent-rgb) / 0.3);
         }
 
         /* Coming-soon panel */
         .events-panel-shell {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 20px;
           overflow: hidden;
         }
@@ -495,8 +494,8 @@ export default function EventsIndex() {
           content: '';
           position: absolute;
           inset: 0;
-          background: radial-gradient(circle at 30% 30%, rgba(129,140,248,0.07), transparent 55%),
-                      radial-gradient(circle at 70% 70%, rgba(255, 96, 0,0.04), transparent 55%);
+          background: radial-gradient(circle at 30% 30%, rgb(var(--purple-rgb) / 0.07), transparent 55%),
+                      radial-gradient(circle at 70% 70%, rgb(var(--accent-rgb) / 0.04), transparent 55%);
           pointer-events: none;
         }
         .cs-icon {
@@ -517,12 +516,12 @@ export default function EventsIndex() {
           position: relative;
         }
         .cs-tag.violet {
-          background: rgba(129,140,248,0.12);
+          background: rgb(var(--purple-rgb) / 0.12);
           color: var(--bl);
-          border: 1px solid rgba(129,140,248,0.35);
+          border: 1px solid rgb(var(--purple-rgb) / 0.35);
         }
         .cs-tag.orange {
-          background: rgba(255, 96, 0,0.12);
+          background: rgb(var(--accent-rgb) / 0.12);
           color: var(--accent);
           border: 1px solid var(--accent-border);
         }
@@ -546,8 +545,8 @@ export default function EventsIndex() {
           align-items: center;
           gap: .5rem;
           padding: .8rem 1.4rem;
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.12);
+          background: rgb(var(--p-white-rgb) / 0.04);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.12);
           border-radius: 10px;
           color: var(--text-primary);
           text-decoration: none;
@@ -565,7 +564,7 @@ export default function EventsIndex() {
 
         .social-connect {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 20px;
           padding: 2.5rem 2.25rem;
           margin: 2rem 0 2rem;
@@ -579,8 +578,8 @@ export default function EventsIndex() {
           align-items: center;
           gap: .5rem;
           padding: .7rem 1.2rem;
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.1);
+          background: rgb(var(--p-white-rgb) / 0.04);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.1);
           border-radius: 10px;
           color: var(--text-primary);
           text-decoration: none;
@@ -596,7 +595,7 @@ export default function EventsIndex() {
         }
 
         .cta-events-banner {
-          background: linear-gradient(135deg, rgba(255, 96, 0,0.12) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.12) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2.75rem;
@@ -631,7 +630,7 @@ export default function EventsIndex() {
         .btn-primary:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(255, 96, 0,0.3);
+          box-shadow: 0 8px 24px rgb(var(--accent-rgb) / 0.3);
         }
         .btn-secondary {
           display: inline-flex;
@@ -640,7 +639,7 @@ export default function EventsIndex() {
           padding: .85rem 1.6rem;
           background: transparent;
           color: var(--text-primary);
-          border: 1px solid rgba(255,255,255,0.2);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.2);
           border-radius: 10px;
           font-weight: 600;
           text-decoration: none;

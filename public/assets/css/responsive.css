@@ -16,11 +16,11 @@
 }
 
 @media (max-width:768px) {
-  .nav-links { display:none; flex-direction:column; position:fixed; top:60px; left:0; right:0; background:rgba(2,6,23,0.97); backdrop-filter:blur(20px); padding:20px; gap:0; border-bottom:1px solid var(--border); }
+  .nav-links { display:none; flex-direction:column; align-items:stretch; justify-self:stretch; position:fixed; top:60px; left:0; width:100%; background:var(--bg-card); backdrop-filter:blur(20px); padding:20px; gap:0; border-bottom:1px solid var(--border); max-height:calc(100vh - 60px); overflow-y:auto; box-sizing:border-box; }
   .nav-links.open { display:flex; }
   .nav-links li { padding:12px 0; border-bottom:1px solid var(--border); }
-  .nav-dropdown-menu { position:static; transform:none; opacity:1; visibility:visible; background:transparent; border:none; box-shadow:none; padding:8px 0 0 20px; min-width:auto; display:none; }
-  .nav-dropdown.open .nav-dropdown-menu { display:block; }
+  .nav-dropdown-menu, .res-dd-menu { position:static; transform:none; opacity:1; visibility:visible; background:transparent; border:none; box-shadow:none; padding:8px 0 0 20px; min-width:auto; width:auto; display:none; grid-template-columns:1fr; }
+  .nav-dropdown.open .nav-dropdown-menu, .res-dd.open .res-dd-menu { display:block; }
   .navbar-inner { display:flex; justify-content:space-between; }
   .nav-actions .btn { display:none; }
   .nav-phone { display:none; }
@@ -47,7 +47,7 @@
   .dash-sidebar { width:100%; border-right:none; border-bottom:1px solid var(--border); padding:10px; display:flex; overflow-x:auto; gap:4px; flex-wrap:nowrap; }
   .dash-sidebar-section { display:none; }
   .dash-sidebar-item { white-space:nowrap; padding:6px 12px; font-size:0.72rem; border:1px solid var(--border); border-radius:var(--radius-full); }
-  .dash-sidebar-item.active { border-color:rgba(255, 96, 0,0.3); border-right:none; }
+  .dash-sidebar-item.active { border-color:rgb(var(--accent-rgb) / 0.3); border-right:none; }
   .dash-kpis { grid-template-columns:repeat(2,1fr); }
   .dash-table { overflow-x:auto; }
   .dash-table-header, .dash-table-row { min-width:500px; }

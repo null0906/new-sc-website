@@ -22,7 +22,7 @@ export default function SaaSComplianceChecklist() {
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
       if (st) st.href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + ttl + '&via=seccomply';
       window.copyLink = function () { const raw = 'https://seccomply.net/resources/blog/saas-compliance-checklist'; (navigator.clipboard ? navigator.clipboard.writeText(raw) : Promise.reject()).catch(() => { const ta = Object.assign(document.createElement('textarea'), { value: raw, style: 'position:fixed;opacity:0' }); document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }); toast('Link copied!'); };
-      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#FF6000;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(255, 96, 0,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
+      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgb(var(--accent-rgb) / .4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
       const fadeEls = document.querySelectorAll('.anim'); if (fadeEls.length && 'IntersectionObserver' in window) { const fo = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; fo.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }); fadeEls.forEach(el => { el.style.animationPlayState = 'paused'; fo.observe(el); }); }
       window.toggleFaq = function (q) { const item = q.closest('.faq-item'); const wasOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!wasOpen) item.classList.add('open'); };
       const first = document.querySelector('.faq-item'); if (first) first.classList.add('open');
@@ -48,10 +48,7 @@ export default function SaaSComplianceChecklist() {
         <meta property="article:tag" content="SaaS Compliance" />
         <meta property="article:tag" content="SOC 2" />
         <meta property="article:tag" content="ISO 27001" />
-        <link rel="canonical" href="https://seccomply.net/resources/blog/saas-compliance-checklist" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        <link rel="canonical" href="https://seccomply.net/resources/blog/saas-compliance-checklist" />        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
             { "@type": "Article", "headline": "The Ultimate Compliance Checklist for SaaS Companies", "description": "9-area compliance checklist for SaaS companies covering SOC 2, ISO 27001, GDPR, HIPAA, and DPDPA with a prioritised 7-month roadmap to certification.", "author": { "@type": "Person", "name": "Aditya Hadke", "jobTitle": "Cybersecurity Consultant", "worksFor": { "@type": "Organization", "name": "SecComply" } }, "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } }, "datePublished": "2026-03-18", "dateModified": "2026-03-18", "mainEntityOfPage": "https://seccomply.net/resources/blog/saas-compliance-checklist", "keywords": "SaaS compliance, SOC 2, ISO 27001, GDPR, HIPAA, DPDPA, access control, vulnerability management, encryption, incident response", "articleSection": "Compliance", "wordCount": 2000, "timeRequired": "PT10M" },
@@ -73,24 +70,23 @@ export default function SaaSComplianceChecklist() {
       </Head>
 
       <style jsx global>{`
-    :root{--cy:#FF6000;--cy2:#d0521f;--glow:rgba(255, 96, 0,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-light));z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
     .cspm-hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem;display:block !important}
     .cspm-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-    .badge-cy{background:rgba(255, 96, 0,.1);color:var(--cy);border:1px solid rgba(255, 96, 0,.25)}
-    .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
-    .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
-    .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
+    .badge-cy{background:rgb(var(--accent-rgb) / .1);color:var(--cy);border:1px solid rgb(var(--accent-rgb) / .25)}
+    .badge-bl{background:rgb(var(--purple-rgb) / .1);color:var(--purple);border:1px solid rgb(var(--purple-rgb) / .25)}
+    .badge-gr{background:rgb(var(--green-rgb) / .1);color:var(--gr);border:1px solid rgb(var(--green-rgb) / .25)}
+    .badge-am{background:rgb(var(--yellow-rgb) / .1);color:var(--am);border:1px solid rgb(var(--yellow-rgb) / .25)}
     .cspm-hero-h1{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,3rem);font-weight:700;color:var(--tx);line-height:1.2;max-width:780px;margin-bottom:1.1rem}
     .cspm-hero-h1 em{font-style:italic;color:var(--cy)}
     .cspm-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     .cspm-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(255, 96, 0,.3)}
+    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgb(var(--accent-rgb) / .3)}
     .cspm-author-strip .author-info{flex:1;min-width:0}
     .cspm-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .cspm-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
@@ -111,31 +107,31 @@ export default function SaaSComplianceChecklist() {
     .art h3{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--tx);margin:2rem 0 .7rem}
     .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
     .art p strong{color:var(--tx);font-weight:600}
-    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(255, 96, 0,.06),transparent);border-radius:0 12px 12px 0}
+    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgb(var(--accent-rgb) / .06),transparent);border-radius:0 12px 12px 0}
     .pull-quote p{font-family:var(--serif);font-size:1.1rem;font-style:italic;color:var(--tx)!important;margin-bottom:.5rem!important;line-height:1.6!important}
     .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
     .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
-    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FF6000,#FF8A3D)}
+    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-light))}
     .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:var(--cy);line-height:1;margin-bottom:.4rem}
     .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
-    .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
-    .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
-    .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
-    .co-key{background:rgba(255, 96, 0,.06);border:1px solid rgba(255, 96, 0,.2)}
-    .co-sc{background:rgba(6,214,160,.05);border:1px solid rgba(6,214,160,.2)}
+    .co-info{background:rgb(var(--purple-rgb) / .07);border:1px solid rgb(var(--purple-rgb) / .2)}
+    .co-warn{background:rgb(var(--yellow-rgb) / .06);border:1px solid rgb(var(--yellow-rgb) / .2)}
+    .co-danger{background:rgb(var(--red-rgb) / .06);border:1px solid rgb(var(--red-rgb) / .2)}
+    .co-key{background:rgb(var(--accent-rgb) / .06);border:1px solid rgb(var(--accent-rgb) / .2)}
+    .co-sc{background:rgb(var(--green-rgb) / .05);border:1px solid rgb(var(--green-rgb) / .2)}
     .co-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
     .co-body p{margin-bottom:0!important;font-size:.89rem!important}
     .co-body strong{display:block;margin-bottom:.3rem;font-size:.82rem;color:var(--tx)}
     .chk-section{background:var(--bgc2);border:1px solid var(--bs);border-radius:14px;padding:1.4rem 1.6rem;margin:1.5rem 0}
     .chk-section-hdr{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
-    .chk-section-num{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#fff;flex-shrink:0}
+    .chk-section-num{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#fff;flex-shrink:0}
     .chk-section-title{font-weight:700;font-size:1rem;color:var(--tx)}
     .chk-section-sub{font-size:.82rem;color:var(--tm)}
     .chk-items{display:flex;flex-direction:column;gap:.4rem;margin-top:.5rem}
     .chk-row{display:flex;align-items:flex-start;gap:.65rem;padding:.55rem .2rem;border-bottom:1px solid var(--bs);font-size:.85rem;color:var(--tb)}
     .chk-row:last-child{border-bottom:none}
-    .chk-box{width:16px;height:16px;border-radius:3px;border:1.5px solid rgba(255, 96, 0,.35);background:rgba(255, 96, 0,.05);flex-shrink:0;margin-top:2px}
+    .chk-box{width:16px;height:16px;border-radius:3px;border:1.5px solid rgb(var(--accent-rgb) / .35);background:rgb(var(--accent-rgb) / .05);flex-shrink:0;margin-top:2px}
     .roadmap-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
     .rm-card{background:var(--bgc2);border:1px solid var(--bs);border-radius:12px;padding:1.2rem 1.4rem;transition:border-color .2s}
     .rm-card:hover{border-color:var(--bo)}
@@ -152,7 +148,7 @@ export default function SaaSComplianceChecklist() {
     .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-    .cta-banner{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-family:var(--serif);font-size:1.5rem;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -169,19 +165,19 @@ export default function SaaSComplianceChecklist() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(255, 96, 0,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgb(var(--accent-rgb) / .07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}.rel-links a:hover{color:var(--cy)}
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
-    .sb-cta{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-family:var(--serif);font-size:.98rem;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
     .sb-cta-btn:hover{background:var(--cy2)}
-    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(255, 96, 0,.4);transition:transform .2s;z-index:50}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgb(var(--accent-rgb) / .4);transition:transform .2s;z-index:50}
     #btt.vis{display:flex}#btt:hover{transform:translateY(-3px)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
     .anim{animation:fadeUp .55s ease both}
@@ -226,15 +222,15 @@ export default function SaaSComplianceChecklist() {
         <div className="img-wrap">
           <svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
             <defs>
-              <linearGradient id="gOr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#FF6000"/><stop offset="100%" stopColor="#FF8A3D"/></linearGradient>
-              <linearGradient id="gGr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#06d6a0"/><stop offset="100%" stopColor="#04b080"/></linearGradient>
-              <linearGradient id="gRd" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ff4d6d"/><stop offset="100%" stopColor="#d0304e"/></linearGradient>
-              <linearGradient id="gAm" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ffb703"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
-              <pattern id="sc" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgba(255, 96, 0,0.04)"/></pattern>
+              <linearGradient id="gOr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--accent)"/><stop offset="100%" stopColor="var(--accent-light)"/></linearGradient>
+              <linearGradient id="gGr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--green)"/><stop offset="100%" stopColor="var(--green)"/></linearGradient>
+              <linearGradient id="gRd" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--red)"/><stop offset="100%" stopColor="var(--red)"/></linearGradient>
+              <linearGradient id="gAm" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--yellow)"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
+              <pattern id="sc" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgb(var(--accent-rgb) / 0.04)"/></pattern>
             </defs>
             <rect width="960" height="420" fill="url(#sc)"/>
             {/* Left: Framework selector */}
-            <rect x="18" y="18" width="210" height="384" rx="12" fill="#081826" stroke="rgba(255, 96, 0,0.15)" strokeWidth="1"/>
+            <rect x="18" y="18" width="210" height="384" rx="12" fill="var(--bg-secondary)" stroke="rgb(var(--accent-rgb) / 0.15)" strokeWidth="1"/>
             <text x="38" y="46" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">FRAMEWORK MATCH</text>
             {[
               {fw:'SOC 2 Type II',  fit:'US B2B SaaS',       pct:94, col:'url(#gGr)'},
@@ -252,44 +248,44 @@ export default function SaaSComplianceChecklist() {
                 <text x="180" y={104+i*64} fill="rgba(200,214,229,0.55)" fontSize="8" fontWeight="700" fontFamily="sans-serif">{pct}%</text>
               </g>
             ))}
-            <line x1="242" y1="14" x2="242" y2="406" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
+            <line x1="242" y1="14" x2="242" y2="406" stroke="rgb(var(--accent-rgb) / 0.07)" strokeWidth="1"/>
             {/* Centre: 9 control areas radial */}
             <text x="480" y="44" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">9 Control Areas · SaaS Compliance</text>
-            <circle cx="480" cy="200" r="55" fill="rgba(255, 96, 0,0.06)" stroke="rgba(255, 96, 0,0.2)" strokeWidth="1.5"/>
-            <text x="480" y="195" textAnchor="middle" fill="#FF6000" fontSize="22" fontWeight="800" fontFamily="sans-serif">9</text>
+            <circle cx="480" cy="200" r="55" fill="rgb(var(--accent-rgb) / 0.06)" stroke="rgb(var(--accent-rgb) / 0.2)" strokeWidth="1.5"/>
+            <text x="480" y="195" textAnchor="middle" fill="var(--accent)" fontSize="22" fontWeight="800" fontFamily="sans-serif">9</text>
             <text x="480" y="212" textAnchor="middle" fill="rgba(200,214,229,0.6)" fontSize="9" fontFamily="sans-serif">Control Areas</text>
             {[
-              {label:'Framework',   angle:-90, col:'#06d6a0'},
-              {label:'Data Class.', angle:-50, col:'#FF6000'},
-              {label:'Access Ctrl', angle:-10, col:'#818cf8'},
-              {label:'Vuln Mgmt',   angle: 30, col:'#ffb703'},
-              {label:'Encryption',  angle: 70, col:'#FF6000'},
-              {label:'Incident Rsp',angle:110, col:'#06d6a0'},
-              {label:'Vendor Risk', angle:150, col:'#818cf8'},
-              {label:'HR Security', angle:190, col:'#ffb703'},
-              {label:'Monitoring',  angle:230, col:'#FF6000'},
+              {label:'Framework',   angle:-90, col:'var(--green)'},
+              {label:'Data Class.', angle:-50, col:'var(--accent)'},
+              {label:'Access Ctrl', angle:-10, col:'var(--purple)'},
+              {label:'Vuln Mgmt',   angle: 30, col:'var(--yellow)'},
+              {label:'Encryption',  angle: 70, col:'var(--accent)'},
+              {label:'Incident Rsp',angle:110, col:'var(--green)'},
+              {label:'Vendor Risk', angle:150, col:'var(--purple)'},
+              {label:'HR Security', angle:190, col:'var(--yellow)'},
+              {label:'Monitoring',  angle:230, col:'var(--accent)'},
             ].map(({label,angle,col},i)=>{
               const r=110; const rad=angle*Math.PI/180;
               const x=480+r*Math.cos(rad); const y=200+r*Math.sin(rad);
               return (
                 <g key={i}>
                   <line x1={480+58*Math.cos(rad)} y1={200+58*Math.sin(rad)} x2={480+90*Math.cos(rad)} y2={200+90*Math.sin(rad)} stroke={col} strokeWidth="1.5" strokeOpacity="0.4"/>
-                  <circle cx={x} cy={y} r="18" fill="#091826" stroke={col} strokeWidth="1.5"/>
+                  <circle cx={x} cy={y} r="18" fill="var(--bg-secondary)" stroke={col} strokeWidth="1.5"/>
                   <text x={x} y={y+3} textAnchor="middle" fill={col} fontSize="6.5" fontWeight="700" fontFamily="sans-serif">{label}</text>
                 </g>
               );
             })}
-            <line x1="648" y1="14" x2="648" y2="406" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
+            <line x1="648" y1="14" x2="648" y2="406" stroke="rgb(var(--accent-rgb) / 0.07)" strokeWidth="1"/>
             {/* Right: 7-month roadmap */}
             <text x="668" y="44" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">7-MONTH ROADMAP</text>
             {[
-              {phase:'Month 1–2', title:'Foundations',     items:'Framework · Inventory · Access · Policies', col:'#06d6a0'},
-              {phase:'Month 3–4', title:'Technical Layer', items:'Vuln Mgmt · Encryption · Logging infra', col:'#FF6000'},
-              {phase:'Month 5–6', title:'People & Vendors',items:'Training · Vendor risk · Readiness assess', col:'#ffb703'},
-              {phase:'Month 7+',  title:'Certification',   items:'External auditor · Formal certification', col:'#818cf8'},
+              {phase:'Month 1–2', title:'Foundations',     items:'Framework · Inventory · Access · Policies', col:'var(--green)'},
+              {phase:'Month 3–4', title:'Technical Layer', items:'Vuln Mgmt · Encryption · Logging infra', col:'var(--accent)'},
+              {phase:'Month 5–6', title:'People & Vendors',items:'Training · Vendor risk · Readiness assess', col:'var(--yellow)'},
+              {phase:'Month 7+',  title:'Certification',   items:'External auditor · Formal certification', col:'var(--purple)'},
             ].map(({phase,title,items,col},i)=>(
               <g key={i}>
-                <rect x="660" y={60+i*82} width="280" height="68" rx="10" fill="#091826" stroke={`${col}30`} strokeWidth="1"/>
+                <rect x="660" y={60+i*82} width="280" height="68" rx="10" fill="var(--bg-secondary)" stroke={`${col}30`} strokeWidth="1"/>
                 <rect x="660" y={60+i*82} width="4" height="68" rx="2" fill={col}/>
                 <text x="676" y={79+i*82} fill={col} fontSize="8.5" fontWeight="700" fontFamily="sans-serif">{phase}</text>
                 <text x="676" y={94+i*82} fill="rgba(200,214,229,0.85)" fontSize="11" fontWeight="700" fontFamily="sans-serif">{title}</text>

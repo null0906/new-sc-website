@@ -9,9 +9,6 @@ export default function ServiceCloudSecurityPage() {
         <title>Cloud Security Assessments — SecComply</title>
         <meta name="description" content="Comprehensive security reviews for AWS, Azure, and GCP — identify misconfigurations, enforce best practices, and secure your cloud infrastructure." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
 
 
 
@@ -78,7 +75,6 @@ export default function ServiceCloudSecurityPage() {
 `}} />
 <Script src="/assets/js/animations.js" strategy="afterInteractive" />
       <Script src="/assets/js/accordion.js" strategy="afterInteractive" />
-      <Script src="/assets/js/effects.js" strategy="afterInteractive" />
     </>
   )
 }

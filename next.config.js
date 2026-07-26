@@ -16,6 +16,11 @@ const nextConfig = {
         destination: '/resources/assessments/scanner',
         permanent: true,
       },
+      {
+        source: '/yourcomply',
+        destination: '/northiron',
+        permanent: true,
+      },
     ]
   },
 }

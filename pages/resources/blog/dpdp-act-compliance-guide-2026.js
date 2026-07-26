@@ -22,7 +22,7 @@ export default function DPDPActIndianBusinesses() {
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
       if (st) st.href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + ttl + '&via=seccomply';
       window.copyLink = function () { const raw = 'https://seccomply.net/resources/blog/dpdp-act-compliance-guide-2026'; (navigator.clipboard ? navigator.clipboard.writeText(raw) : Promise.reject()).catch(() => { const ta = Object.assign(document.createElement('textarea'), { value: raw, style: 'position:fixed;opacity:0' }); document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }); toast('Link copied!'); };
-      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#FF6000;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(255, 96, 0,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
+      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgb(var(--accent-rgb) / .4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
       const fadeEls = document.querySelectorAll('.anim'); if (fadeEls.length && 'IntersectionObserver' in window) { const fo = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; fo.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }); fadeEls.forEach(el => { el.style.animationPlayState = 'paused'; fo.observe(el); }); }
       window.toggleFaq = function (q) { const item = q.closest('.faq-item'); const wasOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!wasOpen) item.classList.add('open'); };
       const first = document.querySelector('.faq-item'); if (first) first.classList.add('open');
@@ -48,10 +48,7 @@ export default function DPDPActIndianBusinesses() {
         <meta property="article:tag" content="DPDP Act" />
         <meta property="article:tag" content="Data Protection" />
         <meta property="article:tag" content="India Compliance" />
-        <link rel="canonical" href="https://seccomply.net/resources/blog/dpdp-act-compliance-guide-2026" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        <link rel="canonical" href="https://seccomply.net/resources/blog/dpdp-act-compliance-guide-2026" />        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
             { "@type": "Article", "headline": "DPDP Act: What Indian Businesses Need to Know", "description": "India's DPDP Rules were notified November 2025. Full enforcement is May 2027. Five core obligations, ₹250 Cr penalty schedule, and your readiness roadmap.", "author": { "@type": "Person", "name": "Gauri Khatate", "jobTitle": "Cybersecurity Analyst", "worksFor": { "@type": "Organization", "name": "SecComply" } }, "publisher": { "@type": "Organization", "name": "SecComply", "logo": { "@type": "ImageObject", "url": "https://seccomply.net/assets/images/logo.png" } }, "datePublished": "2026-03-18", "dateModified": "2026-03-18", "mainEntityOfPage": "https://seccomply.net/resources/blog/dpdp-act-compliance-guide-2026", "keywords": "DPDP Act, Digital Personal Data Protection, data fiduciary, breach notification India, DPDP penalty, Data Protection Board India", "articleSection": "Data Privacy & Compliance", "wordCount": 1600, "timeRequired": "PT5M" },
@@ -74,24 +71,23 @@ export default function DPDPActIndianBusinesses() {
       </Head>
 
       <style jsx global>{`
-    :root{--cy:#FF6000;--cy2:#d0521f;--glow:rgba(255, 96, 0,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-light));z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
     .cspm-hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem;display:block !important}
     .cspm-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-    .badge-cy{background:rgba(255, 96, 0,.1);color:var(--cy);border:1px solid rgba(255, 96, 0,.25)}
-    .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
-    .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
-    .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
+    .badge-cy{background:rgb(var(--accent-rgb) / .1);color:var(--cy);border:1px solid rgb(var(--accent-rgb) / .25)}
+    .badge-bl{background:rgb(var(--purple-rgb) / .1);color:var(--purple);border:1px solid rgb(var(--purple-rgb) / .25)}
+    .badge-gr{background:rgb(var(--green-rgb) / .1);color:var(--gr);border:1px solid rgb(var(--green-rgb) / .25)}
+    .badge-am{background:rgb(var(--yellow-rgb) / .1);color:var(--am);border:1px solid rgb(var(--yellow-rgb) / .25)}
     .cspm-hero-h1{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,3rem);font-weight:700;color:var(--tx);line-height:1.2;max-width:780px;margin-bottom:1.1rem}
     .cspm-hero-h1 em{font-style:italic;color:var(--cy)}
     .cspm-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     .cspm-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(255, 96, 0,.3)}
+    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgb(var(--accent-rgb) / .3)}
     .cspm-author-strip .author-info{flex:1;min-width:0}
     .cspm-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .cspm-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
@@ -112,29 +108,29 @@ export default function DPDPActIndianBusinesses() {
     .art h3{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--tx);margin:2rem 0 .7rem}
     .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
     .art p strong{color:var(--tx);font-weight:600}
-    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(255, 96, 0,.06),transparent);border-radius:0 12px 12px 0}
+    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgb(var(--accent-rgb) / .06),transparent);border-radius:0 12px 12px 0}
     .pull-quote p{font-family:var(--serif);font-size:1.1rem;font-style:italic;color:var(--tx)!important;margin-bottom:.5rem!important;line-height:1.6!important}
-    .def-box{background:linear-gradient(135deg,rgba(255, 96, 0,.07),rgba(255, 96, 0,.02));border:1px solid rgba(255, 96, 0,.22);border-radius:14px;padding:1.6rem 2rem;margin:2rem 0}
+    .def-box{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .07),rgb(var(--accent-rgb) / .02));border:1px solid rgb(var(--accent-rgb) / .22);border-radius:14px;padding:1.6rem 2rem;margin:2rem 0}
     .def-lbl{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cy);margin-bottom:.6rem}
     .def-box p{font-size:.97rem;color:var(--tx)!important;margin-bottom:0!important;line-height:1.7}
     .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:2.5rem 0}
     .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
-    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FF6000,#FF8A3D)}
+    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-light))}
     .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:var(--cy);line-height:1;margin-bottom:.4rem}
     .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
-    .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
-    .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
-    .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
-    .co-key{background:rgba(255, 96, 0,.06);border:1px solid rgba(255, 96, 0,.2)}
-    .co-sc{background:rgba(6,214,160,.05);border:1px solid rgba(6,214,160,.2)}
+    .co-info{background:rgb(var(--purple-rgb) / .07);border:1px solid rgb(var(--purple-rgb) / .2)}
+    .co-warn{background:rgb(var(--yellow-rgb) / .06);border:1px solid rgb(var(--yellow-rgb) / .2)}
+    .co-danger{background:rgb(var(--red-rgb) / .06);border:1px solid rgb(var(--red-rgb) / .2)}
+    .co-key{background:rgb(var(--accent-rgb) / .06);border:1px solid rgb(var(--accent-rgb) / .2)}
+    .co-sc{background:rgb(var(--green-rgb) / .05);border:1px solid rgb(var(--green-rgb) / .2)}
     .co-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
     .co-body p{margin-bottom:0!important;font-size:.89rem!important}
     .co-body strong{display:block;margin-bottom:.3rem;font-size:.82rem;color:var(--tx)}
     .feat-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:.65rem}
     .feat-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;transition:border-color .2s,background .2s}
     .feat-list li:hover{border-color:var(--bo);background:var(--bgc)}
-    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
     .f-body strong{display:block;color:var(--tx);font-size:.89rem;margin-bottom:3px}
     .f-body span{font-size:.83rem;color:var(--tm)}
     .role-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
@@ -149,14 +145,14 @@ export default function DPDPActIndianBusinesses() {
     .tl-date{min-width:100px;font-size:.82rem;font-weight:700;color:var(--cy);flex-shrink:0}
     .tl-body{font-size:.84rem;color:var(--tb);line-height:1.6}
     .tl-badge{display:inline-block;padding:.15rem .55rem;border-radius:4px;font-size:.68rem;font-weight:700;margin-left:.5rem}
-    .tl-done{background:rgba(6,214,160,.1);color:var(--gr)}
-    .tl-upcoming{background:rgba(255,183,3,.1);color:var(--am)}
-    .tl-key{background:rgba(255,77,109,.1);color:var(--red)}
+    .tl-done{background:rgb(var(--green-rgb) / .1);color:var(--gr)}
+    .tl-upcoming{background:rgb(var(--yellow-rgb) / .1);color:var(--am)}
+    .tl-key{background:rgb(var(--red-rgb) / .1);color:var(--red)}
     .pen-table{width:100%;border-collapse:collapse;margin:1.5rem 0}
     .pen-table th{background:var(--bgc);padding:.8rem 1rem;text-align:left;font-size:.77rem;font-weight:600;letter-spacing:.04em;color:var(--cy);border-bottom:1px solid var(--bo)}
     .pen-table td{padding:.75rem 1rem;font-size:.84rem;color:var(--tb);border-bottom:1px solid var(--bs);vertical-align:top}
     .pen-table tr:last-child td{border-bottom:none}
-    .pen-table tr:hover td{background:rgba(255, 96, 0,.03)}
+    .pen-table tr:hover td{background:rgb(var(--accent-rgb) / .03)}
     .pen-amt{color:var(--red);font-weight:700}
     .arrow-list{list-style:none;margin:1.2rem 0;display:flex;flex-direction:column;gap:.5rem}
     .arrow-list li{display:flex;align-items:flex-start;gap:.7rem;font-size:.92rem;color:var(--tb);padding:.4rem 0;border-bottom:1px solid var(--bs)}
@@ -172,7 +168,7 @@ export default function DPDPActIndianBusinesses() {
     .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-    .cta-banner{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-family:var(--serif);font-size:1.5rem;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -189,19 +185,19 @@ export default function DPDPActIndianBusinesses() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(255, 96, 0,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgb(var(--accent-rgb) / .07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}.rel-links a:hover{color:var(--cy)}
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
-    .sb-cta{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-family:var(--serif);font-size:.98rem;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
     .sb-cta-btn:hover{background:var(--cy2)}
-    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(255, 96, 0,.4);transition:transform .2s;z-index:50}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgb(var(--accent-rgb) / .4);transition:transform .2s;z-index:50}
     #btt.vis{display:flex}#btt:hover{transform:translateY(-3px)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
     .anim{animation:fadeUp .55s ease both}
@@ -246,38 +242,38 @@ export default function DPDPActIndianBusinesses() {
         <div className="img-wrap">
           <svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
             <defs>
-              <linearGradient id="gOr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#FF6000"/><stop offset="100%" stopColor="#FF8A3D"/></linearGradient>
-              <linearGradient id="gGr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#06d6a0"/><stop offset="100%" stopColor="#04b080"/></linearGradient>
-              <linearGradient id="gRd" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ff4d6d"/><stop offset="100%" stopColor="#d0304e"/></linearGradient>
-              <linearGradient id="gAm" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ffb703"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
-              <pattern id="dp" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgba(255, 96, 0,0.04)"/></pattern>
+              <linearGradient id="gOr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--accent)"/><stop offset="100%" stopColor="var(--accent-light)"/></linearGradient>
+              <linearGradient id="gGr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--green)"/><stop offset="100%" stopColor="var(--green)"/></linearGradient>
+              <linearGradient id="gRd" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--red)"/><stop offset="100%" stopColor="var(--red)"/></linearGradient>
+              <linearGradient id="gAm" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--yellow)"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
+              <pattern id="dp" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgb(var(--accent-rgb) / 0.04)"/></pattern>
             </defs>
             <rect width="960" height="420" fill="url(#dp)"/>
             {/* Left: Timeline */}
-            <rect x="18" y="18" width="218" height="384" rx="12" fill="#081826" stroke="rgba(255, 96, 0,0.15)" strokeWidth="1"/>
+            <rect x="18" y="18" width="218" height="384" rx="12" fill="var(--bg-secondary)" stroke="rgb(var(--accent-rgb) / 0.15)" strokeWidth="1"/>
             <text x="38" y="46" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">DPDP TIMELINE</text>
             {[
-              {date:'Aug 2023',  event:'DPDP Act signed into law',     col:'#06d6a0', done:true},
-              {date:'Nov 2025',  event:'DPDP Rules 2025 notified',      col:'#06d6a0', done:true},
-              {date:'NOW →',     event:'Compliance build window',       col:'#FF6000', done:false},
-              {date:'Nov 2026',  event:'Consent Manager operational',   col:'#ffb703', done:false},
-              {date:'May 2027',  event:'Full enforcement deadline',      col:'#ff4d6d', done:false},
+              {date:'Aug 2023',  event:'DPDP Act signed into law',     col:'var(--green)', done:true},
+              {date:'Nov 2025',  event:'DPDP Rules 2025 notified',      col:'var(--green)', done:true},
+              {date:'NOW →',     event:'Compliance build window',       col:'var(--accent)', done:false},
+              {date:'Nov 2026',  event:'Consent Manager operational',   col:'var(--yellow)', done:false},
+              {date:'May 2027',  event:'Full enforcement deadline',      col:'var(--red)', done:false},
             ].map(({date,event,col,done},i)=>(
               <g key={i}>
                 {i<4 && <line x1="56" y1={84+i*68} x2="56" y2={118+i*68} stroke="rgba(255,255,255,0.08)" strokeWidth="1.5" strokeDasharray={done?"0":"4,3"}/>}
-                <circle cx="56" cy={74+i*68} r="10" fill={done?"rgba(6,214,160,0.15)":i===2?"rgba(255, 96, 0,0.15)":"rgba(255,255,255,0.05)"} stroke={col} strokeWidth="1.5"/>
+                <circle cx="56" cy={74+i*68} r="10" fill={done?"rgb(var(--green-rgb) / 0.15)":i===2?"rgb(var(--accent-rgb) / 0.15)":"rgba(255,255,255,0.05)"} stroke={col} strokeWidth="1.5"/>
                 <text x="56" y={78+i*68} textAnchor="middle" fill={col} fontSize="9" fontWeight="700" fontFamily="sans-serif">{done?"✓":"○"}</text>
                 <text x="76" y={72+i*68} fill="rgba(200,214,229,0.8)" fontSize="9" fontWeight="700" fontFamily="sans-serif">{date}</text>
                 <text x="76" y={85+i*68} fill="rgba(200,214,229,0.45)" fontSize="8" fontFamily="sans-serif">{event}</text>
               </g>
             ))}
-            <line x1="252" y1="14" x2="252" y2="406" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
+            <line x1="252" y1="14" x2="252" y2="406" stroke="rgb(var(--accent-rgb) / 0.07)" strokeWidth="1"/>
             {/* Centre: Compliance posture */}
             <text x="480" y="44" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">DPDP Compliance Posture</text>
             <circle cx="480" cy="165" r="62" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="11"/>
             <circle cx="480" cy="165" r="62" fill="none" stroke="url(#gAm)" strokeWidth="11" strokeDasharray="220 390" strokeDashoffset="97" strokeLinecap="round"/>
             <text x="480" y="158" textAnchor="middle" fill="#fff" fontSize="26" fontWeight="700" fontFamily="sans-serif">45%</text>
-            <text x="480" y="175" textAnchor="middle" fill="rgba(255,183,3,0.7)" fontSize="9" fontFamily="sans-serif">Avg Readiness</text>
+            <text x="480" y="175" textAnchor="middle" fill="rgb(var(--yellow-rgb) / 0.7)" fontSize="9" fontFamily="sans-serif">Avg Readiness</text>
             <text x="480" y="190" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="8" fontFamily="sans-serif">18 months to full enforcement</text>
             {[
               {label:'Consent Management',    w:80,  pct:'42%', col:'url(#gAm)'},
@@ -293,25 +289,25 @@ export default function DPDPActIndianBusinesses() {
                 <text x="622" y={239+i*24} fill="rgba(200,214,229,0.55)" fontSize="8" fontWeight="700" fontFamily="sans-serif">{pct}</text>
               </g>
             ))}
-            <line x1="648" y1="14" x2="648" y2="406" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
+            <line x1="648" y1="14" x2="648" y2="406" stroke="rgb(var(--accent-rgb) / 0.07)" strokeWidth="1"/>
             {/* Right: Penalty schedule */}
             <text x="668" y="44" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">PENALTY SCHEDULE</text>
             {[
-              {violation:'Inadequate security → breach', amt:'₹250 Cr', c:'#ff4d6d'},
-              {violation:'Failure to notify breach',     amt:'₹200 Cr', c:'#ff4d6d'},
-              {violation:"Children's data violations",   amt:'₹200 Cr', c:'#ff4d6d'},
-              {violation:'SDF obligation failures',      amt:'₹150 Cr', c:'#ffb703'},
-              {violation:'Consent / rights violations',  amt:'₹50 Cr',  c:'#ffb703'},
+              {violation:'Inadequate security → breach', amt:'₹250 Cr', c:'var(--red)'},
+              {violation:'Failure to notify breach',     amt:'₹200 Cr', c:'var(--red)'},
+              {violation:"Children's data violations",   amt:'₹200 Cr', c:'var(--red)'},
+              {violation:'SDF obligation failures',      amt:'₹150 Cr', c:'var(--yellow)'},
+              {violation:'Consent / rights violations',  amt:'₹50 Cr',  c:'var(--yellow)'},
             ].map(({violation,amt,c},i)=>(
               <g key={i}>
-                <rect x="660" y={60+i*62} width="280" height="48" rx="8" fill="#091826" stroke={`${c}28`} strokeWidth="1"/>
+                <rect x="660" y={60+i*62} width="280" height="48" rx="8" fill="var(--bg-secondary)" stroke={`${c}28`} strokeWidth="1"/>
                 <rect x="660" y={60+i*62} width="4" height="48" rx="2" fill={c}/>
                 <text x="674" y={80+i*62} fill="rgba(200,214,229,0.8)" fontSize="8.5" fontFamily="sans-serif">{violation}</text>
                 <text x="674" y={98+i*62} fill={c} fontSize="14" fontWeight="800" fontFamily="sans-serif">{amt}</text>
               </g>
             ))}
-            <rect x="660" y="374" width="280" height="30" rx="8" fill="rgba(255,77,109,0.06)" stroke="rgba(255,77,109,0.2)" strokeWidth="1"/>
-            <text x="800" y="393" textAnchor="middle" fill="#ff4d6d" fontSize="9" fontWeight="700" fontFamily="sans-serif">Penalties are per violation, not per incident</text>
+            <rect x="660" y="374" width="280" height="30" rx="8" fill="rgb(var(--red-rgb) / 0.06)" stroke="rgb(var(--red-rgb) / 0.2)" strokeWidth="1"/>
+            <text x="800" y="393" textAnchor="middle" fill="var(--red)" fontSize="9" fontWeight="700" fontFamily="sans-serif">Penalties are per violation, not per incident</text>
           </svg>
         </div>
         <p className="img-cap">DPDP compliance posture dashboard, timeline to May 2027, average readiness by obligation area, and the full penalty schedule per violation type.</p>

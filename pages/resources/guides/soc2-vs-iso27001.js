@@ -65,12 +65,12 @@ export default function SOC2vsISO() {
           <h2>Key Differences at a Glance</h2>
 
           <div style={{ overflowX: 'auto', margin: '24px 0' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'rgb(var(--p-white-rgb) / 0.75)' }}>
               <thead>
-                <tr style={{ background: 'rgba(255, 96, 0,0.15)' }}>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>Area</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>ISO 27001</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', color: '#FF6000', fontWeight: 700, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>SOC 2</th>
+                <tr style={{ background: 'rgb(var(--accent-rgb) / 0.15)' }}>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: 'var(--accent)', fontWeight: 700, borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.08)' }}>Area</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: 'var(--accent)', fontWeight: 700, borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.08)' }}>ISO 27001</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', color: 'var(--accent)', fontWeight: 700, borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.08)' }}>SOC 2</th>
                 </tr>
               </thead>
               <tbody>
@@ -82,7 +82,7 @@ export default function SOC2vsISO() {
                   ['Flexibility', 'Prescriptive requirements', 'Highly customizable'],
                   ['Focus', 'Governance and risk management', 'Control effectiveness'],
                 ].map(([area, iso, soc], i) => (
-                  <tr key={i} style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                  <tr key={i} style={{ borderBottom: '1px solid rgb(var(--p-white-rgb) / 0.06)' }}>
                     <td style={{ padding: '12px 16px', fontWeight: 700, color: '#fff' }}>{area}</td>
                     <td style={{ padding: '12px 16px' }}>{iso}</td>
                     <td style={{ padding: '12px 16px' }}>{soc}</td>

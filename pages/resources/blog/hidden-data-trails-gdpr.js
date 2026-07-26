@@ -22,24 +22,23 @@ export default function HiddenDataTrailsGDPR() {
   }, []);
   return (<Layout><Head><title>How Your Product Collects Personal Data Without You Realising | SecComply</title><link rel="icon" href="/favicon.ico" /><link rel="stylesheet" href="/assets/css/resource-pages.css" /><meta name="description" content="Most SaaS products collect far more personal data than their founders realise - through analytics SDKs, session replay tools, error monitoring, and embedded pixels. Here are the five hidden collection points and what to do about them." /><meta name="keywords" content="hidden data collection SaaS, product collects personal data GDPR, session replay GDPR, analytics pixels personal data, third-party trackers GDPR, vendor data exfiltration, meta pixel GDPR, sentry PII logging" /><meta property="og:title" content="How Your Product Collects Personal Data Without You Realising" /><meta property="og:description" content="Most SaaS products collect far more personal data than their founders realise - through analytics SDKs, session replay tools, error monitoring, and embedded pixels. Here are the five hidden collection points and what to do about them." /><meta property="og:type" content="article" /><meta property="og:url" content="https://seccomply.net/resources/blog/hidden-data-trails-gdpr" /><meta property="article:published_time" content="2026-04-01" /><meta property="article:author" content="Gauri Khatate" /><link rel="canonical" href="https://seccomply.net/resources/blog/hidden-data-trails-gdpr" /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How Your Product Collects Personal Data Without You Realising","author":{"@type":"Person","name":"Gauri Khatate"},"publisher":{"@type":"Organization","name":"SecComply"},"datePublished":"2026-04-10","mainEntityOfPage":"https://seccomply.net/resources/blog/hidden-data-trails-gdpr"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seccomply.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://seccomply.net/resources/blog"},{"@type":"ListItem","position":3,"name":"Hidden Data Trails","item":"https://seccomply.net/resources/blog/hidden-data-trails-gdpr"}]}]}) }} /></Head>
       <style jsx global>{`
-    :root{--cy:#FF6000;--cy2:#d0521f;--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--gr:#06d6a0;--am:#ffb703;--sans:'Inter',sans-serif}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-light));z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
     .hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem}
     .badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-    .badge-cy{background:rgba(255, 96, 0,.1);color:var(--cy);border:1px solid rgba(255, 96, 0,.25)}
-    .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
-    .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
-    .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
+    .badge-cy{background:rgb(var(--accent-rgb) / .1);color:var(--cy);border:1px solid rgb(var(--accent-rgb) / .25)}
+    .badge-bl{background:rgb(var(--purple-rgb) / .1);color:var(--purple);border:1px solid rgb(var(--purple-rgb) / .25)}
+    .badge-gr{background:rgb(var(--green-rgb) / .1);color:var(--gr);border:1px solid rgb(var(--green-rgb) / .25)}
+    .badge-am{background:rgb(var(--yellow-rgb) / .1);color:var(--am);border:1px solid rgb(var(--yellow-rgb) / .25)}
     .hero-h1{font-size:clamp(1.85rem,3.5vw,3rem);font-weight:700;color:var(--tx);line-height:1.2;max-width:820px;margin-bottom:1.1rem}
     .hero-h1 em{font-style:italic;color:var(--cy)}
     .hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     .author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(255, 96, 0,.3)}
+    .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgb(var(--accent-rgb) / .3)}
     .author-info{flex:1}.aname{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .ameta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
     .adate{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--tm)}.dot{opacity:.3}
@@ -70,40 +69,40 @@ export default function HiddenDataTrailsGDPR() {
     .data-table tr:last-child td{border-bottom:none}
     .data-table td:first-child{color:var(--tx);font-weight:600}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
-    .co-key{background:rgba(255, 96, 0,.06);border:1px solid rgba(255, 96, 0,.2)}
-    .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
-    .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
-    .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
-    .co-gr{background:rgba(6,214,160,.05);border:1px solid rgba(6,214,160,.2)}
+    .co-key{background:rgb(var(--accent-rgb) / .06);border:1px solid rgb(var(--accent-rgb) / .2)}
+    .co-warn{background:rgb(var(--yellow-rgb) / .06);border:1px solid rgb(var(--yellow-rgb) / .2)}
+    .co-info{background:rgb(var(--purple-rgb) / .07);border:1px solid rgb(var(--purple-rgb) / .2)}
+    .co-danger{background:rgb(var(--red-rgb) / .06);border:1px solid rgb(var(--red-rgb) / .2)}
+    .co-gr{background:rgb(var(--green-rgb) / .05);border:1px solid rgb(var(--green-rgb) / .2)}
     .co-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
     .co-body p{margin-bottom:0!important;font-size:.89rem!important}
     .co-body strong{display:block;margin-bottom:.3rem;font-size:.82rem;color:var(--tx)}
     .check-list{display:flex;flex-direction:column;gap:.55rem;margin:1.5rem 0}
     .check-item{display:flex;gap:.85rem;align-items:flex-start;padding:.9rem 1.1rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px}
     .check-item.yes{border-left:3px solid var(--gr)}
-    .check-item.no{border-left:3px solid #ff4d6d}
+    .check-item.no{border-left:3px solid var(--red)}
     .check-mark{font-size:1rem;flex-shrink:0;margin-top:1px;font-weight:800}
     .check-mark.y{color:var(--gr)}
-    .check-mark.n{color:#ff4d6d}
+    .check-mark.n{color:var(--red)}
     .check-body{font-size:.89rem;color:var(--tb)}
     .scope-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
     .scope-col{background:var(--bgc2);border:1px solid var(--bs);border-radius:12px;padding:1.2rem}
     .scope-col.sc-in{border-top:3px solid var(--gr)}
-    .scope-col.sc-out{border-top:3px solid #ff4d6d}
+    .scope-col.sc-out{border-top:3px solid var(--red)}
     .scope-col h4{font-size:.82rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.8rem}
     .sc-in h4{color:var(--gr)}
-    .sc-out h4{color:#ff4d6d}
+    .sc-out h4{color:var(--red)}
     .scope-col ul li{font-size:.82rem;padding:.28rem 0 .28rem 1.1rem}
-    .series-nav{display:flex;align-items:center;gap:.5rem;padding:.7rem 1.1rem;background:rgba(255, 96, 0,.05);border:1px solid rgba(255, 96, 0,.15);border-radius:10px;margin-bottom:2rem;font-size:.8rem;flex-wrap:wrap}
+    .series-nav{display:flex;align-items:center;gap:.5rem;padding:.7rem 1.1rem;background:rgb(var(--accent-rgb) / .05);border:1px solid rgb(var(--accent-rgb) / .15);border-radius:10px;margin-bottom:2rem;font-size:.8rem;flex-wrap:wrap}
     .series-nav span{color:var(--tm)}.series-nav strong{color:var(--cy)}
     .tier-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin:2rem 0}
     .tier-card{background:var(--bgc2);border:1px solid var(--bs);border-radius:12px;padding:1rem;text-align:center}
     .tier-card.t1{border-top:3px solid var(--tm)}
     .tier-card.t2{border-top:3px solid var(--gr)}
     .tier-card.t3{border-top:3px solid var(--am)}
-    .tier-card.t4{border-top:3px solid #ff4d6d}
+    .tier-card.t4{border-top:3px solid var(--red)}
     .tier-card .tn{font-size:.65rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
-    .t1 .tn{color:var(--tm)}.t2 .tn{color:var(--gr)}.t3 .tn{color:var(--am)}.t4 .tn{color:#ff4d6d}
+    .t1 .tn{color:var(--tm)}.t2 .tn{color:var(--gr)}.t3 .tn{color:var(--am)}.t4 .tn{color:var(--red)}
     .tier-card .tt{font-size:.88rem;font-weight:700;color:var(--tx);margin-bottom:.3rem}
     .tier-card .td{font-size:.77rem;color:var(--tm);line-height:1.5}
     .faq-section{margin:3rem 0}
@@ -116,7 +115,7 @@ export default function HiddenDataTrailsGDPR() {
     .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-    .cta-banner{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-size:1.5rem;font-weight:700;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -131,19 +130,19 @@ export default function HiddenDataTrailsGDPR() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(255, 96, 0,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgb(var(--accent-rgb) / .07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}.rel-links a:hover{color:var(--cy)}
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy)}
-    .sb-cta{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-size:.98rem;font-weight:700;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
     .sb-cta-btn:hover{background:var(--cy2)}
-    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(255, 96, 0,.4);z-index:50}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgb(var(--accent-rgb) / .4);z-index:50}
     #btt.vis{display:flex}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
     .anim{animation:fadeUp .55s ease both}
@@ -156,7 +155,7 @@ export default function HiddenDataTrailsGDPR() {
       <div className="hero-wrap"><div className="badges"><span className="badge badge-cy">🇪🇺 GDPR</span><span className="badge badge-bl">📋 Data Privacy</span><span className="badge badge-gr">🚀 Startup Guide</span></div><h1 className="hero-h1">How Your Product Collects Personal Data - <em>Without You Realising</em></h1><p className="hero-sub">Most product teams can list the data they collect on a signup form. Almost none can list what their analytics SDK, session replay tool, and embedded pixels are quietly shipping to third-party servers every second. That gap is where most modern privacy incidents live.</p>
         <div className="author-strip"><div className="avatar">GK</div><div className="author-info"><div className="aname">Gauri Khatate</div><div className="ameta"><span style={{color:'var(--cy)',fontWeight:600}}>🔐 Cybersecurity Expert &amp; Technical Writer</span><span className="dot">·</span><span id="read-time">📖 5 min read</span></div><div className="adate"><span>📅 April 2026</span><span className="dot">·</span><span>🏢 SecComply</span></div></div></div>
         <div className="img-wrap"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=480&fit=crop" alt="Hidden data trails SaaS trackers GDPR personal data collection" style={{width:'100%',display:'block',maxHeight:'460px',objectFit:'cover'}} /></div><p className="img-cap">The product team decides what to collect. The tooling decides what to exfiltrate. Those two lists are rarely the same.</p>
-        <div className="img-wrap"><svg viewBox="0 0 960 240" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}><defs><pattern id="pghd" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(255, 96, 0,0.04)"/></pattern></defs><rect width="960" height="240" fill="url(#pghd)"/><text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">The Five Hidden Data Collection Points in Your SaaS Stack</text>{[{t:"Session Replay",sub:"Hotjar, FullStory, Clarity",col:"#FF6000",x:30},{t:"Ad Pixels",sub:"Meta, Google, LinkedIn, TikTok",col:"#818cf8",x:222},{t:"Error Monitoring",sub:"Sentry, Datadog RUM, New Relic",col:"#06d6a0",x:414},{t:"Embedded Widgets",sub:"YouTube, Maps, Calendly, Typeform",col:"#ff4d6d",x:606},{t:"Chat / Support",sub:"Intercom, Drift, Zendesk",col:"#ffb703",x:798}].map(({t,sub,col,x},i) => (<g key={i}><rect x={x} y="38" width="150" height="160" rx="12" fill="#091826" stroke={col+"22"} strokeWidth="1.5"/><rect x={x} y="38" width="150" height="3" rx="1.5" fill={col}/><text x={x+75} y="78" textAnchor="middle" fill={col} fontSize="11" fontWeight="800" fontFamily="sans-serif">{t}</text><text x={x+75} y="100" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="8.5" fontFamily="sans-serif">{sub}</text></g>))}<text x="480" y="225" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">Each one fires on page load and ships data to third parties - regardless of user consent status.</text></svg></div>
+        <div className="img-wrap"><svg viewBox="0 0 960 240" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}><defs><pattern id="pghd" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgb(var(--accent-rgb) / 0.04)"/></pattern></defs><rect width="960" height="240" fill="url(#pghd)"/><text x="480" y="22" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">The Five Hidden Data Collection Points in Your SaaS Stack</text>{[{t:"Session Replay",sub:"Hotjar, FullStory, Clarity",col:"var(--accent)",x:30},{t:"Ad Pixels",sub:"Meta, Google, LinkedIn, TikTok",col:"var(--purple)",x:222},{t:"Error Monitoring",sub:"Sentry, Datadog RUM, New Relic",col:"var(--green)",x:414},{t:"Embedded Widgets",sub:"YouTube, Maps, Calendly, Typeform",col:"var(--red)",x:606},{t:"Chat / Support",sub:"Intercom, Drift, Zendesk",col:"var(--yellow)",x:798}].map(({t,sub,col,x},i) => (<g key={i}><rect x={x} y="38" width="150" height="160" rx="12" fill="var(--bg-secondary)" stroke={col+"22"} strokeWidth="1.5"/><rect x={x} y="38" width="150" height="3" rx="1.5" fill={col}/><text x={x+75} y="78" textAnchor="middle" fill={col} fontSize="11" fontWeight="800" fontFamily="sans-serif">{t}</text><text x={x+75} y="100" textAnchor="middle" fill="rgba(200,214,229,0.45)" fontSize="8.5" fontFamily="sans-serif">{sub}</text></g>))}<text x="480" y="225" textAnchor="middle" fill="rgba(200,214,229,0.3)" fontSize="9" fontFamily="sans-serif">Each one fires on page load and ships data to third parties - regardless of user consent status.</text></svg></div>
         <div className="toc-box"><div className="toc-lbl">In This Article</div><div className="toc-grid">
             <a href="#gap">The Gap Between Intent and Infrastructure</a>
             <a href="#five-points">Five Collection Points You Have Not Mapped</a>
@@ -167,11 +166,11 @@ export default function HiddenDataTrailsGDPR() {
             <a href="#faq">FAQ</a>
         </div></div></div>
       <div className="blog-layout"><article className="art">
-          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgba(255, 96, 0,0.3)',paddingLeft:'1.2rem'}}>A fintech founder told us: "We only collect email, name, and transaction data. Everything else is anonymous." Two hours later we had a different list. Their product was sending full-page session recordings to Hotjar, firing events to Meta Pixel with user IDs in URL parameters, pushing error traces to Sentry containing request bodies, and mirroring signup events into Google Ads with email as the join key. The "anonymous" claim collapsed before lunch.</p>
+          <p style={{fontSize:'1.05rem',lineHeight:'1.85',color:'var(--tb)',marginBottom:'1.5rem',borderLeft:'3px solid rgb(var(--accent-rgb) / 0.3)',paddingLeft:'1.2rem'}}>A fintech founder told us: "We only collect email, name, and transaction data. Everything else is anonymous." Two hours later we had a different list. Their product was sending full-page session recordings to Hotjar, firing events to Meta Pixel with user IDs in URL parameters, pushing error traces to Sentry containing request bodies, and mirroring signup events into Google Ads with email as the join key. The "anonymous" claim collapsed before lunch.</p>
           <section id="gap"><h2>The Gap Between <em>Intent and Infrastructure</em></h2><p>Every modern SaaS is a small constellation of vendors wearing one domain name. You built the signup form. You did not write the session replay, the crash reporter, the A/B testing engine, the ad pixel, or the CRM sync - but they all live inside your product and they all see user data. The uncomfortable truth: <strong>the product team decides what to collect, but the tooling decides what to exfiltrate.</strong></p></section>
           <section id="five-points"><h2>Five Collection Points <em>You Probably Have Not Mapped</em></h2><ul><li><strong>Session Replay and Heatmaps:</strong> Hotjar, FullStory, Microsoft Clarity record actual user sessions. Unless you have explicitly configured input masking, they capture what users type into forms - including passwords and messages drafted before hitting submit.</li><li><strong>Analytics and Marketing Pixels:</strong> Meta Pixel, Google Ads tag, LinkedIn Insight Tag. Each fires on page load and forwards URL parameters, user agents, and (if you are careless) hashed emails or internal user IDs.</li><li><strong>Error and Performance Monitoring:</strong> Sentry, Datadog RUM, New Relic capture stack traces that routinely contain request payloads, query parameters, and local variables with PII.</li><li><strong>Embedded Third-Party Widgets:</strong> YouTube players, Google Maps, Typeform, Calendly, social share buttons - each sets cookies and phones home on page load, regardless of consent status.</li><li><strong>Customer Support and Chat:</strong> Intercom, Drift, Zendesk keep full transcripts linked to identified users, often retained indefinitely unless you set retention rules manually.</li></ul></section>
           <section id="anonymous"><h2>Why "Anonymous" Analytics <em>Usually Is Not</em></h2><p>An analytics event that captures an IP address, a device fingerprint, and a referring URL is - under GDPR - personal data. Combined with a timestamp and session ID, most events are trivially re-identifiable. European regulators (French CNIL, Austrian DSB, Italian Garante) have each treated Google Analytics outputs as personal data transfers. If your stack sends "anonymous" telemetry to a US-based vendor without SCCs, you have an undeclared international data transfer.</p></section>
-          <section id="assumption-table"><h2>What You Think - <em>vs What You Actually Do</em></h2><div className="data-table-wrap"><table className="data-table"><thead><tr><th>The Assumption</th><th>The Reality</th></tr></thead><tbody>{[['We do not collect anything beyond the signup form','Your frontend fires 20+ third-party requests per page load'],['Our analytics are anonymous','IPs, device IDs, and session hashes make most events re-identifiable'],['Session recordings do not capture input fields','They do - unless you have explicitly masked every form element'],['Our error logs are just stack traces','Most tools capture request bodies and local variables by default'],['The vendor is GDPR compliant so we are covered','Their compliance does not replace your obligation as the controller']].map(([a,r],i)=>(<tr key={i}><td style={{color:'#ff4d6d'}}>{a}</td><td>{r}</td></tr>))}</tbody></table></div></section>
+          <section id="assumption-table"><h2>What You Think - <em>vs What You Actually Do</em></h2><div className="data-table-wrap"><table className="data-table"><thead><tr><th>The Assumption</th><th>The Reality</th></tr></thead><tbody>{[['We do not collect anything beyond the signup form','Your frontend fires 20+ third-party requests per page load'],['Our analytics are anonymous','IPs, device IDs, and session hashes make most events re-identifiable'],['Session recordings do not capture input fields','They do - unless you have explicitly masked every form element'],['Our error logs are just stack traces','Most tools capture request bodies and local variables by default'],['The vendor is GDPR compliant so we are covered','Their compliance does not replace your obligation as the controller']].map(([a,r],i)=>(<tr key={i}><td style={{color:'var(--red)'}}>{a}</td><td>{r}</td></tr>))}</tbody></table></div></section>
           <section id="gdpr-problem"><h2>How This Becomes <em>a GDPR Problem</em></h2><ul><li><strong>Subject Access Request:</strong> You must return all personal data - including what is in analytics, chat, and error tools. If you do not know where it lives, you cannot return it.</li><li><strong>Erasure request:</strong> You delete from production but data in Mixpanel, Intercom, Sentry, and your warehouse survives. That is a violation.</li><li><strong>Regulator or journalist runs traffic analysis:</strong> They watch pixels fire to vendors you never disclosed in your privacy notice. Transparency breach - one of the most common causes of regulatory action.</li></ul></section>
           <section id="what-to-do"><h2>What to <em>Actually Do About It</em></h2><ul><li><strong>Run a tag inventory:</strong> Chrome DevTools, Ghostery, or OneTrust will show every domain your site contacts. Expect surprises.</li><li><strong>Map each tool to a lawful basis:</strong> Analytics on legitimate interests? Marketing pixels on consent? Document it.</li><li><strong>Mask inputs in session replay tools:</strong> Configure explicit allowlists rather than trusting defaults.</li><li><strong>Sign DPAs with every tool vendor:</strong> Not optional - you are the controller, they are the processor.</li><li><strong>Update your privacy notice to match your actual stack.</strong></li><li><strong>Propagate deletion requests to every processor.</strong></li></ul><p>For the full definition of what counts as personal data, see our <a href="https://seccomply.net/resources/blog/what-counts-personal-data-gdpr" style={{color:'var(--cy)',textDecoration:'none',fontWeight:600}}>What Counts as Personal Data Under GDPR guide</a>.</p></section>
           <div className="cta-banner"><h3>Not Sure Where You Stand on GDPR?</h3><p>SecComply maps your data flows, vendor risks, and compliance gaps - continuously, not just before an audit.</p><div className="cta-btns"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" className="btn-p" target="_blank" rel="noopener">Book a Free GDPR Consultation →</a></div><div className="share-strip"><span className="share-lbl">Share:</span><a className="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://seccomply.net/resources/blog/hidden-data-trails-gdpr" target="_blank" rel="noopener">LinkedIn</a><a className="share-btn" href="https://twitter.com/intent/tweet?url=https://seccomply.net/resources/blog/hidden-data-trails-gdpr&via=seccomply" target="_blank" rel="noopener">X / Twitter</a><button className="share-btn" onClick={()=>window.copyLink&&window.copyLink()}>🔗 Copy Link</button></div></div>

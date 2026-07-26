@@ -22,7 +22,7 @@ export default function OWASPTop10() {
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
       if (st) st.href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + ttl + '&via=seccomply';
       window.copyLink = function () { const raw = 'https://seccomply.net/resources/blog/owasp-top-10-2025'; (navigator.clipboard ? navigator.clipboard.writeText(raw) : Promise.reject()).catch(() => { const ta = Object.assign(document.createElement('textarea'), { value: raw, style: 'position:fixed;opacity:0' }); document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }); toast('Link copied!'); };
-      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#FF6000;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(255, 96, 0,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
+      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgb(var(--accent-rgb) / .4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
       const fadeEls = document.querySelectorAll('.anim'); if (fadeEls.length && 'IntersectionObserver' in window) { const fo = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; fo.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }); fadeEls.forEach(el => { el.style.animationPlayState = 'paused'; fo.observe(el); }); }
       window.toggleFaq = function (q) { const item = q.closest('.faq-item'); const wasOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!wasOpen) item.classList.add('open'); };
       const first = document.querySelector('.faq-item'); if (first) first.classList.add('open');
@@ -71,24 +71,23 @@ export default function OWASPTop10() {
       </Head>
 
       <style jsx global>{`
-    :root{--cy:#FF6000;--cy2:#d0521f;--glow:rgba(255, 96, 0,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-light));z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
     .cspm-hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem;display:block!important}
     .cspm-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-    .badge-cy{background:rgba(255, 96, 0,.1);color:var(--cy);border:1px solid rgba(255, 96, 0,.25)}
-    .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
-    .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
-    .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
+    .badge-cy{background:rgb(var(--accent-rgb) / .1);color:var(--cy);border:1px solid rgb(var(--accent-rgb) / .25)}
+    .badge-bl{background:rgb(var(--purple-rgb) / .1);color:var(--purple);border:1px solid rgb(var(--purple-rgb) / .25)}
+    .badge-gr{background:rgb(var(--green-rgb) / .1);color:var(--gr);border:1px solid rgb(var(--green-rgb) / .25)}
+    .badge-am{background:rgb(var(--yellow-rgb) / .1);color:var(--am);border:1px solid rgb(var(--yellow-rgb) / .25)}
     .cspm-hero-h1{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,3rem);font-weight:700;color:var(--tx);line-height:1.2;max-width:820px;margin-bottom:1.1rem}
     .cspm-hero-h1 em{font-style:italic;color:var(--cy)}
     .cspm-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     .cspm-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(255, 96, 0,.3)}
+    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgb(var(--accent-rgb) / .3)}
     .cspm-author-strip .author-info{flex:1;min-width:0}
     .cspm-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .cspm-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
@@ -109,42 +108,42 @@ export default function OWASPTop10() {
     .art h3{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--tx);margin:2rem 0 .7rem}
     .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
     .art p strong{color:var(--tx);font-weight:600}
-    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(255, 96, 0,.06),transparent);border-radius:0 12px 12px 0}
+    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgb(var(--accent-rgb) / .06),transparent);border-radius:0 12px 12px 0}
     .pull-quote p{font-family:var(--serif);font-size:1.12rem;font-style:italic;color:var(--tx)!important;margin-bottom:.5rem!important;line-height:1.6!important}
     .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
     .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
-    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FF6000,#FF8A3D)}
+    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-light))}
     .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:var(--cy);line-height:1;margin-bottom:.4rem}
     .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
-    .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
-    .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
-    .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
-    .co-key{background:rgba(255, 96, 0,.06);border:1px solid rgba(255, 96, 0,.2)}
-    .co-sc{background:rgba(6,214,160,.05);border:1px solid rgba(6,214,160,.2)}
+    .co-info{background:rgb(var(--purple-rgb) / .07);border:1px solid rgb(var(--purple-rgb) / .2)}
+    .co-warn{background:rgb(var(--yellow-rgb) / .06);border:1px solid rgb(var(--yellow-rgb) / .2)}
+    .co-danger{background:rgb(var(--red-rgb) / .06);border:1px solid rgb(var(--red-rgb) / .2)}
+    .co-key{background:rgb(var(--accent-rgb) / .06);border:1px solid rgb(var(--accent-rgb) / .2)}
+    .co-sc{background:rgb(var(--green-rgb) / .05);border:1px solid rgb(var(--green-rgb) / .2)}
     .co-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
     .co-body p{margin-bottom:0!important;font-size:.89rem!important}
     .co-body strong{display:block;margin-bottom:.3rem;font-size:.82rem;color:var(--tx)}
     .owasp-list{display:flex;flex-direction:column;gap:1.2rem;margin:1.5rem 0}
     .owasp-card{background:var(--bgc2);border:1px solid var(--bs);border-radius:14px;padding:1.4rem 1.6rem;transition:border-color .2s,background .2s;position:relative;overflow:hidden}
     .owasp-card:hover{border-color:var(--bo);background:var(--bgc)}
-    .owasp-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px;background:var(--c,#FF6000)}
+    .owasp-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px;background:var(--c,var(--accent))}
     .owasp-hdr{display:flex;align-items:flex-start;gap:1rem;margin-bottom:.7rem}
-    .owasp-num{min-width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;color:#fff;flex-shrink:0;background:var(--c,#FF6000)}
+    .owasp-num{min-width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;color:#fff;flex-shrink:0;background:var(--c,var(--accent))}
     .owasp-title{font-size:1rem;font-weight:700;color:var(--tx);line-height:1.3}
     .owasp-cwe{font-size:.72rem;color:var(--tm);margin-top:2px}
     .owasp-body{font-size:.87rem;color:var(--tb);line-height:1.75;margin-bottom:.8rem}
-    .owasp-fix{background:rgba(6,214,160,0.05);border:1px solid rgba(6,214,160,0.15);border-radius:8px;padding:.7rem 1rem;font-size:.82rem;color:var(--tm)}
-    .owasp-fix strong{color:#06d6a0;margin-right:.3rem}
+    .owasp-fix{background:rgb(var(--green-rgb) / 0.05);border:1px solid rgb(var(--green-rgb) / 0.15);border-radius:8px;padding:.7rem 1rem;font-size:.82rem;color:var(--tm)}
+    .owasp-fix strong{color:var(--green);margin-right:.3rem}
     .owasp-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.6rem}
     .owasp-tag{padding:.15rem .55rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:4px;font-size:.68rem;color:var(--tm);font-family:monospace}
-    .new-badge{background:rgba(255, 96, 0,.15);color:#FF6000;font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.12rem .5rem;border-radius:4px;border:1px solid rgba(255, 96, 0,.3);margin-left:.5rem;vertical-align:middle}
+    .new-badge{background:rgb(var(--accent-rgb) / .15);color:var(--accent);font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.12rem .5rem;border-radius:4px;border:1px solid rgb(var(--accent-rgb) / .3);margin-left:.5rem;vertical-align:middle}
     .cmp-wrap{overflow-x:auto;margin:2rem 0;border-radius:14px;border:1px solid var(--bo)}
     .cmp-table{width:100%;border-collapse:collapse}
     .cmp-table th{background:var(--bgc);padding:.85rem 1.1rem;text-align:left;font-size:.77rem;font-weight:600;letter-spacing:.04em;color:var(--cy);border-bottom:1px solid var(--bo)}
     .cmp-table td{padding:.82rem 1.1rem;font-size:.85rem;color:var(--tb);border-bottom:1px solid var(--bs);vertical-align:top}
     .cmp-table tr:last-child td{border-bottom:none}
-    .cmp-table tr:hover td{background:rgba(255, 96, 0,.03)}
+    .cmp-table tr:hover td{background:rgb(var(--accent-rgb) / .03)}
     .cmp-table td:first-child{color:var(--tx);font-weight:600}
     .faq-section{margin:3rem 0}
     .faq-item{border:1px solid var(--bs);border-radius:12px;margin-bottom:.65rem;overflow:hidden;transition:border-color .2s}
@@ -156,7 +155,7 @@ export default function OWASPTop10() {
     .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-    .cta-banner{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-family:var(--serif);font-size:1.5rem;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -173,19 +172,19 @@ export default function OWASPTop10() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(255, 96, 0,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgb(var(--accent-rgb) / .07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}.rel-links a:hover{color:var(--cy)}
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
-    .sb-cta{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-family:var(--serif);font-size:.98rem;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
     .sb-cta-btn:hover{background:var(--cy2)}
-    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(255, 96, 0,.4);transition:transform .2s;z-index:50}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgb(var(--accent-rgb) / .4);transition:transform .2s;z-index:50}
     #btt.vis{display:flex}#btt:hover{transform:translateY(-3px)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
     .anim{animation:fadeUp .55s ease both}
@@ -239,29 +238,29 @@ export default function OWASPTop10() {
         <div className="img-wrap">
           <svg viewBox="0 0 960 440" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
             <defs>
-              <linearGradient id="og1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#FF6000"/><stop offset="100%" stopColor="#FF8A3D"/></linearGradient>
-              <linearGradient id="og2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ff4d6d"/><stop offset="100%" stopColor="#d0304e"/></linearGradient>
-              <linearGradient id="og3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#06d6a0"/><stop offset="100%" stopColor="#04b080"/></linearGradient>
-              <linearGradient id="og4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#818cf8"/><stop offset="100%" stopColor="#6366f1"/></linearGradient>
-              <pattern id="opat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgba(255, 96, 0,0.04)"/></pattern>
+              <linearGradient id="og1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--accent)"/><stop offset="100%" stopColor="var(--accent-light)"/></linearGradient>
+              <linearGradient id="og2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--red)"/><stop offset="100%" stopColor="var(--red)"/></linearGradient>
+              <linearGradient id="og3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--green)"/><stop offset="100%" stopColor="var(--green)"/></linearGradient>
+              <linearGradient id="og4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--purple)"/><stop offset="100%" stopColor="#6366f1"/></linearGradient>
+              <pattern id="opat" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".7" fill="rgb(var(--accent-rgb) / 0.04)"/></pattern>
             </defs>
             <rect width="960" height="440" fill="url(#opat)"/>
             <text x="480" y="36" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="13" fontWeight="700" fontFamily="sans-serif">OWASP Top 10 -2025 Edition Overview</text>
 
             {/* LEFT: Top 10 ranked list */}
-            <rect x="16" y="52" width="230" height="372" rx="12" fill="#081826" stroke="rgba(255, 96, 0,0.15)" strokeWidth="1"/>
+            <rect x="16" y="52" width="230" height="372" rx="12" fill="var(--bg-secondary)" stroke="rgb(var(--accent-rgb) / 0.15)" strokeWidth="1"/>
             <text x="36" y="76" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">RANKED BY PREVALENCE</text>
             {[
-              {rank:'A01', name:'Broken Access Control',     col:'#ff4d6d', pct:94},
-              {rank:'A02', name:'Cryptographic Failures',    col:'#ff4d6d', pct:84},
-              {rank:'A03', name:'Injection',                 col:'#FF6000', pct:74},
-              {rank:'A04', name:'Insecure Design',           col:'#FF6000', pct:64},
-              {rank:'A05', name:'Security Misconfiguration', col:'#ffb703', pct:90},
-              {rank:'A06', name:'Vulnerable Components',     col:'#ffb703', pct:78},
-              {rank:'A07', name:'Auth Failures',             col:'#818cf8', pct:68},
-              {rank:'A08', name:'Data Integrity Failures',   col:'#818cf8', pct:52},
-              {rank:'A09', name:'Logging Failures',          col:'#06d6a0', pct:44},
-              {rank:'A10', name:'SSRF',                      col:'#06d6a0', pct:38},
+              {rank:'A01', name:'Broken Access Control',     col:'var(--red)', pct:94},
+              {rank:'A02', name:'Cryptographic Failures',    col:'var(--red)', pct:84},
+              {rank:'A03', name:'Injection',                 col:'var(--accent)', pct:74},
+              {rank:'A04', name:'Insecure Design',           col:'var(--accent)', pct:64},
+              {rank:'A05', name:'Security Misconfiguration', col:'var(--yellow)', pct:90},
+              {rank:'A06', name:'Vulnerable Components',     col:'var(--yellow)', pct:78},
+              {rank:'A07', name:'Auth Failures',             col:'var(--purple)', pct:68},
+              {rank:'A08', name:'Data Integrity Failures',   col:'var(--purple)', pct:52},
+              {rank:'A09', name:'Logging Failures',          col:'var(--green)', pct:44},
+              {rank:'A10', name:'SSRF',                      col:'var(--green)', pct:38},
             ].map(({rank,name,col,pct},i)=>(
               <g key={i}>
                 <rect x="28" y={86+i*32} width="206" height="24" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" strokeWidth="1"/>
@@ -272,20 +271,20 @@ export default function OWASPTop10() {
               </g>
             ))}
 
-            <line x1="260" y1="48" x2="260" y2="424" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
+            <line x1="260" y1="48" x2="260" y2="424" stroke="rgb(var(--accent-rgb) / 0.07)" strokeWidth="1"/>
 
             {/* CENTRE: Severity breakdown */}
             <text x="490" y="72" textAnchor="middle" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">VULNERABILITY SEVERITY DISTRIBUTION</text>
 
             {/* Severity rings / bars */}
             {[
-              {sev:'Critical', count:2, desc:'A01 Broken Access Control · A02 Cryptographic Failures', col:'#ff4d6d', w:260},
-              {sev:'High',     count:4, desc:'A03 Injection · A04 Insecure Design · A05 Misconfig · A06 Components', col:'#FF6000', w:200},
-              {sev:'Medium',   count:3, desc:'A07 Auth Failures · A08 Integrity Failures · A09 Logging', col:'#ffb703', w:140},
-              {sev:'Emerging', count:1, desc:'A10 SSRF -elevated in 2025 edition', col:'#818cf8', w:80},
+              {sev:'Critical', count:2, desc:'A01 Broken Access Control · A02 Cryptographic Failures', col:'var(--red)', w:260},
+              {sev:'High',     count:4, desc:'A03 Injection · A04 Insecure Design · A05 Misconfig · A06 Components', col:'var(--accent)', w:200},
+              {sev:'Medium',   count:3, desc:'A07 Auth Failures · A08 Integrity Failures · A09 Logging', col:'var(--yellow)', w:140},
+              {sev:'Emerging', count:1, desc:'A10 SSRF -elevated in 2025 edition', col:'var(--purple)', w:80},
             ].map(({sev,count,desc,col,w},i)=>(
               <g key={i}>
-                <rect x="272" y={88+i*72} width="420" height="58" rx="10" fill="#091826" stroke={`${col}22`} strokeWidth="1"/>
+                <rect x="272" y={88+i*72} width="420" height="58" rx="10" fill="var(--bg-secondary)" stroke={`${col}22`} strokeWidth="1"/>
                 <rect x="272" y={88+i*72} width="3" height="58" rx="1.5" fill={col}/>
                 <text x="292" y={108+i*72} fill={col} fontSize="11" fontWeight="800" fontFamily="sans-serif">{sev}</text>
                 <text x="292" y={125+i*72} fill="rgba(200,214,229,0.45)" fontSize="8" fontFamily="sans-serif">{desc}</text>
@@ -296,23 +295,23 @@ export default function OWASPTop10() {
             ))}
 
             {/* What changed callout */}
-            <rect x="272" y="380" width="420" height="40" rx="10" fill="rgba(255, 96, 0,0.06)" stroke="rgba(255, 96, 0,0.2)" strokeWidth="1"/>
-            <text x="292" y="397" fill="#FF6000" fontSize="9" fontWeight="700" fontFamily="sans-serif">2025 KEY CHANGE:</text>
+            <rect x="272" y="380" width="420" height="40" rx="10" fill="rgb(var(--accent-rgb) / 0.06)" stroke="rgb(var(--accent-rgb) / 0.2)" strokeWidth="1"/>
+            <text x="292" y="397" fill="var(--accent)" fontSize="9" fontWeight="700" fontFamily="sans-serif">2025 KEY CHANGE:</text>
             <text x="380" y="397" fill="rgba(200,214,229,0.65)" fontSize="8.5" fontFamily="sans-serif">SSRF elevated to standalone A10 · AI code security guidance added · SBOM required for A06</text>
 
-            <line x1="706" y1="48" x2="706" y2="424" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
+            <line x1="706" y1="48" x2="706" y2="424" stroke="rgb(var(--accent-rgb) / 0.07)" strokeWidth="1"/>
 
             {/* RIGHT: Compliance mapping */}
             <text x="724" y="72" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">COMPLIANCE MAPPING</text>
             {[
-              {fw:'ISO 27001',  controls:'A.8.25-A.8.31', col:'#06d6a0'},
-              {fw:'SOC 2',      controls:'CC8.1 Secure Dev', col:'#818cf8'},
-              {fw:'PCI DSS',    controls:'Req 6.2 / 6.3',   col:'#ffb703'},
-              {fw:'OWASP ASVS', controls:'All levels',       col:'#FF6000'},
-              {fw:'HIPAA',      controls:'164.312(c)',        col:'#818cf8'},
+              {fw:'ISO 27001',  controls:'A.8.25-A.8.31', col:'var(--green)'},
+              {fw:'SOC 2',      controls:'CC8.1 Secure Dev', col:'var(--purple)'},
+              {fw:'PCI DSS',    controls:'Req 6.2 / 6.3',   col:'var(--yellow)'},
+              {fw:'OWASP ASVS', controls:'All levels',       col:'var(--accent)'},
+              {fw:'HIPAA',      controls:'164.312(c)',        col:'var(--purple)'},
             ].map(({fw,controls,col},i)=>(
               <g key={i}>
-                <rect x="716" y={88+i*64} width="228" height="50" rx="9" fill="#091826" stroke={`${col}22`} strokeWidth="1"/>
+                <rect x="716" y={88+i*64} width="228" height="50" rx="9" fill="var(--bg-secondary)" stroke={`${col}22`} strokeWidth="1"/>
                 <circle cx="734" cy={113+i*64} r="10" fill={`${col}18`} stroke={col} strokeWidth="1.2"/>
                 <text x="734" y={117+i*64} textAnchor="middle" fill={col} fontSize="8" fontWeight="700" fontFamily="sans-serif">✓</text>
                 <text x="754" y={108+i*64} fill="rgba(200,214,229,0.85)" fontSize="10" fontWeight="700" fontFamily="sans-serif">{fw}</text>
@@ -358,9 +357,9 @@ export default function OWASPTop10() {
 
             <div className="owasp-list">
 
-              <div className="owasp-card anim" style={{'--c':'#ff4d6d'}}>
+              <div className="owasp-card anim" style={{'--c':'var(--red)'}}>
                 <div className="owasp-hdr">
-                  <div className="owasp-num" style={{background:'#ff4d6d'}}>A01</div>
+                  <div className="owasp-num" style={{background:'var(--red)'}}>A01</div>
                   <div><div className="owasp-title">Broken Access Control</div><div className="owasp-cwe">CWE-200 · CWE-284 · CWE-285 · CWE-352 · CWE-639</div></div>
                 </div>
                 <p className="owasp-body">The number one vulnerability since 2021. Found in 94% of tested applications. Access control enforces that users cannot act outside their intended permissions. Broken access control includes IDOR (insecure direct object references), missing function-level access control, privilege escalation from user to admin, CORS misconfigurations that allow unauthorised API access, and JWT token manipulation to elevate privileges.</p>
@@ -368,9 +367,9 @@ export default function OWASPTop10() {
                 <div className="owasp-tags"><span className="owasp-tag">IDOR</span><span className="owasp-tag">CORS</span><span className="owasp-tag">JWT</span><span className="owasp-tag">Privilege Escalation</span></div>
               </div>
 
-              <div className="owasp-card anim" style={{'--c':'#ff4d6d'}}>
+              <div className="owasp-card anim" style={{'--c':'var(--red)'}}>
                 <div className="owasp-hdr">
-                  <div className="owasp-num" style={{background:'#ff4d6d'}}>A02</div>
+                  <div className="owasp-num" style={{background:'var(--red)'}}>A02</div>
                   <div><div className="owasp-title">Cryptographic Failures</div><div className="owasp-cwe">CWE-261 · CWE-296 · CWE-310 · CWE-319 · CWE-321</div></div>
                 </div>
                 <p className="owasp-body">Previously called "Sensitive Data Exposure" -renamed to focus on the root cause rather than the symptom. Cryptographic failures cover: transmitting sensitive data in clear text (HTTP, SMTP without TLS), using weak or deprecated algorithms (MD5, SHA1, DES), hardcoded cryptographic keys, missing encryption at rest for sensitive data, and improper certificate validation.</p>
@@ -378,9 +377,9 @@ export default function OWASPTop10() {
                 <div className="owasp-tags"><span className="owasp-tag">TLS</span><span className="owasp-tag">AES-256</span><span className="owasp-tag">Key Management</span><span className="owasp-tag">MD5/SHA1 Deprecated</span></div>
               </div>
 
-              <div className="owasp-card anim" style={{'--c':'#FF6000'}}>
+              <div className="owasp-card anim" style={{'--c':'var(--accent)'}}>
                 <div className="owasp-hdr">
-                  <div className="owasp-num" style={{background:'#FF6000'}}>A03</div>
+                  <div className="owasp-num" style={{background:'var(--accent)'}}>A03</div>
                   <div><div className="owasp-title">Injection</div><div className="owasp-cwe">CWE-20 · CWE-74 · CWE-75 · CWE-77 · CWE-78 · CWE-89</div></div>
                 </div>
                 <p className="owasp-body">SQL injection, OS command injection, LDAP injection, and Cross-Site Scripting (XSS) are all included here. Injection occurs when an application sends untrusted data to an interpreter as part of a command or query. SQL injection remains one of the most destructive vulnerabilities -a single injectable endpoint can lead to full database exfiltration. XSS allows attackers to execute scripts in victims' browsers, enabling session hijacking and credential theft.</p>
@@ -388,9 +387,9 @@ export default function OWASPTop10() {
                 <div className="owasp-tags"><span className="owasp-tag">SQL Injection</span><span className="owasp-tag">XSS</span><span className="owasp-tag">Command Injection</span><span className="owasp-tag">Parameterised Queries</span></div>
               </div>
 
-              <div className="owasp-card anim" style={{'--c':'#FF6000'}}>
+              <div className="owasp-card anim" style={{'--c':'var(--accent)'}}>
                 <div className="owasp-hdr">
-                  <div className="owasp-num" style={{background:'#FF6000'}}>A04</div>
+                  <div className="owasp-num" style={{background:'var(--accent)'}}>A04</div>
                   <div><div className="owasp-title">Insecure Design</div><div className="owasp-cwe">CWE-73 · CWE-183 · CWE-209 · CWE-213 · CWE-235</div></div>
                 </div>
                 <p className="owasp-body">New in the 2021 list and reinforced in 2025, insecure design focuses on design-level flaws rather than implementation bugs -missing security controls by design rather than misconfigured ones. An application that never implemented rate limiting on authentication endpoints has an insecure design flaw. No amount of patching fixes a design problem -it requires redesign. This is why threat modeling at the design phase is critical.</p>
@@ -398,9 +397,9 @@ export default function OWASPTop10() {
                 <div className="owasp-tags"><span className="owasp-tag">Threat Modeling</span><span className="owasp-tag">STRIDE</span><span className="owasp-tag">Secure Design</span><span className="owasp-tag">OWASP ASVS</span></div>
               </div>
 
-              <div className="owasp-card anim" style={{'--c':'#ffb703'}}>
+              <div className="owasp-card anim" style={{'--c':'var(--yellow)'}}>
                 <div className="owasp-hdr">
-                  <div className="owasp-num" style={{background:'#ffb703'}}>A05</div>
+                  <div className="owasp-num" style={{background:'var(--yellow)'}}>A05</div>
                   <div><div className="owasp-title">Security Misconfiguration</div><div className="owasp-cwe">CWE-2 · CWE-11 · CWE-13 · CWE-15 · CWE-16</div></div>
                 </div>
                 <p className="owasp-body">Found in 90% of tested applications. Security misconfiguration covers default credentials left unchanged, unnecessary features enabled, verbose error messages exposing stack traces, missing security headers (CSP, HSTS, X-Frame-Options), overly permissive CORS policies, and cloud storage buckets left publicly accessible. As applications increasingly run on cloud infrastructure, misconfiguration has become the dominant attack vector.</p>
@@ -408,9 +407,9 @@ export default function OWASPTop10() {
                 <div className="owasp-tags"><span className="owasp-tag">Security Headers</span><span className="owasp-tag">CORS</span><span className="owasp-tag">Default Credentials</span><span className="owasp-tag">CSPM</span></div>
               </div>
 
-              <div className="owasp-card anim" style={{'--c':'#ffb703'}}>
+              <div className="owasp-card anim" style={{'--c':'var(--yellow)'}}>
                 <div className="owasp-hdr">
-                  <div className="owasp-num" style={{background:'#ffb703'}}>A06</div>
+                  <div className="owasp-num" style={{background:'var(--yellow)'}}>A06</div>
                   <div><div className="owasp-title">Vulnerable and Outdated Components<span className="new-badge">Updated 2025</span></div><div className="owasp-cwe">CWE-1035 · CWE-1104</div></div>
                 </div>
                 <p className="owasp-body">Applications using components -libraries, frameworks, operating systems -with known vulnerabilities are directly exploitable. Log4Shell was the most prominent example: a critical vulnerability in a logging library used by hundreds of thousands of applications globally. The 2025 edition adds explicit SBOM (Software Bill of Materials) requirements, reflecting regulatory pressure and the widespread adoption of SBOM as a supply chain security control.</p>
@@ -418,9 +417,9 @@ export default function OWASPTop10() {
                 <div className="owasp-tags"><span className="owasp-tag">SBOM</span><span className="owasp-tag">SCA</span><span className="owasp-tag">Log4Shell</span><span className="owasp-tag">Dependabot</span><span className="owasp-tag">CVE</span></div>
               </div>
 
-              <div className="owasp-card anim" style={{'--c':'#818cf8'}}>
+              <div className="owasp-card anim" style={{'--c':'var(--purple)'}}>
                 <div className="owasp-hdr">
-                  <div className="owasp-num" style={{background:'#818cf8'}}>A07</div>
+                  <div className="owasp-num" style={{background:'var(--purple)'}}>A07</div>
                   <div><div className="owasp-title">Identification and Authentication Failures</div><div className="owasp-cwe">CWE-255 · CWE-259 · CWE-287 · CWE-288 · CWE-330</div></div>
                 </div>
                 <p className="owasp-body">Authentication failures include: permitting weak or default passwords, missing or ineffective MFA, exposing session IDs in URLs, not invalidating sessions on logout, credential stuffing enabled by missing rate limiting, and insecure password reset flows. In 2025, the category specifically calls out authentication bypass vulnerabilities in AI-powered chatbots and LLM-integrated applications as an emerging concern.</p>
@@ -428,9 +427,9 @@ export default function OWASPTop10() {
                 <div className="owasp-tags"><span className="owasp-tag">MFA</span><span className="owasp-tag">Session Management</span><span className="owasp-tag">Credential Stuffing</span><span className="owasp-tag">Rate Limiting</span></div>
               </div>
 
-              <div className="owasp-card anim" style={{'--c':'#818cf8'}}>
+              <div className="owasp-card anim" style={{'--c':'var(--purple)'}}>
                 <div className="owasp-hdr">
-                  <div className="owasp-num" style={{background:'#818cf8'}}>A08</div>
+                  <div className="owasp-num" style={{background:'var(--purple)'}}>A08</div>
                   <div><div className="owasp-title">Software and Data Integrity Failures<span className="new-badge">Updated 2025</span></div><div className="owasp-cwe">CWE-345 · CWE-353 · CWE-426 · CWE-494 · CWE-502</div></div>
                 </div>
                 <p className="owasp-body">This category covers insecure deserialization and CI/CD pipeline integrity failures. An application that automatically updates without verifying the integrity of the update -using a compromised package registry, a tampered npm package, or a supply chain poisoning attack -falls here. The SolarWinds attack is the canonical example. The 2025 edition strengthens the connection to software supply chain attacks and adds guidance on securing AI model pipelines.</p>
@@ -438,9 +437,9 @@ export default function OWASPTop10() {
                 <div className="owasp-tags"><span className="owasp-tag">Deserialization</span><span className="owasp-tag">Supply Chain</span><span className="owasp-tag">CI/CD Security</span><span className="owasp-tag">SolarWinds</span></div>
               </div>
 
-              <div className="owasp-card anim" style={{'--c':'#06d6a0'}}>
+              <div className="owasp-card anim" style={{'--c':'var(--green)'}}>
                 <div className="owasp-hdr">
-                  <div className="owasp-num" style={{background:'#06d6a0'}}>A09</div>
+                  <div className="owasp-num" style={{background:'var(--green)'}}>A09</div>
                   <div><div className="owasp-title">Security Logging and Monitoring Failures</div><div className="owasp-cwe">CWE-117 · CWE-223 · CWE-532 · CWE-778</div></div>
                 </div>
                 <p className="owasp-body">Without adequate logging and monitoring, breaches go undetected. The average dwell time -time between initial compromise and detection -is 197 days globally. Logging failures include: no logging of authentication events or high-value transactions, logs not monitored for suspicious activity, log tampering possible (logs stored on the same system as the application), and no incident response procedures triggered by log alerts.</p>
@@ -448,9 +447,9 @@ export default function OWASPTop10() {
                 <div className="owasp-tags"><span className="owasp-tag">SIEM</span><span className="owasp-tag">Audit Logging</span><span className="owasp-tag">Log Retention</span><span className="owasp-tag">Alert Rules</span></div>
               </div>
 
-              <div className="owasp-card anim" style={{'--c':'#06d6a0'}}>
+              <div className="owasp-card anim" style={{'--c':'var(--green)'}}>
                 <div className="owasp-hdr">
-                  <div className="owasp-num" style={{background:'#06d6a0'}}>A10</div>
+                  <div className="owasp-num" style={{background:'var(--green)'}}>A10</div>
                   <div><div className="owasp-title">Server-Side Request Forgery (SSRF)<span className="new-badge">Elevated 2025</span></div><div className="owasp-cwe">CWE-918</div></div>
                 </div>
                 <p className="owasp-body">SSRF vulnerabilities allow attackers to induce the server-side application to make HTTP requests to an arbitrary domain -including internal services that are not publicly accessible. In cloud environments, SSRF is particularly dangerous because it can be used to access instance metadata endpoints (AWS IMDSv1) and retrieve IAM credentials. SSRF is elevated to a standalone category in 2025 reflecting its increasing prevalence in cloud-native applications and its role in several high-profile breaches.</p>

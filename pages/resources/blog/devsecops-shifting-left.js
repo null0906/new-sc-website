@@ -22,7 +22,7 @@ export default function DevSecOpsShiftingLeft() {
       if (sl) sl.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
       if (st) st.href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + ttl + '&via=seccomply';
       window.copyLink = function () { const raw = 'https://seccomply.net/resources/blog/devsecops-shifting-left'; (navigator.clipboard ? navigator.clipboard.writeText(raw) : Promise.reject()).catch(() => { const ta = Object.assign(document.createElement('textarea'), { value: raw, style: 'position:fixed;opacity:0' }); document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }); toast('Link copied!'); };
-      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#FF6000;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(255, 96, 0,.4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
+      function toast(msg) { let t = document.getElementById('sc-toast'); if (!t) { t = document.createElement('div'); t.id = 'sc-toast'; t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgb(var(--accent-rgb) / .4);opacity:0;transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = '1'; clearTimeout(t._tid); t._tid = setTimeout(() => { t.style.opacity = '0'; }, 2500); }
       const fadeEls = document.querySelectorAll('.anim'); if (fadeEls.length && 'IntersectionObserver' in window) { const fo = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; fo.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }); fadeEls.forEach(el => { el.style.animationPlayState = 'paused'; fo.observe(el); }); }
       window.toggleFaq = function (q) { const item = q.closest('.faq-item'); const wasOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!wasOpen) item.classList.add('open'); };
       const first = document.querySelector('.faq-item'); if (first) first.classList.add('open');
@@ -71,24 +71,23 @@ export default function DevSecOpsShiftingLeft() {
       </Head>
 
       <style jsx global>{`
-    :root{--cy:#FF6000;--cy2:#d0521f;--glow:rgba(255, 96, 0,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-light));z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--cy)}.bc-sep{opacity:.4}
     .cspm-hero-wrap{max-width:1280px;margin:0 auto;padding:2.5rem 2rem 2rem;display:block!important}
     .cspm-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-    .badge-cy{background:rgba(255, 96, 0,.1);color:var(--cy);border:1px solid rgba(255, 96, 0,.25)}
-    .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
-    .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
-    .badge-am{background:rgba(255,183,3,.1);color:var(--am);border:1px solid rgba(255,183,3,.25)}
+    .badge-cy{background:rgb(var(--accent-rgb) / .1);color:var(--cy);border:1px solid rgb(var(--accent-rgb) / .25)}
+    .badge-bl{background:rgb(var(--purple-rgb) / .1);color:var(--purple);border:1px solid rgb(var(--purple-rgb) / .25)}
+    .badge-gr{background:rgb(var(--green-rgb) / .1);color:var(--gr);border:1px solid rgb(var(--green-rgb) / .25)}
+    .badge-am{background:rgb(var(--yellow-rgb) / .1);color:var(--am);border:1px solid rgb(var(--yellow-rgb) / .25)}
     .cspm-hero-h1{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,3rem);font-weight:700;color:var(--tx);line-height:1.2;max-width:820px;margin-bottom:1.1rem}
     .cspm-hero-h1 em{font-style:italic;color:var(--cy)}
     .cspm-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     .cspm-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(255, 96, 0,.3)}
+    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgb(var(--accent-rgb) / .3)}
     .cspm-author-strip .author-info{flex:1;min-width:0}
     .cspm-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .cspm-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
@@ -109,26 +108,26 @@ export default function DevSecOpsShiftingLeft() {
     .art h3{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--tx);margin:2rem 0 .7rem}
     .art p{font-size:1rem;line-height:1.85;color:var(--tb);margin-bottom:1.2rem}
     .art p strong{color:var(--tx);font-weight:600}
-    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgba(255, 96, 0,.06),transparent);border-radius:0 12px 12px 0}
+    .pull-quote{border-left:4px solid var(--cy);padding:1.4rem 2rem;margin:2.5rem 0;background:linear-gradient(135deg,rgb(var(--accent-rgb) / .06),transparent);border-radius:0 12px 12px 0}
     .pull-quote p{font-family:var(--serif);font-size:1.12rem;font-style:italic;color:var(--tx)!important;margin-bottom:.5rem!important;line-height:1.6!important}
     .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
     .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
-    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FF6000,#FF8A3D)}
+    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-light))}
     .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:var(--cy);line-height:1;margin-bottom:.4rem}
     .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
-    .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
-    .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
-    .co-key{background:rgba(255, 96, 0,.06);border:1px solid rgba(255, 96, 0,.2)}
-    .co-sc{background:rgba(6,214,160,.05);border:1px solid rgba(6,214,160,.2)}
-    .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
+    .co-info{background:rgb(var(--purple-rgb) / .07);border:1px solid rgb(var(--purple-rgb) / .2)}
+    .co-warn{background:rgb(var(--yellow-rgb) / .06);border:1px solid rgb(var(--yellow-rgb) / .2)}
+    .co-key{background:rgb(var(--accent-rgb) / .06);border:1px solid rgb(var(--accent-rgb) / .2)}
+    .co-sc{background:rgb(var(--green-rgb) / .05);border:1px solid rgb(var(--green-rgb) / .2)}
+    .co-danger{background:rgb(var(--red-rgb) / .06);border:1px solid rgb(var(--red-rgb) / .2)}
     .co-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
     .co-body p{margin-bottom:0!important;font-size:.89rem!important}
     .co-body strong{display:block;margin-bottom:.3rem;font-size:.82rem;color:var(--tx)}
     .feat-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:.65rem}
     .feat-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;transition:border-color .2s,background .2s}
     .feat-list li:hover{border-color:var(--bo);background:var(--bgc)}
-    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
     .f-body strong{display:block;color:var(--tx);font-size:.89rem;margin-bottom:3px}
     .f-body span{font-size:.83rem;color:var(--tm)}
     .pipeline-stages{display:flex;flex-direction:column;gap:1rem;margin:1.5rem 0}
@@ -136,17 +135,17 @@ export default function DevSecOpsShiftingLeft() {
     .pipe-stage:hover{border-color:var(--bo)}
     .pipe-stage-hdr{display:flex;align-items:center;gap:.7rem;margin-bottom:.7rem}
     .pipe-badge{padding:.2rem .7rem;border-radius:100px;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
-    .pipe-badge-commit{background:rgba(99,102,241,.15);color:#818cf8}
-    .pipe-badge-build{background:rgba(255, 96, 0,.15);color:#FF6000}
-    .pipe-badge-runtime{background:rgba(6,214,160,.12);color:#06d6a0}
+    .pipe-badge-commit{background:rgb(var(--purple-rgb) / .15);color:var(--purple)}
+    .pipe-badge-build{background:rgb(var(--accent-rgb) / .15);color:var(--accent)}
+    .pipe-badge-runtime{background:rgb(var(--green-rgb) / .12);color:var(--green)}
     .pipe-stage-title{font-weight:700;font-size:.95rem;color:var(--tx)}
     .pipe-tools{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
     .tool-tag{padding:.18rem .6rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:5px;font-size:.73rem;color:var(--tm);font-family:monospace}
     .phase-grid{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0}
     .phase-card{background:var(--bgc2);border-left:4px solid var(--cy);border-radius:0 12px 12px 0;padding:1.2rem 1.4rem;transition:background .2s}
-    .phase-card:nth-child(1){border-color:#818cf8}
-    .phase-card:nth-child(2){border-color:#FF6000}
-    .phase-card:nth-child(3){border-color:#06d6a0}
+    .phase-card:nth-child(1){border-color:var(--purple)}
+    .phase-card:nth-child(2){border-color:var(--accent)}
+    .phase-card:nth-child(3){border-color:var(--green)}
     .phase-card:hover{background:var(--bgc)}
     .phase-label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tm);margin-bottom:.3rem}
     .phase-card h3{font-size:.97rem;font-weight:700;color:var(--tx);margin-bottom:.5rem}
@@ -154,8 +153,8 @@ export default function DevSecOpsShiftingLeft() {
     .phase-card ul li{font-size:.84rem;color:var(--tm);display:flex;align-items:flex-start;gap:.5rem}
     .phase-card ul li::before{content:'→';color:var(--cy);font-weight:700;flex-shrink:0;margin-top:1px}
     .pitfall-list{display:flex;flex-direction:column;gap:.7rem;margin:1.5rem 0}
-    .pitfall-item{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid rgba(255,77,109,.15);border-radius:10px}
-    .pf-num{width:26px;height:26px;border-radius:7px;background:rgba(255,77,109,.15);border:1px solid rgba(255,77,109,.3);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#ff4d6d;flex-shrink:0;margin-top:2px}
+    .pitfall-item{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid rgb(var(--red-rgb) / .15);border-radius:10px}
+    .pf-num{width:26px;height:26px;border-radius:7px;background:rgb(var(--red-rgb) / .15);border:1px solid rgb(var(--red-rgb) / .3);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:var(--red);flex-shrink:0;margin-top:2px}
     .pf-body strong{display:block;color:var(--tx);font-size:.89rem;margin-bottom:3px}
     .pf-body span{font-size:.83rem;color:var(--tm)}
     .faq-section{margin:3rem 0}
@@ -168,7 +167,7 @@ export default function DevSecOpsShiftingLeft() {
     .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-    .cta-banner{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-family:var(--serif);font-size:1.5rem;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -185,19 +184,19 @@ export default function DevSecOpsShiftingLeft() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(255, 96, 0,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgb(var(--accent-rgb) / .07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}.rel-links a:hover{color:var(--cy)}
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
-    .sb-cta{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-family:var(--serif);font-size:.98rem;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
     .sb-cta-btn:hover{background:var(--cy2)}
-    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(255, 96, 0,.4);transition:transform .2s;z-index:50}
+    #btt{position:fixed;bottom:2rem;right:2rem;width:41px;height:41px;background:var(--cy);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.05rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgb(var(--accent-rgb) / .4);transition:transform .2s;z-index:50}
     #btt.vis{display:flex}#btt:hover{transform:translateY(-3px)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
     .anim{animation:fadeUp .55s ease both}
@@ -241,104 +240,104 @@ export default function DevSecOpsShiftingLeft() {
         <div className="img-wrap">
           <svg viewBox="0 0 960 440" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
             <defs>
-              <linearGradient id="dg1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#FF6000"/><stop offset="100%" stopColor="#FF8A3D"/></linearGradient>
-              <linearGradient id="dg2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#06d6a0"/><stop offset="100%" stopColor="#04b080"/></linearGradient>
-              <linearGradient id="dg3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#818cf8"/><stop offset="100%" stopColor="#6366f1"/></linearGradient>
-              <linearGradient id="dg4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ffb703"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
-              <pattern id="dpat" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgba(255, 96, 0,0.04)"/></pattern>
+              <linearGradient id="dg1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--accent)"/><stop offset="100%" stopColor="var(--accent-light)"/></linearGradient>
+              <linearGradient id="dg2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--green)"/><stop offset="100%" stopColor="var(--green)"/></linearGradient>
+              <linearGradient id="dg3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--purple)"/><stop offset="100%" stopColor="#6366f1"/></linearGradient>
+              <linearGradient id="dg4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="var(--yellow)"/><stop offset="100%" stopColor="#e09500"/></linearGradient>
+              <pattern id="dpat" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r=".8" fill="rgb(var(--accent-rgb) / 0.04)"/></pattern>
             </defs>
             <rect width="960" height="440" fill="url(#dpat)"/>
 
             {/* TOP: Pipeline flow */}
-            <text x="480" y="32" textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DevSecOps Pipeline, Security at Every Stage</text>
+            <text x="480" y="32" textAnchor="middle" fill="rgb(var(--p-white-rgb) / 0.8)" fontSize="12" fontWeight="700" fontFamily="sans-serif">DevSecOps Pipeline, Security at Every Stage</text>
             {[
-              {stage:'Plan',     sec:'Threat Model', col:'#818cf8', x:40},
-              {stage:'Code',     sec:'SAST · Secrets',col:'#FF6000', x:165},
-              {stage:'Build',    sec:'SCA · Container',col:'#FF6000',x:290},
-              {stage:'Test',     sec:'DAST · IaC',    col:'#ffb703', x:415},
-              {stage:'Release',  sec:'Policy Gate',   col:'#06d6a0', x:540},
-              {stage:'Deploy',   sec:'CSPM · Drift',  col:'#06d6a0', x:665},
-              {stage:'Monitor',  sec:'RASP · Alerts', col:'#06d6a0', x:790},
+              {stage:'Plan',     sec:'Threat Model', col:'var(--purple)', x:40},
+              {stage:'Code',     sec:'SAST · Secrets',col:'var(--accent)', x:165},
+              {stage:'Build',    sec:'SCA · Container',col:'var(--accent)',x:290},
+              {stage:'Test',     sec:'DAST · IaC',    col:'var(--yellow)', x:415},
+              {stage:'Release',  sec:'Policy Gate',   col:'var(--green)', x:540},
+              {stage:'Deploy',   sec:'CSPM · Drift',  col:'var(--green)', x:665},
+              {stage:'Monitor',  sec:'RASP · Alerts', col:'var(--green)', x:790},
             ].map(({stage,sec,col,x},i)=>(
               <g key={i}>
                 {i > 0 && <path d={`M${x-5} 80 L${x+5} 80`} stroke="rgba(255,255,255,0.15)" strokeWidth="1.5" markerEnd="url(#arrow)"/>}
-                <rect x={x} y="50" width="110" height="54" rx="9" fill="#091826" stroke={`${col}40`} strokeWidth="1.2"/>
+                <rect x={x} y="50" width="110" height="54" rx="9" fill="var(--bg-secondary)" stroke={`${col}40`} strokeWidth="1.2"/>
                 <rect x={x} y="50" width="110" height="3" rx="1.5" fill={col}/>
-                <text x={x+55} y="72" textAnchor="middle" fill="rgba(200,214,229,0.9)" fontSize="10" fontWeight="700" fontFamily="sans-serif">{stage}</text>
+                <text x={x+55} y="72" textAnchor="middle" fill="rgb(var(--p-white-rgb) / 0.9)" fontSize="10" fontWeight="700" fontFamily="sans-serif">{stage}</text>
                 <text x={x+55} y="90" textAnchor="middle" fill={col} fontSize="8" fontFamily="sans-serif">{sec}</text>
               </g>
             ))}
 
             {/* Shift left arrow */}
-            <path d="M900 115 L50 115" stroke="rgba(255, 96, 0,0.3)" strokeWidth="1.5" strokeDasharray="5,4"/>
-            <text x="480" y="110" textAnchor="middle" fill="rgba(255, 96, 0,0.5)" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">← SHIFT LEFT, catch issues earlier, fix them cheaper</text>
+            <path d="M900 115 L50 115" stroke="rgb(var(--accent-rgb) / 0.3)" strokeWidth="1.5" strokeDasharray="5,4"/>
+            <text x="480" y="110" textAnchor="middle" fill="rgb(var(--accent-rgb) / 0.5)" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">← SHIFT LEFT, catch issues earlier, fix them cheaper</text>
 
             <line x1="20" y1="128" x2="940" y2="128" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
 
             {/* LEFT, 3 Pillars */}
-            <rect x="18" y="138" width="195" height="284" rx="12" fill="#081826" stroke="rgba(255, 96, 0,0.15)" strokeWidth="1"/>
-            <text x="38" y="162" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">3 PILLARS OF DEVSECOPS</text>
+            <rect x="18" y="138" width="195" height="284" rx="12" fill="var(--bg-secondary)" stroke="rgb(var(--accent-rgb) / 0.15)" strokeWidth="1"/>
+            <text x="38" y="162" fill="rgb(var(--p-white-rgb) / 0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">3 PILLARS OF DEVSECOPS</text>
             {[
-              {pillar:'Culture',     desc:'Security champions · Shared ownership · Blameless post-mortems', col:'#818cf8', icon:'👥'},
-              {pillar:'Automation',  desc:'SAST · SCA · Container scan · IaC · DAST · CSPM at every stage', col:'#FF6000', icon:'⚙️'},
-              {pillar:'Measurement', desc:'MTTR by severity · Vuln velocity · Pipeline gate coverage', col:'#06d6a0', icon:'📊'},
+              {pillar:'Culture',     desc:'Security champions · Shared ownership · Blameless post-mortems', col:'var(--purple)', icon:'👥'},
+              {pillar:'Automation',  desc:'SAST · SCA · Container scan · IaC · DAST · CSPM at every stage', col:'var(--accent)', icon:'⚙️'},
+              {pillar:'Measurement', desc:'MTTR by severity · Vuln velocity · Pipeline gate coverage', col:'var(--green)', icon:'📊'},
             ].map(({pillar,desc,col,icon},i)=>(
               <g key={i}>
                 <rect x="28" y={178+i*82} width="175" height="70" rx="9" fill={`${col}08`} stroke={`${col}28`} strokeWidth="1"/>
                 <text x="50" y={200+i*82} fill={col} fontSize="14" fontFamily="sans-serif">{icon}</text>
                 <text x="68" y={200+i*82} fill={col} fontSize="11" fontWeight="700" fontFamily="sans-serif">{pillar}</text>
                 <foreignObject x="38" y={208+i*82} width="155" height="36">
-                  <div xmlns="http://www.w3.org/1999/xhtml" style={{fontSize:'8px',color:'rgba(200,214,229,0.45)',lineHeight:'1.5',fontFamily:'sans-serif'}}>{desc}</div>
+                  <div xmlns="http://www.w3.org/1999/xhtml" style={{fontSize:'8px',color:'rgb(var(--p-white-rgb) / 0.45)',lineHeight:'1.5',fontFamily:'sans-serif'}}>{desc}</div>
                 </foreignObject>
               </g>
             ))}
 
-            <line x1="228" y1="130" x2="228" y2="430" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
+            <line x1="228" y1="130" x2="228" y2="430" stroke="rgb(var(--accent-rgb) / 0.07)" strokeWidth="1"/>
 
             {/* CENTRE, Metrics Dashboard */}
-            <text x="546" y="158" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Security Metrics Dashboard</text>
+            <text x="546" y="158" textAnchor="middle" fill="rgb(var(--p-white-rgb) / 0.85)" fontSize="12" fontWeight="700" fontFamily="sans-serif">Security Metrics Dashboard</text>
             {[
-              {label:'Mean Time to Remediate, Critical', val:'18h', sub:'target: <24h', col:'#06d6a0', bar:140},
-              {label:'Pipelines with Security Gates',     val:'87%', sub:'↑ from 42%',  col:'#FF6000', bar:130},
-              {label:'SAST False Positive Rate',          val:'12%', sub:'target: <15%', col:'#818cf8', bar:70},
-              {label:'Vulns Closed vs Introduced',        val:'2.1×', sub:'net positive', col:'#ffb703', bar:115},
+              {label:'Mean Time to Remediate, Critical', val:'18h', sub:'target: <24h', col:'var(--green)', bar:140},
+              {label:'Pipelines with Security Gates',     val:'87%', sub:'↑ from 42%',  col:'var(--accent)', bar:130},
+              {label:'SAST False Positive Rate',          val:'12%', sub:'target: <15%', col:'var(--purple)', bar:70},
+              {label:'Vulns Closed vs Introduced',        val:'2.1×', sub:'net positive', col:'var(--yellow)', bar:115},
             ].map(({label,val,sub,col,bar},i)=>(
               <g key={i}>
-                <rect x="240" y={172+i*62} width="604" height="50" rx="9" fill="#091826" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
-                <text x="260" y={191+i*62} fill="rgba(200,214,229,0.55)" fontSize="8.5" fontFamily="sans-serif">{label}</text>
+                <rect x="240" y={172+i*62} width="604" height="50" rx="9" fill="var(--bg-secondary)" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
+                <text x="260" y={191+i*62} fill="rgb(var(--p-white-rgb) / 0.55)" fontSize="8.5" fontFamily="sans-serif">{label}</text>
                 <rect x="260" y={196+i*62} width="200" height="7" rx="3.5" fill="rgba(255,255,255,0.05)"/>
                 <rect x="260" y={196+i*62} width={bar} height="7" rx="3.5" fill={col}/>
                 <text x="480" y={204+i*62} fill={col} fontSize="16" fontWeight="800" fontFamily="sans-serif">{val}</text>
-                <text x="540" y={204+i*62} fill="rgba(200,214,229,0.35)" fontSize="9" fontFamily="sans-serif">{sub}</text>
+                <text x="540" y={204+i*62} fill="rgb(var(--p-white-rgb) / 0.35)" fontSize="9" fontFamily="sans-serif">{sub}</text>
               </g>
             ))}
 
-            <line x1="862" y1="130" x2="862" y2="430" stroke="rgba(255, 96, 0,0.07)" strokeWidth="1"/>
+            <line x1="862" y1="130" x2="862" y2="430" stroke="rgb(var(--accent-rgb) / 0.07)" strokeWidth="1"/>
 
             {/* RIGHT, Maturity Phases */}
-            <text x="880" y="158" textAnchor="middle" fill="rgba(200,214,229,0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">MATURITY PHASES</text>
+            <text x="880" y="158" textAnchor="middle" fill="rgb(var(--p-white-rgb) / 0.7)" fontSize="10" fontWeight="700" fontFamily="sans-serif">MATURITY PHASES</text>
             {[
-              {phase:'Phase 1',  title:'Foundational',  time:'0–3 mo',  col:'#818cf8', done:true},
-              {phase:'Phase 2',  title:'Integrated',    time:'3–6 mo',  col:'#FF6000', done:false},
-              {phase:'Phase 3',  title:'Advanced',      time:'6–12 mo', col:'#06d6a0', done:false},
+              {phase:'Phase 1',  title:'Foundational',  time:'0–3 mo',  col:'var(--purple)', done:true},
+              {phase:'Phase 2',  title:'Integrated',    time:'3–6 mo',  col:'var(--accent)', done:false},
+              {phase:'Phase 3',  title:'Advanced',      time:'6–12 mo', col:'var(--green)', done:false},
             ].map(({phase,title,time,col,done},i)=>(
               <g key={i}>
-                <rect x="872" y={172+i*86} width="78" height="72" rx="9" fill={done?`${col}12`:'#091826'} stroke={`${col}${done?'45':'20'}`} strokeWidth="1"/>
+                <rect x="872" y={172+i*86} width="78" height="72" rx="9" fill={done?`${col}12`:'var(--bg-secondary)'} stroke={`${col}${done?'45':'20'}`} strokeWidth="1"/>
                 <text x="911" y={195+i*86} textAnchor="middle" fill={col} fontSize="8.5" fontWeight="700" fontFamily="sans-serif">{phase}</text>
-                <text x="911" y={210+i*86} textAnchor="middle" fill="rgba(200,214,229,0.8)" fontSize="9" fontWeight="600" fontFamily="sans-serif">{title}</text>
-                <text x="911" y={225+i*86} textAnchor="middle" fill="rgba(200,214,229,0.35)" fontSize="8" fontFamily="sans-serif">{time}</text>
+                <text x="911" y={210+i*86} textAnchor="middle" fill="rgb(var(--p-white-rgb) / 0.8)" fontSize="9" fontWeight="600" fontFamily="sans-serif">{title}</text>
+                <text x="911" y={225+i*86} textAnchor="middle" fill="rgb(var(--p-white-rgb) / 0.35)" fontSize="8" fontFamily="sans-serif">{time}</text>
                 {done && <text x="911" y={240+i*86} textAnchor="middle" fill={col} fontSize="9" fontFamily="sans-serif">✓ Active</text>}
               </g>
             ))}
 
             {/* Cost comparison bar */}
-            <text x="546" y="420" textAnchor="middle" fill="rgba(200,214,229,0.5)" fontSize="9" fontWeight="600" fontFamily="sans-serif">Cost to Fix a Bug, by SDLC Stage</text>
+            <text x="546" y="420" textAnchor="middle" fill="rgb(var(--p-white-rgb) / 0.5)" fontSize="9" fontWeight="600" fontFamily="sans-serif">Cost to Fix a Bug, by SDLC Stage</text>
             {[
-              {stage:'Design',  cost:'1×',  w:18,  col:'#06d6a0', x:240},
-              {stage:'Code',    cost:'3×',  w:36,  col:'#818cf8', x:300},
-              {stage:'Test',    cost:'6×',  w:64,  col:'#ffb703', x:378},
-              {stage:'Release', cost:'15×', w:120, col:'#FF6000', x:484},
-              {stage:'Prod',    cost:'30×', w:200, col:'#ff4d6d', x:646},
+              {stage:'Design',  cost:'1×',  w:18,  col:'var(--green)', x:240},
+              {stage:'Code',    cost:'3×',  w:36,  col:'var(--purple)', x:300},
+              {stage:'Test',    cost:'6×',  w:64,  col:'var(--yellow)', x:378},
+              {stage:'Release', cost:'15×', w:120, col:'var(--accent)', x:484},
+              {stage:'Prod',    cost:'30×', w:200, col:'var(--red)', x:646},
             ].map(({stage,cost,w,col,x},i)=>(
               <g key={i}>
                 <rect x={x-w/2} y={425} width={w} height="10" rx="3" fill={col}/>
@@ -462,23 +461,23 @@ export default function DevSecOpsShiftingLeft() {
 
             {/* STRIDE SVG */}
             <div className="img-wrap" style={{marginTop:'1.5rem'}}>
-              <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'#081826'}}>
-                <text x="380" y="26" textAnchor="middle" fill="rgba(200,214,229,0.75)" fontSize="11" fontWeight="700" fontFamily="sans-serif">STRIDE Threat Modeling Framework</text>
+              <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'var(--bg-secondary)'}}>
+                <text x="380" y="26" textAnchor="middle" fill="rgb(var(--p-white-rgb) / 0.75)" fontSize="11" fontWeight="700" fontFamily="sans-serif">STRIDE Threat Modeling Framework</text>
                 {[
-                  {letter:'S', name:'Spoofing',            desc:'Impersonating another user or system',       col:'#818cf8', x:35},
-                  {letter:'T', name:'Tampering',           desc:'Modifying data or code without auth',        col:'#FF6000', x:168},
-                  {letter:'R', name:'Repudiation',         desc:'Denying an action was taken',               col:'#ffb703', x:301},
-                  {letter:'I', name:'Info Disclosure',     desc:'Exposing data to unauthorised parties',      col:'#ff4d6d', x:434},
-                  {letter:'D', name:'Denial of Service',   desc:'Degrading or blocking availability',        col:'#06d6a0', x:567},
-                  {letter:'E', name:'Elevation of Priv.',  desc:'Gaining privileges above entitlement',      col:'#FF6000', x:700},
+                  {letter:'S', name:'Spoofing',            desc:'Impersonating another user or system',       col:'var(--purple)', x:35},
+                  {letter:'T', name:'Tampering',           desc:'Modifying data or code without auth',        col:'var(--accent)', x:168},
+                  {letter:'R', name:'Repudiation',         desc:'Denying an action was taken',               col:'var(--yellow)', x:301},
+                  {letter:'I', name:'Info Disclosure',     desc:'Exposing data to unauthorised parties',      col:'var(--red)', x:434},
+                  {letter:'D', name:'Denial of Service',   desc:'Degrading or blocking availability',        col:'var(--green)', x:567},
+                  {letter:'E', name:'Elevation of Priv.',  desc:'Gaining privileges above entitlement',      col:'var(--accent)', x:700},
                 ].map(({letter,name,desc,col,x},i)=>(
                   <g key={i}>
                     <rect x={x-58} y="36" width="116" height="148" rx="9" fill={`${col}08`} stroke={`${col}28`} strokeWidth="1"/>
                     <circle cx={x} cy="63" r="18" fill={`${col}18`} stroke={col} strokeWidth="1.5"/>
                     <text x={x} y="68" textAnchor="middle" fill={col} fontSize="16" fontWeight="800" fontFamily="sans-serif">{letter}</text>
-                    <text x={x} y="98" textAnchor="middle" fill="rgba(200,214,229,0.85)" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">{name}</text>
+                    <text x={x} y="98" textAnchor="middle" fill="rgb(var(--p-white-rgb) / 0.85)" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">{name}</text>
                     <foreignObject x={x-50} y="106" width="100" height="68">
-                      <div xmlns="http://www.w3.org/1999/xhtml" style={{fontSize:'7.5px',color:'rgba(200,214,229,0.4)',lineHeight:'1.5',fontFamily:'sans-serif',textAlign:'center'}}>{desc}</div>
+                      <div xmlns="http://www.w3.org/1999/xhtml" style={{fontSize:'7.5px',color:'rgb(var(--p-white-rgb) / 0.4)',lineHeight:'1.5',fontFamily:'sans-serif',textAlign:'center'}}>{desc}</div>
                     </foreignObject>
                   </g>
                 ))}

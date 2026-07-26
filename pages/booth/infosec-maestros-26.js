@@ -27,18 +27,17 @@ export default function BoothInfosecMaestros26() {
 
       <style jsx global>{`
         :root {
-          --bg: #020617;
-          --surface: #0a1628;
-          --surface-2: #091826;
-          --accent: #FF6000;
-          --accent-2: #FF8A3D;
-          --accent-soft: rgba(255, 96, 0, 0.15);
-          --accent-border: rgba(255, 96, 0, 0.3);
-          --text-primary: #f8fafc;
-          --text-body: #c8d6e5;
-          --text-muted: #94a3b8;
-          --cy: #06d6a0;
-          --bl: #818cf8;
+          --bg: var(--bg-primary);
+          --surface: var(--bg-card);
+          --surface-2: var(--bg-secondary);
+          --accent-2: var(--accent-light);
+          --accent-soft: rgb(var(--accent-rgb) / 0.15);
+          --accent-border: rgb(var(--accent-rgb) / 0.3);
+          --text-primary: var(--white);
+          --text-body: var(--text-primary);
+          --text-muted: var(--text-secondary);
+          --cy: var(--teal);
+          --bl: var(--purple);
         }
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html, body {
@@ -50,9 +49,9 @@ export default function BoothInfosecMaestros26() {
         }
         body {
           background:
-            radial-gradient(circle at 15% 10%, rgba(255, 96, 0,0.12), transparent 40%),
-            radial-gradient(circle at 85% 90%, rgba(129,140,248,0.08), transparent 45%),
-            #020617;
+            radial-gradient(circle at 15% 10%, rgb(var(--accent-rgb) / 0.12), transparent 40%),
+            radial-gradient(circle at 85% 90%, rgb(var(--purple-rgb) / 0.08), transparent 45%),
+            var(--bg-primary);
           background-attachment: fixed;
         }
 
@@ -68,7 +67,7 @@ export default function BoothInfosecMaestros26() {
 
         /* Welcome */
         .welcome-card {
-          background: linear-gradient(135deg, rgba(255, 96, 0,0.10) 0%, rgba(10,22,40,0.9) 100%);
+          background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.10) 0%, rgba(10,22,40,0.9) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2rem 1.75rem;
@@ -84,7 +83,7 @@ export default function BoothInfosecMaestros26() {
           right: -60px;
           width: 200px;
           height: 200px;
-          background: radial-gradient(circle, rgba(255, 96, 0,0.18), transparent 60%);
+          background: radial-gradient(circle, rgb(var(--accent-rgb) / 0.18), transparent 60%);
           pointer-events: none;
         }
         .welcome-emoji { font-size: 2.5rem; line-height: 1; margin-bottom: .85rem; }
@@ -110,7 +109,7 @@ export default function BoothInfosecMaestros26() {
         /* Event chip */
         .event-chip {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 16px;
           padding: 1.35rem 1.5rem;
           margin-bottom: 1.5rem;
@@ -124,7 +123,7 @@ export default function BoothInfosecMaestros26() {
         .event-chip:hover {
           border-color: var(--accent-border);
           transform: translateY(-2px);
-          box-shadow: 0 10px 30px rgba(255, 96, 0,0.08);
+          box-shadow: 0 10px 30px rgb(var(--accent-rgb) / 0.08);
         }
         .event-chip-mark {
           width: 60px;
@@ -182,8 +181,8 @@ export default function BoothInfosecMaestros26() {
 
         /* Reward callout */
         .reward-card {
-          background: linear-gradient(135deg, rgba(255,183,3,0.08), rgba(255, 96, 0,0.06));
-          border: 1px solid rgba(255,183,3,0.3);
+          background: linear-gradient(135deg, rgb(var(--yellow-rgb) / 0.08), rgb(var(--accent-rgb) / 0.06));
+          border: 1px solid rgb(var(--yellow-rgb) / 0.3);
           border-radius: 18px;
           padding: 1.75rem 1.5rem;
           margin-bottom: 1.5rem;
@@ -198,7 +197,7 @@ export default function BoothInfosecMaestros26() {
           right: -60px;
           width: 200px;
           height: 200px;
-          background: radial-gradient(circle, rgba(255,183,3,0.12), transparent 60%);
+          background: radial-gradient(circle, rgb(var(--yellow-rgb) / 0.12), transparent 60%);
           pointer-events: none;
         }
         .reward-tag {
@@ -207,9 +206,9 @@ export default function BoothInfosecMaestros26() {
           gap: .35rem;
           padding: .35rem .9rem;
           border-radius: 999px;
-          background: rgba(255,183,3,0.15);
-          color: #ffb703;
-          border: 1px solid rgba(255,183,3,0.4);
+          background: rgb(var(--yellow-rgb) / 0.15);
+          color: var(--yellow);
+          border: 1px solid rgb(var(--yellow-rgb) / 0.4);
           font-size: .7rem;
           font-weight: 800;
           text-transform: uppercase;
@@ -225,7 +224,7 @@ export default function BoothInfosecMaestros26() {
           position: relative;
         }
         .reward-card h2 em {
-          background: linear-gradient(135deg, #ffb703, var(--accent));
+          background: linear-gradient(135deg, var(--yellow), var(--accent));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -258,7 +257,7 @@ export default function BoothInfosecMaestros26() {
           text-decoration: none;
           font-size: 1.05rem;
           transition: all 0.25s ease;
-          box-shadow: 0 8px 28px rgba(255, 96, 0,0.4);
+          box-shadow: 0 8px 28px rgb(var(--accent-rgb) / 0.4);
           width: 100%;
           max-width: 380px;
           letter-spacing: -0.01em;
@@ -272,13 +271,13 @@ export default function BoothInfosecMaestros26() {
           left: -100%;
           width: 100%;
           height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+          background: linear-gradient(90deg, transparent, rgb(var(--p-white-rgb) / 0.15), transparent);
           transition: left 0.6s ease;
         }
         .cta-button:hover::before { left: 100%; }
         .cta-button:hover {
           transform: translateY(-2px);
-          box-shadow: 0 12px 36px rgba(255, 96, 0,0.5);
+          box-shadow: 0 12px 36px rgb(var(--accent-rgb) / 0.5);
         }
         .cta-button:active { transform: translateY(0); }
         .cta-sub {
@@ -302,7 +301,7 @@ export default function BoothInfosecMaestros26() {
         }
         .steps-list {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 18px;
           padding: 1.25rem 1.25rem .5rem;
           margin-bottom: 1.5rem;
@@ -312,7 +311,7 @@ export default function BoothInfosecMaestros26() {
           display: flex;
           gap: 1rem;
           padding: 1rem .25rem;
-          border-bottom: 1px solid rgba(255,255,255,0.05);
+          border-bottom: 1px solid rgb(var(--p-white-rgb) / 0.05);
           align-items: flex-start;
           position: relative;
         }
@@ -369,17 +368,17 @@ export default function BoothInfosecMaestros26() {
           border-radius: 6px;
           letter-spacing: 0.02em;
         }
-        .fw-1 { background: rgba(255, 96, 0,0.12); color: var(--accent); }
-        .fw-2 { background: rgba(6,214,160,0.12); color: var(--cy); }
-        .fw-3 { background: rgba(129,140,248,0.12); color: var(--bl); }
-        .fw-4 { background: rgba(59,130,246,0.12); color: #3b82f6; }
-        .fw-5 { background: rgba(239,68,68,0.12); color: #ef4444; }
-        .fw-6 { background: rgba(20,184,166,0.12); color: #14b8a6; }
+        .fw-1 { background: rgb(var(--accent-rgb) / 0.12); color: var(--accent); }
+        .fw-2 { background: rgb(var(--teal-rgb) / 0.12); color: var(--cy); }
+        .fw-3 { background: rgb(var(--purple-rgb) / 0.12); color: var(--bl); }
+        .fw-4 { background: rgb(var(--blue-rgb) / 0.12); color: var(--blue); }
+        .fw-5 { background: rgb(var(--red-rgb) / 0.12); color: var(--red); }
+        .fw-6 { background: rgba(20,184,166,0.12); color: var(--teal); }
 
         /* Confirm step */
         .confirm-row {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 14px;
           padding: 1.1rem 1.2rem;
           display: flex;
@@ -390,14 +389,14 @@ export default function BoothInfosecMaestros26() {
           transition: all 0.2s ease;
         }
         .confirm-row.is-checked {
-          background: rgba(6,214,160,0.06);
-          border-color: rgba(6,214,160,0.4);
+          background: rgb(var(--teal-rgb) / 0.06);
+          border-color: rgb(var(--teal-rgb) / 0.4);
         }
         .confirm-check {
           width: 24px;
           height: 24px;
           border-radius: 7px;
-          border: 2px solid rgba(255,255,255,0.25);
+          border: 2px solid rgb(var(--p-white-rgb) / 0.25);
           background: transparent;
           flex-shrink: 0;
           display: flex;
@@ -424,8 +423,8 @@ export default function BoothInfosecMaestros26() {
 
         /* Reward unlock card */
         .reward-unlock {
-          background: linear-gradient(135deg, rgba(6,214,160,0.08), rgba(255, 96, 0,0.05));
-          border: 1px solid rgba(6,214,160,0.35);
+          background: linear-gradient(135deg, rgb(var(--teal-rgb) / 0.08), rgb(var(--accent-rgb) / 0.05));
+          border: 1px solid rgb(var(--teal-rgb) / 0.35);
           border-radius: 18px;
           padding: 1.5rem;
           margin-bottom: 1.5rem;
@@ -453,7 +452,7 @@ export default function BoothInfosecMaestros26() {
           margin-bottom: 1rem;
         }
         .reward-instructions {
-          background: rgba(0,0,0,0.25);
+          background: rgb(var(--p-white-rgb) / 0.25);
           border-radius: 10px;
           padding: .85rem 1rem;
           font-size: .85rem;

@@ -1,51 +1,247 @@
 /* ============================================================
-   SECCOMPLY DESIGN TOKENS
+   SECCOMPLY DESIGN TOKENS — "The Register"
+
+   Light, institutional ground. Structure comes from hairline
+   rules and aligned columns, not shadows or glows. Iron-oxide
+   accent used sparingly: CTA, active state, one emphasis per
+   section — never for decorative fills or borders.
+
+   Layer A — primitives (raw colors + rgb channels for alpha use)
+   Layer B — semantic tokens (what components actually reference)
+   Layer C — legacy aliases (compatibility for locally-invented
+             per-page token names, so 150+ page-local stylesheets
+             read from this single source instead of hardcoding)
+   Layer D — shadcn/ui compatibility
    ============================================================ */
 :root {
-  --bg-primary: #020617;
-  --bg-secondary: #0B1120;
-  --bg-card: #0F172A;
-  --bg-card-hover: #1E293B;
-  --border: rgba(255,255,255,0.06);
-  --border-hover: rgba(255,255,255,0.12);
-  --white: #F8FAFC;
-  --text-primary: #E2E8F0;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
-  --accent: #FF6000;
-  --accent-light: #FF8A3D;
-  --accent-dark: #CC4D00;
-  --gradient-accent: linear-gradient(135deg, #FF6000, #FF8A3D);
-  --green: #10B981;
-  --green-dim: rgba(16,185,129,0.15);
-  --yellow: #F59E0B;
-  --yellow-dim: rgba(245,158,11,0.15);
-  --red: #EF4444;
-  --red-dim: rgba(239,68,68,0.15);
-  --blue: #3B82F6;
-  --blue-dim: rgba(59,130,246,0.15);
-  --purple: #8B5CF6;
-  --purple-dim: rgba(139,92,246,0.15);
-  --teal: #14B8A6;
-  --teal-dim: rgba(20,184,166,0.15);
-  --blue-700: #475569;
-  --blue-800: #1E293B;
-  --blue-900: #0F172A;
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 12px;
-  --radius-xl: 24px;
+  /* ---------- Layer A: primitives ---------- */
+  --p-accent: #C2410C;         --p-accent-rgb: 194,65,12;
+  --p-accent-light: #D3540F;   --p-accent-light-rgb: 211,84,15;
+  --p-accent-dark: #9A3412;    --p-accent-dark-rgb: 154,52,18;
+
+  --p-bg-primary: #FCFCFD;
+  --p-bg-secondary: #F6F7F9;
+  --p-bg-card: #FFFFFF;        --p-bg-card-rgb: 255,255,255;
+  --p-bg-card-hover: #F3F4F6;  --p-bg-card-hover-rgb: 243,244,246;
+
+  --p-white: #14161A;          --p-white-rgb: 20,22,26;
+  --p-black-rgb: 0,0,0;
+  --p-text-primary: #4A5058;
+  --p-text-secondary: #5C6470;
+  --p-text-muted: #6B7280;
+
+  --p-green: #0F7B3D;          --p-green-rgb: 15,123,61;
+  --p-yellow: #A16207;         --p-yellow-rgb: 161,98,7;
+  --p-red: #B42318;            --p-red-rgb: 180,35,24;
+  --p-blue: #2554C7;           --p-blue-rgb: 37,84,199;
+  --p-purple: #6D28D9;         --p-purple-rgb: 109,40,217;
+  --p-teal: #0F766E;           --p-teal-rgb: 15,118,110;
+
+  --p-blue-700: #475569;
+  --p-blue-800: #1E293B;      --p-blue-800-rgb: 30,41,59;
+  --p-blue-900: #0F172A;      --p-blue-900-rgb: 15,23,42;
+
+  /* ---------- Layer B: semantic tokens ---------- */
+  --bg-primary: var(--p-bg-primary);
+  --bg-secondary: var(--p-bg-secondary);
+  --bg-card: var(--p-bg-card); --bg-card-rgb: var(--p-bg-card-rgb);
+  --bg-card-hover: var(--p-bg-card-hover); --bg-card-hover-rgb: var(--p-bg-card-hover-rgb);
+  --border: #E6E8EC;
+  --border-hover: #D8DBE0;
+
+  /* NB: --white is a legacy name from the dark theme, where it meant
+     "brightest/emphasis text color". On a light ground the emphasis
+     color is the darkest ink — kept as --white so the ~200 existing
+     var(--white) call sites (headings, emphasis text) don't need
+     touching; the computed effect is correct even if the name reads
+     oddly now. */
+  --white: var(--p-white);
+  --text-primary: var(--p-text-primary);
+  --text-secondary: var(--p-text-secondary);
+  --text-muted: var(--p-text-muted);
+
+  --accent: var(--p-accent);            --accent-rgb: var(--p-accent-rgb);
+  --accent-light: var(--p-accent-light); --accent-light-rgb: var(--p-accent-light-rgb);
+  --accent-dark: var(--p-accent-dark);   --accent-dark-rgb: var(--p-accent-dark-rgb);
+  --accent-tint: #FDF0E9;
+  /* Flat, not a gradient — kept as a variable (not renamed) since
+     150+ files reference var(--gradient-accent) as a background
+     value, which accepts a plain color just as validly. */
+  --gradient-accent: var(--p-accent);
+
+  --green: var(--p-green);   --green-rgb: var(--p-green-rgb);   --green-dim: rgb(var(--p-green-rgb) / 0.12);
+  --yellow: var(--p-yellow); --yellow-rgb: var(--p-yellow-rgb); --yellow-dim: rgb(var(--p-yellow-rgb) / 0.12);
+  --red: var(--p-red);       --red-rgb: var(--p-red-rgb);       --red-dim: rgb(var(--p-red-rgb) / 0.12);
+  --blue: var(--p-blue);     --blue-rgb: var(--p-blue-rgb);     --blue-dim: rgb(var(--p-blue-rgb) / 0.12);
+  --purple: var(--p-purple); --purple-rgb: var(--p-purple-rgb); --purple-dim: rgb(var(--p-purple-rgb) / 0.12);
+  --teal: var(--p-teal);     --teal-rgb: var(--p-teal-rgb);     --teal-dim: rgb(var(--p-teal-rgb) / 0.12);
+
+  --blue-700: var(--p-blue-700);
+  --blue-800: var(--p-blue-800);
+  --blue-900: var(--p-blue-900);
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
   --radius-full: 9999px;
+
+  /* Fixed navbar height. Matches its rendered height at the
+     .scrolled padding (10px * 2 + 44px button) — the state every
+     non-home page is in immediately, and what the mega-menu's own
+     `top` offset already assumed before this token existed. */
+  --nav-h: 64px;
+
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --duration-fast: 0.2s;
   --duration-normal: 0.4s;
   --duration-slow: 0.7s;
+
+  /* Soft, ink-tinted — not black — and much lower opacity than the
+     dark-theme originals. No shadow at all is the default; these
+     exist for the few surfaces (dropdowns, the scrolled nav) that
+     need real elevation. */
+  --shadow-sm: 0 1px 2px rgb(var(--p-white-rgb) / 0.05);
+  --shadow-md: 0 4px 16px rgb(var(--p-white-rgb) / 0.06);
+  --shadow-lg: 0 12px 32px rgb(var(--p-white-rgb) / 0.10);
+
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --font-display: var(--font-inter-tight), var(--font-sans);
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+
+  /* ---------- Layer C: legacy aliases ----------
+     Site-wide bug fix: components/Layout.js's mega-menu CSS
+     references --blue-400 and --transition on every page, but
+     until now those were only ever defined inside pages/index.js's
+     own local :root — so every other page silently fell back to
+     inherit/no-transition. Defining them here fixes it globally. */
+  --blue-400: var(--text-secondary);
+  --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+
+  /* pages/index.js's local :root (removed in this pass) — names
+     with no existing equivalent above */
+  --blue-950: var(--p-bg-primary);
+  --blue-850: var(--p-bg-card);
+  --blue-600: #475569;
+  --blue-300: #CBD5E1;
+  --blue-200: var(--p-text-primary);
+  --green-light: #34D399;
+  --bg-hero: var(--p-bg-primary);
+  --bg-dark: var(--p-bg-primary);
+  --bg-section: var(--p-bg-secondary);
+
+  /* pages/resources/blog/*.js (152 files) + cookie-policy.js +
+     resources/events/ciso-cyber-pioneers-26.js all use this
+     shorthand naming, with 14 slightly-drifted variants of the
+     same intent — collapsed here onto one canonical mapping. */
+  --cy: var(--accent);
+  --cy2: var(--accent-dark);
+  --glow: rgb(var(--accent-rgb) / 0.10);
+  --bg: var(--bg-primary);
+  --bgc: var(--bg-secondary);
+  --bgc2: var(--bg-card);
+  --tx: var(--white);
+  --tb: var(--text-primary);
+  --tm: var(--text-secondary);
+  --bo: rgb(var(--accent-rgb) / 0.25);
+  --bs: var(--border);
+  --am: var(--yellow);
+  --gr: var(--green);
+  --rd: var(--red);
+  --bl: var(--accent-light);
+  --sans: var(--font-sans);
+  --serif: var(--font-sans);
+  --mono: var(--font-mono);
+
+  /* ---------- Layer D: shadcn/ui compatibility ----------
+     Maps shadcn's conventional slot names onto the tokens above,
+     so pasted shadcn component source works unmodified while the
+     actual color decisions still live in Layers A/B. Note: shadcn's
+     own "accent" slot means "neutral hover tint" (e.g. a dropdown
+     item on hover), a different concept from our brand --accent
+     (the oxide CTA color) — kept as --ui-accent to avoid every
+     shadcn menu/dropdown flashing brand-orange on hover. */
+  --background: var(--bg-primary);
+  --foreground: var(--text-primary);
+  --card: var(--bg-card);
+  --card-foreground: var(--text-primary);
+  --popover: var(--bg-card);
+  --popover-foreground: var(--text-primary);
+  --primary: var(--accent);           --primary-rgb: var(--accent-rgb);
+  --primary-foreground: var(--p-bg-card);
+  --secondary: var(--bg-card-hover);  --secondary-rgb: var(--bg-card-hover-rgb);
+  --secondary-foreground: var(--text-primary);
+  --muted: var(--bg-card-hover);      --muted-rgb: var(--bg-card-hover-rgb);
+  --muted-foreground: var(--text-muted);
+  --ui-accent: var(--bg-card-hover);  --ui-accent-rgb: var(--bg-card-hover-rgb);
+  --ui-accent-foreground: var(--text-primary);
+  --destructive: var(--red);          --destructive-rgb: var(--p-red-rgb);
+  --destructive-foreground: var(--p-bg-card);
+  --input: var(--border);
+  --ring: var(--accent);              --ring-rgb: var(--accent-rgb);
+}
+
+/* ============================================================
+   .theme-iron — Northiron.ai dark sub-brand
+
+   Scoped override: wrap a page/section in this class and every
+   var(--bg-primary)/var(--accent)/etc reference inside it resolves
+   to these dark, graphite-and-oxide values instead of the site's
+   light "Register" palette — no per-component changes needed.
+   Reads as iron/graphite rather than navy, tying the treatment to
+   the name; luminance-lifted accent so it still holds on dark.
+   ============================================================ */
+.theme-iron {
+  --p-accent: #E4622A;         --p-accent-rgb: 228,98,42;
+  --p-accent-light: #F07C42;   --p-accent-light-rgb: 240,124,66;
+  --p-accent-dark: #B84A1C;    --p-accent-dark-rgb: 184,74,28;
+
+  --p-bg-primary: #0B0C0E;
+  --p-bg-secondary: #141619;
+  --p-bg-card: #16181C;        --p-bg-card-rgb: 22,24,28;
+  --p-bg-card-hover: #1E2126;  --p-bg-card-hover-rgb: 30,33,38;
+
+  --p-white: #F4F5F6;          --p-white-rgb: 244,245,246;
+  --p-text-primary: #C7CBD1;
+  --p-text-secondary: #9CA3AB;
+  --p-text-muted: #6B7280;
+
+  /* Dark UI reads its semantic colors at their original brights,
+     not the deepened-for-light-ground versions Layer A uses site-wide. */
+  --p-green: #10B981;  --p-green-rgb: 16,185,129;
+  --p-yellow: #F59E0B; --p-yellow-rgb: 245,158,11;
+  --p-red: #EF4444;    --p-red-rgb: 239,68,68;
+  --p-blue: #3B82F6;   --p-blue-rgb: 59,130,246;
+  --p-purple: #8B5CF6; --p-purple-rgb: 139,92,246;
+  --p-teal: #14B8A6;   --p-teal-rgb: 20,184,166;
+
+  --bg-primary: var(--p-bg-primary);
+  --bg-secondary: var(--p-bg-secondary);
+  --bg-card: var(--p-bg-card); --bg-card-rgb: var(--p-bg-card-rgb);
+  --bg-card-hover: var(--p-bg-card-hover); --bg-card-hover-rgb: var(--p-bg-card-hover-rgb);
+  --border: rgba(255,255,255,.08);
+  --border-hover: rgba(255,255,255,.14);
+
+  --white: var(--p-white);
+  --text-primary: var(--p-text-primary);
+  --text-secondary: var(--p-text-secondary);
+  --text-muted: var(--p-text-muted);
+
+  --accent: var(--p-accent);            --accent-rgb: var(--p-accent-rgb);
+  --accent-light: var(--p-accent-light); --accent-light-rgb: var(--p-accent-light-rgb);
+  --accent-dark: var(--p-accent-dark);   --accent-dark-rgb: var(--p-accent-dark-rgb);
+  --accent-tint: rgb(var(--p-accent-rgb) / .12);
+  --gradient-accent: var(--p-accent);
+
+  --green: var(--p-green);   --green-rgb: var(--p-green-rgb);   --green-dim: rgb(var(--p-green-rgb) / 0.15);
+  --yellow: var(--p-yellow); --yellow-rgb: var(--p-yellow-rgb); --yellow-dim: rgb(var(--p-yellow-rgb) / 0.15);
+  --red: var(--p-red);       --red-rgb: var(--p-red-rgb);       --red-dim: rgb(var(--p-red-rgb) / 0.15);
+  --blue: var(--p-blue);     --blue-rgb: var(--p-blue-rgb);     --blue-dim: rgb(var(--p-blue-rgb) / 0.15);
+  --purple: var(--p-purple); --purple-rgb: var(--p-purple-rgb); --purple-dim: rgb(var(--p-purple-rgb) / 0.15);
+  --teal: var(--p-teal);     --teal-rgb: var(--p-teal-rgb);     --teal-dim: rgb(var(--p-teal-rgb) / 0.15);
+
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
   --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
   --shadow-lg: 0 10px 40px rgba(0,0,0,0.5);
-  --shadow-glow: 0 0 30px rgba(255, 96, 0,0.15);
-  --shadow-glow-strong: 0 0 60px rgba(255, 96, 0,0.25);
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, Helvetica, Arial, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
 }

@@ -80,7 +80,7 @@ export default function WhatIsCSPMScan() {
         const text = pre.innerText;
         (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject())
           .catch(() => { const ta = Object.assign(document.createElement('textarea'), { value: text, style: 'position:fixed;opacity:0' }); document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); })
-          .finally(() => { btn.textContent = '✓ Copied!'; btn.style.color = '#06d6a0'; setTimeout(() => { btn.textContent = 'Copy'; btn.style.color = ''; }, 2000); });
+          .finally(() => { btn.textContent = '✓ Copied!'; btn.style.color = 'var(--green)'; setTimeout(() => { btn.textContent = 'Copy'; btn.style.color = ''; }, 2000); });
       };
 
       /* 7. BACK TO TOP */
@@ -107,7 +107,7 @@ export default function WhatIsCSPMScan() {
         if (!t) {
           t = document.createElement('div');
           t.id = 'sc-toast';
-          t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#FF6000;color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgba(255, 96, 0,.4);opacity:0;transition:opacity .3s;pointer-events:none';
+          t.style.cssText = 'position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:.6rem 1.4rem;border-radius:100px;font-weight:600;font-size:.83rem;z-index:9999;box-shadow:0 6px 24px rgb(var(--accent-rgb) / .4);opacity:0;transition:opacity .3s;pointer-events:none';
           document.body.appendChild(t);
         }
         t.textContent = msg;
@@ -159,10 +159,7 @@ export default function WhatIsCSPMScan() {
         <meta property="og:description" content="A complete guide to CSPM scans, how they work, what they find, and how to use them to stay continuously audit-ready across AWS, Azure, and GCP." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://seccomply.net/resources/blog/what-is-cspm-scan" />
-        <link rel="canonical" href="https://seccomply.net/resources/blog/what-is-cspm-scan" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        <link rel="canonical" href="https://seccomply.net/resources/blog/what-is-cspm-scan" />        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
             {"@type":"Article","headline":"What is a CSPM Scan? Cloud Security Posture Management Explained","author":{"@type":"Person","name":"Soham Sawant","jobTitle":"Cybersecurity Expert & Technical Writer","worksFor":{"@type":"Organization","name":"SecComply"}},"publisher":{"@type":"Organization","name":"SecComply","logo":{"@type":"ImageObject","url":"https://seccomply.net/assets/images/logo.png"}},"datePublished":"2026-03-10","dateModified":"2026-03-10","mainEntityOfPage":"https://seccomply.net/resources/blog/what-is-cspm-scan"},
@@ -173,12 +170,10 @@ export default function WhatIsCSPMScan() {
       </Head>
 
       <style jsx global>{`
-
-    :root{--cy:#FF6000;--cy2:#d0521f;--glow:rgba(255, 96, 0,.12);--bg:#020617;--bgc:#0B1120;--bgc2:#0F172A;--tx:#fff;--tb:#c8d6e5;--tm:#6a8aaa;--bo:rgba(255, 96, 0,.2);--bs:rgba(255,255,255,.06);--red:#ff4d6d;--am:#ffb703;--gr:#06d6a0;--serif:'Inter',sans-serif;--sans:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--bg);color:var(--tb);line-height:1.75;-webkit-font-smoothing:antialiased}
-    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#FF6000,#FF8A3D);z-index:9999;transition:width .1s linear}
+    #reading-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-light));z-index:9999;transition:width .1s linear}
     .breadcrumb{max-width:1280px;margin:0 auto;padding:1.25rem 2rem 0;display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--tm)}
     .breadcrumb a{color:var(--tm);text-decoration:none;transition:color .2s}
     .breadcrumb a:hover{color:var(--cy)}
@@ -187,14 +182,14 @@ export default function WhatIsCSPMScan() {
     .cspm-hero-badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
     .badge{display:inline-flex;align-items:center;gap:5px;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
     .badge-cy{background:rgba(0,200,224,.1);color:var(--cy);border:1px solid rgba(0,200,224,.25)}
-    .badge-bl{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
-    .badge-gr{background:rgba(6,214,160,.1);color:var(--gr);border:1px solid rgba(6,214,160,.25)}
+    .badge-bl{background:rgb(var(--purple-rgb) / .1);color:var(--purple);border:1px solid rgb(var(--purple-rgb) / .25)}
+    .badge-gr{background:rgb(var(--green-rgb) / .1);color:var(--gr);border:1px solid rgb(var(--green-rgb) / .25)}
     .cspm-hero-h1{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,3rem);font-weight:700;color:var(--tx);line-height:1.2;max-width:780px;margin-bottom:1.1rem}
     .cspm-hero-h1 em{font-style:italic;color:var(--cy)}
     .cspm-hero-sub{font-size:1.04rem;color:var(--tb);max-width:680px;margin-bottom:2rem;line-height:1.72}
     /* Author card */
     .cspm-author-strip{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:14px;margin-bottom:2.5rem;flex-wrap:wrap}
-    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(255, 96, 0,.3)}
+    .cspm-author-strip .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgb(var(--accent-rgb) / .3)}
     .cspm-author-strip .author-info{flex:1;min-width:0}
     .cspm-author-strip .name{font-weight:700;font-size:.95rem;color:var(--tx);margin-bottom:3px}
     .cspm-author-strip .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;margin-bottom:2px}
@@ -223,20 +218,20 @@ export default function WhatIsCSPMScan() {
     .def-box p{font-size:.97rem;color:var(--tx)!important;margin-bottom:0!important;line-height:1.7}
     .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
     .stat-card{background:var(--bgc);border:1px solid var(--bo);border-radius:14px;padding:1.5rem;text-align:center;position:relative;overflow:hidden}
-    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FF6000,#FF8A3D)}
+    .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-light))}
     .stat-n{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:var(--cy);line-height:1;margin-bottom:.4rem}
     .stat-l{font-size:.75rem;color:var(--tm);line-height:1.4}
     .callout{border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;display:flex;gap:.9rem;align-items:flex-start}
-    .co-info{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2)}
-    .co-warn{background:rgba(255,183,3,.06);border:1px solid rgba(255,183,3,.2)}
-    .co-danger{background:rgba(255,77,109,.06);border:1px solid rgba(255,77,109,.2)}
+    .co-info{background:rgb(var(--purple-rgb) / .07);border:1px solid rgb(var(--purple-rgb) / .2)}
+    .co-warn{background:rgb(var(--yellow-rgb) / .06);border:1px solid rgb(var(--yellow-rgb) / .2)}
+    .co-danger{background:rgb(var(--red-rgb) / .06);border:1px solid rgb(var(--red-rgb) / .2)}
     .co-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
     .co-body p{margin-bottom:0!important;font-size:.89rem!important}
     .co-body strong{display:block;margin-bottom:.3rem;font-size:.82rem;color:var(--tx)}
     .feat-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:.65rem}
     .feat-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--bgc2);border:1px solid var(--bs);border-radius:10px;transition:border-color .2s,background .2s}
     .feat-list li:hover{border-color:var(--bo);background:var(--bgc)}
-    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#FF6000,#FF8A3D);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0}
+    .f-num{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0}
     .f-body strong{display:block;color:var(--tx);font-size:.89rem;margin-bottom:3px}
     .f-body span{font-size:.83rem;color:var(--tm)}
     .code-block{background:#07111c;border:1px solid rgba(0,200,224,.15);border-radius:12px;margin:2rem 0;overflow:hidden}
@@ -263,7 +258,7 @@ export default function WhatIsCSPMScan() {
     .faq-a{display:none;padding:1.15rem 1.5rem;border-top:1px solid var(--bs);background:var(--bgc)}
     .faq-item.open .faq-a{display:block}
     .faq-a p{font-size:.89rem!important;margin-bottom:0!important}
-    .cta-banner{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
+    .cta-banner{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0}
     .cta-banner h3{font-family:var(--serif);font-size:1.5rem;color:var(--tx);margin-bottom:.7rem}
     .cta-banner p{font-size:.92rem;color:var(--tb);margin-bottom:1.5rem!important;max-width:500px;margin-left:auto;margin-right:auto}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -280,7 +275,7 @@ export default function WhatIsCSPMScan() {
     .sb-title{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:.85rem}
     .sb-toc{list-style:none;display:flex;flex-direction:column;gap:.22rem}
     .sb-toc a{display:block;padding:.4rem .65rem;border-radius:8px;color:var(--tm);text-decoration:none;font-size:.79rem;transition:all .2s;border-left:2px solid transparent}
-    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgba(255, 96, 0,.07);border-left-color:var(--cy)}
+    .sb-toc a:hover,.sb-toc a.active{color:var(--cy);background:rgb(var(--accent-rgb) / .07);border-left-color:var(--cy)}
     .rel-links{list-style:none;display:flex;flex-direction:column;gap:.32rem}
     .rel-links a{display:flex;align-items:center;gap:7px;color:var(--tb);text-decoration:none;font-size:.81rem;padding:.42rem 0;border-bottom:1px solid var(--bs);transition:color .2s}
     .rel-links a:last-child{border-bottom:none}
@@ -288,7 +283,7 @@ export default function WhatIsCSPMScan() {
     .tag-cloud{display:flex;flex-wrap:wrap;gap:.42rem}
     .tag{padding:.26rem .68rem;border:1px solid var(--bs);border-radius:6px;font-size:.68rem;color:var(--tm);cursor:default;transition:all .2s}
     .tag:hover{border-color:var(--cy);color:var(--cy);background:var(--glow)}
-    .sb-cta{background:linear-gradient(135deg,rgba(255, 96, 0,.08),rgba(255, 96, 0,.03));border:1px solid rgba(255, 96, 0,.25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
+    .sb-cta{background:linear-gradient(135deg,rgb(var(--accent-rgb) / .08),rgb(var(--accent-rgb) / .03));border:1px solid rgb(var(--accent-rgb) / .25);border-radius:14px;padding:1.55rem 1.35rem;text-align:center}
     .sb-cta h4{font-family:var(--serif);font-size:.98rem;color:var(--tx);margin-bottom:.5rem}
     .sb-cta p{font-size:.77rem;color:var(--tm);margin-bottom:.9rem!important}
     .sb-cta-btn{display:block;background:var(--cy);color:#fff;padding:.58rem 1rem;border-radius:8px;font-weight:700;font-size:.79rem;text-decoration:none;transition:background .2s}
@@ -360,54 +355,54 @@ export default function WhatIsCSPMScan() {
   <div className="img-wrap">
     <svg viewBox="0 0 960 440" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'linear-gradient(160deg,#071728 0%,#040f1b 100%)'}}>
       <defs>
-        <linearGradient id="gCy" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FF6000"/><stop offset="100%" stop-color="#d0521f"/></linearGradient>
+        <linearGradient id="gCy" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="var(--accent)"/><stop offset="100%" stop-color="var(--cy2)"/></linearGradient>
         <linearGradient id="gVi" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7b2ff7"/><stop offset="100%" stop-color="#5b1ed4"/></linearGradient>
-        <linearGradient id="gGr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#06d6a0"/><stop offset="100%" stop-color="#04b080"/></linearGradient>
-        <linearGradient id="gAm" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#ffb703"/><stop offset="100%" stop-color="#e09500"/></linearGradient>
-        <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="13" cy="13" r=".9" fill="rgba(255, 96, 0,0.055)"/></pattern>
+        <linearGradient id="gGr" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="var(--green)"/><stop offset="100%" stop-color="var(--green)"/></linearGradient>
+        <linearGradient id="gAm" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="var(--yellow)"/><stop offset="100%" stop-color="#e09500"/></linearGradient>
+        <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="13" cy="13" r=".9" fill="rgb(var(--accent-rgb) / 0.055)"/></pattern>
       </defs>
       <rect width="960" height="440" fill="url(#dots)"/>
 
       
       
-      <rect x="22" y="24" width="185" height="110" rx="11" fill="#091d2e" stroke="rgba(255, 96, 0,0.18)" stroke-width="1"/>
+      <rect x="22" y="24" width="185" height="110" rx="11" fill="#091d2e" stroke="rgb(var(--accent-rgb) / 0.18)" stroke-width="1"/>
       <rect x="22" y="24" width="185" height="4" rx="2" fill="#ff9900"/>
       <text x="44" y="52" fill="#ff9900" font-size="13" font-weight="700" font-family="sans-serif">AWS</text>
       <text x="44" y="68" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">3 regions · 847 resources</text>
       <rect x="44" y="76" width="100" height="7" rx="3.5" fill="rgba(255,255,255,0.05)"/>
       <rect x="44" y="76" width="90" height="7" rx="3.5" fill="url(#gCy)"/>
-      <text x="150" y="83" fill="#FF6000" font-size="8" font-weight="700" font-family="sans-serif">90%</text>
-      <text x="44" y="101" fill="#06d6a0" font-size="9" font-weight="600" font-family="sans-serif">✓ 762 controls passing</text>
-      <text x="44" y="118" fill="#ff4d6d" font-size="9" font-weight="600" font-family="sans-serif">⚠ 2 open findings</text>
+      <text x="150" y="83" fill="var(--accent)" font-size="8" font-weight="700" font-family="sans-serif">90%</text>
+      <text x="44" y="101" fill="var(--green)" font-size="9" font-weight="600" font-family="sans-serif">✓ 762 controls passing</text>
+      <text x="44" y="118" fill="var(--red)" font-size="9" font-weight="600" font-family="sans-serif">⚠ 2 open findings</text>
 
       
-      <rect x="22" y="152" width="185" height="110" rx="11" fill="#091d2e" stroke="rgba(255, 96, 0,0.18)" stroke-width="1"/>
+      <rect x="22" y="152" width="185" height="110" rx="11" fill="#091d2e" stroke="rgb(var(--accent-rgb) / 0.18)" stroke-width="1"/>
       <rect x="22" y="152" width="185" height="4" rx="2" fill="#0078d4"/>
       <text x="44" y="180" fill="#0078d4" font-size="13" font-weight="700" font-family="sans-serif">Microsoft Azure</text>
       <text x="44" y="196" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">2 regions · 612 resources</text>
       <rect x="44" y="204" width="100" height="7" rx="3.5" fill="rgba(255,255,255,0.05)"/>
       <rect x="44" y="204" width="84" height="7" rx="3.5" fill="url(#gVi)"/>
-      <text x="150" y="211" fill="#818cf8" font-size="8" font-weight="700" font-family="sans-serif">84%</text>
-      <text x="44" y="229" fill="#06d6a0" font-size="9" font-weight="600" font-family="sans-serif">✓ 514 controls passing</text>
-      <text x="44" y="246" fill="#ffb703" font-size="9" font-weight="600" font-family="sans-serif">⚡ 5 pending remediation</text>
+      <text x="150" y="211" fill="var(--purple)" font-size="8" font-weight="700" font-family="sans-serif">84%</text>
+      <text x="44" y="229" fill="var(--green)" font-size="9" font-weight="600" font-family="sans-serif">✓ 514 controls passing</text>
+      <text x="44" y="246" fill="var(--yellow)" font-size="9" font-weight="600" font-family="sans-serif">⚡ 5 pending remediation</text>
 
       
-      <rect x="22" y="280" width="185" height="130" rx="11" fill="#0f1c2a" stroke="rgba(255,77,109,0.28)" stroke-width="1"/>
+      <rect x="22" y="280" width="185" height="130" rx="11" fill="#0f1c2a" stroke="rgb(var(--red-rgb) / 0.28)" stroke-width="1"/>
       <rect x="22" y="280" width="185" height="4" rx="2" fill="#34a853"/>
       <text x="44" y="308" fill="#34a853" font-size="13" font-weight="700" font-family="sans-serif">Google Cloud</text>
       <text x="44" y="324" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">2 regions · 384 resources</text>
       <rect x="44" y="332" width="100" height="7" rx="3.5" fill="rgba(255,255,255,0.05)"/>
       <rect x="44" y="332" width="63" height="7" rx="3.5" fill="url(#gAm)"/>
-      <text x="150" y="339" fill="#ffb703" font-size="8" font-weight="700" font-family="sans-serif">63%</text>
-      <circle cx="34" cy="362" r="4" fill="#ff4d6d"/>
-      <text x="44" y="366" fill="#ff4d6d" font-size="9" font-weight="600" font-family="sans-serif">CRITICAL: Public bucket exposed</text>
-      <circle cx="34" cy="382" r="4" fill="#ffb703"/>
-      <text x="44" y="386" fill="#ffb703" font-size="9" font-weight="600" font-family="sans-serif">HIGH: SSH 0.0.0.0/0 open</text>
-      <circle cx="34" cy="400" r="4" fill="#ffb703"/>
-      <text x="44" y="404" fill="#ffb703" font-size="9" font-weight="600" font-family="sans-serif">HIGH: Root MFA missing</text>
+      <text x="150" y="339" fill="var(--yellow)" font-size="8" font-weight="700" font-family="sans-serif">63%</text>
+      <circle cx="34" cy="362" r="4" fill="var(--red)"/>
+      <text x="44" y="366" fill="var(--red)" font-size="9" font-weight="600" font-family="sans-serif">CRITICAL: Public bucket exposed</text>
+      <circle cx="34" cy="382" r="4" fill="var(--yellow)"/>
+      <text x="44" y="386" fill="var(--yellow)" font-size="9" font-weight="600" font-family="sans-serif">HIGH: SSH 0.0.0.0/0 open</text>
+      <circle cx="34" cy="400" r="4" fill="var(--yellow)"/>
+      <text x="44" y="404" fill="var(--yellow)" font-size="9" font-weight="600" font-family="sans-serif">HIGH: Root MFA missing</text>
 
       
-      <line x1="225" y1="20" x2="225" y2="420" stroke="rgba(255, 96, 0,0.07)" stroke-width="1"/>
+      <line x1="225" y1="20" x2="225" y2="420" stroke="rgb(var(--accent-rgb) / 0.07)" stroke-width="1"/>
 
       
       <text x="390" y="52" text-anchor="middle" fill="rgba(200,214,229,0.85)" font-size="14" font-weight="700" font-family="sans-serif">Overall Posture Score</text>
@@ -418,82 +413,82 @@ export default function WhatIsCSPMScan() {
       <circle cx="390" cy="175" r="64" fill="none" stroke="url(#gCy)" stroke-width="11"
         stroke-dasharray="321 402" stroke-dashoffset="100" stroke-linecap="round"/>
       <text x="390" y="168" text-anchor="middle" fill="#fff" font-size="26" font-weight="700" font-family="sans-serif">79%</text>
-      <text x="390" y="185" text-anchor="middle" fill="rgba(255, 96, 0,0.7)" font-size="9" font-family="sans-serif">Cloud Posture</text>
+      <text x="390" y="185" text-anchor="middle" fill="rgb(var(--accent-rgb) / 0.7)" font-size="9" font-family="sans-serif">Cloud Posture</text>
       <text x="390" y="200" text-anchor="middle" fill="rgba(200,214,229,0.35)" font-size="8" font-family="sans-serif">↑ 4.2% from last week</text>
 
       
-      <rect x="272" y="258" width="88" height="56" rx="9" fill="#091826" stroke="rgba(6,214,160,0.18)" stroke-width="1"/>
-      <text x="316" y="281" text-anchor="middle" fill="#06d6a0" font-size="18" font-weight="700" font-family="sans-serif">1,459</text>
+      <rect x="272" y="258" width="88" height="56" rx="9" fill="var(--bg-secondary)" stroke="rgb(var(--green-rgb) / 0.18)" stroke-width="1"/>
+      <text x="316" y="281" text-anchor="middle" fill="var(--green)" font-size="18" font-weight="700" font-family="sans-serif">1,459</text>
       <text x="316" y="296" text-anchor="middle" fill="rgba(200,214,229,0.45)" font-size="8" font-family="sans-serif">Passing Controls</text>
-      <text x="316" y="308" text-anchor="middle" fill="rgba(6,214,160,0.55)" font-size="7.5" font-family="sans-serif">↑ 12 fixed this week</text>
+      <text x="316" y="308" text-anchor="middle" fill="rgb(var(--green-rgb) / 0.55)" font-size="7.5" font-family="sans-serif">↑ 12 fixed this week</text>
 
-      <rect x="370" y="258" width="88" height="56" rx="9" fill="#091826" stroke="rgba(255,77,109,0.18)" stroke-width="1"/>
-      <text x="414" y="281" text-anchor="middle" fill="#ff4d6d" font-size="18" font-weight="700" font-family="sans-serif">10</text>
+      <rect x="370" y="258" width="88" height="56" rx="9" fill="var(--bg-secondary)" stroke="rgb(var(--red-rgb) / 0.18)" stroke-width="1"/>
+      <text x="414" y="281" text-anchor="middle" fill="var(--red)" font-size="18" font-weight="700" font-family="sans-serif">10</text>
       <text x="414" y="296" text-anchor="middle" fill="rgba(200,214,229,0.45)" font-size="8" font-family="sans-serif">Open Findings</text>
-      <text x="414" y="308" text-anchor="middle" fill="rgba(255,77,109,0.55)" font-size="7.5" font-family="sans-serif">3 Critical · 7 High</text>
+      <text x="414" y="308" text-anchor="middle" fill="rgb(var(--red-rgb) / 0.55)" font-size="7.5" font-family="sans-serif">3 Critical · 7 High</text>
 
       
       <text x="272" y="342" fill="rgba(200,214,229,0.6)" font-size="9" font-weight="600" font-family="sans-serif">Framework Coverage</text>
       <text x="272" y="362" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">ISO 27001</text>
       <rect x="338" y="354" width="118" height="8" rx="4" fill="rgba(255,255,255,0.04)"/>
       <rect x="338" y="354" width="100" height="8" rx="4" fill="url(#gCy)"/>
-      <text x="461" y="362" fill="rgba(255, 96, 0,0.85)" font-size="8" font-weight="700" font-family="sans-serif">85%</text>
+      <text x="461" y="362" fill="rgb(var(--accent-rgb) / 0.85)" font-size="8" font-weight="700" font-family="sans-serif">85%</text>
 
       <text x="272" y="380" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">SOC 2 TSC</text>
       <rect x="338" y="372" width="118" height="8" rx="4" fill="rgba(255,255,255,0.04)"/>
       <rect x="338" y="372" width="106" height="8" rx="4" fill="url(#gVi)"/>
-      <text x="461" y="380" fill="rgba(129,140,248,0.9)" font-size="8" font-weight="700" font-family="sans-serif">90%</text>
+      <text x="461" y="380" fill="rgb(var(--purple-rgb) / 0.9)" font-size="8" font-weight="700" font-family="sans-serif">90%</text>
 
       <text x="272" y="398" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">HIPAA SR</text>
       <rect x="338" y="390" width="118" height="8" rx="4" fill="rgba(255,255,255,0.04)"/>
       <rect x="338" y="390" width="83" height="8" rx="4" fill="url(#gGr)"/>
-      <text x="461" y="398" fill="rgba(6,214,160,0.85)" font-size="8" font-weight="700" font-family="sans-serif">70%</text>
+      <text x="461" y="398" fill="rgb(var(--green-rgb) / 0.85)" font-size="8" font-weight="700" font-family="sans-serif">70%</text>
 
       
-      <line x1="490" y1="20" x2="490" y2="420" stroke="rgba(255, 96, 0,0.07)" stroke-width="1"/>
+      <line x1="490" y1="20" x2="490" y2="420" stroke="rgb(var(--accent-rgb) / 0.07)" stroke-width="1"/>
 
       
       <text x="512" y="50" fill="rgba(200,214,229,0.85)" font-size="13" font-weight="700" font-family="sans-serif">🔴  Live Findings Feed</text>
       <text x="512" y="65" fill="rgba(100,160,200,0.45)" font-size="8.5" font-family="sans-serif">Auto-updating · event-driven scanning</text>
 
       
-      <rect x="512" y="76" width="428" height="64" rx="9" fill="#0c1f2e" stroke="rgba(255,77,109,0.3)" stroke-width="1"/>
-      <rect x="512" y="76" width="3" height="64" rx="1.5" fill="#ff4d6d"/>
-      <rect x="522" y="84" width="52" height="16" rx="4" fill="rgba(255,77,109,0.18)"/>
-      <text x="548" y="96" text-anchor="middle" fill="#ff4d6d" font-size="8" font-weight="700" font-family="sans-serif">CRITICAL</text>
+      <rect x="512" y="76" width="428" height="64" rx="9" fill="#0c1f2e" stroke="rgb(var(--red-rgb) / 0.3)" stroke-width="1"/>
+      <rect x="512" y="76" width="3" height="64" rx="1.5" fill="var(--red)"/>
+      <rect x="522" y="84" width="52" height="16" rx="4" fill="rgb(var(--red-rgb) / 0.18)"/>
+      <text x="548" y="96" text-anchor="middle" fill="var(--red)" font-size="8" font-weight="700" font-family="sans-serif">CRITICAL</text>
       <text x="582" y="96" fill="rgba(200,214,229,0.4)" font-size="8" font-family="sans-serif">GCP · 2 min ago</text>
       <text x="522" y="113" fill="rgba(200,214,229,0.92)" font-size="10" font-weight="600" font-family="sans-serif">Storage bucket "prod-backups-v2" is publicly accessible</text>
       <text x="522" y="130" fill="rgba(200,214,229,0.38)" font-size="8" font-family="sans-serif">CIS GCP 5.1 · ISO 27001 A.8.24 · SOC 2 CC6.1</text>
 
       
-      <rect x="512" y="152" width="428" height="64" rx="9" fill="#0c1f2e" stroke="rgba(255,183,3,0.25)" stroke-width="1"/>
-      <rect x="512" y="152" width="3" height="64" rx="1.5" fill="#ffb703"/>
-      <rect x="522" y="160" width="38" height="16" rx="4" fill="rgba(255,183,3,0.14)"/>
-      <text x="541" y="172" text-anchor="middle" fill="#ffb703" font-size="8" font-weight="700" font-family="sans-serif">HIGH</text>
+      <rect x="512" y="152" width="428" height="64" rx="9" fill="#0c1f2e" stroke="rgb(var(--yellow-rgb) / 0.25)" stroke-width="1"/>
+      <rect x="512" y="152" width="3" height="64" rx="1.5" fill="var(--yellow)"/>
+      <rect x="522" y="160" width="38" height="16" rx="4" fill="rgb(var(--yellow-rgb) / 0.14)"/>
+      <text x="541" y="172" text-anchor="middle" fill="var(--yellow)" font-size="8" font-weight="700" font-family="sans-serif">HIGH</text>
       <text x="568" y="172" fill="rgba(200,214,229,0.4)" font-size="8" font-family="sans-serif">GCP · 8 min ago</text>
       <text x="522" y="189" fill="rgba(200,214,229,0.92)" font-size="10" font-weight="600" font-family="sans-serif">SSH port 22 open to 0.0.0.0/0 on "analytics-vm"</text>
       <text x="522" y="206" fill="rgba(200,214,229,0.38)" font-size="8" font-family="sans-serif">CIS GCP 3.6 · ISO 27001 A.8.20 · HIPAA §164.312</text>
 
       
-      <rect x="512" y="228" width="428" height="64" rx="9" fill="#0c1f2e" stroke="rgba(255,183,3,0.2)" stroke-width="1"/>
-      <rect x="512" y="228" width="3" height="64" rx="1.5" fill="#ffb703"/>
-      <rect x="522" y="236" width="38" height="16" rx="4" fill="rgba(255,183,3,0.14)"/>
-      <text x="541" y="248" text-anchor="middle" fill="#ffb703" font-size="8" font-weight="700" font-family="sans-serif">HIGH</text>
+      <rect x="512" y="228" width="428" height="64" rx="9" fill="#0c1f2e" stroke="rgb(var(--yellow-rgb) / 0.2)" stroke-width="1"/>
+      <rect x="512" y="228" width="3" height="64" rx="1.5" fill="var(--yellow)"/>
+      <rect x="522" y="236" width="38" height="16" rx="4" fill="rgb(var(--yellow-rgb) / 0.14)"/>
+      <text x="541" y="248" text-anchor="middle" fill="var(--yellow)" font-size="8" font-weight="700" font-family="sans-serif">HIGH</text>
       <text x="568" y="248" fill="rgba(200,214,229,0.4)" font-size="8" font-family="sans-serif">GCP · 15 min ago</text>
       <text x="522" y="265" fill="rgba(200,214,229,0.92)" font-size="10" font-weight="600" font-family="sans-serif">Root account missing MFA across 3 GCP projects</text>
       <text x="522" y="282" fill="rgba(200,214,229,0.38)" font-size="8" font-family="sans-serif">CIS v1.4 1.6 · ISO 27001 A.5.17 · SOC 2 CC6.1</text>
 
       
-      <rect x="512" y="304" width="428" height="52" rx="9" fill="#0c1f2e" stroke="rgba(129,140,248,0.2)" stroke-width="1"/>
-      <rect x="512" y="304" width="3" height="52" rx="1.5" fill="#818cf8"/>
-      <text x="522" y="324" fill="#818cf8" font-size="8" font-weight="700" font-family="sans-serif">MEDIUM</text>
+      <rect x="512" y="304" width="428" height="52" rx="9" fill="#0c1f2e" stroke="rgb(var(--purple-rgb) / 0.2)" stroke-width="1"/>
+      <rect x="512" y="304" width="3" height="52" rx="1.5" fill="var(--purple)"/>
+      <text x="522" y="324" fill="var(--purple)" font-size="8" font-weight="700" font-family="sans-serif">MEDIUM</text>
       <text x="574" y="324" fill="rgba(200,214,229,0.4)" font-size="8" font-family="sans-serif">AWS · 32 min ago</text>
       <text x="522" y="344" fill="rgba(200,214,229,0.88)" font-size="10" font-weight="600" font-family="sans-serif">S3 server access logging disabled on 4 production buckets</text>
 
       
-      <rect x="512" y="368" width="428" height="46" rx="9" fill="#081822" stroke="rgba(6,214,160,0.14)" stroke-width="1"/>
-      <rect x="512" y="368" width="3" height="46" rx="1.5" fill="#06d6a0"/>
-      <text x="522" y="388" fill="#06d6a0" font-size="8" font-weight="700" font-family="sans-serif">PASSING</text>
+      <rect x="512" y="368" width="428" height="46" rx="9" fill="#081822" stroke="rgb(var(--green-rgb) / 0.14)" stroke-width="1"/>
+      <rect x="512" y="368" width="3" height="46" rx="1.5" fill="var(--green)"/>
+      <text x="522" y="388" fill="var(--green)" font-size="8" font-weight="700" font-family="sans-serif">PASSING</text>
       <text x="568" y="388" fill="rgba(200,214,229,0.4)" font-size="8" font-family="sans-serif">AWS · all regions · just now</text>
       <text x="522" y="405" fill="rgba(200,214,229,0.7)" font-size="9.5" font-family="sans-serif">KMS encryption enabled on all RDS instances ✓</text>
     </svg>
@@ -557,48 +552,48 @@ export default function WhatIsCSPMScan() {
 
       
       <div style={{margin:'2.5rem 0'}}>
-        <svg viewBox="0 0 820 210" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'#06121e',borderRadius:'14px',border:'1px solid rgba(255, 96, 0,0.12)'}}>
+        <svg viewBox="0 0 820 210" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'#06121e',borderRadius:'14px',border:'1px solid rgb(var(--accent-rgb) / 0.12)'}}>
           <defs>
-            <marker id="ar" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto"><polygon points="0 0,7 3.5,0 7" fill="rgba(255, 96, 0,0.45)"/></marker>
-            <linearGradient id="stepBg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="rgba(255, 96, 0,0.14)"/><stop offset="100%" stop-color="rgba(255, 96, 0,0.03)"/></linearGradient>
+            <marker id="ar" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto"><polygon points="0 0,7 3.5,0 7" fill="rgb(var(--accent-rgb) / 0.45)"/></marker>
+            <linearGradient id="stepBg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="rgb(var(--accent-rgb) / 0.14)"/><stop offset="100%" stop-color="rgb(var(--accent-rgb) / 0.03)"/></linearGradient>
           </defs>
           
-          <rect x="22" y="54" width="118" height="102" rx="12" fill="url(#stepBg)" stroke="rgba(255, 96, 0,0.28)" stroke-width="1.5"/>
+          <rect x="22" y="54" width="118" height="102" rx="12" fill="url(#stepBg)" stroke="rgb(var(--accent-rgb) / 0.28)" stroke-width="1.5"/>
           <text x="81" y="88" text-anchor="middle" font-size="24" font-family="sans-serif">🔍</text>
           <text x="81" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" font-family="sans-serif">DISCOVER</text>
           <text x="81" y="126" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">Scan all cloud</text>
           <text x="81" y="140" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">resources 24/7</text>
-          <line x1="142" y1="105" x2="176" y2="105" stroke="rgba(255, 96, 0,0.38)" stroke-width="1.5" marker-end="url(#ar)"/>
+          <line x1="142" y1="105" x2="176" y2="105" stroke="rgb(var(--accent-rgb) / 0.38)" stroke-width="1.5" marker-end="url(#ar)"/>
           
-          <rect x="180" y="54" width="118" height="102" rx="12" fill="url(#stepBg)" stroke="rgba(255, 96, 0,0.28)" stroke-width="1.5"/>
+          <rect x="180" y="54" width="118" height="102" rx="12" fill="url(#stepBg)" stroke="rgb(var(--accent-rgb) / 0.28)" stroke-width="1.5"/>
           <text x="239" y="88" text-anchor="middle" font-size="24" font-family="sans-serif">⚖️</text>
           <text x="239" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" font-family="sans-serif">ASSESS</text>
           <text x="239" y="126" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">vs CIS / ISO 27001</text>
           <text x="239" y="140" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">SOC 2 / HIPAA</text>
-          <line x1="300" y1="105" x2="334" y2="105" stroke="rgba(255, 96, 0,0.38)" stroke-width="1.5" marker-end="url(#ar)"/>
+          <line x1="300" y1="105" x2="334" y2="105" stroke="rgb(var(--accent-rgb) / 0.38)" stroke-width="1.5" marker-end="url(#ar)"/>
           
-          <rect x="338" y="54" width="118" height="102" rx="12" fill="rgba(255,77,109,0.07)" stroke="rgba(255,77,109,0.28)" stroke-width="1.5"/>
+          <rect x="338" y="54" width="118" height="102" rx="12" fill="rgb(var(--red-rgb) / 0.07)" stroke="rgb(var(--red-rgb) / 0.28)" stroke-width="1.5"/>
           <text x="397" y="88" text-anchor="middle" font-size="24" font-family="sans-serif">🚨</text>
           <text x="397" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" font-family="sans-serif">ALERT</text>
           <text x="397" y="126" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">Prioritise by risk</text>
           <text x="397" y="140" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">severity &amp; exposure</text>
-          <line x1="458" y1="105" x2="492" y2="105" stroke="rgba(255, 96, 0,0.38)" stroke-width="1.5" marker-end="url(#ar)"/>
+          <line x1="458" y1="105" x2="492" y2="105" stroke="rgb(var(--accent-rgb) / 0.38)" stroke-width="1.5" marker-end="url(#ar)"/>
           
-          <rect x="496" y="54" width="118" height="102" rx="12" fill="rgba(6,214,160,0.07)" stroke="rgba(6,214,160,0.28)" stroke-width="1.5"/>
+          <rect x="496" y="54" width="118" height="102" rx="12" fill="rgb(var(--green-rgb) / 0.07)" stroke="rgb(var(--green-rgb) / 0.28)" stroke-width="1.5"/>
           <text x="555" y="88" text-anchor="middle" font-size="24" font-family="sans-serif">🔧</text>
           <text x="555" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" font-family="sans-serif">REMEDIATE</text>
           <text x="555" y="126" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">Auto-fix or IaC</text>
           <text x="555" y="140" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">guided playbooks</text>
-          <line x1="616" y1="105" x2="650" y2="105" stroke="rgba(255, 96, 0,0.38)" stroke-width="1.5" marker-end="url(#ar)"/>
+          <line x1="616" y1="105" x2="650" y2="105" stroke="rgb(var(--accent-rgb) / 0.38)" stroke-width="1.5" marker-end="url(#ar)"/>
           
-          <rect x="654" y="54" width="118" height="102" rx="12" fill="url(#stepBg)" stroke="rgba(255, 96, 0,0.28)" stroke-width="1.5"/>
+          <rect x="654" y="54" width="118" height="102" rx="12" fill="url(#stepBg)" stroke="rgb(var(--accent-rgb) / 0.28)" stroke-width="1.5"/>
           <text x="713" y="88" text-anchor="middle" font-size="24" font-family="sans-serif">📊</text>
           <text x="713" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" font-family="sans-serif">REPORT</text>
           <text x="713" y="126" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">Audit evidence</text>
           <text x="713" y="140" text-anchor="middle" fill="rgba(200,214,229,0.5)" font-size="8.5" font-family="sans-serif">compliance score</text>
           
-          <path d="M 772 162 Q 397 192 42 162" fill="none" stroke="rgba(255, 96, 0,0.14)" stroke-width="1" stroke-dasharray="5,4"/>
-          <text x="397" y="188" text-anchor="middle" fill="rgba(255, 96, 0,0.32)" font-size="8" font-family="sans-serif">Continuous loop, every config change triggers instant re-evaluation</text>
+          <path d="M 772 162 Q 397 192 42 162" fill="none" stroke="rgb(var(--accent-rgb) / 0.14)" stroke-width="1" stroke-dasharray="5,4"/>
+          <text x="397" y="188" text-anchor="middle" fill="rgb(var(--accent-rgb) / 0.32)" font-size="8" font-family="sans-serif">Continuous loop, every config change triggers instant re-evaluation</text>
         </svg>
         <p className="img-cap">Fig 2. The CSPM lifecycle, from continuous discovery through automated remediation to audit-ready compliance reporting.</p>
       </div>
@@ -660,14 +655,14 @@ export default function WhatIsCSPMScan() {
 
       
       <div style={{margin:'2rem 0'}}>
-        <svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'#06121e',borderRadius:'14px',border:'1px solid rgba(255, 96, 0,0.12)'}}>
-          <text x="360" y="30" text-anchor="middle" fill="rgba(255, 96, 0,0.72)" font-size="11" font-weight="700" font-family="sans-serif" letter-spacing="1.5">CSPM COMPLIANCE FRAMEWORK COVERAGE</text>
+        <svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',display:'block',background:'#06121e',borderRadius:'14px',border:'1px solid rgb(var(--accent-rgb) / 0.12)'}}>
+          <text x="360" y="30" text-anchor="middle" fill="rgb(var(--accent-rgb) / 0.72)" font-size="11" font-weight="700" font-family="sans-serif" letter-spacing="1.5">CSPM COMPLIANCE FRAMEWORK COVERAGE</text>
 
           <g transform="translate(55,52)">
             <text x="0" y="0" fill="rgba(200,214,229,0.68)" font-size="10" font-weight="600" font-family="sans-serif">ISO 27001</text>
             <rect x="0" y="8" width="530" height="17" rx="5" fill="rgba(255,255,255,0.04)"/>
             <rect x="0" y="8" width="451" height="17" rx="5" fill="url(#gCy)"/>
-            <text x="457" y="21" fill="rgba(255, 96, 0,0.9)" font-size="10" font-weight="700" font-family="sans-serif">85%</text>
+            <text x="457" y="21" fill="rgb(var(--accent-rgb) / 0.9)" font-size="10" font-weight="700" font-family="sans-serif">85%</text>
             <text x="510" y="21" fill="rgba(200,214,229,0.32)" font-size="8.5" font-family="sans-serif">94 controls</text>
           </g>
 
@@ -675,7 +670,7 @@ export default function WhatIsCSPMScan() {
             <text x="0" y="0" fill="rgba(200,214,229,0.68)" font-size="10" font-weight="600" font-family="sans-serif">SOC 2 TSC</text>
             <rect x="0" y="8" width="530" height="17" rx="5" fill="rgba(255,255,255,0.04)"/>
             <rect x="0" y="8" width="477" height="17" rx="5" fill="url(#gVi)"/>
-            <text x="483" y="21" fill="rgba(129,140,248,0.92)" font-size="10" font-weight="700" font-family="sans-serif">90%</text>
+            <text x="483" y="21" fill="rgb(var(--purple-rgb) / 0.92)" font-size="10" font-weight="700" font-family="sans-serif">90%</text>
             <text x="510" y="21" fill="rgba(200,214,229,0.32)" font-size="8.5" font-family="sans-serif">64 criteria</text>
           </g>
 
@@ -683,7 +678,7 @@ export default function WhatIsCSPMScan() {
             <text x="0" y="0" fill="rgba(200,214,229,0.68)" font-size="10" font-weight="600" font-family="sans-serif">HIPAA SR</text>
             <rect x="0" y="8" width="530" height="17" rx="5" fill="rgba(255,255,255,0.04)"/>
             <rect x="0" y="8" width="371" height="17" rx="5" fill="url(#gGr)"/>
-            <text x="377" y="21" fill="rgba(6,214,160,0.9)" font-size="10" font-weight="700" font-family="sans-serif">70%</text>
+            <text x="377" y="21" fill="rgb(var(--green-rgb) / 0.9)" font-size="10" font-weight="700" font-family="sans-serif">70%</text>
             <text x="510" y="21" fill="rgba(200,214,229,0.32)" font-size="8.5" font-family="sans-serif">42 safeguards</text>
           </g>
 
@@ -691,7 +686,7 @@ export default function WhatIsCSPMScan() {
             <text x="0" y="0" fill="rgba(200,214,229,0.68)" font-size="10" font-weight="600" font-family="sans-serif">PCI DSS v4</text>
             <rect x="0" y="8" width="530" height="17" rx="5" fill="rgba(255,255,255,0.04)"/>
             <rect x="0" y="8" width="424" height="17" rx="5" fill="url(#gAm)"/>
-            <text x="430" y="21" fill="rgba(255,183,3,0.9)" font-size="10" font-weight="700" font-family="sans-serif">80%</text>
+            <text x="430" y="21" fill="rgb(var(--yellow-rgb) / 0.9)" font-size="10" font-weight="700" font-family="sans-serif">80%</text>
             <text x="510" y="21" fill="rgba(200,214,229,0.32)" font-size="8.5" font-family="sans-serif">286 requirements</text>
           </g>
 
@@ -711,11 +706,11 @@ export default function WhatIsCSPMScan() {
             <tr><th>Category</th><th>Protects</th><th>Primary Use Case</th><th>ISO 27001</th><th>SOC 2</th></tr>
           </thead>
           <tbody>
-            <tr><td><strong style={{color:'#FF6000'}}>CSPM</strong></td><td>Cloud configuration &amp; posture</td><td>Misconfiguration detection, compliance</td><td><span className="tg-y">✓ High</span></td><td><span className="tg-y">✓ High</span></td></tr>
-            <tr><td><strong style={{color:'#818cf8'}}>CWPP</strong></td><td>Cloud workloads (VMs, containers)</td><td>Runtime protection, vuln management</td><td><span className="tg-m">⚡ Medium</span></td><td><span className="tg-m">⚡ Medium</span></td></tr>
-            <tr><td><strong style={{color:'#06d6a0'}}>CASB</strong></td><td>SaaS &amp; cloud app usage</td><td>Shadow IT discovery, DLP</td><td><span className="tg-m">⚡ Medium</span></td><td><span className="tg-n">✗ Low</span></td></tr>
-            <tr><td><strong style={{color:'#ffb703'}}>CIEM</strong></td><td>Cloud identities &amp; entitlements</td><td>Least-privilege, IAM analysis</td><td><span className="tg-y">✓ High</span></td><td><span className="tg-y">✓ High</span></td></tr>
-            <tr><td><strong style={{color:'#ff4d6d'}}>CNAPP</strong></td><td>Full cloud-native stack</td><td>Combined CSPM + CWPP + CIEM</td><td><span className="tg-y">✓ Highest</span></td><td><span className="tg-y">✓ Highest</span></td></tr>
+            <tr><td><strong style={{color:'var(--accent)'}}>CSPM</strong></td><td>Cloud configuration &amp; posture</td><td>Misconfiguration detection, compliance</td><td><span className="tg-y">✓ High</span></td><td><span className="tg-y">✓ High</span></td></tr>
+            <tr><td><strong style={{color:'var(--purple)'}}>CWPP</strong></td><td>Cloud workloads (VMs, containers)</td><td>Runtime protection, vuln management</td><td><span className="tg-m">⚡ Medium</span></td><td><span className="tg-m">⚡ Medium</span></td></tr>
+            <tr><td><strong style={{color:'var(--green)'}}>CASB</strong></td><td>SaaS &amp; cloud app usage</td><td>Shadow IT discovery, DLP</td><td><span className="tg-m">⚡ Medium</span></td><td><span className="tg-n">✗ Low</span></td></tr>
+            <tr><td><strong style={{color:'var(--yellow)'}}>CIEM</strong></td><td>Cloud identities &amp; entitlements</td><td>Least-privilege, IAM analysis</td><td><span className="tg-y">✓ High</span></td><td><span className="tg-y">✓ High</span></td></tr>
+            <tr><td><strong style={{color:'var(--red)'}}>CNAPP</strong></td><td>Full cloud-native stack</td><td>Combined CSPM + CWPP + CIEM</td><td><span className="tg-y">✓ Highest</span></td><td><span className="tg-y">✓ Highest</span></td></tr>
           </tbody>
         </table>
       </div>

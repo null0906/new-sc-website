@@ -34,18 +34,17 @@ export default function DxFSHyderabad26() {
 
       <style jsx global>{`
         :root {
-          --bg: #020617;
-          --surface: #0a1628;
-          --surface-2: #091826;
-          --accent: #FF6000;
-          --accent-soft: rgba(255, 96, 0, 0.15);
-          --accent-border: rgba(255, 96, 0, 0.3);
-          --text-primary: #f8fafc;
-          --text-body: #c8d6e5;
-          --text-muted: #94a3b8;
-          --cy: #06d6a0;
-          --bl: #818cf8;
-          --yl: #ffb703;
+          --bg: var(--bg-primary);
+          --surface: var(--bg-card);
+          --surface-2: var(--bg-secondary);
+          --accent-soft: rgb(var(--accent-rgb) / 0.15);
+          --accent-border: rgb(var(--accent-rgb) / 0.3);
+          --text-primary: var(--white);
+          --text-body: var(--text-primary);
+          --text-muted: var(--text-secondary);
+          --cy: var(--teal);
+          --bl: var(--purple);
+          --yl: var(--yellow);
         }
         body {
           background: var(--bg);
@@ -70,12 +69,12 @@ export default function DxFSHyderabad26() {
         /* ═══ HERO CARD ═══ */
         .event-hero-card {
           position: relative;
-          background: linear-gradient(135deg, rgba(255, 96, 0,0.08) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.08) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 24px;
           overflow: hidden;
           margin-bottom: 3rem;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+          box-shadow: 0 20px 60px rgb(var(--p-white-rgb) / 0.4);
         }
         .event-hero-card::before {
           content: '';
@@ -84,7 +83,7 @@ export default function DxFSHyderabad26() {
           right: -100px;
           width: 300px;
           height: 300px;
-          background: radial-gradient(circle, rgba(255, 96, 0,0.15), transparent 60%);
+          background: radial-gradient(circle, rgb(var(--accent-rgb) / 0.15), transparent 60%);
           pointer-events: none;
         }
         .event-hero-inner {
@@ -115,9 +114,9 @@ export default function DxFSHyderabad26() {
           letter-spacing: 0.05em;
         }
         .status-attended {
-          background: rgba(129,140,248,0.12);
+          background: rgb(var(--purple-rgb) / 0.12);
           color: var(--bl);
-          border: 1px solid rgba(129,140,248,0.35);
+          border: 1px solid rgb(var(--purple-rgb) / 0.35);
         }
         .status-edition {
           background: var(--accent-soft);
@@ -125,9 +124,9 @@ export default function DxFSHyderabad26() {
           border: 1px solid var(--accent-border);
         }
         .status-date {
-          background: rgba(255,255,255,0.04);
+          background: rgb(var(--p-white-rgb) / 0.04);
           color: var(--text-body);
-          border: 1px solid rgba(255,255,255,0.1);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.1);
         }
         .event-hero-content h1 {
           font-size: 2.4rem;
@@ -148,8 +147,8 @@ export default function DxFSHyderabad26() {
           gap: 1rem;
           margin-bottom: 1.75rem;
           padding: 1.5rem 0;
-          border-top: 1px solid rgba(255,255,255,0.08);
-          border-bottom: 1px solid rgba(255,255,255,0.08);
+          border-top: 1px solid rgb(var(--p-white-rgb) / 0.08);
+          border-bottom: 1px solid rgb(var(--p-white-rgb) / 0.08);
         }
         .meta-item { display: flex; flex-direction: column; gap: .25rem; }
         .meta-label {
@@ -183,7 +182,7 @@ export default function DxFSHyderabad26() {
         .btn-primary:hover {
           background: #D9541F;
           transform: translateY(-1px);
-          box-shadow: 0 8px 24px rgba(255, 96, 0,0.3);
+          box-shadow: 0 8px 24px rgb(var(--accent-rgb) / 0.3);
         }
         .btn-secondary {
           display: inline-flex;
@@ -192,7 +191,7 @@ export default function DxFSHyderabad26() {
           padding: .85rem 1.6rem;
           background: transparent;
           color: var(--text-primary);
-          border: 1px solid rgba(255,255,255,0.2);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.2);
           border-radius: 10px;
           font-weight: 600;
           text-decoration: none;
@@ -250,7 +249,7 @@ export default function DxFSHyderabad26() {
         @media (max-width: 700px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
         .stat-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 14px;
           padding: 1.5rem 1.25rem;
           text-align: center;
@@ -259,7 +258,7 @@ export default function DxFSHyderabad26() {
         .stat-card:hover {
           border-color: var(--accent-border);
           transform: translateY(-3px);
-          box-shadow: 0 10px 30px rgba(255, 96, 0,0.1);
+          box-shadow: 0 10px 30px rgb(var(--accent-rgb) / 0.1);
         }
         .stat-num {
           font-size: 1.85rem;
@@ -278,8 +277,8 @@ export default function DxFSHyderabad26() {
 
         /* Theme card */
         .theme-card {
-          background: linear-gradient(135deg, rgba(129,140,248,0.06), rgba(10,22,40,0.95));
-          border: 1px solid rgba(129,140,248,0.25);
+          background: linear-gradient(135deg, rgb(var(--purple-rgb) / 0.06), rgba(10,22,40,0.95));
+          border: 1px solid rgb(var(--purple-rgb) / 0.25);
           border-radius: 18px;
           padding: 2rem 2.25rem;
           margin-bottom: 3rem;
@@ -316,7 +315,7 @@ export default function DxFSHyderabad26() {
         @media (max-width: 800px) { .session-highlights { grid-template-columns: 1fr; } }
         .highlight-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 16px;
           padding: 1.75rem;
           display: flex;
@@ -365,7 +364,7 @@ export default function DxFSHyderabad26() {
           aspect-ratio: 4/5;
           background: #000;
           transition: transform 0.3s ease;
-          border: 1px solid rgba(255,255,255,0.06);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.06);
         }
         .gallery-item:hover { transform: translateY(-4px); }
         .gallery-item img {
@@ -384,7 +383,7 @@ export default function DxFSHyderabad26() {
         }
         .topic-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 12px;
           padding: 1.5rem;
           transition: all 0.3s ease;
@@ -392,7 +391,7 @@ export default function DxFSHyderabad26() {
         .topic-card:hover {
           border-color: var(--accent-border);
           transform: translateY(-2px);
-          box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+          box-shadow: 0 10px 30px rgb(var(--p-white-rgb) / 0.2);
         }
         .topic-icon { font-size: 1.5rem; margin-bottom: .75rem; }
         .topic-card h4 {
@@ -411,7 +410,7 @@ export default function DxFSHyderabad26() {
         /* Audience pills */
         .who-we-met {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 18px;
           padding: 2.5rem;
           margin-bottom: 3rem;
@@ -423,8 +422,8 @@ export default function DxFSHyderabad26() {
           margin-top: 1.75rem;
         }
         .audience-pill {
-          background: rgba(255,255,255,0.03);
-          border: 1px solid rgba(255,255,255,0.08);
+          background: rgb(var(--p-white-rgb) / 0.03);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 10px;
           padding: 1rem 1.25rem;
           text-align: center;
@@ -432,7 +431,7 @@ export default function DxFSHyderabad26() {
         }
         .audience-pill:hover {
           border-color: var(--accent-border);
-          background: rgba(255, 96, 0,0.04);
+          background: rgb(var(--accent-rgb) / 0.04);
         }
         .audience-icon { font-size: 1.6rem; margin-bottom: .35rem; }
         .audience-pill-title {
@@ -453,7 +452,7 @@ export default function DxFSHyderabad26() {
         @media (max-width: 800px) { .takeaways-grid { grid-template-columns: 1fr; } }
         .takeaway-card {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 16px;
           padding: 1.85rem;
           transition: all 0.3s ease;
@@ -485,7 +484,7 @@ export default function DxFSHyderabad26() {
         }
 
         .cta-events-banner {
-          background: linear-gradient(135deg, rgba(255, 96, 0,0.12) 0%, rgba(10,22,40,0.95) 100%);
+          background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.12) 0%, rgba(10,22,40,0.95) 100%);
           border: 1px solid var(--accent-border);
           border-radius: 20px;
           padding: 2.75rem;
@@ -505,7 +504,7 @@ export default function DxFSHyderabad26() {
 
         .social-connect {
           background: var(--surface);
-          border: 1px solid rgba(255,255,255,0.08);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.08);
           border-radius: 20px;
           padding: 2.5rem 2.25rem;
           margin: 2rem 0 3rem;
@@ -519,8 +518,8 @@ export default function DxFSHyderabad26() {
           align-items: center;
           gap: .5rem;
           padding: .7rem 1.2rem;
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.1);
+          background: rgb(var(--p-white-rgb) / 0.04);
+          border: 1px solid rgb(var(--p-white-rgb) / 0.1);
           border-radius: 10px;
           color: var(--text-primary);
           text-decoration: none;

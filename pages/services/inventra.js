@@ -15,10 +15,7 @@ export default function ServiceInventraPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Inventra — Custom IT Asset Management | SecComply" />
         <meta name="twitter:description" content="Full-visibility IT asset management, built for how your teams actually work." />
-        <link rel="canonical" href="https://seccomply.net/services/inventra" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-        <script
+        <link rel="canonical" href="https://seccomply.net/services/inventra" />        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","name":"Inventra — Custom IT Asset Management","description":"Full-visibility IT asset management built for real-world asset complexity — hardware, licenses, accessories, kits and audits — deployable as a white-labeled solution per client.","provider":{"@type":"Organization","name":"SecComply","url":"https://seccomply.net"},"areaServed":"Worldwide","url":"https://seccomply.net/services/inventra"}`}}
         />
@@ -35,22 +32,22 @@ export default function ServiceInventraPage() {
 /* Gradient mesh background */
 .inv-mesh-bg { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
 .inv-mesh-layer { position:absolute; border-radius:50%; filter:blur(100px); will-change:transform,opacity; pointer-events:none; }
-.inv-mesh-l1 { width:600px; height:600px; background:rgba(255, 96, 0,0.09); top:-150px; left:-100px; animation:invMesh1 50s ease-in-out infinite; }
-.inv-mesh-l2 { width:480px; height:480px; background:rgba(16,185,129,0.06); top:-60px; right:-80px; animation:invMesh2 50s ease-in-out infinite 15s; }
-.inv-mesh-l3 { width:400px; height:400px; background:rgba(59,130,246,0.05); bottom:-80px; left:38%; animation:invMesh1 50s ease-in-out infinite 30s; }
+.inv-mesh-l1 { width:600px; height:600px; background:rgb(var(--accent-rgb) / 0.09); top:-150px; left:-100px; animation:invMesh1 50s ease-in-out infinite; }
+.inv-mesh-l2 { width:480px; height:480px; background:rgb(var(--green-rgb) / 0.06); top:-60px; right:-80px; animation:invMesh2 50s ease-in-out infinite 15s; }
+.inv-mesh-l3 { width:400px; height:400px; background:rgb(var(--blue-rgb) / 0.05); bottom:-80px; left:38%; animation:invMesh1 50s ease-in-out infinite 30s; }
 @keyframes invMesh1 { 0%,100%{ transform:translate(0,0); opacity:0.7; } 50%{ transform:translate(70px,40px); opacity:1; } }
 @keyframes invMesh2 { 0%,100%{ transform:translate(0,0); opacity:0.5; } 50%{ transform:translate(-60px,50px); opacity:0.8; } }
 
 /* ── Animated asset-registry panel ── */
 .inv-motif { position:relative; display:flex; justify-content:center; align-items:center; }
-.inv-panel { position:relative; width:100%; max-width:460px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-xl); box-shadow:0 25px 80px rgba(0,0,0,0.5), 0 0 40px rgba(255, 96, 0,0.05); overflow:hidden; animation:invPanelIn 0.9s var(--ease-out) 0.2s both; }
+.inv-panel { position:relative; width:100%; max-width:460px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-xl); box-shadow:0 25px 80px rgb(var(--p-white-rgb) / 0.5), 0 0 40px rgb(var(--accent-rgb) / 0.05); overflow:hidden; animation:invPanelIn 0.9s var(--ease-out) 0.2s both; }
 @keyframes invPanelIn { from{ opacity:0; transform:translateY(30px) scale(0.96); } to{ opacity:1; transform:translateY(0) scale(1); } }
-.inv-topbar { display:flex; align-items:center; gap:6px; padding:12px 16px; background:rgba(255,255,255,0.02); border-bottom:1px solid var(--border); }
+.inv-topbar { display:flex; align-items:center; gap:6px; padding:12px 16px; background:rgb(var(--p-white-rgb) / 0.02); border-bottom:1px solid var(--border); }
 .inv-dots { display:flex; gap:5px; }
 .inv-dots span { width:9px; height:9px; border-radius:50%; }
 .inv-title { flex:1; text-align:center; font-size:11px; color:var(--text-muted); font-family:var(--font-mono); }
 .inv-kpis { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; padding:14px 16px 6px; }
-.inv-kpi { background:rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.05); border-radius:var(--radius-md); padding:10px 12px; }
+.inv-kpi { background:rgb(var(--p-white-rgb) / 0.025); border:1px solid rgb(var(--p-white-rgb) / 0.05); border-radius:var(--radius-md); padding:10px 12px; }
 .inv-kpi-n { font-size:19px; font-weight:900; color:var(--white); line-height:1; }
 .inv-kpi-n.o { color:var(--accent-light); }
 .inv-kpi-n.g { color:var(--green); }
@@ -58,28 +55,28 @@ export default function ServiceInventraPage() {
 
 /* Asset rows with staggered entry + cycling highlight */
 .inv-rows { position:relative; padding:8px 16px 16px; display:flex; flex-direction:column; gap:7px; }
-.inv-row { display:flex; align-items:center; gap:10px; padding:9px 12px; background:rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.05); border-radius:var(--radius-md); opacity:0; animation:invRowIn 0.5s var(--ease-out) forwards, invRowGlow 12s ease-in-out infinite; }
+.inv-row { display:flex; align-items:center; gap:10px; padding:9px 12px; background:rgb(var(--p-white-rgb) / 0.025); border:1px solid rgb(var(--p-white-rgb) / 0.05); border-radius:var(--radius-md); opacity:0; animation:invRowIn 0.5s var(--ease-out) forwards, invRowGlow 12s ease-in-out infinite; }
 .inv-row:nth-child(1) { animation-delay:0.5s, 2s; }
 .inv-row:nth-child(2) { animation-delay:0.65s, 5s; }
 .inv-row:nth-child(3) { animation-delay:0.8s, 8s; }
 .inv-row:nth-child(4) { animation-delay:0.95s, 11s; }
 @keyframes invRowIn { from{ opacity:0; transform:translateX(-14px); } to{ opacity:1; transform:translateX(0); } }
-@keyframes invRowGlow { 0%,6%,100%{ border-color:rgba(255,255,255,0.05); box-shadow:none; } 3%{ border-color:rgba(255, 96, 0,0.4); box-shadow:0 0 16px rgba(255, 96, 0,0.12); } }
+@keyframes invRowGlow { 0%,6%,100%{ border-color:rgb(var(--p-white-rgb) / 0.05); box-shadow:none; } 3%{ border-color:rgb(var(--accent-rgb) / 0.4); box-shadow:0 0 16px rgb(var(--accent-rgb) / 0.12); } }
 .inv-row-ico { font-size:15px; flex-shrink:0; }
 .inv-row-name { font-size:11.5px; font-weight:600; color:var(--text-primary); line-height:1.2; }
 .inv-row-serial { font-size:9px; color:var(--text-muted); font-family:var(--font-mono); }
 .inv-pill { margin-left:auto; font-size:8.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; padding:3px 9px; border-radius:var(--radius-full); flex-shrink:0; }
 .inv-pill.dep { background:var(--green-dim); color:var(--green); }
 .inv-pill.pen { background:var(--yellow-dim); color:var(--yellow); }
-.inv-pill.out { background:rgba(255, 96, 0,0.14); color:var(--accent-light); }
+.inv-pill.out { background:rgb(var(--accent-rgb) / 0.14); color:var(--accent-light); }
 .inv-pill.arc { background:rgba(148,163,184,0.12); color:var(--text-secondary); }
 
 /* Scan beam sweeping the registry (barcode-audit feel) */
-.inv-scan { position:absolute; left:0; right:0; top:0; height:44px; background:linear-gradient(to bottom, transparent, rgba(255, 96, 0,0.07), rgba(255, 96, 0,0.14), rgba(255, 96, 0,0.07), transparent); border-top:1px solid rgba(255, 96, 0,0.25); pointer-events:none; animation:invScan 5.5s ease-in-out infinite; z-index:2; }
+.inv-scan { position:absolute; left:0; right:0; top:0; height:44px; background:linear-gradient(to bottom, transparent, rgb(var(--accent-rgb) / 0.07), rgb(var(--accent-rgb) / 0.14), rgb(var(--accent-rgb) / 0.07), transparent); border-top:1px solid rgb(var(--accent-rgb) / 0.25); pointer-events:none; animation:invScan 5.5s ease-in-out infinite; z-index:2; }
 @keyframes invScan { 0%{ transform:translateY(-50px); opacity:0; } 10%{ opacity:1; } 85%{ opacity:1; } 100%{ transform:translateY(320px); opacity:0; } }
 
 /* Floating event chips */
-.inv-chip { position:absolute; display:flex; align-items:center; gap:7px; background:rgba(15,23,42,0.95); border:1px solid var(--border-hover); border-radius:var(--radius-full); padding:8px 14px; font-size:11px; font-weight:600; color:var(--text-primary); box-shadow:var(--shadow-md); white-space:nowrap; z-index:3; }
+.inv-chip { position:absolute; display:flex; align-items:center; gap:7px; background:rgb(var(--bg-card-rgb) / 0.95); border:1px solid var(--border-hover); border-radius:var(--radius-full); padding:8px 14px; font-size:11px; font-weight:600; color:var(--text-primary); box-shadow:var(--shadow-md); white-space:nowrap; z-index:3; }
 .inv-chip .d { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
 .inv-chip-1 { top:8%; right:-4%; animation:invChipFloat 6s ease-in-out infinite; }
 .inv-chip-1 .d { background:var(--green); box-shadow:0 0 8px var(--green); }
@@ -102,7 +99,7 @@ export default function ServiceInventraPage() {
 
 /* Why We Built It band */
 .inv-why { padding:100px 0; position:relative; overflow:hidden; background:var(--bg-secondary); }
-.inv-why-glow { position:absolute; top:50%; left:50%; width:640px; height:640px; transform:translate(-50%,-50%); border-radius:50%; background:radial-gradient(circle, rgba(255, 96, 0,0.09) 0%, transparent 70%); pointer-events:none; animation:invWhyPulse 5s ease-in-out infinite; }
+.inv-why-glow { position:absolute; top:50%; left:50%; width:640px; height:640px; transform:translate(-50%,-50%); border-radius:50%; background:radial-gradient(circle, rgb(var(--accent-rgb) / 0.09) 0%, transparent 70%); pointer-events:none; animation:invWhyPulse 5s ease-in-out infinite; }
 @keyframes invWhyPulse { 0%,100%{ opacity:0.55; transform:translate(-50%,-50%) scale(1); } 50%{ opacity:0.9; transform:translate(-50%,-50%) scale(1.08); } }
 .inv-why-inner { position:relative; max-width:780px; margin:0 auto; text-align:center; }
 .inv-why-inner blockquote { font-size:clamp(1.3rem,2.6vw,1.75rem); font-weight:700; color:var(--white); line-height:1.5; letter-spacing:-0.5px; margin:26px 0 18px; }
@@ -123,7 +120,7 @@ export default function ServiceInventraPage() {
 
       <div dangerouslySetInnerHTML={{__html: `
 <section class="service-hero inv-hero"><div class="inv-mesh-bg"><div class="inv-mesh-layer inv-mesh-l1"></div><div class="inv-mesh-layer inv-mesh-l2"></div><div class="inv-mesh-layer inv-mesh-l3"></div></div><div class="hero-grid"></div><div class="container"><div class="inv-hero-inner"><div class="hero-content"><div class="hero-badge"><span class="hero-badge-dot"></span> Engineering Solutions &middot; Flagship Build</div><h1><span class="accent">Inventra</span></h1><p class="hero-sub">Full-visibility IT asset management, built for how your teams actually work.</p><div class="hero-ctas"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book a Walkthrough <span class="btn-icon">&rarr;</span></a><a href="#capabilities" class="btn btn-outline btn-lg">Explore Capabilities</a></div></div>
-<div class="inv-motif"><div class="inv-panel"><div class="inv-scan"></div><div class="inv-topbar"><div class="inv-dots"><span style="background:#EF4444"></span><span style="background:#F59E0B"></span><span style="background:#10B981"></span></div><div class="inv-title">inventra &mdash; asset registry</div></div><div class="inv-kpis"><div class="inv-kpi"><div class="inv-kpi-n">1,284</div><div class="inv-kpi-l">Total Assets</div></div><div class="inv-kpi"><div class="inv-kpi-n g">96%</div><div class="inv-kpi-l">Deployed</div></div><div class="inv-kpi"><div class="inv-kpi-n o">14</div><div class="inv-kpi-l">Renewals Due</div></div></div><div class="inv-rows"><div class="inv-row"><span class="inv-row-ico">&#x1F4BB;</span><div><div class="inv-row-name">MacBook Pro 14&Prime;</div><div class="inv-row-serial">SN&middot;C02XR3JGMD6T</div></div><span class="inv-pill out">Checked Out</span></div><div class="inv-row"><span class="inv-row-ico">&#x1F5A5;&#xFE0F;</span><div><div class="inv-row-name">Dell U2723QE Monitor</div><div class="inv-row-serial">SN&middot;CN0H3JK4</div></div><span class="inv-pill dep">Deployable</span></div><div class="inv-row"><span class="inv-row-ico">&#x1F511;</span><div><div class="inv-row-name">M365 E5 &mdash; 250 seats</div><div class="inv-row-serial">LIC&middot;renews 14d</div></div><span class="inv-pill pen">Pending</span></div><div class="inv-row"><span class="inv-row-ico">&#x1F5A8;&#xFE0F;</span><div><div class="inv-row-name">HP LaserJet M404</div><div class="inv-row-serial">SN&middot;PHBLD59201</div></div><span class="inv-pill arc">Archived</span></div></div></div><div class="inv-chip inv-chip-1"><span class="d"></span> Checked out &rarr; Priya S.</div><div class="inv-chip inv-chip-2"><span class="d"></span> License renewal in 14 days</div><div class="inv-chip inv-chip-3"><span class="d"></span> New-hire kit deployed</div></div></div></div></section>
+<div class="inv-motif"><div class="inv-panel"><div class="inv-scan"></div><div class="inv-topbar"><div class="inv-dots"><span style="background:var(--red)"></span><span style="background:var(--yellow)"></span><span style="background:var(--green)"></span></div><div class="inv-title">inventra &mdash; asset registry</div></div><div class="inv-kpis"><div class="inv-kpi"><div class="inv-kpi-n">1,284</div><div class="inv-kpi-l">Total Assets</div></div><div class="inv-kpi"><div class="inv-kpi-n g">96%</div><div class="inv-kpi-l">Deployed</div></div><div class="inv-kpi"><div class="inv-kpi-n o">14</div><div class="inv-kpi-l">Renewals Due</div></div></div><div class="inv-rows"><div class="inv-row"><span class="inv-row-ico">&#x1F4BB;</span><div><div class="inv-row-name">MacBook Pro 14&Prime;</div><div class="inv-row-serial">SN&middot;C02XR3JGMD6T</div></div><span class="inv-pill out">Checked Out</span></div><div class="inv-row"><span class="inv-row-ico">&#x1F5A5;&#xFE0F;</span><div><div class="inv-row-name">Dell U2723QE Monitor</div><div class="inv-row-serial">SN&middot;CN0H3JK4</div></div><span class="inv-pill dep">Deployable</span></div><div class="inv-row"><span class="inv-row-ico">&#x1F511;</span><div><div class="inv-row-name">M365 E5 &mdash; 250 seats</div><div class="inv-row-serial">LIC&middot;renews 14d</div></div><span class="inv-pill pen">Pending</span></div><div class="inv-row"><span class="inv-row-ico">&#x1F5A8;&#xFE0F;</span><div><div class="inv-row-name">HP LaserJet M404</div><div class="inv-row-serial">SN&middot;PHBLD59201</div></div><span class="inv-pill arc">Archived</span></div></div></div><div class="inv-chip inv-chip-1"><span class="d"></span> Checked out &rarr; Priya S.</div><div class="inv-chip inv-chip-2"><span class="d"></span> License renewal in 14 days</div><div class="inv-chip inv-chip-3"><span class="d"></span> New-hire kit deployed</div></div></div></div></section>
 
 <section class="inv-overview"><div class="container"><div class="inv-overview-inner reveal"><p>Off-the-shelf asset trackers force you into <strong>their</strong> data model. <strong>Inventra</strong> was engineered from the ground up for real-world asset complexity &mdash; hardware, licenses, accessories, and everything in between &mdash; while staying flexible enough to adapt to each client&rsquo;s environment.</p></div></div></section>
 
@@ -150,7 +147,6 @@ export default function ServiceInventraPage() {
       `}} />
 
       <Script src="/assets/js/animations.js" strategy="afterInteractive" />
-      <Script src="/assets/js/effects.js" strategy="afterInteractive" />
     </>
   )
 }

@@ -15,10 +15,7 @@ export default function ServiceSecurityVisualizationPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Custom Security Visualization System | SecComply" />
         <meta name="twitter:description" content="Turn scattered security exports into one live picture of your risk posture." />
-        <link rel="canonical" href="https://seccomply.net/services/security-visualization" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-        <script
+        <link rel="canonical" href="https://seccomply.net/services/security-visualization" />        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","name":"Custom Security Visualization System","description":"Self-hosted security visualization that ingests CSV/Excel exports from existing security tools, normalizes findings into a unified schema, and surfaces everything in one live dashboard.","provider":{"@type":"Organization","name":"SecComply","url":"https://seccomply.net"},"areaServed":"Worldwide","url":"https://seccomply.net/services/security-visualization"}`}}
         />
@@ -35,17 +32,17 @@ export default function ServiceSecurityVisualizationPage() {
 /* Gradient mesh background */
 .svz-mesh-bg { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
 .svz-mesh-layer { position:absolute; border-radius:50%; filter:blur(100px); will-change:transform,opacity; pointer-events:none; }
-.svz-mesh-l1 { width:600px; height:600px; background:rgba(59,130,246,0.08); top:-150px; right:-100px; animation:svzMesh1 50s ease-in-out infinite; }
-.svz-mesh-l2 { width:480px; height:480px; background:rgba(255, 96, 0,0.07); top:-60px; left:-80px; animation:svzMesh2 50s ease-in-out infinite 15s; }
-.svz-mesh-l3 { width:400px; height:400px; background:rgba(239,68,68,0.04); bottom:-80px; left:45%; animation:svzMesh1 50s ease-in-out infinite 30s; }
+.svz-mesh-l1 { width:600px; height:600px; background:rgb(var(--blue-rgb) / 0.08); top:-150px; right:-100px; animation:svzMesh1 50s ease-in-out infinite; }
+.svz-mesh-l2 { width:480px; height:480px; background:rgb(var(--accent-rgb) / 0.07); top:-60px; left:-80px; animation:svzMesh2 50s ease-in-out infinite 15s; }
+.svz-mesh-l3 { width:400px; height:400px; background:rgb(var(--red-rgb) / 0.04); bottom:-80px; left:45%; animation:svzMesh1 50s ease-in-out infinite 30s; }
 @keyframes svzMesh1 { 0%,100%{ transform:translate(0,0); opacity:0.7; } 50%{ transform:translate(-70px,40px); opacity:1; } }
 @keyframes svzMesh2 { 0%,100%{ transform:translate(0,0); opacity:0.5; } 50%{ transform:translate(60px,50px); opacity:0.8; } }
 
 /* ── Animated ingestion-pipeline panel ── */
 .svz-motif { position:relative; display:flex; justify-content:center; align-items:center; }
-.svz-panel { position:relative; width:100%; max-width:500px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-xl); box-shadow:0 25px 80px rgba(0,0,0,0.5), 0 0 40px rgba(255, 96, 0,0.05); overflow:hidden; animation:svzPanelIn 0.9s var(--ease-out) 0.2s both; }
+.svz-panel { position:relative; width:100%; max-width:500px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-xl); box-shadow:0 25px 80px rgb(var(--p-white-rgb) / 0.5), 0 0 40px rgb(var(--accent-rgb) / 0.05); overflow:hidden; animation:svzPanelIn 0.9s var(--ease-out) 0.2s both; }
 @keyframes svzPanelIn { from{ opacity:0; transform:translateY(30px) scale(0.96); } to{ opacity:1; transform:translateY(0) scale(1); } }
-.svz-topbar { display:flex; align-items:center; gap:6px; padding:12px 16px; background:rgba(255,255,255,0.02); border-bottom:1px solid var(--border); }
+.svz-topbar { display:flex; align-items:center; gap:6px; padding:12px 16px; background:rgb(var(--p-white-rgb) / 0.02); border-bottom:1px solid var(--border); }
 .svz-dots { display:flex; gap:5px; }
 .svz-dots span { width:9px; height:9px; border-radius:50%; }
 .svz-title { flex:1; text-align:center; font-size:11px; color:var(--text-muted); font-family:var(--font-mono); }
@@ -53,12 +50,12 @@ export default function ServiceSecurityVisualizationPage() {
 
 /* Column 1: file chips dropping into the pipeline */
 .svz-files { display:flex; flex-direction:column; gap:8px; }
-.svz-file { display:flex; align-items:center; gap:7px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:var(--radius-md); padding:7px 10px; font-size:9.5px; font-family:var(--font-mono); color:var(--text-secondary); white-space:nowrap; animation:svzFilePulse 8s ease-in-out infinite; }
+.svz-file { display:flex; align-items:center; gap:7px; background:rgb(var(--p-white-rgb) / 0.03); border:1px solid rgb(var(--p-white-rgb) / 0.07); border-radius:var(--radius-md); padding:7px 10px; font-size:9.5px; font-family:var(--font-mono); color:var(--text-secondary); white-space:nowrap; animation:svzFilePulse 8s ease-in-out infinite; }
 .svz-file:nth-child(1) { animation-delay:0s; }
 .svz-file:nth-child(2) { animation-delay:2s; }
 .svz-file:nth-child(3) { animation-delay:4s; }
 .svz-file:nth-child(4) { animation-delay:6s; }
-@keyframes svzFilePulse { 0%,100%{ border-color:rgba(255,255,255,0.07); transform:translateX(0); } 4%{ border-color:rgba(255, 96, 0,0.5); transform:translateX(5px); } 10%{ border-color:rgba(255,255,255,0.07); transform:translateX(0); } }
+@keyframes svzFilePulse { 0%,100%{ border-color:rgb(var(--p-white-rgb) / 0.07); transform:translateX(0); } 4%{ border-color:rgb(var(--accent-rgb) / 0.5); transform:translateX(5px); } 10%{ border-color:rgb(var(--p-white-rgb) / 0.07); transform:translateX(0); } }
 .svz-file .ext { font-weight:800; font-size:8px; padding:2px 5px; border-radius:4px; flex-shrink:0; }
 .svz-file .ext.csv { background:var(--green-dim); color:var(--green); }
 .svz-file .ext.xls { background:var(--teal-dim); color:var(--teal); }
@@ -70,13 +67,13 @@ export default function ServiceSecurityVisualizationPage() {
 .svz-flow-dots span:nth-child(2) { animation-delay:0.25s; }
 .svz-flow-dots span:nth-child(3) { animation-delay:0.5s; }
 @keyframes svzDot { 0%,100%{ opacity:0.25; } 50%{ opacity:1; } }
-.svz-normalizer { display:flex; flex-direction:column; align-items:center; gap:3px; background:rgba(255, 96, 0,0.08); border:1px solid rgba(255, 96, 0,0.3); border-radius:var(--radius-md); padding:10px 12px; animation:svzNormPulse 3s ease-in-out infinite; }
-@keyframes svzNormPulse { 0%,100%{ box-shadow:0 0 0 rgba(255, 96, 0,0); } 50%{ box-shadow:0 0 22px rgba(255, 96, 0,0.25); } }
+.svz-normalizer { display:flex; flex-direction:column; align-items:center; gap:3px; background:rgb(var(--accent-rgb) / 0.08); border:1px solid rgb(var(--accent-rgb) / 0.3); border-radius:var(--radius-md); padding:10px 12px; animation:svzNormPulse 3s ease-in-out infinite; }
+@keyframes svzNormPulse { 0%,100%{ box-shadow:0 0 0 rgb(var(--accent-rgb) / 0); } 50%{ box-shadow:0 0 22px rgb(var(--accent-rgb) / 0.25); } }
 .svz-normalizer .ico { font-size:16px; }
 .svz-normalizer .lbl { font-size:8px; font-weight:800; text-transform:uppercase; letter-spacing:0.6px; color:var(--accent-light); }
 
 /* Column 3: live dashboard with growing severity bars */
-.svz-dash { background:rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.06); border-radius:var(--radius-md); padding:12px; }
+.svz-dash { background:rgb(var(--p-white-rgb) / 0.025); border:1px solid rgb(var(--p-white-rgb) / 0.06); border-radius:var(--radius-md); padding:12px; }
 .svz-dash-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
 .svz-dash-title { font-size:9px; font-weight:800; text-transform:uppercase; letter-spacing:0.7px; color:var(--text-secondary); }
 .svz-live { display:inline-flex; align-items:center; gap:4px; font-size:8px; font-weight:800; color:var(--green); text-transform:uppercase; letter-spacing:0.5px; }
@@ -84,21 +81,21 @@ export default function ServiceSecurityVisualizationPage() {
 .svz-bars { display:flex; flex-direction:column; gap:7px; }
 .svz-bar-row { display:flex; align-items:center; gap:7px; }
 .svz-bar-l { font-size:8.5px; font-weight:700; color:var(--text-muted); width:44px; flex-shrink:0; text-align:right; }
-.svz-bar-track { flex:1; height:11px; background:rgba(255,255,255,0.04); border-radius:6px; overflow:hidden; }
+.svz-bar-track { flex:1; height:11px; background:rgb(var(--p-white-rgb) / 0.04); border-radius:6px; overflow:hidden; }
 .svz-bar { height:100%; border-radius:6px; transform-origin:left; animation:svzBarGrow 7s ease-in-out infinite; }
-.svz-bar.crit { background:linear-gradient(90deg,#EF4444,#F87171); width:32%; }
-.svz-bar.high { background:linear-gradient(90deg,#F59E0B,#FBBF24); width:55%; animation-delay:0.4s; }
-.svz-bar.med  { background:linear-gradient(90deg,#FF6000,#FF8A3D); width:74%; animation-delay:0.8s; }
-.svz-bar.low  { background:linear-gradient(90deg,#10B981,#34D399); width:88%; animation-delay:1.2s; }
+.svz-bar.crit { background:linear-gradient(90deg,var(--red),#F87171); width:32%; }
+.svz-bar.high { background:linear-gradient(90deg,var(--yellow),#FBBF24); width:55%; animation-delay:0.4s; }
+.svz-bar.med  { background:linear-gradient(90deg,var(--accent),var(--accent-light)); width:74%; animation-delay:0.8s; }
+.svz-bar.low  { background:linear-gradient(90deg,var(--green),var(--green-light)); width:88%; animation-delay:1.2s; }
 @keyframes svzBarGrow { 0%{ transform:scaleX(0.1); } 18%,78%{ transform:scaleX(1); } 100%{ transform:scaleX(0.1); } }
 .svz-trend { margin-top:10px; display:flex; align-items:flex-end; gap:3px; height:26px; }
-.svz-trend span { flex:1; background:rgba(255, 96, 0,0.35); border-radius:2px 2px 0 0; animation:svzTrend 4s ease-in-out infinite; }
+.svz-trend span { flex:1; background:rgb(var(--accent-rgb) / 0.35); border-radius:2px 2px 0 0; animation:svzTrend 4s ease-in-out infinite; }
 .svz-trend span:nth-child(odd) { animation-delay:0.6s; }
 .svz-trend span:nth-child(3n) { animation-delay:1.2s; }
 @keyframes svzTrend { 0%,100%{ opacity:0.4; } 50%{ opacity:1; } }
 
 /* Floating chips */
-.svz-chip { position:absolute; display:flex; align-items:center; gap:7px; background:rgba(15,23,42,0.95); border:1px solid var(--border-hover); border-radius:var(--radius-full); padding:8px 14px; font-size:11px; font-weight:600; color:var(--text-primary); box-shadow:var(--shadow-md); white-space:nowrap; z-index:3; }
+.svz-chip { position:absolute; display:flex; align-items:center; gap:7px; background:rgb(var(--bg-card-rgb) / 0.95); border:1px solid var(--border-hover); border-radius:var(--radius-full); padding:8px 14px; font-size:11px; font-weight:600; color:var(--text-primary); box-shadow:var(--shadow-md); white-space:nowrap; z-index:3; }
 .svz-chip .d { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
 .svz-chip-1 { top:-5%; right:8%; animation:svzChipFloat 6s ease-in-out infinite; }
 .svz-chip-1 .d { background:var(--green); box-shadow:0 0 8px var(--green); }
@@ -134,7 +131,7 @@ export default function ServiceSecurityVisualizationPage() {
 
       <div dangerouslySetInnerHTML={{__html: `
 <section class="service-hero svz-hero"><div class="svz-mesh-bg"><div class="svz-mesh-layer svz-mesh-l1"></div><div class="svz-mesh-layer svz-mesh-l2"></div><div class="svz-mesh-layer svz-mesh-l3"></div></div><div class="hero-grid"></div><div class="container"><div class="svz-hero-inner"><div class="hero-content"><div class="hero-badge"><span class="hero-badge-dot"></span> Engineering Solutions &middot; Self-Hosted</div><h1>Security <span class="accent">Visualization</span></h1><p class="hero-sub">Turn scattered security exports into one live picture of your risk posture.</p><div class="hero-ctas"><a href="https://outlook.office.com/book/SecComplyMeeting1@seccomply.net/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">See a Live Demo <span class="btn-icon">&rarr;</span></a><a href="#how-it-works" class="btn btn-outline btn-lg">How It Works</a></div></div>
-<div class="svz-motif"><div class="svz-panel"><div class="svz-topbar"><div class="svz-dots"><span style="background:#EF4444"></span><span style="background:#F59E0B"></span><span style="background:#10B981"></span></div><div class="svz-title">security-viz &mdash; unified posture</div></div><div class="svz-body"><div class="svz-files"><div class="svz-file"><span class="ext csv">CSV</span> firewall_logs</div><div class="svz-file"><span class="ext xls">XLSX</span> edr_alerts</div><div class="svz-file"><span class="ext csv">CSV</span> vuln_scan</div><div class="svz-file"><span class="ext xls">XLSX</span> dlp_flags</div></div><div class="svz-flow"><div class="svz-flow-dots"><span></span><span></span><span></span></div><div class="svz-normalizer"><span class="ico">&#x2699;&#xFE0F;</span><span class="lbl">Normalize</span></div><div class="svz-flow-dots"><span></span><span></span><span></span></div></div><div class="svz-dash"><div class="svz-dash-head"><span class="svz-dash-title">Findings by Severity</span><span class="svz-live">Live</span></div><div class="svz-bars"><div class="svz-bar-row"><span class="svz-bar-l">Critical</span><div class="svz-bar-track"><div class="svz-bar crit"></div></div></div><div class="svz-bar-row"><span class="svz-bar-l">High</span><div class="svz-bar-track"><div class="svz-bar high"></div></div></div><div class="svz-bar-row"><span class="svz-bar-l">Medium</span><div class="svz-bar-track"><div class="svz-bar med"></div></div></div><div class="svz-bar-row"><span class="svz-bar-l">Low</span><div class="svz-bar-track"><div class="svz-bar low"></div></div></div></div><div class="svz-trend"><span style="height:35%"></span><span style="height:55%"></span><span style="height:42%"></span><span style="height:70%"></span><span style="height:58%"></span><span style="height:85%"></span><span style="height:64%"></span><span style="height:92%"></span></div></div></div></div><div class="svz-chip svz-chip-1"><span class="d"></span> 4 sources normalized</div><div class="svz-chip svz-chip-2"><span class="d"></span> Data never leaves your environment</div></div></div></div></section>
+<div class="svz-motif"><div class="svz-panel"><div class="svz-topbar"><div class="svz-dots"><span style="background:var(--red)"></span><span style="background:var(--yellow)"></span><span style="background:var(--green)"></span></div><div class="svz-title">security-viz &mdash; unified posture</div></div><div class="svz-body"><div class="svz-files"><div class="svz-file"><span class="ext csv">CSV</span> firewall_logs</div><div class="svz-file"><span class="ext xls">XLSX</span> edr_alerts</div><div class="svz-file"><span class="ext csv">CSV</span> vuln_scan</div><div class="svz-file"><span class="ext xls">XLSX</span> dlp_flags</div></div><div class="svz-flow"><div class="svz-flow-dots"><span></span><span></span><span></span></div><div class="svz-normalizer"><span class="ico">&#x2699;&#xFE0F;</span><span class="lbl">Normalize</span></div><div class="svz-flow-dots"><span></span><span></span><span></span></div></div><div class="svz-dash"><div class="svz-dash-head"><span class="svz-dash-title">Findings by Severity</span><span class="svz-live">Live</span></div><div class="svz-bars"><div class="svz-bar-row"><span class="svz-bar-l">Critical</span><div class="svz-bar-track"><div class="svz-bar crit"></div></div></div><div class="svz-bar-row"><span class="svz-bar-l">High</span><div class="svz-bar-track"><div class="svz-bar high"></div></div></div><div class="svz-bar-row"><span class="svz-bar-l">Medium</span><div class="svz-bar-track"><div class="svz-bar med"></div></div></div><div class="svz-bar-row"><span class="svz-bar-l">Low</span><div class="svz-bar-track"><div class="svz-bar low"></div></div></div></div><div class="svz-trend"><span style="height:35%"></span><span style="height:55%"></span><span style="height:42%"></span><span style="height:70%"></span><span style="height:58%"></span><span style="height:85%"></span><span style="height:64%"></span><span style="height:92%"></span></div></div></div></div><div class="svz-chip svz-chip-1"><span class="d"></span> 4 sources normalized</div><div class="svz-chip svz-chip-2"><span class="d"></span> Data never leaves your environment</div></div></div></div></section>
 
 <section class="svz-overview"><div class="container"><div class="svz-overview-inner reveal"><p>Most mid-sized organizations run a patchwork of security tools &mdash; firewalls, EDR, vulnerability scanners, DLP, IAM logs &mdash; that don&rsquo;t talk to each other and rarely export in the same format. Instead of forcing costly API integrations across every vendor, our system ingests the <strong>CSV/Excel reports your tools already produce</strong>, normalizes them into a single schema, and surfaces everything in <strong>one visual dashboard</strong>.</p></div></div></section>
 
@@ -157,7 +154,6 @@ export default function ServiceSecurityVisualizationPage() {
       `}} />
 
       <Script src="/assets/js/animations.js" strategy="afterInteractive" />
-      <Script src="/assets/js/effects.js" strategy="afterInteractive" />
     </>
   )
 }

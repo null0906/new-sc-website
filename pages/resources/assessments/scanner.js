@@ -13,7 +13,7 @@ function ScoreRing({ score, tone }) {
   const color = toneColor[tone] || 'var(--accent)'
   return (
     <svg width="160" height="160" viewBox="0 0 160 160" className="ring">
-      <circle cx="80" cy="80" r={r} fill="none" stroke="rgba(255,255,255,.08)" strokeWidth="12" />
+      <circle cx="80" cy="80" r={r} fill="none" stroke="rgb(var(--p-white-rgb) / .08)" strokeWidth="12" />
       <circle
         cx="80" cy="80" r={r} fill="none" stroke={color} strokeWidth="12" strokeLinecap="round"
         strokeDasharray={circ} strokeDashoffset={offset} transform="rotate(-90 80 80)"
@@ -154,7 +154,7 @@ export default function Scanner() {
         .scan-back:hover { color:var(--accent); }
         .scan-badge {
           display:inline-block; padding:.35rem .9rem; border-radius:var(--radius-full);
-          background:rgba(6,214,160,.12); color:#06d6a0; border:1px solid rgba(6,214,160,.3);
+          background:rgb(var(--teal-rgb) / .12); color:var(--teal); border:1px solid rgb(var(--teal-rgb) / .3);
           font-size:.74rem; font-weight:700; letter-spacing:.04em; margin-bottom:1rem;
         }
         .scan-hero h1 { font-size:clamp(2.2rem,5vw,3.2rem); font-weight:800; margin:0 0 .75rem; color:var(--white); }
@@ -177,7 +177,7 @@ export default function Scanner() {
         .scan-loading { text-align:center; padding:3rem 0; }
         .scan-spinner {
           width:44px; height:44px; border-radius:50%; margin:0 auto 1rem;
-          border:3px solid rgba(255,255,255,.1); border-top-color:var(--accent); animation:spin .8s linear infinite;
+          border:3px solid rgb(var(--p-white-rgb) / .1); border-top-color:var(--accent); animation:spin .8s linear infinite;
         }
         @keyframes spin { to { transform:rotate(360deg); } }
         .scan-loading p { color:var(--text-secondary); }
@@ -211,12 +211,12 @@ export default function Scanner() {
 
         .scan-bonus { display:flex; flex-wrap:wrap; gap:.5rem; }
         .scan-chip { padding:.4rem .8rem; border-radius:var(--radius-full); font-size:.8rem; border:1px solid var(--border); }
-        .scan-chip.on { background:rgba(255, 96, 0,.1); color:var(--accent-light); border-color:rgba(255, 96, 0,.3); }
+        .scan-chip.on { background:rgb(var(--accent-rgb) / .1); color:var(--accent-light); border-color:rgb(var(--accent-rgb) / .3); }
         .scan-chip.off { color:var(--text-muted); }
 
         .scan-cta { margin-top:2.5rem; display:flex; flex-direction:column; align-items:center; gap:.9rem; }
         .scan-btn-primary { background:var(--gradient-accent); color:#fff; padding:.9rem 1.7rem; border-radius:10px; font-weight:700; text-decoration:none; }
-        .scan-btn-outline { color:var(--accent); border:1px solid var(--accent-border,rgba(255, 96, 0,.3)); padding:.75rem 1.4rem; border-radius:10px; font-weight:600; text-decoration:none; font-size:.92rem; }
+        .scan-btn-outline { color:var(--accent); border:1px solid var(--accent-border,rgb(var(--accent-rgb) / .3)); padding:.75rem 1.4rem; border-radius:10px; font-weight:600; text-decoration:none; font-size:.92rem; }
         .scan-btn-ghost { background:none; border:none; color:var(--text-muted); font-size:.88rem; cursor:pointer; text-decoration:underline; font-family:inherit; }
       `}</style>
     </>
